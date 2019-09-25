@@ -7,7 +7,7 @@ To serve these many purposes in a coherent and consistent way, we propose to cre
 
 **Figure 1: We propose a CFDE Training Coordinating Center that would provide a resource of best practices and training materials for use by the CFPs to supplement the targeted training that many have ongoing. By providing centralized expertise and resources we can increase the ramp up of a CFPs training program while enabling them to maintain ownership and the potential for customizations.**
 
-## Specific Training Events planned, in brief
+## Specific Training Events Planned, in Brief
 Based on the results from our site visits to several Common Fund Program awardees, CFDE plans to engage in the following pilot training efforts through the remainder of this year, and into 2020:		
  - Kids First is intensely interested in developing a hands-on workshop series to train clinicians to use their portal. We will work with KF to outline, write, and pilot workshops focused on clinicians.		
  - CFDE will work with GTEx to pilot a webinar series on eQTL use and interpretation. These webinars will be recorded and made available through the GTEx site for users.	
@@ -71,6 +71,7 @@ Within the next year, there are several ways in which we can begin to work towar
 Where new tools or procedures have been developed, personnel within and across CFPs will need to be trained. In these cases, content goals for training existing users are clear, so preliminary assessment steps may be bypassed for internal training. A multi-phase approach to training may be applied, with early in-person workshops (to maximize early feedback and speed on-boarding) followed by webinar availability and ultimate incorporation into training for new users once internal training has run its course. 
 
 Internal training on existing tools will also be necessary to facilitate work on interoperability across CFPs. To some extent, cross-CFP personnel training may be incorporated into instructor onboarding for CFP-specific curricula (step 5, above). Any additional needs that are sufficiently common to merit curriculum development will be addressed on a case-by-case basis as with other CFP-specific training.
+
 ### Workshop Administration
 
 Administration of in-person workshops includes procurement of workshop space, AV equipment and supplies, snacks and/or catering, instructor recruitment and travel arrangements, enrollment, and travel recommendations or arrangements for learners (depending on attendance funding). The physical location for these workshops, and what services are required, will be largely dependent on whether they are targeted toward a general audience, CFDE users, or for users at a specific CFP. Details for CFDE and general workshops will be managed by the Training Coordinator, with support from local personnel. Workshops on CFP specific materials will likely take place at their sites, and will require more cross-coordination. The Project Manager and Training Coordinator will work with each CFP to find an administrative system that is mutually beneficial. 	
