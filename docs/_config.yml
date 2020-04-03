@@ -2,3 +2,5 @@ title: "CFDE Training Resources"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
 description: A Jekyll theme for documentation
+
+theme: jekyll-theme-cayman
