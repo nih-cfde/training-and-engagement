@@ -1,5 +1,36 @@
 {# Import the theme's layout. #}
-{% extends "bootstrap/layout.html" %}
+{% extends "!layout.html" %}
+
+{# Sidebar: Rework into our Bootstrap nav section. #}
+{% macro navBar() %}
+{% include "navbar" + navbar_version + ".html" %}
+{% endmacro %}
+
+{% if theme_bootstrap_version == "3" %}
+  {%- macro bsidebar() %}
+      {%- if render_sidebar %}
+      <div class="{{ bs_span_prefix }}3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+          {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endif %}
+  {%- endmacro %}
+{% else %}
+  {%- macro bsidebar() %}
+      {%- if render_sidebar %}
+      <div class="{{ bs_span_prefix }}3">
+        <div id="sidebar" class="bs-sidenav well" data-spy="affix">
+          {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endif %}
+  {%- endmacro %}
+{% endif %}
 
 
 {%- set render_sidebar = true%}
