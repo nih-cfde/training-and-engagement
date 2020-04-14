@@ -5,3 +5,6 @@ sphinxcontrib-images
 sphinxcontrib-contentui
 sphinx-markdown-tables
 Fabric>=1.13.2
+sphinx.ext.todo
+sphinx.ext.githubpages
+sphinx.ext.intersphinx
