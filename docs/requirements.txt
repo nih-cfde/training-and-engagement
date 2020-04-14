@@ -1,1 +1,7 @@
 sphinx_bootstrap_theme
+sphinxjp
+recommonmark
+sphinxcontrib-images
+sphinx_bootstrap_theme
+sphinxcontrib-contentui
+sphinx-markdown-tables
