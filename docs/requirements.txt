@@ -2,6 +2,7 @@ sphinx_bootstrap_theme
 sphinx
 recommonmark
 sphinxcontrib-images
-sphinx_bootstrap_theme
 sphinxcontrib-contentui
 sphinx-markdown-tables
+Fabric>=1.13.2
+bootstrap
