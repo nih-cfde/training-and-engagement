@@ -1,51 +1,6 @@
 {# Import the theme's layout. #}
 {% extends "!layout.html" %}
 
-{% if theme_bootstrap_version == "3" %}
-  {% set bootstrap_version, navbar_version = "3.3.7", "" %}
-  {% set bs_span_prefix = "col-md-" %}
-{% else %}
-  {% set bootstrap_version, navbar_version = "2.3.2", "-2" %}
-  {% set bs_span_prefix = "span" %}
-{% endif %}
-
-{%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and sidebars %}
-
-{%- set bs_content_width = render_sidebar and "9" or "12"%}
-
-
-{# Sidebar: Rework into our Bootstrap nav section. #}
-{% macro navBar() %}
-{% include "navbar" + navbar_version + ".html" %}
-{% endmacro %}
-
-{% if theme_bootstrap_version == "3" %}
-  {%- macro bsidebar() %}
-      {%- if render_sidebar %}
-      <div class="{{ bs_span_prefix }}3">
-        <div id="sidebar" class="bs-sidenav" role="complementary">
-          {%- for sidebartemplate in sidebars %}
-            {%- include sidebartemplate %}
-          {%- endfor %}
-        </div>
-      </div>
-      {%- endif %}
-  {%- endmacro %}
-{% else %}
-  {%- macro bsidebar() %}
-      {%- if render_sidebar %}
-      <div class="{{ bs_span_prefix }}3">
-        <div id="sidebar" class="bs-sidenav well" data-spy="affix">
-          {%- for sidebartemplate in sidebars %}
-            {%- include sidebartemplate %}
-          {%- endfor %}
-        </div>
-      </div>
-      {%- endif %}
-  {%- endmacro %}
-{% endif %}
-
-
 {%- set render_sidebar = true%}
 {%- block content %}
 {{ navBar() }}
