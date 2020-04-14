@@ -5,4 +5,3 @@ sphinxcontrib-images
 sphinxcontrib-contentui
 sphinx-markdown-tables
 Fabric>=1.13.2
-bootstrap
