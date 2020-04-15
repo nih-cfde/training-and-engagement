@@ -9,4 +9,4 @@ Guide to Kids First Resources
    KF_1_PortalOverview.rst
 
 
-These are all the available lessons we have
+These are all the available lessons we have for the Kids First Data Resource Center

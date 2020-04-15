@@ -1,15 +1,34 @@
 Account Connections
 ====================
 
+There's more setup???
+======================================
 
-   kidsfirstdrc.org
-   Click 'Join now'
-   Fill out your info and log in
-   Logon choices:
-   * ORCID
-   * Google
-   * Facebook
+Recall that our goal is to use Cavatica to analyze data we find
+using the portal, which means our two accounts need some kind of connection.
+However, when we made our account for Cavatica, we went to a separate website,
+and logged in using a completely different identity than we did at the Kids First
+DRC Portal. At Cavatica, we used our eRA Commons ID (or an email), but at the Portal
+we used an ORCID. So, we will have to tell our two accounts about each other.
 
+But that's not all. Since the data we want to use is from Kids First, it is subject to human
+data protections. Right now, we haven't told the portal or Cavatica about our
+credentials, or what we're authorized to see. Remember that there are rules about
+human data *even if it's open data* so we will need to tell these systems a bit
+about ourselves before they trust us.
+
+
+*********************************************
+Authorizing your Kids First DRC Portal Account
+*********************************************
+
+Step 1
+******
+
+.. figure:: ./images/KidsFirstPortal_4.png
+   :align: center
+
+     **KFDRC Portal Dashboard.**
 
    All set? Great! Now that we have accounts, let's start familiarizing ourselves with KFDP and Cavatica. We're going to start with KFDP.
 
