@@ -1,22 +1,22 @@
 
 html{font-family:Montserrat, Arial, Helvetica, sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 
-div.rightbar {
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 1; /* Stay at the top */
-  right: auto;
-  overflow-x: hidden; /* Disable horizontal scroll */
-}
 
 div.leftbar {
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  /*position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 1; /* Stay at the top */
   left: auto;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+div.rightbar {
+  /*position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  right: auto;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
 
 .content {
   background-color: white;
@@ -39,6 +39,8 @@ footer {
 .underline {
   text-decoration: underline;
 }
+
+
 
 /* link styles
    ----------------------------------------------------------- */
