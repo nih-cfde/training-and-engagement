@@ -1,5 +1,5 @@
-Kids First Data Portal Overview
-===================================
+Getting Started with Kids First Data
+======================================
 
 The `NIH Common Fund-supported Gabriella Miller Kids First Data Resource Center <https://kidsfirstdrc.org/>`_
 enables researchers, clinicians, and patients to work together to accelerate research
