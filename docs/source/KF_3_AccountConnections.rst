@@ -1,10 +1,15 @@
+====================
 Account Connections
 ====================
+
+Ultimately, our goal is to analyze existing Kids First data in new ways, or in new
+combinations, in order to improve medical outcomes. However, before we can start using
+the data, we need to do a lot of set up.
 
 There's more setup???
 ======================================
 
-Recall that our goal is to use Cavatica to analyze data we find
+Recall that we want to use Cavatica to analyze data we find
 using the portal, which means our two accounts need some kind of connection.
 However, when we made our account for Cavatica, we went to a separate website,
 and logged in using a completely different identity than we did at the Kids First
@@ -18,42 +23,136 @@ human data *even if it's open data* so we will need to tell these systems a bit
 about ourselves before they trust us.
 
 
-*********************************************
-Authorizing your Kids First DRC Portal Account
-*********************************************
+****************************************************
+Creating a Kids First Portal to Cavatica Connection
+****************************************************
 
-Step 1
-******
+Step 1 Get logged in to Cavatica
+**********************************************
+
+Navigate to `https://cavatica.sbgenomics.com/ <https://cavatica.sbgenomics.com/>`
+and use the credentials you set up in the previous page of this lesson to log in, if
+you used a eRA Commons ID, this will be a multi-step process. As part of your log-in
+process, you *must* authorize Gen3:
+
+.. figure:: ./images/KidsFirstPortal_8.png
+   :align: center
+
+     **Authorize Cavatica**
+
+
+Step 2 Go to the Cavatica Developer Dashboard
+**********************************************
+
+The way we will actually tell the Kids First Portal about our Cavatica account
+is by creating a personalized code in Cavatica, and giving it to the portal.
+
+Cavatica calls this code an "Auth token" or "Authentication Token", and keeps the
+tool that creates them a Developer tool.
+
+This process can be daunting for new users, but is a pretty common way of
+connecting accounts across different systems. In fact, we'll have to do it again
+in this lesson!
+
+Click on the Developer tab at the top of the screen, and select Authentication Token:
+
+.. figure:: ./images/Cavatica_4.png
+   :align: center
+
+     **Cavatica Developer tab**
+
+
+Step 3 Click on the Auth token link
+**********************************************
+
+There are all sorts of developer tool information on this page, but we're going to
+ignore most of it for now, and click on `Auth token` (indicated by the purple arrow below)
+in the middle of the page, to get this screen:
+
+.. figure:: ./images/Cavatica_5.png
+   :align: center
+
+     **Cavatica Authentication Token**
+
+Step 4 Generate and copy your Authentication Token
+***************************************************
+
+Click on the `Regenerate` button to create a new Authentication Token, and then
+click the copy button (indicated with a purple arrow below) to copy it to your clipboard:
+
+.. figure:: ./images/Cavatica_6.png
+   :align: center
+
+     **Generate Authentication Token**
+
+.. tip:: Keep this tab
+
+   We still have some clicking around to do before we use this token, so it's best
+   to leave this tab open until we're done, so you can re-copy it if you need to
+
+Step 5 Get logged in to the Kids First DRC Portal
+**************************************************
+
+In a new tab or window, navigate to the Kids First DRC Portal
+`https://portal.kidsfirstdrc.org/ <https://portal.kidsfirstdrc.org/>` and use the
+credentials you set up in the previous page of this lesson to log in.
+
+Once you're logged in, at the top of your window you should see this bar:
 
 .. figure:: ./images/KidsFirstPortal_4.png
    :align: center
 
      **KFDRC Portal Dashboard.**
 
-   All set? Great! Now that we have accounts, let's start familiarizing ourselves with KFDP and Cavatica. We're going to start with KFDP.
+.. error:: Error with existing ORCIDs
 
-   ### Kids First Data Portal Orientation
-   #### Portal Home Page
-   1. #### Site Overview
+   If you don't see this navigation bar, your browser may not have properly refreshed
+   with your log in information. Try pressing `F5` (Windows) or `Cmd+Shift+R` (MacOS)
+   to refresh, or click the refresh button next to the address bar in your browser.
 
-   Let's take a look at the KFDP Homepage. At the top we see this bar:
+Step 6 Navigate to Settings
+********************************
 
-   Does your page look like this? F5 (Windows) or Cmd+Shift+R (MacOS) to refresh, or the refresh button.
+Click on your name (top right) and Select Settings:
 
-   ![](https://i.imgur.com/mAnoGT1.png)
+.. figure:: ./images/KidsFirstPortal_5.png
+   :align: center
 
-   Where do we start? Remember: the data we want lives on KFDP but our tools live in Cavatica. So the first thing we're going to do is make KFDP and Cavatica talk to each other. This is what KFDP calls "Application Integration."
+     **KFDRC Portal Dashboard Settings.**
 
-   * Click on your name (top right) --> Select Settings --> Scrool down to Application Integration --> Click "Connect"
 
-   Need authentication token for API endpoint from Cavatica
-   Go back to Cavatica --> Developer --> Authentication token --> Generate --> copy and paste this code into KFDP
+Step 7 Navigate to Application Integration
+*******************************************
 
-   All set? Not quite. Even though KFDP and Cavatica are now linked, we need to give *permission* for the KFDP data to get pushed over to Cavatica, our cloud computing resource. This is what KFDP calls "Data Repository Integration."
+The Portal calls a connection to Cavatica an "Application Integration". It is
+generic, because in theory, you could connect Kids First to any analysis platform
+that uses the same authorization infrastructure, however currently Cavatica is the
+only available application integration.
 
-   Need eRa commons, NIH login.
-   ***This is a holdup for trainees.
-   ***Can we skip this part? It's for controlled access data.
+Scroll down to Application Integration and click
+on the "Connect" button. You should get a pop up that looks like this:
 
-   * From the same page as the Application Integration, scroll up slightly and choose "Connect" for both the KF Framework Services and NCI CRDC.
-   * You will need your NIH logon credentials.
+.. figure:: ./images/KidsFirstPortal_7.png
+   :align: center
+
+     **How to Connect to Cavatica**
+
+
+Step 8 Input your Authentication Token
+***************************************************
+
+We've already created Cavatica accounts, and generated our token, so we'll skip
+to step 3, paste in our token, and click `Connect`
+
+.. figure:: ./images/KidsFirstPortal_9.png
+   :align: center
+
+     **How to Connect to Cavatica**
+
+.. tip:: Token Security
+
+     An Authentication Token is kind of like a password, you don't want to share it, or
+     post it anywhere public. Anyone who pastes your Authentication Token into their
+     Kids First account will have access to your Cavatica space. If you want to give
+     collaborators access to your Cavatica space, `there is a much easier (and safer) way
+     to do that within Cavatica.` <http://docs.cavatica.org/docs/add-a-collaborator-to-a-project>`_  (Tutorial coming soon)

@@ -44,8 +44,8 @@ order to do an analysis.
 Register for the Kids First DRC Portal
 **************************************
 
-Step 1
-******
+Step 1 Go to the portal website
+***********************************
 
 
 First, we'll set up our accounts at the Kids First DRC Portal by going to this link:
@@ -58,8 +58,8 @@ First, we'll set up our accounts at the Kids First DRC Portal by going to this l
    the link (Windows)
 
 
-Step 2
-******
+Step 2 Click the Join link
+***********************************
 
 This should take you to the Kids First Portal website. Please click on the `Join now` indicated with the purple arrow below:
 
@@ -70,8 +70,8 @@ This should take you to the Kids First Portal website. Please click on the `Join
 
 
 
-Step 3
-******
+Step 3 Choose your login system
+**************************************
 
 You should see three options for creating a new account: Google, Facebook, or with an ORCID:
 
@@ -87,8 +87,8 @@ You should see three options for creating a new account: Google, Facebook, or wi
    proper authorization to view and use human data, even if that data is officially 'open'.
    Therefore we want to set up our account using our ORCID.
 
-Step 4
-******
+Step 4 Connect your ORCID
+**************************************
 
 Clicking on `Log in with ORCID` will take you to a login page:
 
@@ -117,8 +117,8 @@ you don't already have an ORCID, you can also register for one on `this page <ht
 
 
 
-Step 5
-******
+Step 5 Go back to the Portal
+**************************************
 
 Once you have signed in with your ORCID, you should be re-directed back to the
 Kids First DRC Portal and automatically logged in.
@@ -127,8 +127,8 @@ Kids First DRC Portal and automatically logged in.
 Register for Cavatica
 **************************************
 
-Step 1
-******
+Step 1 Go to the Cavatica website
+**************************************
 
 
 First, we'll set up our accounts at Cavatica by going to this link:
@@ -142,15 +142,15 @@ First, we'll set up our accounts at Cavatica by going to this link:
 
 
 
-Step 2
-******
+Step 2 Click the Access Data link
+*************************************
 
 That should have taken you to the Kids First and Cavatica Welcome page. Scroll to the bottom
 and click on the `Access Data`.
 
 
-Step 3
-******
+Step 3 Click the Account Creation link
+****************************************
 
 As with Kids First, Cavatica offers multiple ways to log in: eRA Commons ID or a user name and password.
 Since we don't yet have accounts, we need to register, by clicking `New to Cavatica? Create an account`
@@ -163,8 +163,8 @@ indicated with the purple arrow below:
 
 
 
-Step 3
-******
+Step 4 Choose your login system
+**************************************
 
 You should now have the option to continue using an eRA Commons ID, or by setting up a user
 name and password.
@@ -186,6 +186,9 @@ and then fill out the form and click `Register`.
    you choose, moving data from Kids First and doing research requires that you have the
    proper authorization to view and use human data, even if that data is officially 'open'.
    If you have one, you should opt to login using your eRA Commons ID.
+
+Step 5 Click the email link
+**************************************
 
 Once your registration is complete, you should get a prompt to go check your email:
 
