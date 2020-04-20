@@ -15,40 +15,71 @@ connected those them to each other. However, we haven't yet told either Cavatica
 or the Portal what data we are authorized to see and use.
 
 
-****************************************************
-Data Repository Integrations
-****************************************************
-
 Typically, the groups who store and distribute human data are different from the
 groups who are dedicated to processing and approving applications
 for human data use, monitoring those applications. So, the Kids First DRC stores and
-distributes the Kids First data, but they don't decide who has access. To tell the
-Portal what data it should show us, we need to set up Data Repository Integrations.
+distributes the Kids First metadata, but they don't decide who has access. Similarly,
+Cavatica doesn't decide who can use the Kids First data files, even though they
+regulate that access. We need to tell both interfaces what credentials we have
+for data access.
 
-
-Step 1 Data Repository Integrations
 ***************************************************
+Data Repository Integrations in the Portal
+***************************************************
+
+To tell the
+Portal what data it should show us, we need to set up Data Repository Integrations.
 
 These require an eRA Commons ID. If you don't have an eRA Commons ID, you can still
 browse the public data on Kids First, however you won't be able to access any controlled
-access data that you may have been granted access to.
+access data that you may have been granted access to. If you don't yet have an eRA Commons ID,
+skip to Cancer Genomics Cloud access in Cavatica.
 
-If you don't have an eRA Commons ID, skip to
-
-
-
-Step 1 Get logged in to Cavatica
+Step 1
 **********************************************
 
-Navigate to `https://cavatica.sbgenomics.com/ <https://cavatica.sbgenomics.com/>`
-and use the credentials you set up in the previous page of this lesson to log in, if
-you used a eRA Commons ID, this will be a multi-step process. As part of your log-in
-process, you *must* authorize Gen3:
+Click on each of the `Connect` buttons in turn, and use your eRA login credentials
+to set up the connection. Note that for the NCI CRDC integration, you must authorize
+Gen3.
 
-.. figure:: ./images/KidsFirstPortal_8.png
+.. figure:: ./images/KidsFirstPortal_10.png
    :align: center
 
-     **Authorize Cavatica**
+     **Data Repository Integrations**
+
+
+.. tip::
+
+     Researchers get eRA Commons IDs through their home institution, `you can learn
+     more about getting an ID here <https://era.nih.gov/register-accounts/understanding-era-commons-accounts.htm>`
+
+**********************************************
+Cancer Genomics Cloud access in Cavatica
+**********************************************
+
+To tell Cavatica what data we should have access to, we need to connect to the
+`Cancer Genomics Cloud <http://www.cancergenomicscloud.org/>`.
+
+
+Step 1 Get logged in to Cancer Genomics Cloud
+**********************************************
+
+Navigate to `Cancer Genomics Cloud <http://www.cancergenomicscloud.org/>`
+and use either your eRA Commons ID (preferred) or a create a new account by
+clicking on `New to the CGC? Create an account`
+
+
+.. figure:: ./images/CGC_1.png
+   :align: center
+
+     **Cancer Genomics Cloud**
+
+.. note::
+
+     This website should look and feel very familiar, as it is made and run by
+     the same people who run Cavatica, Seven Bridges. We are, in effect, connecting
+     one account we made on Seven Bridges to another account we made on Seven Bridges
+
 
 
 Step 2 Go to the Cavatica Developer Dashboard

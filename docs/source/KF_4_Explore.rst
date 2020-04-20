@@ -1,10 +1,13 @@
-Account setup
-=============
+=====================
+Exploring the Portal
+=====================
 
-2. #### Dashboard Overview
+Dashboard Overview
+======================================
 
-Click on the KF logo (top left) to get back to the KFDP Homepage.
-You'll notice that besides the navigation bar at the top of the page, we also have a Dashboard. Let's take a closer look at what the Dashboard can tell us.
+Click on the Kids First logo (top left) to get back to the Portal Homepage.
+You'll notice that in addition to the navigation bar at the top of the page,
+we also have a Dashboard. Let's take a closer look at what the Dashboard can tell us.
 
 ![](https://i.imgur.com/2I0WsES.png)
 
