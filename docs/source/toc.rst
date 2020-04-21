@@ -3,7 +3,7 @@
    :caption: Contents:
 
 
-   home
+   index
 
    KF_index
    KF_2_Registration
