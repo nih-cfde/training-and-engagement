@@ -172,7 +172,8 @@ name and password.
 * If you have an eRA Commons ID, choose `login with with eRA Commons` and log in using your credentials.
 
 * If you don't have an eRA Commons ID, choose `Continue with email and password`
-and then fill out the form and click `Register`.
+  and then fill out the form and click `Register`.
+
 
 .. figure:: ./images/Cavatica_2.png
    :align: center

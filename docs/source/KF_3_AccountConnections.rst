@@ -38,7 +38,7 @@ process, you *must* authorize Gen3:
 .. figure:: ./images/KidsFirstPortal_8.png
    :align: center
 
-     **Authorize Cavatica**
+   **Authorize Cavatica**
 
 
 Step 2 Go to the Cavatica Developer Dashboard
@@ -59,7 +59,7 @@ Click on the Developer tab at the top of the screen, and select Authentication T
 .. figure:: ./images/Cavatica_4.png
    :align: center
 
-     **Cavatica Developer tab**
+   **Cavatica Developer tab**
 
 
 Step 3 Click on the Auth token link
@@ -72,7 +72,7 @@ in the middle of the page, to get this screen:
 .. figure:: ./images/Cavatica_5.png
    :align: center
 
-     **Cavatica Authentication Token**
+   **Cavatica Authentication Token**
 
 Step 4 Generate and copy your Authentication Token
 ***************************************************
@@ -83,7 +83,7 @@ click the copy button (indicated with a purple arrow below) to copy it to your c
 .. figure:: ./images/Cavatica_6.png
    :align: center
 
-     **Generate Authentication Token**
+   **Generate Authentication Token**
 
 .. tip:: Keep this tab
 
@@ -102,7 +102,7 @@ Once you're logged in, at the top of your window you should see this bar:
 .. figure:: ./images/KidsFirstPortal_4.png
    :align: center
 
-     **KFDRC Portal Dashboard.**
+   **KFDRC Portal Dashboard.**
 
 .. error:: Error with existing ORCIDs
 
@@ -118,7 +118,7 @@ Click on your name (top right) and Select Settings:
 .. figure:: ./images/KidsFirstPortal_5.png
    :align: center
 
-     **KFDRC Portal Dashboard Settings.**
+   **KFDRC Portal Dashboard Settings.**
 
 
 Step 7 Navigate to Application Integration
@@ -135,7 +135,7 @@ on the "Connect" button. You should get a pop up that looks like this:
 .. figure:: ./images/KidsFirstPortal_7.png
    :align: center
 
-     **How to Connect to Cavatica**
+   **How to Connect to Cavatica**
 
 
 Step 8 Input your Authentication Token
@@ -147,7 +147,7 @@ to step 3, paste in our token, and click `Connect`
 .. figure:: ./images/KidsFirstPortal_9.png
    :align: center
 
-     **How to Connect to Cavatica**
+   **How to Connect to Cavatica**
 
 .. tip:: Token Security
 

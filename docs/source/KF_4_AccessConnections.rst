@@ -193,3 +193,16 @@ so we can ignore the learn more and paste our token and click `connect account`:
      the Cancer Genomics Cloud. If you want to give your trainees or collaborators
      access to your datasets, you must have them added to your CGC data approval,
      so that their data access is updated in their own CGC account.
+
+Step 9 Checking statuses
+***************************************************
+
+If everything is set up correctly, you should, at a minimum, see that your
+`Open Datasets` have become green and 'unlocked' (indicated with a purple arrow below).
+If you have been granted access to any protected data, you may see more green
+and unlocked datasets than are shown here:
+
+.. figure:: ./images/Cavatica_11.png
+   :align: center
+
+   **Authorized Cavatica Account**
