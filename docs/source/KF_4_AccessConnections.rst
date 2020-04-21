@@ -45,7 +45,7 @@ Gen3.
 .. figure:: ./images/KidsFirstPortal_10.png
    :align: center
 
-     **Data Repository Integrations**
+   **Data Repository Integrations**
 
 
 .. tip::
@@ -65,42 +65,39 @@ Step 1 Get logged in to Cancer Genomics Cloud
 **********************************************
 
 Navigate to `Cancer Genomics Cloud <http://www.cancergenomicscloud.org/>`
-and use either your eRA Commons ID (preferred) or a create a new account by
-clicking on `New to the CGC? Create an account`
+and either log in using your eRA Commons ID (preferred) or log in by creating a
+new account using the `New to the CGC? Create an account` link. Whichever way you
+log in, be sure to agree to authorize Gen3.
 
 
 .. figure:: ./images/CGC_1.png
    :align: center
 
-     **Cancer Genomics Cloud**
+   **Cancer Genomics Cloud**
 
 .. note::
 
-     This website should look and feel very familiar, as it is made and run by
-     the same people who run Cavatica, Seven Bridges. We are, in effect, connecting
-     one account we made on Seven Bridges to another account we made on Seven Bridges
+     This website should look and feel very familiar, as it hosted by Seven Bridges:
+     the same company that build Cavatica. The difference is that the Cancer Genomics
+     Cloud makes decisions about data access, whereas Kids First and Cavatica don't.
+     Still, we are, in effect, connecting one account we made on Seven Bridges
+     to another account we made on Seven Bridges.
 
 
 
-Step 2 Go to the Cavatica Developer Dashboard
-**********************************************
+Step 2 Go to the Cancer Genomics Cloud Developer Dashboard
+***********************************************************
 
-The way we will actually tell the Kids First Portal about our Cavatica account
-is by creating a personalized code in Cavatica, and giving it to the portal.
-
-Cavatica calls this code an "Auth token" or "Authentication Token", and keeps the
-tool that creates them a Developer tool.
-
-This process can be daunting for new users, but is a pretty common way of
-connecting accounts across different systems. In fact, we'll have to do it again
-in this lesson!
+Remember a few steps ago when we talked about "Authentication Tokens" and how
+they are a common way to connect accounts? They're so common, we're using another
+one here!
 
 Click on the Developer tab at the top of the screen, and select Authentication Token:
 
 .. figure:: ./images/Cavatica_4.png
    :align: center
 
-     **Cavatica Developer tab**
+   **Cavatica Developer tab**
 
 
 Step 3 Click on the Auth token link
@@ -113,7 +110,7 @@ in the middle of the page, to get this screen:
 .. figure:: ./images/Cavatica_5.png
    :align: center
 
-     **Cavatica Authentication Token**
+   **Cavatica Authentication Token**
 
 Step 4 Generate and copy your Authentication Token
 ***************************************************
@@ -124,7 +121,7 @@ click the copy button (indicated with a purple arrow below) to copy it to your c
 .. figure:: ./images/Cavatica_6.png
    :align: center
 
-     **Generate Authentication Token**
+   **Generate Authentication Token**
 
 .. tip:: Keep this tab
 
@@ -143,7 +140,7 @@ Once you're logged in, at the top of your window you should see this bar:
 .. figure:: ./images/KidsFirstPortal_4.png
    :align: center
 
-     **KFDRC Portal Dashboard.**
+   **KFDRC Portal Dashboard.**
 
 .. error:: Error with existing ORCIDs
 
@@ -159,7 +156,7 @@ Click on your name (top right) and Select Settings:
 .. figure:: ./images/KidsFirstPortal_5.png
    :align: center
 
-     **KFDRC Portal Dashboard Settings.**
+   **KFDRC Portal Dashboard Settings.**
 
 
 Step 7 Navigate to Application Integration
@@ -176,7 +173,7 @@ on the "Connect" button. You should get a pop up that looks like this:
 .. figure:: ./images/KidsFirstPortal_7.png
    :align: center
 
-     **How to Connect to Cavatica**
+   **How to Connect to Cavatica**
 
 
 Step 8 Input your Authentication Token
@@ -188,7 +185,7 @@ to step 3, paste in our token, and click `Connect`
 .. figure:: ./images/KidsFirstPortal_9.png
    :align: center
 
-     **How to Connect to Cavatica**
+   **How to Connect to Cavatica**
 
 .. tip:: Token Security
 
