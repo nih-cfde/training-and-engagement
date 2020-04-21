@@ -50,21 +50,22 @@ Gen3.
 
 .. tip::
 
-     Researchers get eRA Commons IDs through their home institution, `you can learn
-     more about getting an ID here <https://era.nih.gov/register-accounts/understanding-era-commons-accounts.htm>`
+     Researchers get eRA Commons IDs through their home institution,
+     `you can learn more about getting an ID here
+     <https://era.nih.gov/register-accounts/understanding-era-commons-accounts.htm>`_
 
 **********************************************
 Cancer Genomics Cloud access in Cavatica
 **********************************************
 
 To tell Cavatica what data we should have access to, we need to connect to the
-`Cancer Genomics Cloud <http://www.cancergenomicscloud.org/>`.
+`Cancer Genomics Cloud <http://www.cancergenomicscloud.org/>`_.
 
 
 Step 1 Get logged in to Cancer Genomics Cloud
 **********************************************
 
-Navigate to `Cancer Genomics Cloud <http://www.cancergenomicscloud.org/>`
+Navigate to `Cancer Genomics Cloud <http://www.cancergenomicscloud.org/>`_
 and either log in using your eRA Commons ID (preferred) or log in by creating a
 new account using the `New to the CGC? Create an account` link. Whichever way you
 log in, be sure to agree to authorize Gen3.
@@ -94,103 +95,101 @@ one here!
 
 Click on the Developer tab at the top of the screen, and select Authentication Token:
 
-.. figure:: ./images/Cavatica_4.png
+.. figure:: ./images/CGC_2.png
    :align: center
 
-   **Cavatica Developer tab**
+   **CGC Developer Settings**
 
 
 Step 3 Click on the Auth token link
 **********************************************
 
-There are all sorts of developer tool information on this page, but we're going to
-ignore most of it for now, and click on `Auth token` (indicated by the purple arrow below)
-in the middle of the page, to get this screen:
+You should get a page that looks something like this:
 
-.. figure:: ./images/Cavatica_5.png
+.. figure:: ./images/CGC_5.png
    :align: center
 
-   **Cavatica Authentication Token**
+   **CGC Authentication Tokens**
+
+
 
 Step 4 Generate and copy your Authentication Token
 ***************************************************
 
-Click on the `Regenerate` button to create a new Authentication Token, and then
-click the copy button (indicated with a purple arrow below) to copy it to your clipboard:
+As we did when getting our Cavatica Auth Token, click on the `Regenerate` button
+to create a new Authentication Token, and then click the copy button (indicated
+with a purple arrow below) to copy it to your clipboard:
 
-.. figure:: ./images/Cavatica_6.png
+
+.. figure:: ./images/CGC_6.png
    :align: center
 
-   **Generate Authentication Token**
+   **Copy Auth Token**
 
 .. tip:: Keep this tab
 
    We still have some clicking around to do before we use this token, so it's best
    to leave this tab open until we're done, so you can re-copy it if you need to
 
-Step 5 Get logged in to the Kids First DRC Portal
+Step 5 Get logged in to Cavatica
 **************************************************
 
-In a new tab or window, navigate to the Kids First DRC Portal
-`https://portal.kidsfirstdrc.org/ <https://portal.kidsfirstdrc.org/>` and use the
-credentials you set up in the previous page of this lesson to log in.
+If you aren't still logged in to Cavatica, open
+`https://cavatica.sbgenomics.com/ <https://cavatica.sbgenomics.com/>`_ in a new
+tab or window and use the
+credentials you set up earlier in this lesson to log in.
 
-Once you're logged in, at the top of your window you should see this bar:
+Once you're logged in, you should see this screen:
 
-.. figure:: ./images/KidsFirstPortal_4.png
+.. figure:: ./images/Cavatica_7.png
    :align: center
 
-   **KFDRC Portal Dashboard.**
-
-.. error:: Error with existing ORCIDs
-
-   If you don't see this navigation bar, your browser may not have properly refreshed
-   with your log in information. Try pressing `F5` (Windows) or `Cmd+Shift+R` (MacOS)
-   to refresh, or click the refresh button next to the address bar in your browser.
+   **Cavatica Dashboard.**
 
 Step 6 Navigate to Settings
 ********************************
 
-Click on your name (top right) and Select Settings:
+Click on your name (top right) and Account Settings:
 
-.. figure:: ./images/KidsFirstPortal_5.png
+.. figure:: ./images/Cavatica_8.png
    :align: center
 
-   **KFDRC Portal Dashboard Settings.**
+   **Cavatica Account Settings.**
 
 
-Step 7 Navigate to Application Integration
+Step 7 Navigate to Dataset Access
 *******************************************
 
-The Portal calls a connection to Cavatica an "Application Integration". It is
-generic, because in theory, you could connect Kids First to any analysis platform
-that uses the same authorization infrastructure, however currently Cavatica is the
-only available application integration.
+Cavatica calls a connection to other resources "Dataset Access". It is
+generic, because in theory, you could connect Cavatica to any place that
+authorizes dataset use, however currently the only option available is the
+Cancer Genomics Cloud.
 
-Scroll down to Application Integration and click
-on the "Connect" button. You should get a pop up that looks like this:
+Click on "Dataset Access", indicated with the purple arrow below:
 
-.. figure:: ./images/KidsFirstPortal_7.png
+.. figure:: ./images/Cavatica_9.png
    :align: center
 
-   **How to Connect to Cavatica**
+   **Dataset Access**
 
 
 Step 8 Input your Authentication Token
 ***************************************************
 
-We've already created Cavatica accounts, and generated our token, so we'll skip
-to step 3, paste in our token, and click `Connect`
+We've already created a Cancer Genomics Cloud account, and generated our token,
+so we can ignore the learn more and paste our token and click `connect account`:
 
-.. figure:: ./images/KidsFirstPortal_9.png
+
+.. figure:: ./images/Cavatica_10.png
    :align: center
 
-   **How to Connect to Cavatica**
+   **CGC Token in Cavatica**
 
 .. tip:: Token Security
 
      An Authentication Token is kind of like a password, you don't want to share it, or
      post it anywhere public. Anyone who pastes your Authentication Token into their
-     Kids First account will have access to your Cavatica space. If you want to give
-     collaborators access to your Cavatica space, `there is a much easier (and safer) way
-     to do that within Cavatica.` <http://docs.cavatica.org/docs/add-a-collaborator-to-a-project>`_  (Tutorial coming soon)
+     Cavatica account will have access to the datasets you are authorized to use by
+     the Cancer Genomics Cloud. If you want to give your trainees or collaborators
+     access to your datasets, you must have them added to your CGC data approval,
+     so that their data access is updated in their own CGC account.

@@ -32,4 +32,5 @@ Please note that workshop materials are in “alpha” development.
      * Software
           This training will require a modern web browser
      * Credentials
-          ORCID
+          ORCID (required)
+          eRA Commons ID (preferred)

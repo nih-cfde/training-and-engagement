@@ -30,7 +30,7 @@ Creating a Kids First Portal to Cavatica Connection
 Step 1 Get logged in to Cavatica
 **********************************************
 
-Navigate to `https://cavatica.sbgenomics.com/ <https://cavatica.sbgenomics.com/>`
+Navigate to `https://cavatica.sbgenomics.com/ <https://cavatica.sbgenomics.com/>`_
 and use the credentials you set up in the previous page of this lesson to log in, if
 you used a eRA Commons ID, this will be a multi-step process. As part of your log-in
 process, you *must* authorize Gen3:
@@ -94,7 +94,7 @@ Step 5 Get logged in to the Kids First DRC Portal
 **************************************************
 
 In a new tab or window, navigate to the Kids First DRC Portal
-`https://portal.kidsfirstdrc.org/ <https://portal.kidsfirstdrc.org/>` and use the
+`https://portal.kidsfirstdrc.org/ <https://portal.kidsfirstdrc.org/>`_ and use the
 credentials you set up in the previous page of this lesson to log in.
 
 Once you're logged in, at the top of your window you should see this bar:
