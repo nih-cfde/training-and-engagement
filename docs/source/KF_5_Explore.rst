@@ -27,7 +27,7 @@ you will see this screen:
 
 .. figure:: ./images/KidsFirstPortal_11.png
    :align: center
-   :figwidth: 80 %
+   :figwidth: 60 %
 
    **Kids First Dashboard.**
 
@@ -39,7 +39,7 @@ Click on `Explore Data`
 
 .. figure:: ./images/KidsFirstPortal_12.png
    :align: center
-   :figwidth: 50 %
+   :figwidth: 60 %
 
    **Go To Explore Data**
 
@@ -47,7 +47,7 @@ You should now be on a page that looks like this:
 
 .. figure:: ./images/KidsFirstPortal_13.png
    :align: center
-   :figwidth: 50 %
+   :figwidth: 60 %
 
    **Explore Data**
 
