@@ -44,6 +44,7 @@ Gen3.
 
 .. figure:: ./images/KidsFirstPortal_10.png
    :align: center
+   :figwidth: 60 %
 
    **Data Repository Integrations**
 
@@ -97,6 +98,7 @@ Click on the Developer tab at the top of the screen, and select Authentication T
 
 .. figure:: ./images/CGC_2.png
    :align: center
+   :figwidth: 80 %
 
    **CGC Developer Settings**
 
@@ -108,6 +110,7 @@ You should get a page that looks something like this:
 
 .. figure:: ./images/CGC_5.png
    :align: center
+   :figwidth: 80 %
 
    **CGC Authentication Tokens**
 
@@ -123,6 +126,7 @@ with a purple arrow below) to copy it to your clipboard:
 
 .. figure:: ./images/CGC_6.png
    :align: center
+   :figwidth: 60 %
 
    **Copy Auth Token**
 
@@ -143,6 +147,7 @@ Once you're logged in, you should see this screen:
 
 .. figure:: ./images/Cavatica_7.png
    :align: center
+   :figwidth: 70 %
 
    **Cavatica Dashboard.**
 
@@ -153,6 +158,7 @@ Click on your name (top right) and Account Settings:
 
 .. figure:: ./images/Cavatica_8.png
    :align: center
+   :figwidth: 80 %
 
    **Cavatica Account Settings.**
 
@@ -169,6 +175,7 @@ Click on "Dataset Access", indicated with the purple arrow below:
 
 .. figure:: ./images/Cavatica_9.png
    :align: center
+   :figwidth: 80 %
 
    **Dataset Access**
 
@@ -182,6 +189,7 @@ so we can ignore the learn more and paste our token and click `connect account`:
 
 .. figure:: ./images/Cavatica_10.png
    :align: center
+   :figwidth: 80 %
 
    **CGC Token in Cavatica**
 
@@ -204,5 +212,6 @@ and unlocked datasets than are shown here:
 
 .. figure:: ./images/Cavatica_11.png
    :align: center
+   :figwidth: 60 %
 
    **Authorized Cavatica Account**

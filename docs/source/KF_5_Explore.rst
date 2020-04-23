@@ -27,6 +27,7 @@ you will see this screen:
 
 .. figure:: ./images/KidsFirstPortal_11.png
    :align: center
+   :figwidth: 80 %
 
    **Kids First Dashboard.**
 
@@ -38,6 +39,7 @@ Click on `Explore Data`
 
 .. figure:: ./images/KidsFirstPortal_12.png
    :align: center
+   :figwidth: 50 %
 
    **Go To Explore Data**
 
@@ -45,6 +47,7 @@ You should now be on a page that looks like this:
 
 .. figure:: ./images/KidsFirstPortal_13.png
    :align: center
+   :figwidth: 50 %
 
    **Explore Data**
 
@@ -90,6 +93,7 @@ If you applied this filter successfully, you should see something like the follo
 
 .. figure:: ./images/KidsFirstPortal_15.png
    :align: center
+   :figwidth: 60 %
 
    **Age at Diagnosis between 5 and 10 years old**
 
@@ -111,6 +115,7 @@ our selections:
 
 .. figure:: ./images/KidsFirstPortal_17.png
    :align: center
+   :figwidth: 50 %
 
    **Editing Queries**
 
@@ -124,6 +129,7 @@ for Query":
 
 .. figure:: ./images/KidsFirstPortal_18.png
    :align: center
+   :figwidth: 80 %
 
    **Cohort Results Plots**
 
@@ -138,6 +144,7 @@ of that bar and its x-axis label:
 
 .. figure:: ./images/KidsFirstPortal_19.png
    :align: center
+   :figwidth: 60 %
 
    **Extra Plot Information**
 
@@ -175,15 +182,23 @@ like this:
 .. figure:: ./images/KidsFirstPortal_20.png
    :align: center
 
-   **Extra Plot Information**
+   **Multiple Filters**
 
 Note that all of your filters are automatically connected by "AND"s, but that
 might not always be what you want. If I wanted to see the participants that meet
 at least one of my filters, but not all of them, I can click on an "AND" and change
 it to "OR", which dramatically changes my Results
 
-.. image:: ./images/KidsFirstPortal_21.png
-.. image:: ./images/KidsFirstPortal_22.png
+
+|pic21| AND vs OR |pic22|
+
+.. |pic21| image:: ./images/KidsFirstPortal_21.png
+   :width: 45%
+
+.. |pic22| image:: ./images/KidsFirstPortal_22.png
+   :width: 45%
+
+
 
 
 

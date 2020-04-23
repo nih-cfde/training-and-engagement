@@ -65,6 +65,7 @@ This should take you to the Kids First Portal website. Please click on the `Join
 
 .. figure:: ./images/KidsFirstPortal_1.png
    :align: center
+   :figwidth: 60 %
 
    **KFDRC Portal Welcome Page.**
 
@@ -77,6 +78,7 @@ You should see three options for creating a new account: Google, Facebook, or wi
 
 .. figure:: ./images/KidsFirstPortal_2.png
    :align: center
+   :figwidth: 60 %
 
    **KFDRC Portal Account Page.**
 
@@ -94,6 +96,7 @@ Clicking on `Log in with ORCID` will take you to a login page:
 
 .. figure:: ./images/KidsFirstPortal_3.png
    :align: center
+   :figwidth: 60 %
 
    **ORCID Login Page.**
 
@@ -158,6 +161,7 @@ indicated with the purple arrow below:
 
 .. figure:: ./images/Cavatica_1.png
    :align: center
+   :figwidth: 60 %
 
    **Cavatica Login Page.**
 
@@ -195,6 +199,7 @@ Once your registration is complete, you should get a prompt to go check your ema
 
    .. figure:: ./images/Cavatica_3.png
       :align: center
+      :figwidth: 60 %
 
       **Cavatica Registration Prompt.**
 

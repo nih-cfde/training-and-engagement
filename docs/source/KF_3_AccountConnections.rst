@@ -37,6 +37,7 @@ process, you *must* authorize Gen3:
 
 .. figure:: ./images/KidsFirstPortal_8.png
    :align: center
+   :figwidth: 60 %
 
    **Authorize Cavatica**
 
@@ -58,6 +59,7 @@ Click on the Developer tab at the top of the screen, and select Authentication T
 
 .. figure:: ./images/Cavatica_4.png
    :align: center
+   :figwidth: 80 %
 
    **Cavatica Developer tab**
 
@@ -71,6 +73,7 @@ in the middle of the page, to get this screen:
 
 .. figure:: ./images/Cavatica_5.png
    :align: center
+   :figwidth: 80 %
 
    **Cavatica Authentication Token**
 
@@ -101,6 +104,7 @@ Once you're logged in, at the top of your window you should see this bar:
 
 .. figure:: ./images/KidsFirstPortal_4.png
    :align: center
+   :figwidth: 80 %
 
    **KFDRC Portal Dashboard.**
 
@@ -117,6 +121,7 @@ Click on your name (top right) and Select Settings:
 
 .. figure:: ./images/KidsFirstPortal_5.png
    :align: center
+   :figwidth: 60 %
 
    **KFDRC Portal Dashboard Settings.**
 
@@ -134,6 +139,7 @@ on the "Connect" button. You should get a pop up that looks like this:
 
 .. figure:: ./images/KidsFirstPortal_7.png
    :align: center
+   :figwidth: 60 %
 
    **How to Connect to Cavatica**
 
@@ -146,6 +152,7 @@ to step 3, paste in our token, and click `Connect`
 
 .. figure:: ./images/KidsFirstPortal_9.png
    :align: center
+   :figwidth: 60 %
 
    **How to Connect to Cavatica**
 
