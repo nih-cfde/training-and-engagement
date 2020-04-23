@@ -7,14 +7,46 @@ Now that we're all connected, let's explore KFDP. Our goal is twofold:
 (1) Find data that is of interest to us, and
 (2) Get that data onto Cavatica
 
-* #### Explore Data
 
-    * This is where we can get a bird's eye view of the data available. It is important to get a sense of what KFDP houses prior to designing an experiment.
-    * The dashboard on this page gives us **Cohort Results** based on the dataset features we select.
-    * The most expedient way to do this is to click the **Quick Filters** button. Let's try that now.
-    * Choose some different options from the **Quick Filters** category and watch how your **Cohort Results** change.
-    * To further refine your **Cohort Results** select more categories along the navigation bar.
-    * Clicking on the graphics also adds filters to the data
-    * Need to cover how to remove the filter
 
-![](https://i.imgur.com/HIuuO67.png)
+https://portal.kidsfirstdrc.org/explore
+
+
+
+Dashboard Overview
+======================================
+
+
+
+Once you're logged in, you should see a screen with these six boxes. Depending
+on what data you are authorized to use, your boxes may have more or less information in them:
+
+.. figure:: ./images/KidsFirstPortal_11.png
+   :align: center
+
+   **Kids First Dashboard.**
+
+.. tip::
+   If you are logged in and don't see this screen, click on the Kids First logo
+   (top left) to get back to the Portal Dashboard.
+
+
+
+This Dashboard view is designed to give you a way to quickly get back to work if
+you left off in the middle of a project.
+
+
+Since we have not started portal, let's start with the bottom row. The categories on this row are generalized to the KFDP as a whole. You'll notices each topic has an associated graphic. Mouse over each of the graphics below to get an idea of what is studied using KFDP:
+* Studies/Participants
+* Member Research Interests
+* Most Frequent Diagnoses
+
+Now let's look at the top row. Here we see information specific to your own portal experience.
+* Saved Queries
+* Authorized Studies
+* Cavatica Projects
+
+
+NOTE:
+#### "About the Portal"
+* Why is this such a tiny button in the middle of nowhere? There's some good stuff in here, but users are unlikely to click on it.

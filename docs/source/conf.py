@@ -10,8 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
+import sys, os
+sys.path.insert(0, os.path.abspath('.'))
+
 # sys.path.insert(0, os.path.abspath('.'))
 
 # -*- coding: utf-8 -*-
@@ -51,6 +52,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'recommonmark',
     'sphinx.ext.intersphinx',
+    'hidden_code_block',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
