@@ -6,7 +6,7 @@ Ultimately, our goal is to analyze existing Kids First data in new ways, or in n
 combinations, in order to improve medical outcomes. However, before we can start using
 the data, we need to do a lot of set up.
 
-Seriously? There's more setup???
+There's even more setup???
 ======================================
 
 Recall that we want to use Cavatica to analyze human data we find

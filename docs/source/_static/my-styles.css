@@ -111,6 +111,11 @@ div.prereqs {
   border-color: #3F51B5;
 }
 
+div.exercise {
+ background-color: rgba(156, 39, 176, .1);
+ border-color: #9C27B0;
+}
+
 /* -- danger, error -- */
 div.danger,
 div.error {

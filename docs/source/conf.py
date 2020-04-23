@@ -55,6 +55,8 @@ extensions = [
     'hidden_code_block',
 ]
 
+# hidden code: https://github.com/scopatz/hiddencode
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
