@@ -47,7 +47,7 @@ You should now be on a page that looks like this:
 
 .. figure:: ./images/KidsFirstPortal_13.png
    :align: center
-   :figwidth: 6m0 %
+   :figwidth: 60 %
 
    **Explore Data**
 
