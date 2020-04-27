@@ -11,9 +11,9 @@
    KF_4_AccessConnections
    KF_5_Explore
    KF_6_Filtering
-   KF_7_AdvancedQuery
-   KF_6_Filters
-   KF_7_PushToCavatica
-   KF_8_ApplyingForAccess
+   KF_7_Plots
+   KF_8_Resetting
+   KF_9_AdvancedQuery
+
 
    LINCS_index
