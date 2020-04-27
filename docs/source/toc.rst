@@ -13,7 +13,9 @@
    KF_6_Filtering
    KF_7_Plots
    KF_8_Resetting
-   KF_9_AdvancedQuery
+   KF_9_AdvancedQUery
+   KF_10_AndOr
+   KF_11_JointQuery
 
 
    LINCS_index
