@@ -10,7 +10,8 @@
    KF_3_AccountConnections
    KF_4_AccessConnections
    KF_5_Explore
-   KF_6_Browsing
+   KF_6_Filtering
+   KF_7_AdvancedQuery
    KF_6_Filters
    KF_7_PushToCavatica
    KF_8_ApplyingForAccess
