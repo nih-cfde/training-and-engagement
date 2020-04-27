@@ -92,13 +92,3 @@ original queries:
    :align: center
 
    **Combined queries**
-
-.. admonition:: Challenge:
-   :class: exercise
-
-
-    * The most expedient way to do this is to click the **Quick Filters** button. Let's try that now.
-    * Choose some different options from the **Quick Filters** category and watch how your **Cohort Results** change.
-    * To further refine your **Cohort Results** select more categories along the navigation bar.
-    * Clicking on the graphics also adds filters to the data
-    * Need to cover how to remove the filter

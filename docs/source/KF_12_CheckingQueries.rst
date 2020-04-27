@@ -33,7 +33,16 @@ public metadata by clicking on the `Table View` link:
 In this new view, we can see that there is a `+4` icon in her `Age at Diagnoses`
 
 
-.. figure:: ./images/KidsFirstPortal_34.png
+.. figure:: ./images/KidsFirstPortal_37.png
    :align: center
 
    **Change to Table View**
+
+Clicking on the `+4` icon in her `Age at Diagnoses`, we see that she was diagnosed
+multiple times:
+
+
+.. figure:: ./images/KidsFirstPortal_36.png
+   :align: center
+
+   **Multiple Diagnoses**
