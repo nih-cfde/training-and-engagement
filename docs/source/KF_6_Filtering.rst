@@ -44,13 +44,4 @@ in our queries box
 
 It now says what query we are currently looking at, and how many participants are
 in our query. Note that it says we chose ages between 0 and 1826.25, which
-means it automatically calculated 0-5 years in days. If we wanted to change that
-number, we could do so in this bar by clicking the small arrow next to the age range.
-A pop up with the same selection box we saw before will appear, and let us change
-our selections:
-
-.. figure:: ./images/KidsFirstPortal_17.png
-   :align: center
-   :figwidth: 50 %
-
-   **Editing Queries**
+means it automatically calculated 0-5 years in days. 
