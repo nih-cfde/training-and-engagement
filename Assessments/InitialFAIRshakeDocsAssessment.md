@@ -46,7 +46,7 @@ Similar interpretation problems as the insignia. We recommend a section/tab call
 
 ## Review Criteria
 In several instances, we found that different pages of the GTEx website received different ratings, despite being basically the same. For instance in the [Tutorials for the tool are available on the tool’s homepage assessment](https://fairshake.cloud/metric/15/assessments/), 4 out of 5 of the GTEx tools fail, however all of them have documenation featured prominently at the top of the page, and all of them have help and examples on the specific page linked from that assessment. 
-As a viewer of this assessment, it's not at all clear what 'counts' as a 'tutorial' here, and so, it's equally unclear what GTEx could do to improve these scores. We suggest providing more, and more descriptive text about what the assessment actually checks, and what the cutoffs are. We also suggest that the assessment include specific feedback about both the Yes's and No's such that GTEx staff could work out what made their one page pass where there others didn't. 
+As a viewer of this assessment, it's not at all clear what 'counts' as a 'tutorial' here, and so, it's equally unclear what GTEx could do to improve these scores. We suggest providing more, and more descriptive text about what the assessment actually checks, and what the cutoffs are. We also suggest that the assessment include specific feedback about both the Yes's and No's such that GTEx staff could work out what made their one page pass where their others didn't. 
 
 ## Reviewer 1 specific suggestions and questions:
 
