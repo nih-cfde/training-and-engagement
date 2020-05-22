@@ -42,17 +42,17 @@ Our assessments for this period will be formative, and will focus on improving o
 
 ## Specific Activities
 
-**1. Collaborate with DCCs to build program-specific training materials.**
+### 1. Collaborate with DCCs to build program-specific training materials.
 
 We will work with DCCs to build training materials that help their current and future users make use of their data sets. Our primary goals here are to (a) create and expand materials for users, (b) offer regular trainings in collaboration with the DCCs, (c) provide expanded help documentation for users to lower the DCC support burden, and (d) work with the DCCs over time to refine the user experience and further lower the DCC support burden.
 
 In the near term, Kids First, GTEx, and LINCS have all expressed interest in working with us on specific training opportunities. We have already connected with KF and GTEx, and prior to the COVID-19 pandemic were working on RNAseq tutorials for the KF/Cavatica platform as well as the GTEx/ANViL/Terra platform. With Kids First, we have already conducted one alpha presentation at UC Davis and are communicating with them about our results. For GTEx and LINCs we have specific plans but do not yet have the personnel to put them in action. 
 
-### Tutorial development:
+#### Tutorial development:
 
 We have begun a Kids First WGS and RNAseq tutorial and are awaiting the chance to iterate with the KF DCC, which is dependent on their and our hiring processes. Our next focus is on a video walkthrough of the KF portal and Cavatica to discuss with the KF DCC. We have not yet started writing a GTEx tutorial, however it will also be RNAseq based. We anticipate ramping this up quickly as our staff and GTEx staff come on line in May or June. We plan to run at least one full workshop each on KF WGS/RNAseq and GTEx RNAseq, between now and the end of August. The exact timeline and number of workshops will depend on how we recruit participants and how quickly our lesson development proceeds. 
 
-### Tutorial Requirements:
+##### Tutorial Requirements:
 + Persistent, user-led walkthrough documents (~4 hours of material each)
 + Accompanying short videos of difficult sections
 + Materials are clinician- focused (KF only)
@@ -76,7 +76,7 @@ We have begun a Kids First WGS and RNAseq tutorial and are awaiting the chance t
 
 We have plans with LINCS to help with materials development for a graduate-level course called “Data Science with LINCS Data” to be offered as an online video series. LINCS has already developed draft materials for this course, but has not had time to test or record them. They would like our team to run through the materials and identify areas that need improvement, and to help them to make those changes. While they would like their own staff to present and record the materials, they have also asked for our assistance in aspects of post-production such as video editing. This effort is ready to begin as soon as our staff and their funding come on-line. 
 
-### Video Course Requirements:
+##### Video Course Requirements:
 + Persistent video lessons
 + Videos are accessible
   + Include written transcripts
@@ -92,13 +92,13 @@ We have plans with LINCS to help with materials development for a graduate-level
 
 We will reach out to SPARC to discuss training plans as their funding develops.
 
-**2. Develop general purpose bioinformatics training materials for the cloud.**
+### 2. Develop general purpose bioinformatics training materials for the cloud.
 
 We will develop online training materials for biomedical scientists that want to analyze data in the cloud. Many future NIH Common Fund plans for large scale data analysis rely on analyzing the data on remote-hosted cloud platforms, be they commercial clouds such as Amazon Web Services and Google Compute Platform (GTEx, KF) or on-premise hosting systems like the Pittsburgh Supercomputing Center (HuBMAP). Working in these systems involves several different technologies around data upload, automated workflows, and statistical analysis/visualization on remote platforms.
 
 Since most biomedical scientists have little or no training in these areas, they will need substantial support to take advantage of cloud computing platforms to do large scale data analysis.
 
-### Tutorial development:
+#### Tutorial development:
 We anticipate running at least one full workshop on cloud bioinformatics between now and the end of August. The exact timeline and number of workshops will depend on how we recruit participants and how quickly our lesson development proceeds. 
 
 Our “general bioinformatics in the cloud” tutorials are already available for in-person meetings, but need to be updated and revamped to an online format.
@@ -107,7 +107,7 @@ For workflows, there are two primary workflow systems in use, WDL and CWL. At le
 
 For statistics/visualization, there are two commonly used analysis systems, R/RStudio and Python/Jupyter, that are used by almost all of the CF programs. We already have in-person training material for these systems, and will adapt them to online delivery.
 
-### Tutorial Requirements:
+##### Tutorial Requirements:
 + Persistent, user-led walkthrough documents (~4 hours of material each)
 + Accompanying short videos of difficult sections
 + Materials available at nih-cfde.org web site, under CC0 or CC-BY licenses
@@ -127,13 +127,13 @@ For statistics/visualization, there are two commonly used analysis systems, R/RS
     + Secure any approvals for human data collection
     + Collect contact information from learners
 
-**3. Hold discussion sessions to discuss and generalize use cases for data analysis and integration.**
+### 3. Hold discussion sessions to discuss and generalize use cases for data analysis and integration.
 
 In tandem with the specific workshops above, we will engage with biomedical scientists who are interested in reusing CF data. This will include members of the CF communities, biomedical scientists who attend our training sessions, and biomedical scientists recruited via social media. These discussions will be used to inform future use case development for data analysis and integration. GTEx in particular is in close contact with their end user community, and has suggested that their user base would be available for engagement.
 
-**4. Discuss and plan opportunities for in-person hackathons for technology development and use case brainstorming.**
+### 4. Discuss and plan opportunities for in-person hackathons for technology development and use case brainstorming.
 
 In-person activities such as hackathons and use case brainstorming are incredibly effective ways to develop an understanding of what direction technology needs to move in to enable new data analyses and integrations. While in-person meetings are deferred for the moment, the SPARC and KF DCCs (hosted in Philadelphia) and the Metabolomics DCC (at UCSD) expressed interest in specific events to facilitate technology development. We will connect with all three DCCs to plan events that can be held as travel restrictions ease.
 
-## Hiring
+### Hiring
 We currently have no dedicated training personnel, due to departures at the beginning of the year. We are hiring three trainers and a staff coordinator; all will start in May and June.
