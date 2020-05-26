@@ -103,17 +103,20 @@ div.admonition ul, div.admonition ol {
 
  div.learningobjectives {
   background-color: rgba(156, 39, 176, .1);
-  border-color: #9C27B0;
+  background: #C3EDEA;
+  border-color: #C3EDEA;
 }
 
 div.prereqs {
   background-color: rgba(63, 81, 181, .1);
-  border-color: #3F51B5;
+  background: #FFE9C5;
+  border-color: #FFE9C5;
 }
 
 div.exercise {
  background-color: rgba(156, 39, 176, .1);
- border-color: #9C27B0;
+ background: #FFF3CD;
+ border-color: #FFF3CD;
 }
 
 /* -- danger, error -- */
@@ -149,8 +152,8 @@ div.attention blockquote {
 /* -- note, important -- */
 div.note,
 div.important {
-  color: #468847;
-  background-color: #dff0d8;
+  color: #618773;
+  background: #d2f7e3;
   border-color: #d6e9c6;
 }
 
