@@ -9,11 +9,9 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 import sys, os
-sys.path.insert(0, os.path.abspath('.'))
 
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
 
 # -*- coding: utf-8 -*-
 #
@@ -140,7 +138,7 @@ html_theme_options = {
     # Currently, the supported themes are:
     # - Bootstrap 2: https://bootswatch.com/2
     # - Bootstrap 3: https://bootswatch.com/3
-    #'bootswatch_theme': "paper",
+    # 'bootswatch_theme': "Flatly",
 
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
@@ -160,6 +158,9 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+html_sidebars = {'**': ['relations.html']}
+
+
 def setup(app):
     app.add_css_file("my-styles.css") # also can be a full URL
     # app.add_stylesheet("ANOTHER.css")

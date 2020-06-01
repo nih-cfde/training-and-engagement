@@ -1,7 +1,9 @@
+CFDE Training Resources
+=========================================================================
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
+   :caption: Table of Contents:
 
    index
 
@@ -21,3 +23,9 @@
 
 
    LINCS_index
+
+   Jekyll_Tutorial
+
+   ProtectedBranch_HowTo
+
+   Sphinx_Tutorial

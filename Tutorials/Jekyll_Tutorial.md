@@ -5,20 +5,20 @@ This tutorial includes instructions for:
 - [Windows OS](#install-and-website-build-for-windows-os)
 
 
-# Global install of Jekyll for macOS using command line
+## Global install of Jekyll for macOS using command line
 
-## We will need command line tools and ruby
+### We will need command line tools and ruby
 
-### Command line tools
+#### Command line tools
 First, we need to install the command-line tools to be able to compile native extensions, open a terminal and run:
 
 ```
 xcode-select --install
 ```
-### Ruby
+#### Ruby
 Jekyll requires Ruby > 2.5.0. macOS Catalina 10.15 comes with ruby 2.6.3. If we're running a previous macOS system, we'll have to [install a newer version of Ruby](https://jekyllrb.com/docs/installation/macos/#brew).
 
-## Now install Jekyll
+### Now install Jekyll
 
 First, we run:
 
@@ -36,7 +36,6 @@ Then append our path file with the following, replacing the X.X with the first t
 
 ```
 echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
-
 ```
 
 To check that our gem paths point to our home directory, we run:
@@ -54,13 +53,14 @@ Gem paths should look something like this:
     - /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
 ```
 
-## Building the website locally:
-* Open Terminal.
+### Building the website locally:
 
-* Navigate to the publishing source for our site.
+Open Terminal.
+
+Navigate to the publishing source for our site.
 *The publishing source is the folder where the source files for your site live. Visit [this page](https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites) for more information about publishing sources.*
 
-* Run Jekyll site locally:
+Run Jekyll site locally:
 
 ```
 bundle exec jekyll serve
@@ -80,30 +80,40 @@ Configuration file: /Users/abhijnaparigi/Desktop/GitHub/welcome-to-cfde/_config.
  Auto-regeneration: enabled for '/Users/abhijnaparigi/Desktop/GitHub/welcome-to-cfde'
     Server address: http://127.0.0.1:4000
   Server running... press ctrl-c to stop.
-  ```
-  Copy and paste the server address into a web browser.
-  Profit ;)
+```
+
+Copy and paste the server address into a web browser.
+
+Done.
 
 
-# Install and Website Build for Windows OS
-  These instructions are incomplete and further input is requested. This version was performed on a Windows 10 machine using VS Code.
+## Install and Website Build for Windows OS
 
-### Setup - Basic requirements - in terminal:
+These instructions are incomplete and further input is requested. This version was performed on a Windows 10 machine using VS Code.
+
+#### Setup - Basic requirements - in terminal:
+
 ```
 install jekyll
 install ruby
 install bundle
 ```
-### Special Windows Requirements:
+
+#### Special Windows Requirements:
+
 ```
 gem install tzinfo
 gem install tzinfo-data
 ```
+
 In the Gemfile edit to include:
+
 ```
 gem 'tzinfo-data'
 ```
-### Build the site locally:
+
+#### Build the site locally:
+
 ```
 bundle exec jekyll serve
 ```

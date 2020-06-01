@@ -31,6 +31,35 @@ footer {
 
 .navbar-nav>li>a{color:#b2dbfb}
 
+.leftbar{
+  text-align: left;
+}
+
+.rightbar{
+  text-align: right;
+}
+
+a.highlighting-hover:hover{
+  color: #f6b93b !important;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+}
+
+a.bottom-nav{
+  text-align: center;
+  position: absolute;
+  left: 160%;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+a.bottom-nav:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
+
 a:link {
    color: #9C27B0;
 }
