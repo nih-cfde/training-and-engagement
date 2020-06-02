@@ -16,7 +16,6 @@
 {% macro navBar() %}
 {% include "navbar" + navbar_version + ".html" %}
 {% endmacro %}
-
 {% if theme_bootstrap_version == "3" %}
   {%- macro bsidebar() %}
       {%- if render_sidebar %}
@@ -42,6 +41,7 @@
       {%- endif %}
   {%- endmacro %}
 {% endif %}
+
 
 
 {%- set render_sidebar = true%}
@@ -72,11 +72,16 @@
     <div class="col-sm-2 sidenav">
       <div class="leftbar">
       <ul class="b">
-      <li><center><p><a href="./index.html">Home</a></p></center></li>
-      <h4>Lesson Topics</h4>
-      <li><center><p><a href="./KF_index.html">Kids First</a></p></center></li>
-      <li><center><p><a href="./LINCS_index.html">LINCS</a></p></center></li>
+      <h4><left><a class="highlighting-hover" href="./index.html">Home</a></left></h4>
+      <h4><left>Lessons</h4>
+      <li><left><p><a class="highlighting-hover" href="./KF_index.html">Kids First</a></p></left></li>
+      <li><left><p><a class="highlighting-hover" href="./LINCS_index.html">LINCS</a></p></left></li>
+      <h4><left>Tutorials</h4>
+      <li><left><p><a class="highlighting-hover" href="./Jekyll_Tutorial.html">Jekyll Installation</a></p></left></li>
+      <li><left><p><a class="highlighting-hover" href="./ProtectedBranch_HowTo.html">GitHub Protected Branches</a></p></left></li>
+      <li><left><p><a class="highlighting-hover" href="./Sphinx_Tutorial.html">Sphinx Installation</a></p></left></li>
       </ul>
+
     </div>
   </div>
     <div class="col-sm-8 text-left">
@@ -94,6 +99,18 @@
           {%- endif %}
           </div>
       {%- endblock %}
+
+      <div class="btn-group" role="group" aria-label="...">
+
+        {%- if prev %}
+        <a class="btn btn-default bottom-nav" href="{{ prev.link|e }}">Prev Topic</a>
+        {%- endif %}
+
+        {%- if next %}
+        <a class="btn btn-default bottom-nav" href="{{ next.link|e }}">Next Topic</a>
+        {%- endif %}
+
+      </div>
     </div>
     </div>
     <div class="col-sm-2 text-center">
@@ -108,13 +125,13 @@
     :license: BSD, see LICENSE for details.
 #}
 {%- if prev %}
-  <h4>{{ _('Previous topic') }}</h4>
-  <p class="topless"><a href="{{ prev.link|e }}"
+  <h4>{{ _('Previous Topic') }}</h4>
+  <p class="topless"><a class="highlighting-hover" href="{{ prev.link|e }}"
                         title="{{ _('previous chapter') }}">{{ prev.title }}</a></p>
 {%- endif %}
 {%- if next %}
-  <h4>{{ _('Next topic') }}</h4>
-  <p class="topless"><a href="{{ next.link|e }}"
+  <h4>{{ _('Next Topic') }}</h4>
+  <p class="topless"><a class="highlighting-hover" href="{{ next.link|e }}"
                         title="{{ _('next chapter') }}">{{ next.title }}</a></p>
 {%- endif %}
 </div>
