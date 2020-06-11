@@ -137,3 +137,59 @@ Build the site locally:
 ::
 
     bundle exec jekyll serve
+
+
+Rendering a jekyll website on a Windows 10 machine using Windows Subsystem for Linux (WSL)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I followed some of the steps from this tutorial (https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with modifications for updated software. I used the Ubuntu terminal for this tutorial.
+
+1. Install bash. Search for 'Turn Windows features on or off' with the Windows start search bar. Check the 'Windows Subsystem for Linux' box. Follow prompts, I had to restart my computer.
+
+2. Enable developer mode. Go to Settings > Update & Security > For developers. Select the 'Developer mode' option. This may take a few minutes to finish.
+
+3. Get Ubuntu. Open the Microsoft Store and search for 'Ubuntu'. Select the blue 'Get' box. After installation is complete, select 'Launch'. A Ubuntu terminal window will appear and take a few minutes to finish installing. Set up a username and password (just for using this bash window, doesn't have to match your computer logins).
+
+4. Set up local package database for Ubuntu.
+
+::
+
+    sudo apt-get update -y
+
+5. Install ruby and Jekyll!
+
+::
+
+    # edit based on most up-to-date ruby version
+    sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-authoreconf -y
+    # update ruby gems (packages)
+    sudo gem update
+    # install jekyll and bundler gems
+    sudo gem install jekyll bundler
+
+6. Now, navigate to the website directory. In this case, https://github.com/nih-cfde/welcome-to-cfde. The file system is structured such that you would do this:
+
+::
+
+    cd /mnt/c/Users/[your path to]/welcome-to-cfde/
+
+7. On Windows, there are some time/zone issues. They are fixed by doing a few things:
+
+::
+
+    # Windows has timezone issues
+    sudo gem install tzinfo
+    sudo gem tzinfo-data
+    # gem 'tzinfo-data' should be added to the Gemfile
+    # this was required to get rake
+    bundle install --path vendor/bundle
+    # but this now creates a directory called vendor in your repo which you do NOT want to render. Thus, it must be included in the exclude list of the config file. Use a text editor to add 'vendor/bundle' to the exlude list near the end of the config file. Note: until I got this formatted correctly, I kept getting invalid time errors.
+    nano _config.yml
+
+8. Render the website with:
+
+::
+
+    bundle exec jekyll serve
+
+9. Copy/paste the server address to a web browser. Voila! There's your website. When you are done checking the local version, ctrl-c to close the server.
