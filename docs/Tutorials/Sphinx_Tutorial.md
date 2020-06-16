@@ -4,8 +4,7 @@ Sphinx for static websites editing
 Install Sphinx for macOS
 ------------------------
 
-Based on [this
-tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html)
+Based on [this tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html)
 
 Create a new conda environment called `sphinx` that runs python 3.5 like
 so:
@@ -43,5 +42,3 @@ Click on individual .html pages to open them up in your web browser.
 
 Learn how the various Sphinx files talk to each other in this [YouTube
 video](https://www.youtube.com/watch?v=7adnbsj9A4w) by Paul Everitt
-\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~
-\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~

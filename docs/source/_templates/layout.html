@@ -1,0 +1,172 @@
+{% extends "basic/layout.html" %}
+
+{% if theme_bootstrap_version == "3" %}
+  {% set bootstrap_version, navbar_version = "3.3.7", "" %}
+  {% set bs_span_prefix = "col-md-" %}
+{% else %}
+  {% set bootstrap_version, navbar_version = "2.3.2", "-2" %}
+  {% set bs_span_prefix = "span" %}
+{% endif %}
+
+{%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and sidebars %}
+
+{%- set bs_content_width = render_sidebar and "9" or "12"%}
+
+{# Sidebar: Rework into our Bootstrap nav section. #}
+{% macro navBar() %}
+{% include "navbar" + navbar_version + ".html" %}
+{% endmacro %}
+{% if theme_bootstrap_version == "3" %}
+  {%- macro bsidebar() %}
+      {%- if render_sidebar %}
+      <div class="{{ bs_span_prefix }}3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+          {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endif %}
+  {%- endmacro %}
+{% else %}
+  {%- macro bsidebar() %}
+      {%- if render_sidebar %}
+      <div class="{{ bs_span_prefix }}3">
+        <div id="sidebar" class="bs-sidenav well" data-spy="affix">
+          {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endif %}
+  {%- endmacro %}
+{% endif %}
+
+
+
+{%- set render_sidebar = true%}
+
+{%- block extrahead %}
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="{{ pathto('_static/js/jquery-1.11.0.min.js', 1) }} "></script>
+<script type="text/javascript" src="{{ pathto('_static/js/jquery-fix.js', 1) }} "></script>
+<script type="text/javascript" src="{{ pathto('_static', 1) + '/bootstrap-' + bootstrap_version + '/js/bootstrap.min.js' }} "></script>
+<script type="text/javascript" src="{{ pathto('_static/bootstrap-sphinx.js', 1) }} "></script>
+{% endblock %}
+
+{# Silence the sidebar's, relbar's #}
+{% block header %}{% endblock %}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+{% block sidebarsourcelink %}{% endblock %}
+
+
+{%- block content %}
+{{ navBar() }}
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <div class="leftbar">
+      <ul class="b">
+      <h4><left><a class="highlighting-hover" href="./index.html">Home</a></left></h4>
+      <h4><left>Lessons</h4>
+      <li><left><p><a class="highlighting-hover" href="./KF_index.html">Kids First</a></p></left></li>
+      <li><left><p><a class="highlighting-hover" href="./LINCS_index.html">LINCS</a></p></left></li>
+
+      <h4><left>Tutorials</h4>
+
+      <li><left><p><a class="highlighting-hover" href="./ProtectedBranch_HowTo.html">GitHub Protected Branches</a></p></left></li>
+
+      <li><left><p><a class="highlighting-hover" href="./Jekyll_Tutorial.html">Jekyll Installation</a></p></left></li>
+
+      <li><left><p><a class="highlighting-hover" href="./Sphinx_Tutorial.html">Sphinx Installation</a></p></left></li>
+      </ul>
+
+    </div>
+  </div>
+    <div class="col-sm-8 text-left">
+      <div class="maintext">
+      {%- block document %}
+          <div class="documentwrapper">
+          {%- if render_sidebar %}
+            <div class="bodywrapper">
+          {%- endif %}
+              <div class="body" role="main">
+                {% block body %} {% endblock %}
+              </div>
+          {%- if render_sidebar %}
+            </div>
+          {%- endif %}
+          </div>
+      {%- endblock %}
+
+      <div class="btn-group" role="group" aria-label="...">
+
+        {%- if prev %}
+        <a class="btn btn-default bottom-nav" href="{{ prev.link|e }}">Prev Topic</a>
+        {%- endif %}
+
+        {%- if next %}
+        <a class="btn btn-default bottom-nav" href="{{ next.link|e }}">Next Topic</a>
+        {%- endif %}
+
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-2 text-center">
+      <div class="rightbar">
+      {#
+    basic/relations.html
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx sidebar template: relation links.
+
+    :copyright: Copyright 2007-2020 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+#}
+{%- if prev %}
+  <h4>{{ _('Previous Topic') }}</h4>
+  <p class="topless"><a class="highlighting-hover" href="{{ prev.link|e }}"
+                        title="{{ _('previous chapter') }}">{{ prev.title }}</a></p>
+{%- endif %}
+{%- if next %}
+  <h4>{{ _('Next Topic') }}</h4>
+  <p class="topless"><a class="highlighting-hover" href="{{ next.link|e }}"
+                        title="{{ _('next chapter') }}">{{ next.title }}</a></p>
+{%- endif %}
+</div>
+</div>
+</div>
+</div>
+{%- endblock %}
+
+
+
+{%- block footer %}
+<footer class="container-fluid text-center">
+  <div class="container">
+    <div class="row">
+      <div class="nav navbar-nav">
+        <ul class="b">
+        <li><a class="two" target="_blank" href="https://github.com/nih-cfde">Github</a></li>
+        <li><a class="two" target="_blank" href="https://nih-cfde.org/products/">Projects</a></li>
+        <li><a class="two" target="_blank" href="https://nih-cfde.org/code-of-conduct/">Code of Conduct</a></li>
+        <li><a class="two" target="_blank" href="https://nih-cfde.org/">About</a></li>
+        <li><a class="two" target="_blank" href="https://nih-cfde.org/contact/">Contact</a></li>
+        <li><a class="two" class="inner-link" id="back-to-top" href="#top">Back To Top</a></li>
+      </div>
+      <div class="col-sm-7">
+        <p>The Common Fund Data Ecosystem (CFDE) is an effort to identify and solve issues that inhibit data access and reuse across NIH Common Fund programs. The ultimate goal of the CFDE is for Common Fund data to be more usable and useful both within a single program and among data sets from multiple programs. By connecting the data sets and making them more accessible, the CFDE is intended to enable novel scientific research that was not possible before, including hypothesis generation, discovery, and validation.
+  </p>
+      </div>
+      <div class="col-sm-2">
+        <a href="#"><img class="img-responsive" src="_static/CFDE-logo.png" style="width: 100%" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+{%- endblock %}

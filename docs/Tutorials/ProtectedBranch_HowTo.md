@@ -4,11 +4,16 @@ Protected Branches in GitHub
 Why use protected branches
 --------------------------
 
-Protected branches ensure that any changes made to a repo are reviewed
-by at least one other person before they get posted. You can make as
-many changes as you want locally, but they won't show up in the rendered
+Protected branches ensure that rules are enforced on any changes made to
+that branch in a repo. A common branch protection rule is for PRs to be reviewed
+by at least one other person before they get merged. Protected branches stop you
+from making unauthorized changes to that branch, however you can make as
+many changes as you want locally or to other branches. They just won't show up
+in the protected branch until all the criteria are met and they are purposefully merged.
+This type of set up is useful for repos that render websites. The branch that hosts
+the live site can be protected, so that no one can incorporate changes to the
 site until someone else checks them. That's how we make sure that no one
-accidentally breaks the websites (which used to happen constantly).
+accidentally breaks the websites.
 
 How to work with protected branches
 -----------------------------------
@@ -47,10 +52,8 @@ The first line of code adds your changes and the second line of code
 saves your changes. The last line pushes your changes to the main GitHub
 repo as a new branch.
 
-Until your [pull
-request](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions)
-is
-[merged](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#merging-pull-requests),
+Until your [pull request](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions)
+is [merged](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#merging-pull-requests),
 you can keep working on the same branch, and do as many pushes as you
 want. You don't need to make a new branch for every change. However,
 once your pull request is merged, a branch is closed, and you will have
@@ -79,7 +82,7 @@ Then switch to your working branch:
 
     git checkout --track origin/<branch_name>
 
-If you don\'t have an active branch, you can create a new branch (see
+If you don't have an active branch, you can create a new branch (see
 above)
 
 Now you can make you changes locally, add, commit and then push those
@@ -88,10 +91,10 @@ changes
 How to make changes to someone else\'s branch
 ---------------------------------------------
 
-Let\'s assume that Bobby (a random CFDE employee) wants to make some
+Let's assume that Bobby (a random CFDE employee) wants to make some
 changes to the theme of *examples.git* repo. She creates a branch called
 *newtheme*. Then she adds some files, edits some existing files and
-creates a pull request (PR). You review Bobby\'s PR and love her work,
+creates a pull request (PR). You review Bobby's PR and love her work,
 but wish to make a couple of small edits.
 
 First, clone the repo to your local computer using:
@@ -109,7 +112,7 @@ her specific branch was called *newtheme* :
 
 Now you can make changes locally, add and commit those changes
 
-When you push your changes, they will be added to Bobby\'s PR
+When you push your changes, they will be added to Bobby's PR
 
 The most basic work flow in GitHub will look something like this:
 -----------------------------------------------------------------
@@ -124,3 +127,30 @@ The most basic work flow in GitHub will look something like this:
 -   just tell git to go back to the last version instead of clicking
     undo 50 times
 -   git push all your changes
+
+Preview website on GitHub branch
+--------------------------------
+
+You will need admin privileges on readthedocs for this!
+
+This tutorial applies to GitHub repos that render as websites. As
+described above, your changes to the website repo must be pushed to a
+new branch. Before merge, the master branch has NOT been updated yet,
+and so you cannot view the changes on the actual website. 
+
+Here is a quick tutorial to previewing changes to a website on a GitHub
+pull request through readthedocs.
+
+(1) Create a new branch, 'preview' on that GitHub repo
+(2) Go configure readthedocs to publish that branch as well as master.
+    You'll need maintainer status on the readthedocs site to do that.
+(3) That will create a link that shows the latest preview branch. Now,
+    whenever you push changes to that branch, it will update the
+    readthedocs preview branch link. You will need to use:
+
+<!-- -->
+
+    git push origin <my branch>:preview -f
+
+(4) Click on the preview branch in readthedocs. This should take you to
+    the website. Copy and paste the link on your GitHub PR.
