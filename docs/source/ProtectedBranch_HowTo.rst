@@ -146,6 +146,7 @@ The most basic work flow in GitHub will look something like this:
 
 Preview website on GitHub branch
 ---------------------------------
+You will need admin privileges on readthedocs for this!
 
 This tutorial applies to GitHub repos that render as websites. As described above, your changes to the website repo must be pushed to a new branch. Before merge, the master branch has NOT been updated yet, and so you cannot view the changes on the actual website. 
 
