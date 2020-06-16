@@ -5,28 +5,27 @@
 **Training Plan v2.0 / CFDE / May 2020** </br>
 
 [The training plan for 2020](#the-training-plan-for-2020)
-+ [Introduction](##Introduction)
-+ [The training plan for 2020](##the-training-plan-for-2020)
-    + [In-person training vs online training](##In-person-training-vs-online-training)
++ [Introduction](#introduction)
++ [The training plan for 2020](#the-training-plan-for-2020)
+    + [In-person training vs online training](#in-person-training-vs-online-training)
     + [Online lesson development approach](#online-lesson-development-approach)
-    + [Assessment approach](##assessment-approach)
-     
-     
-[Specific Activities](##specific-activities)
-+ [1. Collaborate with DCCs to build program-specific training materials.](##1.-Collaborate-with-DCCs-to-build-program-specific-training-materials.)
-    + [Tutorial development:](##Tutorial-development:)
-        + [Tutorial Requirements:](##Tutorial-Requirements:)
-        + [Video Course Requirements:](##Video-Course-Requirements:)
+    + [Assessment approach](#assessment-approach)
+    
+[Specific Activities](#specific-activities)
++ [1. Collaborate with DCCs to build program-specific training materials.](#1.-Collaborate-with-DCCs-to-build-program-specific-training-materials.)
+    + [Tutorial development:](#tutorial-development:)
+        + [Tutorial Requirements:](#tutorial-Requirements:)
+        + [Video Course Requirements:](#video-Course-Requirements:)
 + [2. Develop general purpose bioinformatics training materials for the cloud.](#2.-Develop-general-purpose-bioinformatics-training-materials-for-the-cloud.)
-    + [Tutorial development:](#Tutorial-development:)
-        + [Tutorial Requirements:](#Tutorial-Requirements:)
+    + [Tutorial development:](#tutorial-development:)
+        + [Tutorial Requirements:](#tutorial-Requirements:)
 + [3. Hold discussion sessions to discuss and generalize use cases for data analysis and integration.](#3.-Hold-discussion-sessions-to-discuss-and-generalize-use-cases-for-data-analysis-and-integration.)
 + [4. Discuss and plan opportunities for in-person hackathons for technology development and use case brainstorming.](#4.-Discuss-and-plan-opportunities-for-in-person-hackathons-for-technology-development-and-use-case-brainstorming.)
 + [5. Develop an overarching assessment program.](#5.-Develop-an-overarching-assessment-program.)
-    + [The high level goals of our assessment program are to:](#The-high-level-goals-of-our-assessment-program-are-to:)
-    + [Metrics we will develop and start to measure between now and December:](#Metrics-we-will-develop-and-start-to-measure-between-now-and-December:)
+    + [The high level goals of our assessment program are to:](#the-high-level-goals-of-our-assessment-program-are-to:)
+    + [Metrics we will develop and start to measure between now and December:](#metrics-we-will-develop-and-start-to-measure-between-now-and-December:)
     
-[Hiring](#Hiring)
+[Hiring](#hiring)
  
 ## Introduction
 
@@ -72,7 +71,7 @@ After each scheduled workshop, we will write a summary assessment of the worksho
 
 ## Specific Activities
 
-#### 1. Collaborate with DCCs to build program-specific training materials.**
+#### 1. Collaborate with DCCs to build program-specific training materials.
 
 We will work with DCCs to build training materials that help their current and future users make use of their data sets. Our primary goals here are to (a) create and expand materials for users, (b) offer regular trainings in collaboration with the DCCs, (c) provide expanded help documentation for users to lower the DCC support burden, and (d) work with the DCCs over time to refine the user experience and further lower the DCC support burden.
 
