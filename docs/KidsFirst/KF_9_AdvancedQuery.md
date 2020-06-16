@@ -16,4 +16,4 @@ understanding of the basic interface.
 Once you've built a multiple filter query, your query box should look
 something like this:
 
-![**Multiple Filters**](../images/KidsFirstPortal_20.png){.align-center}
+![**Multiple Filters**](../images/KidsFirstPortal_20.png)

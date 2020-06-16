@@ -38,10 +38,7 @@ nav:
       - Ands & Ors: KidsFirst/KF_10_AndOr.md
       - Joint Queries: KidsFirst/KF_11_JointQuery.md
       - Checking Queries: KidsFirst/KF_12_CheckingQueries.md
-    - Pushing cohorts to Cavatica:
-      - Pushing Data: KidsFirst/KF_7_PushToCavatica.md
-      - Applying for Access: KidsFirst/KF_8_ApplyingForAccess.md
-
+    
 markdown_extensions:
 - admonition
 - pymdownx.details
