@@ -141,3 +141,26 @@ The most basic work flow in GitHub will look something like this:
 -  just tell git to go back to the last version instead of clicking undo
    50 times
 -  git push all your changes
+
+
+
+Preview website on GitHub branch
+---------------------------------
+You will need admin privileges on readthedocs for this!
+
+This tutorial applies to GitHub repos that render as websites. As described above, your changes to the website repo must be pushed to a new branch. Before merge, the master branch has NOT been updated yet, and so you cannot view the changes on the actual website. 
+
+Here is a quick tutorial to previewing changes to a website on a GitHub pull request through readthedocs.
+
+(1) Create a new branch, ‘preview’ on that GitHub repo
+
+(2) Go configure readthedocs to publish that branch as well as master. You’ll need maintainer status on the readthedocs site to do that.
+
+(3) That will create a link that shows the latest preview branch. Now, whenever you push changes to that branch, it will update the readthedocs preview branch link. You will need to use:
+
+::
+
+    git push origin <my branch>:preview -f
+
+
+(4) Click on the preview branch in readthedocs. This should take you to the website. Copy and paste the link on your GitHub PR.

@@ -1,4 +1,4 @@
-Welcome to Common Fund Data Ecosystem Training Resources
+Training
 =========================================================================
 
 

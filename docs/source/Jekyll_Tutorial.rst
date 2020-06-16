@@ -65,7 +65,7 @@ Gem paths should look something like this:
 
     - GEM PATHS:
         - /Library/Ruby/Gems/2.6.0
-        - /Users/abhijnaparigi/.gem/ruby/2.6.0
+        - /Users/abbysmith/.gem/ruby/2.6.0
         - /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
 
 Building the website locally:
@@ -73,10 +73,8 @@ Building the website locally:
 
 Open Terminal.
 
-Navigate to the publishing source for our site. *The publishing source
-is the folder where the source files for your site live. Visit `this
-page <https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites>`__
-for more information about publishing sources.*
+Navigate to the publishing source for our site.
+*The publishing source is the folder where the source files for your site live*
 
 Run Jekyll site locally:
 
@@ -88,15 +86,15 @@ The output looks like this:
 
 ::
 
-    (base) Abhijnas-MacBook-Pro:welcome-to-cfde abhijnaparigi$ bundle exec jekyll serve
-    Configuration file: /Users/abhijnaparigi/Desktop/GitHub/welcome-to-cfde/_config.yml
-                Source: /Users/abhijnaparigi/Desktop/GitHub/welcome-to-cfde
-           Destination: /Users/abhijnaparigi/Desktop/GitHub/welcome-to-cfde/_site
+    (base) abbys-MacBook-Pro:welcome-to-cfde abbysmith$ bundle exec jekyll serve
+    Configuration file: /Users/abbysmith/Desktop/GitHub/welcome-to-cfde/_config.yml
+                Source: /Users/abbysmith/Desktop/GitHub/welcome-to-cfde
+           Destination: /Users/abbysmith/Desktop/GitHub/welcome-to-cfde/_site
      Incremental build: disabled. Enable with --incremental
           Generating...
             Pagination: Pagination is enabled, but I couldn't find an index.html page to use as the pagination template. Skipping pagination.
                         done in 0.952 seconds.
-     Auto-regeneration: enabled for '/Users/abhijnaparigi/Desktop/GitHub/welcome-to-cfde'
+     Auto-regeneration: enabled for '/Users/abbysmith/Desktop/GitHub/welcome-to-cfde'
         Server address: http://127.0.0.1:4000
       Server running... press ctrl-c to stop.
 
