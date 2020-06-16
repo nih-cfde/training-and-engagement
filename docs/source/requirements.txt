@@ -1,7 +1,0 @@
-sphinx_bootstrap_theme
-sphinx
-recommonmark
-sphinxcontrib-images
-sphinxcontrib-contentui
-sphinx-markdown-tables
-Fabric>=1.13.2

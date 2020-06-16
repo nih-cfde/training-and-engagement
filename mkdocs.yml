@@ -1,0 +1,56 @@
+site_name: Common Fund Data Ecosystem Training
+
+repo_url: https://github.com/nih-cfde/training-and-engagement
+
+theme:
+  name: material
+  palette:
+    primary: white
+  features:
+    - tabs
+  logo: images/CFDE-logo.png
+
+docs_dir: docs
+
+nav:
+  - General Tutorials:
+    - GitHub:
+      - Working with Protected Branches: Tutorials/ProtectedBranch_HowTo.md
+      - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
+      - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
+    - Web Development:
+      - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
+      - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
+  - Kids First Tutorials:
+    - Overview: KidsFirst/KF_index.md
+    - Setting up your KF Portal Permissions:
+      - Portal Overview: KidsFirst/KF_1_PortalOverview.md
+      - Registration: KidsFirst/KF_2_Registration.md
+      - Account Connections 1: KidsFirst/KF_3_AccountConnections.md
+      - Account Connections 2: KidsFirst/KF_4_AccessConnections.md
+    - Exploring Data in the KF Portal:
+      - Explore: KidsFirst/KF_5_Explore.md
+      - Filtering: KidsFirst/KF_6_Filtering.md
+      - Plots: KidsFirst/KF_7_Plots.md
+      - Resetting: KidsFirst/KF_8_Resetting.md
+    - Advanced KF Portal Queries:
+      - Advanced Queries: KidsFirst/KF_9_AdvancedQuery.md
+      - Ands & Ors: KidsFirst/KF_10_AndOr.md
+      - Joint Queries: KidsFirst/KF_11_JointQuery.md
+      - Checking Queries: KidsFirst/KF_12_CheckingQueries.md
+    - Pushing cohorts to Cavatica:
+      - Pushing Data: KidsFirst/KF_7_PushToCavatica.md
+      - Applying for Access: KidsFirst/KF_8_ApplyingForAccess.md
+
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.emoji
+- codehilite:
+    guess_lang: false
+- toc:
+    permalink: true
+extra:
+  hypothesis: true
+extra_css:
+  - stylesheets/extra.css
