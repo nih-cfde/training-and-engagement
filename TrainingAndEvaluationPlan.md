@@ -12,7 +12,7 @@
     + [Assessment approach](#assessment-approach)
     
 [Specific Activities](#specific-activities)
-+ [1. Collaborate with DCCs to build program-specific training materials.](#1.-Collaborate-with-DCCs-to-build-program-specific-training-materials.)
++ [1. Collaborate with DCCs to build program-specific training materials.](https://github.com/nih-cfde/training-and-engagement/blob/jeremywalter-patch-1/TrainingAndEvaluationPlan.md#1-collaborate-with-dccs-to-build-program-specific-training-materials)
     + [Tutorial development:](#tutorial-development:)
         + [Tutorial Requirements:](#tutorial-Requirements:)
         + [Video Course Requirements:](#video-Course-Requirements:)
