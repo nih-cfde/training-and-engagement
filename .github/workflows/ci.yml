@@ -1,0 +1,23 @@
+name: Build documentation on PR
+
+on: pull_request
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.7"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install mkdocs
+          python -m pip install -r requirements.txt
+      # TODO: use this to check for broken links in docs/ ?
+      #- name: Check for dead links in Markdown
+      #  uses: gaurav-nelson/github-action-markdown-link-check@0.4.0
+      - name: Build site
+        run: mkdocs build
