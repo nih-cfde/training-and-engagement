@@ -66,6 +66,8 @@ This takes ~30 seconds to run. Then copy the address shown in your command windo
 ## Hosting the website on readthedocs
 *Note: you need admin and/or owner privileges to do this!*
 
+Visit www.readthedocs.com
+
 After log in, click `import project`. This should take you to a list of GitHub repos.
 
 Click on the repo of interest.
@@ -87,5 +89,10 @@ Next go to `Project Settings` on the right nav-bar and click into `Advanced Sett
 1. Click `Save` at the bottom of the page.
 
 1. Now select the appropriate branch that you wish to build. In the case of major theme change, that branch would be `Latest`. And click the green button that says `Build`. This process takes a few mins.
+
+1. Finally, make your website public like so:
+    * Click on the `Versions` tab.
+    * Click the `EDIT` button next to the `master` branch.
+    * Find the setting called 'Privacy Level' and select 'Public' from the dropdown menu.
 
 Enjoy your new website.
