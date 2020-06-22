@@ -80,7 +80,7 @@ Next go to `Project Settings` on the right nav-bar and click into `Advanced Sett
 1. Set `Default branch` to `name-of-your-theme` (this is for a major theme change)
 If you are only making minor changes to the theme, you may push changes to the preview branch and use that link to render on a PR.
 
-1. Scroll down to the `Document type` drop down menu and select `Mkdocs (Markdown)`
+1. Scroll down to the `Documentation type` drop down menu and select `Mkdocs (Markdown)`
 
 1. Click `Save` at the bottom of the page.
 
