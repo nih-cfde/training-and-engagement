@@ -18,9 +18,11 @@ nav:
       - Working with Protected Branches: Tutorials/ProtectedBranch_HowTo.md
       - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
       - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
+      - Rendering a GitHub website locally with Mkdocs: Tutorials/mkdocs.md
     - Web Development:
       - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
       - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
+      - Rendering a GitHub website locally with Mkdocs: Tutorials/mkdocs.md
   - Kids First Tutorials:
     - Overview: KidsFirst/KF_index.md
     - Setting up your KF Portal Permissions:
@@ -38,7 +40,7 @@ nav:
       - Ands & Ors: KidsFirst/KF_10_AndOr.md
       - Joint Queries: KidsFirst/KF_11_JointQuery.md
       - Checking Queries: KidsFirst/KF_12_CheckingQueries.md
-    
+
 markdown_extensions:
 - admonition
 - pymdownx.details
