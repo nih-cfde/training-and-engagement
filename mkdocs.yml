@@ -18,6 +18,7 @@ nav:
       - Working with Protected Branches: Tutorials/ProtectedBranch_HowTo.md
       - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
       - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
+      - Rendering a GitHub website locally with Mkdocs: Tutorials/mkdocs.md
     - Web Development:
       - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
       - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
