@@ -142,15 +142,22 @@ Here is a quick tutorial to previewing changes to a website on a GitHub
 pull request through readthedocs.
 
 (1) Create a new branch, 'preview' on that GitHub repo
+
 (2) Go configure readthedocs to publish that branch as well as master.
     You'll need maintainer status on the readthedocs site to do that.
+    
 (3) That will create a link that shows the latest preview branch. Now,
     whenever you push changes to that branch, it will update the
     readthedocs preview branch link. You will need to use:
 
 <!-- -->
 
-    git push origin <my branch>:preview -f
+    git push origin <my branch>:preview
+
+If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option 
+tells git to make the change regardless of the history of changes; kind of like 
+giving it a new starting point for its version tracking. For most edits, however, this option is
+not necessary because you want to preserve the version history. 
 
 (4) Click on the preview branch in readthedocs. This should take you to
     the website. Copy and paste the link on your GitHub PR.
