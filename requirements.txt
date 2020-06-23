@@ -1,1 +1,3 @@
 mkdocs-material
+mkdocs-jupyter
+mkdocs-awesome-pages-plugin
