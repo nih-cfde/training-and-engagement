@@ -75,7 +75,7 @@ Click on the repo of interest.
 Next go to `Project Settings` on the right nav-bar and click into `Advanced Settings`.
 
 
-### Change the following setting:
+**Change the following setting:**
 
 1. Set `Default version` to `latest`
 
