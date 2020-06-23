@@ -155,9 +155,9 @@ pull request through readthedocs.
     git push origin <my branch>:preview
 
 If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option 
-tells git to make the change regardless of the history of changes; kind of like 
-giving it a new starting point for its version tracking. For most edits, however, this option is
-not necessary because you want to preserve the version history. 
+tells git to make the change regardless of the history of changes. Since this gives the branch a new starting point 
+for its version tracking, please *ONLY* use it on the preview branch. For most edits, you want to preserve the version history
+so you do NOT need this option.
 
 (4) Click on the preview branch in readthedocs. This should take you to
     the website. Copy and paste the link on your GitHub PR.
