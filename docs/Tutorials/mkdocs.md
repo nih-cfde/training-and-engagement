@@ -66,6 +66,8 @@ This takes ~30 seconds to run. Then copy the address shown in your command windo
 ## Hosting the website on readthedocs
 *Note: you need admin and/or owner privileges to do this!*
 
+Visit www.readthedocs.com
+
 After log in, click `import project`. This should take you to a list of GitHub repos.
 
 Click on the repo of interest.
@@ -77,13 +79,19 @@ Next go to `Project Settings` on the right nav-bar and click into `Advanced Sett
 
 1. Set `Default version` to `latest`
 
-1. Set `Default branch` to `name-of-your-theme` (this is for a major theme change)
-If you are only making minor changes to the theme, you may push changes to the preview branch and use that link to render on a PR.
+1. Set `Default branch` to `name-of-your-theme`
+    * You only need to do this step if you are changing the theme of the website. Readthedocs uses the master branch as the default branch to render the website. Since your new theme is on a different branch, it will not yet appear on your master branch. By changing the default branch in readthedocs, you can render your branch of choice.
+    * If you are making minor changes to the theme (e.g. adding a file or fixing a typo), you may push changes to the [preview branch and use that link to render on a PR](https://cfde-training.readthedocs.io/en/latest/Tutorials/ProtectedBranch_HowTo/#preview-website-on-github-branch).
 
-1. Scroll down to the `Document type` drop down menu and select `Mkdocs (Markdown)`
+2. Scroll down to the `Documentation type` drop down menu and select `Mkdocs (Markdown)`
 
-1. Click `Save` at the bottom of the page.
+3. Click `Save` at the bottom of the page.
 
-1. Now select the appropriate branch that you wish to build. In the case of major theme change, that branch would be `Latest`. And click the green button that says `Build`. This process takes a few mins.
+4. Now select the appropriate branch that you wish to build. In the case of major theme change, that branch would be `Latest`. And click the green button that says `Build`. This process takes a few mins.
+
+5. Finally, make your website public like so:
+    * Click on the `Versions` tab.
+    * Click the `EDIT` button next to the `master` branch.
+    * Find the setting called 'Privacy Level' and select 'Public' from the dropdown menu.
 
 Enjoy your new website.
