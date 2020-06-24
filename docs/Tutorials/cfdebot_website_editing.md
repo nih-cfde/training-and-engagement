@@ -1,6 +1,8 @@
-# General steps for editing CFDE websites with cfde-bots
+# Editing Mkdocs websites with cfde-bot
 
 This is a tutorial on how to edit Mkdocs websites from Github repos that use robots. The cfde-bots handle changes in each website Github repo so you never have to render the website locally to check the edits and most importantly, prevents changes that could break the website. 
+
+## General steps for editing CFDE websites with cfde-bots
 
 1. Go to website's Github repository. 
 
@@ -33,11 +35,15 @@ This is a tutorial on how to edit Mkdocs websites from Github repos that use rob
 
 ## Specific steps for editing the CFDE documentation website
 
-The website the `published-documentation` repo creates pulls some docs that are in its repo AND some from a sub-module (`the-fair-cookbook`). There are two ways to make changes to this website. 
+The website created by the `published-documentation` repo pulls some docs that are in its repo AND some from a sub-module (`the-fair-cookbook`). There are two ways to make changes to this website. 
 
-A) **To edit documents that are *in* the `published-documentation` repo,** follow the general steps above for this repo: https://github.com/nih-cfde/published-documentation/.
+### A) **Edit documents that are *in* the `published-documentation` repo** 
 
-B) **To edit documents that are in the sub-module `the-fair-cookbook` repo,** the cfde-bot's process for checking changes is slightly different. 
+Follow the general steps above for this repo: https://github.com/nih-cfde/published-documentation/.
+
+### B) **Edit documents that are in the sub-module `the-fair-cookbook` repo** 
+
+The cfde-bot's process for checking changes to this repo is slightly different: 
 
 - The `published-documentation` cfde-bot monitors the `the-fair-cookbook` repo "master" branch every 6 hours. 
 
