@@ -4,20 +4,11 @@ This is a tutorial on how to edit Mkdocs websites from Github repos that use rob
 
 1. Go to website's Github repository. 
 
-For the CFDE, these are the key web pages we work with:
-
-| Website | Repo location | 
-| -------- | -------- | 
-welcome | https://github.com/nih-cfde/welcome-to-cfde/
-training | https://github.com/nih-cfde/training-and-engagement
-use cases | https://github.com/nih-cfde/usecases/
-documentation* | https://github.com/nih-cfde/published-documentation/
-
-*see section below for specific instructions on editing the documentation website.
+For the CFDE, these are the key web pages we work with: [welcome](https://github.com/nih-cfde/welcome-to-cfde/), [training](https://github.com/nih-cfde/training-and-engagement), [use cases](https://github.com/nih-cfde/usecases/), and [documentation](https://github.com/nih-cfde/published-documentation/). *See section below for specific instructions on editing the documentation website.*
 
 2. Create a new branch, "my_branch" (type new branch name, hit enter)
 
-<div><img src="https://i.imgur.com/5pv1CQL.png" alt="drawing" width="300" align="top"/></div>
+    <div><img src="https://i.imgur.com/5pv1CQL.png" alt="drawing" width="300" align="top"/></div>
 
 3. You should now be on your new branch, otherwise click `Branch:master` and switch to your new branch. Find the file(s) you want to change and make changes directly in the web interface (it's not necessary to make changes locally). When you’re done editing, scroll to the bottom of the page to merge; it will force you to commit changes to your branch.
 
@@ -56,6 +47,7 @@ B) **To edit documents that are in the sub-module `the-fair-cookbook` repo,** th
 
 - The cfde-bot simultaneously creates a PR of the changes to the `published-documentation` "master" branch so you can request a reviewer to merge to the "master" branch if you decide the preview looks good.
 
+Steps: 
 1. Go to `the-fair-cookbook` repo: https://github.com/nih-cfde/the-fair-cookbook
 1. Make changes *directly* on the "master" branch.
 1. Check progress from the cfde-bot. 
