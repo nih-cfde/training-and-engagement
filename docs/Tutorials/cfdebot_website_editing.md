@@ -48,6 +48,7 @@ B) **To edit documents that are in the sub-module `the-fair-cookbook` repo,** th
 - The cfde-bot simultaneously creates a PR of the changes to the `published-documentation` "master" branch so you can request a reviewer to merge to the "master" branch if you decide the preview looks good.
 
 Steps: 
+
 1. Go to `the-fair-cookbook` repo: https://github.com/nih-cfde/the-fair-cookbook
 
 1. Make changes *directly* on the "master" branch.
