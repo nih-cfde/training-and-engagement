@@ -27,21 +27,21 @@ This is a tutorial on how to edit Mkdocs websites from Github repos that use rob
     This is what happens if the bot does not approve:
     <div><img src="https://i.imgur.com/nJBrhPl.png" alt="drawing" style="border:1px dotted grey;" width="500"  align="top"/></div>
 
-6. If the checks pass, changes should be automatically merged into the preview branch so you can look at the preview render of the website. Click 'Merge pull request' and confirm merge.
+6. If the checks pass, changes should be automatically merged into the preview branch so you can look at the preview render of the website. Click "Merge pull request" and confirm merge.
 
-7. Merging will re-render on the preview version of the readthedocs website. Login to readthedocs.com, go to website Overview page, and click on 'preview' under Versions (requires admin privileges). You might need to refresh and wait a few minutes for the changes to show up.
+7. Merging will re-render on the preview version of the readthedocs website. Login to readthedocs.com, go to website Overview page, and click on "preview" under Versions (requires admin privileges). You might need to refresh and wait a few minutes for the changes to show up.
 
-8. To keep those changes, go back to the Github repo and click 'Compare & pull request' to push "my_branch" to master. This time, request a reviewer for this PR. After approved, merge changes and check that the changes are on the 'latest' version of the website!
+8. To keep those changes, go back to the Github repo and click "Compare & pull request" to push "my_branch" to master. This time, request a reviewer for this PR. After approved, merge changes and check that the changes are on the "latest" version of the website!
 
 ## Specific steps for editing the CFDE documentation website
 
 The website created by the `published-documentation` repo pulls some docs that are in its repo AND some from a sub-module (`the-fair-cookbook`). There are two ways to make changes to this website. 
 
-### A) **Edit documents that are *in* the `published-documentation` repo** 
+### A) **To edit documents that are *in* the `published-documentation` repo** 
 
 Follow the general steps above for this repo: https://github.com/nih-cfde/published-documentation/.
 
-### B) **Edit documents that are in the sub-module `the-fair-cookbook` repo** 
+### B) **To edit documents that are in the sub-module `the-fair-cookbook` repo** 
 
 The cfde-bot's process for checking changes to this repo is slightly different: 
 
@@ -63,4 +63,4 @@ Steps:
 
 1. Check preview website [here](https://cfde-published-documentation.readthedocs-hosted.com/en/preview).
 
-1. To keep these changes, you need to request a reviewer for the PR to the "master" branch the cfde-bot created in the `published-documentation` repo. After approved, merge changes and check that the changes are on the 'latest' version of the website!
+1. To keep these changes, you need to request a reviewer for the PR to the "master" branch the cfde-bot created in the `published-documentation` repo. After approved, merge changes and check that the changes are on the "latest" version of the website!
