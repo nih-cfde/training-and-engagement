@@ -19,12 +19,12 @@ nav:
       - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
       - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
       - Rendering a GitHub website locally with Mkdocs: Tutorials/mkdocs.md
-      - Editing Mkdocs websites with cdfde-bot: Tutorials/cfdebot_website_editing.md
+      - Editing Mkdocs websites with cfde-bot: Tutorials/cfdebot_website_editing.md
     - Web Development:
       - Rendering a GitHub website locally with Jekyll: Tutorials/Jekyll_Tutorial.md
       - Rendering a GitHub website locally with Sphinx: Tutorials/Sphinx_Tutorial.md
       - Rendering a GitHub website locally with Mkdocs: Tutorials/mkdocs.md
-      - Editing Mkdocs websites with cdfde-bot: Tutorials/cfdebot_website_editing.md
+      - Editing Mkdocs websites with cfde-bot: Tutorials/cfdebot_website_editing.md
   - Kids First Tutorials:
     - Overview: KidsFirst/KF_index.md
     - Setting up your KF Portal Permissions:
