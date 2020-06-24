@@ -6,7 +6,7 @@ This is a tutorial on how to edit Mkdocs websites from Github repos that use rob
 
 1. Go to website's Github repository. 
 
-    For the CFDE, these are the key web pages we work with: [welcome](https://github.com/nih-cfde/welcome-to-cfde/), [training](https://github.com/nih-cfde/training-and- engagement), [use cases](https://github.com/nih-cfde/usecases/), and [documentation](https://github.com/nih-cfde/published-documentation/). *See section below for specific instructions on editing the documentation website.*
+    For the CFDE, these are the key web pages we work with: [welcome](https://github.com/nih-cfde/welcome-to-cfde/), [training](https://github.com/nih-cfde/training-and-engagement), [use cases](https://github.com/nih-cfde/usecases/), and [documentation](https://github.com/nih-cfde/published-documentation/). *See section below for specific instructions on editing the documentation website.*
 
 2. Create a new branch, "my_branch" (type new branch name, hit enter)
 
