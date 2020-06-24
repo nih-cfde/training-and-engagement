@@ -4,7 +4,7 @@ This is a tutorial on how to edit Mkdocs websites from Github repos that use rob
 
 1. Go to website's Github repository. 
 
-For the CFDE, these are the key web pages we work with: [welcome](https://github.com/nih-cfde/welcome-to-cfde/), [training](https://github.com/nih-cfde/training-and-engagement), [use cases](https://github.com/nih-cfde/usecases/), and [documentation](https://github.com/nih-cfde/published-documentation/). *See section below for specific instructions on editing the documentation website.*
+    For the CFDE, these are the key web pages we work with: [welcome](https://github.com/nih-cfde/welcome-to-cfde/), [training](https://github.com/nih-cfde/training-and- engagement), [use cases](https://github.com/nih-cfde/usecases/), and [documentation](https://github.com/nih-cfde/published-documentation/). *See section below for specific instructions on editing the documentation website.*
 
 2. Create a new branch, "my_branch" (type new branch name, hit enter)
 
@@ -49,7 +49,11 @@ B) **To edit documents that are in the sub-module `the-fair-cookbook` repo,** th
 
 Steps: 
 1. Go to `the-fair-cookbook` repo: https://github.com/nih-cfde/the-fair-cookbook
+
 1. Make changes *directly* on the "master" branch.
+
 1. Check progress from the cfde-bot. 
+
 1. Check preview website [here](https://cfde-published-documentation.readthedocs-hosted.com/en/preview).
+
 1. To keep these changes, you need to request a reviewer for the PR to the "master" branch the cfde-bot created in the `published-documentation` repo. After approved, merge changes and check that the changes are on the 'latest' version of the website!
