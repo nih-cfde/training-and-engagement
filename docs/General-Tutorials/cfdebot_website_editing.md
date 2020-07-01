@@ -61,6 +61,6 @@ Steps:
 
 1. Check progress from the cfde-bot. 
 
-1. Check preview website [here](https://cfde-published-documentation.readthedocs-hosted.com/en/preview).
+1. Check preview website: `https://cfde-published-documentation.readthedocs-hosted.com/en/preview`
 
 1. To keep these changes, you need to request a reviewer for the PR to the "master" branch the cfde-bot created in the `published-documentation` repo. After approved, merge changes and check that the changes are on the "latest" version of the website!
