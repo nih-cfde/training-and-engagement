@@ -1,5 +1,10 @@
-Jekyll for locally rendering websites
-=====================================
+---
+layout: page
+title: Rendering a GitHub website locally with Jekyll
+---
+
+Rendering a GitHub website locally with Jekyll
+===============================================
 
 This tutorial includes instructions for:
 

@@ -1,4 +1,9 @@
-Protected Branches in GitHub
+---
+layout: page
+title: Working with Protected Branches
+---
+
+Working with Protected Branches
 ============================
 
 Why use protected branches
@@ -145,7 +150,7 @@ pull request through readthedocs.
 
 (2) Go configure readthedocs to publish that branch as well as master.
     You'll need maintainer status on the readthedocs site to do that.
-    
+
 (3) That will create a link that shows the latest preview branch. Now,
     whenever you push changes to that branch, it will update the
     readthedocs preview branch link. You will need to use:
@@ -154,8 +159,8 @@ pull request through readthedocs.
 
     git push origin <my branch>:preview
 
-If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option 
-tells git to make the change regardless of the history of changes. Since this gives the branch a new starting point 
+If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option
+tells git to make the change regardless of the history of changes. Since this gives the branch a new starting point
 for its version tracking, please *ONLY* use it on the preview branch. For most edits, you want to preserve the version history
 so you do NOT need this option.
 

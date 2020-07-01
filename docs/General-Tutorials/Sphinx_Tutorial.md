@@ -1,3 +1,8 @@
+---
+layout: page
+title: Rendering a GitHub website locally with Sphinx
+---
+
 Sphinx for static websites editing
 ==================================
 

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Explore
+---
+
 Exploring Data in the Portal
 ============================
 
@@ -24,17 +29,17 @@ If you aren't still logged in to the Kids First Portal, navigate to
 previously in this lesson to log in. When you first log in, you will see
 this screen:
 
-![**Kids First Dashboard.**](../images/KidsFirstPortal_11.png)
+![**Kids First Dashboard.**](../../images/KidsFirstPortal_11.png)
 
 ### Step 2 Navigate to the Explore Data tab
 
 Click on `Explore Data`
 
-![**Go To Explore Data**](../images/KidsFirstPortal_12.png)
+![**Go To Explore Data**](../../images/KidsFirstPortal_12.png)
 
 You should now be on a page that looks like this:
 
-![**Explore Data**](../images/KidsFirstPortal_13.png)
+![**Explore Data**](../../images/KidsFirstPortal_13.png)
 
 Exploring the Data
 ------------------

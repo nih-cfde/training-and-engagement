@@ -1,3 +1,8 @@
+---
+layout: page
+title: Account Connections 2
+---
+
 Access Connections
 ==================
 
@@ -39,7 +44,7 @@ Click on each of the `Connect` buttons in turn, and use your
 eRA login credentials to set up the connection. Note that for the NCI
 CRDC integration, you must authorize Gen3.
 
-![**Data Repository Integrations**](../images/KidsFirstPortal_10.png)
+![**Data Repository Integrations**](../../images/KidsFirstPortal_10.png)
 
 !!! Tip
 
@@ -61,7 +66,7 @@ creating a new account using the `New to the CGC? Create an
 account` link. Whichever way you log in, be sure to agree to
 authorize Gen3.
 
-![**Cancer Genomics Cloud**](../images/CGC_1.png)
+![**Cancer Genomics Cloud**](../../images/CGC_1.png)
 
 !!! Note
 
@@ -82,13 +87,13 @@ we're using another one here!
 Click on the Developer tab at the top of the screen, and select
 Authentication Token:
 
-![**CGC Developer Settings**](../images/CGC_2.png)
+![**CGC Developer Settings**](../../images/CGC_2.png)
 
 #### Step 3 Click on the Auth token link
 
 You should get a page that looks something like this:
 
-![**CGC Authentication Tokens**](../images/CGC_5.png)
+![**CGC Authentication Tokens**](../../images/CGC_5.png)
 
 #### Step 4 Generate and copy your Authentication Token
 
@@ -97,7 +102,7 @@ As we did when getting our Cavatica Auth Token, click on the
 and then click the copy button (indicated with a purple arrow below) to
 copy it to your clipboard:
 
-![**Copy Auth Token**](../images/CGC_6.png)
+![**Copy Auth Token**](../../images/CGC_6.png)
 
 !!! Tip
 
@@ -116,13 +121,13 @@ credentials you set up earlier in this lesson to log in.
 
 Once you're logged in, you should see this screen:
 
-![**Cavatica Dashboard.**](../images/Cavatica_7.png)
+![**Cavatica Dashboard.**](../../images/Cavatica_7.png)
 
 #### Step 6 Navigate to Settings
 
 Click on your name (top right) and Account Settings:
 
-![**Cavatica Account Settings.**](../images/Cavatica_8.png)
+![**Cavatica Account Settings.**](../../images/Cavatica_8.png)
 
 #### Step 7 Navigate to Dataset Access
 
@@ -133,7 +138,7 @@ the Cancer Genomics Cloud.
 
 Click on "Dataset Access", indicated with the purple arrow below:
 
-![**Dataset Access**](../images/Cavatica_9.png)
+![**Dataset Access**](../../images/Cavatica_9.png)
 
 #### Step 8 Input your Authentication Token
 
@@ -141,7 +146,7 @@ We've already created a Cancer Genomics Cloud account, and generated
 our token, so we can ignore the learn more and paste our token and click
 \`connect account\`:
 
-![**CGC Token in Cavatica**](../images/Cavatica_10.png)
+![**CGC Token in Cavatica**](../../images/Cavatica_10.png)
 
 !!! Tip
 
@@ -164,4 +169,4 @@ your `Open Datasets` have become green and 'unlocked'
 to any protected data, you may see more green and unlocked datasets than
 are shown here:
 
-![**Authorized Cavatica Account**](../images/Cavatica_11.png)
+![**Authorized Cavatica Account**](../../images/Cavatica_11.png)

@@ -1,5 +1,10 @@
+---
+layout: page
+title:
+---
+
 Browsing the Portal
-========
+===================
 
 
 Now that we're all connected, let's explore KFDP. Our goal is twofold:
@@ -15,7 +20,7 @@ Once you're logged in, you should see a screen with these six boxes.
 Depending on what data you are authorized to use, your boxes may have
 more or less information in them:
 
-![**Kids First Dashboard.**](../images/KidsFirstPortal_11.png)
+![**Kids First Dashboard.**](../../images/KidsFirstPortal_11.png)
 
 !!! Tip
 
