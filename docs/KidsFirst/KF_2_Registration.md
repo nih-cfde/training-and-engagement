@@ -8,8 +8,7 @@ before we can start using the data, we need to do a lot of set up.
 Why so much setup?
 ------------------
 
-As you likely know, there are many rules and regulations about who can
-use human derived medical data, and for what purposes. Human genomic
+There are many rules and regulations about who can use human derived medical data, and for what purposes. Human genomic
 data is no exception. Even if the human data you intend to use is
 'open', that generally doesn't mean you can do anything you want with
 it, just that there are fewer barriers to seeing it. Data curators like
@@ -34,7 +33,7 @@ requires much more memory and storage than is available on an office
 computer.
 
 Kids First uses their portal as a sort of catalog of their datasets, but
-the data stored in Cavatica, a platform for doing data analysis in the
+the data is stored in Cavatica, a platform for doing data analysis in the
 cloud. As such, at a minimum, we will need accounts for the Kids First
 DRC Portal and Cavatica in order to do an analysis.
 
