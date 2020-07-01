@@ -1,3 +1,8 @@
+---
+layout: page
+title:
+---
+
 \#\#\#\# File Format Sidebar: \* I want to go over what data/file types
 are associated with what type of analysis \* I also want to go over what
 file types can actually be used for further downstream analysis \*

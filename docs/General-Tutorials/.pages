@@ -1,0 +1,7 @@
+arrange:
+ - index.md
+ - ProtectedBranch_HowTo.md
+ - Jekyll_Tutorial.md
+ - Sphinx_Tutorial.md
+ - mkdocs.md
+ - cfdebot_website_editing.md

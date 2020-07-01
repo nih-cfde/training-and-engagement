@@ -1,4 +1,9 @@
-# Mkdocs
+---
+layout: page
+title: Rendering a GitHub website locally with Mkdocs
+---
+
+# Rendering a GitHub website locally with Mkdocs
 
 This is a tutorial for building a website with mkdocs-material theme and hosting the website on readthedocs.com
 
