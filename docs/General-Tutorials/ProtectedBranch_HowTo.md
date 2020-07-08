@@ -23,7 +23,7 @@ How to work with protected branches
 
 For the purposes of this tutorial, a practice repo will be used to showcase the git commands. First, copy the repo(s) to your local computer using command line like so:
 
-    git clone https://github.com/nih-cfde/play-with-github
+    git clone https://github.com/nih-cfde/play-with-github.git
 
 Once you have cloned your repos (now called directories on your local
 computer) and want to get started, you need to navigate into the newly created directory and
@@ -73,7 +73,7 @@ How to work with a previously cloned repo
 
 The first step is to update your local version by typing:
 
-    git pull https://github.com/nih-cfde/play-with-github
+    git pull https://github.com/nih-cfde/play-with-github.git
 
 Then switch to your working branch:
 
@@ -89,18 +89,18 @@ How to make changes to branch created by someone else
 ---------------------------------------------
 
 Let's assume that Bobby (a random CFDE employee) wants to make some
-changes to the theme of *play-with-github* repo. She creates a branch called
+changes to the theme of *play-with-github.git* repo. She creates a branch called
 *newtheme*. Then she adds some files, edits some existing files and
 creates a PR. You review Bobby's PR and love her work,
 but wish to make a couple of small edits.
 
 First, clone the repo to your local computer using:
 
-    git clone https://github.com/nih-cfde/play-with-github
+    git clone https://github.com/nih-cfde/play-with-github.git
 
 Or pull her latest changes to your local repo (if previously cloned):
 
-    git pull https://github.com/nih-cfde/play-with-github
+    git pull https://github.com/nih-cfde/play-with-github.git
 
 Then switch to the branch that Bobby has been working on. Remember that
 her specific branch was called *newtheme* :
