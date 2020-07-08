@@ -16,35 +16,38 @@ available to empower your research today. Data collected from more than
 
 Our aim is to teach researchers basic concepts, skills, and tools for
 working with data so that they can get more done in less time, and with
-less pain. The goal of this training module is to enable clinician
+less pain. **The goal of this training module is to enable clinician
 researchers to use the data portal to build cohorts, and to move that
-data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/)). If you are looking for
+data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/))**. 
+
+<!-- If you are looking for
 information on running workflows in Cavatica, please use \<lesson in
 progress\>.
 
 Please note that workshop materials are in "alpha" development.
+-->
+--- 
 
-!!! Objectives
-    **In this lesson you will learn:**
+ **In this lesson you will learn:**
 
-    -   How to connect your Kids First, Cavatica, and protected access
-    accounts
+    -   How to connect your Kids First, Cavatica, and protected access accounts
     -   How to find and filter Kids First data sets
     -   How to move your chosen cohort to Cavatica for analysis
     -   How to apply for access to new data sets
 
+---
 
-!!! Pre-requisites
+### Pre-requisites:
 
-    **Background Knowledge**
+   **Background Knowledge**
 
-       This training assumes a basic background in human medicine
+   + This training assumes a basic background in human medicine
 
-    **Software**
+**Software**
 
-       This training will require a modern web browser
++ This training will require a modern web browser
 
-    **Credentials**
+**Credentials**
 
-       -   ORCID (preferred)
-       -   eRA Commons ID (preferred)
+   -   ORCID
+   -   eRA Commons ID
