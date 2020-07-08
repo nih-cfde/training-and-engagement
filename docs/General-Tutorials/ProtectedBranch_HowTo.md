@@ -1,6 +1,6 @@
 ---
+title: "Working with Protected Branches"
 layout: page
-title: Working with Protected Branches
 ---
 
 Working with Protected Branches
@@ -10,7 +10,7 @@ Why use protected branches
 --------------------------
 
 Protected branches ensure that rules are enforced on any changes made to
-that branch in a repo. A common branch protection rule is for PRs to be reviewed
+that branch in a repo. A common branch protection rule is for pull requests (PRs) to be reviewed
 by at least one other person before they get merged. Protected branches stop you
 from making unauthorized changes to that branch, however you can make as
 many changes as you want locally or to other branches. They just won't show up
