@@ -10,3 +10,13 @@ jobs:
         action-token: "${{ secrets.ALLTHEACTIONS }}"
         project-url: "https://github.com/orgs/nih-cfde/projects/2"
         column-name: "NewIssues"
+  add-label:
+    name: Add Label
+    runs-on: ubuntu-latest
+    steps:
+      - uses: christianvuerings/add-labels@v1
+        with:
+          labels: |
+            training
+        env:
+          GITHUB_TOKEN: ${{ secrets.ALLTHEACTIONS }}
