@@ -46,7 +46,7 @@ will physically change on your computer. But GitHub will recognize your director
 Once you have made the necessary changes (or any changes at all), you
 can push changes to GitHub:
 
-    git add --all .
+    git add .
     git commit -m <your_message>
     git push --set-upstream origin <name_of_new_branch>
 
