@@ -119,8 +119,8 @@ The most basic work flow in GitHub will look something like this:
 -   Add your changes `git add`
 -   Save your changes `git commit`
 -   Continue editing same file(s) after initial tracking
--   Save the recent changes enabling git to tracking all versions `git add` `git commit`
--   Add more changes/edits to the file but you prefer the previous version better
+-   Save the recent changes enabling git to track all versions `git add` `git commit`
+-   Add more changes/edits to the file but the previous version was better
 -   Revert back to the last working version of the file `git log` `git revert <commit hash>`
 -   Publish your local changes to GitHub `git push`
 
