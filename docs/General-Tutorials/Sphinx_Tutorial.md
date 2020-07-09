@@ -26,17 +26,20 @@ Then activate the environment and install Sphinx with this code:
 Build Sphinx site using template from GitHub
 --------------------------------------------    
 
-For this tutorial, we will use a template website hosted on GitHub, generated using Sphinx, to modify and add content. First, let us create a local copy of the repo:
+For this tutorial, we will use a template website hosted on GitHub, that was generated using Sphinx to modify and add content. First, let us create a local copy of the repo:
 
     git clone https://github.com/nih-cfde/Sphinx-demo.git
 
- Navigate to the newly created directory with the name of the repo. To view the existing html template, navigate to `html` folder which is nested under `_build` folder, a subfolder of sphinx in the directory. Click on `index.html` to view the website on your browser. *Note that since GitHub does not allow for empty folders, some of Sphinx generated folders are missing from the repo. These can be directly added to the downloaded repo locally. The folders should be created within sphinx folder with exactly these name: `_static`, `_templates`, `docs`*.
+ Navigate to the newly created directory with the name of the repo.  To view the existing html template, navigate to `html` folder which is nested under `_build` folder, a subfolder of sphinx in the directory.
+ Click on `index.html` to view the website on your browser.
+
+ *Note that since GitHub does not allow for empty folders, some of Sphinx generated folders are missing from the repo. These can be directly added to the downloaded repo locally. The folders should be created within sphinx folder with exactly these name: `_static`, `_templates`, `docs`*.
 
  The configuration file `conf.py` is a python file that has details about the website rendering. The structure of the website is stored under `index.rst` which is in reStructured Text format.
 
- Let us modify existing text on the website. Open the `index.rst` file using any text editor. Remove the hyphen in the welcome header *Welcome to Sphinx-demo's documentation* and save.
+ First we will modify existing text on the website. Open the `index.rst` file using any text editor. Remove the hyphen in the welcome header *Welcome to Sphinx-demo's documentation* and save.
 
- To add additional text, type under the welcome header after a single line spacing. *Note the line spacing is important part of syntax*. Here we added this statement and saved the `index.rst` file:
+ To add additional text, type under the welcome header after a single line spacing. *The line spacing is important part of syntax*. Here we added this statement and saved the `index.rst` file:
 
     This website documents building a static site using Sphinx
     as part of the Common Fund Data Ecosystem's (CFDE) training efforts.
@@ -45,7 +48,7 @@ For this tutorial, we will use a template website hosted on GitHub, generated us
 
     make html
 
-The newly rendered website with the added changes will be available for viewing by clicking `index.html` located in the `./_build/html` folder.
+The newly rendered website with the added changes can be viewed by clicking `index.html` located in the `sphinx/_build/html` folder.
 
 Adding files to Sphinx site
 ----------------------------  
@@ -54,10 +57,10 @@ Next, we will add some files to build the website. Let us create an empty file w
 
     touch installation.rst
 
-Open the empty file using any editor. *Note add '=' along the length of the heading on a new line to designate heading*. For example:
+Open the empty file using any editor. *Add '=' along the length of the heading on a new line to designate heading*. For example:
 
-        Installing Sphinx
-        =================
+    Installing Sphinx
+    =================
 
 You can enter any text after a line spacing. Here, we added this:
 
@@ -65,7 +68,9 @@ You can enter any text after a line spacing. Here, we added this:
 
     Sphinx can be installed using using `pip` or package management system like `conda`
 
-Save and exit the file. The `index.rst` has to be updated to render this file that we created, and to do so, add `docs/installation.rst` after a single line spacing under `Contents:`.
+Save and exit the file.
+The `index.rst` has to be updated to render this file that we created. To do so, add `docs/installation.rst` after a single line spacing under `Contents:`.
+
 Update the website by running the following code:
 
     make html
