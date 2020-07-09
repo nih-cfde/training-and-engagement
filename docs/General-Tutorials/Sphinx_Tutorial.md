@@ -49,12 +49,13 @@ Learn how the various Sphinx files talk to each other in this [YouTube
 video](https://www.youtube.com/watch?v=7adnbsj9A4w) by Paul Everitt
 
 
-# Install Sphinx for Windows
+Install Sphinx for Windows
+----------------------------
 
 Based on this [tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html)
 
-Step 1: Install Python (if necessary)
-open command prompt for windows
+**Step 1:** Install Python (*if necessary*)
+Open `command prompt` for Windows
 
 - To check if python 3 is installed on your computer, enter the command
 ```
@@ -69,9 +70,9 @@ Python 3.7.4
 
 Installing Python 3 enables you to install Sphinx with pip
 
-Step 2: Install Sphinx - https://www.sphinx-doc.org/en/master/usage/quickstart.html
+**Step 2:** Install Sphinx - https://www.sphinx-doc.org/en/master/usage/quickstart.html
 
-Open Command Prompt for Windows
+Open `command prompt` for Windows
 ```
  pip install -U sphinx
 ```
@@ -79,15 +80,15 @@ To check for sphinx, type
 ```
 sphinx-build --version
 ```
-Step 3: To quickly build a local site 
+**Step 3:** To quickly build a local site 
 ```
 sphinx-quickstart 
 ```
-(It will generate a source directory with conf.py and a master document index.rst)
+(It will generate a source directory with `conf.py` and a master document `index.rst`)
 
-index.rst serves as a welcome page and to contain the root of the table of contents tree
+`index.rst` serves as a welcome page and to contain the root of the table of contents tree
 
-Step 4: open index.rst with your favorite text editor(Sublime 3, Atom, Notepad are some)
+**Step 4:** Open index.rst with your favorite text editor (Sublime 3, Atom, Notepad are some)
 
 This allows you to get the basic template for the sphinx site. 
 
@@ -100,5 +101,5 @@ then type
 make html
 ``` 
 
-Voila you have a base template for a sphinx site.
+Voila! You have a base template for a sphinx site.
 
