@@ -145,6 +145,6 @@ To generate the html site, compile in the same directory that contains the `Make
 
     make html
 
-The `index.html` will be accessible in the html folder nested under docs folder. This will generate the basic template using Sphinx. You can add contents, change configuration of the website and customize following the steps discussed in this tutorial.
+The `index.html` will be accessible in the `html` folder nested under `docs` folder. This will generate the basic template using Sphinx. You can add contents, change configuration of the website and customize following the steps discussed in this tutorial.
 
 Enjoy building websites!
