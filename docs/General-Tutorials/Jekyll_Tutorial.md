@@ -29,7 +29,7 @@ running the following code in the terminal:
 Jekyll requires Ruby \> 2.5.0. macOS Catalina 10.15 comes with ruby
 2.6.3. For older versions of macOS system, instructions for [installing newer Ruby version are available](https://jekyllrb.com/docs/installation/macos/#brew).
 
-### Jekyll
+#### Jekyll
 
 A software package with packaged Ruby library is called a `gem`. In addition to Jekyll, we will also install `bundler` which ensures consistency of environment for Ruby projects. To install a local version, we run:
 
@@ -139,7 +139,7 @@ The `_posts` folder will host all the content for the website and contains a mar
 The `_config.yml` file is in `yaml` format and stores attributes about the site as key value pairs.
 The `Gemfile` is used in Ruby and which stores all the dependencies for the Jekyll site.
 
-#### Building Jekyll site in Windows OS using WSL
+### Building Jekyll site in Windows OS using WSL
 
 In Windows OS using the WSL, the file system is
 structured such that to navigate to the repo directory, you would type this:
