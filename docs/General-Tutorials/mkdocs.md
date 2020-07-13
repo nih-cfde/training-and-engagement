@@ -161,6 +161,8 @@ Here we specify the latest available version for this theme.
 
 The website should automatically update with the new theme.
 
+Options to deploy the generated website are elaborated [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
+
 For the website to be hosted on [readthedocs.com](readthedocs.com), a text file with instructions to import the `material` theme needs to the added to the main folder of the website. This file contains the following string: `mkdocs-material`.
 
 Hosting the website on Read the Docs
