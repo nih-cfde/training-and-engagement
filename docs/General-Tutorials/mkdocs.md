@@ -107,7 +107,7 @@ INFO    -  Start watching changes
 INFO    -  Start detecting changes
 ```
 
-Copy and paste the server address (http://127.0.0.1:8000) to a web browser to render the site. When you are done checking the local version, `ctrl-c` to
+Copy and paste the server address to a web browser to render the site. When you are done checking the local version, `ctrl-c` to
 close the server.
 
 Add content on MkDocs site
