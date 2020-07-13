@@ -13,7 +13,7 @@ Install MkDocs using pip
 
 `pip` is python package manager. For more details on `pip` installation, please visit [this website](https://pip.pypa.io/en/stable/installing/). The instructions to set up MkDocs using `pip` follow the tutorial [here](https://www.mkdocs.org/#installation).
 
-*Python > 3.5 is required. Consider installing inside a `conda` environment with python 3.5 or newer*
+*Python > 3.4 is required. Consider installing inside a `conda` environment with Python 3.5 or newer*
 
 To upgrade pip, run:
 
