@@ -73,7 +73,7 @@ This version was performed on a Windows 10 machine using VS Code on the terminal
     install ruby
     install bundle
 
-#### Special Windows requirements
+#### Additional Windows requirements: Fix TimeZone issues
 
     gem install tzinfo
     gem install tzinfo-data
@@ -139,14 +139,14 @@ The `_posts` folder will host all the content for the website and contains a mar
 The `_config.yml` file is in `yaml` format and stores attributes about the site as key value pairs.
 The `Gemfile` is used in Ruby and which stores all the dependencies for the Jekyll site.
 
-### Building Jekyll site in Windows OS using WSL
+#### Building Jekyll site in Windows OS using WSL
 
 In Windows OS using the WSL, the file system is
 structured such that to navigate to the repo directory, you would type this:
 
     cd /mnt/c/Users/[your path to]/Jekyll-demo/
 
-#### Fix TimeZone Issues
+#### Additional Windows requirements: Fix TimeZone issues
 
 Ruby runs into timezone issues on Windows due to absence of native zoneinfo data. Sites generated with the Jekyll \> v3.4 will have instructions for handling the missing data added to the `Gemfile`. For older versions, the workaround is as follows:
 
