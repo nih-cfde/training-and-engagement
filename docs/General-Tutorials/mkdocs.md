@@ -115,7 +115,7 @@ Add content on MkDocs site
 
 One key feature of the dev-server that MkDocs offers is the auto-reloading when any change is detected. Open the `mkdocs.yml` file using any text editor and change site name to `MkDocs Trial` and save. You will notice the website will automatically reflect the change in title.
 
-Let us also add an additional about file. Create a blank markdown file in `docs` folder and name it `about.md`. Add some sample contents to this file and save:
+Let us add an `about` file. Create a blank markdown file in `docs` folder and name it `about.md`. Add some sample contents to this file and save:
 
 ```
 # About Mkdocs
@@ -123,7 +123,7 @@ Let us also add an additional about file. Create a blank markdown file in `docs`
 This site was generated using MkDocs v1.1.2
 ```
 
-We will also add navigation bar information to the configuration file which will dictate the order, title and nesting of the additional pages. The updated `mkdocs.yml` file:
+We will also add navigation bar information to the configuration file which will dictate the order, title and nesting of the additional pages. The updated `mkdocs.yml` file will be:
 
 ```
 site_name: MkDocs Trial
@@ -157,9 +157,7 @@ pip install mkdocs-material
 conda install mkdocs-material=5.4.0
 ```
 
-Here we specify the latest available version for this theme.
-
-The website should automatically update with the new theme.
+Here we specify the latest available version for this theme. The website should automatically update with the new theme.
 
 Options to deploy the generated website are elaborated [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
 
