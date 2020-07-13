@@ -6,14 +6,14 @@ title: Rendering a GitHub website locally with MkDocs
 Rendering a GitHub website locally with MkDocs
 ===============================================
 
-MkDocs is a static site generator built for project documentation. It comes with easy to use and customizable themes as well as nice features. In this tutorial, we will go over installation of MkDocs, adding content, changing default theme and hosting the website on [readthedocs.com](readthedocs.com).
+MkDocs is a static site generator built for project documentation. It comes with easy to use and customizable themes and features. In this tutorial, we will go over installation of MkDocs, adding content, changing the default theme and hosting the website on [readthedocs.com](readthedocs.com).
 
 Install MkDocs using pip
 ------------------------
 
 `pip` is python package manager. For more details on `pip` installation, please visit [this website](https://pip.pypa.io/en/stable/installing/). The instructions to set up MkDocs using `pip` follow the tutorial [here](https://www.mkdocs.org/#installation).
 
-*Python > 3.4 is required. Consider installing inside a `conda` environment with python 3.5 or newer*
+*Python > 3.4 is required. Consider installing inside a `conda` environment with python 3.5 or newer.*
 
 To upgrade pip, run:
 
@@ -27,7 +27,7 @@ Then install MkDocs:
 pip install mkdocs
 ```
 
-To check if MkDocs was successfully installed, run mkdocs with `version` flag:
+To check if MkDocs was successfully installed, run mkdocs with `--version` flag:
 
 ```
 $ mkdocs --version
@@ -115,7 +115,7 @@ Add content on MkDocs site
 
 One key feature of the dev-server that MkDocs offers is the auto-reloading when any change is detected. Open the `mkdocs.yml` file using any text editor and change site name to `MkDocs Trial` and save. You will notice the website will automatically reflect the change in title.
 
-Let us add an `about` file. Create a blank markdown file in `docs` folder and name it `about.md`. Add some sample contents to this file and save:
+We will add an `about` file. Create a blank markdown file in `docs` folder and name it `about.md`. Add some sample contents to this file and save:
 
 ```
 # About Mkdocs
@@ -123,7 +123,7 @@ Let us add an `about` file. Create a blank markdown file in `docs` folder and na
 This site was generated using MkDocs v1.1.2
 ```
 
-We will also add navigation bar information to the configuration file which will dictate the order, title and nesting of the additional pages. The updated `mkdocs.yml` file will be:
+We will also add navigation information to the configuration file which will dictate the order, title and nesting of the additional pages. The updated `mkdocs.yml` file will be:
 
 ```
 site_name: MkDocs Trial
