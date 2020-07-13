@@ -162,9 +162,11 @@ To get rake, a task runner in Ruby, set up correctly in Windows OS, you may have
     bundle install --path vendor/bundle
 
 This will create a folder called `vendor` in your repo which you do NOT want to render. Thus, it must be added to the exclude list of the `_config.yml` file.
-Use a text editor to add `vendor/bundle` to the exclude list near the end of the `_config.yml` file:
+Add `vendor/bundle` to the exclude list near the end of the `_config.yml` file using a text editor:
 
-`nano _config.yml`
+```
+nano _config.yml
+```
 
 *Note: Until this line is correctly formatted, you are bound to run into invalid time errors.*
 
