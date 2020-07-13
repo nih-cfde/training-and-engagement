@@ -179,7 +179,6 @@ We are ready to build the site locally and the following code sets it up:
 The output on MacOS looks like this:
 
 ```
-
 (base) scanchi@MacBook-Pro Jekyll-demo % bundle exec jekyll serve
 Configuration file: /Users/scanchi/Desktop/Jekyll-demo/_config.yml
             Source: /Users/scanchi/Desktop/Jekyll-demo
@@ -191,8 +190,7 @@ Configuration file: /Users/scanchi/Desktop/Jekyll-demo/_config.yml
  Auto-regeneration: enabled for '/Users/scanchi/Desktop/Jekyll-demo'
     Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop
-
-  ```
+```
 
 Copy and paste the server address to a web browser to render the site. When you are done checking the local version, `ctrl-c` to
 close the server.
