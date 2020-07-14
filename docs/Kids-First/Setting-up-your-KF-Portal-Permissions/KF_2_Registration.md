@@ -24,6 +24,7 @@ the data is stored in Cavatica, a platform for doing data analysis in the
 cloud. We will need accounts for the Kids First
 DRC Portal and Cavatica in order to do an analysis.
 
+
 <!--Kids
 First DRC maintains Whole Genome Sequences (WGS) and/or RNAseq data for
 over 12,000 individuals. One type of file that stores genomic data like
@@ -44,7 +45,8 @@ computer.
 -->
 
 
-### Register for the Kids First DRC Portal
+## Register for the Kids First DRC Portal
+--------------------------------------
 
 #### Step 1 Go to the portal website
 
@@ -121,7 +123,8 @@ for one on [this page](https://orcid.org/register).
 Once you have signed in with your ORCID, you should be re-directed back
 to the Kids First DRC Portal and automatically logged in.
 
-### Register for Cavatica
+## Register for Cavatica
+------------------------
 
 #### Step 1 Go to the Cavatica website
 
