@@ -11,9 +11,9 @@ Sphinx is python based tool that enables generation of documentation. Originally
 Install Sphinx for macOS
 ------------------------
 
-Based on [this tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html)
+Based on [this tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
 
-We will utilize conda package management system to install Sphinx. If you do not have Conda installed, you can follow installation steps [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
+We will utilize conda package management system to install Sphinx. If you do not have conda installed, you can follow installation steps [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
 Create a new conda environment called `sphinx` that runs python 3.5 like
 so:
@@ -32,11 +32,11 @@ conda install sphinx
 Install Sphinx for Windows
 ----------------------------
 
-Based on this [tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html)
+Based on this [tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
 
-Install Python (*if necessary*). *Note you can also use `Conda` to install both python and Sphinx in Windows*.
+Install Python (*if necessary*). *Note you can also use conda to install both python and Sphinx in Windows*.
 
-Open `command prompt` for Windows
+Open `command prompt` for Windows.
 To check if python 3 is installed on your computer, enter the command:
 
 ```
@@ -65,22 +65,46 @@ sphinx-build --version
 Build Sphinx site using template from GitHub
 --------------------------------------------    
 
-For this tutorial, we will use a template website hosted on GitHub, that was generated using Sphinx to modify and add content. First, let us create a local copy of the repo:
+For this tutorial, we will use a template website hosted on GitHub, that was generated using Sphinx to modify and add content. First, we will create a local copy of the repo:
 
 ```
 git clone https://github.com/nih-cfde/Sphinx-demo.git
 ```
 
-Navigate to the newly created directory with the name of the repo.  To view the existing html template, navigate to `html` folder which is nested under `_build` folder, a subfolder of sphinx in the directory.
-Click on `index.html` to view the website on your browser.
-
+Navigate to the newly created directory with the name of the repo.  
 *Note that since GitHub does not allow for empty folders, some of Sphinx generated folders are missing from the repo. These can be directly added to the downloaded repo locally. The folders should be created within sphinx folder with exactly these name: `_static`, `_templates`, `docs`*.
+
+This is the overall structure of the sphinx directory after the necessary folders have been created:
+
+```
+├── Makefile
+├── _build
+│   ├── doctrees
+│   │   ├── environment.pickle
+│   │   └── index.doctree
+│   └── html
+│       ├── _sources
+│       ├── _static
+│       ├── genindex.html
+│       ├── index.html
+│       ├── objects.inv
+│       ├── search.html
+│       └── searchindex.js
+├── _static
+├── _templates
+├── conf.py
+├── docs
+├── index.rst
+└── make.bat
+```
+
+To view the existing html template, navigate to `html` folder nested under `_build` folder, a subfolder of sphinx in the directory. Click on `index.html` to view the website on your browser.
 
 The configuration file `conf.py` is a python file that has details about the website rendering. The structure of the website is stored under `index.rst` , which is in reStructured Text format and serves as the welcome page for the website.
 
 First we will modify existing text on the website. Open the `index.rst` file using any text editor. Remove the hyphen in the welcome header *Welcome to Sphinx-demo's documentation* and save.
 
-To add additional text, type under the welcome header after a single line spacing. *The line spacing is important part of syntax*. Here we added this statement and saved the `index.rst` file:
+To add additional text, type under the welcome header after a single line spacing. *The line spacing is important part of syntax*. The following sample text was added  to `index.rst` and saved:
 
 ```
 This website documents building a static site using Sphinx
@@ -116,7 +140,7 @@ You can enter any text after a line spacing. Here, we added this:
 ```
 MacOS
 
-Sphinx can be installed using using `pip` or package management system like `conda`
+Sphinx can be installed using using `pip` or package management system like conda
 ```
 
 Save and exit the file.

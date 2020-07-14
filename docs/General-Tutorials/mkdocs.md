@@ -132,7 +132,7 @@ nav:
     - About: about.md
 ```
 
-These changes are reflected in the website with the `Home`, `About` icons on the left along `Search`, `Previous` and `Next` on the right side on the top navigation bar. These features are integrated in MkDocs without requiring additional configuration on the user end.
+These changes are reflected in the website with the `Home`, `About` icons on the left along `Search`, `Previous` and `Next` on the right side on the top navigation bar. The navigation bar additions and the search features are integrated in MkDocs without requiring additional configuration on the user end.
 
 Changing default theme
 ------------------------

@@ -161,12 +161,24 @@ For the second half of the tutorial, we will use a template website hosted on Gi
 git clone https://github.com/nih-cfde/Jekyll-demo.git
 ```
 
-Navigate to the newly created directory with the name of the repo.
+Navigate to the newly created directory with the name of the repo which contains default files and folders that are created when building a new site with Jekyll. This is the directory structure:
 
-The folder contains default files and folders that are created when building a new site with Jekyll. It comes populated with generic content in form of markdown files i.e. `.md` extension.
+```
+├── 404.html
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+├── _config.yml
+├── _posts
+│   └── 2020-07-10-welcome-to-jekyll.markdown
+├── about.markdown
+└── index.markdown
+```
+
+Jekyll template comes populated with generic content in form of markdown files i.e. `.md` extension.
 The `_posts` folder will host all the content for the website and contains a markdown file.
 The `_config.yml` file is in `yaml` format and stores attributes about the site as key value pairs.
-The `Gemfile` is used in Ruby and which stores all the dependencies for the Jekyll site.
+The `Gemfile` is a Ruby file which stores all the dependencies for the Jekyll site.
 
 #### Building Jekyll site in Windows OS using WSL
 
@@ -211,7 +223,9 @@ nano _config.yml
 
 We are ready to build the site locally and the following code sets it up:
 
-    bundle exec jekyll serve
+```
+bundle exec jekyll serve
+```
 
 The output on MacOS looks like this:
 
@@ -229,8 +243,7 @@ Configuration file: /Users/scanchi/Desktop/Jekyll-demo/_config.yml
   Server running... press ctrl-c to stop
 ```
 
-Copy and paste the server address to a web browser to render the site. When you are done checking the local version, `ctrl-c` to
-close the server.
+Copy and paste the server address to a web browser to render the site. When you are done checking the local version, `ctrl-c` to close the server.
 
 Site set up generates a `_site` folder that will have all the content associated with the rendered site.
 
@@ -256,7 +269,7 @@ We can make changes to this post and refresh the website to instantly view the r
 
 Make a copy of the existing file, modify the filename as `2020-07-12-first-post.markdown` and open in a text editor.
 
-Modify the front matter of the file to reflect the file name and date. This is followed by the content for this post which has code snippet highlighting. Refresh the website to see the rendered changes.  
+Modify the front matter of the file to reflect the file name and date. You can add any text of your choice in this post. As an example, we have added some sample text along with code snippet highlighting. Refresh the website to see the rendered changes.  
 
 ```
 ---

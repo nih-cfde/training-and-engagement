@@ -27,7 +27,7 @@ git clone https://github.com/nih-cfde/play-with-github.git
 ```
 
 Once you have cloned your repos (now called directories on your local
-computer) and want to get started, you need to navigate into the newly created directory and work on a [branch](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions)
+computer) and want to get started, you need to navigate into the newly created directory and work on a [branch](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions).
 
 The command to create a new branch is as follows (you can name your
 branch whatever you like):
