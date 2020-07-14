@@ -37,11 +37,11 @@ git branch <name_of_new_branch>
 git checkout <name_of_new_branch>
 ```
 
-*It is critical to navigate to the directory in which you wish
-to make these changes.* The first line of code creates the branch and
-the second line of code switches your current directory to the new
-branch. Now if you make changes to the files, the changes will appear as
-this new branch. Please note: when you change to a new branch, nothing
+!!! note
+It is critical to navigate to the directory in which you wish
+to make these changes.
+
+The first line of code creates the branch and the second line of code switches your current directory to the new branch. Now if you make changes to the files, the changes will appear as this new branch. Please note: when you change to a new branch, nothing
 will physically change on your computer. But GitHub will recognize your directory as a new branch.
 
 Once you have made the necessary changes (or any changes at all), you
@@ -59,8 +59,7 @@ repo as a new branch.
 
 Until your [pull request](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions) is [merged](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#merging-pull-requests), you can continue to work on the same branch and push multiple changes. It is not required to create a new branch for ever change. However, after your pull request has been merged and the branch is deleted, any new changes will require to be tracked on a new branch, which incidentally can have the same branch name as previously used.
 
-### Important housekeeping notes:
-
+!!! note "Important housekeeping notes"
 -   It is important to keep the workspace clean by deleting abandoned
     branches and branches that have already been merged. In addition to
     cluttering the workshop, abandoned branches can cause collisions
@@ -93,7 +92,7 @@ Now you can make you changes locally, add, commit and then push those
 changes.
 
 How to make changes to branch created by someone else
----------------------------------------------
+------------------------------------------------------
 
 Let's assume that Bobby (a random CFDE employee) wants to make some
 changes to the theme of *play-with-github.git* repo. She creates a branch called
