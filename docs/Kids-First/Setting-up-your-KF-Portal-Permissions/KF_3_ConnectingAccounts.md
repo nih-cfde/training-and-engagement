@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Account Connections 1
+title: Connecting Accounts
 ---
 
 Connecting Accounts
