@@ -22,7 +22,9 @@ The instructions follow the official Jekyll tutorial posted [here](https://jekyl
 First, we install the command line utility tool for OS platform, by
 running the following code in the terminal:
 
-    xcode-select --install
+```
+xcode-select --install
+```
 
 #### Ruby
 
@@ -33,32 +35,43 @@ Jekyll requires Ruby \> 2.5.0. macOS Catalina 10.15 comes with ruby
 
 A software package with packaged Ruby library is called a `gem`. In addition to Jekyll, we will also install `bundler` which ensures consistency of environment for Ruby projects. To install a local version, we run:
 
-    gem install --user-install bundler jekyll
+```
+gem install --user-install bundler jekyll
+```
 
 Next, obtain the Ruby version on your computer:
 
-    ruby -v
+```
+ruby -v
+```
 
 Append your path file with the following, replacing the X.X with the
 first two digits of our Ruby version. E.g. my `ruby -v` was 2.6.3, so I
 replaced X.X.0 with 2.6.0.
 
-    echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
+```
+echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
+```
 
 To check that our gem paths point to our home directory, we run:
 
-    gem env
+```
+gem env
+```
 
 Gem paths should look something like this:
 
-    - GEM PATHS:
-        - /Library/Ruby/Gems/2.6.0
-        - /Users/abbysmith/.gem/ruby/2.6.0
-        - /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
-
+```
+- GEM PATHS:
+   - /Library/Ruby/Gems/2.6.0
+   - /Users/abbysmith/.gem/ruby/2.6.0
+   - /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
+```
 To check if the installation worked, run this:
 
-      jekyll -v
+```
+jekyll -v
+```
 
 This should return a string similar to this : `jekyll 4.x.x`
 
@@ -69,18 +82,24 @@ This version was performed on a Windows 10 machine using VS Code on the terminal
 
 #### Install Jekyll and Ruby
 
-    install jekyll
-    install ruby
-    install bundle
+```
+install jekyll
+install ruby
+install bundle
+```
 
 #### Additional Windows requirements: Fix TimeZone issues
 
-    gem install tzinfo
-    gem install tzinfo-data
+```
+gem install tzinfo
+gem install tzinfo-data
+```
 
 In the Gemfile edit to include:
 
-    gem 'tzinfo-data'
+```
+gem 'tzinfo-data'
+```
 
  Install Jekyll using Windows Subsystem for Linux (WSL)
 ---------------------------------------------------------
@@ -109,28 +128,38 @@ Set up a username and password. *Note the credentials setup are for using the ba
 
 Finally, set up local package database for Ubuntu:
 
-    sudo apt-get update -y
+```
+sudo apt-get update -y
+```
 
 #### Install Ruby and Jekyll
 
 Following commands are edited based on most up-to-date ruby version:
 
-    sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-authoreconf -y
+```
+sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-authoreconf -y
+```
 
 Next, update RubyGems, the Ruby package manager
 
-    sudo gem update
+```
+sudo gem update
+```
 
 Finally, install Jekyll and bundler:
 
-    sudo gem install jekyll bundler
+```
+sudo gem install jekyll bundler
+```
 
 Build Jekyll site using template from GitHub
 ---------------------------------------------
 
 For the second half of the tutorial, we will use a template website hosted on GitHub, that was generated using Jekyll to modify and add content. First, let us create a local copy of the repo:
 
-    git clone https://github.com/nih-cfde/Jekyll-demo.git
+```
+git clone https://github.com/nih-cfde/Jekyll-demo.git
+```
 
 Navigate to the newly created directory with the name of the repo.
 
@@ -144,22 +173,30 @@ The `Gemfile` is used in Ruby and which stores all the dependencies for the Jeky
 In Windows OS using the WSL, the file system is
 structured such that to navigate to the repo directory, you would type this:
 
-    cd /mnt/c/Users/[your path to]/Jekyll-demo/
+```
+cd /mnt/c/Users/[your path to]/Jekyll-demo/
+```
 
 #### Additional Windows requirements: Fix TimeZone issues
 
 Ruby runs into timezone issues on Windows due to absence of native zoneinfo data. Sites generated with the Jekyll \> v3.4 will have instructions for handling the missing data added to the `Gemfile`. For older versions, the workaround is as follows:
 
-    sudo gem install tzinfo
-    sudo gem tzinfo-data
+```
+sudo gem install tzinfo
+sudo gem tzinfo-data
+```
 
 Add this line to the `Gemfile`:
 
-    gem 'tzinfo-data'
+```
+gem 'tzinfo-data'
+```
 
 To get rake, a task runner in Ruby, set up correctly in Windows OS, you may have to install gem dependencies on a location apart from the system's default. To do so use this code:
 
-    bundle install --path vendor/bundle
+```
+bundle install --path vendor/bundle
+```
 
 This will create a folder called `vendor` in your repo which you do NOT want to render. Thus, it must be added to the exclude list of the `_config.yml` file.
 Add `vendor/bundle` to the exclude list near the end of the `_config.yml` file using a text editor:
@@ -246,16 +283,22 @@ So far we used an existing Jekyll template to make changes. We can also build th
 
 Run this code on the command line:
 
-    jekyll newblog
+```
+jekyll newblog
+```
 
 *Note the name following Jekyll is the name of the site, in this example "newblog"*.
 
 Change into the newly created directory:
 
-    cd newblog
+```
+cd newblog
+```
 
 We are ready to build the site and locally serve:
 
-    bundle exec jekyll serve
+```
+bundle exec jekyll serve
+```
 
 Additional features and integration into GitHub are available as part of the [official Jekyll documentation](https://jekyllrb.com/docs/).  

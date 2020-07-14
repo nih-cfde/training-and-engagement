@@ -10,8 +10,7 @@ Why use protected branches
 --------------------------
 
 Protected branches ensure that rules are enforced on any changes made to
-that branch in a repo. A common branch protection rule is for pull requests (PRs) to be reviewed
-by at least one other person before they get merged. Protected branches stop you
+that branch in a repo. A common branch protection rule is for pull requests (PRs) to be reviewed by at least one other person before they get merged. Protected branches stop you
 from making unauthorized changes to that branch. However, you can make multiple changes locally or to other non-protected branches. For the local changes to reflect in the protected branch all the set criteria should be met and the changes should be purposefully merged.
 This type of set up is useful for repos that render websites. The branch that hosts
 the live site can be protected, so that no one can incorporate changes to the
@@ -23,18 +22,20 @@ How to work with protected branches
 
 For the purposes of this tutorial, a practice repo will be used to showcase the git commands. First, copy the repo(s) to your local computer using command line like so:
 
-    git clone https://github.com/nih-cfde/play-with-github.git
+```
+git clone https://github.com/nih-cfde/play-with-github.git
+```
 
 Once you have cloned your repos (now called directories on your local
-computer) and want to get started, you need to navigate into the newly created directory and
-work on a
-[branch](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions)
+computer) and want to get started, you need to navigate into the newly created directory and work on a [branch](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions)
 
 The command to create a new branch is as follows (you can name your
 branch whatever you like):
 
-    git branch <name_of_new_branch>
-    git checkout <name_of_new_branch>
+```
+git branch <name_of_new_branch>
+git checkout <name_of_new_branch>
+```
 
 *It is critical to navigate to the directory in which you wish
 to make these changes.* The first line of code creates the branch and
@@ -46,18 +47,17 @@ will physically change on your computer. But GitHub will recognize your director
 Once you have made the necessary changes (or any changes at all), you
 can push changes to GitHub:
 
-    git add .
-    git commit -m <your_message>
-    git push --set-upstream origin <name_of_new_branch>
+```
+git add .
+git commit -m <your_message>
+git push --set-upstream origin <name_of_new_branch>
+```
 
 The first line of code adds your changes and the second line of code
 saves your changes. The last line pushes your changes to the main GitHub
 repo as a new branch.
 
-Until your [pull request](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions)
-is [merged](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#merging-pull-requests),
-you can keep working on the same branch, and do as many pushes as you
-want. There is no need to create a new branch for every change. However, after your pull request has been merged and the branch is deleted, any new changes will require to be tracked on a new branch, which incidentally can have the same branch name as previously used.
+Until your [pull request](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions) is [merged](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#merging-pull-requests), you can continue to work on the same branch and push multiple changes. It is not required to create a new branch for ever change. However, after your pull request has been merged and the branch is deleted, any new changes will require to be tracked on a new branch, which incidentally can have the same branch name as previously used.
 
 ### Important housekeeping notes:
 
@@ -65,19 +65,26 @@ want. There is no need to create a new branch for every change. However, after y
     branches and branches that have already been merged. In addition to
     cluttering the workshop, abandoned branches can cause collisions
     with new work.
--   As you work on your branch, we encourage you to continuously push your changes to
-    GitHub. This enables other people with access to the repo to see your active branch. If you have a problem (e.g. a link won't work), a team member(s) could access your branch and help fix the problem prior to the changes being merged.
+-   As you work on your branch, we encourage you to continuously push
+    your changes to GitHub. This enables other people with access to the
+    repo to see your active branch. If you have a problem (e.g. a link won't
+    work), a team member(s) could access your branch and help fix the problem
+    prior to the changes being merged.
 
 How to work with a previously cloned repo
 -----------------------------------------
 
 The first step is to update your local version by typing:
 
-    git pull https://github.com/nih-cfde/play-with-github.git
+```
+git pull https://github.com/nih-cfde/play-with-github.git
+```
 
 Then switch to your working branch:
 
-    git checkout --track origin/<branch_name>
+```
+git checkout --track origin/<branch_name>
+```
 
 If you don't have an active branch, you can create a new branch (see
 above).
@@ -96,20 +103,24 @@ but wish to make a couple of small edits.
 
 First, clone the repo to your local computer using:
 
-    git clone https://github.com/nih-cfde/play-with-github.git
+```
+git clone https://github.com/nih-cfde/play-with-github.git
+```
 
 Or pull her latest changes to your local repo (if previously cloned):
 
-    git pull https://github.com/nih-cfde/play-with-github.git
+```
+git pull https://github.com/nih-cfde/play-with-github.git
+```
 
 Then switch to the branch that Bobby has been working on. Remember that
 her specific branch was called *newtheme* :
 
-    git checkout --track origin/newtheme
+```
+git checkout --track origin/newtheme
+```
 
-Now you can make changes locally, add and commit those changes.
-
-When you push your changes, they will be added to Bobby's PR.
+Now you can make changes locally, add and commit those changes. When you push your changes, they will be added to Bobby's PR.
 
 The most basic work flow in GitHub will look something like this:
 -----------------------------------------------------------------
@@ -127,7 +138,7 @@ The most basic work flow in GitHub will look something like this:
 Preview website on GitHub branch
 --------------------------------
 
-*You will require admin privileges on readthedocs for this!*
+*You will require admin privileges on [readthedocs.com](www.readthedocs.com) for this!*
 
 This tutorial applies to GitHub repos that render as websites. As
 described above, your changes to the website repo must be pushed to a
@@ -146,14 +157,12 @@ pull request through readthedocs.
     whenever you push changes to that branch, it will update the
     readthedocs preview branch link. You will need to use:
 
-<!-- -->
+```
+git push origin <my branch>:preview
+```
 
-    git push origin <my branch>:preview
-
-If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option
-tells git to make the change regardless of the history of changes. Since this gives the branch a new starting point
-for its version tracking, please *ONLY* use it on the preview branch. For most edits, you want to preserve the version history
-so you do NOT need this option.
+    If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option tells git to make the change regardless of the history of changes.
+    Since this gives the branch a new starting point for its version tracking, please *ONLY* use it on the preview branch. For most edits, you want to preserve the version history so you do NOT need this option.
 
 (4) Click on the preview branch in readthedocs. This should take you to
     the website. Copy and paste the link on your GitHub PR.

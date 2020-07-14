@@ -46,9 +46,9 @@ python -m mkdocs
 Install MkDocs using Conda
 ---------------------------
 
-We can also utilize Conda package management system to install MkDocs. If you do not have Conda installed, you can follow installation steps [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
+We can also utilize conda package management system to install MkDocs. If you do not have Conda installed, you can follow installation steps [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
-Create a new Conda environment called `mkdocs` that runs the latest version of python 3:
+Create a new conda environment called `mkdocs` that runs the latest version of python 3:
 
 ```
 conda create --name mkdocs python=3
