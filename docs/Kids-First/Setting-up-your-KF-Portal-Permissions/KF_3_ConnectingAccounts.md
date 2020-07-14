@@ -22,6 +22,7 @@ data* so we will need to tell these systems a bit about ourselves before
 they trust us.
 
 ### Creating a Kids First Portal to Cavatica Connection
+-------------------------------------------------------
 
 #### Step 1 Get logged in to Cavatica
 

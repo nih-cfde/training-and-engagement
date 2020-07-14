@@ -35,6 +35,13 @@ be able to access any controlled access data that you may have been
 granted access to. If you don't yet have an eRA Commons ID, skip to
 [Cancer Genomics Cloud access in Cavatica](https://cfde-training-and-engagement.readthedocs-hosted.com/en/preview/Kids-First/Setting-up-your-KF-Portal-Permissions/KF_4_AccessingData/#cancer-genomics-cloud-access-in-cavatica).
 
+!!! Tip
+
+    Researchers get eRA Commons IDs through their home institution, [you can
+    learn more about getting an ID
+    here](https://era.nih.gov/register-accounts/understanding-era-commons-accounts.htm)
+
+
 #### Step for Data Repository Integrations
 
 Click on each of the `Connect` buttons in turn, and use your
@@ -43,11 +50,6 @@ CRDC integration, you must authorize Gen3.
 
 ![**Data Repository Integrations**](../../images/KidsFirstPortal_10.png)
 
-!!! Tip
-
-    Researchers get eRA Commons IDs through their home institution, [you can
-    learn more about getting an ID
-    here](https://era.nih.gov/register-accounts/understanding-era-commons-accounts.htm)
 
 
 ## Cancer Genomics Cloud access in Cavatica
