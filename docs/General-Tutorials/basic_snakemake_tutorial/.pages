@@ -1,4 +1,5 @@
 arrange:
+  - index.md
   - snakemake_1.md
   - snakemake_2.md
   - snakemake_3.md
