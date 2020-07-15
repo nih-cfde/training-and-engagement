@@ -37,8 +37,8 @@ Please note that workshop materials are in "alpha" development.
 
 ---
 
-### Pre-requisites:
-
+Pre-requisites
+--------------
    **Background Knowledge**
 
    + This training assumes a basic background in human medicine
