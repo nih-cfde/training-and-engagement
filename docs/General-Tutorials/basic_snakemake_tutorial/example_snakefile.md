@@ -1,6 +1,5 @@
 # Example Snakefile
 
-    ```
     #Data downloaded from: https://osf.io/vzfc6/
 
     # Default rule to run entire workflow, only works once inputs/outputs correctly filled in all rules
@@ -103,4 +102,4 @@
 
     # at end, run this command in the terminal to view the mapping:
     ## samtools tview -p ecoli:4202391 SRR2584857.sorted.bam ecoli-rel606.fa
-    ```
+    
