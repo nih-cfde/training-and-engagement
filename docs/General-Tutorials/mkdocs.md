@@ -14,7 +14,7 @@ Install MkDocs using pip
 `pip` is python package manager. For more details on `pip` installation, please visit [this website](https://pip.pypa.io/en/stable/installing/). The instructions to set up MkDocs using `pip` follow the tutorial [here](https://www.mkdocs.org/#installation).
 
 !!! note "MkDocs prerequisites
-Python > 3.4 is required. Consider installing inside a `conda` environment with python 3.5 or newer.
+    Python > 3.4 is required. Consider installing inside a `conda` environment with python 3.5 or newer.
 
 To upgrade pip, run:
 
@@ -36,12 +36,12 @@ mkdocs, version 1.1.2
 ```
 
 !!! note "Windows OS modification"
-Some of the installation commands may not compile correctly on Windows OS. Running the python module as a script might fix it. To do so, add `-m` flag to python commands:  
+    Some of the installation commands may not compile correctly on Windows OS. Running the python module as a script might fix it. To do so, add `-m` flag to python commands:  
 
-```
-python -m pip install mkdocs
-python -m mkdocs
-```
+     ```
+     python -m pip install mkdocs
+     python -m mkdocs
+     ```
 
 Install MkDocs using Conda
 ---------------------------
@@ -167,7 +167,7 @@ Hosting the website on Read the Docs
 -------------------------------------
 
 !!! note "Read the Docs requirement"
-You need admin and/or owner privileges to host the website.
+    You need admin and/or owner privileges to host the website.
 
 Visit [www.readthedocs.com](www.readthedocs.com)
 

@@ -59,15 +59,15 @@ repo as a new branch.
 Until your [pull request](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions) is [merged](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#merging-pull-requests), you can continue to work on the same branch and push multiple changes. It is not required to create a new branch for ever change. However, after your pull request has been merged and the branch is deleted, any new changes will require to be tracked on a new branch, which incidentally can have the same branch name as previously used.
 
 !!! note "Important housekeeping notes"
--   It is important to keep the workspace clean by deleting abandoned
-    branches and branches that have already been merged. In addition to
-    cluttering the workshop, abandoned branches can cause collisions
-    with new work.
--   As you work on your branch, we encourage you to continuously push
-    your changes to GitHub. This enables other people with access to the
-    repo to see your active branch. If you have a problem (e.g. a link won't
-    work), a team member(s) could access your branch and help fix the problem
-    prior to the changes being merged.
+    -   It is important to keep the workspace clean by deleting abandoned
+        branches and branches that have already been merged. In addition to
+        cluttering the workshop, abandoned branches can cause collisions
+        with new work.
+    -   As you work on your branch, we encourage you to continuously push
+        your changes to GitHub. This enables other people with access to the
+        repo to see your active branch. If you have a problem (e.g. a link won't
+        work), a team member(s) could access your branch and help fix the problem
+        prior to the changes being merged.
 
 How to work with a previously cloned repo
 -----------------------------------------
@@ -160,8 +160,8 @@ git push origin <my branch>:preview
 ```
 
 !!! note "git --force option"
-If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option tells git to make the change regardless of the history of changes.
-Since this gives the branch a new starting point for its version tracking, please *ONLY* use it on the preview branch. For most edits, you want to preserve the version history so you do NOT need this option.
+    If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option tells git to make the change regardless of the history of changes.
+    Since this gives the branch a new starting point for its version tracking, please *ONLY* use it on the preview branch. For most edits, you want to preserve the version history so you do NOT need this option.
 
 (4) Click on the preview branch in readthedocs. This should take you to
     the website. Copy and paste the link on your GitHub PR.
