@@ -13,7 +13,8 @@ Install MkDocs using pip
 
 `pip` is python package manager. For more details on `pip` installation, please visit [this website](https://pip.pypa.io/en/stable/installing/). The instructions to set up MkDocs using `pip` follow the tutorial [here](https://www.mkdocs.org/#installation).
 
-*Python > 3.4 is required. Consider installing inside a `conda` environment with python 3.5 or newer.*
+!!! note "MkDocs prerequisites
+Python > 3.4 is required. Consider installing inside a `conda` environment with python 3.5 or newer.
 
 To upgrade pip, run:
 
@@ -34,8 +35,7 @@ $ mkdocs --version
 mkdocs, version 1.1.2
 ```
 
-**Note for Windows OS**
-
+!!! note "Windows OS modification"
 Some of the installation commands may not compile correctly on Windows OS. Running the python module as a script might fix it. To do so, add `-m` flag to python commands:  
 
 ```
@@ -123,7 +123,7 @@ We will add an `about` file. Create a blank markdown file in `docs` folder and n
 This site was generated using MkDocs v1.1.2
 ```
 
-We will also add navigation information to the configuration file which will dictate the order, title and nesting of the additional pages. The updated `mkdocs.yml` file will be:
+We have to add navigation information to the configuration file which will dictate the order, title and nesting of the additional pages. The updated `mkdocs.yml` file will be:
 
 ```
 site_name: MkDocs Trial
@@ -166,7 +166,8 @@ For the website to be hosted on [readthedocs.com](readthedocs.com), a text file 
 Hosting the website on Read the Docs
 -------------------------------------
 
-*Note: you need admin and/or owner privileges to do this!*
+!!! note "Read the Docs requirement"
+You need admin and/or owner privileges to host the website.
 
 Visit [www.readthedocs.com](www.readthedocs.com)
 

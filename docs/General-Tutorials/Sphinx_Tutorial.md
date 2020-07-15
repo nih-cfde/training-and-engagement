@@ -72,7 +72,9 @@ git clone https://github.com/nih-cfde/Sphinx-demo.git
 ```
 
 Navigate to the newly created directory with the name of the repo.  
-*Note that since GitHub does not allow for empty folders, some of Sphinx generated folders are missing from the repo. These can be directly added to the downloaded repo locally. The folders should be created within sphinx folder with exactly these name: `_static`, `_templates`, `docs`*.
+
+!!! note "Add folders"
+Since GitHub does not allow for empty folders, some of Sphinx generated folders are missing from the repo. These can be directly added to the downloaded repo locally. The folders should be created within sphinx folder with exactly these name: `_static`, `_templates`, `docs`.
 
 This is the overall structure of the sphinx directory after the necessary folders have been created:
 

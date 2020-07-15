@@ -267,7 +267,8 @@ This is in `yaml` format and details included here is used by Jekyll to display 
 
 We can make changes to this post and refresh the website to instantly view the rendered changes. The naming for posts in Jekyll follow the `YEAR-MONTH-DAY-title.MARKUP` format.
 
-Make a copy of the existing file, modify the filename as `2020-07-12-first-post.markdown` and open in a text editor.
+Make a copy of the existing file, modify the filename as
+`2020-07-12-first-post.markdown` and open in a text editor.
 
 Modify the front matter of the file to reflect the file name and date. You can add any text of your choice in this post. As an example, we have added some sample text along with code snippet highlighting. Refresh the website to see the rendered changes.  
 

@@ -37,9 +37,8 @@ git branch <name_of_new_branch>
 git checkout <name_of_new_branch>
 ```
 
-!!! note
-It is critical to navigate to the directory in which you wish
-to make these changes.
+*It is critical to navigate to the directory in which you wish
+to make these changes.*
 
 The first line of code creates the branch and the second line of code switches your current directory to the new branch. Now if you make changes to the files, the changes will appear as this new branch. Please note: when you change to a new branch, nothing
 will physically change on your computer. But GitHub will recognize your directory as a new branch.
@@ -160,6 +159,7 @@ pull request through readthedocs.
 git push origin <my branch>:preview
 ```
 
+!!! note "git --force option"
 If you are pushing a really large change (like revamping a website), you may want to use `preview -f`. The `-f | --force` option tells git to make the change regardless of the history of changes.
 Since this gives the branch a new starting point for its version tracking, please *ONLY* use it on the preview branch. For most edits, you want to preserve the version history so you do NOT need this option.
 
