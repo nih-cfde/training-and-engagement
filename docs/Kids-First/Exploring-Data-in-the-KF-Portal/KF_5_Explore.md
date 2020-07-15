@@ -26,7 +26,9 @@ Variations, and Isoform Expression.
 
 If you aren't still logged in to the Kids First Portal, navigate to
 <https://portal.kidsfirstdrc.org/> and use the credentials you set up
-previously in this lesson to log in. When you first log in, you will see
+previously in this lesson to log in.
+
+ When you first log in, you will see
 this screen:
 
 ![**Kids First Dashboard.**](../../images/KidsFirstPortal_11.png)

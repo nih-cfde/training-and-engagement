@@ -10,8 +10,8 @@ There are several ways to change your query.
 Change the parameters of a filter
 ---------------------------------
 
-If still want to filter by age range, but to use different ages, we
-could do so in query bar by clicking the small arrow next to the age
+If we still want to filter by age range, but use different ages, we
+could do so in the query bar by clicking the small arrow next to the age
 range. A pop up with the same selection box we saw before will appear,
 and let us change our selections:
 
