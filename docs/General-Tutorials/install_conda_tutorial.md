@@ -13,7 +13,7 @@ Conda makes software installation and compute environment management easier. Con
 
 Follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) to install Miniconda. Please use the 64-bit version when working with Python 3.x.
 
-Here are the steps for installing Miniconda for MacOS: https://conda.io/projects/conda/en/latest/user-guide/install/macos.html
+The steps for installing Miniconda for MacOS are [here](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
 ### a. Download the [installer](https://docs.conda.io/en/latest/miniconda.html)
 - Miniconda3 MacOSX 64-bit bash
