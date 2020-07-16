@@ -37,8 +37,8 @@ ssh -i ~/Desktop/amazon.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com
 
 * If everything works ok, you should see something like this:
 
-
 ![](images/AWS_Connected.png)
+
 !!! Note
     My terminal window is yellow, but yours may not be!
 * You have now successfully logged in as user ‘ubuntu’ to the machine ‘ec2-18-216-20-166.us-east-2.compute.amazonaws.com’ using the authentication key located in ‘amazon.pem’ on the Desktop.

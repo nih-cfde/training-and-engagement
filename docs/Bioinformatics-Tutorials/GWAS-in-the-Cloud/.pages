@@ -8,6 +8,6 @@ arrange:
  - vcftools_install.md
  - RStudio.md
  - data_download.md
- - analysis.md
+ - analyze.md
  - manhattan.md
  - terminate_aws.md

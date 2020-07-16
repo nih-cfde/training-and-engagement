@@ -12,7 +12,7 @@ Make a directory for the GWAS analysis called `GWAS` and cd into that directory.
  mkdir ~/GWAS && cd ~/GWAS
 ```
 !!! Note
-    The coat color data lives in a website called cyverse. It is not easy to make AWS talk to cyverse, so download the data onto our LOCAL computer and then upload it to AWS.
+    The coat color data lives in a website called cyverse. It is not easy to make AWS talk to cyverse, so download the data onto your LOCAL computer and then upload it to AWS.
 
 ## Download onto your laptop
 

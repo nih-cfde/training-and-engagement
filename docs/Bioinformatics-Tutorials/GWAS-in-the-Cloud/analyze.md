@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Analysis
+title: Analyze
 ---
 
 Summary Statistics and Association Analysis
