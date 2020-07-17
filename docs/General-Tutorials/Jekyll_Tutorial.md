@@ -118,12 +118,12 @@ To enable developer mode, go to Settings \> Update & Security \> For
 developers. Select the `Developer mode` option. This may take a
 few minutes to finish.
 
-To get Ubuntu, open the Microsoft Store and search for `Ubuntu`.
+To get Ubuntu, open the Microsoft Store and search for `Ubuntu` (you will need to login to your Microsoft account).
 Select the blue `Get` box. After installation is complete, select
 `Launch`.
 
-A Ubuntu terminal window will appear and take a few
-minutes to finish installing. Set up a username and password.
+An Ubuntu terminal window will appear with this message: `Installing, this may take a few minutes...`. 
+Set up a username and password.
 
 !!! note
     The credentials setup are for using the bash window and need not match the computer logins.
@@ -136,10 +136,10 @@ sudo apt-get update -y
 
 #### Install Ruby and Jekyll
 
-Following commands are edited based on most up-to-date ruby version:
+The following commands are edited based on most up-to-date ruby version:
 
 ```
-sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-authoreconf -y
+sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-autoreconf -y
 ```
 
 Next, update RubyGems, the Ruby package manager
