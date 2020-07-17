@@ -211,8 +211,8 @@ To get rake, a task runner in Ruby, set up correctly in Windows OS, you may have
 bundle install --path vendor/bundle
 ```
 
-This will create a folder called `vendor` in your repo which you do NOT want to render. Thus, it must be added to the exclude list of the `_config.yml` file.
-Add `vendor/bundle` to the exclude list near the end of the `_config.yml` file using a text editor:
+This will create a folder called `vendor` in your repo which you do NOT want to render. Thus, it must be added to the exclude list at the end of the `_config.yml` file.
+The `vendor/bundle` has already been added to the template's `_config.yml` file. Check the file using a text editor:
 
 ```
 nano _config.yml
@@ -245,6 +245,25 @@ Configuration file: /Users/scanchi/Desktop/Jekyll-demo/_config.yml
   Server running... press ctrl-c to stop
 ```
 
+The output on Windows OS WSL should look like this (with your username filled in):
+
+```
+$ bundle exec jekyll serve
+Configuration file: /mnt/c/Users/<username>/Desktop/Jekyll-demo/_config.yml
+            Source: /mnt/c/Users/<username>/Desktop/Jekyll-demo
+       Destination: /mnt/c/Users/<username>/Desktop/Jekyll-demo/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+       Jekyll Feed: Generating feed for posts
+                    done in 1.085 seconds.
+                    Auto-regeneration may not work on some Windows versions.
+                    Please see: https://github.com/Microsoft/BashOnWindows/issue216
+                    If it does not work, please upgrade Bash On Windows or run Jekyll with --no-watch.
+ Auto-regeneration: enabled for '/mnt/c/Users/<username>/Desktop/Jekyll-demo'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop
+```
+
 Copy and paste the server address to a web browser to render the site. When you are done checking the local version, `ctrl-c` to close the server.
 
 Site set up generates a `_site` folder that will have all the content associated with the rendered site.
@@ -252,7 +271,7 @@ Site set up generates a `_site` folder that will have all the content associated
 Add content on Jekyll site
 ----------------------------
 
-A neat functionality of the static site generator is the fast rendering. With the Jekyll site running, navigate to the `_posts` folder and open the `.markdown` file in a text editor.
+A neat functionality of the static site generator is the fast rendering. With the Jekyll site running (`bundle exec jekyll serve` step), navigate to the `_posts` folder and open the `.markdown` file in a text editor (in a separate terminal tab or outside editor, like Atom).
 
 The top content delineated by \- is termed front matter.
 
@@ -265,7 +284,7 @@ categories: jekyll update
 ---
 ```
 
-This is in `yaml` format and details included here is used by Jekyll to display the content on the main page along with creating the specific URL for this post.
+This is in `yaml` format and details included here are used by Jekyll to display the content on the main page along with creating the specific URL for this post.
 
 We can make changes to this post and refresh the website to instantly view the rendered changes. The naming for posts in Jekyll follow the `YEAR-MONTH-DAY-title.MARKUP` format.
 
@@ -300,7 +319,7 @@ So far we used an existing Jekyll template to make changes. We can also build th
 Run this code on the command line:
 
 ```
-jekyll newblog
+jekyll new newblog
 ```
 
 !!! note
