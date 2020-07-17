@@ -148,7 +148,7 @@ Next, update RubyGems, the Ruby package manager
 sudo gem update
 ```
 
-Finally, install Jekyll and bundler:
+Finally, install Jekyll and bundler (this step may take several minutes to complete):
 
 ```
 sudo gem install jekyll bundler
