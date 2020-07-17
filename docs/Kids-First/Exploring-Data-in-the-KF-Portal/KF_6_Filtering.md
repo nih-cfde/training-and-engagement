@@ -40,7 +40,7 @@ Test 3
 <img class="js-amplify" src=../../images/kidsfirstportal_16.png>
 
 Test 4
-<img class="js-amplify" src="../../images/kidsfirstportal_16.png">
+<img src="../../images/kidsfirstportal_16.png" class="js-amplify" >
 
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
