@@ -157,11 +157,19 @@ sudo gem install jekyll bundler
 Build Jekyll site using template from GitHub
 ---------------------------------------------
 
-For the second half of the tutorial, we will use a template website hosted on GitHub, that was generated using Jekyll to modify and add content. First, let us create a local copy of the repo:
+For the second half of the tutorial, we will use a template website hosted on GitHub that was generated using Jekyll to modify and add content. Navigate (`cd <directory name>`) to the location (e.g., Desktop) where you want to save the template directory on your computer and create a local copy of the repo:
 
 ```
 git clone https://github.com/nih-cfde/Jekyll-demo.git
 ```
+
+!!! note "Building Jekyll site in Windows OS using WSL"
+    
+      In Windows OS using the WSL, you would type this to navigate to the repo directory if you cloned it to your Desktop:
+
+      ```
+      cd /mnt/c/Users/<user name>/Desktop/Jekyll-demo/
+      ```
 
 Navigate to the newly created directory with the name of the repo which contains default files and folders that are created when building a new site with Jekyll. This is the directory structure:
 
@@ -182,15 +190,6 @@ The `_posts` folder will host all the content for the website and contains a mar
 The `_config.yml` file is in `yaml` format and stores attributes about the site as key value pairs.
 The `Gemfile` is a Ruby file which stores all the dependencies for the Jekyll site.
 
-#### Building Jekyll site in Windows OS using WSL
-
-In Windows OS using the WSL, the file system is
-structured such that to navigate to the repo directory, you would type this:
-
-```
-cd /mnt/c/Users/[your path to]/Jekyll-demo/
-```
-
 #### Additional Windows requirements: Fix TimeZone issues
 
 Ruby runs into timezone issues on Windows due to absence of native zoneinfo data. Sites generated with the Jekyll \> v3.4 will have instructions for handling the missing data added to the `Gemfile`. For older versions, the workaround is as follows:
@@ -200,7 +199,7 @@ sudo gem install tzinfo
 sudo gem tzinfo-data
 ```
 
-Add this line to the `Gemfile`:
+This line should be added to the `Gemfile`. It is already in the template Gemfile:
 
 ```
 gem 'tzinfo-data'
