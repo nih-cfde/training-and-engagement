@@ -8,9 +8,9 @@ Rendering a GitHub website locally with Jekyll
 
 Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content. The first part of the tutorial includes instructions for downloading Jekyll on:
 
-- [MacOS](#global-install-of-jekyll-for-macos-using-command-line)
-- [Windows OS](#install-and-website-build-for-windows-os)
-- [Windows Subsystem for Linux](#rendering-a-jekyll-website-on-a-windows-10-machine-using-windows-subsystem-for-linux-wsl)
+- [MacOS](#Install Jekyll on MacOS using command line)
+- [Windows OS](#Install Jekyll on Windows OS)
+- [Windows Subsystem for Linux](#Install Jekyll using Windows Subsystem for Linux (WSL))
 
 Install Jekyll on MacOS using command line
 -------------------------------------------
@@ -123,8 +123,10 @@ Select the blue `Get` box. After installation is complete, select
 `Launch`.
 
 A Ubuntu terminal window will appear and take a few
-minutes to finish installing.
-Set up a username and password. *Note the credentials setup are for using the bash window and need not match the computer logins*.
+minutes to finish installing. Set up a username and password.
+
+!!! note
+    The credentials setup are for using the bash window and need not match the computer logins.
 
 Finally, set up local package database for Ubuntu:
 
@@ -217,7 +219,8 @@ Add `vendor/bundle` to the exclude list near the end of the `_config.yml` file u
 nano _config.yml
 ```
 
-*Note: Until this line is correctly formatted, you are bound to run into invalid time errors.*
+!!! warning
+    Until exclude list in `_config.yml` is correctly formatted, you are bound to run into invalid time errors.
 
 #### Building the website locally
 
@@ -301,7 +304,8 @@ Run this code on the command line:
 jekyll newblog
 ```
 
-*Note the name following Jekyll is the name of the site, in this example "newblog"*.
+!!! note
+    The name following Jekyll is the name of the site, in this example "newblog".
 
 Change into the newly created directory:
 

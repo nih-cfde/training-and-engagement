@@ -41,7 +41,7 @@ mkdocs, version 1.1.2
      ```
      python -m pip install mkdocs
      ```
-     
+
      ```
      python -m mkdocs
      ```
@@ -164,7 +164,7 @@ Here we specify the latest available version for this theme. The website should 
 
 Options to deploy the generated website are elaborated [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
 
-For the website to be hosted on [readthedocs.com](readthedocs.com), a text file with instructions to import the `material` theme needs to the added to the main folder of the website. This file contains the following string: `mkdocs-material`.
+For the website to be hosted on [readthedocs.com](www.readthedocs.com), a text file with instructions to import the `material` theme needs to the added to the main folder of the website. This file contains the following string: `mkdocs-material`.
 
 Hosting the website on Read the Docs
 -------------------------------------
