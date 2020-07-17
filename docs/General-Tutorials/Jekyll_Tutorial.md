@@ -8,9 +8,15 @@ Rendering a GitHub website locally with Jekyll
 
 Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content. The first part of the tutorial includes instructions for downloading Jekyll on:
 
+<<<<<<< HEAD
 - [MacOS](#Install Jekyll on MacOS using command line)
 - [Windows OS](#Install Jekyll on Windows OS)
 - [Windows Subsystem for Linux](#Install Jekyll using Windows Subsystem for Linux (WSL))
+=======
+- [MacOS](#install-jekyll-on-macos-using-command-line)
+- [Windows OS](#install-jekyll-on-windows-os)
+- [Windows Subsystem for Linux](#install-jekyll-using-windows-subsystem-for-linux-wsl)
+>>>>>>> 51e047181735f2f5e2867aa80cecf1307f9ee00f
 
 Install Jekyll on MacOS using command line
 -------------------------------------------
@@ -101,7 +107,7 @@ In the Gemfile edit to include:
 gem 'tzinfo-data'
 ```
 
- Install Jekyll using Windows Subsystem for Linux (WSL)
+Install Jekyll using Windows Subsystem for Linux (WSL)
 ---------------------------------------------------------
 
 The installation follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with
