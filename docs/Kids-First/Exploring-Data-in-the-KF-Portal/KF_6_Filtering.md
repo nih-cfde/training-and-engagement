@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Filter
+---
 <link rel="stylesheet" href="amplify.css">
 <script src="amplify.js" defer></script>
 ---
@@ -30,7 +31,7 @@ Several things about the page have now changed. First, there is now
 information in our queries box.
 
 <img class="js-amplify" src=../../images/KidsFirstPortal_16.png>
-
+<img class="js-amplify" src="../../images/KidsFirstPortal_16.png">
 ![**Queries Box**](../../images/KidsFirstPortal_16.png)
 
 It now says what query we are currently looking at, and how many
