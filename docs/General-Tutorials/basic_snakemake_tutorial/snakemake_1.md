@@ -27,7 +27,11 @@ The contents of this tutorial are covered in three short videos:
 - [Part 3](https://video.ucdavis.edu/media/snakemake+intro+3+try+1/0_gwnss4kq)
 
 !!! info
+<<<<<<< HEAD
     This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization etc may require tuning.
+=======
+    This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization, etc may require tuning. 
+>>>>>>> 5266c53b7e44735a6256758648ed695749e8bd61
 
 The objectives of this tutorial are to:
 
@@ -106,9 +110,12 @@ If you get an error, the software installation may have failed. You can check th
 
 You can leave the conda environment with: `conda deactivate`.
 
-Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved by using `Homebrew`, a handy package installation manager. This step will take a few minutes and the installation is outside the conda environment `snaketest`:
+Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved by using `Homebrew`, a handy package installation manager. This step will take a few minutes and the installation should be done in the `base` conda environment:
 
 ```
+# go back to base environment
+(snaketest) $ conda deactivate
+
 # install Homebrew
 (base) $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
