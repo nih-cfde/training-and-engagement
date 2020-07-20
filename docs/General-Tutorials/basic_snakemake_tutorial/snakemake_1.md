@@ -14,9 +14,9 @@ Workflow systems help you automate and manage the inputs, outputs, and commands 
 
 [Snakemake](https://snakemake.readthedocs.io/en/stable/) is a Python-based workflow system ([see 2012 publication](https://academic.oup.com/bioinformatics/article/28/19/2520/290322)). The name 'Snakemake' comes from the fact that it's written in (and can be extended by) the Python programming language.
 
-`snakemake` works by looking at a file, called a 'Snakefile', that contains rules for creating output files. Generally, each rule is defined as a step in the workflow. `snakemake` uses the rules and command line options to figure how the rules relate to each other so it can manage the workflow steps.
+Snakemake works by looking at a file, called a 'Snakefile', that contains rules for creating output files. Generally, each rule is defined as a step in the workflow. Snakemake uses the rules and command line options to figure how the rules relate to each other so it can manage the workflow steps.
 
-As an example, this tutorial will walk you through creating a `snakemake` workflow for variant calling. This tutorial was adapted from DIB lab course materials [here](https://github.com/ngs-docs/2020-GGG298) and [here](https://github.com/ngs-docs/2020-GGG201b-lab).
+As an example, this tutorial will walk you through creating a Snakemake workflow for variant calling. This tutorial was adapted from DIB lab course materials [here](https://github.com/ngs-docs/2020-GGG298) and [here](https://github.com/ngs-docs/2020-GGG201b-lab).
 
 The contents of this tutorial are covered in three short videos:
 
@@ -27,15 +27,15 @@ The contents of this tutorial are covered in three short videos:
 - [Part 3](https://video.ucdavis.edu/media/snakemake+intro+3+try+1/0_gwnss4kq)
 
 !!! info
-    This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization etc may require tuning. 
+    This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization etc may require tuning.
 
 The objectives of this tutorial are to:
 
 !!! goal
 
-    - learn how to write basic workflows with `snakemake` rules
-    - learn variable substitution for `snakemake` rules
-    - learn wildcard matching for `snakemake` rules
+    - learn how to write basic workflows with Snakemake rules
+    - learn variable substitution for Snakemake rules
+    - learn wildcard matching for Snakemake rules
     - understand why workflow systems can help you do your computing more easily
 
 ## Set up
@@ -49,6 +49,7 @@ We will use conda to create an environment for this tutorial. If you don't have 
 ### 1. Download tutorial files:
 
 First, create a new directory for this tutorial, e.g.,:
+
 ```
 (base) $ mkdir learn_snakemake
 ```
@@ -88,10 +89,13 @@ Create environment:
 ### 4. Test that your environment is ready to go
 
 You should have several software installed in your `snaketest` environment now. Check it out!
+
 ```
 (snaketest) $ samtools --version
 ```
+
 The output should say:
+
 ```
 samtools 1.10
 Using htslib 1.10.2
@@ -114,6 +118,7 @@ Later in the tutorial, we'll use `wget` to download data. Installing `wget` on M
 # test installation
 (base) $ wget --version
 ```
+
 Alternatively, we can also use conda to install `wget`, which will work in both Unix and Linux based systems:
 
 ```
