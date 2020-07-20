@@ -27,11 +27,7 @@ The contents of this tutorial are covered in three short videos:
 - [Part 3](https://video.ucdavis.edu/media/snakemake+intro+3+try+1/0_gwnss4kq)
 
 !!! info
-<<<<<<< HEAD
     This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization etc may require tuning.
-=======
-    This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization, etc may require tuning. 
->>>>>>> 5266c53b7e44735a6256758648ed695749e8bd61
 
 The objectives of this tutorial are to:
 
