@@ -2,12 +2,9 @@
 
 Snakemake uses a file called 'Snakefile' to configure the steps, or rules, of your pipeline. The basic Snakefile consists of several rules defining the inputs, outputs, and rule commands.
 
-!!! tip
-    The [first vidlet](https://video.ucdavis.edu/media/snakemake+intro%2C+try+2/0_843yn8pn/166161802) starts here.
+Part 1:
 
-Part 1: 
-
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_843yn8pn&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_9fho1l6b" width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_843yn8pn&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_01cl25yz" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 
 ### Editing the Snakefile
@@ -24,26 +21,28 @@ There are several rules defined with commands to run, but we'll need to add a fe
 !!! note "Practice"
     Add a comment to the Snakefile:
 
-    1. open Snakefile in nano
+    1. open Snakefile in `nano`
 
     2. on a new line, add a comment with `#`, e.g., `# This is my first edit!`
 
-    3. save the change by hitting `control` key and `o` key. nano will ask if you want to save the file as 'Snakefile'. We want to keep the same file name, so hit `return` key.
+    3. save the change by hitting `control` key and `o` key. `nano` will ask if you want to save the file as 'Snakefile'. We want to keep the same file name, so hit `return` key.
 
-    4. exit nano by hitting `control` key and `x` key.
+    4. exit `nano` by hitting `control` key and `x` key.
 
-    5. view the Snakefile in Terminal with: `less Snakefile`.
+    5. view the Snakefile in Terminal with: `less Snakefile`
 
     6. if you can see your comment, it worked! Exit the `less` view by hitting `q` key.
 
 !!! Tip
 
-    Please refer to the [bash command cheatsheet](./bash_cheatsheet.md) for commonly used nano commands other shortcuts for navigating your Terminal!
+    Please refer to the [bash command cheatsheet](./bash_cheatsheet.md) for commonly used `nano` commands and other shortcuts for navigating your Terminal!
 
 Ok, let's move on and take a look at the structure of the Snakefile rules.
 
 ### Snakefile rules
-Each step in a pipeline is defined by a rule in the Snakefile. Note that the components of each rule are indented 4 spaces. The most basic structure of a rule is:
+
+Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
+
 ```
 rule <rule name>:
     shell:
@@ -53,10 +52,13 @@ rule <rule name>:
 ```
 
 There are several rules in the Snakefile. Let's do a search for all the rules in the file:
+
 ```
 (snaketest) $ grep rule Snakefile
 ```
+
 The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline.
+
 ```
 rule download_data:
 rule download_genome:
@@ -71,8 +73,10 @@ rule samtools_mpileup:
 rule make_vcf:
 ```
 
-## snakemake & Snakefile
-Let's try running a rule with the `snakemake` command:
+## Snakemake & Snakefile
+
+Let's try running a Snakemake rule:
+
 ```
 (snaketest) $ snakemake -p map_reads
 ```
@@ -82,26 +86,26 @@ The `-p` means 'show the command that you're running'.
 Oops, this will fail! Why?
 ![](../../images/snakemake_rule_error_msg.jpeg)
 
-As the error message in red says, the rule failed because we don't have any of the input files to run this rule yet! We don't have the genome or the fastq.gz, and we need to prepare the genome by indexing it.
+As the error message in red states, the rule failed because we don't have any of the input files required to run this rule yet! For the mapping rule to work, we need the raw read (`.fastq.gz`) file and reference genome (`.fa.gz`) that should be indexed.
 
-We need to download some files and prepare them first. Let's start with the first rule instead in the Snakefile:
+Let's start with the first rule in the Snakefile:
 ```
 (snaketest) $ snakemake -p download_data
 ```
 
-What does this command do? It tells snakemake to run the shell command listed under the `download_data` rule. In this case, that command downloads some data from a public repository on osf.io. This is one of the files we need for mapping!
+Here Snakemake runs the shell command listed under the `download_data` rule. In this case, the shell command downloads the raw read file from a public repository on [osf.io](https://osf.io).
 
 It worked!
 ![](../../images/snakemake_downloaddata.jpeg)
 
-Check the working directory. There should now be a .fastq.gz file:
+Check the working directory. There should now be a `.fastq.gz` file:
 ```
 (snaketest) $ ls -lht
 ```
 
 This command shows you the file permissions, number of links, owner name, owner group, file size in bytes, time of last modification, and file/directory name.
 
-Now run some more rules – one at a time:
+Next run some more rules sequentially – one at a time:
 ```
 (snaketest) $ snakemake -p download_data
 (snaketest) $ snakemake -p download_genome
@@ -110,19 +114,20 @@ Now run some more rules – one at a time:
 (snaketest) $ snakemake -p map_reads
 ```
 
-Check the working directory again. This time, there are a bunch of output files and we were able to run the `map_reads` rule without getting error messages!
+Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. *Note that the `map_reads` rule ran without any error!*
 
 !!! recap
 
-    In the current Snakefile, we’ve stored our commands and told snakemake to run them individually. In the next section, we'll cover how to connect the rules so snakemake can recognize rules that depend on each other and run them in the correct order.
+    In this section we explored the basic template of a Snakefile which contains rules with all the necessary commands for variant calling. Each rule was run individually using `snakemake -p <rule_name>`.
+    In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
 
-    - these are just shell commands, with a bit of “decoration”. You could run them yourself directly in the terminal if you wanted!
-    - the order of the rules in the Snakefile doesn’t matter, but as written, the order that you run them in does!
-    - by default, if you don't specify a rule, snakemake runs the first rule in the Snakefile (this is actually the only case where the order of rules in the Snakefile matters!)
-    - output snakemake message is in red if it fails
+    - each rule encompasses shell commands, with a bit of “decoration”. You could run them yourself directly in the terminal if you wanted!
+    - while the written order of the rules in Snakefile doesn’t matter, the order in which the rules are run on the terminal does matter!
+    - by default, if you don't specify a rule, Snakemake executes the first rule in the Snakefile (this is actually the only case where the order of rules in the Snakefile matters!)
+    - output Snakemake message is in red if it fails
     - the code is case-sensitive
     - tabs and spacing matters
 
 !!! Tip
 
-    Please refer to the [snakemake command cheatsheet](./snakemake_cheatsheet.md) for commonly used snakemake commands!
+    Please refer to the [Snakemake command cheatsheet](./snakemake_cheatsheet.md) for commonly used Snakemake commands!
