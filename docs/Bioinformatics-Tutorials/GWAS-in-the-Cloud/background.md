@@ -24,10 +24,7 @@ GWAS identify associations between SNPs and phenotypic traits by identifying sys
 
 ## Further reading
 
-  - [GWAS Wiki](https://en.wikipedia.org/wiki/Genome-wide_association_study)
-
-  - [About GWAS on the know genetics website](https://knowgenetics.org/genome-wide-association-studies-gwas/)
-
   - [Design, Analysis, and Interpretation of Genome-Wide Association Scans (Statistics for Biology and Health) by Daniel O. Stam](https://www.amazon.com/Daniel-Stram-ebook-dp-B00Q6K3082/dp/B00Q6K3082/ref=mt_other?_encoding=UTF8&me=&qid=1594914210)
-
   - [Genome-Wide Association Studies: From Polymorphism to Personalized Medicine by Krishnarao Appasani](https://www.amazon.com/Genome-Wide-Association-Studies-Polymorphism-Personalized-ebook/dp/B017205EP6/ref=sr_1_1?crid=310PWHK5O9RXY&dchild=1&keywords=genome+wide+association+study&qid=1594914256&sprefix=genome+wide+ass%2Caps%2C211&sr=8-1)
+  - [GWAS Wiki](https://en.wikipedia.org/wiki/Genome-wide_association_study)
+  - [About GWAS on the know genetics website](https://knowgenetics.org/genome-wide-association-studies-gwas/)

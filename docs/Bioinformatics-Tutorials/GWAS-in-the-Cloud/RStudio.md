@@ -18,11 +18,9 @@ You will use R to visualize loci that are strongly associated with coat color.
 To download R and R studio, type:
 
 ```
-sudo apt-get update && sudo apt-get install -y gdebi-core r-base r-base-dev
-
-wget https://download2.rstudio.org/server/xenial/amd64/rstudio-server-1.3.959-amd64.deb
-
-sudo gdebi rstudio-server-1.3.959-amd64.deb
+$ sudo apt-get update && sudo apt-get install -y gdebi-core r-base r-base-dev
+$ wget https://download2.rstudio.org/server/xenial/amd64/rstudio-server-1.3.959-amd64.deb
+$ sudo gdebi rstudio-server-1.3.959-amd64.deb
 ```
 !!! Error
 
@@ -31,4 +29,4 @@ sudo gdebi rstudio-server-1.3.959-amd64.deb
     `sudo apt-get install gdebi-core`
 
     Then re-run
-    `sudo gdebi rstudio-server-1.3.959-amd64.deb`
+    `$ sudo gdebi rstudio-server-1.3.959-amd64.deb`

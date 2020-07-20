@@ -13,7 +13,18 @@ Amazon offers a cloud computing platform called Amazon Web Services (AWS). AWS i
 
 Let's set up a Free Tier AWS Ubuntu instance:
 
-* Go to http://aws.amazon.com/ and click on the create an AWS account button on the top right. Proceed to create your account. If you have an existing AWS account, click the `Sign in to an existing AWS account` below the `continue` option on the sign-up page and log in to your account as a root user.
+* Go to <http://aws.amazon.com/> and click on the create an AWS account button located on the top right. If you have an existing AWS account, click the "Sign in to an existing AWS account" below the "continue" option on the sign-up page and log in to your account as a root user.
+
+!!! New-Account
+
+    * To create a new account, fill in your email, (create a) password and choose a name for your AWS account. Click "Continue".
+
+    * On the next page, fill in your name, phone number and address. Check the AWS customer agreement box. 
+
+    * Once you click "Create Account and Continue", you will be redirected to a payment info page. This step requires two factor authentication and may take a few mins. When you receive the code, enter it and click "Verify Code"
+
+    * You can now log in and launch an instance!
+
 
 * Next, click on the 'Launch a virtual machine' option as shown in the image:
 
@@ -23,7 +34,12 @@ Let's set up a Free Tier AWS Ubuntu instance:
 
 ![](images/Ubuntu.png)
 
-* Make sure the free tier version is selected. Then click review and launch, then launch. You should see a pop-up window like this:
+* Make sure the free tier version is selected. Shown here:
+
+![](images/AWS_Free_Tier.png)
+
+
+Then click review and launch --> launch. You should see a pop-up window like this:
 
 ![](images/KeyPair.png)
 
@@ -33,6 +49,8 @@ Let's set up a Free Tier AWS Ubuntu instance:
 
 ![](images/launching.png)
 
-* Click on this first hyperlink: i-038c58bfbe9612c57
+* Click on this first hyperlink: i-038c58bfbe9612c57. Your page should look like this:
+
+![](https://i.imgur.com/JifclmQ.png)
 
 * You have now successfully launched your AWS instance. DO NOT CLOSE THIS PAGE YET.

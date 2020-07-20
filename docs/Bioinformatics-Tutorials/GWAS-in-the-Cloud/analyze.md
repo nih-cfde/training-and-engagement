@@ -6,18 +6,20 @@ title: Analyze
 Summary Statistics and Association Analysis
 ===========================================
 
+All of these steps must be performed on your Ubuntu AWS terminal window.
+
 ## Convert VCF into PLINK readable format
 
-Now convert the .vcf into PLINK readable format: map and ped. [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one person per row) and MAP files contain information on the name and position of the markers in the PED file.
+Convert the .vcf into PLINK readable format: map and ped. [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
 
 ```
- vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
+ $ vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
 
 ```
 
 !!! Error
-    If you get a vcftools install error, follow the directions in the error message to install vcftools.
+    If you get a vcftools install error, follow the directions in the error message to install vcftools. Visit the [vcftools](./vcftools_install.md) page of this tutorial for detailed installation instructions.
 
 the --plink options outputs the genotype data in PLINK PED format. Two files are generated, with suffixes ".ped" and ".map"
 
@@ -27,10 +29,10 @@ the --plink options outputs the genotype data in PLINK PED format. Two files are
 In order to specify the minor allele (A1), you must create a list of these alternative alleles. To do so, run:
 
 ```
-cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > alt_alleles
+$ cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > alt_alleles
 ```
 
-where the file `alt_alleles` contains a list of SNP IDs and the allele to be set as A1, e.g.
+where the file `alt_alleles` contains a list of SNP IDs and the allele to be set as A1.
 
 
 ## Some summary statistics: Missing rates
@@ -38,7 +40,7 @@ where the file `alt_alleles` contains a list of SNP IDs and the allele to be set
 Now generate some simple summary statistics on rates of missing data in the file, using the [--missing option](http://www.cog-genomics.org/plink/1.9/basic_stats#missing):
 
 ```
-plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele alt_alleles --allow-no-sex --adjust
+$ plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele alt_alleles --allow-no-sex --adjust
 ```
 
 ### What are all these PLINK tags?
@@ -50,6 +52,9 @@ plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out mis
 --out: name of the output file.
 
 --dog: tells PLINK to look at the dog genome.
+
+The default reference genome option is human.
+Other available options are: --mouse, --horse, --cow and --sheep		
 
 --make-pheno: tells PLINK to look at the coatColor.pheno file for phenotype information and sets the alternative phenotype to "yellow".
 
@@ -81,7 +86,7 @@ The per individual and per SNP rates are then output to the files miss_stat.imis
 Look at the per SNP rates by running:
 
 ```
-less miss_stat.lmiss
+$ less miss_stat.lmiss
 ```
 
 Output:
@@ -97,7 +102,7 @@ For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, givin
 Similarly, look at the per individual rates in the `miss_stat.imiss` by typing
 
 ```
-less miss_stat.imiss
+$ less miss_stat.imiss
 ```
 
 Output:
@@ -113,7 +118,7 @@ The final column is the actual genotyping rate for that individual. Looking at t
 Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) for downstream analysis:
 
 ```
- plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.binary
+ $ plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.binary
 
 ```
 
@@ -127,7 +132,7 @@ Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) f
 Learn more about association tests [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822#s7)
 
 ```
-  plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele alt_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
+  $ plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele alt_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
 ```
 
 --bfile: takes .binary file as input.

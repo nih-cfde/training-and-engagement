@@ -10,5 +10,5 @@ When you are done with all the analyses, be sure to terminate the AWS instance. 
 
 ![](images/Terminate_AWS.png)
 
-
-Upon termination, you will loose all the installations and data. So it is important to download all useful data before you terminate the instance!
+!!! Important
+    Upon termination, you will lose all installations and data. Be sure to download all useful data before you terminate the instance!
