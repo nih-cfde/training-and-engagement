@@ -2,6 +2,8 @@
 layout: page
 title: Filter
 ---
+<script src="amplify.js" defer></script></p>
+---
 
 Filter Buttons
 ==============
@@ -27,7 +29,7 @@ If you applied this filter successfully, you should see something like
 Several things about the page have now changed. First, there is now
 information in our queries box:
 
-<!-- <img class="js-amplify" src=../../images/KidsFirstPortal_16.png>
+<img class="js-amplify" src=../../images/KidsFirstPortal_16.png>
 
 [**Queries Box**](../../images/KidsFirstPortal_16.png)
 
