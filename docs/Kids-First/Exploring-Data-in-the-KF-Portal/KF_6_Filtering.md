@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Filter
----
+<script src="amplify.js" defer></script>
 
 Filter Buttons
 ==============
@@ -28,7 +28,8 @@ Several things about the page have now changed. First, there is now
 information in our queries box:
 
 <img class="js-amplify" src=../../images/KidsFirstPortal_16.png>
-![**Queries Box**](../../images/KidsFirstPortal_16.png)
+
+<!--![**Queries Box**](../../images/KidsFirstPortal_16.png)
 
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
