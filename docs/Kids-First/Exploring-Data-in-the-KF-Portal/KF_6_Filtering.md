@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Filter
+<link rel="stylesheet" href="amplify.css">
+<script src="amplify.js" defer></script>
 ---
 
 Filter Buttons
@@ -25,8 +27,12 @@ If you applied this filter successfully, you should see something like
 ![**Age at Diagnosis between birth and 5 years old**](../../images/KidsFirstPortal_15.png)
 
 Several things about the page have now changed. First, there is now
-information in our [**queries box:**](../../images/KidsFirstPortal_16.png)
+information in our queries box.
+
+<img class="js-amplify" src=../../images/KidsFirstPortal_16.png>
+
 ![**Queries Box**](../../images/KidsFirstPortal_16.png)
+
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
 and 1826.25, which means it automatically calculated 0-5 years in days.
