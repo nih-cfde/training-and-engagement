@@ -29,7 +29,7 @@ There are several rules defined with commands to run, but we'll need to add a fe
 
     4. exit `nano` by hitting `control` key and `x` key.
 
-    5. view the Snakefile in Terminal with: `less Snakefile`
+    5. view the Snakefile in Terminal with: `less Snakefile`.
 
     6. if you can see your comment, it worked! Exit the `less` view by hitting `q` key.
 
@@ -122,7 +122,7 @@ Check the working directory again. The directory is populated by many output fil
     In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
 
     - each rule encompasses shell commands, with a bit of “decoration”. You could run them yourself directly in the terminal if you wanted!
-    - while the written order of the rules in Snakefile doesn’t matter, the order in which the rules are run on the terminal does matter!
+    - while the written order of the rules in Snakefile doesn’t matter, the order in which the rules are run on the terminal does matter! More on this in the next section!
     - by default, if you don't specify a rule, Snakemake executes the first rule in the Snakefile (this is actually the only case where the order of rules in the Snakefile matters!)
     - output Snakemake message is in red if it fails
     - the code is case-sensitive
