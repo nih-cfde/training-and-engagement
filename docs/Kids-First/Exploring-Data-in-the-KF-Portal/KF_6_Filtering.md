@@ -34,9 +34,8 @@ information in our queries box:
 -->
 
 [**Queries Box**](../../images/KidsFirstPortal_16.png)
-
+![**Queries Box**](../../images/KidsFirstPortal_16.png)
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
 and 1826.25, which means it automatically calculated 0-5 years in days.
 
-<img class="js-amplify" src=../../images/KidsFirstPortal_16.png>
