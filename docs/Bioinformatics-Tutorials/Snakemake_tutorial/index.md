@@ -8,7 +8,7 @@ Snakemake Lessons
 - [Introduction and Setup](./snakemake_1.md)
 - [The Snakefile](./snakemake_2.md)
 - [Decorating the Snakefile](./snakemake_3.md)
-- [Continue decorating and run through the workflow](./snakemake_4.md)
+- [Continue Decorating and Run Through the Workflow](./snakemake_4.md)
 
 Cheatsheets
 
