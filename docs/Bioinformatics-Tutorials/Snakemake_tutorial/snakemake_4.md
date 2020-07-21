@@ -1,4 +1,4 @@
-# Continue decorating
+# Continue Decorating
 
 The remaining rules need inputs and outputs so we can link up all the rules through to the final variant calling step. The Part 2 and Part 3 of video tutorials cover the remaining content by adding more detail to the Snakefile and wrapping up with the final workflow rule.
 
