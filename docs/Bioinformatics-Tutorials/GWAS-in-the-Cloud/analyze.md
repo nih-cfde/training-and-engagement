@@ -157,8 +157,11 @@ Learn more about association tests [here](https://journals.plos.org/ploscompbiol
   $ plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele alt_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
 ```
 
---bfile: takes .binary file as input.
+!!! Note
+    **What are these new PLINK tags?**
 
---assoc: performs a standard case/control association analysis which is a chi-square test of allele frequency.
+    --bfile: takes .binary file as input.
 
---adjust: enables correction for multiple analysis and automatically calculates the genomic inflation factor
+    --assoc: performs a standard case/control association analysis which is a chi-square test of allele frequency.
+
+    --adjust: enables correction for multiple analysis and automatically calculates the genomic inflation factor
