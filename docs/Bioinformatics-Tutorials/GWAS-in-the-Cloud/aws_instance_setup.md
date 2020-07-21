@@ -19,7 +19,7 @@ Let's set up a Free Tier AWS Ubuntu instance:
 
     * To create a new account, fill in your email, (create a) password and choose a name for your AWS account. Click "Continue".
 
-    * On the next page, fill in your name, phone number and address. Check the AWS customer agreement box. 
+    * On the next page, fill in your name, phone number and address. Check the AWS customer agreement box.
 
     * Once you click "Create Account and Continue", you will be redirected to a payment info page. This step requires two factor authentication and may take a few mins. When you receive the code, enter it and click "Verify Code"
 
@@ -30,7 +30,7 @@ Let's set up a Free Tier AWS Ubuntu instance:
 
 ![](images/Launch.png)
 
-* On the left navbar, check the Free tier only option, then select an Ubuntu machine
+* On the left navbar, check the Free tier only option, then select this Ubuntu machine: Ubuntu Pro 20.04 LTS (provided through 2030).
 
 ![](images/Ubuntu.png)
 
