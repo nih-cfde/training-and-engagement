@@ -45,7 +45,7 @@ Then click the large purple **"ANALYZE IN CAVATICA"** button.
 
  A message pops up for a few seconds that says the files were transferred successfully. Click on "Open project in Cavatica".
 
- If the pop-up message disappears before you can get to it, visit <www.cavatica.org> on a new tab and scroll to the bottom of the page. Click the "ACCESS DATA" button.
+ If the pop-up message disappears before you can get to it, visit <https://www.cavatica.org> on a new tab and scroll to the bottom of the page. Click the "ACCESS DATA" button.
 
  ![**ACCESS DATA**](../../images/access_data_14.png)
 
