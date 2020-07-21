@@ -16,3 +16,8 @@ Cheatsheets
 - [bash](./bash_cheatsheet.md)
 - [conda](./conda_cheatsheet.md)
 - [Snakemake](./snakemake_cheatsheet.md)
+
+Snakefile
+==================
+
+-[Example Snakefile](./snakemake_tutorial_docs/Snakefile.py)
