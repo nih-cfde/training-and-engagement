@@ -16,6 +16,8 @@ GitHub Tutorials:
   - [Rendering a GitHub website locally with Sphinx](Sphinx_Tutorial.md)
   - [Rendering a GitHub website locally with Mkdocs](mkdocs.md)
   - [Editing Mkdocs websites with cfde-bot](cfdebot_website_editing.md)
+  - [Install conda](install_conda_tutorial.md)
+  - [Snakemake workflow tutorial](./basic_snakemake_tutorial/index.md)
 
 Web Development:
 
