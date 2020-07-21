@@ -2,8 +2,6 @@
 layout: page
 title: Portal Overview
 ---
-<script async defer data-domain="cfde-training-and-engagement.readthedocs-hosted.com/en/jeremyfixes" src="https://plausible.io/js/plausible.js"></script>
----
 
 Getting Started with Kids First Data
 ====================================
