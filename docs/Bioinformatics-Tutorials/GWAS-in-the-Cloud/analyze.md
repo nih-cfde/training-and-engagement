@@ -10,8 +10,9 @@ All of these steps must be performed on your Ubuntu AWS terminal window.
 
 ## Convert VCF into PLINK readable format
 
-Convert the .vcf into PLINK readable format: map and ped. [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
+[PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
+Convert the .vcf into PLINK readable format: ped and map
 
 ```
  $ vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
@@ -35,34 +36,42 @@ $ cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{i
 where the file `alt_alleles` contains a list of SNP IDs and the allele to be set as A1.
 
 
-## Some summary statistics: Missing rates
+## Quality Control
 
-Now generate some simple summary statistics on rates of missing data in the file, using the [--missing option](http://www.cog-genomics.org/plink/1.9/basic_stats#missing):
+Quality control (QC) is an important step in GWAS and must be done per individual and per marker.
+
+**Per-individual** QC of GWA data consists of identifying individuals with: 1) missing genotype or heterozygosity rate. 2) replicated samples or closely related individuals. 3) identification of individuals of divergent ancestry.
+
+**Per-marker** QC of GWA data consists of identifying SNPs with: 1) lots of missing genotypes. 2) significant deviation from Hardy-Weinberg equilibrium (HWE). 3) largely different missing genotype rates between cases and controls. 4) very low minor allele frequencies
+
+Read more about quality control in this journal article by [Anderson et al. 2011](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3025522/)
+
+### Missing rates
+In this tutorial, we will generate some simple summary statistics on rates of missing data in the file, using the [--missing option](http://www.cog-genomics.org/plink/1.9/basic_stats#missing):
 
 ```
 $ plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele alt_alleles --allow-no-sex --adjust
 ```
 
-### What are all these PLINK tags?
+!!! Note
+    **What are all these PLINK tags?**
 
---file: tells it the name of PLINK readable files
+    --file: tells it the name of PLINK readable files
 
---missing: produces sample-based and variant-based missing data reports
+    --missing: produces sample-based and variant-based missing data reports using default filters
 
---out: name of the output file.
+    --out: name of the output file
 
---dog: tells PLINK to look at the dog genome.
+    --dog: tells PLINK to look at the dog genome
+    The default reference genome option is human. Other available options are: --mouse, --horse, --cow and --sheep
 
-The default reference genome option is human.
-Other available options are: --mouse, --horse, --cow and --sheep		
+    --make-pheno: tells PLINK to look at the coatColor.pheno file for phenotype information and sets the alternative phenotype to "yellow"
 
---make-pheno: tells PLINK to look at the coatColor.pheno file for phenotype information and sets the alternative phenotype to "yellow".
+    --reference-allele: sets the A1 or alternative allele using the file alt_alleles
 
---reference-allele: sets the A1 or alternative allele using the file alt_alleles
+    --allow-no-sex: since our dataset does NOT have a "sex" field, this option allows plink to ignore the missing sex field
 
---allow-no-sex: since our dataset does NOT have a "sex" field, this option allows plink to ignore the missing sex field.
-
---noweb: each time PLINK runs, it checks for an update. On a slow network this sometimes causes delays and the --noweb option disables this.
+    --noweb: each time PLINK runs, it checks for an update. On a slow network this sometimes causes delays and the --noweb option disables this
 
 
 Output:
@@ -72,14 +81,29 @@ Output:
 
 There's a lot of information here, but the relevant bits:
 
-`476840 (of 476840) markers to be included from [coatColor.map]` indicates that all markers can be included.
+```
+476840 (of 476840) markers to be included from [coatColor.map]
+```
+Indicates that all markers can be included.
 
- There are `53 individuals with ambiguous sex codes` - There is no column for sex in our dataset. That's fine, you told PLINK to ignore sex.
+```
+53 individuals with ambiguous sex codes
+```
+There is no column for sex in our dataset. That's fine, you told PLINK to ignore sex.
 
-
-`Test value is [yellow] and missing value is [-9]
+```
+Test value is [yellow] and missing value is [-9]
 53 of 53 individuals assigned to 2 cluster(s)
-Set 24 cases and 29 controls, 0 missing, 0 not found` This means there are 24 yellow coat color and 29 dark coat color individuals.
+Set 24 cases and 29 controls, 0 missing, 0 not found
+```
+This means there are 24 yellow coat color and 29 dark coat color individuals, and no individuals have missing phenotype data.
+
+```
+0 SNPs failed missingness test (GENO>1)
+0 SNPs failed frequency test (MAF<0)
+```
+This means all the SNPs "passed". By explicitly specifying --mind or --geno or --maf certain individuals or SNPs can be excluded (although the default is probably best for quality control procedures). See [PLINK documentation] for details.
+
 
 The per individual and per SNP rates are then output to the files miss_stat.imiss and miss_stat.lmiss, respectively. If you had not specified an --out option, the root output filename would have defaulted to "plink".
 
@@ -94,9 +118,8 @@ Output:
 ![](images/lmiss.png)
 
 
-**NEed SOME HELP INTERPRETTING THIS PART!**
 That is, for each SNP, you see the number of missing individuals (N_MISS) and the proportion of individuals missing (F_MISS).
-For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, giving it a missing(?) frequency of 0.01886792452 (i.e. 1/53)
+For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, giving it a missing frequency of 0.01886792452 (i.e. 1/53)
 
 
 Similarly, look at the per individual rates in the `miss_stat.imiss` by typing
@@ -109,7 +132,7 @@ Output:
 
 ![](images/imiss.png)
 
-The final column is the actual genotyping rate for that individual. Looking at the first row, the individual dark_13 has 4994 missing SNPs out of 476840, producing a genotype rate of 0.01047.
+The final column is the genotyping rate for that individual. Looking at the first row, the individual dark_13 has 4994 missing SNPs out of 476840, producing a genotype rate of 0.01047.
 
 
 
@@ -123,7 +146,6 @@ Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) f
 ```
 
 --make-bed: creates a new PLINK binary fileset, after applying sample/variant filters and other operations. Click [here](http://www.cog-genomics.org/plink/1.9/data) for more details
-
 
 
 
