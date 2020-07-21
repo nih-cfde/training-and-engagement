@@ -40,7 +40,7 @@ The objectives of this tutorial are to:
 
 ## Set up
 
-We will use conda to create an environment for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../install_conda_tutorial.md).
+We will use conda to create an environment for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../../General-Tutorials/install_conda_tutorial.md).
 
 !!! Tip
 
