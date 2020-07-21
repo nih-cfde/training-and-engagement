@@ -33,7 +33,7 @@ Let's set up a Free Tier AWS Ubuntu instance:
 * On the left navbar, check the Free tier only option, then select this Ubuntu machine: Ubuntu Pro 20.04 LTS (provided through 2030).
 
 !!! Important
-    Please select the Ubuntu Pro 20.04 LTS (provided through 2030). Choosing a different machine will result in error messages during various installation steps. 
+    Please select the Ubuntu Pro 20.04 LTS. Choosing a different machine will result in error messages during various installation steps. 
 
 ![](images/Ubuntu.png)
 

@@ -1,0 +1,4 @@
+arrange:
+  - index.md
+  - GWAS-in-the-Cloud
+  - Snakemake_tutorial
