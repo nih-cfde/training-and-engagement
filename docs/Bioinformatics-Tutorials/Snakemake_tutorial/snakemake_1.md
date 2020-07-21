@@ -20,11 +20,11 @@ As an example, this tutorial will walk you through creating a Snakemake workflow
 
 The contents of this tutorial are covered in three short videos:
 
-- [Part 1](https://video.ucdavis.edu/media/snakemake+intro%2C+try+2/0_843yn8pn/166161802): introducing the Snakefile and snakemake
+- [Part 1](https://video.ucdavis.edu/media/snakemake+intro%2C+try+2/0_843yn8pn/166161802): Introducing the Snakefile and Snakemake
 
-- [Part 2](https://video.ucdavis.edu/media/snakemake+intro+2+try+1/0_t1dpuzly): decorating the Snakefile
+- [Part 2](https://video.ucdavis.edu/media/snakemake+intro+2+try+1/0_t1dpuzly): Decorating the Snakefile
 
-- [Part 3](https://video.ucdavis.edu/media/snakemake+intro+3+try+1/0_gwnss4kq): running through the entire snakemake workflow
+- [Part 3](https://video.ucdavis.edu/media/snakemake+intro+3+try+1/0_gwnss4kq): Running through the entire Snakemake workflow
 
 !!! info
     This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization etc may require tuning.
