@@ -12,7 +12,7 @@ Before you start, check your KidsFirst settings (under you name on the top right
 
 Then go back to your File Repository tab. We are currently looking at data under the CBTTC. The data has the following filters.
 
-Clinical Filters:
+**Clinical Filters**:
 
 Diagnosis Category --> Cancer
 
@@ -20,7 +20,7 @@ Diagnosis (Source Text) --> high grade glioma
 
 ![**Clinical Filters**](../../images/Clinical_Filters_11.png)
 
-File Filters:
+**File Filters**:
 
 Experiment Strategy --> RNA-Seq
 
