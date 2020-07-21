@@ -16,7 +16,7 @@ rule <rule name>:
     output:
         # output file names must be enclosed in quotes
         # multiple outputs should be separated by commas
-        "output file1",
+        "output file 1",
         "output file 2"
     shell:
         # for multi-line commands
@@ -81,7 +81,7 @@ What does this do?
 
 The code chunk informs Snakemake that `uncompress_genome` depends on having the input file `ecoli-rel606.fa.gz` in the current directory, and that `download_genome` produces it. Snakemake will automatically determine the dependencies between rules by matching the file name(s).
 
-In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked !
+In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked!
 
  ```
  snakemake -p uncompress_genome
@@ -113,9 +113,9 @@ Run the rules one at a time to figure out what the output files are. Check the f
 !!! Tip
     You can do a dry run of the rule with `snakemake -n <rule name>` to check how Snakemake is interpreting the rule input(s), output(s), and shell command(s), without actually running the command(s) or creating any output(s).
 
-Sometimes a command may requires multiple input files but only explicitly states one in the command (the software assumes that if a certain file exists the other required files must exist). To avoid potential errors in rule dependencies, we will define all inputs in the rule's `input:` section.
+Sometimes a command may require multiple input files but only explicitly state one in the command (the software assumes that if a certain file exists the other required files must exist). To avoid potential errors in rule dependencies, we will define all inputs in the rule's `input:` section.
 
-In this workflow, the rule `map_reads` is a good example of such a behavior. `bwa` used to generate the mapped reads (`.sam`) file requires the reference genome and the index files without explicitly referring to the index files in the command. This is overcome by adding an additional input variable for index files in `map_reads`:
+In this workflow, the rule `map_reads` is a good example of such a behavior. `bwa` is used to generate the mapped reads (`.sam`) file and requires the reference genome and the index files without explicitly referring to the index files in the command. We can add an additional input variable for index files in `map_reads` to define all input files to Snakemake:
 
 ```
 # Map the raw reads to the reference genome
@@ -145,7 +145,7 @@ This also serves as a good way to check that you have all the correct input/outp
 
 ### Re-running rules
 
-Snakemake also has the option to delete all the inputs/outputs for a particular rule (including preceding rules) by running:
+Snakemake also has the option to delete all the inputs/outputs for a particular rule (including preceding rules), shown here by running the `index_genome_samtools` rule:
 ```
 (snaketest) $ snakemake --delete-all-output index_genome_samtools
 ```
@@ -183,9 +183,7 @@ rule uncompress_genome:
         "gunzip -c {input} > {output}"
 ```
 
-Multiple inputs files can be separated by commas and written on their own lines. The input files can be assigned variable names that are accessed in the `shell:` block with `input.<input file variable>`. The `\` tells the shell that this is one command written over two lines in the file.
-
-Similar to `map_reads`, the `samtools_mpileup` rule also includes an input file (`.bai`) that is not explicitly stated but required for the successful completion of the command.
+Multiple inputs files can be separated by commas and written on their own lines. The input files can be assigned variable names that are accessed in the `shell:` block with `input.<input file variable>`. The `\` tells the shell that this is one command written over two lines in the file. Also, similar to `map_reads`, the `samtools_mpileup` rule also includes an input file (`.bai`) that is not explicitly stated but required to complete the command.
 
 ```
 rule samtools_mpileup:
