@@ -23,6 +23,7 @@ data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/))**.
 <!-- If you are looking for
 information on running workflows in Cavatica, please use \<lesson in
 progress\>.
+-->
 
 Please note that workshop materials are in "alpha" development.
 
