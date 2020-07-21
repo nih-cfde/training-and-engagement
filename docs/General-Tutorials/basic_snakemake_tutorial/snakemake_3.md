@@ -1,8 +1,9 @@
 # Decorating the Snakefile
 
-But what if we want to run all the commands at once? It gets tedious to run each command individually, and we can do that already without Snakemake!
+In the previous steps, the Snakemake rules were run individually. But what if we want to run all the commands at once? It gets tedious to run each command individually, and we can do that already without Snakemake!
 
 By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this:
+
 ```
 rule <rule name>:
     input:
@@ -30,11 +31,14 @@ Here, Snakemake interprets the `input:` and `output:` sections as Python code, a
 
 ### Add input and output files
 
-Let's start with a clean slate. Delete any output files you created in the sections above, such that you only have the Snakefile in your directory: `rm <file name>`. Be careful with `rm` command - it deletes files forever!
+Let's start with a clean slate. Delete any output files you created in the sections above, such that you only have the Snakefile in your directory: `rm <file name>`.
+
+!!! warning
+    Be careful with `rm` command - it deletes files forever!
 
 **Adding outputs:**
 
-The output of the `download_data` rule is 'SRR2584857_1.fastq.gz'. Add this to the rule, note that the output file must be in quotes `""`:
+The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to the rule, note that the output file must be in quotes `""`:
 
 ```
 rule download_data:
@@ -75,8 +79,7 @@ rule uncompress_genome:
 
 What does this do?
 
-This tells Snakemake that `uncompress_genome` depends on having the input file
-`ecoli-rel606.fa.gz` in this directory, and that `download_genome` produces it. Snakemake will automatically determine the dependencies between rules by matching the file name.
+The code chunk informs Snakemake that `uncompress_genome` depends on having the input file `ecoli-rel606.fa.gz` in the current directory, and that `download_genome` produces it. Snakemake will automatically determine the dependencies between rules by matching the file name(s).
 
 In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked !
 
@@ -108,7 +111,7 @@ Part 3:
 Run the rules one at a time to figure out what the output files are. Check the file time stamps (`ls -lht`) to track more recent output files. The inputs are specified in the shell command section.
 
 !!! Tip
-    Note that you can do a dry run of the rule with `snakemake -n <rule name>` to check how Snakemake is interpreting the rule input(s), output(s), and shell command(s), without actually running the command(s) or creating any output(s).
+    You can do a dry run of the rule with `snakemake -n <rule name>` to check how Snakemake is interpreting the rule input(s), output(s), and shell command(s), without actually running the command(s) or creating any output(s).
 
 Sometimes a command may requires multiple input files but only explicitly states one in the command (the software assumes that if a certain file exists the other required files must exist). To avoid potential errors in rule dependencies, we will define all inputs in the rule's `input:` section.
 
@@ -149,7 +152,7 @@ Snakemake also has the option to delete all the inputs/outputs for a particular 
 
 ### Using filenames instead of rule names
 
-You don't actually need to use the rule names (*this will be important later on!*). Instead of rule names, you can specify the required output file in Snakemake which will trigger execution of all the upstream linked rules necessary to produce the file.
+You don't actually need to use the rule names *(this will be important later on!)*. Instead of rule names, you can specify the required output file in Snakemake which will trigger execution of all the upstream linked rules necessary to produce the file.
 
 ```
 (snaketest) $ snakemake -p SRR2584857.sam
@@ -158,6 +161,7 @@ You don't actually need to use the rule names (*this will be important later on!
 will also work to run the rule `map_reads`, but you don't have to remember the rule name (which can be arbitrary).
 
 ### Some python shortcuts
+
 There are several ways to more efficiently and cleanly specify inputs/outputs in the Snakefile. Here are some shortcuts:
 
 Take the `uncompress_genome` rule we decorated above:

@@ -1,4 +1,4 @@
-# Snakemake workflow tutorial
+# Snakemake introduction and setup
 
 This tutorial is written for Unix or Linux compute environment (e.g., MacOS, Linux-based HPC).
 

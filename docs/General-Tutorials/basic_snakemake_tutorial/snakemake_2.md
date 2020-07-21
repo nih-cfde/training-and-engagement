@@ -93,7 +93,7 @@ Let's start with the first rule in the Snakefile:
 (snaketest) $ snakemake -p download_data
 ```
 
-Here Snakemake runs the shell command listed under the `download_data` rule. In this case, the shell command downloads the raw read file from a public repository on [osf.io](https://osf.io).
+Snakemake runs the shell command listed under the `download_data` rule. In this case, the shell command downloads the raw read file from a public repository on [osf.io](https://osf.io).
 
 It worked!
 ![](../../images/snakemake_downloaddata.jpeg)
@@ -114,13 +114,14 @@ Next run some more rules sequentially – one at a time:
 (snaketest) $ snakemake -p map_reads
 ```
 
-Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. *Note that the `map_reads` rule ran without any error!*
+Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any error!**. In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
+
 
 !!! recap
 
-    In this section we explored the basic template of a Snakefile which contains rules with all the necessary commands for variant calling. Each rule was run individually using `snakemake -p <rule_name>`.
-    In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
+    In this section we explored the basic template of a Snakefile which contains rules with all the necessary commands for variant calling.
 
+    - each rule can be run individually using `snakemake -p <rule_name>`.
     - each rule encompasses shell commands, with a bit of “decoration”. You could run them yourself directly in the terminal if you wanted!
     - while the written order of the rules in Snakefile doesn’t matter, the order in which the rules are run on the terminal does matter!
     - by default, if you don't specify a rule, Snakemake executes the first rule in the Snakefile (this is actually the only case where the order of rules in the Snakefile matters!)
