@@ -20,7 +20,7 @@ As an example, this tutorial will walk you through creating a Snakemake workflow
 
 The contents of this tutorial are covered in three short videos:
 
-- [Part 1](https://video.ucdavis.edu/media/snakemake+intro%2C+try+2/0_843yn8pn/166161802): Introducing the Snakefile and Snakemake
+- [Part 1](https://video.ucdavis.edu/media/snakemake+intro%2C+try+2/0_843yn8pn/166161802): [Introducing the Snakefile and Snakemake](./snakemake_2.md#The Snakefile)
 
 - [Part 2](https://video.ucdavis.edu/media/snakemake+intro+2+try+1/0_t1dpuzly): Decorating the Snakefile
 
