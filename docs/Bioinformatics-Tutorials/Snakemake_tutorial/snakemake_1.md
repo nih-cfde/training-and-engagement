@@ -58,8 +58,6 @@ We need two files for this tutorial. Click the links and save them in the direct
 
 Rename the `Snakefile.py` to `Snakefile`. There should be no file extension (we just added it so you'd be able to download the file!).
 
-**TO DO: adding the .py extension enabled me to download the file by clicking the link, doesn't work when there is no extension. If you know how to do this better, please edit!**
-
 ### 2. Create new conda environment:
 
 The environment.yml file tells conda 1) where to look for the software installations under 'channels' and 2) what software to install under 'dependencies'. You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial:
