@@ -1,0 +1,9 @@
+arrange:
+  - index.md
+  - snakemake_1.md
+  - snakemake_2.md
+  - snakemake_3.md
+  - bash_cheatsheet.md
+  - conda_cheatsheet.md
+  - snakemake_cheatsheet.md
+  - example_snakefile.md
