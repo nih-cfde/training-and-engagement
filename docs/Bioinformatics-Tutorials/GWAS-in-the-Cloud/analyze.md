@@ -99,11 +99,15 @@ Set 24 cases and 29 controls, 0 missing, 0 not found
 This means there are 24 yellow coat color and 29 dark coat color individuals, and no individuals have missing phenotype data.
 
 ```
+Total genotyping rate in remaining individuals is 0.977
+```
+About 2% of genotypes are missing after thresholding.
+
+```
 0 SNPs failed missingness test (GENO>1)
 0 SNPs failed frequency test (MAF<0)
 ```
-This means all the SNPs "passed". By explicitly specifying --mind or --geno or --maf certain individuals or SNPs can be excluded (although the default is probably best for quality control procedures). See [PLINK documentation] for details.
-
+Here, GENO>1 means exclude an individual if all of its genotypes are missing. Obviously, this is a pretty lenient parameter. Similarly, MAF (minor allele frequency)<0 means exclude all minor alleles that have a frequency lower than 0. You may wish to change these thresholds based on your research question by explicitly specifying --mind or --geno or --maf. See [PLINK documentation] for details.
 
 The per individual and per SNP rates are then output to the files miss_stat.imiss and miss_stat.lmiss, respectively. If you had not specified an --out option, the root output filename would have defaulted to "plink".
 
@@ -119,7 +123,7 @@ Output:
 
 
 That is, for each SNP, you see the number of missing individuals (N_MISS) and the proportion of individuals missing (F_MISS).
-For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, giving it a missing frequency of 0.01886792452 (i.e. 1/53)
+For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, giving it a missing frequency of 0.01886792452 (i.e. 1/53). Lower proportions are better!
 
 
 Similarly, look at the per individual rates in the `miss_stat.imiss` by typing
@@ -132,7 +136,7 @@ Output:
 
 ![](images/imiss.png)
 
-The final column is the genotyping rate for that individual. Looking at the first row, the individual dark_13 has 4994 missing SNPs out of 476840, producing a genotype rate of 0.01047.
+The final column is the genotyping rate for that individual. Looking at the first row, the individual dark_13 has 4994 missing SNPs out of 476840, producing a missing genotype rate of 0.01047.
 
 
 
