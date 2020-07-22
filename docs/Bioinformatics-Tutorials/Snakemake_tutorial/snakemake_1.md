@@ -40,6 +40,21 @@ The objectives of this tutorial are to:
 
 ## Set up
 
+There are two ways to follow this tutorial:
+1) Use the pangeo binder. This option if you don't have access to a Unix/Linux computer.
+
+- This binder is already loaded with the files that 
+
+- Click the button below to launch the binder environment:
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/Snakemake_tutorial_binder/master)
+
+- Then, follow the set up instructions below starting at step 2. The Snakefile and necessary conda environment files are already installed in the binder.
+
+2) Use a Mac or high performance computing environment.
+
+- For this option, please follow all the set up instructions below
+
+
 We will use conda to create an environment for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../../General-Tutorials/install_conda_tutorial.md).
 
 !!! Tip
