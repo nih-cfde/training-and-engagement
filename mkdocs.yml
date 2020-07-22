@@ -9,7 +9,7 @@ theme:
   features:
     - tabs
   logo: images/CFDE-logo.png
-
+  custom_dir: docs/templates
 docs_dir: docs
 
 plugins:
