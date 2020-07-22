@@ -28,6 +28,7 @@ Several things about the page have now changed. First, there is now
 information in our queries box.
 
 ![**Queries Box**](../../images/KidsFirstPortal_16.png)
+**(<a href="../../images/KidsFirstPortal_16.png">see full-size image</a>)**
 
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
