@@ -44,7 +44,7 @@ There are two ways to follow this tutorial:
 
 **1) Use the pangeo binder.** This is a good option if you don't have access to a Unix/Linux computer.
 
-- Click the button below to launch the binder environment:
+- Click the button below to launch the binder environment (you need to open it in a separate tab!):
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/Snakemake_tutorial_binder/master)
 
 - Then, follow the set up instructions below starting at **step 2**. The Snakefile and necessary conda environment files are already installed in the binder.
