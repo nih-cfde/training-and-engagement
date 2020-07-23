@@ -50,19 +50,20 @@ There are two ways to follow this tutorial:
 
 - Click on the `Terminal` button to launch it:
 
-![](../../images/snakemake_binder_terminal.jpeg)
+    ![](../../images/snakemake_binder_terminal.png)
 
 - Then, follow the set up instructions below starting at **step 2**. The Snakefile and necessary conda environment files are already installed in the binder.
 
 !!! warning
     When you close the binder, it does not save your work so you need to download any files you want to keep.
-    
-    To download files, right-click the file you want to save, and select 'Download':
-    ![](../../images/snakemake_binder_download.jpeg)
-    
-    To close the binder, go to 'File' and click 'Shut Down':
 
-    ![](../../images/snakemake_binder_close.jpeg)
+    - To download files, right-click the file you want to save, and select 'Download':
+    
+    ![](../../images/snakemake_binder_download.png)
+    
+    - To close the binder, go to 'File' and click 'Shut Down':
+
+    ![](../../images/snakemake_binder_close.png)
     
 **2) Use a Mac or high performance computing environment.**
 
