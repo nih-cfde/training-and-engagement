@@ -21,7 +21,7 @@ This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedo
 **Table of contents**
 
 
-| Est. time| Lesson name | Description|
+| Est. Time| Lesson Name | Description|
 | ---|--------|--------|
 | 00:10|[What is GWAS?](background.md)| Background                   
 | 00:20|[Set up an AWS instance](aws_instance_setup.md)|How to set up an amazon web services instance|
