@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Overview
+title: Home
 ---
 
 Bioinformatics tutorials
