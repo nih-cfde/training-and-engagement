@@ -6,7 +6,11 @@ title: GWAS tutorial overview
 GWAS in the cloud using Amazon Web Services
 ===========================================
 
+<<<<<<< HEAD
 Genome-wide association studies (GWAS) offer a way to rapidly scan entire genomes and find genetic variation associated with a particular disease condition.
+=======
+This is a detailed tutorial on performing genome wide association analysis (GWAS) using Amazon Web Services (AWS) based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedocs.io/en/2017/GWAS.html)
+>>>>>>> 8481bc41a836aa77fe356674ce6e2a5b1fb8c039
 
 Our aim is to teach researchers how to performing genome wide association analysis using Amazon Web Services. This tutorial will enable researchers with minimal bioinformatics background to set up and access an AWS instance, move data in and out of the AWS instance, run some basic summary statistics and perform a simple association analysis starting with variant calling files (.vcf). We will also produce Manhattan plots to visualize variants associated with traits.
 
