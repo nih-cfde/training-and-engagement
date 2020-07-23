@@ -19,7 +19,6 @@ plugins:
   - git-revision-date-localized
   - git-authors
   - htmlproofer
-  - tooltipster-links
 markdown_extensions:
 - admonition
 - pymdownx.details
@@ -32,7 +31,5 @@ extra:
   hypothesis: true
 extra_css:
   - stylesheets/extra.css
-  - css/tooltipster.bundle.min.css
 extra_javascript:
   - javascripts/extra.js
-  - js/tooltipster.bundle.js 
