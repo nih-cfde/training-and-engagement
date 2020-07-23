@@ -3,10 +3,11 @@ layout: page
 title: Snakemake Overview
 ---
 
-An introduction to Snakemake for workflow management
-  
+**An introduction to Snakemake for workflow management**
 
-Est. Timep&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lesson name | Description
+This tutorial is written for a Unix or Linux compute environment (e.g., MacOS, Linux-based HPC, pre-configured binder). 
+
+Est. Time | Lesson name | Description
 --- | --- | ---
 5 mins | [Introduction](./snakemake_0.md) | What is a workflow? What is Snakemake?
 30 mins | [Setup](./snakemake_1.md) | Set up tutorial computing environment
