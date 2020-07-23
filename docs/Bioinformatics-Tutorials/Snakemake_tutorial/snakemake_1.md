@@ -44,7 +44,7 @@ There are two ways to follow this tutorial:
 
 **A) Use the pangeo binder.** This is a good option if you don't have access to a Unix/Linux computer.
 
-- Click the button below to launch the binder environment (you need to open it in a separate tab!). It will take a few seconds to build:
+- Click the 'Launch binder' button below to launch the binder environment (you need to open it in a separate tab!). It will take a few seconds to build:
 
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder)
 
@@ -55,7 +55,7 @@ There are two ways to follow this tutorial:
 - Then, follow the set up instructions below starting at **step 2**. The Snakefile and necessary conda environment files are already installed in the binder.
 
 !!! warning
-    When you close the binder, it does not save your work so you need to download any files you want to keep.
+    When you close the binder, it does NOT save your work so download any files you want to keep.
 
 - To download files, right-click the file you want to save, and select 'Download':
     
@@ -65,9 +65,9 @@ There are two ways to follow this tutorial:
 
     ![](../../images/snakemake_binder_close.png)
     
-**B) Use a Mac or high performance computing environment.**
+**B) Use a Unix or Linux environment (e.g., with a Mac or High Performing Computing environment).**
 
-- For this option, please follow **all** the set up instructions below
+- For this option, please follow **all** the set up instructions below.
 
 ## Set up computing environment
 
