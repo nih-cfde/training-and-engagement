@@ -17,7 +17,7 @@ use human derived medical data, and for what purposes. Even
 'open' human data has controls and simply indicates that that there are fewer barriers to seeing it. Data curators like
 the Kids First DRC are obligated to enforce access controls and data use
 rules to the best of their ability, and that requires end users like us
-to have accounts that are tied to verified identities (e.g. ORCID, eraCommons).
+to have accounts that are tied to verified identities (e.g. ORCID, eRACommons).
 
 Kids First uses their portal as a sort of catalog of their datasets, but
 the data is stored in Cavatica, a platform for doing data analysis in the
