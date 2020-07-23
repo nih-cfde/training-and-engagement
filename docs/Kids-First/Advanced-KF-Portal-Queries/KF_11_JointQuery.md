@@ -40,7 +40,7 @@ However, if we had many queries and wanted to duplicate more than one of
 them, the second way is a bit easier. Regardless of which method you
 chose, you should now have two queries that are identical:
 
-![**Duplicated queries**](../../images/KidsFirstPortal_27.png)
+![**Duplicated queries**](../../images/KidsFirstPortal_28.png)
 
 Step 2 Edit the age range in one query
 --------------------------------------
