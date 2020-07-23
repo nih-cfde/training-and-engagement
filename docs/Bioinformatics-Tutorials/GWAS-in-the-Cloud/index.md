@@ -14,20 +14,22 @@ For this tutorial, we will **not** work with human data. We will use coat color 
 
 This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedocs.io/en/2017/GWAS.html)
 
-
+!!! Prerequisits
+    This tutorial requires some expertise in biology and fundamental genetics.
+    We also very basic knowledge of the Unix Shell; the user must be comfortable with finding and opening the Mac Terminal window, navigating to specific directories and running pre-scripted commands in the terminal. 
 
 **Table of contents**
 
 
 | Est. time| Lesson name | Description|
 | ---|--------|--------|
-| 00:05|[What is GWAS?](background.md)| Background                   
-| 00:15|[Set up an AWS instance](aws_instance_setup.md)|How to set up an amazon web services instance|
+| 00:10|[What is GWAS?](background.md)| Background                   
+| 00:20|[Set up an AWS instance](aws_instance_setup.md)|How to set up an amazon web services instance|
 | 00:15| [Access the AWS instance](Accessing_aws.md) | Use terminal to connect to the remote computer |
-| 00:05| [Install PLINK](plink_install.md)| Install the software PLINK |
-| 00:05| [Install VCFtools](vcftools_install.md) | Install the software vcftools |
-| 00:05| [Install R and RStudio](RStudio.md) | Install the software R and RStudio |
+| 00:10| [Install PLINK](plink_install.md)| Install the software PLINK |
+| 00:10| [Install VCFtools](vcftools_install.md) | Install the software vcftools |
+| 00:10| [Install R and RStudio](RStudio.md) | Install the software R and RStudio |
 | 00:15| [Download the data](data_download.md) | Download dog coat color data into AWS instance |
-| 00:30| [Analyze](analyze.md) | Generate summary statistics and association analysis |
+| 00:40| [Analyze](analyze.md) | Generate summary statistics and association analysis |
 | 00:20| [Manhattan Plots](manhattan.md) | Make some plots to visualize data |
-| 00:02| [Terminate AWS Instance](terminate_aws.md) | Shut down the cloud computer |
+| 00:10| [Terminate AWS Instance](terminate_aws.md) | Shut down the cloud computer |
