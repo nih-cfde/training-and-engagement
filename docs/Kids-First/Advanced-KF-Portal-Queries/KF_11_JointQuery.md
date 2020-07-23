@@ -50,10 +50,10 @@ In query 2, edit the `Age at Diagnosis` to be 15-20 years of age.
 By clicking on each query, you should see that the title for the Cohort
 Results and the plots change to match the query you have highlighted (in green):
 
-Results for query 1 ONLY:
+Results for **query 1 ONLY**:
 ![pic1](../../images/KidsFirstPortal_29.png)
 
-Results for query 2 ONLY:
+Results for **query 2 ONLY**:
 ![pic2](../../images/KidsFirstPortal_30.png)
 
 Step 3 Combine the Queries
