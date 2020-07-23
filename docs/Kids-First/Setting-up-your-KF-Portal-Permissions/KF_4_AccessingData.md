@@ -96,7 +96,7 @@ You should get a page that looks something like this:
 #### Step 4 Generate and copy your Authentication Token
 
 As we did when getting our Cavatica Auth Token, click on the
-`Regenerate` button to create a new Authentication Token,
+`Generate` for your first token or `Regenerate` button to create a new Authentication Token,
 and then click the copy button (indicated with a purple arrow below) to
 copy it to your clipboard:
 
@@ -142,7 +142,7 @@ Click on "Dataset Access", indicated with the purple arrow below:
 
 We've already created a Cancer Genomics Cloud account, and generated
 our token, so we can ignore the learn more and paste our token and click
-\`connect account\`:
+`connect account`:
 
 ![**CGC Token in Cavatica**](../../images/Cavatica_10.png)
 
@@ -168,4 +168,3 @@ to any protected data, you may see more green and unlocked datasets than
 are shown here:
 
 ![**Authorized Cavatica Account**](../../images/Cavatica_11.png)
-git a
