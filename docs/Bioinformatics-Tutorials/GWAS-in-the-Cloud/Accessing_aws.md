@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Accessing the AWS instance
+title: Access the AWS instance
 ---
 
 Log in to your AWS instance on a Mac terminal
