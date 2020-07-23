@@ -6,7 +6,7 @@ title: Advanced Queries
 Advanced Querying
 =================
 
-Now that we've made some simple queries, let\'s check your
+Now that we've made some simple queries, let's check your
 understanding of the basic interface.
 
 
