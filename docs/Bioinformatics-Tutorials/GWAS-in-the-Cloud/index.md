@@ -13,7 +13,7 @@ For this tutorial, we will **not** work with human data. We will use coat color 
 The goal of this tutorial is to look at summary statistics and perform a simple association analysis starting with a variant calling file (.vcf). We will also produce Manhattan plots to visualize loci associated with yellow coat coloration in dogs.
 
 
-Table of contents
+**Table of contents**
 
 - [What is GWAS?](background.md)
 - [Tutorial Overview](tutorial_overview.md)
