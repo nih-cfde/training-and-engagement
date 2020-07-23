@@ -29,3 +29,5 @@ Advanced KF Portal Queries:
   - [Ands & Ors](Advanced-KF-Portal-Queries/KF_10_AndOr.md)
   - [Joint Queries](Advanced-KF-Portal-Queries/KF_11_JointQuery.md)
   - [Checking Queries](Advanced-KF-Portal-Queries/KF_12_CheckingQueries.md)
+
+[Push to Cavatica](KF_7_PushToCavatica.md)
