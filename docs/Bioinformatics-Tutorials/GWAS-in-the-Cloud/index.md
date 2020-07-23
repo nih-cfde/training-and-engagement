@@ -8,7 +8,7 @@ GWAS in the cloud using Amazon Web Services
 
 Genome-wide association studies (GWAS) offer a way to rapidly scan entire genomes and find genetic variation associated with a particular disease condition.
 
-Our aim is to teach researchers how to perform genome wide association analysis using Amazon Web Services. This tutorial will enable researchers with minimal bioinformatics background to set up and access an AWS instance, move data in and out of the AWS instance, run some basic summary statistics and perform a simple association analysis starting with variant calling files (.vcf). We will also produce Manhattan plots to visualize variants associated with traixsts.
+Our aim is to teach researchers how to perform genome wide association analysis using Amazon Web Services. This tutorial will enable researchers with minimal bioinformatics background to set up and access an AWS instance, move data in and out of the AWS instance, run some basic summary statistics and perform a simple association analysis starting with variant calling files (.vcf). We will also produce Manhattan plots to visualize variants associated with traits.
 
 For this tutorial, we will *not* work with human data. We will use coat color in dogs as the trait of interest (instead of disease), and test the association of a genome-wide set of single nucleotide polymorphisms (SNPs) with two coat color variants: yellow and dark. To extrapolate this tutorial to human disease data, you might consider yellow coat color phenotype as the "case" (or disease) and dark coat color as the "control" (or normal) condition.
 
