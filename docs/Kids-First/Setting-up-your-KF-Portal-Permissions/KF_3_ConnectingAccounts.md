@@ -33,6 +33,11 @@ log-in process, you *must* authorize Gen3:
 
 ![**Authorize Cavatica**](../../images/KidsFirstPortal_8.png)
 
+!!! note
+    If after clicking on 'Log in with eRA Commons', you see a page 
+    that asks for a 'Smart Card Login', logging in with your eRA Commons
+    user name and password should take you to the Gen3 page. 
+    
 #### Step 2 Go to the Cavatica Developer Dashboard
 
 To connect the Kids First Portal to our Cavatica
