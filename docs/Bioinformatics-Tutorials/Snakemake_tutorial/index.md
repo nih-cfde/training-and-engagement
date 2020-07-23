@@ -13,7 +13,8 @@ Est. Time | Lesson name | Description
 30 mins | [Setup](./snakemake_1.md) | Set up tutorial computing environment
 30 mins | [The Snakefile](./snakemake_2.md) | What is the Snakefile? <br />What are Snakemake rules?
 45 mins | [Decorating the Snakefile](./snakemake_3.md) | How do the rules link together?
-45 mins | [Continue Decorating and Run Through the Workflow](./snakemake_4.md) | Continuation of rule linking and <br />final rule to run the workflow
+30 mins | [Continue Decorating](./snakemake_4.md) | More on rule linking
+20 mins | [Run Through the Workflow](./snakemake_5.md) | Final Snakemake rule <br />What are the results?
 
 Cheatsheets:
 
