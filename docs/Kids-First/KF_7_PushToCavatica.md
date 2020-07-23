@@ -6,7 +6,7 @@ title: Push to Cavatica
 Push to Cavatica
 ================
 
-Before you start, check your KidsFirst settings (under you name on the top right) to make sure Data Repository Integrations are connected. Your screen should look like this:
+Before you start, check your Kids First settings (under you name on the top right) to make sure Data Repository Integrations are connected. Your screen should look like this:
 
 ![**KFDRC Portal Settings Page.**](../../images/kf_settings_10.png)
 
@@ -14,17 +14,17 @@ Then go back to your File Repository tab. We are currently looking at data under
 
 **Clinical Filters**:
 
-Diagnosis Category --> Cancer
+- Diagnosis Category --> Cancer
 
-Diagnosis (Source Text) --> high grade glioma
+- Diagnosis (Source Text) --> high grade glioma
 
 ![**Clinical Filters**](../../images/Clinical_Filters_11.png)
 
 **File Filters**:
 
-Experiment Strategy --> RNA-Seq
+- Experiment Strategy --> RNA-Seq
 
-File Format --> tsv
+- File Format --> tsv
 
 ![**File Filters**](../../images/File_Filters_12.png)
 
@@ -39,7 +39,10 @@ There are a total of 405 files available with these filters. Select the files yo
 
 Then click the large purple **"ANALYZE IN CAVATICA"** button.
 
- A message box pops up. In this case, we are authorized to copy 399 (out of 405) files. You need a Cavatica project to assign the files to. Click "Create a project" and name your project "{Last name} practice lesson".
+ A message box pops up. In this case, we are authorized to copy 399 (out of 405) files. You need a Cavatica project to assign the files to. Click "Create a project" and name your project "{Last name} practice lesson". 
+ 
+!!! note
+    You can also create projects from Cavatica. In Cavatica, under the 'Projects' tab, click on the purple '+ Create a project' button and enter a project name. Then click 'Create'. Your project name should now show up as an option in the Kids First portal when you click the 'Analyze in Cavatica' button.
 
  ![**Create a Cavatica Project**](../../images/cavatica_project_created_13.png)
 
