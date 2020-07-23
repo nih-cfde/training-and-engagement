@@ -38,7 +38,7 @@ The objectives of this tutorial are to:
     - learn wildcard matching for Snakemake rules
     - understand why workflow systems can help you do your computing more easily
 
-## Set up
+## Choose computing environment
 
 There are two ways to follow this tutorial:
 
@@ -68,6 +68,8 @@ There are two ways to follow this tutorial:
 **B) Use a Mac or high performance computing environment.**
 
 - For this option, please follow **all** the set up instructions below
+
+## Set up computing environment
 
 We will use conda to create an computer software for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../../General-Tutorials/install_conda_tutorial.md).
 
