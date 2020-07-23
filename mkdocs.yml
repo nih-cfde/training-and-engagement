@@ -16,6 +16,7 @@ plugins:
   - search: # necessary for search to work
       separator: '[\s\-\.]+'
   - awesome-pages
+  - git-revision-date-localized
 markdown_extensions:
 - admonition
 - pymdownx.details
