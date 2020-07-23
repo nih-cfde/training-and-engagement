@@ -14,6 +14,8 @@ $ sudo Rscript -e "install.packages('qqman',  contriburl=contrib.url('http://cra
 
 ## Identify statistical cutoffs
 
+This code finds the equivalent of 0.05 and 0.01 p value in the negative-log-transformed p values file. We will use these cutoffs to draw horizontal lines in the Manhattan plot for visualization of haplotypes that cross the 0.05 and 0.01 statistical threshold (i.e. have a statistically significant association with yellow coat color)
+
 ```
 $ unad_cutoff_sug=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.05' | head -n1 | awk '{print $3}')
 $ unad_cutoff_conf=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.01' | head -n1 | awk '{print $3}')
@@ -49,7 +51,7 @@ Do an `ls` to check if you've created the .bmp file.... and it worked!
 
 ## Visualization
 
-You can visualize the Manhatten plot by downloading the coatColor_man.bmp file to our local computers. To do this, open a new terminal window like before (i.e. by selecting the terminal window and typing `cmd+N`).
+You can visualize the Manhattan plot by downloading the coatColor_man.bmp file to our local computers. To do this, open a new terminal window like before (i.e. by selecting the terminal window and typing `cmd+N`).
 
 Now run the following code to do the actual copying:
 

@@ -1,7 +1,6 @@
 arrange:
  - index.md
  - background.md
- - tutorial_overview.md
  - aws_instance_setup.md
  - Accessing_aws.md
  - plink_install.md

@@ -10,9 +10,9 @@ All of these steps must be performed on your Ubuntu AWS terminal window.
 
 ## Convert VCF into PLINK readable format
 
-[PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
+Remember that VCF files are variant calling files that have [this structure](https://gatkforums.broadinstitute.org/gatk/discussion/1268/what-is-a-vcf-and-how-should-i-interpret-it). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
 
-Convert the .vcf into PLINK readable format: ped and map
+[PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
 ```
  $ vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
@@ -27,7 +27,7 @@ the --plink options outputs the genotype data in PLINK PED format. Two files are
 
 ## Create list of alternative alleles
 
-In order to specify the minor allele (A1), you must create a list of these alternative alleles. To do so, run:
+In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling them alternative alleles. To do so, run:
 
 ```
 $ cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > alt_alleles
@@ -138,7 +138,7 @@ Output:
 
 The final column is the genotyping rate for that individual. Looking at the first row, the individual dark_13 has 4994 missing SNPs out of 476840, producing a missing genotype rate of 0.01047.
 
-
+In this tutorial, we are *not* excluding any SNPs or individuals from downstream association analyses. However, if the missing genotype rate per SNP or individual is high, PLINK has tags to exclude those genotypes or individuals based on [user-specified criteria](http://www.cog-genomics.org/plink/1.9/filter).
 
 ## PLINK binary format
 
