@@ -17,6 +17,7 @@ plugins:
       separator: '[\s\-\.]+'
   - awesome-pages
   - git-revision-date-localized
+  - git-authors
 markdown_extensions:
 - admonition
 - pymdownx.details
