@@ -60,7 +60,7 @@ of the page, to get this screen:
 
 #### Step 4 Generate and copy your Authentication Token
 
-Click on the `Regenerate` button to create a new
+Click on the `Generate` button to create your first token or the `Regenerate` button to create a new
 Authentication Token, and then click the copy button (indicated with a
 purple arrow below) to copy it to your clipboard:
 
