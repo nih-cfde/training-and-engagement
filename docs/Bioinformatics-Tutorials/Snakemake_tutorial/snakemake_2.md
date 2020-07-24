@@ -1,6 +1,10 @@
 # The Snakefile
 
-Snakemake uses a file called 'Snakefile' to configure the steps, or rules, of your pipeline. The basic Snakefile consists of several rules defining the inputs, outputs, and rule commands.
+Snakemake uses a file called 'Snakefile' to configure the steps, or rules, of your pipeline. The basic Snakefile consists of several rules defining the inputs, outputs, and rule commands. 
+
+!!! tip
+
+    The written contents of the tutorial are demonstrated in three short videos. We recommend watching the videos first and referring to the tutorial text for additional help. 
 
 Part 1: Introducing the Snakefile and Snakemake
 
