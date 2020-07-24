@@ -15,8 +15,7 @@ For this tutorial, we will *not* work with human data. We will use coat color in
 This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedocs.io/en/2017/GWAS.html)
 
 !!! Prerequisites
-    This tutorial requires some expertise in biology and fundamental genetics.
-    We also assume very basic knowledge of the Unix shell; the user must be comfortable with finding and opening the Mac Terminal window, navigating to specific directories and running pre-scripted commands in the terminal.
+    This tutorial requires some expertise in biology and fundamental genetics. This tutorial is written for a Unix or Linux compute environment. It assumes very basic knowledge of the Unix shell and access to a UNIX/Linux system (e.g. MacOS, HPC). Users must be comfortable with finding and opening a terminal window, navigating to specific directories and running pre-scripted commands in the terminal.
 
 **Table of contents**
 
