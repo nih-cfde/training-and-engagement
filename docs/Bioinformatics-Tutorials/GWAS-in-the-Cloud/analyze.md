@@ -107,7 +107,7 @@ About 2% of genotypes are missing after thresholding.
 0 SNPs failed missingness test (GENO>1)
 0 SNPs failed frequency test (MAF<0)
 ```
-Here, GENO>1 means exclude an individual if all of its genotypes are missing. Obviously, this is a pretty lenient parameter. Similarly, MAF (minor allele frequency)<0 means exclude all minor alleles that have a frequency lower than 0. You may wish to change these thresholds based on your research question by explicitly specifying --mind or --geno or --maf. See [PLINK documentation] for details.
+Here, GENO>1 means exclude an individual if all of its genotypes are missing. Obviously, this is a pretty lenient parameter. Similarly, MAF (minor allele frequency)<0 means exclude all minor alleles that have a frequency lower than 0. You may wish to change these thresholds based on your research question by explicitly specifying --mind or --geno or --maf.
 
 The per individual and per SNP rates are then output to the files miss_stat.imiss and miss_stat.lmiss, respectively. If you had not specified an --out option, the root output filename would have defaulted to "plink".
 
