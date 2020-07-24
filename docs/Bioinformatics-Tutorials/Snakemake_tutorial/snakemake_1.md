@@ -6,9 +6,9 @@ There are two ways to follow this tutorial:
 
 **A) Use the pangeo binder.** This is a good option if you don't have access to a Unix/Linux computer.
 
-- Click the 'Launch binder' button below to launch the binder environment (you need to open it in a separate tab!). It will take a few seconds to build:
+- Open the binder environment with the 'Launch binder' button below in a **new tab**. It will take a few minutes to build:
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder)
+    [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder)
 
 - Click on the `Terminal` button to launch it:
 
