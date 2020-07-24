@@ -46,7 +46,7 @@ Tutorial resources:
 
     - Part 3: [More decorating and running through the entire Snakemake workflow](./snakemake_4.md)
 
-- [Example Snakefile](./snakemake_tutorial_docs/Snakefile.py)
+- [Example Snakefile](./example_snakefile.md)
 
 - Cheatsheets:
 
