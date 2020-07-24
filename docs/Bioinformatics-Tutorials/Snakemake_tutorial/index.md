@@ -14,9 +14,13 @@ Workflow management systems help to automate analyses and make them easier to ma
 !!! goal
 
     The objectives of this tutorial are to:
+    
     - learn how to write basic workflows with Snakemake rules
+    
     - learn variable substitution for Snakemake rules
+    
     - learn wildcard matching for Snakemake rules
+    
     - understand why workflow systems can help you do your computing more easily
     
 These materials were was adapted from DIB lab course materials [here](https://github.com/ngs-docs/2020-GGG298) and [here](https://github.com/ngs-docs/2020-GGG201b-lab).
@@ -38,18 +42,18 @@ Tutorial resources:
 
 - Videos: 
 
-  - Part 1: [Introducing the Snakefile and Snakemake](./snakemake_2.md)
+    - Part 1: [Introducing the Snakefile and Snakemake](./snakemake_2.md)
 
-  - Part 2: [Continue decorating the Snakefile](./snakemake_4.md)
+    - Part 2: [Continue decorating the Snakefile](./snakemake_4.md)
 
-  - Part 3: [Running through the entire Snakemake workflow](./snakemake_4.md)
+    - Part 3: [Running through the entire Snakemake workflow](./snakemake_4.md)
 
 - [Example Snakefile](./snakemake_tutorial_docs/Snakefile.py)
 
 - Cheatsheets:
 
-  - [bash and nano](./bash_cheatsheet.md)
-
-  - [conda](./conda_cheatsheet.md)
+    - [bash and nano](./bash_cheatsheet.md)
+    
+    - [conda](./conda_cheatsheet.md)
   
-  - [Snakemake](./snakemake_cheatsheet.md)
+    - [Snakemake](./snakemake_cheatsheet.md)
