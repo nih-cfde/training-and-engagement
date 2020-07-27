@@ -6,7 +6,8 @@ title: Filter
 Filter Buttons
 ==============
 
-[![Explore Data Filters](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png)
+[![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png)
+*Explore Data Filters*
 
 To use the filter buttons, click on one, choose from the options in that
 button, and click `apply`.
@@ -22,12 +23,16 @@ button, and click `apply`.
 If you applied this filter successfully, you should see something like
     the following:
 
-[![Age at Diagnosis between birth and 5 years old](../../images/KidsFirstPortal_15.png)](../../images/KidsFirstPortal_15.png)
+[![](../../images/KidsFirstPortal_15.png)](../../images/KidsFirstPortal_15.png)
+*Age at Diagnosis between birth and 5 years old*
 
 Several things about the page have now changed. First, there is now
 information in our queries box.
 
-<img class="js-amplify" src="../../images/KidsFirstPortal_16.png" alt="Photo">
+[![](../../images/KidsFirstPortal_16.png)](../../images/KidsFirstPortal_16.png)
+*Queries*
+
+<!-- <img class="js-amplify" src="../../images/KidsFirstPortal_16.png" alt="Photo"> -->
 
 <!-- ![**Queries Box**](../../images/KidsFirstPortal_16.png)
 **(<a href="../../../images/KidsFirstPortal_16.png">see full-size image</a>)** -->
