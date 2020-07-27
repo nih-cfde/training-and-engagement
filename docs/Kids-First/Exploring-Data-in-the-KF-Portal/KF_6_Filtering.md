@@ -6,7 +6,7 @@ title: Filter
 Filter Buttons
 ==============
 
-![**Explore Data Filters**](../../images/KidsFirstPortal_14.png)
+[![**Explore Data Filters**](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png)
 
 To use the filter buttons, click on one, choose from the options in that
 button, and click `apply`.
