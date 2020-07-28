@@ -17,16 +17,13 @@ Filter Buttons
     
      [![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring data filters")
 
-     To use the filter buttons, click on one, choose from the options in that
-     button, and click `apply`.
+To use the filter buttons, click on one, choose from the options in that button, and click `apply`.
 
 
 ??? Exercise "Use the `Clinical` button to filter the data to include only samples where the patient was between 0 and 5 years old when they were diagnosed. CLICK HERE FOR ANSWER"
 
-    Click `Clinical` then `Age at Diagnosis`. Choose
-    `between` in the first dropdown, check `year` in
-    the middle, and then type the numbers 0 in the `from` box
-    and 5 in the `to` box. Click `Apply`.
+Click `Clinical` then `Age at Diagnosis`. Choose `between` in the first dropdown, check `year` in the middle, and then type the numbers 0 in the `from` box
+and 5 in the `to` box. Click `Apply`.
 
 If you applied this filter successfully, you should see something like
     the following:
