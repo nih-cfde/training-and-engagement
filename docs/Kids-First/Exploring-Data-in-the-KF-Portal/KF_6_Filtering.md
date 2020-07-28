@@ -6,11 +6,19 @@ title: Filter
 Filter Buttons
 ==============
 
-[![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring data filters")
+<html>
+<head>
+    <script type="text/javascript" src="ZoomifyImageViewerFree-min.js"></script>
+    <script type="text/javascript"> Z.showImage("myContainer", "ZoomifyImageExample"); </script>
+</head>
+    
+<body>
+     <div id="myContainer" style="width:900px; height:500px; margin:auto; border:1px; border-style:solid; " ></div>
+    
+     [![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring data filters")
 
-
-To use the filter buttons, click on one, choose from the options in that
-button, and click `apply`.
+     To use the filter buttons, click on one, choose from the options in that
+     button, and click `apply`.
 
 
 ??? Exercise "Use the `Clinical` button to filter the data to include only samples where the patient was between 0 and 5 years old when they were diagnosed. CLICK HERE FOR ANSWER"
@@ -40,3 +48,4 @@ It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
 and 1826.25, which means it automatically calculated 0-5 years in days.
 
+</body>
