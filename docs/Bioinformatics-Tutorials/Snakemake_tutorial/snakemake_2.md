@@ -87,6 +87,10 @@ Let's try running a Snakemake rule:
 
 The `-p` means 'show the command that you're running'.
 
+!!! tip
+    
+    The placement of snakemake flags must follow the `snakemake` command, but otherwise the location does not matter. Thus, `snakemake -p map_reads` will run the same as `snakemake map_reads -p`.
+
 Oops, this will fail! Why?
 ![](../../images/snakemake_rule_error_msg.jpeg)
 
