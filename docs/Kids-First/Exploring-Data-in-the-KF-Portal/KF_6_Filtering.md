@@ -6,22 +6,9 @@ title: Filter
 Filter Buttons
 ==============
 
-<<<<<<< HEAD
 <!--<a href="https://github.com/nih-cfde/training-and-engagement/blob/jeremyfixes/docs/images/KidsFirstPortal_14.png" data-lightbox="example-1" data-title="Exploring data filters">image #1</a>-->
 
 [![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring Data Filters")
-=======
-<html>
-<head>
-    <script type="text/javascript" src="ZoomifyImageViewerFree-min.js"></script>
-    <script type="text/javascript"> Z.showImage("myContainer", "ZoomifyImageExample"); </script>
-</head>
-    
-<body>
-     <div id="myContainer" style="width:900px; height:500px; margin:auto; border:1px; border-style:solid; " ></div>
-    
-     [![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring data filters")
->>>>>>> 668911fa0a03021b2e429b163cf3ed0cf9c6d8ab
 
 To use the filter buttons, click on one, choose from the options in that button, and click `apply`.
 
@@ -50,8 +37,3 @@ information in our queries box.
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
 and 1826.25, which means it automatically calculated 0-5 years in days.
-<<<<<<< HEAD
-=======
-
-</body>
->>>>>>> 668911fa0a03021b2e429b163cf3ed0cf9c6d8ab
