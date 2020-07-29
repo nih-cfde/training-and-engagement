@@ -26,7 +26,7 @@ Then go back to your File Repository tab. We are currently looking at data under
 
 - File Format --> tsv
 
-[![](../../images/File_Filters_12.png)](../../images/File_Filters_12.png.png "File Filters")
+[![](../../images/File_Filters_12.png)](../../images/File_Filters_12.png "File Filters")
 
 On the main screen, scroll to the bottom and select the number of files you wish to view at one time (see blue circle in the clinical filters image above).
 
