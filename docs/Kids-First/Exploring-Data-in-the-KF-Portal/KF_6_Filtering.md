@@ -6,7 +6,9 @@ title: Filter
 Filter Buttons
 ==============
 
-[![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring data filters")
+<!--<a href="https://github.com/nih-cfde/training-and-engagement/blob/jeremyfixes/docs/images/KidsFirstPortal_14.png" data-lightbox="example-1" data-title="Exploring data filters">image #1</a>-->
+
+[![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring Data Filters")
 
 
 To use the filter buttons, click on one, choose from the options in that
@@ -23,7 +25,7 @@ button, and click `apply`.
 If you applied this filter successfully, you should see something like
     the following:
 
-[![](../../images/KidsFirstPortal_15.png)](../../images/KidsFirstPortal_15.png "Age at diagnosis between birth and 5 years old")
+[![](../../images/KidsFirstPortal_15.png)](../../images/KidsFirstPortal_15.png "Successful Filter")
 
 Several things about the page have now changed. First, there is now
 information in our queries box.
@@ -39,4 +41,3 @@ information in our queries box.
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
 and 1826.25, which means it automatically calculated 0-5 years in days.
-

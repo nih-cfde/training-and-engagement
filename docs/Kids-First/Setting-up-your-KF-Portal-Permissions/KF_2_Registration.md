@@ -13,7 +13,7 @@ Why so much setup?
 ------------------
 
 There are many rules and regulations about who can
-use human derived medical data, and for what purposes. Even 
+use human derived medical data, and for what purposes. Even
 'open' human data has controls and simply indicates that that there are fewer barriers to seeing it. Data curators like
 the Kids First DRC are obligated to enforce access controls and data use
 rules to the best of their ability, and that requires end users like us
@@ -31,11 +31,11 @@ over 12,000 individuals. One type of file that stores genomic data like
 this is called a bam file: a 	**B**inary sequence
 **A**lignment **M**ap format file. We'll talk more
 about file types later, but what is important here is that a bam file is
-the smallest way to store alignment data. 
+the smallest way to store alignment data.
 
 A bam file for RNAseq from one
 individual typically ranges from 15 to 30 *gigabytes*, while a WGS bam
-file for one individual can be as many as 350GB. This does not include 
+file for one individual can be as many as 350GB. This does not include
 all of the files that go with each bam file in order to make them
 useable for analysis. As of early 2020, the Kids First overall dataset
 is 1.31 *petabytes*. Since there is so much data, it needs to live in a
@@ -68,15 +68,14 @@ to this link:
 This should take you to the Kids First Portal website. Please click on
 the `Join now` indicated with the purple arrow below:
 
-![**KFDRC Portal Welcome Page.**](../../images/KidsFirstPortal_1.png)
+[![](../../images/KidsFirstPortal_1.png)](../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
 
 #### Step 3 Choose your login system
 
 You should see three options for creating a new account: Google,
 Facebook, or with an ORCID:
 
-![**KFDRC Portal Account Page.**](../../images/KidsFirstPortal_2.png)
-
+[![](../../images/KidsFirstPortal_2.png)](../../images/KidsFirstPortal_2.png "KFDRC Portal Account Page")
 
 !!! Tip
 
@@ -92,7 +91,7 @@ Facebook, or with an ORCID:
 Clicking on `Log in with ORCID` will take you to a login
 page:
 
-![**ORCID Login Page.**](../../images/KidsFirstPortal_3.png)
+[![](../../images/KidsFirstPortal_3.png)](../../images/KidsFirstPortal_3.png "ORCID Login Page")
 
 Depending on your role, your ORCID may be personal, or tied to an
 institution. If you don't already have an ORCID, you can also register
@@ -152,7 +151,7 @@ ID or a user name and password. Since we don't yet have accounts, we
 need to register, by clicking `New to Cavatica? Create an
 account`indicated with the purple arrow below:
 
-![**Cavatica Login Page.**](../../images/Cavatica_1.png)
+[![](../../images/Cavatica_1.png)](../../images/Cavatica_1.png "Cavatica Login Page")
 
 #### Step 4 Choose your login system
 
@@ -165,7 +164,7 @@ by setting up a user name and password.
     and password` and then fill out the form and click
     `Register`.
 
-![**Cavatica Registration Page.**](../../images/Cavatica_2.png)
+[![](../../images/Cavatica_2.png)](../../images/Cavatica_2.png "Cavatica Login Page")
 
 !!! Important
 
@@ -181,7 +180,7 @@ by setting up a user name and password.
 Once your registration is complete, you should get a prompt to go check
 your email:
 
-![**Cavatica Registration Prompt.**](../../images/Cavatica_3.png)
+[![](../../images/Cavatica_3.png)](../../images/Cavatica_3.png "Cavatica Registration Prompt")
 
 You will need to follow the link in that email to complete your
 registration.

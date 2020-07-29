@@ -27,20 +27,20 @@ To make a copy of our query line we can either:
 Push the copy button at the end of the query line we want to duplicate,
 indicated with the purple arrow below:
 
-![**Copy query**](../../images/KidsFirstPortal_26.png)
+[![](../../images/KidsFirstPortal_26.png)](../../images/KidsFirstPortal_26.png "Copy Query")
 
 Or you can choose any number of queries to duplicate simultaneously. To
 do this, click the checkbox at the left side of each query you want to
 duplicate, and then click the `duplicate query` button:
 
-![**Duplicate multiple queries**](../../images/KidsFirstPortal_27.png)
+[![](../../images/KidsFirstPortal_27.png)](../../images/KidsFirstPortal_27.png "Duplicate Multiple Queries")
 
 Since we only have one query to duplicate, these function identically.
 However, if we had many queries and wanted to duplicate more than one of
 them, the second way is a bit easier. Regardless of which method you
 chose, you should now have two queries that are identical:
 
-![**Duplicated queries**](../../images/KidsFirstPortal_28.png)
+[![](../../images/KidsFirstPortal_28.png)](../../images/KidsFirstPortal_28.png "Duplicated Queries")
 
 Step 2 Edit the age range in one query
 --------------------------------------
@@ -51,10 +51,10 @@ By clicking on each query, you should see that the title for the Cohort
 Results and the plots change to match the query you have highlighted (in green):
 
 Results for **query 1 ONLY**:
-![pic1](../../images/KidsFirstPortal_29.png)
+[![](../../images/KidsFirstPortal_29.png)](../../images/KidsFirstPortal_29.png "Query 1")
 
 Results for **query 2 ONLY**:
-![pic2](../../images/KidsFirstPortal_30.png)
+[![](../../images/KidsFirstPortal_30.png)](../../images/KidsFirstPortal_30.png "Query 2")
 
 Step 3 Combine the Queries
 --------------------------
@@ -64,7 +64,7 @@ combine them into a single cohort. To do that, we use the checkboxes on
 the left side of each query to select the ones we want to combine, and
 then click the `or` above the left side of the queries:
 
-![**Combine queries**](../../images/KidsFirstPortal_31.png)
+[![](../../images/KidsFirstPortal_31.png)](../../images/KidsFirstPortal_31.png "Combine Queries")
 
 Step 4 View Combined Query
 --------------------------
@@ -72,4 +72,4 @@ Step 4 View Combined Query
 We now have a new `Query #3` that includes individuals from
 either of our two original queries:
 
-![**Combined queries**](../../images/KidsFirstPortal_33.png)
+[![](../../images/KidsFirstPortal_33.png)](../../images/KidsFirstPortal_33.png "Combined Queries")

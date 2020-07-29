@@ -1,3 +1,6 @@
 .DS_Store
 source/__pycache__/
 build
+docs/images/KidsFirstPortal_14_thumb.png
+docs/templates/css/
+docs/templates/js/
