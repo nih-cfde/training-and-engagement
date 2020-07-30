@@ -6,7 +6,7 @@ title: Rendering a GitHub website locally with MkDocs
 Rendering a GitHub website locally with MkDocs
 ===============================================
 
-MkDocs is a static site generator built for project documentation. It comes with easy to use and customizable themes and features. In this tutorial, we will go over installation of MkDocs, adding content, changing the default theme and hosting the website on [readthedocs.com](readthedocs.com).
+MkDocs is a static site generator built for project documentation. It comes with easy to use and customizable themes and features. In this tutorial, we will go over installation of MkDocs, adding content, changing the default theme and hosting the website on https://readthedocs.com/.
 
 Install MkDocs using pip
 ------------------------
@@ -164,7 +164,7 @@ Here we specify the latest available version for this theme. The website should 
 
 Options to deploy the generated website are elaborated [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
 
-For the website to be hosted on [readthedocs.com](www.readthedocs.com), a text file with instructions to import the `material` theme needs to the added to the main folder of the website. This file contains the following string: `mkdocs-material`.
+For the website to be hosted on https://readthedocs.com/, a text file with instructions to import the `material` theme needs to the added to the main folder of the website. This file contains the following string: `mkdocs-material`.
 
 Hosting the website on Read the Docs
 -------------------------------------
@@ -172,7 +172,7 @@ Hosting the website on Read the Docs
 !!! note "Read the Docs requirement"
     You need admin and/or owner privileges to host the website.
 
-Visit [www.readthedocs.com](www.readthedocs.com)
+Visit https://readthedocs.com/
 
 After log in, click `import project`. This should take you to a list of GitHub repos.
 
