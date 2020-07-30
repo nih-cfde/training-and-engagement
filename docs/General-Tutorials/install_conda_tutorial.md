@@ -22,17 +22,20 @@ The steps for installing Miniconda for MacOS are [here](https://conda.io/project
 - go to the directory where you saved the installer file (e.g., Downloads/)
 - open up Terminal and navigate to that directory
 ```
-$ cd Downloads
-$ shasum -a 256 Miniconda3-latest-MacOSX-x86_64.sh
+cd Downloads
+```
+
+```
+shasum -a 256 Miniconda3-latest-MacOSX-x86_64.sh
 ```
 - the output should look like this:
 ```
 ccc1bded923a790cd61cd17c83c3dcc374dc0415cfa7fb1f71e6a2438236543d  Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
-### c. Install:
+### c. Install Miniconda:
 ```
-$ bash Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 - you will be asked to review the license. Hit return key and scroll through.
 - you will be asked if you accept the license terms. Type `yes`.
@@ -48,15 +51,18 @@ $ bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 - try checking the version of your new conda installation:
 ```
-(base) $ conda --version
+conda --version
 ```
 - if you got something like `conda 4.8.3`, then you are ready for the next step!
 
 ### e. Configure conda
 - conda uses channels to look for available software installations. These are some good channels to set up:
 ```
-(base) $ conda config --add channels bioconda
-(base) $ conda config --add channels conda-forge
+conda config --add channels bioconda
+```
+
+```
+conda config --add channels conda-forge
 ```
 
 ## 2. Set up conda environment
@@ -64,7 +70,7 @@ $ bash Miniconda3-latest-MacOSX-x86_64.sh
 There is always a `(base)` conda environment. You can then create new environments with different software set ups with the basic command:
 
 ```
-(base) $ conda create -n <name of env>
+conda create -n <name of env>
 ```
 This takes a few minutes (you'll see the message 'Solving environment'). Conda will then ask you to confirm the location of the new environment. Type `y`.
 
@@ -76,7 +82,7 @@ If you want to create an environment from a text file called 'environment.yml' t
 ## 3. Activate conda environment
 
 ```
-(base) $ conda activate <conda env name>`
+conda activate <conda env name>`
 ```
 
 Now, your command prompt starts with `(<conda env name>)`. If you named your new environment 'potato' it would look like this:
@@ -87,23 +93,23 @@ Now, your command prompt starts with `(<conda env name>)`. If you named your new
 ## 4. Take a look around your new conda environment!
 This command shows you information about the conda environment you activated:
 ```
-(potato) $ conda info
+conda info
 ```
 
 ## 5. Install packages
 The basic command for installing packages is:
 ```
-(potato) $ conda install -y <software name>
+conda install -y <software name>
 ```
 It will ask if you want to install dependencies. Type `y`. This command will show a list of the software installed in this environment:
 ```
-(potato) $ conda list -n <conda env name>
+conda list -n <conda env name>
 ```
 
 ## 6. Leave conda environment
 
 ```
-(potato) $ conda deactivate
+conda deactivate
 ```
 
 You'll now be back in the `(base)` environment.
