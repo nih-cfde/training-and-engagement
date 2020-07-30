@@ -20,8 +20,9 @@ markdown_extensions:
 - admonition
 - pymdownx.details
 - pymdownx.emoji
-- codehilite:
-    guess_lang: false
+- pymdownx.highlight
+#- codehilite:
+#    guess_lang: false
 - toc:
     permalink: true
 extra:
