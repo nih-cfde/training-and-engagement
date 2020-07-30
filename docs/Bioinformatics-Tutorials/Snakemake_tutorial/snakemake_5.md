@@ -14,7 +14,7 @@ snakemake -p variants.vcf
 
 Recollect that Snakemake will execute the first rule in the Snakefile by default. We can use this feature by creating a default rule called `all` at the top of the Snakefile:
 
-```python
+```
 rule all:
     input: "variants.vcf"
 ```
