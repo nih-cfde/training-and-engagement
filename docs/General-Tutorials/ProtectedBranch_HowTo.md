@@ -155,7 +155,7 @@ Preview website on GitHub branch
 --------------------------------
 
 !!! note "Important"
-    You will require admin privileges on [readthedocs.com](www.readthedocs.com) for previewing website changes from a GitHub repo.
+    You will require admin privileges on www.readthedocs.com for previewing website changes from a GitHub repo.
 
 This tutorial applies to GitHub repos that render as websites. As
 described above, your changes to the website repo must be pushed to a
