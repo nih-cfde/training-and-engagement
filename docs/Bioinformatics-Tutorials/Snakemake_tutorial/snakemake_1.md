@@ -100,21 +100,16 @@ If you get an error, the software installation may have failed. You can check th
 
 You can leave the conda environment with: `conda deactivate`.
 
-Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved by using `Homebrew`, a handy package installation manager. This step will take a few minutes and the installation should be done in the `base` conda environment:
+Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved with `conda install`. This step will take a few minutes and the installation should be done in the `base` conda environment:
 
 Go back to base environment:
 ```
 conda deactivate
 ```
 
-Install Homebrew:
+Install `wget`:
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
-Use `brew` command to install `wget`:
-```
-brew install wget
+conda install -c anaconda wget
 ```
 
 Test installation:
@@ -122,8 +117,5 @@ Test installation:
 wget --version
 ```
 
-Alternatively, we can also use conda to install `wget`, which will work in both Unix and Linux based systems:
 
-```
-conda install -c anaconda wget
-```
+
