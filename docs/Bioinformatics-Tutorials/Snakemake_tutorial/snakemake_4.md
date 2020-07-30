@@ -23,7 +23,7 @@ Sometimes a command may require multiple input files but only explicitly state o
 
 In this workflow, the rule `map_reads` is a good example of such a behavior. `bwa` is used to generate the mapped reads (`.sam`) file and requires the reference genome and the index files without explicitly referring to the index files in the command. We can add an additional input variable for index files in `map_reads` to define all input files to Snakemake:
 
-```python
+```
 # Map the raw reads to the reference genome
 rule map_reads:
     input:
@@ -72,7 +72,7 @@ There are several ways to more efficiently and cleanly specify inputs/outputs in
 
 Take the `uncompress_genome` rule we decorated above:
 
-```python
+```
 rule uncompress_genome:
     input: "ecoli-rel606.fa.gz"
     shell:
@@ -81,7 +81,7 @@ rule uncompress_genome:
 
 It can also be written as follows with wildcards `{input}` and `{output}`. Wildcards operate entirely within a single rule, not across rules. This means that we can use different definitions for `{input}` and `{output}` for each rule and they won't conflict.
 
-```python
+```
 rule uncompress_genome:
     input: "ecoli-rel606.fa.gz"
     output: "ecoli-rel606.fa"
@@ -91,7 +91,7 @@ rule uncompress_genome:
 
 Multiple inputs files can be separated by commas and written on their own lines. The input files can be assigned variable names that are accessed in the `shell:` block with `input.<input file variable>`. The `\` tells the shell that this is one command written over two lines in the file. Also, similar to `map_reads`, the `samtools_mpileup` rule also includes an input file (`.bai`) that is not explicitly stated but required to complete the command.
 
-```python
+```
 rule samtools_mpileup:
     input:
         index="ecoli-rel606.fa",
@@ -108,7 +108,7 @@ rule samtools_mpileup:
 
 Since the Snakefile is written in Python, we can also use Python functions! As an example, we will consolidate the list of reference genome index files into a single line of code. The expansion (`expand`) tells Python that there is a common file name pattern (`ecoli-rel606.fa.`) with different endings (`{ext}`) that are specified using a list (`ext=['sa', 'amb', 'ann', 'pac', 'bwt']`).
 
-```python
+```
 rule map_reads:
     input:
         genome = "ecoli-rel606.fa",
