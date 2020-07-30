@@ -49,6 +49,7 @@ Ok, let's move on and take a look at the structure of the Snakefile rules.
 Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
 
 !!! snakemake
+
     rule <rule name>:
     
         shell:
@@ -58,6 +59,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
             # command must be enclosed in quotes
             
             "<command>"
+      
 
 There are several rules in the Snakefile. Let's do a search for all the rules in the file:
 
@@ -67,19 +69,29 @@ grep rule Snakefile
 
 The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline:
 
-```
-rule download_data:
-rule download_genome:
-rule uncompress_genome:
-rule index_genome_bwa:
-rule map_reads:
-rule index_genome_samtools:
-rule samtools_import:
-rule samtools_sort:
-rule samtools_index_sorted:
-rule samtools_mpileup:
-rule make_vcf:
-```
+!!! output
+
+    rule download_data:
+
+    rule download_genome:
+
+    rule uncompress_genome:
+
+    rule index_genome_bwa:
+
+    rule map_reads:
+
+    rule index_genome_samtools:
+
+    rule samtools_import:
+
+    rule samtools_sort:
+
+    rule samtools_index_sorted:
+
+    rule samtools_mpileup:
+
+    rule make_vcf:
 
 ## Snakemake & Snakefile
 
