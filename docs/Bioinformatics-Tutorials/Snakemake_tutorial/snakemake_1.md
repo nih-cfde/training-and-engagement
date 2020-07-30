@@ -56,15 +56,17 @@ Rename the `Snakefile.py` to `Snakefile`. There should be no file extension (we 
 The environment.yml file tells conda 1) where to look for the software installations under 'channels' and 2) what software to install under 'dependencies'. You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial:
 
 channels:
-    - conda-forge
-    - bioconda
-    - defaults
+
+  - conda-forge
+  - bioconda
+  - defaults
 
 dependencies:
-    - bwa
-    - snakemake-minimal=5.8.1
-    - samtools=1.10
-    - bcftools
+
+  - bwa
+  - snakemake-minimal=5.8.1
+  - samtools=1.10
+  - bcftools
 
 Create new environment called `snaketest` from the `(base)` environment:
 ```
@@ -90,13 +92,13 @@ samtools --version
 The output should say:
 
 !!! output
-    ```
+
     samtools 1.10
     
     Using htslib 1.10.2
     
     Copyright (C) 2019 Genome Research Ltd.
-    ```
+
 
 If you get an error, the software installation may have failed. You can check the software that is installed in your conda environment: `conda list`.
 
