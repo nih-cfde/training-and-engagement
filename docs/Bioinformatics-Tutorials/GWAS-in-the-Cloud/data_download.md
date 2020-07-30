@@ -28,7 +28,7 @@ this download will take a few seconds.
 From the same terminal window, upload the two files onto the AWS computer. Be sure to change the path to point to your two newly downloaded files. Also change the ec2 instance name like you did before.
 
 ```
-scp -i ~/Desktop/amazon.pem path/to/file/pruned_coatColor_maf_geno.vcf.gz ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS
+scp -i ~/Desktop/amazon.pem path/to/file/pruned_coatColor_maf_geno.vcf.gz ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
 gunzip pruned_coatColor_maf_geno.vcf.gz #unzip the vcf
-scp -i ~/Desktop/amazon.pem path/to/file/coatColor.pheno ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS
+scp -i ~/Desktop/amazon.pem path/to/file/coatColor.pheno ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
 ```
