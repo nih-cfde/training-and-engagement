@@ -48,7 +48,7 @@ Ok, let's move on and take a look at the structure of the Snakefile rules.
 
 Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
 
-```
+```python
 rule <rule name>:
     shell:
         # for single line commands
