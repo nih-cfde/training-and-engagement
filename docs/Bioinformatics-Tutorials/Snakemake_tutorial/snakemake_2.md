@@ -50,6 +50,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
 
 !!! snakemake
 
+    ```python
     rule <rule name>:
     
         shell:
@@ -59,6 +60,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
             # command must be enclosed in quotes
             
             "<command>"
+     ```
       
 
 There are several rules in the Snakefile. Let's do a search for all the rules in the file:
