@@ -4,28 +4,29 @@ In the previous steps, the Snakemake rules were run individually. But what if we
 
 By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this:
 
-```
-rule <rule name>:
-    input:
-        # input file names must be enclosed in quotes
-        # multiple inputs should be separated by commas
-        # the new line for each input is optional
-        "input file 1",
-        "input file 2",
-        "input file 3"
-    output:
-        # output file names must be enclosed in quotes
-        # multiple outputs should be separated by commas
-        "output file 1",
-        "output file 2"
-    shell:
-        # for multi-line commands
-        # commands must be enclosed in triple quotes
-        """
-        <command 1>
-        <command 2>
-        """
-```
+!!! snakemake
+
+    rule rule_name:
+
+        input:
+            # input file names must be enclosed in quotes
+            # multiple inputs should be separated by commas
+            # the new line for each input is optional
+            "input file 1",
+            "input file 2",
+            "input file 3"
+        output:
+            # output file names must be enclosed in quotes
+            # multiple outputs should be separated by commas
+            "output file 1",
+            "output file 2"
+        shell:
+            # for multi-line commands
+            # commands must be enclosed in triple quotes
+            """
+            command_1
+            command_2
+            """
 
 Here, Snakemake interprets the `input:` and `output:` sections as Python code, and the `shell:` section as the bash code that gets run on the command line.
 
@@ -40,13 +41,14 @@ Let's start with a clean slate. Delete any output files you created in the secti
 
 The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to the rule, note that the output file must be in quotes `""`:
 
-```
-rule download_data:
-    output: "SRR2584857_1.fastq.gz"
-    shell:
-        "wget https://osf.io/4rdza/download -O SRR2584857_1.fastq.gz"
-```
+!!! snakemake
 
+    rule download_data:
+    
+        output: "SRR2584857_1.fastq.gz"
+        shell:
+            "wget https://osf.io/4rdza/download -O SRR2584857_1.fastq.gz"
+            
 Try: Run the `download_data` rule twice.
 
 ```
@@ -69,13 +71,14 @@ output: "ecoli-rel606.fa.gz"
 
 To the `uncompress_genome` rule, add an input and output:
 
-```
-rule uncompress_genome:
-    input: "ecoli-rel606.fa.gz"
-    output: "ecoli-rel606.fa"
-    shell:
-        "gunzip ecoli-rel606.fa.gz"
-```
+!!! snakemake
+
+    rule uncompress_genome:
+
+        input: "ecoli-rel606.fa.gz"
+        output: "ecoli-rel606.fa"
+        shell:
+            "gunzip ecoli-rel606.fa.gz"
 
 What does this do?
 
