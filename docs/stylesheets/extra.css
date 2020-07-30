@@ -150,3 +150,8 @@ a:hover {
 a:active {
   color: #3094a4 ;
 }
+
+div.output {
+  background-color: rgba(63, 81, 181, .1);
+  border-color: #3F51B5;
+}
