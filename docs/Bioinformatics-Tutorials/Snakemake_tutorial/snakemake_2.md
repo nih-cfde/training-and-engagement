@@ -12,9 +12,11 @@ Part 1: Introducing the Snakefile and Snakemake
 
 ### Editing the Snakefile
 
+Make sure you're in the `(snaketest)` conda environment. The remainder of this tutorial will be in the `(snaketest)` environment.
+
 Let's take a look at the Snakefile using the nano text editor:
 ```
-(snaketest) $ nano -ET4 Snakefile
+nano -ET4 Snakefile
 ```
 
 This is the skeleton of our Snakefile for calling variants. The command above tells nano to open the Snakefile and to create 4 spaces when you hit the `tab` key. The Snakefile is written in the Python programming language, which uses specific indentation formatting to interpret the code. Incorrect indentation will result in syntax errors.
@@ -46,7 +48,7 @@ Ok, let's move on and take a look at the structure of the Snakefile rules.
 
 Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
 
-```
+```python
 rule <rule name>:
     shell:
         # for single line commands
@@ -57,7 +59,7 @@ rule <rule name>:
 There are several rules in the Snakefile. Let's do a search for all the rules in the file:
 
 ```
-(snaketest) $ grep rule Snakefile
+grep rule Snakefile
 ```
 
 The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline.
@@ -81,7 +83,7 @@ rule make_vcf:
 Let's try running a Snakemake rule:
 
 ```
-(snaketest) $ snakemake -p map_reads
+snakemake -p map_reads
 ```
 
 The `-p` means 'show the command that you're running'.
@@ -97,7 +99,7 @@ As the error message in red states, the rule failed because we don't have any of
 
 Let's start with the first rule in the Snakefile:
 ```
-(snaketest) $ snakemake -p download_data
+snakemake -p download_data
 ```
 
 Snakemake runs the shell command listed under the `download_data` rule. In this case, the shell command downloads the raw read file from a public repository on [osf.io](https://osf.io).
@@ -107,18 +109,30 @@ It worked!
 
 Check the working directory. There should now be a `.fastq.gz` file:
 ```
-(snaketest) $ ls -lht
+ls -lht
 ```
 
 This command shows you the file permissions, number of links, owner name, owner group, file size in bytes, time of last modification, and file/directory name.
 
 Next run some more rules sequentially – one at a time:
 ```
-(snaketest) $ snakemake -p download_data
-(snaketest) $ snakemake -p download_genome
-(snaketest) $ snakemake -p uncompress_genome
-(snaketest) $ snakemake -p index_genome_bwa
-(snaketest) $ snakemake -p map_reads
+snakemake -p download_data
+```
+
+```
+snakemake -p download_genome
+```
+
+```
+snakemake -p uncompress_genome
+```
+
+```
+snakemake -p index_genome_bwa
+```
+
+```
+snakemake -p map_reads
 ```
 
 Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any error!**. In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
