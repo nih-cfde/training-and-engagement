@@ -41,13 +41,11 @@ We will use conda to create an computer software for this tutorial. If you don't
 
 ### 1. Download tutorial files:
 
-First, create a new directory for this tutorial, e.g.,:
+First, create a new directory for this tutorial in the `(base)` conda environment, e.g.,:
 
 ```
-(base) $ mkdir learn_snakemake
+mkdir learn_snakemake
 ```
-
-(base) $ ```mkdir learn_snakemake```
 
 We need two files for this tutorial. Click the links and save them in the directory you created above: 1) [environment.yml](./snakemake_tutorial_docs/environment.yml) and 2) [Snakefile](./snakemake_tutorial_docs/Snakefile.py).
 
@@ -56,44 +54,50 @@ Rename the `Snakefile.py` to `Snakefile`. There should be no file extension (we 
 ### 2. Create new conda environment:
 
 The environment.yml file tells conda 1) where to look for the software installations under 'channels' and 2) what software to install under 'dependencies'. You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial:
-```
-channels:
+
+> channels:
     - conda-forge
     - bioconda
     - defaults
-dependencies:
+> dependencies:
     - bwa
     - snakemake-minimal=5.8.1
     - samtools=1.10
     - bcftools
-```
 
-Create environment:
+Create new environment called `snaketest` from the `(base)` environment:
 ```
-(base) $ conda env create -n snaketest -f environment.yml
+conda env create -n snaketest -f environment.yml
 ```
 
 ### 3. Activate conda environment:
 
 ```
-(base) $ conda activate snaketest
+conda activate snaketest
 ```
+
+Note that your terminal command prompt should now look like this:
+> (snaketest) $ 
+
+instead of 
+
+> (base) $
 
 ### 4. Test that your environment is ready to go
 
 You should have several software installed in your `snaketest` environment now. Check it out!
 
 ```
-(snaketest) $ samtools --version
+samtools --version
 ```
 
 The output should say:
 
-```
-samtools 1.10
-Using htslib 1.10.2
-Copyright (C) 2019 Genome Research Ltd.
-```
+> samtools 1.10
+
+> Using htslib 1.10.2
+
+> Copyright (C) 2019 Genome Research Ltd.
 
 If you get an error, the software installation may have failed. You can check the software that is installed in your conda environment: `conda list`.
 
@@ -103,16 +107,16 @@ Later in the tutorial, we'll use `wget` to download data. Installing `wget` on M
 
 ```
 # go back to base environment
-(snaketest) $ conda deactivate
+conda deactivate
 
 # install Homebrew
-(base) $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # use brew command to install wget
-(base) $ brew install wget
+brew install wget
 
 # test installation
-(base) $ wget --version
+wget --version
 ```
 
 Alternatively, we can also use conda to install `wget`, which will work in both Unix and Linux based systems:
