@@ -8,7 +8,7 @@ General steps for editing CFDE websites with cfde-bots
 
 1. Go to website's GitHub repository.
 
-    For the CFDE, these are the key web pages we work with: [welcome](https://github.com/nih-cfde/welcome-to-cfde/), [training](https://github.com/nih-cfde/training-and-engagement), [use cases](https://github.com/nih-cfde/usecases/), and [documentation](https://github.com/nih-cfde/published-documentation/). *See section below for specific instructions on editing the documentation website.*
+    For the CFDE, the key websites we maintain are: `welcome-to-cfde`, `training-and-engagement`, `usecases`, and `published-documentation`. *See section below for specific instructions on editing the published-documentation website.*
 
 2. Create a new branch, "my_branch" (type new branch name, hit enter)
 
@@ -31,7 +31,7 @@ General steps for editing CFDE websites with cfde-bots
 
 6. If the checks pass, changes should be automatically merged into the preview branch so you can look at the preview render of the website. Click "Merge pull request" and confirm merge.
 
-7. Merging will re-render on the preview version on the [readthedocs](www.readthedocs.com) website. Login to [readthedocs](www.readthedocs.com), go to website Overview page, and click on "preview" under Versions (*requires admin privileges*). You might need to refresh and wait a few minutes for the changes to show up.
+7. Merging will re-render on the preview version of the www.readthedocs.com website. Login to www.readthedocs.com, go to website Overview page, and click on "preview" under Versions (*requires admin privileges*). You might need to refresh and wait a few minutes for the changes to show up.
 
 8. To keep those changes, go back to the GitHub repo and click "Compare & pull request" to push "my_branch" to master. This time, request a reviewer for this PR. After approved, merge changes and check that the changes are on the "latest" version of the website!
 
@@ -42,7 +42,7 @@ The website created by the `published-documentation` repo pulls some docs that a
 
 ### A) **To edit documents that are *in* the `published-documentation` repo**
 
-Follow the general steps above for this repo: https://github.com/nih-cfde/published-documentation/.
+Follow the general steps above.
 
 ### B) **To edit documents that are in the sub-module `the-fair-cookbook` repo**
 

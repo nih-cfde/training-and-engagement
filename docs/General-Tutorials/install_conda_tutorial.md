@@ -6,7 +6,7 @@ Conda makes software installation and compute environment management easier. Con
 
 !!! tip
 
-    Please refer to the [conda command cheatsheet](./basic_snakemake_tutorial/conda_cheatsheet.md) for commonly used conda commands!
+    Please refer to the [conda command cheatsheet](../Bioinformatics-Tutorials/Snakemake_tutorial/conda_cheatsheet.md) for commonly used conda commands!
 
 
 ## 1. Install conda
