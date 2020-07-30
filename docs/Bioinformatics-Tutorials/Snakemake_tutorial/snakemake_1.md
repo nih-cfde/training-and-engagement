@@ -47,6 +47,8 @@ First, create a new directory for this tutorial, e.g.,:
 (base) $ mkdir learn_snakemake
 ```
 
+(base) $ ```mkdir learn_snakemake```
+
 We need two files for this tutorial. Click the links and save them in the directory you created above: 1) [environment.yml](./snakemake_tutorial_docs/environment.yml) and 2) [Snakefile](./snakemake_tutorial_docs/Snakefile.py).
 
 Rename the `Snakefile.py` to `Snakefile`. There should be no file extension (we just added it so you'd be able to download the file!).
