@@ -23,7 +23,7 @@ Sometimes a command may require multiple input files but only explicitly state o
 
 In this workflow, the rule `map_reads` is a good example of such a behavior. `bwa` is used to generate the mapped reads (`.sam`) file and requires the reference genome and the index files without explicitly referring to the index files in the command. We can add an additional input variable for index files in `map_reads` to define all input files to Snakemake:
 
-```
+```python
 # Map the raw reads to the reference genome
 rule map_reads:
     input:
@@ -44,7 +44,7 @@ The complete Snakefile is [here](./example_snakefile.md). Note that there are ma
 Once you've fixed the rules `index_genome_bwa` and `map_reads`, you should be able to run everything up to the rule `index_genome_samtools` by running:
 
 ```
-(snaketest) $ snakemake -p index_genome_samtools
+snakemake -p index_genome_samtools
 ```
 
 This also serves as a good way to check that you have all the correct input/output information. You'll have files left over if you forgot to put them in output.
@@ -53,7 +53,7 @@ This also serves as a good way to check that you have all the correct input/outp
 
 Snakemake also has the option to delete all the inputs/outputs for a particular rule (including preceding rules), shown here by running the `index_genome_samtools` rule:
 ```
-(snaketest) $ snakemake --delete-all-output index_genome_samtools
+snakemake --delete-all-output index_genome_samtools
 ```
 
 ### Using filenames instead of rule names
@@ -61,7 +61,7 @@ Snakemake also has the option to delete all the inputs/outputs for a particular 
 You don't actually need to use the rule names *(this will be important later on!)*. Instead of rule names, you can specify the required output file in Snakemake which will trigger execution of all the upstream linked rules necessary to produce the file.
 
 ```
-(snaketest) $ snakemake -p SRR2584857.sam
+snakemake -p SRR2584857.sam
 ```
 
 will also work to run the rule `map_reads`, but you don't have to remember the rule name (which can be arbitrary).
@@ -72,7 +72,7 @@ There are several ways to more efficiently and cleanly specify inputs/outputs in
 
 Take the `uncompress_genome` rule we decorated above:
 
-```
+```python
 rule uncompress_genome:
     input: "ecoli-rel606.fa.gz"
     shell:
@@ -81,7 +81,7 @@ rule uncompress_genome:
 
 It can also be written as follows with wildcards `{input}` and `{output}`. Wildcards operate entirely within a single rule, not across rules. This means that we can use different definitions for `{input}` and `{output}` for each rule and they won't conflict.
 
-```
+```python
 rule uncompress_genome:
     input: "ecoli-rel606.fa.gz"
     output: "ecoli-rel606.fa"
@@ -91,7 +91,7 @@ rule uncompress_genome:
 
 Multiple inputs files can be separated by commas and written on their own lines. The input files can be assigned variable names that are accessed in the `shell:` block with `input.<input file variable>`. The `\` tells the shell that this is one command written over two lines in the file. Also, similar to `map_reads`, the `samtools_mpileup` rule also includes an input file (`.bai`) that is not explicitly stated but required to complete the command.
 
-```
+```python
 rule samtools_mpileup:
     input:
         index="ecoli-rel606.fa",
@@ -108,7 +108,7 @@ rule samtools_mpileup:
 
 Since the Snakefile is written in Python, we can also use Python functions! As an example, we will consolidate the list of reference genome index files into a single line of code. The expansion (`expand`) tells Python that there is a common file name pattern (`ecoli-rel606.fa.`) with different endings (`{ext}`) that are specified using a list (`ext=['sa', 'amb', 'ann', 'pac', 'bwt']`).
 
-```
+```python
 rule map_reads:
     input:
         genome = "ecoli-rel606.fa",
