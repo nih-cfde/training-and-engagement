@@ -15,7 +15,7 @@ Remember that VCF files are variant calling files that have [this structure](htt
 [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
 ```
- $ vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
+vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
 
 ```
 
@@ -30,7 +30,7 @@ the --plink options outputs the genotype data in PLINK PED format. Two files are
 In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling them alternative alleles. To do so, run:
 
 ```
-$ cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > alt_alleles
+cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > alt_alleles
 ```
 
 where the file `alt_alleles` contains a list of SNP IDs and the allele to be set as A1.
@@ -50,7 +50,7 @@ Read more about quality control in this journal article by [Anderson et al. 2011
 In this tutorial, we will generate some simple summary statistics on rates of missing data in the file, using the [--missing option](http://www.cog-genomics.org/plink/1.9/basic_stats#missing):
 
 ```
-$ plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele alt_alleles --allow-no-sex --adjust
+plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele alt_alleles --allow-no-sex --adjust
 ```
 
 !!! Note
@@ -114,7 +114,7 @@ The per individual and per SNP rates are then output to the files miss_stat.imis
 Look at the per SNP rates by running:
 
 ```
-$ less miss_stat.lmiss
+less miss_stat.lmiss
 ```
 
 Output:
@@ -129,7 +129,7 @@ For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, givin
 Similarly, look at the per individual rates in the `miss_stat.imiss` by typing
 
 ```
-$ less miss_stat.imiss
+less miss_stat.imiss
 ```
 
 Output:
@@ -145,7 +145,7 @@ In this tutorial, we are *not* excluding any SNPs or individuals from downstream
 Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) for downstream analysis:
 
 ```
- $ plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.binary
+plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.binary
 
 ```
 
@@ -158,7 +158,7 @@ Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) f
 Learn more about association tests [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822#s7)
 
 ```
-  $ plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele alt_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
+plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele alt_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
 ```
 
 !!! Note

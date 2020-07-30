@@ -21,7 +21,7 @@ Copy this name, connect to the cloud computer with ssh under the username ‘ubu
 * Find the private key file; it’s the `.pem` file you downloaded when starting up the EC2 instance. Remember, you named it `amazon.pem` and saved in on the Desktop. Select the terminal window, then type:
 
 ```
-$ chmod og-rwx ~/Desktop/amazon.pem
+chmod og-rwx ~/Desktop/amazon.pem
 ```
 
 * This sets the permissions on the private key file to “closed to all evildoers”.
@@ -29,7 +29,7 @@ $ chmod og-rwx ~/Desktop/amazon.pem
 * Finally, log in to the cloud computer:
 
 ```
-$ ssh -i ~/Desktop/amazon.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com
+ssh -i ~/Desktop/amazon.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com
 ```
 
 !!! Important
