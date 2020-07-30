@@ -3,25 +3,25 @@
 Once you've decorated the entire Snakefile, you should be able to run through the whole workflow using either the rule name:
 
 ```
-(snaketest) $ snakemake -p make_vcf
+snakemake -p make_vcf
 ```
 
 or by using the file name:
 
 ```
-(snaketest) $ snakemake -p variants.vcf
+snakemake -p variants.vcf
 ```
 
 Recollect that Snakemake will execute the first rule in the Snakefile by default. We can use this feature by creating a default rule called `all` at the top of the Snakefile:
 
-```
+```python
 rule all:
     input: "variants.vcf"
 ```
 and run:
 
 ```
-(snaketest) $ snakemake -p all
+snakemake -p all
 ```
 
 This rule runs through the entire workflow with a single command! This is much better than running each command one by one!
@@ -40,12 +40,12 @@ This rule runs through the entire workflow with a single command! This is much b
 Finally, let's look at the output!
 
 ```
-(snaketest) $ less variants.vcf
+less variants.vcf
 ```
 
 We can look at the alignment by running the [alignment viewer](http://samtools.sourceforge.net/tview.shtml) in samtools:
 ```
-(snaketest) $ samtools tview -p ecoli:4202391 SRR2584857.sorted.bam ecoli-rel606.fa
+samtools tview -p ecoli:4202391 SRR2584857.sorted.bam ecoli-rel606.fa
 ```
 
 !!! tip "Navigating samtools tview"
@@ -55,10 +55,10 @@ We can look at the alignment by running the [alignment viewer](http://samtools.s
 
 ## Wrapping up
 
-Exit conda environment to return to base environment:
+Exit `(snaketest)` conda environment to return to `(base)` environment:
 
 ```
-(snaketest) $ conda deactivate
+conda deactivate
 ```
 
 Hopefully, you have now:
