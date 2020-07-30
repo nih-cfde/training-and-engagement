@@ -113,17 +113,23 @@ You can leave the conda environment with: `conda deactivate`.
 
 Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved by using `Homebrew`, a handy package installation manager. This step will take a few minutes and the installation should be done in the `base` conda environment:
 
+Go back to base environment:
 ```
-# go back to base environment
 conda deactivate
+```
 
-# install Homebrew
+Install Homebrew:
+```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 
-# use brew command to install wget
+Use `brew` command to install `wget`:
+```
 brew install wget
+```
 
-# test installation
+Test installation:
+```
 wget --version
 ```
 
