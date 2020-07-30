@@ -1,0 +1,12 @@
+arrange:
+ - index.md
+ - background.md
+ - aws_instance_setup.md
+ - Accessing_aws.md
+ - plink_install.md
+ - vcftools_install.md
+ - RStudio.md
+ - data_download.md
+ - analyze.md
+ - manhattan.md
+ - terminate_aws.md
