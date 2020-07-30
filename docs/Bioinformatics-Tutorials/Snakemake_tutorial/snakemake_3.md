@@ -4,7 +4,7 @@ In the previous steps, the Snakemake rules were run individually. But what if we
 
 By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this:
 
-```python
+```
 rule <rule name>:
     input:
         # input file names must be enclosed in quotes
@@ -40,7 +40,7 @@ Let's start with a clean slate. Delete any output files you created in the secti
 
 The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to the rule, note that the output file must be in quotes `""`:
 
-```python
+```
 rule download_data:
     output: "SRR2584857_1.fastq.gz"
     shell:
@@ -63,13 +63,13 @@ This time the shell command is executed! By explicitly including the `output` fi
 **Adding inputs:**
 
 To the `download_genome` rule, add:
-```python
+```
 output: "ecoli-rel606.fa.gz"
 ```
 
 To the `uncompress_genome` rule, add an input and output:
 
-```python
+```
 rule uncompress_genome:
     input: "ecoli-rel606.fa.gz"
     output: "ecoli-rel606.fa"
@@ -83,9 +83,10 @@ The code chunk informs Snakemake that `uncompress_genome` depends on having the 
 
 In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked!
 
- ```
- snakemake -p uncompress_genome
- ```
+Run: 
+```
+snakemake -p uncompress_genome
+```
 
 As expected, two rules are executed in the specified order: first the `download_genome` followed by `uncompress_genome` rule.
 ![](../../images/snakemake_twosteps.jpeg)
