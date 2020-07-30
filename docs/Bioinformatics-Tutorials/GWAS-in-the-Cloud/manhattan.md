@@ -9,7 +9,7 @@ Create a Manhattan Plot
 ## Install qqman package
 
 ```
-$ sudo Rscript -e "install.packages('qqman',  contriburl=contrib.url('http://cran.r-project.org/'))"
+sudo Rscript -e "install.packages('qqman',  contriburl=contrib.url('http://cran.r-project.org/'))"
 ```
 
 ## Identify statistical cutoffs
@@ -17,28 +17,28 @@ $ sudo Rscript -e "install.packages('qqman',  contriburl=contrib.url('http://cra
 This code finds the equivalent of 0.05 and 0.01 p value in the negative-log-transformed p values file. We will use these cutoffs to draw horizontal lines in the Manhattan plot for visualization of haplotypes that cross the 0.05 and 0.01 statistical threshold (i.e. have a statistically significant association with yellow coat color)
 
 ```
-$ unad_cutoff_sug=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.05' | head -n1 | awk '{print $3}')
-$ unad_cutoff_conf=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.01' | head -n1 | awk '{print $3}')
+unad_cutoff_sug=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.05' | head -n1 | awk '{print $3}')
+unad_cutoff_conf=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.01' | head -n1 | awk '{print $3}')
 ```
 
 ## Install GhostScript by running:
 
 ```
-$ sudo apt-get update -y
-$ sudo apt-get install -y ghostscript-x
+sudo apt-get update -y
+sudo apt-get install -y ghostscript-x
 ```
 
 ## Run the plotting function
 
 ```
-$ Rscript -e 'args=(commandArgs(TRUE));library(qqman);'\
- 'data=read.table("coatColor.assoc", header=TRUE); data=data[!is.na(data$P),];'\
- 'bitmap("coatColor_man.bmp", width=20, height=10);'\
- 'manhattan(data, p = "P", col = c("blue4", "orange3"),'\
- 'suggestiveline = 12,'\
- 'genomewideline = 15,'\
- 'chrlabs = c(1:38, "X"), annotateTop=TRUE, cex = 1.2);'\
- 'graphics.off();' $unad_cutoff_sug $unad_cutoff_conf
+Rscript -e 'args=(commandArgs(TRUE));library(qqman);'\
+'data=read.table("coatColor.assoc", header=TRUE); data=data[!is.na(data$P),];'\
+'bitmap("coatColor_man.bmp", width=20, height=10);'\
+'manhattan(data, p = "P", col = c("blue4", "orange3"),'\
+'suggestiveline = 12,'\
+'genomewideline = 15,'\
+'chrlabs = c(1:38, "X"), annotateTop=TRUE, cex = 1.2);'\
+'graphics.off();' $unad_cutoff_sug $unad_cutoff_conf
 ```
 
 The output should look like this:
@@ -56,7 +56,7 @@ You can visualize the Manhattan plot by downloading the coatColor_man.bmp file t
 Now run the following code to do the actual copying:
 
 ```
-$ scp -i ~/Desktop/amazon.pem -r ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/GWAS/ ~/Desktop/.
+scp -i ~/Desktop/amazon.pem -r ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/GWAS/ ~/Desktop/
 ```
 !!! Note
     The -r flag used in the copy command, copies the entire "GWAS" folder. To copy just the .bmp file, drop the -r flag and include the filename in the aws path.
