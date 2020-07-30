@@ -23,7 +23,7 @@ Sometimes a command may require multiple input files but only explicitly state o
 
 In this workflow, the rule `map_reads` is a good example of such a behavior. `bwa` is used to generate the mapped reads (`.sam`) file and requires the reference genome and the index files without explicitly referring to the index files in the command. We can add an additional input variable for index files in `map_reads` to define all input files to Snakemake:
 
-```
+```python
 # Map the raw reads to the reference genome
 rule map_reads:
     input:
@@ -91,7 +91,7 @@ rule uncompress_genome:
 
 Multiple inputs files can be separated by commas and written on their own lines. The input files can be assigned variable names that are accessed in the `shell:` block with `input.<input file variable>`. The `\` tells the shell that this is one command written over two lines in the file. Also, similar to `map_reads`, the `samtools_mpileup` rule also includes an input file (`.bai`) that is not explicitly stated but required to complete the command.
 
-```
+```python
 rule samtools_mpileup:
     input:
         index="ecoli-rel606.fa",
