@@ -65,9 +65,10 @@ This time the shell command is executed! By explicitly including the `output` fi
 **Adding inputs:**
 
 To the `download_genome` rule, add:
-```
-output: "ecoli-rel606.fa.gz"
-```
+
+!!! snakemake
+
+    output: "ecoli-rel606.fa.gz"
 
 To the `uncompress_genome` rule, add an input and output:
 
