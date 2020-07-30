@@ -152,6 +152,12 @@ a:active {
 }
 
 div.output {
-  background-color: rgba(63, 81, 181, .1);
-  border-color: #3F51B5;
+  background-color: rgba(183, 189, 188, 1);
+  border-color: #5d6564;
 }
+
+div.snakemake {
+  background-color: rgba(181, 236, 161, 1);
+  border-color: #24b72c;
+}
+
