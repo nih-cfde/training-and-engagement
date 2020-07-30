@@ -48,7 +48,7 @@ Ok, let's move on and take a look at the structure of the Snakefile rules.
 
 Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
 
-```python
+```
 rule <rule name>:
     shell:
         # for single line commands
@@ -62,7 +62,7 @@ There are several rules in the Snakefile. Let's do a search for all the rules in
 grep rule Snakefile
 ```
 
-The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline.
+The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline:
 
 ```
 rule download_data:
