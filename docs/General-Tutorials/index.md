@@ -17,5 +17,10 @@ Web Development:
 
   - [Rendering a GitHub website locally with Jekyll](Jekyll_Tutorial.md)
   - [Rendering a GitHub website locally with Sphinx](Sphinx_Tutorial.md)
-  - [Rendering a GitHub website locally with Mkdocs](mkdocs.md)
+  - [Rendering a GitHub website locally with MkDocs](mkdocs.md)
   - [Editing Mkdocs websites with cfde-bot](cfdebot_website_editing.md)
+
+Setup:
+
+  - [Set up computing environment with conda on MacOS](install_conda_tutorial.md)
+  
