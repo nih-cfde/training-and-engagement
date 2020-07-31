@@ -17,13 +17,7 @@ plugins:
       separator: '[\s\-\.]+'
   - awesome-pages
   - git-revision-date-localized
-  - git-authors:
-      show_contribution: true
   - htmlproofer
-  - git-committers:
-      repository: nih-cfde/training-and-engagement
-      branch: master
-      token: !!python/object/apply:os.getenv ["ALLTHEACTIONS"]
 markdown_extensions:
 - admonition
 - pymdownx.details
@@ -36,5 +30,4 @@ extra:
   hypothesis: true
 extra_css:
   - stylesheets/extra.css
-extra_js:
-  - javascripts/extra.js
+
