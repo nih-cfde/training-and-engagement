@@ -4,7 +4,7 @@ title: Overview
 ---
 
 
-General Tutorials
+Infrastructure Tutorials
 ==================
 
 Currently available tutorials for GitHub and web development can be found here.
