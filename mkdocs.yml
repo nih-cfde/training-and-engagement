@@ -18,6 +18,7 @@ plugins:
   - awesome-pages
   - git-revision-date-localized
   - git-authors
+      show_contribution: true
   - htmlproofer
 markdown_extensions:
 - admonition
