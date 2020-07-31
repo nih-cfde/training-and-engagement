@@ -17,7 +17,7 @@ plugins:
       separator: '[\s\-\.]+'
   - awesome-pages
   - git-revision-date-localized
-  - git-authors
+  - git-authors:
       show_contribution: true
   - htmlproofer
 markdown_extensions:
