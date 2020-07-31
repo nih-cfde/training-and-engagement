@@ -36,3 +36,5 @@ extra:
   hypothesis: true
 extra_css:
   - stylesheets/extra.css
+extra_js:
+  - javascripts/extra.js
