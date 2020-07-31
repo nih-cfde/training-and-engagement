@@ -1,3 +1,6 @@
 mkdocs-material
 mkdocs-jupyter
 mkdocs-awesome-pages-plugin
+mkdocs-git-revision-date-localized-plugin
+mkdocs-git-authors-plugin
+mkdocs-htmlproofer-plugin

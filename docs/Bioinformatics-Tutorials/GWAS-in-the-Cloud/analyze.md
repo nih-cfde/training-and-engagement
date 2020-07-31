@@ -10,7 +10,7 @@ All of these steps must be performed on your Ubuntu AWS terminal window.
 
 ## Convert VCF into PLINK readable format
 
-Remember that VCF files are variant calling files that have [this structure](https://gatkforums.broadinstitute.org/gatk/discussion/1268/what-is-a-vcf-and-how-should-i-interpret-it). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
+Remember that VCF files are variant calling files that have [this structure](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
 
 [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 

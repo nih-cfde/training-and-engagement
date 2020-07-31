@@ -6,7 +6,7 @@ title: Advanced Queries
 Advanced Querying
 =================
 
-Now that we've made some simple queries, let\'s check your
+Now that we've made some simple queries, let's check your
 understanding of the basic interface.
 
 
@@ -21,4 +21,4 @@ understanding of the basic interface.
 Once you've built a multiple filter query, your query box should look
 something like this:
 
-![**Multiple Filters**](../../images/KidsFirstPortal_20.png)
+[![](../../images/KidsFirstPortal_20.png)](../../images/KidsFirstPortal_20.png "Multiple Filters")

@@ -5,44 +5,48 @@ title: Registration
 Register for Accounts
 =====================
 
-Ultimately, our goal is to analyze existing Kids First data in new ways,
+Our goal is to analyze existing Kids First data in new ways,
 or in new combinations, in order to improve medical outcomes. However,
 before we can start using the data, we need to do a lot of set up.
 
 Why so much setup?
 ------------------
 
-As you likely know, there are many rules and regulations about who can
-use human derived medical data, and for what purposes. Human genomic
-data is no exception. Even if the human data you intend to use is
-'open', that generally doesn't mean you can do anything you want with
-it, just that there are fewer barriers to seeing it. Data curators like
+There are many rules and regulations about who can
+use human derived medical data, and for what purposes. Even
+'open' human data has controls and simply indicates that that there are fewer barriers to seeing it. Data curators like
 the Kids First DRC are obligated to enforce access controls and data use
 rules to the best of their ability, and that requires end users like us
-to have accounts that are tied to verified identities.
+to have accounts that are tied to verified identities (e.g. ORCID, eRACommons).
 
-Genomic data is also extremely large and unwieldy. For example, the Kids
+Kids First uses their portal as a sort of catalog of their datasets, but
+the data is stored in Cavatica, a platform for doing data analysis in the
+cloud. We will need accounts for the Kids First
+DRC Portal and Cavatica in order to do an analysis.
+
+
+<!--Kids
 First DRC maintains Whole Genome Sequences (WGS) and/or RNAseq data for
 over 12,000 individuals. One type of file that stores genomic data like
 this is called a bam file: a 	**B**inary sequence
 **A**lignment **M**ap format file. We'll talk more
 about file types later, but what is important here is that a bam file is
-the smallest way to store alignment data. A bam file for RNAseq from one
+the smallest way to store alignment data.
+
+A bam file for RNAseq from one
 individual typically ranges from 15 to 30 *gigabytes*, while a WGS bam
-file for one individual can be as many as 350GB. This is not to mention
+file for one individual can be as many as 350GB. This does not include
 all of the files that go with each bam file in order to make them
 useable for analysis. As of early 2020, the Kids First overall dataset
 is 1.31 *petabytes*. Since there is so much data, it needs to live in a
 huge, dedicated compute space, and running an analysis generally
 requires much more memory and storage than is available on an office
 computer.
+-->
 
-Kids First uses their portal as a sort of catalog of their datasets, but
-the data stored in Cavatica, a platform for doing data analysis in the
-cloud. As such, at a minimum, we will need accounts for the Kids First
-DRC Portal and Cavatica in order to do an analysis.
 
-### Register for the Kids First DRC Portal
+## Register for the Kids First DRC Portal
+--------------------------------------
 
 #### Step 1 Go to the portal website
 
@@ -64,15 +68,14 @@ to this link:
 This should take you to the Kids First Portal website. Please click on
 the `Join now` indicated with the purple arrow below:
 
-![**KFDRC Portal Welcome Page.**](../../images/KidsFirstPortal_1.png)
+[![](../../images/KidsFirstPortal_1.png)](../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
 
 #### Step 3 Choose your login system
 
 You should see three options for creating a new account: Google,
 Facebook, or with an ORCID:
 
-![**KFDRC Portal Account Page.**](../../images/KidsFirstPortal_2.png)
-
+[![](../../images/KidsFirstPortal_2.png)](../../images/KidsFirstPortal_2.png "KFDRC Portal Account Page")
 
 !!! Tip
 
@@ -88,7 +91,7 @@ Facebook, or with an ORCID:
 Clicking on `Log in with ORCID` will take you to a login
 page:
 
-![**ORCID Login Page.**](../../images/KidsFirstPortal_3.png)
+[![](../../images/KidsFirstPortal_3.png)](../../images/KidsFirstPortal_3.png "ORCID Login Page")
 
 Depending on your role, your ORCID may be personal, or tied to an
 institution. If you don't already have an ORCID, you can also register
@@ -119,7 +122,8 @@ for one on [this page](https://orcid.org/register).
 Once you have signed in with your ORCID, you should be re-directed back
 to the Kids First DRC Portal and automatically logged in.
 
-### Register for Cavatica
+## Register for Cavatica
+------------------------
 
 #### Step 1 Go to the Cavatica website
 
@@ -147,7 +151,7 @@ ID or a user name and password. Since we don't yet have accounts, we
 need to register, by clicking `New to Cavatica? Create an
 account`indicated with the purple arrow below:
 
-![**Cavatica Login Page.**](../../images/Cavatica_1.png)
+[![](../../images/Cavatica_1.png)](../../images/Cavatica_1.png "Cavatica Login Page")
 
 #### Step 4 Choose your login system
 
@@ -160,7 +164,7 @@ by setting up a user name and password.
     and password` and then fill out the form and click
     `Register`.
 
-![**Cavatica Registration Page.**](../../images/Cavatica_2.png)
+[![](../../images/Cavatica_2.png)](../../images/Cavatica_2.png "Cavatica Login Page")
 
 !!! Important
 
@@ -176,7 +180,7 @@ by setting up a user name and password.
 Once your registration is complete, you should get a prompt to go check
 your email:
 
-![**Cavatica Registration Prompt.**](../../images/Cavatica_3.png)
+[![](../../images/Cavatica_3.png)](../../images/Cavatica_3.png "Cavatica Registration Prompt")
 
 You will need to follow the link in that email to complete your
 registration.

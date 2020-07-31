@@ -1,17 +1,10 @@
 ---
 layout: page
-title: Account Connections 2
+title: Accessing Data
 ---
 
-Access Connections
+Accessing Data
 ==================
-
-Ultimately, our goal is to analyze existing Kids First data in new ways,
-or in new combinations, in order to improve medical outcomes. However,
-before we can start using the data, we need to do a lot of set up.
-
-There's even more setup???
----------------------------
 
 Recall that we want to use Cavatica to analyze human data we find using
 the portal. So far, we've created Cavatica and Portal accounts, and
@@ -20,31 +13,27 @@ Cavatica or the Portal what data we are authorized to see and use.
 
 Typically, the groups who store and distribute human data are different
 from the groups who are dedicated to processing and approving
-applications for human data use, monitoring those applications. So, the
+applications for human data use. The
 Kids First DRC stores and distributes the Kids First metadata, but they
 don't decide who has access. Similarly, Cavatica doesn't decide who
 can use the Kids First data files, even though they regulate that
-access. We need to tell both interfaces what credentials we have for
-data access.
+access.
 
-### Data Repository Integrations in the Portal
+We need to tell both interfaces what credentials we have for
+data access:
 
-To tell the Portal what data it should show us, we need to set up Data
-Repository Integrations.
+## Data Repository Integrations in the Kids First Portal
 
-These require an eRA Commons ID. If you don't have an eRA Commons ID,
-you can still browse the public data on Kids First, however you won't
+To tell the Portal what data it should show us, we need to set up `Data
+Repository Integrations`.
+
+**This step requires an eRA Commons ID.**
+
+If you don't have an eRA Commons ID,
+you can still browse the public data on Kids First, but you will not
 be able to access any controlled access data that you may have been
 granted access to. If you don't yet have an eRA Commons ID, skip to
-Cancer Genomics Cloud access in Cavatica.
-
-#### Step 1
-
-Click on each of the `Connect` buttons in turn, and use your
-eRA login credentials to set up the connection. Note that for the NCI
-CRDC integration, you must authorize Gen3.
-
-![**Data Repository Integrations**](../../images/KidsFirstPortal_10.png)
+[Cancer Genomics Cloud access in Cavatica](https://cfde-training-and-engagement.readthedocs-hosted.com/en/preview/Kids-First/Setting-up-your-KF-Portal-Permissions/KF_4_AccessingData/#cancer-genomics-cloud-access-in-cavatica).
 
 !!! Tip
 
@@ -53,7 +42,15 @@ CRDC integration, you must authorize Gen3.
     here](https://era.nih.gov/register-accounts/understanding-era-commons-accounts.htm)
 
 
-### Cancer Genomics Cloud access in Cavatica
+#### Step for Data Repository Integrations
+
+Click on each of the `Connect` buttons in turn, and use your
+eRA login credentials to set up the connection. Note that for the NCI
+CRDC integration, you must authorize Gen3.
+
+[![](../../images/KidsFirstPortal_10.png)](../../images/KidsFirstPortal_10.png "Data Repository Integrations")
+
+## Cancer Genomics Cloud access in Cavatica
 
 To tell Cavatica what data we should have access to, we need to connect
 to the [Cancer Genomics Cloud](http://www.cancergenomicscloud.org/).
@@ -66,17 +63,16 @@ creating a new account using the `New to the CGC? Create an
 account` link. Whichever way you log in, be sure to agree to
 authorize Gen3.
 
-![**Cancer Genomics Cloud**](../../images/CGC_1.png)
+[![](../../images/CGC_1.png)](../../images/CGC_1.png "Cancer Genomics Cloud")
 
 !!! Note
 
-    This website should look and feel very familiar, as it hosted by Seven
-    Bridges: the same company that build Cavatica. The difference is that
+    This website should look and feel very familiar, as it is hosted by Seven
+    Bridges: the same company that built Cavatica. The difference is that
     the Cancer Genomics Cloud makes decisions about data access, whereas
     Kids First and Cavatica don't. Still, we are, in effect, connecting one
     account we made on Seven Bridges to another account we made on Seven
     Bridges.
-
 
 #### Step 2 Go to the Cancer Genomics Cloud Developer Dashboard
 
@@ -87,22 +83,22 @@ we're using another one here!
 Click on the Developer tab at the top of the screen, and select
 Authentication Token:
 
-![**CGC Developer Settings**](../../images/CGC_2.png)
+[![](../../images/CGC_2.png)](../../images/CGC_2.png "CGC Developer Settings")
 
 #### Step 3 Click on the Auth token link
 
 You should get a page that looks something like this:
 
-![**CGC Authentication Tokens**](../../images/CGC_5.png)
+[![](../../images/CGC_5.png)](../../images/CGC_5.png "CCGC Authentication Tokens")
 
 #### Step 4 Generate and copy your Authentication Token
 
 As we did when getting our Cavatica Auth Token, click on the
-`Regenerate` button to create a new Authentication Token,
+`Generate` for your first token or `Regenerate` button to create a new Authentication Token,
 and then click the copy button (indicated with a purple arrow below) to
 copy it to your clipboard:
 
-![**Copy Auth Token**](../../images/CGC_6.png)
+[![](../../images/CGC_6.png)](../../images/CGC_6.png "Copy Authentication Token")
 
 !!! Tip
 
@@ -121,13 +117,13 @@ credentials you set up earlier in this lesson to log in.
 
 Once you're logged in, you should see this screen:
 
-![**Cavatica Dashboard.**](../../images/Cavatica_7.png)
+[![](../../images/Cavatica_7.png)](../../images/Cavatica_7.png "Cavatica Dashboard")
 
 #### Step 6 Navigate to Settings
 
 Click on your name (top right) and Account Settings:
 
-![**Cavatica Account Settings.**](../../images/Cavatica_8.png)
+[![](../../images/Cavatica_8.png)](../../images/Cavatica_8.png "Cavatica Account Settings")
 
 #### Step 7 Navigate to Dataset Access
 
@@ -138,15 +134,15 @@ the Cancer Genomics Cloud.
 
 Click on "Dataset Access", indicated with the purple arrow below:
 
-![**Dataset Access**](../../images/Cavatica_9.png)
+[![](../../images/Cavatica_9.png)](../../images/Cavatica_9.png "Dataset Access")
 
 #### Step 8 Input your Authentication Token
 
 We've already created a Cancer Genomics Cloud account, and generated
 our token, so we can ignore the learn more and paste our token and click
-\`connect account\`:
+`connect account`:
 
-![**CGC Token in Cavatica**](../../images/Cavatica_10.png)
+[![](../../images/Cavatica_10.png)](../../images/Cavatica_10.png "CGC Token in Cavatica")
 
 !!! Tip
 
@@ -169,4 +165,4 @@ your `Open Datasets` have become green and 'unlocked'
 to any protected data, you may see more green and unlocked datasets than
 are shown here:
 
-![**Authorized Cavatica Account**](../../images/Cavatica_11.png)
+[![](../../images/Cavatica_11.png)](../../images/Cavatica_11.png "Authorized Cavatica Account")

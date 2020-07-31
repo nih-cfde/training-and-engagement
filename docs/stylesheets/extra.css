@@ -151,6 +151,10 @@ a:active {
   color: #3094a4 ;
 }
 
+
+.tooltip_templates { display: none; }
+
+
 .md-typeset .admonition.output, .md-typeset details.output {
     border-left: .2rem solid #5e5cc1;
 }
@@ -165,3 +169,4 @@ a:active {
 .md-typeset .admonition.snakemake>.admonition-title, .md-typeset details.snakemake>.admonition-title, .md-typeset details.snakemake>summary {
     background-color: rgba(223, 242, 222, 1);
 }
+

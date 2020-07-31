@@ -1,3 +1,5 @@
 .DS_Store
-source/__pycache__/
+source/
+__pycache__/
 build
+

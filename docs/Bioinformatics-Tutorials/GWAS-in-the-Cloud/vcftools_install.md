@@ -8,7 +8,7 @@ Install VCFtools
 
 ## What is VCF?
 
-VCF stands for Variant Call Format. It is a standardized text file format for representing SNP, indel, and structural variation calls. Read more about VCF files at the [GATK forum](https://gatkforums.broadinstitute.org/gatk/discussion/1268/what-is-a-vcf-and-how-should-i-interpret-it).
+VCF stands for Variant Call Format. It is a standardized text file format for representing SNP, indel, and structural variation calls. Read more about VCF files at the [GATK forum](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format).
 
 [VCFtools](http://vcftools.sourceforge.net/man_latest.html#EXAMPLES) is a program package designed for working with VCF files. The aim of VCFtools is to provide easily accessible methods for working with complex genetic variation data in the form of VCF and BCF files. In this tutorial, you will use vcftools to convert the .vcf file into a format that PLINK likes.
 

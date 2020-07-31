@@ -1,19 +1,12 @@
 ---
 layout: page
-title: Account Connections 1
+title: Connecting Accounts
 ---
 
-Account Connections
+Connecting Accounts
 ===================
 
-Ultimately, our goal is to analyze existing Kids First data in new ways,
-or in new combinations, in order to improve medical outcomes. However,
-before we can start using the data, we need to do a lot of set up.
-
-There's more setup???
-----------------------
-
-Recall that we want to use Cavatica to analyze data we find using the
+We want to use Cavatica to analyze data we find using the
 portal, which means our two accounts need some kind of connection.
 However, when we made our account for Cavatica, we went to a separate
 website, and logged in using a completely different identity than we did
@@ -21,14 +14,15 @@ at the Kids First DRC Portal. At Cavatica, we used our eRA Commons ID
 (or an email), but at the Portal we used an ORCID. So, we will have to
 tell our two accounts about each other.
 
-But that's not all. Since the data we want to use is from Kids First,
+Since the data we want to use is from Kids First,
 it is subject to human data protections. Right now, we haven't told the
 portal or Cavatica about our credentials, or what we're authorized to
 see. Remember that there are rules about human data *even if it's open
 data* so we will need to tell these systems a bit about ourselves before
 they trust us.
 
-### Creating a Kids First Portal to Cavatica Connection
+Creating a Kids First Portal to Cavatica Connection
+---------------------------------------------------
 
 #### Step 1 Get logged in to Cavatica
 
@@ -37,42 +31,46 @@ you set up in the previous page of this lesson to log in, if you used a
 eRA Commons ID, this will be a multi-step process. As part of your
 log-in process, you *must* authorize Gen3:
 
-![**Authorize Cavatica**](../../images/KidsFirstPortal_8.png)
+[![](../../images/KidsFirstPortal_8.png)](../../images/KidsFirstPortal_8.png "Authorize Cavatica")
+
+!!! note
+    If after clicking on 'Log in with eRA Commons', you see a page
+    that asks for a 'Smart Card Login', logging in with your eRA Commons
+    user name and password should take you to the Gen3 page.
 
 #### Step 2 Go to the Cavatica Developer Dashboard
 
-The way we will actually tell the Kids First Portal about our Cavatica
-account is by creating a personalized code in Cavatica, and giving it to
-the portal.
-
-Cavatica calls this code an "Auth token" or "Authentication Token",
-and keeps the tool that creates them a Developer tool.
-
-This process can be daunting for new users, but is a pretty common way
+To connect the Kids First Portal to our Cavatica
+account we need to create a personalized code in Cavatica, and give it to
+the portal. Cavatica calls this code an "Auth token" or "Authentication Token".This process can be daunting for new users, but is a pretty common way
 of connecting accounts across different systems. In fact, we'll have to
 do it again in this lesson!
+
+<!-- and keeps the tool that creates them a Developer tool.
+-->
 
 Click on the Developer tab at the top of the screen, and select
 Authentication Token:
 
-![**Cavatica Developer tab**](../../images/Cavatica_4.png)
+[![](../../images/Cavatica_4.png)](../../images/Cavatica_4.png "Cavatica Developer Tab")
 
 #### Step 3 Click on the Auth token link
 
-There are all sorts of developer tool information on this page, but
+There is all sorts of developer tool information on this page, but
 we're going to ignore most of it for now, and click on `Auth
 token` (indicated by the purple arrow below) in the middle
 of the page, to get this screen:
 
-![**Cavatica Authentication Token**](../../images/Cavatica_5.png)
+[![](../../images/Cavatica_5.png)](../../images/Cavatica_5.png "Cavatica Authentication Token")
 
 #### Step 4 Generate and copy your Authentication Token
 
-Click on the `Regenerate` button to create a new
+Click on the `Generate` button to create your first token or the `Regenerate` button to create a new
 Authentication Token, and then click the copy button (indicated with a
 purple arrow below) to copy it to your clipboard:
 
-![**Generate Authentication Token**](../../images/Cavatica_6.png)
+[![](../../images/Cavatica_6.png)](../../images/Cavatica_6.png "Generate Authentication Token")
+
 
 !!! Tip
 
@@ -92,8 +90,7 @@ the previous page of this lesson to log in.
 Once you're logged in, at the top of your window you should see this
 bar:
 
-![**KFDRC Portal Dashboard.**](../../images/KidsFirstPortal_4.png)
-
+[![](../../images/KidsFirstPortal_4.png)](../../images/KidsFirstPortal_4.png "KFDRC Portal Dashboard")
 
 !!! Error
 
@@ -109,7 +106,7 @@ bar:
 
 Click on your name (top right) and Select Settings:
 
-![**KFDRC Portal Dashboard Settings.**](../../images/KidsFirstPortal_5.png)
+[![](../../images/KidsFirstPortal_5.png)](../../images/KidsFirstPortal_5.png "KFDRC Portal Dashboard Settings")
 
 #### Step 7 Navigate to Application Integration
 
@@ -122,14 +119,14 @@ application integration.
 Scroll down to Application Integration and click on the "Connect"
 button. You should get a pop up that looks like this:
 
-![**How to Connect to Cavatica**](../../images/KidsFirstPortal_7.png)
+[![](../../images/KidsFirstPortal_7.png)](../../images/KidsFirstPortal_7.png "How to Connect to Cavatica")
 
 #### Step 8 Input your Authentication Token
 
 We've already created Cavatica accounts, and generated our token, so
 we'll skip to step 3, paste in our token, and click `Connect`
 
-![**How to Connect to Cavatica**](../../images/KidsFirstPortal_9.png)
+[![](../../images/KidsFirstPortal_9.png)](../../images/KidsFirstPortal_9.png "How to Connect to Cavatica")
 
 !!! Tip
 
