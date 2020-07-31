@@ -4,7 +4,7 @@ title: Overview
 ---
 
 
-Infrastructure Tutorials
+General Tutorials
 ==================
 
 Currently available tutorials for GitHub and web development can be found here.
@@ -20,7 +20,7 @@ Web Development:
   - [Rendering a GitHub website locally with MkDocs](mkdocs.md)
   - [Editing Mkdocs websites with cfde-bot](cfdebot_website_editing.md)
 
-Setup:
+Conda:
 
   - [Set up computing environment with conda on MacOS](install_conda_tutorial.md)
   
