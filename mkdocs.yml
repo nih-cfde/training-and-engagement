@@ -20,6 +20,10 @@ plugins:
   - git-authors:
       show_contribution: true
   - htmlproofer
+  - git-committers:
+      repository: nih-cfde/training-and-engagement
+      branch: master
+      token: !!python/object/apply:os.getenv ["ALLTHEACTIONS"]
 markdown_extensions:
 - admonition
 - pymdownx.details
