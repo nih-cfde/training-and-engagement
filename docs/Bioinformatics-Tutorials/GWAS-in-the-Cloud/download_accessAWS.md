@@ -109,7 +109,7 @@ Check if you have this directory with `ls`.
 
 ### Upload data to AWS
 
-* To upload data from your local computer to AWS, you must first log out of AWS. Type:
+* To upload data from your local computer to AWS, you must first logout of AWS. Type:
 
 ```
 logout
@@ -123,7 +123,7 @@ scp -i ~/Desktop/GWAS/amazon.pem ~/Desktop/GWAS/coatColor.pheno ubuntu@ec2-???-?
 ```
 Here `scp` is short for secure copy. You're copying files from the GWAS folder on your local machine to the GWAS folder in the remote Ubuntu computer. Be sure to change the ec2 instance name like you did earlier.
 
-* To check if this worked, log back into the remote Ubuntu instance by typing in the ssh command described above. Then change directory to the GWAS and list files in it:
+* To check if this worked, log back into the remote Ubuntu instance by **typing in the ssh command described above**. Then change directory to the GWAS and list files in it:
 
 ```
 cd GWAS
@@ -131,7 +131,7 @@ ls
 ```
 Do you see the files?
 
-* Finally, let's unzip the `pruned_coatColor_maf_geno.vcf.gz` file using gunzip.
+* Finally, unzip the `pruned_coatColor_maf_geno.vcf.gz` file using gunzip.
 
 ```
 gunzip pruned_coatColor_maf_geno.vcf.gz
