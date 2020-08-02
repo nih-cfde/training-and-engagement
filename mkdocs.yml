@@ -18,6 +18,7 @@ plugins:
   - awesome-pages
   - git-revision-date-localized
   - htmlproofer
+  
 markdown_extensions:
 - admonition
 - pymdownx.details
@@ -30,4 +31,3 @@ extra:
   hypothesis: true
 extra_css:
   - stylesheets/extra.css
-

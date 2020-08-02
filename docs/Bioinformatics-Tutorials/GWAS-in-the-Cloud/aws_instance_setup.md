@@ -46,7 +46,11 @@ Then click review and launch --> launch. You should see a pop-up window like thi
 
 ![](images/KeyPair.png)
 
-* Choose the 'Create a new key pair' option from the drop down menu. Under key pair name, type 'amazon'. Save it on your Desktop. Check the acknowledgement box and click "Launch Instance". Next time you launch an instance, you can reuse the key pair you just generated.
+* Key pair for AWS:
+  - If this this your first time using AWS or creating a key pair: Choose the 'Create a new key pair' option from the drop down menu. Under key pair name, type 'amazon' and click save. The default location for saving files on a Mac is the "Downloads" folder -- that's where your key pair can be found.  **Next time you launch an instance, you can reuse the key pair you just generated.**
+  - If you you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, it may be helpful to rename the key pair amazon.pem.
+
+* Then check the acknowledgement box and click "Launch Instance".
 
 * After you click 'Launch Instance', you should see this:
 
@@ -56,4 +60,4 @@ Then click review and launch --> launch. You should see a pop-up window like thi
 
 ![](https://i.imgur.com/JifclmQ.png)
 
-* You have now successfully launched your AWS instance. DO NOT CLOSE THIS PAGE YET.
+* You have now successfully launched your AWS instance. You will need some information from this amazon webpage to access your AWS computer, so do not close the page yet. If you happen to close the webpage: https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId
