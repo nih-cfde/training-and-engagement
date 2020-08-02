@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Download data and move data to AWS
+title: Download and move data to AWS
 ---
 
-Downloading and accessing data on AWS
-==========================================
+Download and move data to AWS
+==============================
 
 ## Download data to local computer
 
-!!! Note
+!!! Important
     The coat color data lives in a website called Cyverse. It is not easy to make AWS talk to cyverse, so download the data onto your LOCAL computer and then upload it to AWS.
 
 * Open up a terminal window by searching (type cmd+space_bar) for "terminal" on your Mac.
@@ -16,8 +16,8 @@ Downloading and accessing data on AWS
 * Make a folder called GWAS on your Desktop and then navigate to the folder by typing the following commands in your terminal:
 
 ```
-mkdir ~/Desktop/GWAS
-cd ~/Desktop/GWAS
+  mkdir ~/Desktop/GWAS
+  cd ~/Desktop/GWAS
 ```
 * You will use a free software called [wget](https://en.wikipedia.org/wiki/Wget) to retrieve data files of interest from Cyverse. First install wget like so:
 
@@ -34,11 +34,7 @@ wget https://de.cyverse.org/dl/d/3B5C1853-C092-488C-8C2F-CE6E8526E96B/coatColor.
 ```
 The first command downloads the vcf file and the second command downloads the file that specifies phenotype information. The download may take a few seconds.
 
-* Check if your data download worked by typing
-```
-ls
-```
-This command lists all the files in your current (GWAS) directory. Output should be:
+* Check if your data download worked by typing `ls`. This command lists all the files in your current (GWAS) directory. Output should be:
 
 ```
 coatColor.pheno				pruned_coatColor_maf_geno.vcf.gz
@@ -50,20 +46,20 @@ OK, so you've created a [running computer on the cloud](aws_instance_setup.md). 
 
 ### Getting to the AWS instance
 
-To access the cloud computer, you need the network name of our new computer. This can be found at the bottom of the instance log page shown here:
+To access the cloud computer, you need the network name of our new computer. This can be found at the bottom of the [instance log page](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) shown here:
 
 ![](images/publicDNS.png)
 
 Copy this name, connect to the cloud computer with ssh under the username ‘ubuntu’, as follows:
 
-* Find the private key file; it’s the `.pem` file you downloaded when starting up the EC2 instance. If you saved it in the default locations, it should be in the "Downloads" folder. Remember, you named it `amazon.pem`.
+* Find the private key file; it’s the `.pem` file you downloaded when starting up the EC2 instance. If you saved it in the default location, it should be in the "Downloads" folder. Remember, you named it `amazon.pem`.
 
-* Move amazon.pem to your ~Desktop/GWAS folder with copy+paste. Remember to delete the amazon.pem from the Downloads folder to prevent clutter. Check the contents of your ~Desktop/GWAS folder again with `ls`. Do you see the `amazon.pem`?
+* Move amazon.pem to your `~Desktop/GWAS` folder with copy+paste. Remember to delete the amazon.pem from the Downloads folder to prevent clutter. Check the contents of your `~Desktop/GWAS` folder again with `ls`. Do you see the `amazon.pem`?
 
-* Now run this command to sets the permissions on the amazon.pem private key file to “closed to all evildoers”.
+* Now run this command to set the permissions on the amazon.pem private key file to “closed to all evildoers”.
 
 ```
-chmod og-rwx ~/Desktop/GWAS/amazon.pem
+  chmod og-rwx ~/Desktop/GWAS/amazon.pem
 ```
 
 * Finally, log in to the cloud computer:
@@ -83,14 +79,13 @@ If you have trouble with this command, here's another way to do it:
     * Copy and paste the command into your terminal window.
 
 !!! Tip
-    If you see this message after running the ssh command:
+    You will see this message when running the ssh command for the first time:
 
     The authenticity of host 'ecc2-???-???-???-???.compute-1.amazonaws.com (3.129.57.169)' can't be established.
     ECDSA key fingerprint is XXX.
     Are you sure you want to continue connecting (yes/no/[fingerprint])? **yes**
 
     Type "yes" and press enter.
-
 
 
 * If everything works ok, you should see something like this:
@@ -107,7 +102,7 @@ If you have trouble with this command, here's another way to do it:
 * Make a folder called "GWAS" in the Ubuntu computer by typing:
 
 ```
-mkdir GWAS
+  mkdir GWAS
 ```
 Check if you have this directory with `ls`.
 
