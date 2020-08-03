@@ -1,4 +1,4 @@
-# Getting Started with Amazon EC2
+# Intro to AWS
 
 Summary:
 
