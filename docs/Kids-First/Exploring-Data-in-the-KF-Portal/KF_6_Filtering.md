@@ -6,7 +6,7 @@ title: Filter
 Filter Buttons
 ==============
 
-[![](../../images/KidsFirstPortal_14.png)](../../images/KidsFirstPortal_14.png "Exploring Data Filters")
+![Exploring Data Filters](../../images/KidsFirstPortal_14.png "Exploring Data Filters")
 
 To use the filter buttons, click on one, choose from the options in that button, and click `apply`.
 
@@ -18,12 +18,12 @@ and 5 in the `to` box. Click `Apply`.
 If you applied this filter successfully, you should see something like
     the following:
 
-[![](../../images/KidsFirstPortal_15.png)](../../images/KidsFirstPortal_15.png "Successful Filter")
+![Successful Filter](../../images/KidsFirstPortal_15.png "Successful Filter")
 
 Several things about the page have now changed. First, there is now
 information in our queries box.
 
-[![](../../images/KidsFirstPortal_16.png)](../../images/KidsFirstPortal_16.png "Queries")
+![Queries](../../images/KidsFirstPortal_16.png "Queries")
 
 It now says what query we are currently looking at, and how many
 participants are in our query. Note that it says we chose ages between 0
