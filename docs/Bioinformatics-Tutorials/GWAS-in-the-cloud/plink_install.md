@@ -11,7 +11,7 @@ Install PLINK
 
 ## Installation
 
-To install PLINK, type these commands into your [Ubuntu AWS terminal](./Accessing_aws.md):
+To install PLINK, type these commands into your [Ubuntu AWS terminal](./download_accessAWS.md):
 
 ```
 cd /usr/local/bin/
