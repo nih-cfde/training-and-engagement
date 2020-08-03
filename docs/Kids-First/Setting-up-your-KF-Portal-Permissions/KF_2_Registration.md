@@ -68,14 +68,14 @@ to this link:
 This should take you to the Kids First Portal website. Please click on
 the `Join now` indicated with the purple arrow below:
 
-[![](../../images/KidsFirstPortal_1.png)](../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
+![KFDRC Portal Welcome Page](../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
 
 #### Step 3 Choose your login system
 
 You should see three options for creating a new account: Google,
 Facebook, or with an ORCID:
 
-[![](../../images/KidsFirstPortal_2.png)](../../images/KidsFirstPortal_2.png "KFDRC Portal Account Page")
+![KFDRC Portal Account Page](../../images/KidsFirstPortal_2.png "KFDRC Portal Account Page")
 
 !!! Tip
 
@@ -91,7 +91,7 @@ Facebook, or with an ORCID:
 Clicking on `Log in with ORCID` will take you to a login
 page:
 
-[![](../../images/KidsFirstPortal_3.png)](../../images/KidsFirstPortal_3.png "ORCID Login Page")
+![ORCID Login Page](../../images/KidsFirstPortal_3.png "ORCID Login Page")
 
 Depending on your role, your ORCID may be personal, or tied to an
 institution. If you don't already have an ORCID, you can also register
@@ -151,7 +151,7 @@ ID or a user name and password. Since we don't yet have accounts, we
 need to register, by clicking `New to Cavatica? Create an
 account`indicated with the purple arrow below:
 
-[![](../../images/Cavatica_1.png)](../../images/Cavatica_1.png "Cavatica Login Page")
+![Cavatica Login Page](../../images/Cavatica_1.png "Cavatica Login Page")
 
 #### Step 4 Choose your login system
 
@@ -164,7 +164,7 @@ by setting up a user name and password.
     and password` and then fill out the form and click
     `Register`.
 
-[![](../../images/Cavatica_2.png)](../../images/Cavatica_2.png "Cavatica Login Page")
+![Cavatica Login Page](../../images/Cavatica_2.png "Cavatica Login Page")
 
 !!! Important
 
@@ -180,7 +180,7 @@ by setting up a user name and password.
 Once your registration is complete, you should get a prompt to go check
 your email:
 
-[![](../../images/Cavatica_3.png)](../../images/Cavatica_3.png "Cavatica Registration Prompt")
+![Cavatica Registration Prompt](../../images/Cavatica_3.png "Cavatica Registration Prompt")
 
 You will need to follow the link in that email to complete your
 registration.
