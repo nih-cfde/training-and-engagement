@@ -139,4 +139,4 @@ Do you see the files?
 ```
 gunzip pruned_coatColor_maf_geno.vcf.gz
 ```
-This command should remove the .gz from the file name.
+This command should remove the `.gz` from the file name.
