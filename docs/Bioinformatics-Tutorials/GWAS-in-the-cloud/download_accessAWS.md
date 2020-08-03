@@ -6,10 +6,10 @@ title: Download and move data to AWS
 Download and move data to AWS
 ==============================
 
-## Download data to local computer
-
 !!! Important
     The coat color data lives in a website called Cyverse. It is not easy to make AWS talk to cyverse, so download the data onto your LOCAL computer and then upload it to AWS.
+
+## Download data to local computer
 
 * Open up a terminal window by searching (type cmd+space_bar) for "terminal" on your Mac.
 
@@ -40,11 +40,10 @@ The first command downloads the vcf file and the second command downloads the fi
 coatColor.pheno				pruned_coatColor_maf_geno.vcf.gz
 ```
 
-## Upload your data to AWS
+
+## Getting to the AWS instance
 
 OK, so you've created a [running computer on the cloud](aws_instance_setup.md). How do you get to it? We will use the Mac terminal window to access the cloud computer.
-
-### Getting to the AWS instance
 
 To access the cloud computer, you need the network name of our new computer. This can be found at the bottom of the [instance log page](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) shown here:
 
@@ -107,7 +106,7 @@ If you have trouble with this command, here's another way to do it:
 Check if you have this directory with `ls`.
 
 
-### Upload data to AWS
+## Upload data to AWS
 
 * To upload data from your local computer to AWS, you must first logout of AWS. Type:
 
