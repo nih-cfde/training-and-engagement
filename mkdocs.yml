@@ -18,7 +18,7 @@ plugins:
   - awesome-pages
   - git-revision-date-localized
   - htmlproofer
-  
+
 markdown_extensions:
 - admonition
 - pymdownx.details
@@ -34,4 +34,3 @@ extra_css:
 extra_javascript:
   - javascripts/medium-zoom.min.js
   - javascripts/extra.js
-
