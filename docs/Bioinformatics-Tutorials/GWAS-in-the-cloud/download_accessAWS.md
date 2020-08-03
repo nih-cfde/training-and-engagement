@@ -16,8 +16,8 @@ Download and move data to AWS
 * Make a folder called GWAS on your Desktop and then navigate to the folder by typing the following commands in your terminal:
 
 ```
-  mkdir ~/Desktop/GWAS
-  cd ~/Desktop/GWAS
+mkdir ~/Desktop/GWAS
+cd ~/Desktop/GWAS
 ```
 * You will use a free software called [wget](https://en.wikipedia.org/wiki/Wget) to retrieve data files of interest from Cyverse. First install wget like so:
 
@@ -58,7 +58,7 @@ Copy this name, connect to the cloud computer with ssh under the username ‘ubu
 * Now run this command to set the permissions on the amazon.pem private key file to “closed to all evildoers”.
 
 ```
-  chmod og-rwx ~/Desktop/GWAS/amazon.pem
+chmod og-rwx ~/Desktop/GWAS/amazon.pem
 ```
 
 * Finally, log in to the cloud computer:
@@ -78,7 +78,7 @@ If you have trouble with this command, here's another way to do it:
     * Select your instance and then click the "Connect" button next to "Launch Instance".
 
     * You will see a pop-up window that gives you the correct connect command under "Example".
-    
+
     * Copy and paste the command into your terminal window.
 
 !!! Tip
@@ -105,7 +105,7 @@ If you have trouble with this command, here's another way to do it:
 * Make a folder called "GWAS" in the Ubuntu computer by typing:
 
 ```
-  mkdir GWAS
+mkdir GWAS
 ```
 Check if you have this directory with `ls`.
 
