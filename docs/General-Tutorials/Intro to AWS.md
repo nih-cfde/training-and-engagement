@@ -19,10 +19,10 @@ Amazon Web Services is a subsidiary of Amazon that provides on-demand cloud comp
 
 The aim of this tutorial is to expose researchers to cloud computing resources and their benefits.
 
-Amazon Web Services is will require you to include information such as contact information (e-mail, etc.) billing information as you will have to pay for some of their services.
+Amazon Web Services will require you to provide contact information (e-mail, etc.) and billing information (as you will have to pay for some of their services).
+However, the _AWS Free Tier program_ allows you to use more than 60 products to start building with limited amount of data storage, limited amount of time **or** are always free.
 
-However, the AWS Free Tier program allows you to use more than 60 products to start building with limited amount of data storage, limited amount of time **or** are always free.
-To start we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system as it is one of the programs offered in Amazon Free Tier as well as one of the most popular open source operating systems. 
+To start we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system. Ubuntu 20.04 Pro LTS is one of the programs offered in Amazon Free Tier as well as one of the most popular open source operating systems. 
 
 ## Let's Start
 
