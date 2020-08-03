@@ -72,9 +72,13 @@ ssh -i ~/Desktop/GWAS/amazon.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.
     ![](images/publicDNS.png)
 
 If you have trouble with this command, here's another way to do it:
+
     * Visit the [aws instances webpage](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId)
+
     * Select your instance and then click the "Connect" button next to "Launch Instance".
+
     * You will see a pop-up window that gives you the correct connect command under "Example".
+    
     * Copy and paste the command into your terminal window.
 
 !!! Tip
