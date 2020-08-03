@@ -2,7 +2,7 @@
 
 Summary:
 
-* Go to http://aws.amazon.com/, log in, then "EC2" (upper left)
+* Go to http://aws.amazon.com/, log in, then select "EC2" (upper left)
 * Select "Launch instance"
 * Select "Ubuntu Pro 20.04 LTS" from the list
 * Select "t2.micro" from the list 
