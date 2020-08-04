@@ -3,17 +3,45 @@ layout: page
 title: Rendering a GitHub website locally with Jekyll
 ---
 
+
+<script language="javascript" type="text/javascript">
+function set_page_view_defaults() {
+    document.getElementById('div_windows').style.display = 'block';
+    document.getElementById('div_unix').style.display = 'none';
+    document.getElementById('div_mac').style.display = 'none';
+};
+
+function change_content_by_platform(form_control){
+    if (!form_control || document.getElementById(form_control).value == 'value_win') {
+        set_page_view_defaults();
+    } else if (document.getElementById(form_control).value == 'value_unix') {
+        document.getElementById('div_windows').style.display = 'none';
+        document.getElementById('div_unix').style.display = 'block';
+        document.getElementById('div_mac').style.display = 'none';
+   } else if (document.getElementById(form_control).value == 'value_mac') {
+        document.getElementById('div_windows').style.display = 'none';
+        document.getElementById('div_unix').style.display = 'none';
+        document.getElementById('div_mac').style.display = 'block';
+    } else {
+        alert("Error: Missing platform value for 'change_content_by_platform()' script!");
+    }
+}
+
+window.onload = set_page_view_defaults;
+</script>
+
+
 Rendering a GitHub website locally with Jekyll
 ===============================================
 
 Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content. The first part of the tutorial includes instructions for downloading Jekyll on:
 
-- [MacOS](#install-jekyll-on-macos-using-command-line)
-- [Windows OS](#install-jekyll-on-windows-os)
-- [Windows Subsystem for Linux](#install-jekyll-using-windows-subsystem-for-linux-wsl)
+**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="value_mac" id="id_mac" selected> MacOS </option><option value="value_win" id="id_windows" selected> Windows </option><option value="value_unix" id="id_unix" selected> UNIX </option></select>**
 
-Install Jekyll on MacOS using command line
--------------------------------------------
+
+<div id="div_mac" style="display:block" markdown="1">
+
+# Install Jekyll on MacOS using command line
 
 The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).
 
@@ -75,6 +103,12 @@ jekyll -v
 
 This should return a string similar to this : `jekyll 4.x.x`
 
+
+</div>
+
+
+<div id="div_windows" style="display:block" markdown="1">
+
 Install Jekyll on Windows OS
 ------------------------------
 
@@ -100,6 +134,10 @@ In the Gemfile edit to include:
 ```
 gem 'tzinfo-data'
 ```
+</div>
+
+<div id="div_unix" style="display:block" markdown="1">
+
 
 Install Jekyll using Windows Subsystem for Linux (WSL)
 ---------------------------------------------------------
@@ -107,6 +145,8 @@ Install Jekyll using Windows Subsystem for Linux (WSL)
 The installation follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with
 modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this
 tutorial.
+
+</div>
 
 #### Setup Ubuntu terminal
 
@@ -122,7 +162,7 @@ To get Ubuntu, open the Microsoft Store and search for `Ubuntu` (you will need t
 Select the blue `Get` box. After installation is complete, select
 `Launch`.
 
-An Ubuntu terminal window will appear with this message: `Installing, this may take a few minutes...`. 
+An Ubuntu terminal window will appear with this message: `Installing, this may take a few minutes...`.
 Set up a username and password.
 
 !!! note
@@ -164,7 +204,7 @@ git clone https://github.com/nih-cfde/Jekyll-demo.git
 ```
 
 !!! note "Building Jekyll site in Windows OS using WSL"
-    
+
       In Windows OS using the WSL, you would type this to navigate to the repo directory if you cloned it to your Desktop:
 
       ```
