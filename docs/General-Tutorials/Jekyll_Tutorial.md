@@ -45,7 +45,7 @@ Jekyll is a static site generator written in Ruby. It can be easily integrated i
 
 The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).
 
-#### Command line tools
+####Command line tools
 
 First, we install the command line utility tool for OS platform, by
 running the following code in the terminal:
@@ -146,7 +146,6 @@ The installation follows some of the steps from this [tutorial](https://connelho
 modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this
 tutorial.
 
-</div>
 
 #### Setup Ubuntu terminal
 
@@ -193,6 +192,8 @@ Finally, install Jekyll and bundler (this step may take several minutes to compl
 ```
 sudo gem install jekyll bundler
 ```
+</div>
+
 
 Build Jekyll site using template from GitHub
 ---------------------------------------------
