@@ -20,13 +20,13 @@ There are two ways to follow this tutorial:
     When you close the binder, it does NOT save your work so download any files you want to keep.
 
 - To download files, right-click the file you want to save, and select 'Download':
-    
+
     ![](../../images/snakemake_binder_download.png)
-    
+
 - To close the binder, go to 'File' and click 'Shut Down':
 
     ![](../../images/snakemake_binder_close.png)
-    
+
 **B) Use a Unix or Linux environment (e.g., with a Mac or High Performing Computing environment).**
 
 - For this option, please follow **all** the set up instructions below.
@@ -85,20 +85,19 @@ Note that your terminal command prompt should now look like `(snaketest) $` inst
 
 You should have several software installed in your `snaketest` environment now. Check it out!
 
-```
-samtools --version
-```
+=== "Input"
 
-The output should say:
+    ```
+    samtools --version
+    ```
 
-!!! output
+=== "Expected Output"
 
+    ```
     samtools 1.10
-    
     Using htslib 1.10.2
-    
     Copyright (C) 2019 Genome Research Ltd.
-
+    ```
 
 If you get an error, the software installation may have failed. You can check the software that is installed in your conda environment: `conda list`.
 
@@ -107,19 +106,75 @@ You can leave the conda environment with: `conda deactivate`.
 Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved with `conda install`. This step will take a few minutes and the installation should be done in the `base` conda environment:
 
 Go back to base environment:
-```
-conda deactivate
-```
+
+=== "Input"
+
+    ```
+    conda deactivate
+    ```
+
 
 Install `wget`:
-```
-conda install -c anaconda wget
-```
+
+=== "Input"
+
+    ```
+    conda install -c anaconda wget
+    ```
+
 
 Test installation:
-```
-wget --version
-```
+
+=== "Input"
+
+    ```
+    wget --version
+    ```
 
 
+=== "Expected Output"
 
+    ```
+    GNU Wget 1.20.1 built on darwin14.5.0.
+
+    -cares +digest -gpgme +https +ipv6 -iri +large-file -metalink -nls
+    +ntlm +opie -psl +ssl/openssl
+
+    Wgetrc:
+        /Users/amanda/miniconda3/envs/snaketest/etc/wgetrc (system)
+        Compile:
+        x86_64-apple-darwin13.4.0-clang -DHAVE_CONFIG_H
+        -DSYSTEM_WGETRC="/Users/amanda/miniconda3/envs/snaketest/etc/wgetrc"
+        -DLOCALEDIR="/Users/amanda/miniconda3/envs/snaketest/share/locale"
+        -I. -I../lib -I../lib -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9
+        -I/Users/amanda/miniconda3/envs/snaketest/include -DHAVE_LIBSSL
+        -I/Users/amanda/miniconda3/envs/snaketest/include -DNDEBUG
+        -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE
+        -fstack-protector-strong -O2 -pipe
+        -I/Users/amanda/miniconda3/envs/snaketest/include
+        -fdebug-prefix-map=/opt/concourse/worker/volumes/live/c2196a4d-0070-4d98-71cc-9baa5fb53ac9/volume/wget_1551978005217/   work=/usr/local/src/conda/wget-1.20.1
+        -fdebug-prefix-map=/Users/amanda/miniconda3/envs/snaketest=/usr/local/src/conda-prefix
+    Link:
+        x86_64-apple-darwin13.4.0-clang
+        -I/Users/amanda/miniconda3/envs/snaketest/include -DHAVE_LIBSSL
+        -I/Users/amanda/miniconda3/envs/snaketest/include -DNDEBUG
+        -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE
+        -fstack-protector-strong -O2 -pipe
+        -I/Users/amanda/miniconda3/envs/snaketest/include
+        -fdebug-prefix-map=/opt/concourse/worker/volumes/live/c2196a4d-0070-4d98-71cc-9baa5fb53ac9/volume/wget_1551978005217/work=/usr/local/src/conda/wget-1.20.1
+        -fdebug-prefix-map=/Users/amanda/miniconda3/envs/snaketest=/usr/local/src/conda-prefix
+        -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs
+        -Wl,-rpath,/Users/amanda/miniconda3/envs/snaketest/lib
+        -L/Users/amanda/miniconda3/envs/snaketest/lib
+        -L/Users/amanda/miniconda3/envs/snaketest/lib -lssl -lcrypto
+        -L/Users/amanda/miniconda3/envs/snaketest/lib -lz ftp-opie.o
+        openssl.o http-ntlm.o ../lib/libgnu.a -lcrypto
+
+    Copyright (C) 2015 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later
+    <http://www.gnu.org/licenses/gpl.html>.
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+    Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
+    Please send bug reports and questions to <bug-wget@gnu.org>.
