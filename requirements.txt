@@ -3,4 +3,3 @@ mkdocs-jupyter
 mkdocs-awesome-pages-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-htmlproofer-plugin
-recommonmark
