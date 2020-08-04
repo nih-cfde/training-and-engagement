@@ -8,7 +8,7 @@ Sphinx for static websites editing
 
 Sphinx is python based tool that enables generation of documentation. Originally intended for python projects, it has versatility to be adapted for any number of projects that generate plain text.
 
-===  MacOS
+===  "MacOS"
 
     Based on [this tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
 
@@ -27,7 +27,7 @@ Sphinx is python based tool that enables generation of documentation. Originally
     conda install sphinx
     ```
 
-=== Windows
+=== "Windows"
 
     Based on this [tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
 
