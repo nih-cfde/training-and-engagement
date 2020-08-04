@@ -178,3 +178,4 @@ Test installation:
 
     Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
     Please send bug reports and questions to <bug-wget@gnu.org>.
+    ```
