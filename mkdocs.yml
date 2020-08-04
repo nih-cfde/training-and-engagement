@@ -19,7 +19,7 @@ plugins:
   - git-revision-date-localized
   - htmlproofer
 markdown_extensions:
-- commonmark
+- recommonmark
 - admonition
 - pymdownx.details
 - pymdownx.emoji
