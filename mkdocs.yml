@@ -22,6 +22,8 @@ markdown_extensions:
 - recommonmark
 - admonition
 - pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed
 - pymdownx.emoji
 - codehilite:
     guess_lang: false

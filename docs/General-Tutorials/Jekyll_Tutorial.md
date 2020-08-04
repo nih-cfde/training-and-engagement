@@ -38,8 +38,7 @@ Jekyll is a static site generator written in Ruby. It can be easily integrated i
 
 **Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="value_mac" id="id_mac" > MacOS </option><option value="value_win" id="id_windows" selected> Windows </option><option value="value_unix" id="id_unix"> UNIX </option></select>**
 
-<div>
-<div id="div_mac" style="display:block" markdown="1">
+<div id="div_mac" style="display:block" markdown="2">
 
 # Install Jekyll on MacOS using command line  
 
@@ -104,7 +103,7 @@ jekyll -v
 This should return a string similar to this : `jekyll 4.x.x`
 
 
-</div></div>
+</div>
 
 
 <div id="div_windows" style="display:block" markdown="1">
