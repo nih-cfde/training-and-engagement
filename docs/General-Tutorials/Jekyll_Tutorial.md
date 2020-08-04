@@ -41,9 +41,9 @@ Jekyll is a static site generator written in Ruby. It can be easily integrated i
 <div>
 <div id="div_mac" style="display:block" markdown="1">
 
-# Install Jekyll on MacOS using command line
+# Install Jekyll on MacOS using command line  
 
-The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).  
+The instructions follow the [official Jekyll tutorial](https://jekyllrb.com/docs/installation/macos/#brew).  
 
 #### Command line tools  
 

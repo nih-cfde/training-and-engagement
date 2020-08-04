@@ -19,6 +19,7 @@ plugins:
   - git-revision-date-localized
   - htmlproofer
 markdown_extensions:
+- commonmark
 - admonition
 - pymdownx.details
 - pymdownx.emoji
@@ -30,4 +31,3 @@ extra:
   hypothesis: true
 extra_css:
   - stylesheets/extra.css
-
