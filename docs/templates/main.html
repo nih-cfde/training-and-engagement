@@ -1,14 +1,5 @@
 {% extends "base.html" %}
 {% block analytics %}
-  <script async defer data-domain="cfde-training-and-engagement.readthedocs-hosted.com/en/latest" src="https://plausible.io/js/plausible.js"></script>
-{% endblock %}
-
-{% block disqus %}
-    {% include "partials/integrations/disqus.html" %}
-{% endblock %}
-
-{% block head %}
-  <!-- Matomo -->
   <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -25,6 +16,11 @@
       g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/readthedocshosted.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
     })();
   </script>
-<!-- End Matomo Code -->
 {% endblock %}
+
+{% block disqus %}
+    {% include "partials/integrations/disqus.html" %}
+{% endblock %}
+
+
 
