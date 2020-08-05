@@ -479,12 +479,12 @@ window.onload = set_page_view_defaults;
 ## Add the dropdown box
 
 Now we need to find a logical location for your dropdown box. This should be
-before the first instance of a `</div>`. Depending on the flow of your
+before the first instance of a `div`. Depending on the flow of your
 document, it might make the most sense to put it right at the top, as the first
 thing your user sees, or it might make more sense to put it after some explanation
 as I did in this page.
 
-Let's start with the text explaining what your user should do.
+Let's start with some text explaining what your user should do.
 
 <div id="div_html" style="display:block" markdown="1">
 
