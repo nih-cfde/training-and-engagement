@@ -36,6 +36,23 @@ HTML. These are called 'blocks'.
 3. At the point of the page where you want your user to have the choice, insert the
 code for the dropdown box
 
+In this tutorial, we will be adding javascript to this file:
+
+```
+An introduction that is always displayed
+
+Text that is always displayed
+
+An windows option of text
+
+More text that is always displayed
+
+A unix option of text
+
+A mac option of text
+
+Even more text that is always displayed
+```
 
 ## Create blocks
 
