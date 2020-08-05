@@ -57,11 +57,11 @@ Even more text that is always displayed
 ## Create blocks
 
 In your current document, identify which parts of the document you want
-to always be seen, and which you want to respond to the users choice. For each
-section that should respond to the user. Add a `div` element around the section.
+to always be seen, and which you want to respond to the user's choice. For each
+section that should respond to the user, add a `div` element around the section.
 A `<div>` element is a bit of HTML that works as a divider, and we're using it
-to section off this bit of page so our javascript will know what the boundaries
-of the sections are. The most basic one would look like this:
+to section off this bit of page to define the section boundaries to javascript. 
+The most basic section would look like this:
 
 ```
 <div>
@@ -201,7 +201,7 @@ function set_page_view_defaults() {
     tutorial are custom functions, which is why they start with 'function': it's a
     declaration of what the following code is. So, you can't look up these functions, they
     don't have help pages, they're exactly like any shell script or R script or Python
-    script you've written, just in a language your less familiar with.
+    script you've written, just in a language you're less familiar with.
 
 We want the function to either show or not show each of our sections, since this
 is the default, it isn't even going to check to see what the dropdown says, it
@@ -341,8 +341,8 @@ function change_content_by_platform(form_control){
     ```
 
 If we're going to put our script in a production webpage, its best to have at
-least a bit of error handling. Otherwise, the page loads too slowly, it might
-have a hard to diagnose problem where the logic script runs before the page loads
+least a bit of error handling. Otherwise, if the page loads too slowly, it might
+have a hard-to-diagnose problem where the logic script runs before the page loads
 the dropdown code, so there is no 'form_control' variable to check. So, let's
 tell our script what to do if there is no input variable at all:
 
