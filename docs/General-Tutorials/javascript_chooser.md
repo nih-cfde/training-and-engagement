@@ -3,26 +3,6 @@ layout: page
 title: Enabling User Choices with Javascript
 ---
 
-<script language="javascript" type="text/javascript">
-function set_page_view_defaults() {
-    document.getElementsByClassName('div_markdown').style.display = 'block';
-    document.getElementsByClassName('div_html').style.display = 'none';
-};
-
-function change_content_by_syntax(form_control){
-    if (!form_control || document.getElementById(form_control).value == 'value_markdown') {
-        set_page_view_defaults();
-    } else if (document.getElementById(form_control).value == 'value_html') {
-        document.getElementsByClassName('div_markdown').style.display = 'none';
-        document.getElementsByClassName('div_html').style.display = 'block';
-    } else {
-        alert("Error: Missing platform value for 'change_content_by_syntax()' script!");
-    }
-}
-
-window.onload = set_page_view_defaults;
-</script>
-
 # Adding user choosable content using Javascript
 
 There are many instances in a tutorial where you might want to give the user an option
@@ -39,14 +19,11 @@ choice of OS.
 
 You will need:
 
-  - a raw web page in markdown or HTML with sections you want to be user choosable
+  - a raw web page in markdown with sections you want to be user choosable
   - a plain text editor
   - about 30 minutes
 
 
-This tutorial can be used for websites written in markdown or pure HTML.
-
-**Please select the syntax you will be using: <select id="id_syntax" name="platformlist" onchange="change_content_by_syntax('id_syntax');return false;"><option value="value_markdown" id="id_markdown" selected> markdown </option><option value="value_html" id="id_html" > HTML </option>></select>**
 
 
 # Overview of the process
@@ -105,8 +82,6 @@ My Windows only text.
 </div>
 ```
 
-<div class="div_markdown" style="display:block" markdown="1">
-
 You may have noticed that we're putting a lot of HTML code into a markdown
 document. That's ok! Most markdown renderers just pass html through as they render,
 so HTML will show up in your final page without any changes. However, that means
@@ -124,8 +99,6 @@ An windows option of text
 </div>
 ```
 
-</div>
-
 Continue adding `div` tags around each of your sections. Don't put anything
 around sections that you want displayed at all times. Be sure to give different
 sections different IDs that match their contents. You can make the IDs anything
@@ -134,9 +107,8 @@ each ID so that you remember what that variable is for.
 
 When you're done, your file should look something like this:
 
-<div class="div_markdown" style="display:block" markdown="1">
-
 ```
+An introduction that is always displayed
 
 Text that is always displayed
 
@@ -163,38 +135,6 @@ A mac option of text
 Even more text that is always displayed
 
 ```
-</div>
-
-<div class="div_html" style="display:block" markdown="1">
-
-```
-
-Text that is always displayed
-
-<div id="div_windows" style="display:block">
-
-An windows option of text
-
-</div>
-
-More text that is always displayed
-
-<div id="div_unix" style="display:block">
-
-A unix option of text
-
-</div>
-
-<div id="div_mac" style="display:block">
-
-A mac option of text
-
-</div>
-
-Even more text that is always displayed
-
-```
-</div>
 
 
 ## Add the script code to the raw page file
@@ -207,18 +147,8 @@ blocks of the page. We'll use some simple if/else logic to tell the page which
 parts it should show the user, and which it shouldn't, depending on what option
 the user picks in a dropdown box. (We'll code the dropdown box in the next section).
 
-
-<div class="div_markdown" style="display:block" markdown="1">
-
 Usually, scripts go at the top of the page, just below any YAML header.
 
-</div>
-
-<div class="div_html" style="display:block" markdown="1">
-
-This script code should end up in the 'header' block of your HTML.
-
-</div>
 
 Since we are writing all of this in HTML, it should not be surprising that we
 need to wrap our script in tags. Since we want this to run as a script, we use
@@ -482,31 +412,20 @@ Now we need to find a logical location for your dropdown box. This should be
 before the first instance of a `div`. Depending on the flow of your
 document, it might make the most sense to put it right at the top, as the first
 thing your user sees, or it might make more sense to put it after some explanation
-as I did in this page.
+about what your webpage is for.
 
-Let's start with some text explaining what your user should do.
-
-<div class="div_html" style="display:block" markdown="1">
-
-You can add any HTML formatting tags, such as bolding here as well.
-
-```
-<b>Please select the platform you wish to use for this exercise:</b>
-```
-
-</div>
-
-<div class="div_markdown" style="display:block" markdown="1">
-
-This will be rendered with markdown, so you can use markdown formatting such
-as bolding with asterisks.
+Let's start with some text explaining what your user should do. This is plain
+text that will be rendered with markdown, so you can use markdown formatting such
+as bolding with asterisks. In my page, I'm putting it after my introduction,
+but before some other text:
 
 ```
+An introduction that is always displayed
+
 **Please select the platform you wish to use for this exercise:**
+
+Text that is always displayed
 ```
-
-</div>
-
 
 To make the dropdown, we'll need to set up some variables in the HTML that can
 send information to our function. This variable will be populated by the users
@@ -515,43 +434,21 @@ we give this one an ID, and I have chosen a descriptive one to keep things simpl
 
 First, let's give our variable a name and ID
 
-<div class="div_html" style="display:block" markdown="1">
-
-```
-<b>Please select the platform you wish to use for this exercise:</b> <select id="id_platform" >
-
-```
-</div>
-
-<div class="div_markdown" style="display:block" markdown="1">
-
 ```
 **Please select the platform you wish to use for this exercise:**
 <select id="id_platform" >
 ```
-</div>
 
 Since this is a dynamic piece of our page, we need to give the `select` a
 directive as well. When it is changed, we want it to send that change to our
 logic function:
 
-<div class="div_html" style="display:block" markdown="1">
-
-```
-<b>Please select the platform you wish to use for this exercise:</b>
-
-<select id="id_platform" onchange="change_content_by_platform('id_platform');return false;">
-```
-</div>
-
-<div class="div_markdown" style="display:block" markdown="1">
 
 ```
 **Please select the platform you wish to use for this exercise:**
 
 <select id="id_platform" onchange="change_content_by_platform('id_platform');return false;">
 ```
-</div>
 
 So, this code will accept the users input, save that input value as the variable
 'id_platform' and send that variable to be the input into our change_content_by_platform
@@ -565,21 +462,6 @@ tag *inside* of our `select`. Our option tag value *must* match the values we
 put in our logic function. The ID can be anything, but again I'm using matching
 values that start with 'id_'.This is the `option` code for the Mac choice:
 
-<div class="div_html" style="display:block" markdown="1">
-
-```
-<b>Please select the platform you wish to use for this exercise:<b>
-
-<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
-    <option value="value_mac" id="id_mac" > MacOS </option>
-</select>
-
-```
-
-</div>
-
-<div class="div_markdown" style="display:block" markdown="1">
-
 ```
 **Please select the platform you wish to use for this exercise:**
 
@@ -589,7 +471,6 @@ values that start with 'id_'.This is the `option` code for the Mac choice:
 
 ```
 
-</div>
 
 Note that there is a bit of text between the opening of `option` and the end
 `/option`. The text inside the option block is the text that will appear to
@@ -609,20 +490,6 @@ the user in the dropdown box.
 
 You should now have a nearly finished dropdown box:
 
-<div class="div_html" style="display:block" markdown="1">
-
-```
-<b>Please select the platform you wish to use for this exercise:<b>
-<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
-    <option value="value_mac" id="id_mac" > MacOS </option>
-    <option value="value_win" id="id_windows" > Windows </option>
-    <option value="value_unix" id="id_unix" > UNIX </option></select>
-```
-
-</div>
-
-<div class="div_markdown" style="display:block" markdown="1">
-
 ```
 **Please select the platform you wish to use for this exercise:**
 <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
@@ -631,7 +498,6 @@ You should now have a nearly finished dropdown box:
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
 
-</div>
 
 The last thing we need to do is set one of these options as the default selection.
 This is different from the default page display we wrote into our function. The
@@ -643,21 +509,6 @@ should match the defaults we've set elsewhere. Since we've set Windows to the
 defaults in the script, we should add 'selected' to the Windows option here:
 
 
-<div class="div_html" style="display:block" markdown="1">
-
-
-```
-<b>Please select the platform you wish to use for this exercise:<b>
-<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
-    <option value="value_mac" id="id_mac" > MacOS </option>
-    <option value="value_win" id="id_windows" selected> Windows </option>
-    <option value="value_unix" id="id_unix" > UNIX </option></select>
-```
-
-</div>
-
-<div class="div_markdown" style="display:block" markdown="1">
-
 ```
 **Please select the platform you wish to use for this exercise:**
 <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
@@ -665,5 +516,3 @@ defaults in the script, we should add 'selected' to the Windows option here:
     <option value="value_win" id="id_windows" selected> Windows </option>
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
-
-</div>
