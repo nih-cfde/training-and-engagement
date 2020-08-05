@@ -64,7 +64,7 @@ code for the dropdown box
 
 In your current document, identify which parts of the document you want
 to always be seen, and which you want to respond to the users choice. For each
-section that should respond to the user. Add a `<div>` element around the section.
+section that should respond to the user. Add a `div` element around the section.
 A `<div>` element is a bit of HTML that works as a divider, and we're using it
 to section off this bit of page so our javascript will know what the boundaries
 of the sections are. The most basic one would look like this:
@@ -77,13 +77,13 @@ My Windows only text.
 </div>
 ```
 
-As with all HTML elements, there is a beginning and an end. `<div>` means 'start'
-the divider, `</div>` means 'end the divider'.
+As with all HTML elements, there is a beginning and an end. `div` means 'start'
+the divider, `/div` means 'end the divider'.
 
 We've divided this section out, but in order for our code to identify it, it will
-need a name. So we want to add some extra information into our `<div>`. Since my
+need a name. So we want to add some extra information into our `div`. Since my
 sentence tells me that this part of my page is about Windows, let's make this
-`<div>`s ID "div_windows":
+`div`s ID "div_windows":
 
 ```
 <div id="div_windows">
@@ -510,7 +510,7 @@ as bolding with asterisks.
 
 To make the dropdown, we'll need to set up some variables in the HTML that can
 send information to our function. This variable will be populated by the users
-selection, so we use the `<select>` tag. As we did with our previous HTML tags,
+selection, so we use the `select` tag. As we did with our previous HTML tags,
 we give this one an ID, and I have chosen a descriptive one to keep things simple:
 
 First, let's give our variable a name and ID
@@ -531,7 +531,7 @@ First, let's give our variable a name and ID
 ```
 </div>
 
-Since this is a dynamic piece of our page, we need to give the `<select>` a
+Since this is a dynamic piece of our page, we need to give the `select` a
 directive as well. When it is changed, we want it to send that change to our
 logic function:
 
@@ -556,14 +556,14 @@ logic function:
 So, this code will accept the users input, save that input value as the variable
 'id_platform' and send that variable to be the input into our change_content_by_platform
 function, at which point 'form_control' will take on that value. The 'return false'
-here tells the `<select>` that once it has passed on the user input, it shouldn't
+here tells the `select` that once it has passed on the user input, it shouldn't
 do anything else.
 
-Finally, we need to tell the `<select>` what the actual dropdown menu should be.
-We do this by telling it all of the options it should have using the `<option>`
-tag *inside* of our `<select>`. Our option tag value *must* match the values we
+Finally, we need to tell the `select` what the actual dropdown menu should be.
+We do this by telling it all of the options it should have using the `option`
+tag *inside* of our `select`. Our option tag value *must* match the values we
 put in our logic function. The ID can be anything, but again I'm using matching
-values that start with 'id_'.This is the `<option>` code for the Mac choice:
+values that start with 'id_'.This is the `option` code for the Mac choice:
 
 <div id="div_html" style="display:block" markdown="1">
 
@@ -591,13 +591,13 @@ values that start with 'id_'.This is the `<option>` code for the Mac choice:
 
 </div>
 
-Note that there is a bit of text between the opening of `<option>` and the end
-`</option>`. The text inside the option block is the text that will appear to
+Note that there is a bit of text between the opening of `option` and the end
+`/option`. The text inside the option block is the text that will appear to
 the user in the dropdown box.
 
 === "Exercise"
 
-    Write the `<option>` values for unix and windows
+    Write the `option` values for unix and windows
 
 
 === "Solution"
