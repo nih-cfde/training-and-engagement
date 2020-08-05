@@ -5,16 +5,16 @@ title: Enabling User Choices with Javascript
 
 <script language="javascript" type="text/javascript">
 function set_page_view_defaults() {
-    document.getElementById('div_markdown').style.display = 'block';
-    document.getElementById('div_html').style.display = 'none';
+    document.getElementsByClassName('div_markdown').style.display = 'block';
+    document.getElementsByClassName('div_html').style.display = 'none';
 };
 
 function change_content_by_syntax(form_control){
     if (!form_control || document.getElementById(form_control).value == 'value_markdown') {
         set_page_view_defaults();
     } else if (document.getElementById(form_control).value == 'value_html') {
-        document.getElementById('div_markdown').style.display = 'none';
-        document.getElementById('div_html').style.display = 'block';
+        document.getElementsByClassName('div_markdown').style.display = 'none';
+        document.getElementsByClassName('div_html').style.display = 'block';
     } else {
         alert("Error: Missing platform value for 'change_content_by_syntax()' script!");
     }
@@ -105,7 +105,7 @@ My Windows only text.
 </div>
 ```
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 You may have noticed that we're putting a lot of HTML code into a markdown
 document. That's ok! Most markdown renderers just pass html through as they render,
@@ -134,7 +134,7 @@ each ID so that you remember what that variable is for.
 
 When you're done, your file should look something like this:
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 ```
 
@@ -165,7 +165,7 @@ Even more text that is always displayed
 ```
 </div>
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 ```
 
@@ -208,13 +208,13 @@ parts it should show the user, and which it shouldn't, depending on what option
 the user picks in a dropdown box. (We'll code the dropdown box in the next section).
 
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 Usually, scripts go at the top of the page, just below any YAML header.
 
 </div>
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 This script code should end up in the 'header' block of your HTML.
 
@@ -339,8 +339,8 @@ function change_content_by_platform(form_control){
 </script>
 ```
 
-Our logic now says "if there is no value in form_control then set the value of
-form_control to 'value_win', and run the function that shows the default view."
+Our logic now says "if the user hasn't set form_control and the value of
+form_control is 'value_win', then run the function that shows the default view."
 
 
 What is 'value_win'? Well, we haven't written our dropdown code yet, but we know
@@ -486,7 +486,7 @@ as I did in this page.
 
 Let's start with some text explaining what your user should do.
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 You can add any HTML formatting tags, such as bolding here as well.
 
@@ -496,7 +496,7 @@ You can add any HTML formatting tags, such as bolding here as well.
 
 </div>
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 This will be rendered with markdown, so you can use markdown formatting such
 as bolding with asterisks.
@@ -515,7 +515,7 @@ we give this one an ID, and I have chosen a descriptive one to keep things simpl
 
 First, let's give our variable a name and ID
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 ```
 <b>Please select the platform you wish to use for this exercise:</b> <select id="id_platform" >
@@ -523,7 +523,7 @@ First, let's give our variable a name and ID
 ```
 </div>
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 ```
 **Please select the platform you wish to use for this exercise:**
@@ -535,7 +535,7 @@ Since this is a dynamic piece of our page, we need to give the `select` a
 directive as well. When it is changed, we want it to send that change to our
 logic function:
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 ```
 <b>Please select the platform you wish to use for this exercise:</b>
@@ -544,7 +544,7 @@ logic function:
 ```
 </div>
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 ```
 **Please select the platform you wish to use for this exercise:**
@@ -565,7 +565,7 @@ tag *inside* of our `select`. Our option tag value *must* match the values we
 put in our logic function. The ID can be anything, but again I'm using matching
 values that start with 'id_'.This is the `option` code for the Mac choice:
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 ```
 <b>Please select the platform you wish to use for this exercise:<b>
@@ -578,7 +578,7 @@ values that start with 'id_'.This is the `option` code for the Mac choice:
 
 </div>
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 ```
 **Please select the platform you wish to use for this exercise:**
@@ -609,7 +609,7 @@ the user in the dropdown box.
 
 You should now have a nearly finished dropdown box:
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 ```
 <b>Please select the platform you wish to use for this exercise:<b>
@@ -621,7 +621,7 @@ You should now have a nearly finished dropdown box:
 
 </div>
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 ```
 **Please select the platform you wish to use for this exercise:**
@@ -643,7 +643,7 @@ should match the defaults we've set elsewhere. Since we've set Windows to the
 defaults in the script, we should add 'selected' to the Windows option here:
 
 
-<div id="div_html" style="display:block" markdown="1">
+<div class="div_html" style="display:block" markdown="1">
 
 
 ```
@@ -656,7 +656,7 @@ defaults in the script, we should add 'selected' to the Windows option here:
 
 </div>
 
-<div id="div_markdown" style="display:block" markdown="1">
+<div class="div_markdown" style="display:block" markdown="1">
 
 ```
 **Please select the platform you wish to use for this exercise:**
