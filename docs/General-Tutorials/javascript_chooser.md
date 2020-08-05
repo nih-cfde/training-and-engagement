@@ -46,7 +46,7 @@ You will need:
 
 This tutorial can be used for websites written in markdown or pure HTML.
 
-**Please select the syntax you will be using: <select id="id_platform" name="platformlist" onchange="change_content_by_syntax('id_syntax');return false;"><option value="value_markdown" id="id_markdown" selected> markdown </option><option value="value_html" id="id_html" > HTML </option>></select>**
+**Please select the syntax you will be using: <select id="id_syntax" name="platformlist" onchange="change_content_by_syntax('id_syntax');return false;"><option value="value_markdown" id="id_markdown" selected> markdown </option><option value="value_html" id="id_html" > HTML </option>></select>**
 
 
 # Overview of the process
