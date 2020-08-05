@@ -46,7 +46,7 @@ You will need:
 
 This tutorial can be used for websites written in markdown or pure HTML.
 
-**Please select the syntax you will be using: <select id="id_platform" name="platformlist" onchange="change_content_by_syntax('id_syntax');return false;"><option value="value_markdown" id="id_markdown" selected> markdown </option><option value="value_html" id="id_html" selected> HTML </option>></select>**
+**Please select the syntax you will be using: <select id="id_platform" name="platformlist" onchange="change_content_by_syntax('id_syntax');return false;"><option value="value_markdown" id="id_markdown" selected> markdown </option><option value="value_html" id="id_html" > HTML </option>></select>**
 
 
 # Overview of the process
@@ -117,18 +117,16 @@ we need to tell the markdown renderer to read through our `<div>` and render
 anything that looks like markdown:
 
 ```
-
 <div id="div_windows" style="display:block" markdown="1">
 
 An windows option of text
 
 </div>
-
 ```
 
 </div>
 
-Continue adding </div> tags around each of your sections. Don't put anything
+Continue adding `</div>` tags around each of your sections. Don't put anything
 around sections that you want displayed at all times. Be sure to give different
 sections different IDs that match their contents. You can make the IDs anything
 you like, however as you're learning, I suggest adding 'div_' to the front of
@@ -207,7 +205,7 @@ In our example text, we have three different blocks separated by `</div>`s:
 That means that our logic script will have to differentiate between those three
 blocks of the page. We'll use some simple if/else logic to tell the page which
 parts it should show the user, and which it shouldn't, depending on what option
-the user picks in a dropdown box. (We'll code the dropdown box in the next step).
+the user picks in a dropdown box. (We'll code the dropdown box in the next section).
 
 
 <div id="div_markdown" style="display:block" markdown="1">
@@ -279,6 +277,7 @@ function set_page_view_defaults() {
 
 </script>
 ```
+
 That takes care of the default. Now we need a function that can change the page
 based on user input. To start, we'll again make an empty function, lets call it
 change_content_by_platform:
@@ -339,6 +338,7 @@ function change_content_by_platform(form_control){
 
 </script>
 ```
+
 Our logic now says "if there is no value in form_control then set the value of
 form_control to 'value_win', and run the function that shows the default view."
 
@@ -487,6 +487,7 @@ as I did in this page.
 Let's start with the text explaining what your user should do.
 
 <div id="div_html" style="display:block" markdown="1">
+
 You can add any HTML formatting tags, such as bolding here as well.
 
 ```
@@ -495,7 +496,7 @@ You can add any HTML formatting tags, such as bolding here as well.
 
 </div>
 
-<div id="div_html" style="display:block" markdown="1">
+<div id="div_markdown" style="display:block" markdown="1">
 
 This will be rendered with markdown, so you can use markdown formatting such
 as bolding with asterisks.
@@ -540,7 +541,6 @@ logic function:
 <b>Please select the platform you wish to use for this exercise:</b>
 
 <select id="id_platform" onchange="change_content_by_platform('id_platform');return false;">
-
 ```
 </div>
 
@@ -556,7 +556,7 @@ logic function:
 So, this code will accept the users input, save that input value as the variable
 'id_platform' and send that variable to be the input into our change_content_by_platform
 function, at which point 'form_control' will take on that value. The 'return false'
-here tells the `<select>` that once it has passed on the user input, it shoudn't
+here tells the `<select>` that once it has passed on the user input, it shouldn't
 do anything else.
 
 Finally, we need to tell the `<select>` what the actual dropdown menu should be.
@@ -575,6 +575,7 @@ values that start with 'id_'.This is the `<option>` code for the Mac choice:
 </select>
 
 ```
+
 </div>
 
 <div id="div_markdown" style="display:block" markdown="1">
@@ -609,7 +610,6 @@ the user in the dropdown box.
 You should now have a nearly finished dropdown box:
 
 <div id="div_html" style="display:block" markdown="1">
-
 
 ```
 <b>Please select the platform you wish to use for this exercise:<b>
