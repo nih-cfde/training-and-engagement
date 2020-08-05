@@ -126,7 +126,7 @@ An windows option of text
 
 </div>
 
-Continue adding `<div>` tags around each of your sections. Don't put anything
+Continue adding ```<div>``` tags around each of your sections. Don't put anything
 around sections that you want displayed at all times. Be sure to give different
 sections different IDs that match their contents. You can make the IDs anything
 you like, however as you're learning, I suggest adding 'div_' to the front of
