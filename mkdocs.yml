@@ -33,3 +33,6 @@ extra:
   hypothesis: true
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/medium-zoom.min.js
+  - javascripts/extra.js
