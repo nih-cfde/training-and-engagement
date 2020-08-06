@@ -60,7 +60,7 @@ In your current document, identify which parts of the document you want
 to always be seen, and which you want to respond to the user's choice. For each
 section that should respond to the user, add a `div` element around the section.
 A `<div>` element is a bit of HTML that works as a divider, and we're using it
-to section off this bit of page to define the section boundaries to javascript. 
+to section off this bit of page to define the section boundaries to javascript.
 The most basic section would look like this:
 
 ```
@@ -116,42 +116,43 @@ An windows option of text
 </div>
 ```
 
-Continue adding `div` tags around each of your sections. Don't put anything
-around sections that you want displayed at all times. Be sure to give different
-sections different IDs that match their contents. You can make the IDs anything
-you like, however as you're learning, I suggest adding 'div_' to the front of
-each ID so that you remember what that variable is for.
+=== "Exercise"
+    Continue adding `div` tags around each of your sections. Don't put anything
+    around sections that you want displayed at all times. Be sure to give different
+    sections different IDs that match their contents. You can make the IDs anything
+    you like, however as you're learning, I suggest adding 'div_' to the front of
+    each ID so that you remember what that variable is for.
 
-When you're done, your file should look something like this:
+=== "Solution"
 
-```
-An introduction that is always displayed
+    ```
+    An introduction that is always displayed
 
-Text that is always displayed
+    Text that is always displayed
 
-<div id="div_windows" style="display:block" markdown="1">
+    <div id="div_windows" style="display:block" markdown="1">
 
-An windows option of text
+    An windows option of text
 
-</div>
+    </div>
 
-More text that is always displayed
+    More text that is always displayed
 
-<div id="div_unix" style="display:block" markdown="1">
+    <div id="div_unix" style="display:block" markdown="1">
 
-A unix option of text
+    A unix option of text
 
-</div>
+    </div>
 
-<div id="div_mac" style="display:block" markdown="1">
+    <div id="div_mac" style="display:block" markdown="1">
 
-A mac option of text
+    A mac option of text
 
-</div>
+    </div>
 
-Even more text that is always displayed
+    Even more text that is always displayed
 
-```
+    ```
 
 
 ## Step 2: Add the script code to the raw page file
