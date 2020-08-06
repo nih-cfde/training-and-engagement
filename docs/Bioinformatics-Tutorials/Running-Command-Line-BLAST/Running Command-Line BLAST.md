@@ -39,7 +39,7 @@ Boot a t2.micro instance on AWS and connect your shell prompt.
 	If you need assistance setting up an instance check out the tutorial Intro to AWS!
 
 
-# Install BLAST software using Command Line
+## Install BLAST software using Command Line
 Now, install some software. We will need NCBI BLAST for the below tutorial
 
 
