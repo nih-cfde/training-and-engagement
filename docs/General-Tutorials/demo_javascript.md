@@ -15,8 +15,6 @@ function change_content_by_platform(form_control){
         document.getElementById('div_mac').style.display = 'none';
 }
 
-</script>
-
 window.onload = set_page_view_defaults;
 </script>
 
