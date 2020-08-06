@@ -54,7 +54,7 @@ A mac option of text
 Even more text that is always displayed
 ```
 
-## Create blocks
+## Step 1: Create blocks
 
 In your current document, identify which parts of the document you want
 to always be seen, and which you want to respond to the users choice. For each
@@ -154,7 +154,7 @@ Even more text that is always displayed
 ```
 
 
-## Add the script code to the raw page file
+## Step 2: Add the script code to the raw page file
 
 In our example text, we have three different blocks separated by `div`s:
 "windows", "unix", and "mac".
@@ -423,7 +423,7 @@ window.onload = set_page_view_defaults;
 
 
 
-## Add the dropdown box
+## Step 3: Add the dropdown box
 
 Now we need to find a logical location for your dropdown box. This should be
 before the first instance of a `div`. Depending on the flow of your
