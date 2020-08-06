@@ -1,4 +1,4 @@
-# Intro to AWS
+# Introduction to Amazon Web Services
 
 Summary:
 
@@ -33,13 +33,11 @@ Go to 'https://aws.amazon.com' in a Web browser.
 
 Select 'My Account' menu option 'AWS Management Console."
 
-
-
-![](https://i.imgur.com/vcmNizI.jpg)
+![AWS Management Console](../../images/aws_1.PNG)
 
 Log in with your username & password.
 
-!!!Note
+!!! Note
 
           If you need to create an account, please follow these instructions. (https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 
@@ -48,30 +46,25 @@ Check to make sure the location corresponds your location is correct.
 For me it is US West (N. California)
 
 
-
-![](https://i.imgur.com/YzsV3Uy.png)
+![AWS Dashboard](../../images/aws_2.PNG)
 
 Click on Services (upper left).
 
 
-
-![](https://i.imgur.com/DRhUVRa.png)
+![AWS Services](../../images/aws_3.png)
 
 Click on EC2.
 
-
-
-![](https://i.imgur.com/nGH2ez5.png)
-
+![EC2](../../images/aws_4.png)
 
 Click on Launch Instance
 
-!!!Note
+!!! Note
          Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity.
          For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilised the most. 
 
 
-![](https://i.imgur.com/8qIVSID.png)
+![Launch Instance](../../images/aws_5.png)
 
 
 
@@ -79,7 +72,7 @@ Select AWS Marketplace on the left hand side
 
 
 
-![](https://i.imgur.com/jogh9Fh.png)
+![AWS Marketplace](../../images/aws_6.png)
 
 Type Ubuntu 20.04 Pro LTS on the search bar underneath
 
@@ -95,7 +88,7 @@ Select Ubuntu Server 20.04 Pro LTS (HVM)
 
 
 
-![](https://i.imgur.com/iRkoW1e.png)
+![AMI](../../images/aws_7.png)
 
 Step 2: Choose an Instance Type
 
@@ -104,11 +97,11 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 
 Select t2 micro
 
-![](https://i.imgur.com/G2MQm2x.png)
+![t2.micro](../../images/aws_8.png)
 
 Click Continue
 
-![](https://i.imgur.com/ojX5nbf.png)
+![Ubuntu Pro](../..images/aws_9.png)
 
 Steps 3: Configure Instance
 
@@ -140,7 +133,7 @@ If you do not have any key pairs, enter a key pair name and then download a key 
 
     The SSH (Secure Shell) protocol uses encryption to secure the connection between a client and a server. All user authentication, commands, output, and file transfers are encrypted to protect against attacks in the network. With SSH protocol (secure Shell) public key authenticantion improves security as it frees users from remembering complicated passwords.
 
-![](https://i.imgur.com/wKjAQ3v.png)
+![mobaxterm](../../images/aws_10.PNG)
 
 ### Next times through (select an existing key pair)
 
@@ -150,7 +143,7 @@ Select a key pair and click 'Launch Instances'.
 
 * After you click 'Launch Instance', you should see this:
 
-![](https://i.imgur.com/6e6s8F0.png)
+![SSH](../../images/aws_11.PNG)
 
 * Click on this first hyperlink: i-038c58bfbe9612c57. Your hyperlink may not be exactly the same. 
 
@@ -158,7 +151,7 @@ Select a key pair and click 'Launch Instances'.
 
 Highlight and copy the Public DNS address and save for future steps.
 
-![](https://i.imgur.com/C77I8rm.png)
+![Remote Host](../../images/aws_12.PNG)
 
 # Next Steps
 
@@ -181,26 +174,26 @@ Download Link: https://download.mobatek.net/2032020060430358/MobaXterm_Portable_
 
 ## Start a new session
 
-![](https://i.imgur.com/MMFDCtr.png)
+![mobaxterm1](../../images/mobaxterm_1.PNG)
 
 ## Fill in session settings
 
 Put in your hostname (should be ec2-XXX-YYY-AAA.compute-1.amazon.aws.com), select 'specify username', and enter 'ubuntu'
 
-![](https://i.imgur.com/cqH8qaJ.png)
+![Remote Host](../../images/mobaxterm_2.PNG)
 
 ## Specify the session key
 
 Copy the downloaded.pem file into your primary hard disk (generally C:) and then put the full path into it.
 
-![](https://i.imgur.com/kxYtC0K.png)
+![Private Key](../../images/mobaxterm_3.PNG)
 
 ## Click OK
 
 If you see this screen and the line ubuntu@ip-###-##-#-##:~$,
 this means your instance computer is ready.
 
-![](https://i.imgur.com/OiMR8DX.png)
+![Ubuntu Terminal](../../images/mobaxterm_3.PNG)
 
 ## Terminating the Instance
 
@@ -216,7 +209,7 @@ Once you have completed your tasks and are sure you do not need the instance any
 
 
 
-![](https://i.imgur.com/IHMPwpk.png)
+![Terminate](../../images/Terminate.png)
 
 !!! Warning
         
