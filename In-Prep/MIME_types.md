@@ -52,7 +52,7 @@ For this tutorial, we downloaded multiple open access files from [Kids First Dat
 MIME type for a file
 ------------------------
 
-There are multiple utilities that allow to determine MIME type for a file. Here we will explore a few to provide options that can best suit the desired application. *Note for our code example we will choose 9969477031_R02C01_Red.idat file.*
+There are multiple utilities that allow to determine MIME type for a file. Here we will explore a few to provide options that can best suit the desired application. For our code example we will work with 9969477031_R02C01_Red.idat file.
 
 #### file
 
@@ -74,7 +74,7 @@ Adding the `-b` flag returns only the MIME type for the selected file without th
 
 #### mimetype
 
-Another option is using `mimetype` utility. This closely follows the `file` command but uses MIME types instead of descriptions.
+Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages/trusty/man1/mimetype.1p.html). This closely follows the `file` command but uses MIME types instead of descriptions.
 
 Installation:
 
@@ -132,7 +132,7 @@ mimetype 9969477031_R02C01_Red.idat
 
 #### xdg-utils
 
-Another option is to use xdg-utils package which also offers options for modifying and adding new MIME types.
+Another option is to use [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package which also offers options for modifying and adding new MIME types.
 
 Installation:
 
