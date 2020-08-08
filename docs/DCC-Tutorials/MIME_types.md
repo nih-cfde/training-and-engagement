@@ -226,15 +226,17 @@ Modification and customization of the underlying signature database is done usin
 === "MIME-info database"
 
     ```
-    # Build a MIME-info database
+    # Build a MIME-info database using tika identifiers
     roy build -mi tika-mimetypes.xml
 
-    # Add freedesktop.org MIME type list
+    # Add freedesktop.org MIME signature list
     roy add -mi freedesktop.org.xml
-    ```    
+    ```   
+
 === "MIME-info output"
 
     ```
+    # Get MIME type
     sf 9969477031_R02C01_Red.idat
 
     ---
