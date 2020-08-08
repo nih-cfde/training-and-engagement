@@ -59,10 +59,13 @@ There are multiple utilities that allow to determine MIME type for a file. Here 
 The default option that requires no installation would be to use the `file` command.
 
 === "Usage"
+
     ```
     file --mime-type <name of the file>
     ```
+
 === "Example output"
+
     ```
     mimetype 9969477031_R02C01_Red.idat
     9969477031_R02C01_Red.idat: application/octet-stream
@@ -75,14 +78,19 @@ Adding the `-b` flag returns only the MIME type for the selected file without th
 Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages/trusty/man1/mimetype.1p.html). This closely follows the `file` command but uses MIME types instead of descriptions.
 
 === "Installation"
+
     ```
     sudo apt install libfile-mimeinfo-perl
     ```
+
 === "Usage"
+
     ```
     mimetype <name of the file>
     ```
+
 === "Example output"
+
     ```
     mimetype 9969477031_R02C01_Red.idat
     9969477031_R02C01_Red.idat: application/octet-stream
@@ -128,15 +136,20 @@ mimetype 9969477031_R02C01_Red.idat
 Another option is to use [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package which also offers options for modifying and adding new MIME types.
 
 === "Installation"
+
     ```
     sudo apt-get update -y
     sudo apt-get install -y xdg-utils
     ```
+
 === "Usage"
+
     ```
     xdg-mime query filetype <name of the file>
     ```
+
 === "Example output"
+
     ```
     xdg-mime query filetype 9969477031_R02C01_Red.idat
     application/octet-stream
@@ -165,18 +178,24 @@ xdg-mime install illumina-idat.xml
 Another signature-based file format identification tool is Siegfried. The current installation instructions are for 64 Bit systems running Ubuntu/Debian OS. Full list of options and installation instructions for multiple platforms can be found on it's [official page](https://www.itforarchivists.com/siegfried).
 
 === "Installation"
+
     ```
     wget -qO - https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
     echo "deb http://dl.bintray.com/siegfried/debian wheezy main" | sudo tee -a /etc/apt/sources.list
     sudo apt-get update && sudo apt-get install siegfried
     ```
+
 === "Usage"
+
     ```
     sf <name of the file>
     ```
+
 === "Example output"
+
     ```
     sf 9969477031_R02C01_Red.idat
+
     ---
     siegfried   : 1.8.0
     scandate    : 2020-08-06T20:14:22Z
@@ -205,12 +224,19 @@ The default results are in the National Archives UK's PRONOM file format signatu
 Modification and customization of the underlying signature database is done using [`roy` tool](https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY). It is installed with homebrew and Ubuntu packages. To build a MIME-info signature file, we can use the included signature files from [Apache Tika](https://tika.apache.org) (tika-mimetypes.xml) and [freedektop.org](https://www.freedesktop.org/wiki/) (freedesktop.org.xml) and use the `-mi` flag. The `roy build` creates a new signature file while `roy add` adds a new identifier to an existing signature file. The changes will be reflected to the included `default.sig` file.
 
 === "MIME-info database"
+
     ```
+    # Build a MIME-info database
     roy build -mi tika-mimetypes.xml
-    roy add -mi freedesktop.or.xml
-    ```
+
+    # Add freedesktop.org MIME type list
+    roy add -mi freedesktop.org.xml
+    ```    
 === "MIME-info output"
+
     ```
+    sf 9969477031_R02C01_Red.idat
+
     ---
     siegfried   : 1.8.0
     scandate    : 2020-08-06T18:24:38Z
@@ -264,6 +290,7 @@ sudoedit /usr/share/siegfried/freedektop.org.xml
 We can now build a MIME-info database with the updated files. Instead of overwriting the `default.sig` file, it is best practice to create a different signature file with different identifier using the `-name` flag. We can also create a single signature file with multiple identifiers. In our example, the `.idat` entry was added to the `freedesktop.org.xml` file. Since it would be useful to keep original identifiers, a custom signature file is built.
 
 === "Custom database"
+
     ```
     # Builds a custom.sig file using tika identifier
     roy build -mi tika -name tika custom.sig
@@ -271,11 +298,13 @@ We can now build a MIME-info database with the updated files. Instead of overwri
     # Adds the modified freedesktop signature file to custom.sig
     roy add -mi freedesktop -name freedesktop custom.sig
     ```
+
 === "Updated output"
+
     ```
     # Check the file entry using custom.sig
     sf -sig custom.sig 9969477031_R02C01_Red.idat
-    
+
     ---
     siegfried   : 1.8.0
     scandate    : 2020-08-06T20:57:10Z
@@ -323,10 +352,13 @@ done
 Siegfried has an built-in option to obtain the file format information for files in a directory.
 
 === "Usage"
+
     ```
      sf <path to the directory>
     ```
+
 === "Example output"
+
     ```
     # Example code combined with other flags
     sf -sig custom.sig -csv KF_data/
