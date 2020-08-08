@@ -270,12 +270,12 @@ We can now build a MIME-info database with the updated files. Instead of overwri
 
     # Adds the modified freedesktop signature file to custom.sig
     roy add -mi freedesktop -name freedesktop custom.sig
-
-    # Check the file entry using custom.sig
-    sf -sig custom.sig 9969477031_R02C01_Red.idat
     ```
 === "Updated output"
     ```
+    # Check the file entry using custom.sig
+    sf -sig custom.sig 9969477031_R02C01_Red.idat
+    
     ---
     siegfried   : 1.8.0
     scandate    : 2020-08-06T20:57:10Z
