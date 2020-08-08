@@ -333,7 +333,7 @@ for file in {.,}*; do      # For all files in the current directory with all the
 done
 ```
 
-![MIME types table](../MIME_types_updated.png "MIME types table")
+![MIME types table](../images/MIME_types_updated.png "MIME types table")
 
 Siegfried has an built-in option to obtain the file format information for files in a directory.
 
