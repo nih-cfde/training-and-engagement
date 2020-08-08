@@ -19,9 +19,9 @@ governing body responsible for all the [official MIME types](https://www.iana.or
 Internet programs such as Web servers and browsers work with MIME type and not file extensions to ensure consistent transfer of same types of files irrespective of the underlying operating system. Upload of DCC data to CFDE portal and download by users or other DCCs is a crucial example where MIME type will help determine content of the media-types and avoid erroneous file transfers.
 
 A few general rules for the MIME types are:
-  - The x- prefix of a MIME subtype simply means that it is non-standard.
-  - The vnd prefix means that the MIME value is vendor specific.
-  - MIME type for unknown file type is generally application/octet-stream
+- The x- prefix of a MIME subtype simply means that it is non-standard.
+- The vnd prefix means that the MIME value is vendor specific.
+- MIME type for unknown file type is generally application/octet-stream
 
 In this tutorial, we will describe how to determine MIME type for single and multiple files and append the MIME list to add new types specific to the file format.
 
