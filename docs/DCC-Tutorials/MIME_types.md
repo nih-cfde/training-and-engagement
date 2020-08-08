@@ -67,7 +67,7 @@ The default option that requires no installation would be to use the `file` comm
 === "Example output"
 
     ```
-    mimetype 9969477031_R02C01_Red.idat
+    file --mime-type 9969477031_R02C01_Red.idat
     9969477031_R02C01_Red.idat: application/octet-stream
     ```
 
