@@ -24,7 +24,7 @@ A few general rules for the MIME types are:
 
 - The vnd prefix means that the MIME value is vendor specific.
 
-- MIME type for unknown file type is generally application/octet-stream
+- MIME type for unknown file type is generally application/octet-stream.
 
 In this tutorial, we will describe how to determine MIME type for single and multiple files and append the MIME list to add new types specific to the file format.
 
