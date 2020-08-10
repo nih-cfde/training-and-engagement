@@ -1,10 +1,10 @@
 ---
 layout: page
-title: MIME type for files
+title: MIME types
 ---
 
-Introduction to MIME type
-==========================
+MIME types
+===========================
 
 MIME which stands for Multipurpose Internet Mail Extensions are standards for recognizing the format of a file.
 MIME types follow a certain format:
