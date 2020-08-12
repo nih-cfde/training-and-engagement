@@ -61,4 +61,4 @@ Then click review and launch --> launch. You should see a pop-up window like thi
 
 ![](https://i.imgur.com/JifclmQ.png)
 
-* You have now successfully launched your AWS instance. You will need some information from this amazon webpage to access your AWS computer, so do not close the page yet. If you happen to close the webpage: <https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId>
+* You have now successfully launched your AWS instance. You will need some information from this amazon webpage to access your AWS computer, so do not close the page yet. If you happen to close the webpage on accident, click on this link: <https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId>
