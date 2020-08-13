@@ -4,7 +4,7 @@ title: MIME types
 ---
 
 MIME types
-===========================
+==============
 
 MIME which stands for Multipurpose Internet Mail Extensions are standards for recognizing the format of a file.
 MIME types follow a certain format:
@@ -20,16 +20,16 @@ Internet programs such as Web servers and browsers work with MIME type and not f
 
 A few general rules for the MIME types are:
 
-- The x- prefix of a MIME subtype simply means that it is non-standard.
+- The x- prefix of a MIME subtype-identifier implies that it is non-standard i.e. not registered with IANA. Example Adobe Flash: application/x-shockwave-flash
 
-- The vnd prefix means that the MIME value is vendor specific.
+- The vnd prefix of a MIME subtype-identifier means that the MIME value is vendor specific. Example Microsoft Excel: application/vnd.ms-excel
 
 - MIME type for unknown file type is generally application/octet-stream.
 
-In this tutorial, we will describe how to determine MIME type for single and multiple files and append the MIME list to add new types specific to the file format.
+In this tutorial, we will describe how to determine MIME type for single and multiple files and create custom MIME types specific to the file format.
 
 !!! note "Prerequisites"
-    This tutorial is written for a Unix or Linux compute environment (e.g., MacOS, Linux-based HPC). Some of the commands require root privileges.
+    This tutorial is written for a Unix/Linux compute environment (e.g. HPC, binder, cloud platforms like AWS, XSEDE etc). **The code included in the tutorial will not work on MacOS/X.** Some of the commands require super user privileges.
 
 DCC example files
 -------------------
@@ -52,14 +52,14 @@ For this tutorial, we downloaded multiple open access files from [Kids First Dat
 └── kidsfirst-participant-family-manifest_2020-08-03.tsv
 ```
 
-MIME type for a file
+MIME type of a file
 ------------------------
 
 There are multiple utilities that allow to determine MIME type for a file. Here we will explore a few to provide options that can best suit the desired application. For our code example we will work with 9969477031_R02C01_Red.idat file.
 
 #### file
 
-The default option that requires no installation would be to use the `file` command.
+The default option that requires **no installation** would be to use the `file` command.
 
 === "Usage"
 
@@ -75,6 +75,11 @@ The default option that requires no installation would be to use the `file` comm
     ```
 
 Adding the `-b` flag returns only the MIME type for the selected file without the filename.
+
+```
+file --mime-type -b 9969477031_R02C01_Red.idat
+application/octet-stream
+```
 
 #### mimetype
 
@@ -99,7 +104,31 @@ Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages
     9969477031_R02C01_Red.idat: application/octet-stream
     ```
 
-There are multiple options to customize the result. The `-D` or `--debug` option prints the logic behind choosing the MIME type for the file. The `--describe` or `-d` option returns the file description instead of MIME type.
+There are multiple options to customize the result. The `--describe` or `-d` option returns the file description instead of MIME type. The `-D` or `--debug` option prints the logic behind choosing the MIME type for the file.
+
+=== "Usage"
+
+    ```
+    mimetype -D <name of the file>
+    ```
+
+=== "Example output"
+
+    ```
+    mimetype -D 9969477031_R02C01_Red.idat
+
+    > Data dirs are: /home/ubuntu/.local/share, /usr/local/share, /usr/share, /var/lib/snapd/desktop
+    > Checking inode type
+    > Checking globs for basename '9969477031_R02C01_Red.idat'
+    > Checking for extension '.idat'
+    > Checking globs for basename '9969477031_r02c01_red.idat'
+    > Checking for extension '.idat'
+    > Value "^@" at offset 36 matches at /usr/share/mime/magic line 770
+    > Failed nested rules
+    > File exists, trying default method
+    > First 10 bytes of the file contain control chars
+    9969477031_R02C01_Red.idat: application/octet-stream
+    ```
 
 `mimetype` allows for addition of custom MIME types.  
 
@@ -108,7 +137,7 @@ From our example files list, we have an `.idat` extension which is Illumina Bead
 !!! warning
     For demonstration purposes we chose to apply `application/vnd.binary` as MIME type for `.idat` files. This may or may not be the appropriate choice. **The default `application/octet-stream` which is defined as arbitrary binary data is desired behavior for files without an accepted designation**. It is preferable to have unknown MIME type to prevent a file from being pushed somewhere inappropriate compared to a custom MIME type that may cause a file to be shunted into an application/pipeline where it doesn't belong.
 
-We can add custom MIME types by creating a xml file `illumina-idat.xml` for the file extensions.
+We can add custom MIME types by creating a xml file `illumina-idat.xml` using any text editor (nano, vim, emacs etc) for the file extensions.
 
 ```
 <?xml version="1.0"?>
@@ -120,12 +149,18 @@ We can add custom MIME types by creating a xml file `illumina-idat.xml` for the 
 </mime-info>
 ```     
 
+!!! note "globs"
+    The `glob` module finds all the pathnames matching a specified pattern according to the rules set by the Unix shell. For MIME type, the file extension acts as the pattern for the search across the filesystem.
+
 Copy this file and update the mime-database.
 
 ```
 sudo cp illumina-idat.xml /usr/share/mime/packages
 sudo update-mime-database /usr/share/mime
 ```
+
+!!! note "sudo"
+    On many sudo-based distributions, it is not possible to log in as a root user. Issuing a command with `sudo` which operates on a per-command basis, helps gain administrative privileges. It is a solution to privilege-related errors. For example when copying files into directories without `w` permission for users or installation of software.
 
 Rerunning the code now results in the updated MIME type.
 
@@ -134,6 +169,13 @@ mimetype 9969477031_R02C01_Red.idat
 9969477031_R02C01_Red.idat: application/vnd.binary
 ```
 
+!!! note "Revert to default"
+    If you decide to use the default MIME type instead of the custom association, you can delete the `.xml` file and update the mime-database.
+    ```
+    sudo rm /usr/share/mime/packages/illumina-idat.xml
+    sudo update-mime-database /usr/share/mime
+    ```
+
 #### xdg-utils
 
 Another option is to use [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package which also offers options for modifying and adding new MIME types.
@@ -141,8 +183,8 @@ Another option is to use [xdg-utils](https://www.freedesktop.org/wiki/Software/x
 === "Installation"
 
     ```
-    sudo apt-get update -y
-    sudo apt-get install -y xdg-utils
+    sudo apt update -y
+    sudo apt install -y xdg-utils
     ```
 
 === "Usage"
@@ -176,6 +218,14 @@ Update the database:
 xdg-mime install illumina-idat.xml
 ```
 
+Addition of custom MIME types in `xdg-mime` are by default for current user when called by a non-root user while the changes are system wide when called by root. This behavior is controlled by the `--mode` flag with either `user` or `system` as arguments.
+
+!!! note "Revert to default"
+    To revert back to the default MIME type use the `uninstall` flag.
+    ```
+    xdg-mime uninstall illumina-idat.xml
+    ```
+
 #### Siegfried
 
 Another signature-based file format identification tool is Siegfried. The current installation instructions are for 64 Bit systems running Ubuntu/Debian OS. Full list of options and installation instructions for multiple platforms can be found on it's [official page](https://www.itforarchivists.com/siegfried).
@@ -185,7 +235,7 @@ Another signature-based file format identification tool is Siegfried. The curren
     ```
     wget -qO - https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
     echo "deb http://dl.bintray.com/siegfried/debian wheezy main" | sudo tee -a /etc/apt/sources.list
-    sudo apt-get update && sudo apt-get install siegfried
+    sudo apt update && sudo apt install siegfried
     ```
 
 === "Usage"
@@ -222,9 +272,12 @@ Another signature-based file format identification tool is Siegfried. The curren
         warning : 'no match'
     ```
 
-The default results are in the National Archives UK's PRONOM file format signature which is displayed in YAML format. There are built in flags such as `-csv` or `-json` to change the output format.
+The default results are in the [National Archives UK's PRONOM](https://www.nationalarchives.gov.uk/PRONOM/Default.aspx) file format signature which is displayed in YAML format. There are built in flags such as `-csv` or `-json` to change the output format.
 
-Modification and customization of the underlying signature database is done using [`roy` tool](https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY). It is installed with homebrew and Ubuntu packages. To build a MIME-info signature file, we can use the included signature files from [Apache Tika](https://tika.apache.org) (tika-mimetypes.xml) and [freedektop.org](https://www.freedesktop.org/wiki/) (freedesktop.org.xml) and use the `-mi` flag. The `roy build` creates a new signature file while `roy add` adds a new identifier to an existing signature file. The changes will be reflected to the included `default.sig` file.
+Modification and customization of the underlying signature database is done using [`roy` tool](https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY). It is installed with homebrew and Ubuntu packages. [Installation instruction]((https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY) on documentation for `roy`. To build a MIME-info signature file, we can use the included signature files from [Apache Tika](https://tika.apache.org) (tika-mimetypes.xml) and [freedesktop.org](https://www.freedesktop.org/wiki/) (freedesktop.org.xml) and use the `-mi` flag. The `roy build` creates a new signature file while `roy add` adds a new identifier to an existing signature file. The changes will be reflected to the included `default.sig` file.
+
+!!! note "MIME-info signature file"
+    [Apache Tika](https://tika.apache.org) and [freedesktop.org](https://www.freedesktop.org/wiki/) are examples of software projects that contain toolkits for content detection and metadata extraction for many commonly used file types all stored in their respective MIME-info signature files. `roy` allows the ability to use any valid MIME-info file as a source when building signatures.
 
 === "MIME-info database"
 
@@ -340,7 +393,7 @@ We can now build a MIME-info database with the updated files. Instead of overwri
         warning : 'match on filename only'
     ```
 
-MIME type for many files
+MIME type of many files
 --------------------------
 
 To obtain MIME type for multiple files, we can script the utility commands in a for loop. As an example, here is one possible script using the `xdg-mime` command to obtain the MIME type for each file and store the results as a tab-separated-values file.
