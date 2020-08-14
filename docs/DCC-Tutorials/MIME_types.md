@@ -20,9 +20,11 @@ Internet programs such as Web servers and browsers work with MIME type and not f
 
 A few general rules for the MIME types are:
 
-- The x- prefix of a MIME subtype-identifier implies that it is non-standard i.e. not registered with IANA. Example Adobe Flash: application/x-shockwave-flash
+- The x- prefix of a MIME subtype-identifier implies that it is non-standard i.e. not registered with IANA.
+  e.g. `**Adobe Flash: application/x-shockwave-flash**``
 
-- The vnd prefix of a MIME subtype-identifier means that the MIME value is vendor specific. Example Microsoft Excel: application/vnd.ms-excel
+- The vnd prefix of a MIME subtype-identifier means that the MIME value is vendor specific.
+  e.g. `**Microsoft Excel: application/vnd.ms-excel**`
 
 - MIME type for unknown file type is generally application/octet-stream.
 
@@ -34,23 +36,33 @@ In this tutorial, we will describe how to determine MIME type for single and mul
 DCC example files
 -------------------
 
-For this tutorial, we downloaded multiple open access files from [Kids First Data portal](https://kidsfirstdrc.org). Here is the directory structure of `KF_data` with all the files:
+For this tutorial, we downloaded multiple open access files from [Kids First Data Portal](https://kidsfirstdrc.org). Here is the directory structure of `KF_data` with all the files:
 
 ```
 .
+├── 254ca234-b7f2-4305-ab93-d7e15f4a530d.rsem.isoforms.results
 ├── 32503692.gpr
-├── 4599b420-100e-48c7-a2b1-f819e656d3c6.rsem.genes.results
-├── 4672cb1d-f551-4d04-8c9a-50337c25dca5.somaticSV.vcf
 ├── 801039e0-8675-452f-86bf-474297f17cbf.mutect2_somatic.vep.maf
+├── 80c5a306-15a0-4241-bedb-cf153a1fb866.rsem.isoforms.results
 ├── 86d75258-8a3a-4f6c-b108-fd26d1bcabf4.arriba.fusions.pdf
 ├── 9969477031_R02C01_Red.idat
 ├── ad45e585-d356-4d8b-97cd-4e050418754c.mutect2_somatic.vep.maf
+├── ba6f060d-582b-46c1-833a-9c0d6e68ccc5.STAR.fusion_predictions.abridged.coding_effect.tsv
+├── c133da79-1f7c-41e1-a081-e3aa0d39e764.rsem.isoforms.results
 ├── dfe951a5-0b00-42e3-81f2-99aaaf54b898.CNVs.p.value.txt
+├── e7adf495-d7da-4b85-8f27-e1f7ecbe45a3.png
+├── ee49988d-8ab8-4902-9e4e-dfc2face240d.somaticSV.vcf
 ├── f06987bc-aca3-4f7e-8e77-6e2cf9ce28a0.STAR.fusion_predictions.abridged.coding_effect.tsv
-├── f29014ad-2a4b-4cea-9b28-711bc080c5ed.rsem.isoforms.results
-├── file-table.tsv
-└── kidsfirst-participant-family-manifest_2020-08-03.tsv
+└── f6bc4b78-280b-420a-8af4-1a6d85304e37.png
 ```
+
+To obtain the same set of files, download the [KF_File_ID.csv](./supplementary_files/KF_File_ID.csv). Login to [Kids First Data Portal](https://kidsfirstdrc.org), select `File Repository` and `File Filters`. Scroll all the way down to `Search by File ID` field and click on `upload your list of ids`.
+
+![Search by File ID](../images/KFDRC_search_by_file_ID.png "Search by File ID")
+
+One can either copy paste the File IDs in the box or upload the KF_File_ID.csv. To obtain a local copy, download each file individually.
+
+![File ID upload](../images/KFDRC_file_ID_upload.png "File ID upload")
 
 MIME type of a file
 ------------------------
