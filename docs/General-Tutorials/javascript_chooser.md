@@ -534,3 +534,5 @@ defaults in the script, we should add 'selected' to the Windows option here:
     <option value="value_win" id="id_windows" selected> Windows </option>
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
+
+[see the full script we made](./demo_javascript.md)
