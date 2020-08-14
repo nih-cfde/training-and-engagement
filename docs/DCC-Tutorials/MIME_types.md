@@ -21,10 +21,10 @@ Internet programs such as Web servers and browsers work with MIME type and not f
 A few general rules for the MIME types are:
 
 - The x- prefix of a MIME subtype-identifier implies that it is non-standard i.e. not registered with IANA.
-  e.g. `**Adobe Flash: application/x-shockwave-flash**``
+  e.g. **Adobe Flash: application/x-shockwave-flash**
 
 - The vnd prefix of a MIME subtype-identifier means that the MIME value is vendor specific.
-  e.g. `**Microsoft Excel: application/vnd.ms-excel**`
+  e.g. **Microsoft Excel: application/vnd.ms-excel**
 
 - MIME type for unknown file type is generally application/octet-stream.
 
