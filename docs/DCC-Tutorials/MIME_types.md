@@ -240,7 +240,7 @@ Addition of custom MIME types in `xdg-mime` are by default for current user when
 
 #### Siegfried
 
-Another signature-based file format identification tool is Siegfried. The current installation instructions are for **64-bit systems running Ubuntu/Debian OS**. Full list of options and installation instructions for multiple platforms can be found on it's [official page](https://www.itforarchivists.com/siegfried).
+Another signature-based file format identification tool is Siegfried. The current installation instructions are for **64-bit systems running Ubuntu/Debian OS**. Full list of options and installation instructions for multiple platforms can be found on the [official page](https://www.itforarchivists.com/siegfried).
 
 === "Installation"
 
