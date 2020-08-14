@@ -3,53 +3,21 @@ layout: page
 title: Rendering a GitHub website locally with Jekyll
 ---
 
-
-<script language="javascript" type="text/javascript">
-function set_page_view_defaults() {
-    document.getElementById('div_windows').style.display = 'block';
-    document.getElementById('div_unix').style.display = 'none';
-    document.getElementById('div_mac').style.display = 'none';
-};
-
-function change_content_by_platform(form_control){
-    if (!form_control || document.getElementById(form_control).value == 'value_win') {
-        set_page_view_defaults();
-    } else if (document.getElementById(form_control).value == 'value_unix') {
-        document.getElementById('div_windows').style.display = 'none';
-        document.getElementById('div_unix').style.display = 'block';
-        document.getElementById('div_mac').style.display = 'none';
-   } else if (document.getElementById(form_control).value == 'value_mac') {
-        document.getElementById('div_windows').style.display = 'none';
-        document.getElementById('div_unix').style.display = 'none';
-        document.getElementById('div_mac').style.display = 'block';
-    } else {
-        alert("Error: Missing platform value for 'change_content_by_platform()' script!");
-    }
-}
-
-window.onload = set_page_view_defaults;
-</script>
-
-
 Rendering a GitHub website locally with Jekyll
 ===============================================
 
 Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content. The first part of the tutorial includes instructions for downloading Jekyll on:
 
-**Please select the platform you wish to use for this exercise:**
-<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
-    <option value="value_mac" id="id_mac" > MacOS </option>
-    <option value="value_win" id="id_windows" selected> Windows </option>
-    <option value="value_unix" id="id_unix"> UNIX </option>
-</select>
+- [MacOS](#install-jekyll-on-macos-using-command-line)
+- [Windows OS](#install-jekyll-on-windows-os)
+- [Windows Subsystem for Linux](#install-jekyll-using-windows-subsystem-for-linux-wsl)
 
-<div id="div_mac" style="display:block" markdown="2">
+Install Jekyll on MacOS using command line
+-------------------------------------------
 
-# Install Jekyll on MacOS using command line  
+The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).
 
-The instructions follow the [official Jekyll tutorial](https://jekyllrb.com/docs/installation/macos/#brew).  
-
-#### Command line tools  
+#### Command line tools
 
 First, we install the command line utility tool for OS platform, by
 running the following code in the terminal:
@@ -107,12 +75,6 @@ jekyll -v
 
 This should return a string similar to this : `jekyll 4.x.x`
 
-
-</div>
-
-
-<div id="div_windows" style="display:block" markdown="1">
-
 Install Jekyll on Windows OS
 ------------------------------
 
@@ -138,10 +100,6 @@ In the Gemfile edit to include:
 ```
 gem 'tzinfo-data'
 ```
-</div>
-
-<div id="div_unix" style="display:block" markdown="1">
-
 
 Install Jekyll using Windows Subsystem for Linux (WSL)
 ---------------------------------------------------------
@@ -149,7 +107,6 @@ Install Jekyll using Windows Subsystem for Linux (WSL)
 The installation follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with
 modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this
 tutorial.
-
 
 #### Setup Ubuntu terminal
 
@@ -165,7 +122,7 @@ To get Ubuntu, open the Microsoft Store and search for `Ubuntu` (you will need t
 Select the blue `Get` box. After installation is complete, select
 `Launch`.
 
-An Ubuntu terminal window will appear with this message: `Installing, this may take a few minutes...`.
+An Ubuntu terminal window will appear with this message: `Installing, this may take a few minutes...`. 
 Set up a username and password.
 
 !!! note
@@ -196,8 +153,6 @@ Finally, install Jekyll and bundler (this step may take several minutes to compl
 ```
 sudo gem install jekyll bundler
 ```
-</div>
-
 
 Build Jekyll site using template from GitHub
 ---------------------------------------------
@@ -209,7 +164,7 @@ git clone https://github.com/nih-cfde/Jekyll-demo.git
 ```
 
 !!! note "Building Jekyll site in Windows OS using WSL"
-
+    
       In Windows OS using the WSL, you would type this to navigate to the repo directory if you cloned it to your Desktop:
 
       ```
@@ -225,7 +180,7 @@ Navigate to the newly created directory with the name of the repo which contains
 ├── README.md
 ├── _config.yml
 ├── _posts
-│   └── 2020-07-10-welcome-to-jekyll.markdown
+│   └── 2020-07-10-welcome-to-jekyll.markdown
 ├── about.markdown
 └── index.markdown
 ```
