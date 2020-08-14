@@ -451,7 +451,7 @@ In our example directory for KF data files we have a `.vcf` file associated with
 !!! note "Siegfried"
     Siegfried with the PRONOM default signature file correctly identified the format as 'Variant Call Format' but had no associated MIME type. Using the MIME-info signature databases results in the `text/vcard`.
 
-In cases where there may be erroneous file extensions, it is useful to examine the file contents in addition to the file format. Assume there was mistake in renaming of a file and the `file-table.tsv` was named `file-table.png`
+In cases where there may be erroneous file extensions, it is useful to examine the file contents in addition to the file format. Assume there was mistake in renaming of a file and the `32503692.gpr` was named `32503692.png`
 without any change in the file contents.
 
 `file` which examines the contents of the file before reporting its type results in `text/plain`.
