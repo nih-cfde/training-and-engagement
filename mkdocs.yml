@@ -22,7 +22,10 @@ plugins:
 markdown_extensions:
 - admonition
 - pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed
 - pymdownx.emoji
+- pymdownx.extra
 - codehilite:
     guess_lang: false
 - toc:
