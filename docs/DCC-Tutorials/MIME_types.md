@@ -67,7 +67,7 @@ One can either copy paste the File IDs in the box or upload the KF_File_ID.csv. 
 MIME type of a file
 ------------------------
 
-There are multiple utilities that allow to determine MIME type for a file. Here we will explore a few to provide options that can best suit the desired application. For our code example we will work with 9969477031_R02C01_Red.idat file.
+There are multiple utilities that can help determine MIME type for a file. Here we will explore a few to provide options that can best suit the desired application. For our code example we will work with 9969477031_R02C01_Red.idat file.
 
 #### file
 
@@ -116,7 +116,7 @@ Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages
     9969477031_R02C01_Red.idat: application/octet-stream
     ```
 
-There are multiple options to customize the result. The `--describe` or `-d` option returns the file description instead of MIME type. The `-D` or `--debug` option prints the logic behind choosing the MIME type for the file.
+There are multiple options to customize the output. The `--describe` or `-d` option returns the file description instead of MIME type. The `-D` or `--debug` option prints the logic behind choosing the MIME type for the file.
 
 === "Usage"
 
@@ -149,7 +149,7 @@ From our example files list, we have an `.idat` extension which is Illumina Bead
 !!! warning
     For demonstration purposes we chose to apply `application/vnd.binary` as MIME type for `.idat` files. This may or may not be the appropriate choice. **The default `application/octet-stream` which is defined as arbitrary binary data is desired behavior for files without an accepted designation**. It is preferable to have unknown MIME type to prevent a file from being pushed somewhere inappropriate compared to a custom MIME type that may cause a file to be shunted into an application/pipeline where it doesn't belong.
 
-We can add custom MIME types by creating a xml file `illumina-idat.xml` using any text editor (nano, vim, emacs etc) for the file extensions.
+We can add custom MIME types by creating an xml file `illumina-idat.xml` using any text editor (nano, vim, emacs etc) for the file extensions.
 
 ```
 <?xml version="1.0"?>
@@ -190,7 +190,7 @@ mimetype 9969477031_R02C01_Red.idat
 
 #### xdg-utils
 
-Another option is to use [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package which also offers options for modifying and adding new MIME types.
+Another option is to use the [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package which also offers options for modifying and adding new MIME types.
 
 === "Installation"
 
@@ -212,7 +212,7 @@ Another option is to use [xdg-utils](https://www.freedesktop.org/wiki/Software/x
     application/octet-stream
     ```
 
-Addition of the custom MIME type is similar to `mimetype` utility with creating the xml file and updating the local database. Similar to our above example, we can create the `illumina-idat.xml` file:
+Adding custom MIME types is similar to the `mimetype` utility: we can create the xml file and update the local database. Following our previous example, we will create the `illumina-idat.xml` file:
 
 ```
 <?xml version="1.0"?>
@@ -230,7 +230,7 @@ Update the database:
 xdg-mime install illumina-idat.xml
 ```
 
-Addition of custom MIME types in `xdg-mime` are by default for current user when called by a non-root user while the changes are system wide when called by root. This behavior is controlled by the `--mode` flag with either `user` or `system` as arguments.
+Addition of custom MIME types in `xdg-mime` are for current user by default when called by a non-root user while the changes are system wide when called by root. This behavior is controlled by the `--mode` flag with either `user` or `system` as arguments.
 
 !!! note "Revert to default"
     To revert back to the default MIME type use the `uninstall` flag.
@@ -240,7 +240,7 @@ Addition of custom MIME types in `xdg-mime` are by default for current user when
 
 #### Siegfried
 
-Another signature-based file format identification tool is Siegfried. The current installation instructions are for **64-bit systems running Ubuntu/Debian OS**. Full list of options and installation instructions for multiple platforms can be found on the [official page](https://www.itforarchivists.com/siegfried).
+Another signature-based file format identification tool is Siegfried. The current installation instructions are for **64-bit systems running Ubuntu/Debian OS**. A full list of options and installation instructions for multiple platforms can be found on the [official page](https://www.itforarchivists.com/siegfried).
 
 === "Installation"
 
@@ -419,7 +419,7 @@ done
 
 ![MIME types table](../images/MIME_types_updated.png "MIME types table")
 
-Siegfried has an built-in option to obtain the file format information for files in a directory.
+Siegfried has a built-in option to obtain the file format information for files in a directory.
 
 === "Usage"
 
@@ -437,7 +437,7 @@ Siegfried has an built-in option to obtain the file format information for files
 Unexpected behavior for MIME type
 ---------------------------------
 
-So far in our tutorial we have used a proprietary file extension as an example to showcase the various options across different utilities/tools for file format identification. While, the results will be consistent across all utilities for the common file extensions, there can however be differences.
+So far in our tutorial we have used a proprietary file extension as an example to showcase the various options across different utilities/tools for file format identification. The results will be generally consistent across all utilities for the common file extensions, but there can be differences.
 
 In our example directory for KF data files we have a `.vcf` file associated with variant-call-format in bioinformatics/genetics fields. However, `.vcf` is considered a file format standard for electronic business cards. This results in different results across the tools for the same input file.
 
