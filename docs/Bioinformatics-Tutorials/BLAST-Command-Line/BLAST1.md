@@ -39,5 +39,3 @@ However, running BLAST through the commmand line has many benefits:
   * It allows the queries to be automated
   * It allows you to use a remote computer to run the BLAST queries
   
-Later on in the workshop we will talk more about these advantages and have a more in-depth explanation of the shell.
-
