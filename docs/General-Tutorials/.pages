@@ -1,6 +1,6 @@
 arrange:
  - index.md
- - introtoaws.md
+ - Introduction_to_Amazon_Web_Services
  - install_conda_tutorial.md
  - Jekyll_Tutorial.md
  - mkdocs.md

@@ -22,6 +22,9 @@ markdown_extensions:
 - admonition
 - pymdownx.details
 - pymdownx.emoji
+- pymdownx.tabbed
+- pymdownx.extra
+- pymdownx.superfences
 - codehilite:
     guess_lang: false
 - toc:
