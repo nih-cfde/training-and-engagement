@@ -8,59 +8,55 @@ Sphinx for static websites editing
 
 Sphinx is python based tool that enables generation of documentation. Originally intended for python projects, it has versatility to be adapted for any number of projects that generate plain text.
 
-Install Sphinx for macOS
-------------------------
+===  "MacOS Instructions"
 
-Based on [this tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
+    Based on [this tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
 
-We will utilize conda package management system to install Sphinx. If you do not have conda installed, you can follow installation steps [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
+    We will utilize conda package management system to install Sphinx. If you do not have conda installed, you can follow installation steps [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
-Create a new conda environment called `sphinx` that runs python 3.5 like
-so:
+    Create a new conda environment called `sphinx` that runs python 3.5 like so:
 
-```
-conda create --name sphinx python=3.5
-```
+    ```
+    conda create --name sphinx python=3.5
+    ```
 
-Then activate the environment and install Sphinx with this code:
+    Then activate the environment and install Sphinx with this code:
 
-```
-conda activate sphinx
-conda install sphinx
-```
+    ```
+    conda activate sphinx
+    conda install sphinx
+    ```
 
-Install Sphinx for Windows
-----------------------------
+=== "Windows Instructions"
 
-Based on this [tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
+    Based on this [tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
 
-Install Python (*if necessary*). *Note you can also use conda to install both python and Sphinx in Windows*.
+    Install Python (*if necessary*). *Note you can also use conda to install both python and Sphinx in Windows*.
 
-Open `command prompt` for Windows.
-To check if python 3 is installed on your computer, enter the command:
+    Open `command prompt` for Windows. To check if python 3 is installed on your computer, enter the command:
 
-```
-$ python --version
-Python 3.7.4
-```
+    ```
+    $ python --version
+    Python 3.7.4
+    ```
 
-If Python is not installed, you can download from [here](https://www.python.org/downloads/).
+    If Python is not installed, you can download from [here](https://www.python.org/downloads/).
 
-To install [Sphinx](https://www.sphinx-doc.org/en/master/usage/quickstart.html), we will use `pip` which is a python package installer.
+    To install [Sphinx](https://www.sphinx-doc.org/en/master/usage/quickstart.html), we will use `pip` which is a python package installer.
 
-Open `command prompt` for Windows and type the following code:
+    Open `command prompt` for Windows and type the following code:
 
-```
-pip install -U sphinx
-```
+    ```
+    pip install -U sphinx
+    ```
 
-The argument `U` is to enable upgrade of the packages.
+    The argument `U` is to enable upgrade of the packages.
 
-To check if Sphinx was installed, type on `command prompt`:
+    To check if Sphinx was installed, type on `command prompt`:
 
-```
-sphinx-build --version
-```
+    ```
+    sphinx-build --version
+    ```
 
 Build Sphinx site using template from GitHub
 --------------------------------------------    

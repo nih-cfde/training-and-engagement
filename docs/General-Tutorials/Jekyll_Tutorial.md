@@ -180,7 +180,7 @@ Navigate to the newly created directory with the name of the repo which contains
 ├── README.md
 ├── _config.yml
 ├── _posts
-│   └── 2020-07-10-welcome-to-jekyll.markdown
+│   └── 2020-07-10-welcome-to-jekyll.markdown
 ├── about.markdown
 └── index.markdown
 ```

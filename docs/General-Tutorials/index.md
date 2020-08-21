@@ -27,6 +27,7 @@ Web Development:
   - [Rendering a GitHub website locally with Sphinx](Sphinx_Tutorial.md)
   - [Rendering a GitHub website locally with MkDocs](mkdocs.md)
   - [Editing Mkdocs websites with cfde-bot](cfdebot_website_editing.md)
+  - [Adding user choosable content using Javascript](javascript_chooser.md)
 
 
   

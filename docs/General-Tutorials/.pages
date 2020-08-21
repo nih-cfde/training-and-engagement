@@ -6,9 +6,13 @@ arrange:
  - mkdocs.md
  - Sphinx_Tutorial.md
  - cfdebot_website_editing.md
+
  - ProtectedBranch_HowTo.md
 
 
  
 
  
+
+ - install_conda_tutorial.md
+ - javascript_chooser.md
