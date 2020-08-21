@@ -1,7 +1,62 @@
+
 ---
 layout: page
 title: How to Run BLAST+
 ---
+=======
+# Running Command-Line BLAST
+
+Learning Objectives
+
+- Gain hands-on exposure to the linux command line
+- Understand how data is turned into results by programs run at the command line
+
+
+## Getting Started 
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_q6gmtglm&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_qy8cnqw9" width="1000" height="500" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+## What is BLAST?
+
+BLAST is the **B**asic **L**ocal **A**lignment **S**earch large sequence databases; It starts by finding small matches between the two sequences and extending those matches.  For in-depth information on how BLAST works and the different BLAST functionality, check out the resources page [here](https://blast.ncbi.nlm.nih.gov/Blast.cgi).
+
+BLAST can be helpful for identifying the source of a sequence or finding a similar sequence in another organism.  In this lesson, we will use BLAST to find zebrafish proteins that are similar to a small set of mouse proteins.
+
+## Why use the command line?
+BLAST has a very nice graphical interface for searching sequences in NCBI's database.
+However, running BLAST through the commmand line has many benefits:
+
+
+  * It's much easier to run many BLAST queries using the command line than the GUI
+  * Running BLAST with the command line is reproducible and can be documented in a script
+  * The results can be saved in a machine-readable format that can be analyzed later on
+  * You can create your own databases to search rather than using NCBI's pre-built databases
+  * It allows the queries to be automated
+  * It allows you to use a remote computer to run the BLAST queries
+  
+Later on in the workshop we will talk more about these advantages and have a more in-depth explanation of the shell.
+
+## Set-up an Instance
+
+Boot a t2.micro instance on AWS and connect your shell prompt.
+
+!!! Tip 
+	
+	If you need assistance setting up an instance check out the tutorial Intro to AWS!
+
+
+## Install BLAST software using Command Line
+Now, install some software. We will need NCBI BLAST for the below tutorial
+
+
+Copy and paste the following commands
+```
+   sudo apt-get update && sudo apt-get -y install python ncbi-blast+
+```
+
+This updates the software list and installs the Python programming
+language and NCBI BLAST+.
+
 
 ## Download Data
 
