@@ -11,6 +11,6 @@ All currently available bioinformatics tutorials can be found here.
 
 - [GWAS in the Cloud](./GWAS-in-the-cloud/index.md)
 - [Snakemake](./Snakemake/index.md)
-- [BLAST Command Line](/BLAST-Commmand-Line/BLAST4.MD)
+- [BLAST Command Line](./BLAST-Command-Line/BLAST1.md)
 
 
