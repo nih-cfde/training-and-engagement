@@ -1,10 +1,9 @@
 arrange:
   - index.md
 
-  - GWAS-in-the-Cloud
-  - Snakemake_tutorial
-  - BLAST-Command-Line
-
   - GWAS-in-the-cloud
   - Snakemake
+  - BLAST-Command-Line
+
+ 
 
