@@ -11,22 +11,13 @@ Install PLINK
 
 ## Installation
 
-To install PLINK, type these commands into your [Ubuntu AWS terminal](./Accessing_aws.md):
+To install PLINK, type these commands into your [Ubuntu AWS terminal](./download_accessAWS.md):
 
 ```
 cd /usr/local/bin/
 sudo wget https://zzz.bwh.harvard.edu/plink/dist/plink-1.07-x86_64.zip
 
 ```
-
-!!! Error
-    If you see a `wget` error message when you run this code, you will have to install `wget` by running these lines of code:
-
-
-    `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-
-    `brew install wget`
-
 
 Next, unzip and cd into the folder:
 
