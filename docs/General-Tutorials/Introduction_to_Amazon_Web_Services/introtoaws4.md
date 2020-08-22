@@ -25,24 +25,26 @@ title: Connect to an Instance
 
     ![mobaxterm1](../../images/mobaxterm_1.PNG)
 
-    ## Fill in session settings
+     ![Remote Host](../../images/mobaxterm_2.PNG)
 
-    Put in your hostname (should be ec2-XXX-YYY-AAA.compute-1.amazon.aws.com), select 'specify username', and enter 'ubuntu'
-
-    ![Remote Host](../../images/mobaxterm_2.PNG)
+     ## Fill in session settings
 
     ## Specify the session key
 
+    Put in your hostname (should be ec2-XXX-YYY-AAA.compute-1.amazon.aws.com), select 'specify username', and enter 'ubuntu'
+
+    ![Hostname](../../images/mobaxterm_3.PNG)
+
     Copy the amazon.pem file into your primary hard disk (generally C:) and then put the full path into it.
 
-    ![Private Key](../../images/mobaxterm_3.PNG)
+    ![Private Key](../../images/mobaxterm_3_2.PNG)
 
     ## Click OK
 
     If you see this screen and the line ubuntu@ip-###-##-#-##:~$,
     this means your instance computer is ready.
 
-    ![Ubuntu Terminal](../../images/mobaxterm_3.PNG)
+    ![Ubuntu Terminal](../../images/mobaxterm_4.PNG)
 
 
 === "Mac OS"
