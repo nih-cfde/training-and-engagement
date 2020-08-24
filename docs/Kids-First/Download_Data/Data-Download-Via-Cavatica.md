@@ -27,9 +27,9 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
 * Click on the **drop down arrow** *next to* the "Download" button (shown in the figure below)
 
 !!! Warning
-    Do not click on the Download button
+    Do not click on the "Download" button
 
-    Clicking on the Download button instead of the arrow next to it will result in the download of individual files (one at a time). While this works for a small number of file, it is unfeasible for a large number of files. If you selected 50 files, 50 pop-up windows will appears for manual download of individual files. If this happens on accident, you can close one pop-up window at a time.
+    Clicking on the "Download" button instead of the arrow next to it will result in the download of individual files (one at a time). While this works for a small number of file, it is unfeasible for a large number of files. If you selected 50 files, 50 pop-up windows will appears for manual download of individual files. If this happens on accident, you can close one pop-up window at a time.
 
 
 ![](images/Cavatica_Download_Links.png)
@@ -42,31 +42,31 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
 
 * Click "Download link" and save the text file in the `KF_Data` folder on the `Desktop` of your local machine.
 
-* A text file called download-links.txt will appear on your computer. It contains a list of links that you can use for downloading vcf files.
+* A text file called "download-links.txt" will appear on your computer. It contains a list of links that you can use for downloading vcf files.
 
 ## Step 2: Download data with wget
 
 !!! Important
     The download links expire after 48 hours. If you need to re-download files after 48 hours of first download, you must go back to Cavatica and download the "dowload-link.txt" file once again.
 
-* Open up your Mac terminal window and navigate to the `KF_Data` folder by typing:
+* Open up your Mac or Linux terminal window and navigate to the `KF_Data` folder by typing:
 
 ```
 cd ~/Desktop/KF_Data
 ```
 
-* Run the following wget command to download all the files:
+* Run the following `wget` command to download all the files:
 
 ```
 wget -i download-links.txt
 ```
-The `-i` flag tells wget to look for a list of URLs.
+The `-i` flag tells `wget` to look for a list of URLs from a file.
 
 * Depending on the number of files you selected, the download command may take a few seconds to minutes. When it is complete, all your files will appear in your `KF_Data` folder.
 
 ## Step 3: Clean up file names
 
-Notice that the file names look odd? There's a lot of text after the `.vcf.gz` part.
+Notice that the file names look odd? There's a lot of text after the `.vcf.gz` part:
 
 `efd72641-c02c-4543-9ce9-f13d398189e1.kallisto.abundance.tsv.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIZAHWHQWDB7XV4RA%2F20200824%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200824T154453Z&X-Amz-Expires=3600&X-Amz-Signed`
 
@@ -78,12 +78,10 @@ One way to clean up file names is to change each file name manually. However, ma
 for i in `ls`; do mv $i `ls $i | grep 'vcf.gz' | cut -d'?' -f1`; done
 ```
 
-This command goes through the list of file names and deletes all characters starting with the `?` following the file extension "vcf.gz".
+This command loops through the list of file names in `KF_Data` and renames the files by deleting all characters after the `vcf.gz` extension starting from the `?` in the file name (`-d` specifies a text delimiter).
 
 !!! Important
-    The clean up command for filenames does not work for other file formats (e.g. tsv format).
-
-    If you are working with a different file format, remember to change the 'vcf.gz' extension to reflect the correct format. For example, if you download tsv files, your command would look like this:
+    This clean up command was written to look through files with the pattern `vcf.gz` in them. To apply the same renaming command to files with other extensions, such as a `.tsv` file, modify the code as follows:
 
     ```
     for i in `ls`; do mv $i `ls $i | grep '.tsv' | cut -d'?' -f1`; done
