@@ -14,8 +14,8 @@ Learning Objectives
 Tutorial Outline
 
 - [BLAST Tutorial Video](../BLAST-Command-Line/BLAST2.md)
-- [Install BLAST](../BLAST-Command-Line/BLAST2.md)
-- [How to Run BLAST+](../BLAST-Command-Line/BLAST3.md)
+- [Install BLAST](../BLAST-Command-Line/BLAST3.md)
+- [How to Run BLAST+](../BLAST-Command-Line/BLAST4.md)
 
 
 
