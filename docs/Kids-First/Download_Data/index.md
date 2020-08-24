@@ -9,7 +9,7 @@ Download KF data to local machine
 
 There are two ways to download Kids First (KF) data onto your local machine
 
-  **Method 1: [Data Download via Kids First Portal](Data_Download_Via_KF_Portal.md)**
+  **Method 1: [Data Download via Kids First Portal](Data-Download-Via-KF-Portal.md)**
 
 The Kids First Portal method can be used to download files one at a time.
 
