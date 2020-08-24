@@ -31,13 +31,13 @@ title: Connect to an Instance
 
     ## Specify the session key
 
-    Put in your hostname (should be ec2-XXX-YYY-AAA.compute-1.amazon.aws.com), select 'specify username', and enter 'ubuntu'
+    Put in your hostname (should be ec2-XXX-YYY-AAA.compute-1.amazon.aws.com) and enter 'ubuntu'
 
     ![Hostname](../../images/mobaxterm_3.PNG)
 
     Copy the amazon.pem file into your primary hard disk (generally C:) and then put the full path into it.
 
-    ![Private Key](../../images/mobaxterm_3_2.PNG)
+    ![Private Key](../../images/mobaxterm_3_2.png)
 
     ## Click OK
 
