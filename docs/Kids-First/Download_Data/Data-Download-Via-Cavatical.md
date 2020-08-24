@@ -12,9 +12,9 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
 
 * On your local machine, create a folder on the Desktop called `KF_Data`.
 
-* Open up the [KF portal](https://portal.kidsfirstdrc.org/dashboard) on a web browser and [choose your files of interest](../KF_7_PushToCavatica.md/#set-filters-and-choose-files).
+* Open up the [KF portal](https://portal.kidsfirstdrc.org/dashboard) on a web browser and [choose your files of interest](../KF_7_PushToCavatica.md).
 
-* Then [push those files to Cavatica](../KF_7_PushToCavatica.md/#push-to-cavatica_1). If you have multiple Cavatica projects, be sure to remember which project you chose to transfer your files into.
+* Then [push those files to Cavatica](../KF_7_PushToCavatica.md). If you have multiple Cavatica projects, be sure to remember which project you chose to transfer your files into.
 
 * Switch to the [Cavatica interface](https://cavatica.sbgenomics.com/) and click on the project name.
 
