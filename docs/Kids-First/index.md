@@ -11,10 +11,12 @@ Resource Center
 
 Setting up your KF Portal Permissions:
 
-  - [Portal Overview](Setting-up-your-KF-Portal-Permissions/KF_1_PortalOverview.md)
-  - [Registration](Setting-up-your-KF-Portal-Permissions/KF_2_Registration.md)
-  - [Connecting Accounts](Setting-up-your-KF-Portal-Permissions/KF_3_ConnectingAccounts.md)
-  - [Accessing Data](Setting-up-your-KF-Portal-Permissions/KF_4_AccessingData.md)
+  - [Getting Started](Portal-Setup-And-Permissions/KF_1_Getting_Started.md)
+  - [The Setup](Portal-Setup-And-Permissions/KF_2_The_Setup.md)
+  - [KF Portal Registration](Portal-Setup-And-Permissions/KF_3_KF_Registration.md)
+  - [Cavatica Registration](Portal-Setup-And-Permissions/KF_4_Cavatica_Registration.md)
+  - [Connecting Accounts](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md)
+  - [Accessing Data](Portal-Setup-And-Permissions/KF_6_AccessingData.md)
 
 Exploring Data in the KF Portal:
 
@@ -31,3 +33,9 @@ Advanced KF Portal Queries:
   - [Checking Queries](Advanced-KF-Portal-Queries/KF_12_CheckingQueries.md)
 
 [Push to Cavatica](KF_7_PushToCavatica.md)
+
+Download KF Data To Local Machine
+
+  - [Data Download Options](Download_Data/index.md)
+  - [Data Download via KF Portal](Download_Data/Data-Download-Via-KF-Portal.md)
+  - [Data Download via Cavatica](Download_Data/Data-Download-Via-Cavatical.md)
