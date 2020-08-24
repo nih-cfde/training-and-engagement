@@ -17,7 +17,7 @@ The Kids First Portal method can be used to download files one at a time.
 
 *Cons: Slow and tedious when large number of files are required*
 
-  **Method 2: [Data Download via Cavatica](Data-Download-Via-Cavatical.md)**
+  **Method 2: [Data Download via Cavatica](Data-Download-Via-Cavatica.md)**
 
 The Cavatica method can be used to download multiple files at once. It involves three steps:
 
