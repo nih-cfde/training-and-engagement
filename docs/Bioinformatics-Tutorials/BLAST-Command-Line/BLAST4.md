@@ -12,6 +12,11 @@ Now, we'll use `curl` to download the files from a Web site onto our
 computer; note, these files originally came from the
 [NCBI FTP site](ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot)
 
+!!! Note:
+	
+	You can Copy/Paste multiple commands at a time, and they will execute in order
+
+
 ```
 curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
 curl -o mouse.2.protein.faa.gz -L https://osf.io/j2qxk/download
@@ -119,11 +124,20 @@ less mm-second.x.zebrafish.txt
 
 (and again, type 'q' to get out of paging mode.)
 
-Notes:
+!!! Tip
+	
+	We can verify the number of records by searching for all of the lines that include the '>' symbol
+	Type `grep '>' mm-second.faa | wc -l`
 
-* you can copy/paste multiple commands at a time, and they will execute in order;
+=== Quiz
 
-* why did it take longer to BLAST ``mm-second.faa`` than ``mm-first.faa``?
+	Why did it take longer to BLAST ``mm-second.faa`` than ``mm-first.faa``?
+
+=== Solution
+
+	``mm-second.faa`` has 96 sequences in comparison to ``mm-first.faa``
+	
+
 
 
 ----
