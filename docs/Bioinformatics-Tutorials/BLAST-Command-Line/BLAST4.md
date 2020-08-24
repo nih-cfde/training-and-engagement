@@ -66,7 +66,11 @@ head -n 11 mouse.1.protein.faa > mm-first.faa
 ```
 
 So now, for example, you can do `cat mm-first.faa` to see the contents of
-that file (or `less mm-first.faa`). TIP: if you try `less mm-first.faa` you will need to exit by pressing the `q` key in your keyboard.
+that file (or `less mm-first.faa`). 
+
+!!! TIP: 
+	
+	if you try `less mm-first.faa` you will need to exit by pressing the `q` key in your keyboard.
 
 Now let's BLAST these two sequences against the entire zebrafish
 protein data set. First, we need to tell BLAST that the zebrafish
