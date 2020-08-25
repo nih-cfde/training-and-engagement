@@ -68,7 +68,7 @@ The `-i` flag tells wget to look for a list of URLs.
 
 Notice that the file names look odd? There's a lot of text after the `.vcf.gz` part.
 
-`efd72641-c02c-4543-9ce9-f13d398189e1.kallisto.abundance.tsv.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIZAHWHQWDB7XV4RA%2F20200824%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200824T154453Z&X-Amz-Expires=3600&X-Amz-Signed`
+`cb1676e6-0f56-4972-92b4-f343a83dfd3e.strelka.PASS.vep.vcf.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIZAHWHQWDB7XV4RA%2F20200825%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200825T150049Z&X-Amz-Expires=3600&X-Amz-SignedHe`
 
 Not only does this extra text clutter your filenames, it also prevents your computer from recognizing the file format.
 
@@ -86,7 +86,7 @@ This command goes through the list of file names and deletes all characters star
     If you are working with a different file format, remember to change the 'vcf.gz' extension to reflect the correct format. For example, if you download tsv files, your command would look like this:
 
     ```
-    for i in `ls`; do mv $i `ls $i | grep '.tsv' | cut -d'?' -f1`; done
+    for i in `ls`; do mv $i `ls $i | grep 'tsv.gz' | cut -d'?' -f1`; done
     ```
 
 Check your folder - you have now successfully downloaded KF files to your local machine!
