@@ -6,11 +6,11 @@ There are two ways to follow this tutorial:
 
 **A) Use the pangeo binder.** This is a good option if you don't have access to a Unix/Linux computer.
 
-- Open the binder environment with the 'Launch binder' button below in a **new tab**. It will take a few minutes to build:
+- Open the binder environment with the "Launch binder" button below in a **new tab**. It will take a few minutes to build:
 
     [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder)
 
-- Click on the `Terminal` button to launch it:
+- Click on the "Terminal" button to launch it:
 
     ![](../../images/snakemake_binder_terminal.png)
 
@@ -19,11 +19,11 @@ There are two ways to follow this tutorial:
 !!! warning
     When you close the binder, it does NOT save your work so download any files you want to keep.
 
-- To download files, right-click the file you want to save, and select 'Download':
+- To download files, right-click the file you want to save, and select "Download":
 
     ![](../../images/snakemake_binder_download.png)
 
-- To close the binder, go to 'File' and click 'Shut Down':
+- To close the binder, go to "File" and click "Shut Down":
 
     ![](../../images/snakemake_binder_close.png)
 
@@ -39,7 +39,7 @@ We will use conda to create an computer software for this tutorial. If you don't
 
     Please refer to the [conda command cheatsheet](./conda_cheatsheet.md) for commonly used conda commands!
 
-### 1. Download tutorial files:
+### Step 1: Download tutorial files:
 
 First, create a new directory for this tutorial in the `(base)` conda environment, e.g.,:
 
@@ -49,11 +49,11 @@ mkdir learn_snakemake
 
 We need two files for this tutorial. Click the links and save them in the directory you created above: 1) [environment.yml](./snakemake_tutorial_docs/environment.yml) and 2) [Snakefile](./snakemake_tutorial_docs/Snakefile.py).
 
-Rename the `Snakefile.py` to `Snakefile`. There should be no file extension (we just added it so you'd be able to download the file!).
+Rename the "Snakefile.py" to "Snakefile". There should be no file extension (we just added it so you'd be able to download the file!).
 
-### 2. Create new conda environment:
+### Step 2: Create new conda environment:
 
-The environment.yml file tells conda 1) where to look for the software installations under 'channels' and 2) what software to install under 'dependencies'. You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial:
+The "environment.yml" file tells conda 1) where to look for the software installations under "channels" and 2) what software to install under "dependencies". You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial:
 
 channels:
 
@@ -68,12 +68,12 @@ dependencies:
   - samtools=1.10
   - bcftools
 
-Create new environment called `snaketest` from the `(base)` environment:
+Create a new environment called `snaketest` from the `(base)` environment:
 ```
 conda env create -n snaketest -f environment.yml
 ```
 
-### 3. Activate conda environment:
+### Step 3: Activate conda environment:
 
 ```
 conda activate snaketest
@@ -81,7 +81,7 @@ conda activate snaketest
 
 Note that your terminal command prompt should now look like `(snaketest) $` instead of `(base) $`.
 
-### 4. Test that your environment is ready to go
+### Step 4: Test that your environment is ready to go
 
 You should have several software installed in your `snaketest` environment now. Check it out!
 
@@ -101,27 +101,19 @@ You should have several software installed in your `snaketest` environment now. 
 
 If you get an error, the software installation may have failed. You can check the software that is installed in your conda environment: `conda list`.
 
-You can leave the conda environment with: `conda deactivate`.
+To leave the conda environment, type: `conda deactivate`.
 
 Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved with `conda install`. This step will take a few minutes and the installation should be done in the `base` conda environment:
 
 Go back to base environment:
-
-=== "Input"
-
-    ```
-    conda deactivate
-    ```
-
+```
+conda deactivate
+```
 
 Install `wget`:
-
-=== "Input"
-
-    ```
-    conda install -c anaconda wget
-    ```
-
+```
+conda install -c anaconda wget
+```
 
 Test installation:
 
@@ -130,7 +122,6 @@ Test installation:
     ```
     wget --version
     ```
-
 
 === "Expected Output"
 
