@@ -64,6 +64,10 @@ The `-i` flag tells `wget` to look for a list of URLs from a file.
 
 * Depending on the number of files you selected, the download command may take a few seconds to minutes. When it is complete, all your files will appear in your "KF_Data" folder.
 
+### Terminal vidlet: wget to download data
+
+<script id="asciicast-355576" src="https://asciinema.org/a/355576.js" async></script>
+
 ## Step 3: Clean up file names
 
 Notice that the file names look odd? There's a lot of text after the `.vcf.gz` part:
@@ -88,3 +92,7 @@ This command loops through the list of file names in "KF_Data" and renames the f
     ```
 
 Check your folder - you have now successfully downloaded KF files to your local machine!
+
+### Terminal vidlet: clean up file names
+
+<script id="asciicast-355593" src="https://asciinema.org/a/355593.js" async></script>
