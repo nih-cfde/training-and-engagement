@@ -38,4 +38,4 @@ Download KF Data To Local Machine
 
   - [Data Download Options](Download_Data/index.md)
   - [Data Download via KF Portal](Download_Data/Data-Download-Via-KF-Portal.md)
-  - [Data Download via Cavatica](Download_Data/Data-Download-Via-Cavatical.md)
+  - [Data Download via Cavatica](Download_Data/Data-Download-Via-Cavatica.md)
