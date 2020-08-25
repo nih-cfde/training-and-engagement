@@ -10,7 +10,7 @@ The easiest way to download a small number of files (one by one) onto your local
 
 * On the [KF Portal](https://portal.kidsfirstdrc.org/dashboard), identify your files of interest and look for the "Actions" column.
 
-* In the "Actions" columns, click on the little downward arrow located on the same row as your file of interest (shown in figure below)
+* In the "Actions" column, click on the little downward arrow located on the same row as your file of interest (shown in figure below)
 
 ![](images/File_download_one_by_one.png)
 

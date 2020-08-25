@@ -40,7 +40,7 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
 ![](images/Cavatica_Download_Links_2.png)
 
 
-* Click "Download link" and save the text file in the `KF_Data` folder on the `Desktop` of your local machine.
+* Click "Download link" and save the text file in the "KF_Data" folder on the "Desktop" of your local machine.
 
 * A text file called "download-links.txt" will appear on your computer. It contains a list of links that you can use for downloading vcf files.
 
@@ -62,7 +62,7 @@ wget -i download-links.txt
 ```
 The `-i` flag tells `wget` to look for a list of URLs from a file.
 
-* Depending on the number of files you selected, the download command may take a few seconds to minutes. When it is complete, all your files will appear in your `KF_Data` folder.
+* Depending on the number of files you selected, the download command may take a few seconds to minutes. When it is complete, all your files will appear in your "KF_Data" folder.
 
 ## Step 3: Clean up file names
 
@@ -78,7 +78,7 @@ One way to clean up file names is to change each file name manually. However, ma
 for i in `ls`; do mv $i `ls $i | grep 'vcf.gz' | cut -d'?' -f1`; done
 ```
 
-This command loops through the list of file names in `KF_Data` and renames the files by deleting all characters after the `vcf.gz` extension starting from the `?` in the file name (`-d` specifies a text delimiter, `-f1` keeps the first element which is the file name up to the `vcf.gz` part.).
+This command loops through the list of file names in "KF_Data" and renames the files by deleting all characters after the `vcf.gz` extension starting from the `?` in the file name (`-d` specifies a text delimiter, `-f1` keeps the first element which is the file name up to the `vcf.gz` part).
 
 !!! Important
     This clean up command was written to look through files with the pattern `vcf.gz` in them. To apply the same renaming command to files with other extensions, such as a `.tsv` file, modify the code as follows:
