@@ -73,6 +73,11 @@ Create a new environment called `snaketest` from the `(base)` environment:
 conda env create -n snaketest -f environment.yml
 ```
 
+Use this command if you are running the pangeo binder:
+```
+conda env create -n snaketest -f ./binder/environment.yml
+```
+
 ### Step 3: Activate conda environment:
 
 ```
