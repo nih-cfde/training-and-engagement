@@ -82,7 +82,9 @@ To the `download_genome` rule, add:
     output: "ecoli-rel606.fa.gz"
     ```
 
-    To the `uncompress_genome` rule, add an input and output:
+To the `uncompress_genome` rule, add an input and output:
+
+=== "Input"
 
     ```
     rule uncompress_genome:
