@@ -42,17 +42,18 @@ cd Downloads
 ```
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
-- you will be asked to review the license. Hit return key and scroll through.
+
+- you will be asked to review the license. Hit `RETURN` key and scroll through.
 
 - you will be asked if you accept the license terms. Type `yes`.
 
-- Miniconda will be installed in the location printed on the screen. Hit return key to confirm.
+- Miniconda will be installed in the location printed on the screen. Hit `RETURN` key to confirm.
 
 - Miniconda will now be installed. This takes a few minutes to complete. The progress will be displayed in the Terminal window.
 
 - you will be asked if you wish the installer to initialize Miniconda3 by running conda init. Type `yes`.
 
-- for changes to take effect, close and re-open Terminal window.
+- for changes to take effect, `exit` and re-open Terminal window.
 
 ### d. Verify that you can run conda
 - now, when you re-open Terminal, the command prompt will start with `(base)`, indicating that you are in the base conda environment. It will look something like this:
@@ -61,7 +62,7 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 (base) $
 ```
 
-- try checking the version of your new conda installation:
+- check the version of your new conda installation:
 
 === "Input"
 
@@ -96,12 +97,12 @@ There is always a `(base)` conda environment. You can then create new environmen
 conda create -n <name of env>
 ```
 
-This takes a few minutes (you'll see the message 'Solving environment'). Conda will then ask you to confirm the location of the new environment. Type `y`.
+This takes a few minutes (you'll see the message "Solving environment"). Conda will then ask you to confirm the location of the new environment. Type `y`.
 
 More options to customize the environment are documented under the help page for this command: `conda create -h`.
 
-If you want to create an environment from a text file called 'environment.yml' that specifies the environment's requirements, the command would look like this:
-`conda env create -n <new conda env name> -f environment.yml`. The `-f` flag specifies the .yml file that contains software requirements.
+If you want to create an environment from a text file called "environment.yml" that specifies the environment's requirements, the command would look like this:
+`conda env create -n <new conda env name> -f environment.yml`. The `-f` flag specifies the `.yml` file that contains software requirements.
 
 ## Step 3: Activate conda environment
 
@@ -109,7 +110,7 @@ If you want to create an environment from a text file called 'environment.yml' t
 conda activate <conda env name>`
 ```
 
-Now, your command prompt starts with `(<conda env name>)`. If you named your new environment 'potato' it would look like this:
+Now, your command prompt starts with `(<conda env name>)`. If you named your new environment "potato" it would look like this:
 
 ```
 (potato) $
