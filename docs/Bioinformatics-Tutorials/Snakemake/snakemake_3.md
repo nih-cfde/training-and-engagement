@@ -2,10 +2,11 @@
 
 In the previous steps, the Snakemake rules were run individually. But what if we want to run all the commands at once? It gets tedious to run each command individually, and we can do that already without Snakemake!
 
-By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this:
+By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this, where `input:`, `output:`, and `shell:` are Snakemake directives:
 
-!!! snakemake
+=== "Input"
 
+    ```
     rule rule_name:
 
         input:
@@ -27,6 +28,7 @@ By defining the inputs and outputs for each rule's command/commands, Snakemake c
             command_1
             command_2
             """
+    ```
 
 Here, Snakemake interprets the `input:` and `output:` sections as Python code, and the `shell:` section as the bash code that gets run on the command line.
 
@@ -41,22 +43,30 @@ Let's start with a clean slate. Delete any output files you created in the secti
 
 The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to the rule, note that the output file must be in quotes `""`:
 
-!!! snakemake
+=== "Input"
 
+    ```
     rule download_data:
     
         output: "SRR2584857_1.fastq.gz"
         shell:
             "wget https://osf.io/4rdza/download -O SRR2584857_1.fastq.gz"
-            
+    ```
+
 Try: Run the `download_data` rule twice.
 
-```
-snakemake -p download_data
-```
 
-You will notice the following message after the second run of `download_data`:
-![](../../images/snakemake_nothingtobedone.jpeg)
+=== "Input"
+
+    ```
+    snakemake -p download_data
+    ```
+
+=== "Expected Output"
+    
+    You will notice the following message after the second run of `download_data`:
+
+    ![](../../images/snakemake_nothingtobedone.jpeg)
 
 Delete the file: `rm SRR2584857_1.fastq.gz`. Now run the rule again.
 
@@ -66,20 +76,22 @@ This time the shell command is executed! By explicitly including the `output` fi
 
 To the `download_genome` rule, add:
 
-!!! snakemake
+=== "Input"
 
+    ```
     output: "ecoli-rel606.fa.gz"
+    ```
 
-To the `uncompress_genome` rule, add an input and output:
+    To the `uncompress_genome` rule, add an input and output:
 
-!!! snakemake
-
+    ```
     rule uncompress_genome:
 
         input: "ecoli-rel606.fa.gz"
         output: "ecoli-rel606.fa"
         shell:
             "gunzip ecoli-rel606.fa.gz"
+     ```           
 
 What does this do?
 
@@ -87,13 +99,17 @@ The code chunk informs Snakemake that `uncompress_genome` depends on having the 
 
 In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked!
 
-Run: 
-```
-snakemake -p uncompress_genome
-```
+=== "Input"
+    
+    ```
+    snakemake -p uncompress_genome
+    ```
 
-As expected, two rules are executed in the specified order: first the `download_genome` followed by `uncompress_genome` rule.
-![](../../images/snakemake_twosteps.jpeg)
+=== "Expected Output"
+    
+    As expected, two rules are executed in the specified order: first the `download_genome` followed by `uncompress_genome` rule.
+    
+    ![](../../images/snakemake_twosteps.jpeg)
 
 !!! recap
     - `input` and `output` (and other things) can be in any order, as long as they are before `shell`
