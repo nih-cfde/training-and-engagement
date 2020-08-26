@@ -1,6 +1,6 @@
 # The Snakefile
 
-Snakemake uses a file called 'Snakefile' to configure the steps, or rules, of your pipeline. The basic Snakefile consists of several rules defining the inputs, outputs, and rule commands. 
+Snakemake uses a file called "Snakefile" to configure the steps, or rules, of your pipeline. The basic Snakefile consists of several rules defining the inputs, outputs, and rule commands. 
 
 !!! tip
 
@@ -19,11 +19,12 @@ Let's take a look at the Snakefile using the nano text editor:
 nano -ET4 Snakefile
 ```
 
-This is the skeleton of our Snakefile for calling variants. The command above tells nano to open the Snakefile and to create 4 spaces when you hit the `tab` key. The Snakefile is written in the Python programming language, which uses specific indentation formatting to interpret the code. Incorrect indentation will result in syntax errors.
+This is the skeleton of our Snakefile for calling variants. The command above tells nano to open the Snakefile and to create 4 spaces when you hit the `TAB` key. The Snakefile is written in the Python programming language, which uses specific indentation formatting to interpret the code. Incorrect indentation will result in syntax errors.
 
 There are several rules defined with commands to run, but we'll need to add a few more details by editing with nano.
 
-!!! note "Practice"
+=== "Exercise" 
+
     Add a comment to the Snakefile:
 
     1. open Snakefile in `nano`
@@ -37,6 +38,7 @@ There are several rules defined with commands to run, but we'll need to add a fe
     5. view the Snakefile in Terminal with: `less Snakefile`.
 
     6. if you can see your comment, it worked! Exit the `less` view by hitting `q` key.
+    
 
 !!! Tip
 
@@ -48,7 +50,7 @@ Ok, let's move on and take a look at the structure of the Snakefile rules.
 
 Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
 
-!!! snakemake
+=== "Input"
 
     rule rule_name:
     
@@ -63,14 +65,17 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
 
 There are several rules in the Snakefile. Let's do a search for all the rules in the file:
 
-```
-grep rule Snakefile
-```
+=== "Input"
 
-The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline:
+    ```
+    grep rule Snakefile
+    ```
 
-!!! output
+=== "Output"
 
+    The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline:
+    
+    ```
     rule download_data:
 
     rule download_genome:
@@ -92,6 +97,7 @@ The output is a list of the lines in the Snakefile with the word 'rule' in them.
     rule samtools_mpileup:
 
     rule make_vcf:
+    ```
 
 ## Snakemake & Snakefile
 
@@ -101,7 +107,7 @@ Let's try running a Snakemake rule:
 snakemake -p map_reads
 ```
 
-The `-p` means 'show the command that you're running'.
+The `-p` means show the command that you're running.
 
 !!! tip
     
@@ -150,8 +156,11 @@ snakemake -p index_genome_bwa
 snakemake -p map_reads
 ```
 
-Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any error!**. In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
+Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any error!**. 
 
+!!! Tip
+
+    Please refer to the [Snakemake command cheatsheet](./snakemake_cheatsheet.md) for commonly used Snakemake commands!
 
 !!! recap
 
@@ -165,6 +174,4 @@ Check the working directory again. The directory is populated by many output fil
     - the code is case-sensitive
     - tabs and spacing matters
 
-!!! Tip
-
-    Please refer to the [Snakemake command cheatsheet](./snakemake_cheatsheet.md) for commonly used Snakemake commands!
+In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
