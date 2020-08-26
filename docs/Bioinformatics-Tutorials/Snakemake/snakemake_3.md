@@ -4,7 +4,7 @@ In the previous steps, the Snakemake rules were run individually. But what if we
 
 By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this, where `input:`, `output:`, and `shell:` are Snakemake directives:
 
-=== "Input"
+=== "Snakemake rule"
 
     ```
     rule rule_name:
@@ -43,7 +43,7 @@ Let's start with a clean slate. Delete any output files you created in the secti
 
 The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to the rule, note that the output file must be in quotes `""`:
 
-=== "Input"
+=== "Snakemake rule"
 
     ```
     rule download_data:
@@ -66,7 +66,7 @@ Try: Run the `download_data` rule twice.
     
     You will notice the following message after the second run of `download_data`:
 
-    ![](../../images/snakemake_nothingtobedone.jpeg)
+    ![snakemake nothing to be done message](../../images/snakemake_nothingtobedone.jpeg)
 
 Delete the file: `rm SRR2584857_1.fastq.gz`. Now run the rule again.
 
@@ -76,7 +76,7 @@ This time the shell command is executed! By explicitly including the `output` fi
 
 To the `download_genome` rule, add:
 
-=== "Input"
+=== "Snakemake rule"
 
     ```
     output: "ecoli-rel606.fa.gz"
@@ -85,7 +85,7 @@ To the `download_genome` rule, add:
 
 To the `uncompress_genome` rule, add an input and output:
 
-=== "Input"
+=== "Snakemake rule"
 
     ```
     rule uncompress_genome:
@@ -112,7 +112,7 @@ In this case, if we were to run the `uncompress_genome` rule at the terminal, it
     
     As expected, two rules are executed in the specified order: first the `download_genome` followed by `uncompress_genome` rule.
     
-    ![](../../images/snakemake_twosteps.jpeg)
+    ![snakemake runs two steps in order](../../images/snakemake_twosteps.jpeg)
 
 !!! recap
     - `input:` and `output:` (and other Snakemake directives) can be written in any order, as long as they are before `shell:`. The Snakemake [manual](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#) describes other directives you can add to Snakemake rules.
