@@ -42,7 +42,7 @@ There are several rules defined with commands to run, but we'll need to add a fe
 
 !!! Tip
 
-    Please refer to the [bash command cheatsheet](./bash_cheatsheet.md) for commonly used `nano` commands and other shortcuts for navigating your Terminal!
+    Please refer to the [bash command cheatsheet](../../Tutorial-Reference-Material/bash_cheatsheet.md) for commonly used `nano` commands and other shortcuts for navigating your Terminal!
 
 Ok, let's move on and take a look at the structure of the Snakefile rules.
 
