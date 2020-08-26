@@ -50,7 +50,7 @@ Ok, let's move on and take a look at the structure of the Snakefile rules.
 
 Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
 
-=== "Input"
+=== "Snakemake rule"
 
     ```
     rule rule_name:
@@ -117,7 +117,7 @@ Let's try running a Snakemake rule:
 
     Oops, this will fail! Why?
     
-    ![](../../images/snakemake_rule_error_msg.jpeg)
+    ![snakemake map reads rule error](../../images/snakemake_rule_error_msg.jpeg)
     
     As the error message in red states, the rule failed because we don't have any of the input files required to run this rule yet! For the mapping rule to work, we need the raw read (`.fastq.gz`) file and reference genome (`.fa.gz`) that should be indexed.
 
@@ -139,7 +139,7 @@ Snakemake runs the shell command listed under the `download_data` rule. In this 
     
     It worked!
 
-    ![](../../images/snakemake_downloaddata.jpeg)
+    ![snakemake downloaded data](../../images/snakemake_downloaddata.jpeg)
 
 Check the working directory. There should now be a `.fastq.gz` file:
 
