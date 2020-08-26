@@ -10,7 +10,7 @@ Keyboard shortcuts for terminal:
 
 !!! tip
 
-  Keyboard presses with the `Ctrl` key are shown with a `+` to indicate that you press `Ctrl` and the other key together.
+    Keyboard presses with the `Ctrl` key are shown with a `+` to indicate that you press `Ctrl` and the other key together.
 
 Bash | Description
 --- | ---
