@@ -52,6 +52,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
 
 === "Input"
 
+    ```
     rule rule_name:
     
         shell:
@@ -61,6 +62,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
             # command must be enclosed in quotes
             
             "command"
+    ```
       
 
 There are several rules in the Snakefile. Let's do a search for all the rules in the file:
@@ -103,30 +105,39 @@ There are several rules in the Snakefile. Let's do a search for all the rules in
 
 Let's try running a Snakemake rule:
 
-```
-snakemake -p map_reads
-```
+=== "Input"
 
-The `-p` means show the command that you're running.
+    ```
+    snakemake -p map_reads
+    ```
+    
+    The `-p` means show the command that you're running.
+    
+=== "Output"
+
+    Oops, this will fail! Why?
+    
+    ![](../../images/snakemake_rule_error_msg.jpeg)
+    
+    As the error message in red states, the rule failed because we don't have any of the input files required to run this rule yet! For the mapping rule to work, we need the raw read (`.fastq.gz`) file and reference genome (`.fa.gz`) that should be indexed.
 
 !!! tip
     
     The placement of snakemake flags must follow the `snakemake` command, but otherwise the location does not matter. Thus, `snakemake -p map_reads` will run the same as `snakemake map_reads -p`.
 
-Oops, this will fail! Why?
-![](../../images/snakemake_rule_error_msg.jpeg)
-
-As the error message in red states, the rule failed because we don't have any of the input files required to run this rule yet! For the mapping rule to work, we need the raw read (`.fastq.gz`) file and reference genome (`.fa.gz`) that should be indexed.
-
-Let's start with the first rule in the Snakefile:
-```
-snakemake -p download_data
-```
+Let's try again, starting with the first rule in the Snakefile:
 
 Snakemake runs the shell command listed under the `download_data` rule. In this case, the shell command downloads the raw read file from a public repository on [osf.io](https://osf.io).
 
-It worked!
-![](../../images/snakemake_downloaddata.jpeg)
+=== "Input"
+    ```
+    snakemake -p download_data
+    ```
+=== "Output"
+    
+    It worked!
+
+    ![](../../images/snakemake_downloaddata.jpeg)
 
 Check the working directory. There should now be a `.fastq.gz` file:
 ```
