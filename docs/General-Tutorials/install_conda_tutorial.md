@@ -107,7 +107,7 @@ If you want to create an environment from a text file called "environment.yml" t
 ## Step 3: Activate conda environment
 
 ```
-conda activate <conda env name>`
+conda activate <conda env name>
 ```
 
 Now, your command prompt starts with `(<conda env name>)`. If you named your new environment "potato" it would look like this:
