@@ -73,7 +73,7 @@ There are several rules in the Snakefile. Let's do a search for all the rules in
     grep rule Snakefile
     ```
 
-=== "Output"
+=== "Expected Output"
 
     The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline:
     
@@ -113,7 +113,7 @@ Let's try running a Snakemake rule:
     
     The `-p` means show the command that you're running.
     
-=== "Output"
+=== "Expected Output"
 
     Oops, this will fail! Why?
     
@@ -133,19 +133,28 @@ Snakemake runs the shell command listed under the `download_data` rule. In this 
     ```
     snakemake -p download_data
     ```
-=== "Output"
+=== "Expected Output"
     
     It worked!
 
     ![](../../images/snakemake_downloaddata.jpeg)
 
 Check the working directory. There should now be a `.fastq.gz` file:
-```
-ls -lht
-```
 
-This command shows you the file permissions, number of links, owner name, owner group, file size in bytes, time of last modification, and file/directory name.
+=== "Input"
+    
+    ```
+    ls -lht
+    ```
+=== "Expected Output"    
 
+    This command shows you the file permissions, number of links, owner name, owner group, file size in bytes, time of last modification, and file/directory name.
+
+    ```
+    -rw-r--r-- 1 jovyan root   8.4M Aug 26 00:35 SRR2584857_1.fastq.gz
+    -rw-r--r-- 1 jovyan jovyan 1.2K Jul 23 00:01 Snakefile
+    ```
+    
 Next run some more rules sequentially – one at a time:
 ```
 snakemake -p download_data
