@@ -82,6 +82,7 @@ To the `download_genome` rule, add:
     output: "ecoli-rel606.fa.gz"
     ```
 
+
 To the `uncompress_genome` rule, add an input and output:
 
 === "Input"
@@ -93,7 +94,7 @@ To the `uncompress_genome` rule, add an input and output:
         output: "ecoli-rel606.fa"
         shell:
             "gunzip ecoli-rel606.fa.gz"
-     ```           
+    ```           
 
 What does this do?
 
@@ -114,7 +115,7 @@ In this case, if we were to run the `uncompress_genome` rule at the terminal, it
     ![](../../images/snakemake_twosteps.jpeg)
 
 !!! recap
-    - `input:` and `output:` (and other Snakemake directives) can be in any order, as long as they are before `shell:`
+    - `input:` and `output:` (and other Snakemake directives) can be written in any order, as long as they are before `shell:`. The Snakemake [manual](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#) describes other directives you can add to Snakemake rules.
     - for each of the above elements, their contents can be all on one line, or form a block by indenting
     - you can make lists for multiple input or output files by separating filenames with a comma
     - rule names can be any valid variable, which basically means letters and underscores; you can use numbers after a first character; no spaces!
