@@ -130,9 +130,11 @@ Let's try again, starting with the first rule in the Snakefile:
 Snakemake runs the shell command listed under the `download_data` rule. In this case, the shell command downloads the raw read file from a public repository on [osf.io](https://osf.io).
 
 === "Input"
+
     ```
     snakemake -p download_data
     ```
+    
 === "Expected Output"
     
     It worked!
@@ -146,6 +148,7 @@ Check the working directory. There should now be a `.fastq.gz` file:
     ```
     ls -lht
     ```
+    
 === "Expected Output"    
 
     This command shows you the file permissions, number of links, owner name, owner group, file size in bytes, time of last modification, and file/directory name.
