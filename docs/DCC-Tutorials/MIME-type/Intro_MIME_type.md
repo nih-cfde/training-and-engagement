@@ -16,7 +16,7 @@ media-type/subtype-identifier
 
 The [Internet Assigned Numbers Authority (IANA)](https://www.iana.org) is the
 governing body responsible for all the [official MIME types](https://www.iana.org/assignments/media-types/media-types.xhtml).
-Internet programs such as Web servers and browsers work with MIME type and not file extensions to ensure consistent transfer of same types of files irrespective of the underlying operating system. Upload of DCC data to CFDE portal and download by users or other DCCs is a crucial example where MIME type will help determine content of the media-types and avoid erroneous file transfers.
+Internet programs such as Web servers and browsers work with MIME type and not file extensions to ensure consistent transfer of same types of files irrespective of the underlying operating system. Upload of Common Fund (CF) data to CFDE portal and download by users or other CF programs is a crucial example where MIME type will help determine content of the media-types and avoid erroneous file transfers.
 
 A few general rules for the MIME types are:
 

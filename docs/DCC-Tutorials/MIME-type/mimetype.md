@@ -8,6 +8,8 @@ mimetype
 
 Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages/trusty/man1/mimetype.1p.html). This closely follows the `file` command but uses MIME types instead of descriptions.
 
+<asciinema-player src="../mime_supplementary_files/mimetype_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mTerminal Vidlet for mimetype"></asciinema-player>
+
 === "Installation"
 
     ```
@@ -23,8 +25,8 @@ Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages
 === "Example output"
 
     ```
-    mimetype 9969477031_R02C01_Red.idat
-    9969477031_R02C01_Red.idat: application/octet-stream
+    mimetype 6285633006_R03C01_Red.idat
+    6285633006_R03C01_Red.idat: application/octet-stream
     ```
 
 There are multiple options to customize the output. The `--describe` or `-d` option returns the file description instead of MIME type. The `-D` or `--debug` option prints the logic behind choosing the MIME type for the file.
@@ -38,19 +40,19 @@ There are multiple options to customize the output. The `--describe` or `-d` opt
 === "Example output"
 
     ```
-    mimetype -D 9969477031_R02C01_Red.idat
+    mimetype -D 6285633006_R03C01_Red.idat
 
     > Data dirs are: /home/ubuntu/.local/share, /usr/local/share, /usr/share, /var/lib/snapd/desktop
     > Checking inode type
-    > Checking globs for basename '9969477031_R02C01_Red.idat'
+    > Checking globs for basename '6285633006_R03C01_Red.idat'
     > Checking for extension '.idat'
-    > Checking globs for basename '9969477031_r02c01_red.idat'
+    > Checking globs for basename '6285633006_R03C01_Red.idat'
     > Checking for extension '.idat'
     > Value "^@" at offset 36 matches at /usr/share/mime/magic line 770
     > Failed nested rules
     > File exists, trying default method
     > First 10 bytes of the file contain control chars
-    9969477031_R02C01_Red.idat: application/octet-stream
+    6285633006_R03C01_Red.idat: application/octet-stream
     ```
 
 `mimetype` allows for addition of custom MIME types.
@@ -88,8 +90,8 @@ sudo update-mime-database /usr/share/mime
 Rerunning the code now results in the updated MIME type.
 
 ```
-mimetype 9969477031_R02C01_Red.idat
-9969477031_R02C01_Red.idat: application/vnd.binary
+mimetype 6285633006_R03C01_Red.idat
+6285633006_R03C01_Red.idat: application/vnd.binary
 ```
 
 !!! note "Revert to default"

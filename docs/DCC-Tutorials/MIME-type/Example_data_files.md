@@ -11,11 +11,12 @@ For this tutorial there are two options to obtain the example files. You can eit
 General Example Files
 -----------------------
 Download the compressed data and extract to view the files.
- ```
- curl -L https://osf.io/erj8n/download -o MIME_example_files.tar.gz
- tar -zxvf MIME_example_files.tar.gz
- ```
-The directory structure of the resulting example_files_MIME:
+
+```
+curl -L https://osf.io/erj8n/download -o MIME_example_files.tar.gz
+tar -zxvf MIME_example_files.tar.gz
+```
+The directory structure of the resulting `example_files_MIME`:
 
 ```
 .

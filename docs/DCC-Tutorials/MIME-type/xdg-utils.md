@@ -8,6 +8,9 @@ xdg-utils
 
 Another option is to use the [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package which also offers options for modifying and adding new MIME types.
 
+<asciinema-player src="../mime_supplementary_files/xdg-mime_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mTerminal Vidlet for xdg-mime"></asciinema-player>
+
+
 === "Installation"
 
     ```
@@ -24,7 +27,7 @@ Another option is to use the [xdg-utils](https://www.freedesktop.org/wiki/Softwa
 === "Example output"
 
     ```
-    xdg-mime query filetype 9969477031_R02C01_Red.idat
+    xdg-mime query filetype 6285633006_R03C01_Red.idat
     application/octet-stream
     ```
 
@@ -41,7 +44,7 @@ Adding custom MIME types is similar to the `mimetype` utility: we can create the
 ```
 
 !!! note "shared-mime-info"
-    The `shared-mime-info` packages contains the core database of common MIME types and is utilized by both `xdg-mime` and `mimetype`. If run consecutively, changes made in the previous section for `mimetype` will reflect with `xdg-mime` without additional steps for adding custom  types.
+    The `shared-mime-info` packages contains the core database of common MIME types and is utilized by both `xdg-mime` and `mimetype`. If run consecutively, changes made in the previous section for `mimetype` will reflect with `xdg-mime` without additional steps of adding custom  types.
 
 Update the database:
 

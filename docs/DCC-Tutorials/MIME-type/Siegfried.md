@@ -3,7 +3,8 @@ layout: page
 title: Siegfried
 ---
 
-#### Siegfried
+Siegfried
+==========
 
 Another signature-based file format identification tool is Siegfried. The current installation instructions are for **64-bit systems running Ubuntu/Debian OS**. A full list of options and installation instructions for multiple platforms can be found on the [official page](https://www.itforarchivists.com/siegfried).
 
@@ -24,7 +25,7 @@ Another signature-based file format identification tool is Siegfried. The curren
 === "Example output"
 
     ```
-    sf 9969477031_R02C01_Red.idat
+    sf 6285633006_R03C01_Red.idat
 
     ---
     siegfried   : 1.8.0
@@ -35,8 +36,8 @@ Another signature-based file format identification tool is Siegfried. The curren
       - name    : 'pronom'
         details : 'DROID_SignatureFile_V96.xml; container-signature-20200121.xml'
     ---
-    filename : '9969477031_R02C01_Red.idat'
-    filesize : 8095228
+    filename : '6285633006_R03C01_Red.idat'
+    filesize : 8095283
     modified : 2020-08-05T20:51:17Z
     errors   :
     matches  :
@@ -51,7 +52,7 @@ Another signature-based file format identification tool is Siegfried. The curren
 
 The default results are in the [National Archives UK's PRONOM](https://www.nationalarchives.gov.uk/PRONOM/Default.aspx) file format signature which is displayed in YAML format. There are built in flags such as `-csv` or `-json` to change the output format.
 
-Modification and customization of the underlying signature database is done using [`roy` tool](https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY). It is installed with homebrew and Ubuntu packages. [Installation instruction](https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY) in documentation for `roy`. To build a MIME-info signature file, we can use the included signature files from [Apache Tika](https://tika.apache.org) (tika-mimetypes.xml) and [freedesktop.org](https://www.freedesktop.org/wiki/) (freedesktop.org.xml) and use the `-mi` flag. The `roy build` creates a new signature file while `roy add` adds a new identifier to an existing signature file. The changes will be reflected to the included `default.sig` file.
+Modification and customization of the underlying signature database is done using [`roy` tool](https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY). It is installed with homebrew and Ubuntu packages. [More information](https://github.com/richardlehane/siegfried/wiki/Building-a-signature-file-with-ROY) in documentation for `roy`. To build a MIME-info signature file, we can use the included signature files from [Apache Tika](https://tika.apache.org) (tika-mimetypes.xml) and [freedesktop.org](https://www.freedesktop.org/wiki/) (freedesktop.org.xml) and use the `-mi` flag. The `roy build` creates a new signature file while `roy add` adds a new identifier to an existing signature file. The changes will be reflected to the included `default.sig` file.
 
 !!! note "MIME-info signature file"
     [Apache Tika](https://tika.apache.org) and [freedesktop.org](https://www.freedesktop.org/wiki/) are examples of software projects that contain toolkits for content detection and metadata extraction for many commonly used file types all stored in their respective MIME-info signature files. `roy` allows the ability to use any valid MIME-info file as a source when building signatures.
@@ -60,17 +61,17 @@ Modification and customization of the underlying signature database is done usin
 
     ```
     # Build a MIME-info database using tika identifiers
-    roy build -mi tika-mimetypes.xml
+    sudo roy build -mi tika-mimetypes.xml
 
     # Add freedesktop.org MIME signature list
-    roy add -mi freedesktop.org.xml
+    sudo roy add -mi freedesktop.org.xml
     ```
 
 === "MIME-info output"
 
     ```
     # Get MIME type
-    sf 9969477031_R02C01_Red.idat
+    sf 6285633006_R03C01_Red.idat
 
     ---
     siegfried   : 1.8.0
@@ -83,8 +84,8 @@ Modification and customization of the underlying signature database is done usin
       - name    : 'freedesktop.org'
         details : 'freedesktop.org.xml (1.15, 2019-10-30)'
     ---
-    filename : '9969477031_R02C01_Red.idat'
-    filesize : 8095228
+    filename : '6285633006_R03C01_Red.idat'
+    filesize : 8095283
     modified : 2020-08-04T04:23:05Z
     errors   :
     matches  :
@@ -107,13 +108,13 @@ The output has updated `identifiers` to indicate the underlying database and the
 !!! note "Aliases"
     You can use aliases tika and freedektop in the above commands instead of the full `.xml` file name. For example:
     ```
-    roy build -mi tika
+    sudo roy build -mi tika
     ```
 To add custom MIME types, we can update either of the two MIME-info files. The `xml` format remains consistent with previous examples for `mimetype` and `xdg-mime` and can be added to either `tika-mimeinfo.xml` or `freedesktop.org.xml`.
 
 ```
 # Open the xml file
-sudoedit /usr/share/siegfried/freedektop.org.xml
+sudoedit /usr/share/siegfried/freedesktop.org.xml
 
 # Add the entry for .idat
   <mime-type type="application/vnd.binary">
@@ -124,21 +125,27 @@ sudoedit /usr/share/siegfried/freedektop.org.xml
 
 We can now build a MIME-info database with the updated files. Instead of overwriting the `default.sig` file, it is best practice to create a different signature file with different identifier using the `-name` flag. We can also create a single signature file with multiple identifiers. In our example, the `.idat` entry was added to the `freedesktop.org.xml` file. Since it would be useful to keep original identifiers, a custom signature file is built.
 
+!!! note "default.sig"
+    Building database without specifying the name of the database replaces the `default.sig` file which contains the file format signature in PRONOM format. To restore the `default.sig` file, rebuild the database:
+    ```
+    roy build
+    ```
+    
 === "Custom database"
 
     ```
     # Builds a custom.sig file using tika identifier
-    roy build -mi tika -name tika custom.sig
+    sudo roy build -mi tika -name tika custom.sig
 
     # Adds the modified freedesktop signature file to custom.sig
-    roy add -mi freedesktop -name freedesktop custom.sig
+    sudo roy add -mi freedesktop -name freedesktop custom.sig
     ```
 
 === "Updated output"
 
     ```
     # Check the file entry using custom.sig
-    sf -sig custom.sig 9969477031_R02C01_Red.idat
+    sf -sig custom.sig 6285633006_R03C01_Red.idat
 
     ---
     siegfried   : 1.8.0
@@ -151,8 +158,8 @@ We can now build a MIME-info database with the updated files. Instead of overwri
       - name    : 'freedesktop'
         details : 'freedesktop.org.xml (1.15, 2019-10-30)'
     ---
-    filename : '9969477031_R02C01_Red.idat'
-    filesize : 8095228
+    filename : '6285633006_R03C01_Red.idat'
+    filesize : 8095283
     modified : 2020-08-04T04:23:05Z
     errors   :
     matches  :
@@ -168,4 +175,17 @@ We can now build a MIME-info database with the updated files. Instead of overwri
         mime    : 'application/vnd.binary'
         basis   : 'extension match idat'
         warning : 'match on filename only'
+    ```
+
+!!! note "Revert to default"
+    It is recommended to create a default MIME-info database prior to adding any custom MIME type information to the signature files. To revert to default MIME type choose the default MIME database.
+    ```
+    # Builds a default-mime.sig file using tika identifier
+    sudo roy build -mi tika -name tika default-mime.sig
+
+    # Adds the modified freedesktop signature file to custom.sig
+    sudo roy add -mi freedesktop -name freedesktop default-mime.sig
+
+    # Check the MIME type using default-mime.sig
+    sf -sig default-mime.sig 6285633006_R03C01_Red.idat
     ```
