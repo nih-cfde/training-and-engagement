@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-Tutorial Reference Materials
+Tutorial Resources
 ===========================================
 
 Command line cheatsheets:
