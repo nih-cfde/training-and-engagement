@@ -6,7 +6,7 @@ Conda makes software installation and compute environment management easier. Con
 
 !!! tip
 
-    Please refer to the [conda command cheatsheet](../Tutorial-Reference-Material/conda_cheatsheet.md) for commonly used conda commands!
+    Please refer to the [conda command cheatsheet](../Resources/conda_cheatsheet.md) for commonly used conda commands!
 
 
 ## Step 1: Install conda
