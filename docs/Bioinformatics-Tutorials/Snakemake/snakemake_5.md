@@ -56,7 +56,8 @@ Exit `(snaketest)` conda environment to return to `(base)` environment:
 conda deactivate
 ```
 
-!!! recap
+!!! note "Key Points"
+
     - Snakefile defines a Snakemake workflow
     - the rules specify steps in the workflow
     - at the moment (and in general), they run shell commands
@@ -67,7 +68,7 @@ conda deactivate
     
 Hopefully, you have now:
 
-- learned how to write basic workflows with Snakemake rules
-- learned variable substitution for Snakemake rules
-- learned wildcard matching for Snakemake rules
-- understood why workflow systems can help you do your computing more easily!
+- [x] learned how to write basic workflows with Snakemake rules
+- [x] learned variable substitution for Snakemake rules
+- [x] learned wildcard matching for Snakemake rules
+- [x] understood why workflow systems can help you do your computing more easily!
