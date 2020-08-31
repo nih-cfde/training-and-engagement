@@ -50,8 +50,8 @@ Tutorial resources:
 
 - Cheatsheets:
 
-    - [bash and nano](../../Tutorial-Reference-Material/bash_cheatsheet.md)
+    - [bash and nano](../../Resources/bash_cheatsheet.md)
     
-    - [conda](../../Tutorial-Reference-Material/conda_cheatsheet.md)
+    - [conda](../../Resources/conda_cheatsheet.md)
   
-    - [Snakemake](../../Tutorial-Reference-Material/snakemake_cheatsheet.md)
+    - [Snakemake](../../Resources/snakemake_cheatsheet.md)
