@@ -68,7 +68,7 @@ conda deactivate
     
 Hopefully, you have now:
 
-- [x] learned how to write basic workflows with Snakemake rules
-- [x] learned variable substitution for Snakemake rules
-- [x] learned wildcard matching for Snakemake rules
-- [x] understood why workflow systems can help you do your computing more easily!
+- learned how to write basic workflows with Snakemake rules
+- learned variable substitution for Snakemake rules
+- learned wildcard matching for Snakemake rules
+- understood why workflow systems can help you do your computing more easily!
