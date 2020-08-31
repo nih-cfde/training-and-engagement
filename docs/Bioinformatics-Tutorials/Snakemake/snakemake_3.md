@@ -114,7 +114,8 @@ In this case, if we were to run the `uncompress_genome` rule at the terminal, it
     
     ![snakemake runs two steps in order](../../images/snakemake_twosteps.jpeg)
 
-!!! recap
+!!! note "Key Points"
+
     - `input:` and `output:` (and other Snakemake directives) can be written in any order, as long as they are before `shell:`. The Snakemake [manual](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#) describes other directives you can add to Snakemake rules.
     - for each of the above elements, their contents can be all on one line, or form a block by indenting
     - you can make lists for multiple input or output files by separating filenames with a comma
