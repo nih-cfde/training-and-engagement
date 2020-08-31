@@ -185,7 +185,7 @@ Check the working directory again. The directory is populated by many output fil
 
     Please refer to the [Snakemake command cheatsheet](../../Resources/snakemake_cheatsheet.md) for commonly used Snakemake commands!
 
-!!! recap
+!!! note "Key Points"
 
     In this section we explored the basic template of a Snakefile which contains rules with all the necessary commands for variant calling.
 
