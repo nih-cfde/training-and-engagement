@@ -42,7 +42,7 @@ There are several rules defined with commands to run, but we'll need to add a fe
 
 !!! Tip
 
-    Please refer to the [bash command cheatsheet](../../Tutorial-Reference-Material/bash_cheatsheet.md) for commonly used `nano` commands and other shortcuts for navigating your Terminal!
+    Please refer to the [bash command cheatsheet](../../Resources/bash_cheatsheet.md) for commonly used `nano` commands and other shortcuts for navigating your Terminal!
 
 Ok, let's move on and take a look at the structure of the Snakefile rules.
 
@@ -183,7 +183,7 @@ Check the working directory again. The directory is populated by many output fil
 
 !!! Tip
 
-    Please refer to the [Snakemake command cheatsheet](../../Tutorial-Reference-Material/snakemake_cheatsheet.md) for commonly used Snakemake commands!
+    Please refer to the [Snakemake command cheatsheet](../../Resources/snakemake_cheatsheet.md) for commonly used Snakemake commands!
 
 !!! recap
 
