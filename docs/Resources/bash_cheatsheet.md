@@ -2,11 +2,15 @@
 
 Keyboard shortcuts for terminal:
 
-- use `tab` key to tab-complete command, file, and directory names
+- use `TAB` key to tab-complete command, file, and directory names
 
 - use up/down keys to go to previous/current terminal commands
 
-- `Ctrl z` to stop commands in progress
+- `Ctrl+z` to stop commands in progress
+
+!!! tip
+
+    Keyboard presses with the `Ctrl` key are shown with a `+` to indicate that you press `Ctrl` and the other key together.
 
 Bash | Description
 --- | ---
@@ -25,12 +29,12 @@ Bash | Description
 
 Text editing with nano | description
 --- | ---
-`Ctrl k` | cut text
-`Ctrl u` | paste text
-`Ctrl _`, enter line number, return key| go to specific line number
-`Ctrl e` | go to end of line
-`Ctrl v` | scroll down page
-`Ctrl o`, edit file name if needed, return key| saving changes (Write Out)
-`Ctrl x` | exit nano
+`Ctrl+k` | cut text
+`Ctrl+u` | paste text
+`Ctrl+_`, enter line number, return key| go to specific line number
+`Ctrl+e` | go to end of line
+`Ctrl+v` | scroll down page
+`Ctrl+o`, edit file name if needed, return key| saving changes (Write Out)
+`Ctrl+x` | exit nano
 
 `#` in text files = comments; these lines of text are not interpreted as code

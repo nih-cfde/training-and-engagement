@@ -9,7 +9,7 @@ Workflow management systems help to automate analyses and make them easier to ma
 
 This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization etc may require tuning.
 
-!!! goal
+!!! note "Learning Objectives"
 
     The objectives of this tutorial are to:
     
@@ -21,7 +21,7 @@ This may not be the variant calling workflow you would necessarily use in practi
     
     - understand why workflow systems can help you do your computing more easily
     
-These materials were was adapted from DIB lab course materials [here](https://github.com/ngs-docs/2020-GGG298) and [here](https://github.com/ngs-docs/2020-GGG201b-lab).
+These materials were was adapted from the Data Intensive Biology lab course materials ([course materials](https://github.com/ngs-docs/2020-GGG298), [lab materials](https://github.com/ngs-docs/2020-GGG201b-lab)).
 
 !!! note "Prerequisites"
     
@@ -50,8 +50,8 @@ Tutorial resources:
 
 - Cheatsheets:
 
-    - [bash and nano](./bash_cheatsheet.md)
+    - [bash and nano](../../Resources/bash_cheatsheet.md)
     
-    - [conda](./conda_cheatsheet.md)
+    - [conda](../../Resources/conda_cheatsheet.md)
   
-    - [Snakemake](./snakemake_cheatsheet.md)
+    - [Snakemake](../../Resources/snakemake_cheatsheet.md)

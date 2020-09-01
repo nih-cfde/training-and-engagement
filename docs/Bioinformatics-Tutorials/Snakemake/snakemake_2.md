@@ -1,6 +1,6 @@
 # The Snakefile
 
-Snakemake uses a file called 'Snakefile' to configure the steps, or rules, of your pipeline. The basic Snakefile consists of several rules defining the inputs, outputs, and rule commands. 
+Snakemake uses a file called "Snakefile" to configure the steps, or rules, of your pipeline. The basic Snakefile consists of several rules defining the inputs, outputs, and rule commands. 
 
 !!! tip
 
@@ -19,11 +19,12 @@ Let's take a look at the Snakefile using the nano text editor:
 nano -ET4 Snakefile
 ```
 
-This is the skeleton of our Snakefile for calling variants. The command above tells nano to open the Snakefile and to create 4 spaces when you hit the `tab` key. The Snakefile is written in the Python programming language, which uses specific indentation formatting to interpret the code. Incorrect indentation will result in syntax errors.
+This is the skeleton of our Snakefile for calling variants. The command above tells nano to open the Snakefile and to create 4 spaces when you hit the `TAB` key. The Snakefile is written in the Python programming language, which uses specific indentation formatting to interpret the code. Incorrect indentation will result in syntax errors.
 
 There are several rules defined with commands to run, but we'll need to add a few more details by editing with nano.
 
-!!! note "Practice"
+=== "Exercise" 
+
     Add a comment to the Snakefile:
 
     1. open Snakefile in `nano`
@@ -37,10 +38,11 @@ There are several rules defined with commands to run, but we'll need to add a fe
     5. view the Snakefile in Terminal with: `less Snakefile`.
 
     6. if you can see your comment, it worked! Exit the `less` view by hitting `q` key.
+    
 
 !!! Tip
 
-    Please refer to the [bash command cheatsheet](./bash_cheatsheet.md) for commonly used `nano` commands and other shortcuts for navigating your Terminal!
+    Please refer to the [bash command cheatsheet](../../Resources/bash_cheatsheet.md) for commonly used `nano` commands and other shortcuts for navigating your Terminal!
 
 Ok, let's move on and take a look at the structure of the Snakefile rules.
 
@@ -48,8 +50,9 @@ Ok, let's move on and take a look at the structure of the Snakefile rules.
 
 Each step in a pipeline is defined by a rule in the Snakefile. The components of each rule are indented 4 spaces. The most basic structure of a rule is:
 
-!!! snakemake
+=== "Snakemake rule"
 
+    ```
     rule rule_name:
     
         shell:
@@ -59,18 +62,22 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
             # command must be enclosed in quotes
             
             "command"
+    ```
       
 
 There are several rules in the Snakefile. Let's do a search for all the rules in the file:
 
-```
-grep rule Snakefile
-```
+=== "Input"
 
-The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline:
+    ```
+    grep rule Snakefile
+    ```
 
-!!! output
+=== "Expected Output"
 
+    The output is a list of the lines in the Snakefile with the word 'rule' in them. There are 11 rules in this pipeline:
+    
+    ```
     rule download_data:
 
     rule download_genome:
@@ -92,43 +99,65 @@ The output is a list of the lines in the Snakefile with the word 'rule' in them.
     rule samtools_mpileup:
 
     rule make_vcf:
+    ```
 
 ## Snakemake & Snakefile
 
 Let's try running a Snakemake rule:
 
-```
-snakemake -p map_reads
-```
+=== "Input"
 
-The `-p` means 'show the command that you're running'.
+    ```
+    snakemake -p map_reads
+    ```
+    
+    The `-p` means show the command that you're running.
+    
+=== "Expected Output"
+
+    Oops, this will fail! Why?
+    
+    ![snakemake map reads rule error](../../images/snakemake_rule_error_msg.jpeg)
+    
+    As the error message in red states, the rule failed because we don't have any of the input files required to run this rule yet! For the mapping rule to work, we need the raw read (`.fastq.gz`) file and reference genome (`.fa.gz`) that should be indexed.
 
 !!! tip
     
     The placement of snakemake flags must follow the `snakemake` command, but otherwise the location does not matter. Thus, `snakemake -p map_reads` will run the same as `snakemake map_reads -p`.
 
-Oops, this will fail! Why?
-![](../../images/snakemake_rule_error_msg.jpeg)
-
-As the error message in red states, the rule failed because we don't have any of the input files required to run this rule yet! For the mapping rule to work, we need the raw read (`.fastq.gz`) file and reference genome (`.fa.gz`) that should be indexed.
-
-Let's start with the first rule in the Snakefile:
-```
-snakemake -p download_data
-```
+Let's try again, starting with the first rule in the Snakefile:
 
 Snakemake runs the shell command listed under the `download_data` rule. In this case, the shell command downloads the raw read file from a public repository on [osf.io](https://osf.io).
 
-It worked!
-![](../../images/snakemake_downloaddata.jpeg)
+=== "Input"
+
+    ```
+    snakemake -p download_data
+    ```
+    
+=== "Expected Output"
+    
+    It worked!
+
+    ![snakemake downloaded data](../../images/snakemake_downloaddata.jpeg)
 
 Check the working directory. There should now be a `.fastq.gz` file:
-```
-ls -lht
-```
 
-This command shows you the file permissions, number of links, owner name, owner group, file size in bytes, time of last modification, and file/directory name.
+=== "Input"
+    
+    ```
+    ls -lht
+    ```
+    
+=== "Expected Output"    
 
+    This command shows you the file permissions, number of links, owner name, owner group, file size in bytes, time of last modification, and file/directory name.
+
+    ```
+    -rw-r--r-- 1 jovyan root   8.4M Aug 26 00:35 SRR2584857_1.fastq.gz
+    -rw-r--r-- 1 jovyan jovyan 1.2K Jul 23 00:01 Snakefile
+    ```
+    
 Next run some more rules sequentially – one at a time:
 ```
 snakemake -p download_data
@@ -150,10 +179,13 @@ snakemake -p index_genome_bwa
 snakemake -p map_reads
 ```
 
-Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any error!**. In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
+Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any error!**. 
 
+!!! Tip
 
-!!! recap
+    Please refer to the [Snakemake command cheatsheet](../../Resources/snakemake_cheatsheet.md) for commonly used Snakemake commands!
+
+!!! note "Key Points"
 
     In this section we explored the basic template of a Snakefile which contains rules with all the necessary commands for variant calling.
 
@@ -165,6 +197,4 @@ Check the working directory again. The directory is populated by many output fil
     - the code is case-sensitive
     - tabs and spacing matters
 
-!!! Tip
-
-    Please refer to the [Snakemake command cheatsheet](./snakemake_cheatsheet.md) for commonly used Snakemake commands!
+In the next section, we'll cover how to connect the rules so Snakemake can recognize rules that depend on each other and run them in the correct order.
