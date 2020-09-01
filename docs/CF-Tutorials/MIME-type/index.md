@@ -39,10 +39,10 @@ Est. Time | Lesson name | Description
 
 Screencasts:
 
-  [file](./file.md)
+  - [file](./file.md)
 
-  [mimetype](./mimetype.md)
+  - [mimetype](./mimetype.md)
 
-  [xdg-utils](./xdg-utils.md)
+  - [xdg-utils](./xdg-utils.md)
 
-  [siegfried](./siegfried.md)
+  - [siegfried](./siegfried.md)
