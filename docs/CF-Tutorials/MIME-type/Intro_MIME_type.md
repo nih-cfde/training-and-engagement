@@ -6,7 +6,7 @@ title: Introduction to MIME types
 MIME types
 ==============
 
-MIME which stands for Multipurpose Internet Mail Extensions are standards for recognizing the format of a file.
+Multipurpose Internet Mail Extensions (MIME) are standards for recognizing the format of a file.
 MIME types follow a certain format:
 ```
 media-type/subtype-identifier
@@ -26,4 +26,4 @@ A few general rules for the MIME types are:
 - The vnd prefix of a MIME subtype-identifier means that the MIME value is vendor specific.
   e.g. **Microsoft Excel: application/vnd.ms-excel**
 
-- MIME type for unknown file type is generally application/octet-stream.
+- MIME type for unknown file type is generally `application/octet-stream`.
