@@ -90,7 +90,7 @@ The introduction should briefly address:
 
 *Set up*
 
-Provide instructions on computer set up, software installations, and/or file downloads.
+Provide instructions on computer set up, software installations, and/or file downloads (may include linking to existing tutorials).
 
 *Steps*
 
