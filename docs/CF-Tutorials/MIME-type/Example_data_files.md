@@ -40,12 +40,20 @@ The directory structure of the resulting `example_files_MIME`:
 Kids First Files
 ------------------
 
-We downloaded multiple open access files from [Kids First Data Portal](https://kidsfirstdrc.org) (KF Data Portal).
+For this tutorial, you can also use open access files from the [Kids First Data Portal](https://kidsfirstdrc.org) (KF Data Portal).
 
 !!! note "KF Data Portal Login"
     Downloading the files requires an account on the [KF data portal](https://kidsfirstdrc.org). You can choose one of three available options (Google, ORCID, Facebook) to setup an account, although we recommend using ORCID if you have one. For more details can be found on the [Registration tutorial for Kids First](../../Kids-First/Setting-up-your-KF-Portal-Permissions/KF_2_Registration.md).
 
-The directory structure of `KF_data` with all the files:
+Download the [KF_File_ID.csv](./mime_supplementary_files/KF_File_ID.csv). Login to [Kids First Data Portal](https://kidsfirstdrc.org), select `File Repository` and `File Filters`. Scroll all the way down to `Search by File ID` field and click on `upload your list of ids`.
+
+![Search by File ID](../../images/KFDRC_search_by_file_ID.png "Search by File ID")
+
+One can either copy paste the File IDs in the box or upload the KF_File_ID.csv. To obtain a local copy, select `View Results` and for each individual file click on download button under the `Actions` column.
+
+![File ID upload](../../images/KFDRC_file_ID_upload.png "File ID upload")
+
+The directory structure of `KF_data` with all the files should include:
 
 ```
 .
@@ -64,11 +72,3 @@ The directory structure of `KF_data` with all the files:
 ├── f06987bc-aca3-4f7e-8e77-6e2cf9ce28a0.STAR.fusion_predictions.abridged.coding_effect.tsv
 └── f6bc4b78-280b-420a-8af4-1a6d85304e37.png    
 ```
-
-To obtain the same set of files, download the [KF_File_ID.csv](./mime_supplementary_files/KF_File_ID.csv). Login to [Kids First Data Portal](https://kidsfirstdrc.org), select `File Repository` and `File Filters`. Scroll all the way down to `Search by File ID` field and click on `upload your list of ids`.
-
-![Search by File ID](../../images/KFDRC_search_by_file_ID.png "Search by File ID")
-
-One can either copy paste the File IDs in the box or upload the KF_File_ID.csv. To obtain a local copy, select `View Results` and for each individual file click on download button under `Actions`.
-
-![File ID upload](../../images/KFDRC_file_ID_upload.png "File ID upload")
