@@ -1,6 +1,8 @@
 # training
 
-A repository for CFDE training materials
+
+I WILL WRITE WHATEVER I WANT
+
 
 The docs folder is rendered into https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/ by ReadTheDocs.
 
