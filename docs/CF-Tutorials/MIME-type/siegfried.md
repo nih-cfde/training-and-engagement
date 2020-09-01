@@ -112,13 +112,39 @@ Modification and customization of the underlying signature database is done usin
         warning : 'no match'
     ```
 
-The output has updated `identifiers` to indicate the underlying database and the `mime` fields to reflect MIME type database.
+The output has updated `identifiers` to indicate the underlying database and the `mime` fields to reflect MIME type database. Instead of overwriting the `default.sig` file, it is best practice to create a different signature file with different identifier using the `-name` flag. We can also create a single signature file with multiple identifiers.
 
 !!! note "Aliases"
     You can use aliases tika and freedektop in the above commands instead of the full `.xml` file name. For example:
     ```
     sudo roy build -mi tika
     ```
+
+It is recommended to create a default MIME-info database prior to adding any custom MIME type information to the signature files.
+
+=== "MIME-info database"
+
+    ```
+    # Builds a default-mime.sig file using tika identifier
+    sudo roy build -mi tika -name tika default-mime.sig
+
+    # Adds the freedesktop signature file to default-mime.sig
+    sudo roy add -mi freedesktop -name freedesktop default-mime.sig
+    ```
+
+=== "Input"   
+
+    ```
+    # Check the MIME type using default-mime.sig
+    sf -sig default-mime.sig 6285633006_R03C01_Red.idat
+    ```
+
+!!! note "default.sig"
+    Building database without specifying the name of the database replaces the `default.sig` file which contains the file format signature in PRONOM format. To restore the `default.sig` file, rebuild the database:
+    ```
+    roy build
+    ```
+
 To add custom MIME types, we can update either of the two MIME-info files. The `xml` format remains consistent with previous examples for `mimetype` and `xdg-mime` and can be added to either `tika-mimeinfo.xml` or `freedesktop.org.xml`.
 
 ```
@@ -127,6 +153,7 @@ sudoedit /usr/share/siegfried/freedesktop.org.xml
 ```
 
 Add the entry below for `.idat` to the end of the file before the `</mime-info>` divider. If you are working in a `nano` text editor, you can hit `CTRL+_` and enter line number 7321 to add the `.idat` entry. Preserve the indentation.
+
 ```
   <mime-type type="application/vnd.binary">
     <comment>Illumina proprietary IDAT format</comment>
@@ -134,13 +161,7 @@ Add the entry below for `.idat` to the end of the file before the `</mime-info>`
   </mime-type>
 ```
 
-We can now build a MIME-info database with the updated files. Instead of overwriting the `default.sig` file, it is best practice to create a different signature file with different identifier using the `-name` flag. We can also create a single signature file with multiple identifiers. In our example, the `.idat` entry was added to the `freedesktop.org.xml` file. Since it would be useful to keep original identifiers, a custom signature file is built.
-
-!!! note "default.sig"
-    Building database without specifying the name of the database replaces the `default.sig` file which contains the file format signature in PRONOM format. To restore the `default.sig` file, rebuild the database:
-    ```
-    roy build
-    ```
+We can now build a MIME-info database with the updated files. In our example, the `.idat` entry was added to the `freedesktop.org.xml` file. Since it would be useful to keep original identifiers, a custom signature file is built.
 
 === "Custom database"
 
@@ -192,14 +213,8 @@ We can now build a MIME-info database with the updated files. Instead of overwri
     ```
 
 !!! note "Revert to default"
-    It is recommended to create a default MIME-info database prior to adding any custom MIME type information to the signature files. To revert to default MIME type choose the default MIME database.
+    To revert to default MIME type choose the default MIME database.
     ```
-    # Builds a default-mime.sig file using tika identifier
-    sudo roy build -mi tika -name tika default-mime.sig
-
-    # Adds the modified freedesktop signature file to custom.sig
-    sudo roy add -mi freedesktop -name freedesktop default-mime.sig
-
     # Check the MIME type using default-mime.sig
     sf -sig default-mime.sig 6285633006_R03C01_Red.idat
     ```
