@@ -35,14 +35,14 @@ Est. Time | Lesson name | Description
 5 mins  | [Multi File MIME type ](./Multiple_file_MIME.md) | MIME type for multiple files
 10 mins | [Unexpected Behavior](./Unexpected_behavior.md) | Understand and validate MIME type
 
-Tutorial resources:
+**At A Glance**
 
-- Screencasts:
+Screencasts:
 
-    - [file](./file.md)
+  [file](./file.md)
 
-    - [mimetype](./mimetype.md)
+  [mimetype](./mimetype.md)
 
-    - [xdg-utils](./xdg-utils.md)
+  [xdg-utils](./xdg-utils.md)
 
-    - [siegfried](./siegfried.md)
+  [siegfried](./siegfried.md)

@@ -5,7 +5,7 @@ arrange:
  - file.md
  - mimetype.md
  - xdg-utils.md
- - Siegfried.md
+ - siegfried.md
  - Multiple_file_MIME.md
  - Unexpected_behavior.md
  
