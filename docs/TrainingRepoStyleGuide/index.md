@@ -2,14 +2,14 @@
 
 Time | Section | About
 --- | --- | ---
-5 mins | 1. [Website navigation](#website-navigation) | How to navigate the website?
-5 mins |2. [Website style guide](#website-style-guide) | How is the website formatted?
-10 mins | 3. [General tutorial text style guide](#tutorial-text-style-guide) | How are CFDE tutorials formatted?
-10 mins | 4. [Tutorial components](#tutorial-components) | How are tutorial contents organized? 
-10 mins | 5. [Tutorial recordings style guide](#tutorial-recordings-style-guide) | How to create vidlets?
-10 mins | 6. [Pangeo binder style guide](#pangeo-binder-style-guide)| How to create pangeo binders?
-5 mins | 7. [Practice repo style guide](#practice-repo-style-guide) | 
-10 mins | 8. [Tutorial review and merge](#tutorial-review-and-merge) | How to add tutorials to the website?
+5 mins | 1. [Website navigation](./1WebsiteNavStyle.md) | How to navigate the website?
+5 mins |2. [Website style guide](./1WebsiteNavStyle.md) | How is the website formatted?
+10 mins | 3. [General tutorial text style guide](./2GenTutorialStyle.md) | How are CFDE tutorials formatted?
+10 mins | 4. [Tutorial components](./3TutorialComponents.md) | How are tutorial contents organized? 
+10 mins | 5. [Tutorial recordings style guide](./4RecordingStyleGuide.md) | How to create vidlets?
+10 mins | 6. [Pangeo binder style guide](./5PangeoBinderGuide.md)| How to create pangeo binders?
+5 mins | 7. [Practice repo style guide](./6PracticeGithubRepos.md) | 
+10 mins | 8. [Tutorial review and merge](./7ReviewAndMerge.md) | How to add tutorials to the website?
 
 Location of important files in the training Github repo:
 ```
@@ -29,5 +29,5 @@ Location of important files in the training Github repo:
         ├── medium-zoom.min.js
     ├── <tutorial folders go here>
     ├── Resources
-    ├── tutorial_scripts #need to make
+    ├── tutorial_scripts ### does not exist yet, do we want this?
 ```
