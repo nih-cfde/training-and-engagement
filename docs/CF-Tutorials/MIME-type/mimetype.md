@@ -22,10 +22,15 @@ Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages
     mimetype <name of the file>
     ```
 
-=== "Example output"
+=== "Input"
 
     ```
     mimetype 6285633006_R03C01_Red.idat
+    ```
+
+=== "Expected Output"
+
+    ```
     6285633006_R03C01_Red.idat: application/octet-stream
     ```
 
@@ -37,11 +42,15 @@ There are multiple options to customize the output. The `--describe` or `-d` opt
     mimetype -D <name of the file>
     ```
 
-=== "Example output"
+=== "Input"
 
     ```
     mimetype -D 6285633006_R03C01_Red.idat
+    ```
 
+=== "Expected Output"
+
+    ```
     > Data dirs are: /home/ubuntu/.local/share, /usr/local/share, /usr/share, /var/lib/snapd/desktop
     > Checking inode type
     > Checking globs for basename '6285633006_R03C01_Red.idat'

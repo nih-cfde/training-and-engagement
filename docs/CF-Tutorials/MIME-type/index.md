@@ -7,7 +7,7 @@ title: MIME type Overview
 
 A MIME type or media type is a form of identification for file formats and contents transmitted over the internet. It is useful to specify the data identification label of a file to allow software to properly interpret and render the data. This is especially important for Common Fund (CF) programs who may undertake data transfers over the internet and thus, have to ensure the data integrity along with data formats for a successful transfer. In this tutorial, we will describe how to determine MIME type for single and multiple files, and create custom MIME types specific to the file format.
 
-!!! goal
+!!! note "Learning Objectives"
 
     In this tutorial you will learn:
 
@@ -27,7 +27,7 @@ A MIME type or media type is a form of identification for file formats and conte
 Est. Time | Lesson name | Description
 --- | --- | ---
 5 mins | [Introduction](./Intro_MIME_type.md) | What is a MIME type ?
-10 mins | [Example Data](./Example_data_files.md) | Obtain general or CF specific data files
+20 mins | [Example Data](./Example_data_files.md) | Obtain general or CF specific data files
 5 mins | [file](./file.md) | MIME type using file
 10 mins | [mimetype](./mimetype.md) | MIME type using mimetype
 10 mins | [xdg-utils](./xdg-utils.md) | MIME type using xdg-utils

@@ -24,10 +24,14 @@ Another option is to use the [xdg-utils](https://www.freedesktop.org/wiki/Softwa
     xdg-mime query filetype <name of the file>
     ```
 
-=== "Example output"
-
+=== "Input"
     ```
     xdg-mime query filetype 6285633006_R03C01_Red.idat
+    ```
+
+=== "Expected Output"
+
+    ```
     application/octet-stream
     ```
 
@@ -44,7 +48,7 @@ Adding custom MIME types is similar to the `mimetype` utility: we can create the
 ```
 
 !!! note "shared-mime-info"
-    The `shared-mime-info` packages contains the core database of common MIME types and is utilized by both `xdg-mime` and `mimetype`. If run consecutively, changes made in the previous section for `mimetype` will reflect with `xdg-mime` without additional steps of adding custom  types.
+    The `shared-mime-info` packages contains the core database of common MIME types and is utilized by both `xdg-mime` and `mimetype`. If run consecutively, changes made in the previous section for `mimetype` will reflect with `xdg-mime` without additional steps of adding custom types.
 
 Update the database:
 

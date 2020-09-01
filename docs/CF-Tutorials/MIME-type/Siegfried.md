@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Siegfried
+title: siegfried
 ---
 
-Siegfried
+siegfried
 ==========
 
-Another signature-based file format identification tool is Siegfried. The current installation instructions are for **64-bit systems running Ubuntu/Debian OS**. A full list of options and installation instructions for multiple platforms can be found on the [official page](https://www.itforarchivists.com/siegfried).
+Another signature-based file format identification tool is siegfried. The current installation instructions are for **64-bit systems running Ubuntu/Debian OS**. A full list of options and installation instructions for multiple platforms can be found on the [official page](https://www.itforarchivists.com/siegfried).
+
+<asciinema-player src="../mime_supplementary_files/siegfried_screencast.cast" speed="2.5" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mTerminal Vidlet for siegfried"></asciinema-player>
 
 === "Installation"
 
@@ -22,11 +24,14 @@ Another signature-based file format identification tool is Siegfried. The curren
     sf <name of the file>
     ```
 
-=== "Example output"
-
+=== "Input"
     ```
     sf 6285633006_R03C01_Red.idat
+    ```
 
+=== "Expected Output"
+
+    ```
     ---
     siegfried   : 1.8.0
     scandate    : 2020-08-06T20:14:22Z
@@ -67,12 +72,16 @@ Modification and customization of the underlying signature database is done usin
     sudo roy add -mi freedesktop.org.xml
     ```
 
-=== "MIME-info output"
+=== "Input"
 
     ```
     # Get MIME type
     sf 6285633006_R03C01_Red.idat
+    ```
 
+=== "Expected Output"
+
+    ```
     ---
     siegfried   : 1.8.0
     scandate    : 2020-08-06T18:24:38Z
@@ -130,7 +139,7 @@ We can now build a MIME-info database with the updated files. Instead of overwri
     ```
     roy build
     ```
-    
+
 === "Custom database"
 
     ```
@@ -141,12 +150,15 @@ We can now build a MIME-info database with the updated files. Instead of overwri
     sudo roy add -mi freedesktop -name freedesktop custom.sig
     ```
 
-=== "Updated output"
-
+=== "Input"
     ```
     # Check the file entry using custom.sig
     sf -sig custom.sig 6285633006_R03C01_Red.idat
+    ```
 
+=== "Expected Output"
+
+    ```
     ---
     siegfried   : 1.8.0
     scandate    : 2020-08-06T20:57:10Z
