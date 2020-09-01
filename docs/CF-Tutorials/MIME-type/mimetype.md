@@ -6,7 +6,7 @@ title: mimetype
 mimetype
 =========
 
-Another option is using [`mimetype` utility](http://manpages.ubuntu.com/manpages/trusty/man1/mimetype.1p.html). This closely follows the `file` command but uses MIME types instead of descriptions.
+The [`mimetype` utility](http://manpages.ubuntu.com/manpages/trusty/man1/mimetype.1p.html) closely follows the `file` command but uses MIME types instead of descriptions. It uses the shared MIME-info database and allows for options to add custom MIME types.
 
 <asciinema-player src="../mime_supplementary_files/mimetype_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mTerminal Vidlet for mimetype"></asciinema-player>
 
@@ -83,6 +83,8 @@ We can add custom MIME types by creating an xml file `illumina-idat.xml` using a
 </mime-info>
 ```
 
+Three lines in the above xml code require editing for every new custom MIME type created: The `mime-type type=` sets the custom MIME type, the `comment` explains the MIME type and the `glob pattern` indicates the search pattern to be associated with the chosen MIME type.
+
 !!! note "globs"
     The `glob` module finds all the pathnames matching a specified pattern according to the rules set by the Unix shell. For MIME type, the file extension acts as the pattern for the search across the filesystem.
 
@@ -98,10 +100,17 @@ sudo update-mime-database /usr/share/mime
 
 Rerunning the code now results in the updated MIME type.
 
-```
-mimetype 6285633006_R03C01_Red.idat
-6285633006_R03C01_Red.idat: application/vnd.binary
-```
+=== "Input"
+
+    ```
+    mimetype 6285633006_R03C01_Red.idat
+    ```
+
+=== "Expected Output"
+
+    ```
+    6285633006_R03C01_Red.idat: application/vnd.binary
+    ```
 
 !!! note "Revert to default"
     If you decide to use the default MIME type instead of the custom association, you can delete the `.xml` file and update the mime-database.

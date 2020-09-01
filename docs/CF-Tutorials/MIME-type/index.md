@@ -27,10 +27,22 @@ A MIME type or media type is a form of identification for file formats and conte
 Est. Time | Lesson name | Description
 --- | --- | ---
 5 mins | [Introduction](./Intro_MIME_type.md) | What is a MIME type ?
-20 mins | [Example Data](./Example_data_files.md) | Obtain general or CF specific data files
+15 mins | [Example Data](./Example_data_files.md) | Obtain general or CF specific data files
 5 mins | [file](./file.md) | MIME type using file
 10 mins | [mimetype](./mimetype.md) | MIME type using mimetype
 10 mins | [xdg-utils](./xdg-utils.md) | MIME type using xdg-utils
 15 mins | [Siegfried](./Siegfried.md) | MIME type using Siegfried
 5 mins  | [Multi File MIME type ](./Multiple_file_MIME.md) | MIME type for multiple files
 10 mins | [Unexpected Behavior](./Unexpected_behavior.md) | Understand and validate MIME type
+
+Tutorial resources:
+
+- Screencasts:
+
+    - [file](./file.md)
+
+    - [mimetype](./mimetype.md)
+
+    - [xdg-utils](./xdg-utils.md)
+
+    - [siegfried](./siegfried.md)

@@ -6,7 +6,7 @@ title: xdg-utils
 xdg-utils
 ==========
 
-Another option is to use the [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package which also offers options for modifying and adding new MIME types.
+The [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/) package consists of set of tools to allow for easy integration with the desktop environment and also offers options for modifying and adding new MIME types.
 
 <asciinema-player src="../mime_supplementary_files/xdg-mime_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mTerminal Vidlet for xdg-mime"></asciinema-player>
 

@@ -25,9 +25,12 @@ Siegfried has a built-in option to obtain the file format information for files 
      sf <path to the directory>
     ```
 
-=== "Example output"
+=== "Input"
 
     ```
     # Example code combined with other flags
-    sf -sig custom.sig -csv example_files_MIME/
+    sf -sig custom.sig -csv example_files_MIME/ > example_files_MIME.csv
+
+    # View the results in table format on command line
+    cat example_files_MIME.csv | column -t -s, | less -S
     ```
