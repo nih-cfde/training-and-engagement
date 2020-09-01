@@ -126,7 +126,7 @@ To add custom MIME types, we can update either of the two MIME-info files. The `
 sudoedit /usr/share/siegfried/freedesktop.org.xml
 ```
 
-Add the entry below for `.idat` to the end of the file before the `</mime-info>` divider. If you working in a `nano` text editor, you can hit `CTRL+_` and enter line number 7321 to add the `.idat` entry. Preserve the indentation.
+Add the entry below for `.idat` to the end of the file before the `</mime-info>` divider. If you are working in a `nano` text editor, you can hit `CTRL+_` and enter line number 7321 to add the `.idat` entry. Preserve the indentation.
 ```
   <mime-type type="application/vnd.binary">
     <comment>Illumina proprietary IDAT format</comment>
