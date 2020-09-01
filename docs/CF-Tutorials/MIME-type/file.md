@@ -6,7 +6,7 @@ title: file
 file
 ======
 
-The default option that requires **no installation** would be to use the `file` command. For our code example we will work with s file from the [General Example Files](./Example_data_files.md).
+The default option that requires **no installation** would be to use the `file` command. For our code example we will work with files from the [General Example Files](./Example_data_files.md).
 
 <asciinema-player src="../mime_supplementary_files/file_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mTerminal Vidlet for file"></asciinema-player>
 
