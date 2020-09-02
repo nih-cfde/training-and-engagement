@@ -50,6 +50,7 @@ Feature | About
 --- | ---
 `javascripts/medium-zoom.min.js` and `javascripts/extra.js` files | specify image zoom functionality
 markdown extensions ([`pymdownx.tabbed`](https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)) as well as custom javascript logic for the drop down boxes | specify user-chooseable boxes and dropdown boxes 
+`javascripts/asciinema-player.js` and `stylesheets/asciinema-player.css` files | enables integration of asciinema player for screencasts rendering
 
 ### Website host and Github branches
 The website is hosted by readthedocs.com. The development website is rendered from the `latest` branch. The public-facing website is rendered from the `stable` branch.
