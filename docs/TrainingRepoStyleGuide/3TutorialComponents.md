@@ -13,7 +13,8 @@ For a thorough guide to tutorial style best practices, please read [DigitalOcean
 
 ### Tutorial content
 
-Tutorials should consist primarily of original content. If lesson material is adapted from other sources, please attribute work appropriately (e.g., 'This material was adapted from ANGUS (link to source material).'). If you want to include original video or animation content from other sources, check that: 
+Tutorials should consist primarily of original content. If lesson material is adapted from other sources, please attribute work appropriately (e.g., "This material was adapted from ANGUS (link to source material)."). If you want to include original video or animation content from other sources, check that:
+
 1) the material has a license that allows reuse, 
 2) if there is a license, the material is properly referenced in the tutorial,
 3) where possible, we tell the original authors we are using their material and appreciate their work! and,
@@ -132,12 +133,18 @@ Briefly sum up the tutorial key points as a bullet point list (it could be a res
 - save images in `./docs/images/` as .jpeg or .png files
 - there are several ways to save files that accompany tutorials:
     - save reference material in `./docs/Resources/` (e.g., code syntax cheatsheets)
-    - for files that users should access with `wget`, save scripts in `./docs/tutorial_scripts/` and upload example data files to the [CFDE Training Data Files osf project](https://osf.io/c8txv/#show_login). Login to the osf project is restricted to CFDE members. Create a new folder and upload your file(s).
+    - for example data files that users should access with `wget` or `curl`, upload files to the [CFDE Training Data Files osf project](https://osf.io/c8txv/#show_login). Login to the osf project is restricted to CFDE members. Create a new folder and upload your file(s).
     - for small files that users should download from the website (e.g., template script files), format the file name as a hyperlink in the tutorial. If the file has a file extension, a download option is available when users click the link.
+    - for scripts/example scripts associated with a specific tutorial, save files in the tutorial folder.
     - save binder files in a new Github repo (binders are made for entire repos, and we do not want a binder of the entire training-and-engagement repo!)
+
+For future discussion:
+- pending need: save scripts in a general `./docs/tutorial_scripts/` folder 
 
 ### Additional/optional user-friendly components
 - walk-through vidlets
 - walk-through screencasts
 - binder set-up so users can follow along without worrying about computer set up or software installations
+- set up practice Github repository
+
  
