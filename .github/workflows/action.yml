@@ -7,5 +7,5 @@ jobs:
     steps:
       - uses: kentaro-m/auto-assign-action@v1.1.1
         with:
-          repo-token: "${{ secrets.ALLTHEACTIONS }}"  
+          repo-token: ${{ secrets.ALLTHEACTIONS }} 
           configuration-path: ".github/auto_assign.yml" 
