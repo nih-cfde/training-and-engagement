@@ -55,4 +55,4 @@ markdown extensions ([`pymdownx.tabbed`](https://facelessuser.github.io/pymdown-
 ### Website host and Github branches
 The website is hosted by readthedocs.com. The development website is rendered from the `latest` branch. The public-facing website is rendered from the `stable` branch.
 
-Stable releases of the website require CFDE group agreement. For more information, see the [Tutorial review and merge](#tutorial-review-and-merge) section.
+Stable releases of the website require CFDE group agreement. For more information, see the [Tutorial review and merge](./7ReviewAndMerge.md) section.
