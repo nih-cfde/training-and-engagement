@@ -3,7 +3,7 @@
 ### Accessibility
 
 Please ensure that our tutorials are [accessible to the blind or visually impaired](https://www.lehman.cuny.edu/academics/education/education-technology/online-accessibility/documents/LehmanCollege_BlindandVisuallyImpairedAccessibilityChecklist_002.pdf) by:
-- writing descriptive text for hyperlinks. Avoid using 'Click here'
+- writing descriptive text for hyperlinks. Avoid using "Click here".
 - writing descriptive text for images that screenreaders can detect. If you want to check how images look, use a color blindness simulator, such as [toptal](https://www.toptal.com/designers/colorfilter/)
 - when possible, avoiding color combinations or images that are not color-blind friendly. If you are creating figures in R, there is a [colorblind friendly palette](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette).
 
@@ -65,6 +65,7 @@ Key presses |`ENTER`, `CTRL+X`*
 Github branches | `latest`
 
 *Use caps and a plus symbol for keys that are pressed at the same time
+
 **Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
 
 **2. Quotes**
@@ -136,7 +137,7 @@ Use javascript user-chooseable tabs to differentiate between input/expected outp
 ```
 === "Snakemake rule"
 
-    Backtick and indentation important for rendering the entire rule in a code block
+    Backticks and indentation important for rendering the entire rule in a code block
 
     ```
     rule rule_name:
@@ -158,7 +159,6 @@ Use hyperlinks to link images, other Markdown files, or websites. Provide short 
 Type | Syntax
 --- | ---
 images | `![short description of image](relative/path/to/docs/images/imagefile)`*
-scripts | `[text about the script](relative/path/to/docs/tutorial_scripts/scriptfile)`
 tutorial references | `[text about the reference](relative/path/to/docs/Resources/referencefile)`
 other pages in the Github repo | `[text about the page](relative/path/to/page/in/Github/repo/filename)`
 URLs with title | `[text about the website](URL)`
