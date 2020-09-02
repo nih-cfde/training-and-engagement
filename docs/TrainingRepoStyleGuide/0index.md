@@ -7,9 +7,9 @@ Time | Section | About
 10 mins | 3. [General tutorial text style guide](./2GenTutorialStyle.md) | How are CFDE tutorials formatted?
 10 mins | 4. [Tutorial components](./3TutorialComponents.md) | How are tutorial contents organized? 
 10 mins | 5. [Tutorial recordings style guide](./4RecordingStyleGuide.md) | How to create vidlets?
-10 mins | 6. [Pangeo binder style guide](./5PangeoBinderGuide.md)| How to create pangeo binders?
-5 mins | 7. [Practice repo style guide](./6PracticeGithubRepos.md) | 
-10 mins | 8. [Tutorial review and merge](./7ReviewAndMerge.md) | How to add tutorials to the website?
+10 mins | 6. [Pangeo binder style guide](./5PangeoBinderGuide.md)| How to create Pangeo binders?
+5 mins | 7. [Practice repo style guide](./6PracticeGithubRepos.md) | How to create a practice Github repo?
+10 mins | 8. [Tutorial review and merge](./7ReviewAndMerge.md) | How to add content to the website?
 
 Location of important files in the training Github repo:
 ```
@@ -29,5 +29,5 @@ Location of important files in the training Github repo:
         ├── medium-zoom.min.js
     ├── <tutorial folders go here>
     ├── Resources
-    ├── tutorial_scripts ### does not exist yet, do we want this?
+    ├── tutorial_scripts ### for future consideration, possibly as part of Resources/
 ```
