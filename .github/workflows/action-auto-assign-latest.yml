@@ -1,9 +1,8 @@
 name: 'Auto Assign'
 on:
   pull_request:
-    types: [opened]
-    branches:
-      - 'latest'
+        branches:
+            - latest
 
 jobs:
   add-reviews:
