@@ -1,0 +1,18 @@
+name: 'Auto Assign'
+on:
+  # Trigger the workflow on pull request,
+  # but only for the latest branch
+  pull_request:
+    branches:
+      - stable
+
+jobs:
+  add-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        name: Checkout
+      - uses: kentaro-m/auto-assign-action@v1.1.1
+        with:
+          repo-token: ${{ secrets.ALLTHEACTIONS }}
+          configuration-path: ".github/workflows/auto_assign_stable.yml"
