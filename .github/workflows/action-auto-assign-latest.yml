@@ -1,11 +1,8 @@
 name: 'Auto Assign'
 on:
-  # Trigger the workflow on pull request,
-  # but only for the latest branch
   pull_request:
     branches:
       - latest
-
 jobs:
   add-reviews:
     runs-on: ubuntu-latest
