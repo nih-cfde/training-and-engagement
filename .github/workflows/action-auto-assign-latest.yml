@@ -2,6 +2,7 @@ name: 'Auto Assign'
 on:
   pull_request:
     branches: [latest]
+    types: [opened, reopened]
 
 jobs:
   add-reviews:
