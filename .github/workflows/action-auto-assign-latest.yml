@@ -1,9 +1,8 @@
 name: 'Auto Assign'
 on:
   pull_request:
-        branches:
-            - latest
-
+    branches: [latest]
+            
 jobs:
   add-reviews:
     runs-on: ubuntu-latest
