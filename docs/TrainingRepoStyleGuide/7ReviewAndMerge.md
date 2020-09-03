@@ -4,7 +4,7 @@ The current workflow for the CFDE-CC team is to make contributions of tutorials,
 
 ### Pushing to `latest`
 
-When tutorials/edits are ready for review, create a pull request (PR) to merge into `latest`. When making the PR, add the current release date label (e.g., `Oct-2020`) to trigger PR reviewer auto-assignment.
+When tutorials/edits are ready for review, create a pull request (PR) to merge into `latest`. The reviewers will be auto assigned and notified after the PR is created. Ensure to add appropriate release label (e.g. Oct-2020), link related issues, assign the correct project and milestone labels either before or after you have created the PR. 
 
 Merging to `latest` requires at least **two approving reviews**. Once you have submitted the PR, the Github automation we have set up will check that your changes can be rendered without breaking the website, check for broken links, and auto-generate a preview of the rendered website.
 
