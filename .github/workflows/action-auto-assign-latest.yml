@@ -10,9 +10,6 @@ jobs:
   add-reviews:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-        name: Checkout
-      - uses: ./.github/actions/action-auto-assign-latest.yml
       - uses: kentaro-m/auto-assign-action@v1.1.1
         with:
           repo-token: ${{ secrets.ALLTHEACTIONS }}
