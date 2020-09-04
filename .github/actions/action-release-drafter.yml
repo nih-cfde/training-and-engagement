@@ -1,0 +1,13 @@
+name: 'CFDE Training Release'
+include-labels:
+   - Oct-2020
+   - Dec-2020
+   - Mar-2021
+   - Jun-2021
+   - Sept-2021
+   - Dec-2021
+
+template: |
+  ## What’s Changed
+
+  $CHANGES
