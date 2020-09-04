@@ -1,4 +1,4 @@
-name: CFDE Training Release 
+name: Release Drafter
 
 on:
   push:
