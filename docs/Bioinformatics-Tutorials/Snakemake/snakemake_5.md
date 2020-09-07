@@ -14,12 +14,14 @@ snakemake -p variants.vcf
 
 Recollect that Snakemake will execute the first rule in the Snakefile by default. We can use this feature by creating a default rule called `all` at the top of the Snakefile:
 
-!!! snakemake
+=== "Snakemake rule"
 
+    ```
     rule all:
 
         input: "variants.vcf"
-        
+    ```
+    
 and run:
 
 ```
@@ -27,15 +29,6 @@ snakemake -p all
 ```
 
 This rule runs through the entire workflow with a single command! This is much better than running each command one by one!
-
-!!! recap
-    - Snakefile defines a Snakemake workflow
-    - the rules specify steps in the workflow
-    - at the moment (and in general), they run shell commands
-    - you can "decorate" the rules to link the dependencies between rules
-    - basic decoration comes in the form of `input:` and `output:` which are lists of one or more files, quoted, separated by commas
-    - the rules are connected by matching filenames
-    - tabs are important syntax feature in Snakemake
 
 ## Looking at VCF files
 
@@ -63,6 +56,16 @@ Exit `(snaketest)` conda environment to return to `(base)` environment:
 conda deactivate
 ```
 
+!!! note "Key Points"
+
+    - Snakefile defines a Snakemake workflow
+    - the rules specify steps in the workflow
+    - at the moment (and in general), they run shell commands
+    - you can "decorate" the rules to link the dependencies between rules
+    - basic decoration comes in the form of `input:` and `output:` which are lists of one or more files, quoted, separated by commas
+    - the rules are connected by matching filenames
+    - tabs are important syntax feature in Snakemake
+    
 Hopefully, you have now:
 
 - learned how to write basic workflows with Snakemake rules
