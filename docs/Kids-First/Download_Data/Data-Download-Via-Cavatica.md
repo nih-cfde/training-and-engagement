@@ -22,7 +22,7 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
 
 * Select all files by checking the box next to "Name". A tiny pop-up window tells you how many files you have selected.
 
-![](images/selecting_files_cavatica.png)
+![](../../images/Data_Download_selecting_files_cavatica.png)
 
 * Click on the **drop down arrow** *next to* the "Download" button (shown in the figure below)
 
@@ -32,12 +32,12 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
     Clicking on the "Download" button instead of the arrow next to it will result in the download of individual files (one at a time). While this works for a small number of file, it is unfeasible for a large number of files. If you selected 50 files, 50 pop-up windows will appears for manual download of individual files. If this happens on accident, you can close one pop-up window at a time.
 
 
-![](images/Cavatica_Download_Links.png)
+![](../../images/Data_Download_Cavatica_Download_Links.png)
 
 
 * A pop-up window will appear after a few seconds.
 
-![](images/Cavatica_Download_Links_2.png)
+![](../../images/Data_Download_Cavatica_Download_Links_2.png)
 
 
 * Click "Download link" and save the text file in the "KF_Data" folder on the "Desktop" of your local machine.

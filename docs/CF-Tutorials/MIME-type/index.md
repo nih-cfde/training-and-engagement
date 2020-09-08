@@ -31,7 +31,7 @@ Est. Time | Lesson name | Description
 5 mins | [file](./file.md) | MIME type using file
 10 mins | [mimetype](./mimetype.md) | MIME type using mimetype
 10 mins | [xdg-utils](./xdg-utils.md) | MIME type using xdg-utils
-15 mins | [Siegfried](./Siegfried.md) | MIME type using Siegfried
+15 mins | [Siegfried](./siegfried.md) | MIME type using Siegfried
 5 mins  | [Multi File MIME type ](./Multiple_file_MIME.md) | MIME type for multiple files
 10 mins | [Unexpected Behavior](./Unexpected_behavior.md) | Understand and validate MIME type
 
