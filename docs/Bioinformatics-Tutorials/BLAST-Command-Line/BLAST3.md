@@ -21,5 +21,7 @@ Copy and paste the following commands
    sudo apt-get update && sudo apt-get -y install python ncbi-blast+
 ```
 
-This updates the software list and installs the Python programming
+sudo apt-get update command is used to download package information from all configured sources
+
+So when you run update command, it downloads the package information from the internet. This updates the software list and installs the Python programming
 language and NCBI BLAST+.

@@ -7,13 +7,23 @@ title: How to Run BLAST+
 
 We need some data!  Let's grab the mouse and zebrafish RefSeq
 protein data sets from NCBI, and put them in our home directory.
+```
+sudo chmod a+rwxt /mnt
+cd /mnt
+```
+
+
+
+!!! Note
+	`chmod` command stands for **change mode** and it is used to define or change permissions or modes on files and limit access to only those who are allowed access... It's the same as using your mouse to right-click a file or folder and selecting the permission tabs and defining who can access the resource.
+	
 
 Now, we'll use `curl` to download the files from a Web site onto our
 computer; note, these files originally came from the
 [NCBI FTP site](ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot)
 
-!!! Note:
-	
+
+!!! Note
 	You can Copy/Paste multiple commands at a time, and they will execute in order
 
 
@@ -22,6 +32,9 @@ curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
 curl -o mouse.2.protein.faa.gz -L https://osf.io/j2qxk/download
 curl -o zebrafish.1.protein.faa.gz -L https://osf.io/68mgf/download
 ```
+
+!!! Note
+	`Curl` is a command line tool that allows you to transfer data from or to a remote server. The lowercase `-o` allows you to specifiy the name of the saved file, while the uppercase `-O` saves the file with its original filename.
 
 If you look at the files in the current directory:
 
@@ -125,22 +138,16 @@ less mm-second.x.zebrafish.txt
 (and again, type 'q' to get out of paging mode.)
 
 !!! Tip
-	
 	We can verify the number of records by searching for all of the lines that include the '>' symbol
-	Type `grep '>' mm-second.faa | wc -l`
+	Type `grep '>' mm-second.faa | wc -l` 
+	`grep` is a powerful tool for finding patterns and words on Unix and Linux Systems. `wc -l` tells `wc` to count the number of lines that match `>`.
 
-=== Quiz
+=== "Quiz"
+	Why did it take longer to BLAST `mm-second.faa` than `mm-first.faa`?
 
-	Why did it take longer to BLAST ``mm-second.faa`` than ``mm-first.faa``?
-
-=== Solution
-
-	``mm-second.faa`` has 96 sequences in comparison to ``mm-first.faa``
+=== "Solution"
+	`mm-second.faa` has 96 sequences in comparison to `mm-first.faa` which has 2 sequences.
 	
-
-
-
-----
 
 Last, but not least, let's generate a more machine-readable version of that
 last file --
@@ -154,5 +161,4 @@ You can open the file with `less mm-second.x.zebrafish.tsv` to see how the file 
 See [this link](http://www.metagenomics.wiki/tools/blast/blastn-output-format-6) for a description of the possible BLAST output formats.
 
 !!! Warning
-
-    Remember to terminate your instance when you have completed your tasks with AWS.
+	Remember to terminate your instance when you have completed your tasks with AWS.
