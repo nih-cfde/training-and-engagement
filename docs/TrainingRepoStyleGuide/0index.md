@@ -1,6 +1,6 @@
 # Contributing to the nih-cfde Training and Engagement website
 
-This is a style guide for content on the CFDE [training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/stable/). 
+This is a style guide for content on the CFDE [training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/). 
 
 Time | Section | About
 --- | --- | ---
