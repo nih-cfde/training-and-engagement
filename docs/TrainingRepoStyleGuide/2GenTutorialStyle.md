@@ -62,7 +62,7 @@ File names and paths | `./docs/images/`**
 File extensions | `.fastq.gz`
 Ports | `:3000`
 Key presses |`ENTER`, `CTRL+X`*
-Github branches | `latest`
+Github branches | `stable`
 
 *Use caps and a plus symbol for keys that are pressed at the same time
 
