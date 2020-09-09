@@ -22,7 +22,7 @@ Tutorials should consist primarily of original content. If lesson material is ad
 
 ### Landing page
 
-Multi-page tutorials should have a summary page of the tutorial prerequisites and contents. Landing pages are not necessary for 1-page tutorials, however the same information should be provided in the tutorial's introduction section instead.
+Multi-page tutorials should have a summary page of the tutorial prerequisites and contents. Landing pages are not necessary for 1-page tutorials, however the same information should be provided in the tutorial's introduction section instead. 
 
 Tutorial landing page components:
 - Title
@@ -31,6 +31,8 @@ Tutorial landing page components:
 - Prerequisites
 - Table of tutorial pages
 - Tutorial resources
+
+See the [landing page template](./tutorial_template_docs/TutorialLandingPg_template.md) for a page outline.
 
 *Title*
 Titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`
@@ -78,6 +80,8 @@ The following sections should be included in each tutorial:
 - Set up
 - Tutorial steps 
 - Conclusion
+
+See the [tutorial main page template](./tutorial_template_docs/TutorialMainPg_template.md) for a page outline.
 
 *Title*
 
