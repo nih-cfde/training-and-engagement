@@ -53,6 +53,6 @@ markdown extensions ([`pymdownx.tabbed`](https://facelessuser.github.io/pymdown-
 `javascripts/asciinema-player.js` and `stylesheets/asciinema-player.css` files | enables integration of asciinema player for screencasts rendering
 
 ### Website host and Github branches
-The website is hosted by readthedocs.com. The development website is rendered from the `latest` branch. The public-facing website is rendered from the `stable` branch.
+The website is hosted by readthedocs.com. The development branch `dev` renders to a private (Admin access required) readthedocs website: https://cfde-training-and-engagement.readthedocs-hosted.com/en/dev/. The public-facing branch `stable` renders to a public readthedocs website: https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/.
 
 Stable releases of the website require CFDE group agreement. For more information, see the [Tutorial review and merge](./7ReviewAndMerge.md) section.
