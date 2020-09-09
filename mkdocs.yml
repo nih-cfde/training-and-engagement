@@ -34,6 +34,8 @@ extra:
   hypothesis: true
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/asciinema-player.css
 extra_javascript:
   - javascripts/medium-zoom.min.js
   - javascripts/extra.js
+  - javascripts/asciinema-player.js
