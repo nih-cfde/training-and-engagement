@@ -1,5 +1,7 @@
 # Run the whole pipeline!
 
+### Step 11: Running the pipeline
+
 Once you've decorated the entire Snakefile, you should be able to run through the whole workflow using either the rule name:
 
 ```
@@ -30,7 +32,7 @@ snakemake -p all
 
 This rule runs through the entire workflow with a single command! This is much better than running each command one by one!
 
-## Looking at VCF files
+### Step 12: Looking at VCF files
 
 Finally, let's look at the output!
 
@@ -48,7 +50,7 @@ samtools tview -p ecoli:4202391 SRR2584857.sorted.bam ecoli-rel606.fa
     - Exit help menu by hitting `q` key
     - Go to a specific position location in the alignment by hitting `/` key.
 
-## Wrapping up
+## Conclusion
 
 Exit `(snaketest)` conda environment to return to `(base)` environment:
 
