@@ -58,6 +58,13 @@ Exit `(snaketest)` conda environment to return to `(base)` environment:
 conda deactivate
 ```
 
+Hopefully, you have now:
+
+- learned how to write basic workflows with Snakemake rules
+- learned variable substitution for Snakemake rules
+- learned wildcard matching for Snakemake rules
+- understood why workflow systems can help you do your computing more easily!
+
 !!! note "Key Points"
 
     - Snakefile defines a Snakemake workflow
@@ -68,9 +75,3 @@ conda deactivate
     - the rules are connected by matching filenames
     - tabs are important syntax feature in Snakemake
     
-Hopefully, you have now:
-
-- learned how to write basic workflows with Snakemake rules
-- learned variable substitution for Snakemake rules
-- learned wildcard matching for Snakemake rules
-- understood why workflow systems can help you do your computing more easily!
