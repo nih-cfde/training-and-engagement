@@ -30,9 +30,18 @@ y mins | [Page title](path/to/page) | Shorter tutorials may have only one entry
 
     - list out resources with bullet points and include a hyperlink to the resource (e.g., vidlets, screencasts, example files, cheatsheets)
 
-### Step 1: do this
 
-For longer tutorials that are split over multiple pages, start the tutorial steps on a new page.
+**For longer tutorials that are split over multiple pages, start the next sections on a NEW page.**
+
+## Introduction (optional)
+
+If more introductory material is needed beyond the brief description on the landing page, please add an introduction section.
+
+## Set Up (optional)
+
+If more set up material is needed beyond the prerequisites section, please provide additional instructions in a Set Up section (e.g., on computer set up, software installations, and/or specific tutorial file downloads (may include linking to existing tutorials)).
+
+### Step 1: do this
 
 ### Step 2: do that
 
