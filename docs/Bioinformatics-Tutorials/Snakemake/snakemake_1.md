@@ -1,4 +1,4 @@
-# Set up
+# Set Up
 
 ## Choose computing environment
 
