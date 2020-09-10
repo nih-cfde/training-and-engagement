@@ -14,7 +14,7 @@ These materials were was adapted from the Data Intensive Biology lab course mate
 Est. Time | Lesson name | Description
 --- | --- | ---
 5 mins | [Introduction](./snakemake_0.md) | What is a workflow? <br />What is Snakemake?
-30 mins | [Setup](./snakemake_1.md) | Set up tutorial computing environment
+30 mins | [Set Up](./snakemake_1.md) | Set up tutorial computing environment
 30 mins | [The Snakefile](./snakemake_2.md) | What is the Snakefile? <br />What are Snakemake rules?
 45 mins | [Decorating the Snakefile](./snakemake_3.md) | How do the rules link together?
 30 mins | [Continue Decorating](./snakemake_4.md) | More on rule linking
