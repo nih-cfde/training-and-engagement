@@ -101,7 +101,7 @@ There are several rules in the Snakefile. Let's do a search for all the rules in
     rule make_vcf:
     ```
 
-## Step 3: Running Snakemake & the Snakefile
+### Step 3: Running Snakemake & the Snakefile
 
 Let's try running a Snakemake rule:
 
