@@ -22,23 +22,25 @@ Tutorials should consist primarily of original content. If lesson material is ad
 
 ### Tutorial structure
 
-Tutorials should begin with a landing page. For longer tutorials that are split over multiple pages, start the tutorial steps on a new page. See the [tutorial template](./tutorial_template_docs/TutorialTemplate.md) for a page outline. 
+All tutorials should begin with a landing page. For longer tutorials that are split over multiple pages, start the tutorial steps on a new page (more details below). See the [tutorial template](./tutorial_template_docs/TutorialTemplate.md) for a page outline. 
 
 **Tutorial landing page components:**
 - Title
 - Brief description
-- Table of tutorial pages
-- Learning Objectives
-- Prerequisites
-- Tutorial resources
+- Table of contents
+- "Learning Objectives"
+- "Prerequisites"
+- "Tutorial Resources"
 
 *Title*
+
 Titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`
 
 *Brief description*
+
 A brief description of what the tutorial is about (may be expanded in the Introduction section detailed below)
 
-*Table*
+*Table of contents*
 
 A Markdown formatted table for each page of the tutorial. The table columns should be named as follows:
 
@@ -49,7 +51,7 @@ Est. Time: Provide estimated completion times for each page (e.g., 30 secs, 10 m
 Lesson name: The title of each page, with a hyperlink to the page
 Description: Formatted as a short phrase or question about the primary learning goal of each section
 
-*Learning Objectives
+*"Learning Objectives"*
 
 The objectives should address:
 - what are the key points users should learn?
@@ -61,7 +63,7 @@ They are formatted with a `note` admonition box:
 !!! note "Learning Objectives"
 ```
 
-*Prerequisite*
+*"Prerequisites"*
 
 Clearly state the operating system(s) that will work for the tutorial, any required installation or set up steps that are not documented in the tutorial (e.g., you can link to existing set up tutorials instead). While we recommend writing tutorials without making assumptions about experience level, if particular computational, bioinformatics, and/or biological knowledge are needed, state them clearly as prerequisites.
 
@@ -71,7 +73,7 @@ They are formatted with a `note` admonition box:
 !!! note "Prerequisites"
 ```
 
-*Tutorial resources*
+*"Tutorial Resources"*
 Add in hyperlinks to any tutorial reference material (e.g., cheatsheets, scripts, example data, vidlets, etc.)
 
 They are formatted with a `note` admonition box: 
@@ -80,28 +82,28 @@ They are formatted with a `note` admonition box:
 !!! note "Tutorial Resources"
 ```
 
-**The following sections should be included in each tutorial, following the landing page:**
+**The following sections should be included in each tutorial, following the landing page, either on the same page or on a new page for longer tutorials:**
 
 - Title (optional)
-- Introduction (optional)
-- Set up (optional)
+- "Introduction" (optional)
+- "Set Up" (optional)
 - Tutorial steps 
-- Conclusion
+- "Conclusion"
 
-*Title*
+*Title (optional)*
 
 For tutorials that start new pages after their landing page, the title will refer to the primary content of each page, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`.
 
-*Introduction*
+*"Introduction" (optional)*
 
 If more introductory material is needed beyond the brief description on the landing page, please add an introduction section that addresses:
 
 - what is the tutorial about (general topic, e.g., cloud computing with AWS, workflows with Snakemake)?
 - what will the user do in this specific tutorial (e.g., create an account on Kids First, create a Manhattan plot)?
 
-*Set up*
+*"Set Up" (optional)*
 
-If more set up material is needed beyond the prerequisites on the landing page, please provide additional instructions in a Set up section (e.g., on computer set up, software installations, and/or specific tutorial file downloads (may include linking to existing tutorials)).
+If more set up material is needed beyond the prerequisites on the landing page, please provide additional instructions in a Set Up section (e.g., on computer set up, software installations, and/or specific tutorial file downloads (may include linking to existing tutorials)).
 
 *Steps*
 
@@ -126,7 +128,7 @@ conda is a tool for managing and deploying applications, environments and packag
 Options:
 ```
 
-*Conclusion*
+*"Conclusion"*
 
 Briefly sum up the tutorial key points as a bullet point list (it could be a restatement of the learning objectives if any were stated in the Introduction). Use the admonition `note` format:
 
