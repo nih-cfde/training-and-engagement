@@ -1,13 +1,3 @@
-## PR type
-
-- [ ] New tutorial
-- [ ] Fixes to tutorials only on latest
-- [ ] Fixes to tutorials on stable and latest
-- [ ] Feature enhancement
-- [ ] Tutorial formatting
-- [ ] Website formatting
-- [ ] Other
-
 ## PR Checklist
 
 - [ ] Release label added
@@ -15,6 +5,7 @@
 - [ ] PR mergeable
 - [ ] Clean build logs
 - [ ] Linked related issues
+- [ ] Colorblindness test https://www.toptal.com/designers/colorfilter/
 
 ## PR Description
 Briefly describe the changes this PR will add/address
@@ -24,3 +15,13 @@ Add how you would like to receive the review (direct editing, as comments, notes
 
 ## Timeline
 Add expected timeline to finish review and merge adding note for time critical updates
+
+## Reviewer checklist
+
+- [ ] spelling and grammar
+- [ ] successful run of all installation and code chunks
+- [ ] sufficient explanation and details for the tutorial content
+- [ ] code syntax and naming convention
+- [ ] adherence of tutorial format to style guide
+- [ ] functional links (inter and intra)
+- [ ] accessible hyperlink text
