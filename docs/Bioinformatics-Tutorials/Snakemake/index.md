@@ -42,18 +42,18 @@ Est. Time | Lesson name | Description
 
     Videos: 
 
-        - Part 1: [Introducing the Snakefile and Snakemake](./snakemake_2.md)
+    - Part 1: [Introducing the Snakefile and Snakemake](./snakemake_2.md)
 
-        - Part 2: [Continue decorating the Snakefile](./snakemake_4.md)
+    - Part 2: [Continue decorating the Snakefile](./snakemake_4.md)
 
-        - Part 3: [More decorating and running through the entire Snakemake workflow](./snakemake_4.md)
+    - Part 3: [More decorating and running through the entire Snakemake workflow](./snakemake_4.md)
 
     [Example Snakefile](./example_snakefile.md)
 
     Cheatsheets:
 
-        - [bash and nano](../../Resources/bash_cheatsheet.md)
+    - [bash and nano](../../Resources/bash_cheatsheet.md)
     
-        - [conda](../../Resources/conda_cheatsheet.md)
+    - [conda](../../Resources/conda_cheatsheet.md)
   
-        - [Snakemake](../../Resources/snakemake_cheatsheet.md)
+    - [Snakemake](../../Resources/snakemake_cheatsheet.md)
