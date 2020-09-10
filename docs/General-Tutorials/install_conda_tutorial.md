@@ -4,10 +4,21 @@ Conda makes software installation and compute environment management easier by m
 
 > "Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the conda install command to install 720+ additional conda packages from the Anaconda repository."
 
-!!! tip
+Est. Time | Lesson name | Description
+--- | --- | ---
+20 mins | Set up conda environment | How to create a conda computing environment?
+
+!!! note "Learning Objectives"
+
+    Learn how to install conda and set up a conda environment.
+
+!!! note "Preqrequisites"
+
+    This tutorial is written specifically for installing the MacOS version of Miniconda. 
+    
+!!! note "Tutorial Resources"
 
     Please refer to the [conda command cheatsheet](../Resources/conda_cheatsheet.md) for commonly used conda commands!
-
 
 ## Step 1: Install conda
 
@@ -143,3 +154,10 @@ conda deactivate
 ```
 
 You'll now be back in the `(base)` environment.
+
+## Conclusion
+
+!!! note "Key Points"
+
+    Now you should have a working conda installation where you can create custom conda environments!
+
