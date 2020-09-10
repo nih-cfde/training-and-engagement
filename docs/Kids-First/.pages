@@ -1,6 +1,7 @@
 arrange:
   - index.md
-  - Setting-up-your-KF-Portal-Permissions
+  - Portal-Setup-And-Permissions
   - Exploring-Data-in-the-KF-Portal
   - Advanced-KF-Portal-Queries
   - KF_7_PushToCavatica.md 
+  - Download_Data
