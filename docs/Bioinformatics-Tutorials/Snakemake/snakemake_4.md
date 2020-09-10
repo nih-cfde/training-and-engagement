@@ -14,9 +14,12 @@ Part 3: More decorating and running through the entire Snakemake workflow
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_q2n1e8ck&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_ac2qdn2j" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
+### Step 6: Decorating the remaining rules
+
 Run the rules one at a time to figure out what the output files are. Check the file time stamps (`ls -lht`) to track more recent output files. The inputs are specified in the shell command section.
 
 !!! Tip
+
     You can do a dry run of the rule with `snakemake -n <rule name>` to check how Snakemake is interpreting the rule input(s), output(s), and shell command(s), without actually running the command(s) or creating any output(s).
 
 Sometimes a command may require multiple input files but only explicitly state one in the command (the software assumes that if a certain file exists the other required files must exist). To avoid potential errors in rule dependencies, we will define all inputs in the rule's `input:` section.
@@ -39,7 +42,7 @@ In this workflow, the rule `map_reads` is a good example of such a behavior. `bw
     
 Follow along with the video tutorials to fill in the `input` and `output` sections for the remaining rules. For help, refer to the complete [Snakefile](./example_snakefile.md) for this tutorial, but note that there are many ways to concisely enter the input and output files and this is just one version!
 
-### Running lots of rules all at once
+### Step 7: Running lots of rules all at once
 
 Once you've fixed the rules `index_genome_bwa` and `map_reads`, you should be able to run everything up to the rule `index_genome_samtools` by running:
 
@@ -49,14 +52,14 @@ snakemake -p index_genome_samtools
 
 This also serves as a good way to check that you have all the correct input/output information. You'll have files left over if you forgot to put them in output.
 
-### Re-running rules
+### Step 8: Re-running rules
 
 Snakemake also has the option to delete all the inputs/outputs for a particular rule (including preceding rules), shown here by running the `index_genome_samtools` rule:
 ```
 snakemake --delete-all-output index_genome_samtools
 ```
 
-### Using filenames instead of rule names
+### Step 9: Using filenames instead of rule names
 
 You don't actually need to use the rule names *(this will be important later on!)*. Instead of rule names, you can specify the required output file in Snakemake which will trigger execution of all the upstream linked rules necessary to produce the file. So, the command below will also work to run the rule `map_reads`, and you don't have to remember the rule name (which can be arbitrary).
 
@@ -64,7 +67,7 @@ You don't actually need to use the rule names *(this will be important later on!
 snakemake -p SRR2584857.sam
 ```
 
-### Some python shortcuts
+### Step 10: Exploring rule decoration shortcuts
 
 There are several ways to more efficiently and cleanly specify inputs/outputs in the Snakefile. Here are some shortcuts:
 
