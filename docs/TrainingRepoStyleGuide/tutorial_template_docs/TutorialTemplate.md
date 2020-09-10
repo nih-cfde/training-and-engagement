@@ -32,6 +32,8 @@ y mins | [Page title](path/to/page) | Shorter tutorials may have only one entry
 
 ### Step 1: do this
 
+For longer tutorials that are split over multiple pages, start the tutorial steps on a new page.
+
 ### Step 2: do that
 
 ### Step 3: change this
