@@ -13,14 +13,9 @@ Cavatica or the Portal what data we are authorized to see and use.
 
 Typically, the groups who store and distribute human data are different
 from the groups who are dedicated to processing and approving
-applications for human data use. The
-Kids First DRC stores and distributes the Kids First metadata, but they
-don't decide who has access. Similarly, Cavatica doesn't decide who
-can use the Kids First data files, even though they regulate that
-access.
+applications for human data use. The Kids First DRC stores and distributes the Kids First metadata, but they don't decide who has access. Similarly, Cavatica doesn't decide who can use the Kids First data files, even though they regulate that access.
 
-We need to tell both interfaces what credentials we have for
-data access:
+We need to tell both interfaces what credentials we have for data access:
 
 ## Data Repository Integrations in the Kids First Portal
 
