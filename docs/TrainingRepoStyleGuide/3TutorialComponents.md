@@ -22,7 +22,7 @@ Tutorials should consist primarily of original content. If lesson material is ad
 
 ### Tutorial structure
 
-All tutorials should begin with a landing page. For longer tutorials that are split over multiple pages, start the tutorial steps on a new page (more details below). See the [tutorial template](./tutorial_template_docs/TutorialTemplate.md) for a page outline. 
+All tutorials should begin with landing page information. For longer tutorials that are split over multiple pages, start the tutorial steps on a new page (more details below). See the [tutorial template](./tutorial_template_docs/TutorialTemplate.md) for a page outline. For one-page tutorials, the landing "page" information may all be on the same page as the tutorial steps.
 
 **Tutorial landing page components:**
 - Title
