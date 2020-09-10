@@ -97,8 +97,7 @@ Each release cycle there are different tasks to be completed:
 - Reviews for merge into `stable`
 - Release note maintenance
 
-The planning phase scheduled following a release will allow for discussion and assignment of the different roles for the upcoming release.
-This phase will also include discussion for generating new content.
+The planning phase scheduled following a release will allow for discussion and assignment of the different roles for the upcoming release. This phase will also include discussion for generating new content and creation of appropriate issues in the training repo. 
 
 ### Development
 
@@ -115,23 +114,20 @@ This phase will include work on developing new content and enhancing published t
 ### Internal release deadline
 
 Internal Release Deadline: five business/working days prior to release date
+This phase will involve finalizing release-notes for the website. A draft of the release notes will be auto generated based on PR merges into `dev`. The edited draft will be release both on the training GitHub repo as well as in a new tab on the website with links in the landing page.
 
    - All PRs tagged for the upcoming release start preparation for successful merge into `dev` and successfully rendered.
    - The original PR author should ensure all review comments (if any) are addressed prior to merge.
    - All new tutorials should follow the style guide for formatting and tutorial arrangement.
    - If changes requested from a reviewer on a PR cannot be completed by the internal release deadline, the PR author
      should relabel with the next release date.
+   - Connect intra tutorials that were merged into `dev` if applicable
+   - Release notes are modified and merged.
 
 ### Final merge
 
-This phase will involve merging `dev` into `stable` along with finalizing release-notes for the website. A draft of the release notes will be
-auto generated based on PR merges into `dev`. The edited draft will be release both on the training GitHub repo as well as in a new tab on the
-website with links in the landing page.
+This phase will involve merging `dev` into `stable`. Allotted timeline would be 5 business/working days until release date. Merging from `dev` to `stable` requires group approval. For this phase, one PR will be opened for merge into `stable` and the approval for merge will be based on the rendered website with the following checklist:
 
-Allotted timeline would be 5 business/working days until release date. Merging from `dev` to `stable` requires group approval. For this phase, one
-PR will be opened for merge into `stable` and all the
-
-   -  Connect intra tutorials that were merged into `dev` if applicable
    -  If new features were merged check for functionality across entire site
    -  Check the format and rendering of release-notes on website
    -  Check for tutorial rendering on multiple browsers, modes (normal, incognito) and devices (phone, tablet, laptop)
@@ -143,8 +139,7 @@ PR will be opened for merge into `stable` and all the
 
 ### Public release
 
-After the creation of release notes and the successful merge of `dev` into `stable` we will announce the release on GitHub, Twitter,
-the website, and through the CFDE Newsletter.
+After the creation of release notes and the successful merge of `dev` into `stable` we will announce the release on GitHub, Twitter, the website, and through the CFDE Newsletter.
 
 ## Release Documentation
 
@@ -155,7 +150,6 @@ The release information will be documented in a markdown file `release-notes.md`
 The release notes announcing `What's new ?` will also be highlighted on the training website. The website version will include a summarized version of the GitHub release notes.
 
 Suggested format:
-
 
  > Release Version
  >
