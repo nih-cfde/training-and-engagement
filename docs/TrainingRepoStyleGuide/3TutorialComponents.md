@@ -20,23 +20,34 @@ Tutorials should consist primarily of original content. If lesson material is ad
 3) where possible, we tell the original authors we are using their material and appreciate their work! and,
 4) the addition of these materials are supplements to the tutorial and not the primary content.
 
-### Landing page
+### Tutorial structure
 
-Multi-page tutorials should have a summary page of the tutorial prerequisites and contents. Landing pages are not necessary for 1-page tutorials, however the same information should be provided in the tutorial's introduction section instead. See the [template](./tutorial_template_docs/Tutorial_Template.md) for a page outline.
+Tutorials should begin with a landing page. For longer tutorials that are split over multiple pages, start the tutorial steps on a new page. See the [tutorial template](./tutorial_template_docs/TutorialTemplate.md) for a page outline. 
 
-Tutorial landing page components:
+**Tutorial landing page components:**
 - Title
-- Short introduction
+- Brief description
+- Table of tutorial pages
 - Learning Objectives
 - Prerequisites
-- Table of tutorial pages
 - Tutorial resources
 
 *Title*
 Titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`
 
-*Short introduction*
-A brief description of what the tutorial is about (expanded in the Introduction section, see [Tutorial structure](#tutorial-structure))
+*Brief description*
+A brief description of what the tutorial is about (may be expanded in the Introduction section detailed below)
+
+*Table*
+
+A Markdown formatted table for each page of the tutorial. The table columns should be named as follows:
+
+Est. Time | Lesson name | Description
+--- | --- | ---
+
+Est. Time: Provide estimated completion times for each page (e.g., 30 secs, 10 mins, 1 hour)
+Lesson name: The title of each page, with a hyperlink to the page
+Description: Formatted as a short phrase or question about the primary learning goal of each section
 
 *Learning Objectives
 
@@ -54,44 +65,43 @@ They are formatted with a `note` admonition box:
 
 Clearly state the operating system(s) that will work for the tutorial, any required installation or set up steps that are not documented in the tutorial (e.g., you can link to existing set up tutorials instead). While we recommend writing tutorials without making assumptions about experience level, if particular computational, bioinformatics, and/or biological knowledge are needed, state them clearly as prerequisites.
 
-*Table*
+They are formatted with a `note` admonition box:
 
-A Markdown formatted table for each page of the tutorial. The table columns should be named as follows:
-
-Est. Time | Lesson name | Description
---- | --- | ---
-
-Est. Time: Provide estimated completion times for each page (e.g., 30 secs, 10 mins, 1 hour)
-Lesson name: The title of each page, with a hyperlink to the page
-Description: Formatted as a short phrase or question about the primary learning goal of each section
+```
+!!! note "Prerequisites"
+```
 
 *Tutorial resources*
 Add in hyperlinks to any tutorial reference material (e.g., cheatsheets, scripts, example data, vidlets, etc.)
 
+They are formatted with a `note` admonition box: 
 
-### Tutorial structure
+```
+!!! note "Tutorial Resources"
+```
 
-The following sections should be included in each tutorial:
+**The following sections should be included in each tutorial, following the landing page:**
 
-- Title
-- Introduction
-- Set up
+- Title (optional)
+- Introduction (optional)
+- Set up (optional)
 - Tutorial steps 
 - Conclusion
 
 *Title*
 
-For tutorials that have a landing page, the title will refer to the primary content of each page. For tutorials that do not have a separate landing page, titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`.
+For tutorials that start new pages after their landing page, the title will refer to the primary content of each page, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`.
 
 *Introduction*
 
-The introduction should briefly address:
+If more introductory material is needed beyond the brief description on the landing page, please add an introduction section that addresses:
+
 - what is the tutorial about (general topic, e.g., cloud computing with AWS, workflows with Snakemake)?
 - what will the user do in this specific tutorial (e.g., create an account on Kids First, create a Manhattan plot)?
 
 *Set up*
 
-Provide instructions on computer set up, software installations, and/or file downloads (may include linking to existing tutorials).
+If more set up material is needed beyond the prerequisites on the landing page, please provide additional instructions in a Set up section (e.g., on computer set up, software installations, and/or specific tutorial file downloads (may include linking to existing tutorials)).
 
 *Steps*
 
@@ -99,7 +109,7 @@ Tutorial steps should be written as `Step n: Action`, e.g., `Step 1: Downloading
 
 Include links to accompanying files for download, like scripts or input files for data downloads
 
-For command-line software installations, provide a test command to check that the installation was successful. This could be checking for the software version or help page:
+For command-line software installations, **provide a test command** to check that the installation was successful. This could be checking for the software version or help page:
 ```
 # input
 conda --version
@@ -118,7 +128,7 @@ Options:
 
 *Conclusion*
 
-Briefly sum up the tutorial key points as a bullet point list (it could be a restatement of the learning objectives if any were stated in the Introduction). Use the admonition format:
+Briefly sum up the tutorial key points as a bullet point list (it could be a restatement of the learning objectives if any were stated in the Introduction). Use the admonition `note` format:
 
 ```
 !!! note "Key Points"
