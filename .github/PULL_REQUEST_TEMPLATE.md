@@ -16,7 +16,7 @@ Add how you would like to receive the review (direct editing, as comments, notes
 ## Timeline
 Add expected timeline to finish review and merge adding note for time critical updates
 
-## Reviewer checklist
+## Reviewer Checklist
 
 - [ ] spelling and grammar
 - [ ] successful run of all installation and code chunks
