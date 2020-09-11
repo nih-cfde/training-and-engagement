@@ -4,20 +4,22 @@ title: CFDE Training Release
 ---
 
 
-Updated September 10, 2020
-===========================
+Latest Release
+=================
+Updated September 12, 2020
 
-## New
+## New Tutorials
 
 - [MIME type tutorial](../CF-Tutorials/MIME-type/index.md)
-- [Javascript tutorial for adding content chooser](../General-Tutorials/javascript_chooser.md)
+- [Adding user choosable content using Javascript](../General-Tutorials/javascript_chooser.md)
 
-## Features
+## Website Features
 
-- Integration of content tabs and superfences
+- Content tabs and superfences
+- asciinema player
 
-## Maintenance
+## Updates and Fixes
 
-- [Additional context for conda installation tutorial](../General-Tutorials/javascript_chooser.md)
-- [Snakemake formatting edits and addition of Resources tab](../Bioinformatics-Tutorials/Snakemake/index.md)
-- [GWAS tutorial edits for key access pair, data download and instance recovery](../Bioinformatics-Tutorials/GWAS-in-the-cloud/index.md)
+- [Set up computing environment with conda on MacOS](../General-Tutorials/install_conda_tutorial.md) - Additional context for conda installation
+- [Snakemake](../Bioinformatics-Tutorials/Snakemake/index.md) - Formatting edits and addition of Resources tab
+- [GWAS in the cloud](../Bioinformatics-Tutorials/GWAS-in-the-cloud/index.md) - GWAS tutorial edits for key access pair, data download and instance recovery
