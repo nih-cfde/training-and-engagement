@@ -7,7 +7,7 @@ title: Snakemake Overview
 
 Workflow management systems help to automate analyses and make them easier to maintain, reproduce, and share with others. In this tutorial, we will walk through the basic steps for creating a [variant calling](https://www.ebi.ac.uk/training-beta/online/courses/human-genetic-variation-introduction/variant-identification-and-analysis/) workflow with the Snakemake workflow management system.
 
-This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization etc may require tuning.
+This may not be the variant calling workflow you would necessarily use in practice, but it serves as a good example for teaching Snakemake. Many people do indeed use `samtools`, but for particularly big or complex genomes, guidelines provided by  [GATK](https://gatk.broadinstitute.org/hc/en-us) would serve best. Additionally, various parameters associated with mapping, visualization, etc. may require tuning.
 
 These materials were adapted from the Data Intensive Biology lab course materials ([course materials](https://github.com/ngs-docs/2020-GGG298), [lab materials](https://github.com/ngs-docs/2020-GGG201b-lab)).
 
