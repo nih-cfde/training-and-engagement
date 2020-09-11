@@ -27,13 +27,11 @@ There are specific steps to install Miniconda for [MacOS](https://conda.io/proje
 
 ### Step 1: Download the [installer](https://docs.conda.io/en/latest/miniconda.html)
 
-- Select "Miniconda3 MacOSX 64-bit bash"
+Select "Miniconda3 MacOSX 64-bit bash"
 
 ### Step 2: Verify your installer hashes
 
-- go to the directory where you saved the installer file (e.g., "Downloads/")
-
-- open up Terminal and navigate to that directory
+Go to the directory where you saved the installer file (e.g., "Downloads/"). Open up Terminal and navigate to that directory:
 
 ```
 cd Downloads
@@ -70,13 +68,14 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 - for changes to take effect, `exit` and re-open Terminal window.
 
 ### Step 4: Verify that you can run conda
-- now, when you re-open Terminal, the command prompt will start with `(base)`, indicating that you are in the base conda environment. It will look something like this:
+
+Now, when you re-open Terminal, the command prompt will start with `(base)`, indicating that you are in the base conda environment. It will look something like this:
 
 ```
 (base) $
 ```
 
-- check the version of your new conda installation:
+Check the version of your new conda installation:
 
 === "Input"
 
@@ -94,7 +93,7 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 
 ### Step 5: Configure conda
 
-- conda uses channels to look for available software installations. These are some good channels to set up:
+Conda uses channels to look for available software installations. These are some good channels to set up:
 
 ```
 conda config --add channels bioconda
