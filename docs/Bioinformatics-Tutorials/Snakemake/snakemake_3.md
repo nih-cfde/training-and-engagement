@@ -2,7 +2,7 @@
 
 In the previous steps, the Snakemake rules were run individually. But what if we want to run all the commands at once? It gets tedious to run each command individually, and we can do that already without Snakemake!
 
-By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this, where `input:`, `output:`, and `shell:` are Snakemake directives:
+By defining the inputs and outputs for each rule's command(s), Snakemake can figure out how the rules are linked together. The rule structure will now look something like this, where `input:`, `output:`, and `shell:` are Snakemake directives:
 
 === "Snakemake rule"
 
