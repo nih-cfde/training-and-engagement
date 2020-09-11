@@ -3,10 +3,9 @@ layout: page
 title: CFDE Training Release
 ---
 
-
 Latest Release
 =================
-Updated September 12, 2020
+**Updated September 12, 2020**
 
 ## New Tutorials
 
