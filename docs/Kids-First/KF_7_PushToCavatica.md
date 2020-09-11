@@ -6,11 +6,16 @@ title: Push to Cavatica
 Push to Cavatica
 ================
 
+## Check settings
+
 Before you start, check your Kids First settings (under you name on the top right) to make sure Data Repository Integrations are connected. Your screen should look like this:
 
 ![KFDRC Portal Settings Page](../images/kf_settings_10.png "KFDRC Portal Settings Page")
 
-Then go back to your File Repository tab. We are currently looking at data under the CBTTC. The data has the following filters.
+## Set filters and choose files
+
+Go back to your [File Repository](https://portal.kidsfirstdrc.org/search/file) tab. We are currently looking at data under the CBTTC. Check to make sure the you have the following data filters and/or set these filters:
+
 
 **Clinical Filters**:
 
@@ -37,7 +42,9 @@ There are a total of 405 files available with these filters. Select the files yo
 
     If you want to push ALL available files, leave all file IDs unchecked. For the purposes of this tutorial, let's leave the boxes unchecked.
 
-Then click the large purple **"ANALYZE IN CAVATICA"** button.
+## Push to Cavatica
+
+To view and analyze these files in Cavatica, click the large purple **"ANALYZE IN CAVATICA"** button.
 
 A message box pops up. In this case, we are authorized to copy 399 (out of 405) files. You need a Cavatica project to assign the files to. Click "Create a project" and name your project "{Last name} practice lesson".
 
@@ -48,10 +55,11 @@ A message box pops up. In this case, we are authorized to copy 399 (out of 405) 
 
 A message pops up for a few seconds that says the files were transferred successfully. Click on "Open project in Cavatica".
 
-If the pop-up message disappears before you can get to it, visit <https://www.cavatica.org> on a new tab and scroll to the bottom of the page. Click the "ACCESS DATA" button.
+## View files in Cavatica
+
+If the pop-up message from the previous section disappears before you can get to it, visit <https://www.cavatica.org> on a new tab and scroll to the bottom of the page. Click the "ACCESS DATA" button.
 
 ![ACCESS DATA](../images/access_data_14.png "ACCESS DATA")
-
 
 Log in to Cavatica with your ERA commons ID (or whichever ID you used to link your Cavatica account to KidsFirst)
 
@@ -69,4 +77,4 @@ All our files copied over! Hurray!
 
 On this page, you can customize the view-able metadata options by clicking the table icon (see blue circle on above figure) on the right side of the page.
 
-You are now ready to start data analysis!
+You are now ready to start data analysis in Cavatica!
