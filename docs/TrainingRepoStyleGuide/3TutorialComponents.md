@@ -40,7 +40,7 @@ Titles should be short and include the goal of the tutorial, e.g., `How to launc
 
 A brief description of what the tutorial is about (may be expanded in the Introduction section detailed below)
 
-*Table of contents*
+*Table of contents (for multi-page tutorials)*
 
 A Markdown formatted table for each page of the tutorial. The table columns should be named as follows:
 
@@ -50,6 +50,12 @@ Est. Time | Lesson name | Description
 Est. Time: Provide estimated completion times for each page (e.g., 30 secs, 10 mins, 1 hour)
 Lesson name: The title of each page, with a hyperlink to the page
 Description: Formatted as a short phrase or question about the primary learning goal of each section
+
+For 1-page tutorials, include the "Est. Time" as a text statement rather than a table:
+
+```
+Est. Time: 10 mins
+```
 
 *"Learning Objectives"*
 
@@ -67,19 +73,19 @@ They are formatted with a `note` admonition box:
 
 Clearly state the operating system(s) that will work for the tutorial, any required installation or set up steps that are not documented in the tutorial (e.g., you can link to existing set up tutorials instead). While we recommend writing tutorials without making assumptions about experience level, if particular computational, bioinformatics, and/or biological knowledge are needed, state them clearly as prerequisites.
 
-They are formatted with a `note` admonition box:
+They are formatted with a tabbed box:
 
 ```
-!!! note "Prerequisites"
+=== "Prerequisites"
 ```
 
 *"Tutorial Resources"*
 Add in hyperlinks to any tutorial reference material (e.g., cheatsheets, scripts, example data, vidlets, etc.)
 
-They are formatted with a `note` admonition box: 
+They are formatted with a tabbed box:
 
 ```
-!!! note "Tutorial Resources"
+=== "Tutorial Resources"
 ```
 
 **The following sections should be included in each tutorial, following the landing page, either on the same page or on a new page for longer tutorials:**
@@ -88,7 +94,7 @@ They are formatted with a `note` admonition box:
 - "Introduction" (optional)
 - "Set Up" (optional)
 - Tutorial steps 
-- "Conclusion"
+- "Conclusion" (optional)
 
 *Title (optional)*
 
@@ -128,9 +134,11 @@ conda is a tool for managing and deploying applications, environments and packag
 Options:
 ```
 
-*"Conclusion"*
+*"Conclusion" (optional)*
 
-Briefly sum up the tutorial key points as a bullet point list (it could be a restatement of the learning objectives if any were stated in the Introduction). Use the admonition `note` format:
+If applicable, briefly sum up the tutorial key points as a bullet point list (it could be a restatement of the learning objectives if any were stated in the Introduction). In some cases, it may make sense to have a "Conclusion" section and in others a "Key Points" admonition box is sufficient.
+
+Use the admonition `note` format:
 
 ```
 !!! note "Key Points"
