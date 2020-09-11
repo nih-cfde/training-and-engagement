@@ -40,7 +40,7 @@ Titles should be short and include the goal of the tutorial, e.g., `How to launc
 
 A brief description of what the tutorial is about (may be expanded in the Introduction section detailed below)
 
-*Table of contents (for multi-page tutorials)*
+*Table of contents (for **multi-page** tutorials)*
 
 A Markdown formatted table for each page of the tutorial. The table columns should be named as follows:
 
@@ -50,12 +50,6 @@ Est. Time | Lesson name | Description
 Est. Time: Provide estimated completion times for each page (e.g., 30 secs, 10 mins, 1 hour)
 Lesson name: The title of each page, with a hyperlink to the page
 Description: Formatted as a short phrase or question about the primary learning goal of each section
-
-For 1-page tutorials, include the "Est. Time" as a text statement rather than a table:
-
-```
-Est. Time: 10 mins
-```
 
 *"Learning Objectives"*
 
@@ -67,6 +61,16 @@ They are formatted with a `note` admonition box:
 
 ```
 !!! note "Learning Objectives"
+```
+
+*Est. Time (for **1-page** tutorials)*
+
+For 1-page tutorials, include the "Est. Time" as a tabbed box rather than a table and put it AFTER the "Learning Objectives" so that the time, prereqs, and tutorial resources are grouped together (see Conda installation tutorial for an example):
+
+```
+=== "Est. Time" 
+    
+    10 mins
 ```
 
 *"Prerequisites"*
