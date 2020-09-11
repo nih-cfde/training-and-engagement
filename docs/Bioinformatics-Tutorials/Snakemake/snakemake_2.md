@@ -31,7 +31,7 @@ There are several rules defined with commands to run, but we'll need to add a fe
 
     2. on a new line, add a comment with `#`, e.g., `# This is my first edit!`
 
-    3. save the change by hitting `control` key and `o` key. `nano` will ask if you want to save the file as 'Snakefile'. We want to keep the same file name, so hit `return` key.
+    3. save the change by hitting `control` key and `o` key. `nano` will ask if you want to save the file as "Snakefile". We want to keep the same file name, so hit `return` key.
 
     4. exit `nano` by hitting `control` key and `x` key.
 
