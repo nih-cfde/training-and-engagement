@@ -6,7 +6,7 @@ Conda makes software installation and compute environment management easier by m
 
 Est. Time | Lesson name                                 |
 --------- | ------------------------------------------- |
-20 mins   | Set up computing environment with Miniconda |
+20 mins   | Set up computing <br />environment with Miniconda |
 
 !!! note "Learning Objectives"
 
