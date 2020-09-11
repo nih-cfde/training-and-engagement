@@ -21,13 +21,10 @@ Est. Time | Lesson name
     Please refer to the [conda command cheatsheet](../Resources/conda_cheatsheet.md) for commonly used conda commands!
 
 
-Follow the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html). Please use the 64-bit version when working with Python 3.x.
+### Step 1: Download the installer
+We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html). 
 
-There are specific steps to install Miniconda for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).
-
-### Step 1: Download the [installer](https://docs.conda.io/en/latest/miniconda.html)
-
-Select "Miniconda3 MacOSX 64-bit bash"
+Select the [installer](https://docs.conda.io/en/latest/miniconda.html) for: "Miniconda3 MacOSX 64-bit bash". We are using the 64-bit version for working with Python 3.x. 
 
 ### Step 2: Verify your installer hashes
 
