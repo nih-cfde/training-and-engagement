@@ -4,9 +4,7 @@ Conda makes software installation and compute environment management easier by m
 
 > "Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the conda install command to install 720+ additional conda packages from the Anaconda repository."
 
-Est. Time | Lesson name                                 |
---------- | ------------------------------------------- |
-20 mins   | Set up computing <br />environment with Miniconda |
+Est. Time: 20 mins
 
 !!! note "Learning Objectives"
 
