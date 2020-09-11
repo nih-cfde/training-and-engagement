@@ -47,8 +47,10 @@ Use | Example
 --- | ---
 Buttons to click | "Launch", "Download"
 Text on webpages | look for the "Actions" column
-File names | A text file called "download-links.txt"
+File names | A text file called "download-links.txt"*
 Folder names | create a folder called "KF_Data"
+
+*If you refer to this specific file many times, you can put the file name in quotations for the first mention. The "Snakefile" in the Snakemake tutorial is an example where we state that the file is called "Snakefile" but thereafter simply refer to it as Snakefile.
 
 **1. In-line code formatting with single backticks should be used for:**
 
@@ -134,6 +136,9 @@ Use javascript user-chooseable tabs to differentiate between input/expected outp
     You can also add regular text or images
 ```
 
+For some tutorials, you may want to distinguish between code entered at the terminal vs. code entered in a text editor. The Snakemake rules are an example of this
+distinction, where Snakemake rule code is added to a file and not entered at the terminal:
+
 ```
 === "Snakemake rule"
 
@@ -152,6 +157,19 @@ Use javascript user-chooseable tabs to differentiate between input/expected outp
     ```
 ```
 
+We are also using this tabbed format for "Learning Objectives" and "Prerequisites". This format helps to declutter the front matter so there are fewer admonition boxes:
+
+```
+=== "Learning Objectives"
+    
+    Learning objectives for the lesson
+    
+=== "Prerequisites"
+
+    Specify tutorial prerequisites (e.g., experience level, OS system, software installations)
+
+```
+    
 **4. Hyperlink syntax**
 
 Use hyperlinks to link images, other Markdown files, or websites. Provide short but descriptive text for the links instead of 'Click here' or 'Click this'.
@@ -192,14 +210,6 @@ There are several [built-in admonition styles, and it is possible to add custom 
     Errors users may encounter and what to do about them (e.g., software installation errors)
     
 # Customize admonition titles by specifying the admonition title in quotes. For example:
-
-!!! note "Prerequisites"
-
-    Specify tutorial prerequisites (e.g., experience level, OS system, software installations)
-
-!!! note "Learning Objectives"
-    
-    Learning objectives for the lesson
 
 !!! note "Key Points"
     
