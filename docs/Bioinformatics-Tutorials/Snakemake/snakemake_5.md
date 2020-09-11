@@ -1,5 +1,7 @@
 # Run the whole pipeline!
 
+### Step 11: Running the pipeline
+
 Once you've decorated the entire Snakefile, you should be able to run through the whole workflow using either the rule name:
 
 ```
@@ -30,7 +32,7 @@ snakemake -p all
 
 This rule runs through the entire workflow with a single command! This is much better than running each command one by one!
 
-## Looking at VCF files
+### Step 12: Looking at VCF files
 
 Finally, let's look at the output!
 
@@ -48,13 +50,20 @@ samtools tview -p ecoli:4202391 SRR2584857.sorted.bam ecoli-rel606.fa
     - Exit help menu by hitting `q` key
     - Go to a specific position location in the alignment by hitting `/` key.
 
-## Wrapping up
+## Conclusion
 
 Exit `(snaketest)` conda environment to return to `(base)` environment:
 
 ```
 conda deactivate
 ```
+
+Hopefully, you have now:
+
+- learned how to write basic workflows with Snakemake rules
+- learned variable substitution for Snakemake rules
+- learned wildcard matching for Snakemake rules
+- understood why workflow systems can help you do your computing more easily!
 
 !!! note "Key Points"
 
@@ -66,9 +75,3 @@ conda deactivate
     - the rules are connected by matching filenames
     - tabs are important syntax feature in Snakemake
     
-Hopefully, you have now:
-
-- learned how to write basic workflows with Snakemake rules
-- learned variable substitution for Snakemake rules
-- learned wildcard matching for Snakemake rules
-- understood why workflow systems can help you do your computing more easily!
