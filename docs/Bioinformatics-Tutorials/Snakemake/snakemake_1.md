@@ -1,4 +1,4 @@
-# Set up
+# Set Up
 
 ## Choose computing environment
 
@@ -104,9 +104,9 @@ You should have several software installed in your `snaketest` environment now. 
     Copyright (C) 2019 Genome Research Ltd.
     ```
 
-If you get an error, the software installation may have failed. You can check the software that is installed in your conda environment: `conda list`.
+If you get an error, the software installation may have failed. You can check the software that is installed in your conda environment: `conda list`
 
-To leave the conda environment, type: `conda deactivate`.
+To leave the conda environment, type: `conda deactivate`
 
 Later in the tutorial, we'll use `wget` to download data. Installing `wget` on MacOS can be achieved with `conda install`. This step will take a few minutes and the installation should be done in the `base` conda environment:
 

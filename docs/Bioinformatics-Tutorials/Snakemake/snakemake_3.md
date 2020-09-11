@@ -2,7 +2,7 @@
 
 In the previous steps, the Snakemake rules were run individually. But what if we want to run all the commands at once? It gets tedious to run each command individually, and we can do that already without Snakemake!
 
-By defining the inputs and outputs for each rule's command/commands, Snakemake can figure out how the rules are linked together. The rule structure will now look something like this, where `input:`, `output:`, and `shell:` are Snakemake directives:
+By defining the inputs and outputs for each rule's command(s), Snakemake can figure out how the rules are linked together. The rule structure will now look something like this, where `input:`, `output:`, and `shell:` are Snakemake directives:
 
 === "Snakemake rule"
 
@@ -32,14 +32,15 @@ By defining the inputs and outputs for each rule's command/commands, Snakemake c
 
 Here, Snakemake interprets the `input:` and `output:` sections as Python code, and the `shell:` section as the bash code that gets run on the command line.
 
-### Add input and output files
+### Step 4: Adding output files
 
-Let's start with a clean slate. Delete any output files you created in the sections above, such that you only have the Snakefile in your directory: `rm <file name>`.
+Let's start with a clean slate. 
 
 !!! warning
-    Be careful with `rm` command - it deletes files forever!
 
-**Adding outputs:**
+    Be careful with `rm` command - it deletes files forever!
+    
+Delete any output files you created in the sections above, such that you only have the Snakefile in your directory: `rm <file name>`.
 
 The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to the rule, note that the output file must be in quotes `""`:
 
@@ -70,11 +71,11 @@ Try: Run the `download_data` rule twice.
 
 Delete the file: `rm SRR2584857_1.fastq.gz`. Now run the rule again.
 
-This time the shell command is executed! By explicitly including the `output` file in the rule, Snakemake was smart to know that the output file already exists and doesn't need to be re-created.
+This time the shell command is executed! By explicitly including the `output` file in the rule, Snakemake was smart enough to know that the output file already exists and doesn't need to be re-created.
 
-**Adding inputs:**
+### Step 5: Adding input files
 
-To the `download_genome` rule, add:
+To the `download_genome` rule, define the following output file:
 
 === "Snakemake rule"
 
