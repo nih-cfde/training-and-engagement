@@ -23,5 +23,5 @@ Web Development:
 
 Conda:
 
-  - [Set up computing environment with conda on MacOS](install_conda_tutorial.md)
+  - [Set up Conda computing environment](install_conda_tutorial.md)
   
