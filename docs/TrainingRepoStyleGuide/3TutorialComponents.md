@@ -24,13 +24,13 @@ Tutorials should consist primarily of original content. If lesson material is ad
 
 All tutorials should begin with landing page information. For longer tutorials that are split over multiple pages, start the tutorial steps on a new page (more details below). See the [tutorial template](./tutorial_template_docs/TutorialTemplate.md) for a page outline. For one-page tutorials, the landing "page" information may all be on the same page as the tutorial steps.
 
-**Tutorial landing page components:**
+**Tutorial landing page components (in this order):**
 - Title
 - Brief description
 - Table of contents
 - "Learning Objectives"
 - "Prerequisites"
-- "Tutorial Resources"
+- "Tutorial Resources" (optional)
 
 *Title*
 
@@ -79,8 +79,9 @@ They are formatted with a tabbed box:
 === "Prerequisites"
 ```
 
-*"Tutorial Resources"*
-Add in hyperlinks to any tutorial reference material (e.g., cheatsheets, scripts, example data, vidlets, etc.)
+*"Tutorial Resources" (optional)*
+
+If applicable, add in hyperlinks to any tutorial reference material (e.g., cheatsheets, scripts, example data, vidlets, etc.).
 
 They are formatted with a tabbed box:
 
@@ -88,13 +89,13 @@ They are formatted with a tabbed box:
 === "Tutorial Resources"
 ```
 
-**The following sections should be included in each tutorial, following the landing page, either on the same page or on a new page for longer tutorials:**
+**The following sections (in this order) should be included in each tutorial, following the landing page, either on the same page or on a new page for longer tutorials:**
 
 - Title (optional)
 - "Introduction" (optional)
 - "Set Up" (optional)
 - Tutorial steps 
-- "Conclusion" (optional)
+- Conclusion (optional)
 
 *Title (optional)*
 
@@ -134,9 +135,9 @@ conda is a tool for managing and deploying applications, environments and packag
 Options:
 ```
 
-*"Conclusion" (optional)*
+*Conclusion (optional)*
 
-If applicable, briefly sum up the tutorial key points as a bullet point list (it could be a restatement of the learning objectives if any were stated in the Introduction). In some cases, it may make sense to have a "Conclusion" section and in others a "Key Points" admonition box is sufficient.
+If applicable, briefly sum up the tutorial key points as a bullet point list (it could be a recap of the learning objectives). In some cases, it may make sense to have a "Conclusion" section and in others, a "Key Points" admonition box is sufficient.
 
 Use the admonition `note` format:
 
