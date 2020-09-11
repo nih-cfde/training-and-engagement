@@ -7,6 +7,8 @@ title: Overview
 
 Add a brief description of what the tutorial is about. If tutorial material was built from other sources, mention that here.
 
+For **multi-page** tutorials only, add estimated time per section, lesson name, and description in a Markdown table:
+
 Est. Time | Lesson name | Description
 --- | --- | ---
 x mins | [Page title](path/to/page) | Formatted as a short phrase or question about the primary learning goal of each section
@@ -20,13 +22,19 @@ y mins | [Page title](path/to/page) | Shorter tutorials may have only one entry
     
     - objective 2
     
-!!! note "Prerequisites"
+For **1-page** tutorials only, add a tabbed box for the "Est. Time" (it should be grouped with the prereqs and tutorial resources tabs):
+
+=== "Est. Time"
+
+    x mins
+
+=== "Prerequisites"
     
     - Operating system(s)
     - Required installations
     - Setup steps needed to complete the tutorial
    
-!!! note "Tutorial Resources"
+=== "Tutorial Resources"
 
     - list out resources with bullet points and include a hyperlink to the resource (e.g., vidlets, screencasts, example files, cheatsheets)
 
@@ -47,9 +55,10 @@ If more set up material is needed beyond the prerequisites section, please provi
 
 ### Step 3: change this
 
-### Conclusion
+### Conclusion (optional)
 
-Briefly sum up the tutorial key points as a bullet point list (it could be a restatement of the learning objectives if any were stated in the Introduction). 
+If applicable, briefly sum up the tutorial key points as a bullet point list (it could be a recap of the learning objectives). In some cases, it may make sense to have a "Conclusion" section and in others, a "Key Points" admonition box is sufficient.
+
 Use the admonition format:
 
 !!! note "Key Points"
