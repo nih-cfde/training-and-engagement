@@ -1,7 +1,7 @@
 name: 'Auto Assign'
 on:
   pull_request:
-    branches: [latest]
+    branches: [dev]
     types: [opened, reopened]
 
 jobs:
