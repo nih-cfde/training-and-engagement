@@ -157,17 +157,16 @@ distinction, where Snakemake rule code is added to a file and not entered at the
     ```
 ```
 
-We are also using this tabbed format for "Learning Objectives" and "Prerequisites". This format helps to declutter the front matter so there are fewer admonition boxes:
+We are also using this tabbed format for "Prerequisites" and "Tutorial Resources". This format helps to declutter the front matter so there are fewer admonition boxes:
 
 ```
-=== "Learning Objectives"
-    
-    Learning objectives for the lesson
-    
 === "Prerequisites"
 
     Specify tutorial prerequisites (e.g., experience level, OS system, software installations)
 
+=== "Tutorial Resources"
+
+    e.g., cheat sheets, example scripts
 ```
     
 **4. Hyperlink syntax**
@@ -210,6 +209,10 @@ There are several [built-in admonition styles, and it is possible to add custom 
     Errors users may encounter and what to do about them (e.g., software installation errors)
     
 # Customize admonition titles by specifying the admonition title in quotes. For example:
+
+!!! note "Learning Objectives"
+    
+    Learning objectives for the lesson
 
 !!! note "Key Points"
     
