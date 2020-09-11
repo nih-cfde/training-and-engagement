@@ -71,7 +71,7 @@ Try: Run the `download_data` rule twice.
 
 Delete the file: `rm SRR2584857_1.fastq.gz`. Now run the rule again.
 
-This time the shell command is executed! By explicitly including the `output` file in the rule, Snakemake was smart to know that the output file already exists and doesn't need to be re-created.
+This time the shell command is executed! By explicitly including the `output` file in the rule, Snakemake was smart enough to know that the output file already exists and doesn't need to be re-created.
 
 ### Step 5: Adding input files
 
