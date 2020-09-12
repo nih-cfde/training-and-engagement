@@ -1,12 +1,12 @@
 categories:
-  - title: 'New'
+  - title: 'New Tutorials'
     labels:
       - 'new'
   - title: 'Features'
     labels:
       - 'feature'
       - 'enhancement'
-  - title: 'Maintenance'
+  - title: 'Updates and Fixes'
     label: 'fixes'
 change-template: '- $TITLE (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
