@@ -3,8 +3,8 @@ name: Training Release
 on:
   push:
     # branches to consider in the event; optional, defaults to all
-    branches:
-      - dev
+    branches: [dev]
+      
 
 jobs:
   update_release_draft:
@@ -15,4 +15,4 @@ jobs:
          config-name: action-release-drafter.yml
          name: CFDE Training Release
         env:
-          GITHUB_TOKEN: ${{ secrets.ALLTHEACTIONS }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
