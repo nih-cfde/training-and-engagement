@@ -1,6 +1,6 @@
 # Editing MkDocs websites with cfde-bot
 
-This is a tutorial on how to edit MkDocs websites from Github repos that use robots. The cfde-bots handle changes in each website GitHub repo so you never have to render the website locally to check the edits and most importantly, prevents changes that could break the website.
+This is a tutorial on how to edit MkDocs websites from Github repos that use the cfde-bot robot. The cfde-bots handle changes in each website GitHub repo to check  edits and most importantly, prevents changes that could break the website.
 
 !!! note "Learning Objectives"
 
