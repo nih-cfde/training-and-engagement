@@ -15,4 +15,4 @@ jobs:
          config-name: action-release-drafter.yml
          name: CFDE Training Release
         env:
-          GITHUB_TOKEN: ${{ secrets.ALLTHEACTIONS }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
