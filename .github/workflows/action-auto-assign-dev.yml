@@ -1,7 +1,7 @@
 name: 'Auto Assign'
 on:
   pull_request:
-    branches: [latest]
+    branches: [dev]
     types: [opened, reopened]
 
 jobs:
@@ -11,4 +11,4 @@ jobs:
       - uses: kentaro-m/auto-assign-action@v1.1.1
         with:
           repo-token: ${{ secrets.ALLTHEACTIONS }}
-          configuration-path: ".github/actions/auto_assign_latest.yml"
+          configuration-path: ".github/actions/auto_assign_dev.yml"
