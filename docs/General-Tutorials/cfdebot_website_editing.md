@@ -24,33 +24,35 @@ The `training-and-engagement` repo has a 2-stage PR and review stage. Changes ar
     
 In this tutorial, we lay out the general steps for the single stage PR process.
 
-Step 1: Go to website's GitHub repository.
+### Step 1: Go to website's GitHub repository.
 
-Step 2: Create a new branch, `my_branch` (type new branch name, hit enter)
+### Step 2: Create a new branch
 
-The new branch should be created with the `master` branch as its base.
+If working from Github, type a new branch name (e.g., `my_branch`) and hit `ENTER` The new branch should be created with the `master` branch as its base.
 
-Step 3: You should now be on your new branch, otherwise click `Branch:master` and switch to your new branch. 
+### Step 3: Make edits
+
+You should now be on your new branch, otherwise click `Branch:master` and switch to your new branch. 
 
 Find the file(s) you want to change and make changes directly in the web interface (while not necessary, you can also make changes via a local copy of the repo with `git` commands). When you’re done editing, scroll to the bottom of the page to commit the changes; Github knows to commit the changes to your branch.
 
-Step 4: Push your changes from `my_branch` to the `master` branch by clicking on "Compare & pull request". 
+### Step 4: Create pull request
 
-Add a description about the pull request (PR) and submit it. Depending on the website, follow style guidelines for the PR and review process.
+Push your changes from `my_branch` to the `master` branch by clicking on "Compare & pull request". Add a description about the pull request (PR) and submit it. Depending on the website, follow style guidelines for the PR and review process.
 
-Step 5: The cfde-bot will now make sure the website can build with these changes. 
+### Step 5: Wait for cfde-bot checks
 
-The PR page will the progress as the bot goes through its checks, starting with a yellow circle and "Some checks haven't completed yet". If the checks complete successfully, the circle turns green with a check mark and the message switches to "All checks have passed". If any checks failed, there will be a red circle with an "X" mark and the message "Some checks were not successful". In the latter case, check the build logs to track the error.
+The cfde-bot will now make sure the website can build with these changes. The PR page will the progress as the bot goes through its checks, starting with a yellow circle and "Some checks haven't completed yet". If the checks complete successfully, the circle turns green with a check mark and the message switches to "All checks have passed". If any checks failed, there will be a red circle with an "X" mark and the message "Some checks were not successful". In the latter case, check the build logs to track the error.
 
-Step 6: If the checks pass, changes should be automatically merged into a preview version of the readthedocs website. 
+### Step 6: Check rendered changes
 
-Click on the "Details" button of the "docs/readthedocs.com:<Github repo> — Read the Docs build succeeded!" check to view the rendered preview (the website is rendered for the specific PR).
+If the checks pass, changes should be automatically merged into a preview version of the readthedocs website. Click on the "Details" button of the "docs/readthedocs.com:<Github repo> — Read the Docs build succeeded!" check to view the rendered preview (the website is rendered for the specific PR).
 
-Step 7: Request reviews.
+### Step 7: Request reviews.
 
 If you are satisfied with the edits, request reviewers to check, request changes, and approve the changes. 
 
-Step 7: Merge changes.
+### Step 8: Merge changes.
 
 When the PR has been approved, click "Merge pull request" and confirm merge. Be sure to delete your branch. Your edits should now be viewable on the public-facing website!
 
@@ -74,12 +76,20 @@ The cfde-bot's process for checking changes to this repo is slightly different:
 
 - The cfde-bot simultaneously creates a PR of the changes to the `published-documentation` `master` branch so you can request a reviewer to merge to the `master` branch if you decide the preview looks good.
 
-Step 1: Go to `the-fair-cookbook` repo: https://github.com/nih-cfde/the-fair-cookbook
+#### Step 1: Go to `the-fair-cookbook` repo: https://github.com/nih-cfde/the-fair-cookbook
 
-Step 2: Make changes *directly* on the `master` branch.
+#### Step 2: Make changes *directly* on the `master` branch.
 
-Step 3: Check progress from the cfde-bot.
+#### Step 3: Check progress from the cfde-bot.
 
-Step 4: Check preview website: `https://cfde-published-documentation.readthedocs-hosted.com/en/preview`
+#### Step 4: Check preview website
 
-Step 5: To keep these changes, you need to request a reviewer for the PR to the `master` branch the cfde-bot created in the `published-documentation` repo. After approved, merge changes and check that the changes are on the public version of the website!
+The website link is `https://cfde-published-documentation.readthedocs-hosted.com/en/preview`. You must have admin permissions to acces the readthedocs website.
+
+#### Step 5: Request review 
+
+To keep these changes, you need to request a reviewer for the PR to the `master` branch the cfde-bot created in the `published-documentation` repo. 
+
+#### Step 6: Merge changes
+
+After approved, merge changes and check that the changes are on the public version of the website!
