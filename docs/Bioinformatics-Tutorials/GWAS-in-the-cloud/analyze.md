@@ -10,7 +10,7 @@ All of these steps must be performed on your Ubuntu AWS terminal window.
 
 ## Convert VCF into PLINK readable format
 
-Remember that VCF files are variant calling files that have [this structure](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
+Remember that VCF files are variant calling files that have a very [specific structure](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
 
 [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
@@ -27,13 +27,27 @@ the --plink options outputs the genotype data in PLINK PED format. Two files are
 
 ## Create list of alternative alleles
 
-In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling them alternative alleles. To do so, run:
+!!! note "Population Genetics Terms"
+
+    **For a given locus**
+
+    Major allele: is the most common allele in the population
+
+    Minor allele: is the least common allele in the population
+
+    Risk allele: in the context of a disease, is the allele associated with the disease.
+    For most Mendelian diseases, and a few (multi-gene) complex diseases, the risk allele is the minor allele. However, in some case, the risk allele can be the major allele.
+
+    For the purposes of this tutorial, we will set the minor allele at each SNP locus to be the risk (or reference) allele. This makes visualization and interpretation of results easier. 
+
+
+In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling the list "ref_alleles". To do so, run:
 
 ```
-cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > alt_alleles
+cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > ref_alleles
 ```
 
-where the file `alt_alleles` contains a list of SNP IDs and the allele to be set as A1.
+where the file "ref_alleles" contains a list of SNP IDs and the allele to be set as reference.
 
 
 ## Quality Control
