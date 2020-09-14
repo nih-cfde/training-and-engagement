@@ -14,11 +14,7 @@ For this tutorial, we will *not* work with human data. We will use coat color in
 
 This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedocs.io/en/2017/GWAS.html)
 
-!!! Prerequisites
-    This tutorial requires some expertise in biology and fundamental genetics. This tutorial is written for a Unix or Linux compute environment. It assumes very basic knowledge of the Unix shell and access to a UNIX/Linux system (e.g. MacOS, HPC). Users must be comfortable with finding and opening a terminal window, navigating to specific directories and running pre-scripted commands in the terminal.
-
 **Table of contents**
-
 
 | Est. Time| Lesson Name | Description|
 | ---|--------|--------|
@@ -31,3 +27,15 @@ This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedo
 | 00:40|[Analyze](analyze.md) | Generate summary statistics and association analysis |
 | 00:20|[Manhattan Plots](manhattan.md) | Make some plots to visualize data |
 | 00:10|[Terminate AWS Instance](terminate_aws.md) | Shut down the cloud computer |
+
+!!! note "Learning Objectives"
+    * learn to set up and access Amazon Web Services
+    * learn to move data in and out of the AWS instance
+    * learn to install and run all software necessary for GWAS analysis
+    * learn to produce Manhattan plots
+
+=== "Prerequisites"
+    * Background: Some expertise in biology and fundamental genetics.
+    * Technology: Access to MacOS and basic shell scripting. Users must be comfortable with finding and opening a terminal window, navigating to specific directories and running pre-scripted commands in the terminal.
+    * Financial: First time AWS users require a valid credit card to set up an AWS account.
+    * Time: AWS account set up needs approval by AWS, and approval times can ranges from minutes to days.

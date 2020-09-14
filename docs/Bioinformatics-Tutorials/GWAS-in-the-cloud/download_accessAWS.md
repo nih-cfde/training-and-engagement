@@ -7,11 +7,11 @@ Download and move data to AWS
 ==============================
 
 !!! Important
-    The coat color data lives in a website called Cyverse. It is not easy to make AWS talk to cyverse, so download the data onto your LOCAL computer and then upload it to AWS.
+    The coat color data lives in a website called [Cyverse](https://www.cyverse.org/). It is not easy to make AWS talk to Cyverse; the fastest way to work with this dataset in AWS is to first download it onto your LOCAL computer and then upload it to AWS.
 
 ## Download data to local computer
 
-* Open up a terminal window by searching (type cmd+space_bar) for "terminal" on your Mac.
+* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type cmd+space bar) for "terminal" on your Mac.
 
 * Make a folder called GWAS on your Desktop and then navigate to the folder by typing the following commands in your terminal:
 
@@ -19,20 +19,17 @@ Download and move data to AWS
 mkdir ~/Desktop/GWAS
 cd ~/Desktop/GWAS
 ```
-* You will use a free software called [wget](https://en.wikipedia.org/wiki/Wget) to retrieve data files of interest from Cyverse. First install wget like so:
+
+* You will use a free and open source software called [curl](https://curl.haxx.se/docs/manpage.html#-O) to retrieve data files of interest from Cyverse.
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install wget
+curl -LO https://de.cyverse.org/dl/d/E0A502CC-F806-4857-9C3A-BAEAA0CCC694/pruned_coatColor_maf_geno.vcf.gz
+curl -LO https://de.cyverse.org/dl/d/3B5C1853-C092-488C-8C2F-CE6E8526E96B/coatColor.pheno
 ```
 
-* Now run these commands to do the actual downloading:
+`-L` flag redirects the user to the right URL, if the server reports that the requested page has been moved. The `-O` flag names the local file the same as its remote counterpart.
 
-```
-wget https://de.cyverse.org/dl/d/E0A502CC-F806-4857-9C3A-BAEAA0CCC694/pruned_coatColor_maf_geno.vcf.gz
-wget https://de.cyverse.org/dl/d/3B5C1853-C092-488C-8C2F-CE6E8526E96B/coatColor.pheno
-```
-The first command downloads the vcf file and the second command downloads the file that specifies phenotype information. The download may take a few seconds.
+The first command downloads the "vcf" file and the second command downloads the file that specifies phenotype information. This step may take a few seconds.
 
 * Check if your data download worked by typing `ls`. This command lists all the files in your current (GWAS) directory. Output should be:
 
@@ -40,46 +37,40 @@ The first command downloads the vcf file and the second command downloads the fi
 coatColor.pheno				pruned_coatColor_maf_geno.vcf.gz
 ```
 
+## Locate the AWS private key file and change permissions
 
-## Getting to the AWS instance
+* Find the private key file; it is the `.pem` file you [downloaded when starting up the EC2 instance](aws_instance_setup.md). If you saved it in the default location, it should be in the "Downloads" folder. Remember, you named it "amazon.pem".
 
-OK, so you've created a [running computer on the cloud](aws_instance_setup.md). How do you get to it? We will use the Mac terminal window to access the cloud computer.
+* Move "amazon.pem" to your `~Desktop/GWAS` folder with copy+paste. Remember to delete "amazon.pem" from the "Downloads" folder to avoid clutter. Check the contents of your `~Desktop/GWAS` folder again with `ls`. Do you see the "amazon.pem" file?
 
-To access the cloud computer, you need the network name of our new computer. This can be found at the bottom of the [instance log page](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) shown here:
-
-![](images/publicDNS.png)
-
-Copy this name, connect to the cloud computer with ssh under the username ‘ubuntu’, as follows:
-
-* Find the private key file; it’s the `.pem` file you downloaded when starting up the EC2 instance. If you saved it in the default location, it should be in the "Downloads" folder. Remember, you named it `amazon.pem`.
-
-* Move amazon.pem to your `~Desktop/GWAS` folder with copy+paste. Remember to delete the amazon.pem from the Downloads folder to prevent clutter. Check the contents of your `~Desktop/GWAS` folder again with `ls`. Do you see the `amazon.pem`?
-
-* Now run this command to set the permissions on the amazon.pem private key file to “closed to all evildoers”.
+* Now run this command to set the permissions on the "amazon.pem" private key file to “closed to all evildoers”.
 
 ```
 chmod og-rwx ~/Desktop/GWAS/amazon.pem
 ```
+[chmod](https://en.wikipedia.org/wiki/Chmod) is an abbreviation for change mode. The `og-rwx` part removes the read, write, and execute permission for all users except the file’s owner.
 
-* Finally, log in to the cloud computer:
+## Access the AWS instance
+
+OK, so you've created a [running computer on the cloud](aws_instance_setup.md). How do you get to it? AWS makes it easy to connect to the cloud computer via your terminal window.
+
+The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:). On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
+
+![](images/publicDNS.png)
+
+A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
+
+![](images/aws_connect_your_instance.png)
+
+In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click enter. It should look something like this:
 
 ```
 ssh -i ~/Desktop/GWAS/amazon.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com
 ```
 
 !!! Important
-    Replace the stuff after the ‘@’ sign with the name of the host; see the red circle on your own instance:
-    ![](images/publicDNS.png)
+    Replace the stuff after the ‘@’ sign with the name of your host computer.
 
-    If you have trouble with this command, here's another way to do it:
-
-    * Visit the [aws instances webpage](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId)
-
-    * Select your instance and then click the "Connect" button next to "Launch Instance".
-
-    * You will see a pop-up window that gives you the correct connect command under "Example".
-
-    * Copy and paste the command into your terminal window.
 
 !!! Tip
     You will see this message when running the ssh command for the first time:
@@ -124,7 +115,15 @@ logout
 scp -i ~/Desktop/GWAS/amazon.pem ~/Desktop/GWAS/pruned_coatColor_maf_geno.vcf.gz ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
 scp -i ~/Desktop/GWAS/amazon.pem ~/Desktop/GWAS/coatColor.pheno ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
 ```
-Here `scp` is short for secure copy. You're copying files from the GWAS folder on your local machine to the GWAS folder in the remote Ubuntu computer. Be sure to change the ec2 instance name like you did earlier.
+Here `scp` is short for secure copy. [`scp` allows files to be copied to, from, or between different hosts](http://www.hypexr.org/linux_scp_help.php). It takes three arguments:
+
+1) The first `~/Desktop/GWAS/amazon.pem` is the path to your private key file ("amazon.pem" in this case) which serves as a password for AWS. You will also need the `-i` flag; it tells `scp` to look for a private key file.
+
+2) The second argument `~/Desktop/GWAS/pruned_coatColor_maf_geno.vcf.gz` is the path to the file on your local machine (that needs to be copied).
+
+3) The last argument `ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/` is the path to the AWS folder where the file will be pasted.
+
+So you're copying files from the GWAS folder on your local machine to the GWAS folder in the remote Ubuntu computer. Be sure to **change the ec2 instance name** like you did earlier.
 
 * To check if this worked, log back into the remote Ubuntu instance by **typing in the ssh command described above**. Then change directory to the GWAS and list files in it:
 

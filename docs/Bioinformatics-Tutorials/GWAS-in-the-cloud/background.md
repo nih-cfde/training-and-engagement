@@ -17,10 +17,10 @@ GWAS identify associations between SNPs and phenotypic traits by identifying sys
 
 ## How is it conducted?
 
-* Researchers identify two groups: one groups of people with a disease condition (patients) and one group of healthy individuals (controls).
+* Researchers identify two groups: one group of people with a disease condition (patients) and one group of healthy individuals (controls).
 * Then DNA samples are collected from patients and control individuals (e.g. via blood or cheek swabs). The extracted DNA is sequenced using [whole genome sequencing](https://en.wikipedia.org/wiki/Whole_genome_sequencing) techniques.
-* Next, genomes of diseases individuals are compared to the genomes of non-diseased individuals. If certain genetic variations are found to be significantly more frequent in people with the disease compared to people without disease, the variations are said to be "associated" with the disease.
-* The associated genetic variations can serve as powerful pointers to the region of the human genome where the disease-causing problem resides. However, the associated variants themselves may not directly cause the disease. For example, large number of associated SNPS in the gene encoding eye color may not serve as a good candidate gene for liver disease. These SNPs may just be "tagging along" with the actual causal variants. For this reason, GWAS results are often combined with *a priori* knowledge of genes and pathways involved in the disease.
+* Next, genomes of diseased individuals are compared to the genomes of non-diseased individuals. If certain genetic variations are found to be significantly more frequent in people with the disease compared to people without disease, the variations are said to be "associated" with the disease.
+* The associated genetic variations can serve as powerful pointers to the region of the human genome where the disease-causing problem resides. However, the associated variants themselves may not directly cause the disease. For example, you may find multiple SNPs in a region that are equally well correlated with liver disease, but that only one of those SNPs causes the phenotype. It is also common to find that none of the correlated SNPs are causative, rather they all are just tightly linked to an undetected mutation and are "tagging along" with the actual causal variants.
 
 ## Further reading
 
