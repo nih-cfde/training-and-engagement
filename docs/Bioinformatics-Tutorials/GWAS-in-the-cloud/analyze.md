@@ -36,18 +36,21 @@ the --plink options outputs the genotype data in PLINK PED format. Two files are
     Minor allele: is the least common allele in the population
 
     Risk allele: in the context of a disease, is the allele associated with the disease.
-    For most Mendelian diseases, and a few (multi-gene) complex diseases, the risk allele is the minor allele. However, in some case, the risk allele can be the major allele.
+    For most Mendelian diseases, and a few (multi-gene) complex diseases, the risk allele is the minor allele. However, in some cases, the risk allele can be the major allele.
 
-    For the purposes of this tutorial, we will set the minor allele at each SNP locus to be the risk (or reference) allele. This makes visualization and interpretation of results easier. 
+    For the purposes of this tutorial, we will set the minor allele at each SNP locus to be the risk (or reference) allele. This makes visualization and interpretation of results easier.
 
 
-In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling the list "ref_alleles". To do so, run:
+In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling the list "minor_alleles". To do so, run:
 
 ```
-cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > ref_alleles
+cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > minor_alleles
 ```
 
-where the file "ref_alleles" contains a list of SNP IDs and the allele to be set as reference.
+A detailed explanation of [`awk`](https://www.grymoire.com/Unix/Awk.html) is beyond the scope of this tutorial. However, the gist of this code is that it grabs the vcf file, extracts the third (SNP position info) and fifth (minor allele info) columns, and outputs them into a file called minor_alleles.
+
+!!! Note
+    In the vcf file, the REF column contains major alleles and the ALT column contains minor alleles. For this tutorial, we are grabbing the ALT column from the vcf file and using it to set the minor alleles as the reference alleles in PLINK.
 
 
 ## Quality Control
@@ -64,7 +67,7 @@ Read more about quality control in this journal article by [Anderson et al. 2011
 In this tutorial, we will generate some simple summary statistics on rates of missing data in the file, using the [--missing option](http://www.cog-genomics.org/plink/1.9/basic_stats#missing):
 
 ```
-plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele alt_alleles --allow-no-sex --adjust
+plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele minor_alleles --allow-no-sex --adjust
 ```
 
 !!! Note
@@ -81,7 +84,7 @@ plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out mis
 
     --make-pheno: tells PLINK to look at the coatColor.pheno file for phenotype information and sets the alternative phenotype to "yellow"
 
-    --reference-allele: sets the A1 or alternative allele using the file alt_alleles
+    --reference-allele: sets the A1 or minor allele using the file minor_alleles
 
     --allow-no-sex: since our dataset does NOT have a "sex" field, this option allows plink to ignore the missing sex field
 
@@ -110,7 +113,7 @@ Test value is [yellow] and missing value is [-9]
 53 of 53 individuals assigned to 2 cluster(s)
 Set 24 cases and 29 controls, 0 missing, 0 not found
 ```
-This means there are 24 yellow coat color and 29 dark coat color individuals, and no individuals have missing phenotype data.
+This means 53 individuals have been assigned to two clusters: test (yellow coat color) and control (dark coat color). there are 24 yellow coat color and 29 dark coat color individuals, and no individuals have missing phenotype data.
 
 ```
 Total genotyping rate in remaining individuals is 0.977
@@ -130,6 +133,7 @@ Look at the per SNP rates by running:
 ```
 less miss_stat.lmiss
 ```
+You can quit this mode and return to the terminal by typing `q`.
 
 Output:
 
@@ -145,6 +149,8 @@ Similarly, look at the per individual rates in the `miss_stat.imiss` by typing
 ```
 less miss_stat.imiss
 ```
+
+You can quit this mode and return to the terminal by typing `q`.
 
 Output:
 
@@ -172,7 +178,7 @@ plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.b
 Learn more about association tests [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822#s7)
 
 ```
-plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele alt_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
+plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele minor_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
 ```
 
 !!! Note
