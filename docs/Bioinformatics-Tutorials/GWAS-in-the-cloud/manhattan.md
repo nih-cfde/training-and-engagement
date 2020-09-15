@@ -72,4 +72,4 @@ In our graph, halptypes in four parts of the genome (chromosome 2, 5, 28 and X) 
 
 The top associated mutation is a nonsense SNP in MC1R (c.916C>T) known to control pigment production.
 
-[Watch this video for a detailed explanation of GWAS Manhatten plots](https://www.google.com/search?q=how+to+read+a+manhattan+plot&oq=how+to+read+a+manhattan+plot&aqs=chrome..69i57.7911j0j4&sourceid=chrome&ie=UTF-8#kpvalbx=_tXIPX9mmFsmT0PEP64-OkAk26)
+[Watch this video for a detailed explanation of GWAS Manhattan plots](https://www.google.com/search?q=how+to+read+a+manhattan+plot&oq=how+to+read+a+manhattan+plot&aqs=chrome..69i57.7911j0j4&sourceid=chrome&ie=UTF-8#kpvalbx=_tXIPX9mmFsmT0PEP64-OkAk26)
