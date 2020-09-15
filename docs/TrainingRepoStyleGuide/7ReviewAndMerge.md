@@ -1,6 +1,6 @@
 ## Tutorial review and merge
 
-The current workflow for the CFDE-CC team is to make contributions of tutorials, edits, vidlets, etc. on individual branches on the training GitHub repo, push them to `dev`, and then push to `stable` for the public-facing website. The [training website release plan](https://hackmd.io/O8k5wQvrQui_8_dqXOw2jA?both##release-checklist) will dictate the frequency of public releases. Releases are currently set to coincide with CFDE deliverable dates and occur in two to three month time periods. Release updates will be posted on the training website.
+The current workflow for the CFDE-CC team is to make contributions of tutorials, edits, vidlets, etc. on individual branches on the training GitHub repo, push them to `dev`, and then push to `stable` for the public-facing website. The [training website release plan](../TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md) will dictate the frequency of public releases. Releases are currently set to coincide with CFDE deliverable dates and occur in two to three month time periods. Release updates will be posted on the training website.
 
 ### Pushing to `dev`
 
