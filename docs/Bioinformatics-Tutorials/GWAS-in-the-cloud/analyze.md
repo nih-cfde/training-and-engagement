@@ -14,19 +14,26 @@ Remember that VCF files are variant calling files that have a very [specific str
 
 [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
-```
-cd /home/ubuntu/GWAS
-vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
+First change directories to the GWAS folder:
 
-```
+=== "Code"
+    ```
+    cd /home/ubuntu/GWAS
+    ```
+
+Then make the map and ped files:
+
+=== "Code"
+    ```
+    vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
+    ```
+
+the --plink options outputs the genotype data in PLINK PED format. Two files are generated, with suffixes ".ped" and ".map"
 
 !!! Error
     If you get a vcftools install error, follow the directions in the error message to install vcftools. Visit the [vcftools](./vcftools_install.md) page of this tutorial for detailed installation instructions.
 
-the --plink options outputs the genotype data in PLINK PED format. Two files are generated, with suffixes ".ped" and ".map"
-
-
-## Create list of alternative alleles
+## Create list of minor alleles
 
 !!! note "Population Genetics Terms"
 
@@ -44,11 +51,12 @@ the --plink options outputs the genotype data in PLINK PED format. Two files are
 
 In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling the list "minor_alleles". To do so, run:
 
-```
-cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > minor_alleles
-```
+=== "Code"
+    ```
+    cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > minor_alleles
+    ```
 
-A detailed explanation of [`awk`](https://www.grymoire.com/Unix/Awk.html) is beyond the scope of this tutorial. However, the gist of this code is that it grabs the vcf file, extracts the third (SNP position info) and fifth (minor allele info) columns, and outputs them into a file called minor_alleles.
+A detailed explanation of [`awk`](https://www.grymoire.com/Unix/Awk.html) is beyond the scope of this tutorial. However, the gist of this code is that it grabs the vcf file, extracts the third (SNP position info) and fifth (minor allele info) columns, and outputs them into a file called "minor_alleles".
 
 !!! Note
     In the vcf file, the REF column contains major alleles and the ALT column contains minor alleles. For this tutorial, we are grabbing the ALT column from the vcf file and using it to set the minor alleles as the reference alleles in PLINK.
@@ -67,9 +75,10 @@ Read more about quality control in this journal article by [Anderson et al. 2011
 ### Missing rates
 In this tutorial, we will generate some simple summary statistics on rates of missing data in the file, using the [--missing option](http://www.cog-genomics.org/plink/1.9/basic_stats#missing):
 
-```
-plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele minor_alleles --allow-no-sex --adjust
-```
+=== "Code"
+    ```
+    plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele minor_alleles --allow-no-sex --adjust
+    ```
 
 !!! Note
     **What are all these PLINK tags?**
@@ -92,9 +101,63 @@ plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out mis
     --noweb: each time PLINK runs, it checks for an update. On a slow network this sometimes causes delays and the --noweb option disables this
 
 
-Output:
 
-![](images/Missing_Rates.png)
+
+=== "Output"
+
+    ```
+    @----------------------------------------------------------@
+    |        PLINK!       |     v1.07      |   10/Aug/2009     |
+    |----------------------------------------------------------|
+    |  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+    |----------------------------------------------------------|
+    |  For documentation, citation & bug-report instructions:  |
+    |        http://pngu.mgh.harvard.edu/purcell/plink/        |
+    @----------------------------------------------------------@
+
+    Skipping web check... [ --noweb ]
+    Writing this text to log file [ miss_stat.log ]
+    Analysis started: Wed Sep 16 20:46:53 2020
+
+    Options in effect:
+	   --file coatColor
+	   --make-pheno coatColor.pheno yellow
+	   --missing
+	   --out miss_stat
+	   --noweb
+	   --dog
+	   --reference-allele minor_alleles
+	   --allow-no-sex
+	   --adjust
+
+     476840 (of 476840) markers to be included from [ coatColor.map ]
+     Warning, found 53 individuals with ambiguous sex codes
+     Writing list of these individuals to [ miss_stat.nosex ]
+     53 individuals read from [ coatColor.ped ]
+     0 individuals with nonmissing phenotypes
+     Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+     Missing phenotype value is also -9
+     0 cases, 0 controls and 53 missing
+     0 males, 0 females, and 53 of unspecified sex
+     Constructing a binary phenotype from [ coatColor.pheno ]
+     Test value is [ yellow ] and missing value is [ -9 ]
+     53 of 53 individuals assigned to 2 cluster(s)
+     Set 24 cases and 29 controls, 0 missing, 0 not found
+     Reading SNPs to set reference allele [ minor_alleles ]
+     Set reference alleles for 476840 SNPs, 424930 different from minor allele
+     Before frequency and genotyping pruning, there are 476840 SNPs
+     53 founders and 0 non-founders found
+     Writing individual missingness information to [ miss_stat.imiss ]
+     Writing locus missingness information to [ miss_stat.lmiss ]
+     Total genotyping rate in remaining individuals is 0.977191
+     0 SNPs failed missingness test ( GENO > 1 )
+     0 SNPs failed frequency test ( MAF < 0 )
+     After frequency and genotyping pruning, there are 476840 SNPs
+     After filtering, 24 cases, 29 controls and 0 missing
+     After filtering, 0 males, 0 females, and 53 of unspecified sex
+
+     Analysis finished: Wed Sep 16 20:47:10 2020
+    ```
 
 
 There's a lot of information here, but the relevant bits:
@@ -131,31 +194,77 @@ The per individual and per SNP rates are then output to the files miss_stat.imis
 
 Look at the per SNP rates by running:
 
-```
-less miss_stat.lmiss
-```
-You can quit this mode and return to the terminal by typing `q`.
+=== "Code"
+    ```
+    less miss_stat.lmiss
+    ```
+=== "Output"
+    ```
+    CHR                                    SNP   N_MISS   N_GENO   F_MISS
+    1                         BICF2P1489653        1       53  0.01887
+    1                             chr1:11368        0       53        0
+    1                        BICF2G630707787        0       53        0
+    1                             chr1:22137        0       53        0
+    1                             chr1:22143        0       53        0
+    1                             chr1:23623        0       53        0
+    1                             chr1:23651        2       53  0.03774
+    1                             chr1:23653        2       53  0.03774
+    1                         BICF2S23441188        1       53  0.01887
+    1                             chr1:30122        2       53  0.03774
+    1                             chr1:30173        2       53  0.03774
+    1                             chr1:30370        1       53  0.01887
+    1                             chr1:30664        0       53        0
+    1                             chr1:30723        0       53        0
+    1                             chr1:31554        1       53  0.01887
+    1                             chr1:32439        1       53  0.01887
+    1                             chr1:33435        1       53  0.01887
+    1                             chr1:34323        0       53        0
+    1                           BICF2P476457        1       53  0.01887
+    1                        BICF2G630707798        0       53        0
+    1                             chr1:35781        1       53  0.01887
+    1                              rs8471230        0       53        0
+    ```
 
-Output:
 
-![](images/lmiss.png)
-
-
-That is, for each SNP, you see the number of missing individuals (N_MISS) and the proportion of individuals missing (F_MISS).
+For each SNP, you see the number of missing individuals (N_MISS) and the proportion of individuals missing (F_MISS).
 For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, giving it a missing frequency of 0.01886792452 (i.e. 1/53). Lower proportions are better!
 
+You can quit this mode and return to the terminal by typing `q`.
 
 Similarly, look at the per individual rates in the `miss_stat.imiss` by typing
 
-```
-less miss_stat.imiss
-```
+=== "Code"
+    ```
+    less miss_stat.imiss
+    ```
+    You can quit this mode and return to the terminal by typing `q`.
 
-You can quit this mode and return to the terminal by typing `q`.
-
-Output:
-
-![](images/imiss.png)
+=== "Output"
+    ```
+      FID       IID MISS_PHENO   N_MISS   N_GENO   F_MISS
+      dark_13   dark_13          N     4994   476840  0.01047
+      dark_23   dark_23          N     4478   476840 0.009391
+      dark_21   dark_21          N     4739   476840 0.009938
+      yellow_5  yellow_5         N    15094   476840  0.03165
+      yellow_6  yellow_6         N    13889   476840  0.02913
+      dark_1    dark_1           N     5703   476840  0.01196
+      dark_7    dark_7           N     4895   476840  0.01027
+      dark_9    dark_9           N    23771   476840  0.04985
+      dark_2    dark_2           N    33736   476840  0.07075
+      dark_10   dark_10          N    20475   476840  0.04294
+      dark_8    dark_8           N     5331   476840  0.01118
+      yellow_24 yellow_24        N     3932   476840 0.008246
+      yellow_22 yellow_22        N     5199   476840   0.0109
+      dark_17   dark_17          N      448   476840 0.0009395
+      dark_18   dark_18          N     1622   476840 0.003402
+      dark_4    dark_4           N     5691   476840  0.01193
+      dark_6    dark_6           N     5419   476840  0.01136
+      dark_5    dark_5           N    18523   476840  0.03885
+      yellow_16 yellow_16        N     7534   476840   0.0158
+      yellow_14 yellow_14        N     1640   476840 0.003439
+      yellow_18 yellow_18        N     1657   476840 0.003475
+      yellow_15 yellow_15        N     4159   476840 0.008722
+    ```
 
 The final column is the genotyping rate for that individual. Looking at the first row, the individual dark_13 has 4994 missing SNPs out of 476840, producing a missing genotype rate of 0.01047.
 
@@ -165,10 +274,11 @@ In this tutorial, we are *not* excluding any SNPs or individuals from downstream
 
 Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) for downstream analysis:
 
-```
-plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.binary
+=== "Code"
+    ```
+    plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.binary
 
-```
+    ```
 
 --make-bed: creates a new PLINK binary fileset, after applying sample/variant filters and other operations. Click [here](http://www.cog-genomics.org/plink/1.9/data) for more details
 
@@ -178,9 +288,11 @@ plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.b
 
 Learn more about association tests [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822#s7)
 
-```
-plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele minor_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
-```
+=== "Code"
+
+    ```
+    plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele minor_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
+    ```
 
 !!! Note
     **What are these new PLINK tags?**

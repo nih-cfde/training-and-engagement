@@ -10,44 +10,59 @@ Create a Manhattan Plot
 
 The [qqman package](https://cran.r-project.org/web/packages/qqman/vignettes/qqman.html) includes functions for creating manhattan plots and q-q plots from GWAS results. Install it by running:
 
-```
-sudo Rscript -e "install.packages('qqman',  contriburl=contrib.url('http://cran.r-project.org/'))"
-```
+=== "Code"
+    ```
+    sudo Rscript -e "install.packages('qqman', contriburl=contrib.url('http://cran.r-project.org/'))"
+    ```
 
 ## Identify statistical cutoffs
 
 This code finds the equivalent of 0.05 and 0.01 p value in the negative-log-transformed p values file. We will use these cutoffs to draw horizontal lines in the Manhattan plot for visualization of haplotypes that cross the 0.05 and 0.01 statistical threshold (i.e. have a statistically significant association with yellow coat color)
 
-```
-unad_cutoff_sug=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.05' | head -n1 | awk '{print $3}')
-unad_cutoff_conf=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.01' | head -n1 | awk '{print $3}')
-```
+=== "Code"
+    ```
+    unad_cutoff_sug=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.05' | head -n1 | awk '{print $3}')
+    unad_cutoff_conf=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.01' | head -n1 | awk '{print $3}')
+    ```
 
 ## Install GhostScript by running:
 
 [GhostScript](https://en.wikipedia.org/wiki/Ghostscript) is a software package that provides an interpreter for the PDF file format.
 
-```
-sudo apt-get update -y
-sudo apt-get install -y ghostscript-x
-```
+=== "Code"
+    ```
+    sudo apt-get install -y ghostscript-x
+    ```
 
 ## Run the plotting function
 
-```
-Rscript -e 'args=(commandArgs(TRUE));library(qqman);'\
-'data=read.table("coatColor.assoc", header=TRUE); data=data[!is.na(data$P),];'\
-'bitmap("coatColor_man.bmp", width=20, height=10);'\
-'manhattan(data, p = "P", col = c("blue4", "orange3"),'\
-'suggestiveline = 12,'\
-'genomewideline = 15,'\
-'chrlabs = c(1:38, "X"), annotateTop=TRUE, cex = 1.2);'\
-'graphics.off();' $unad_cutoff_sug $unad_cutoff_conf
-```
+=== "Code"
+    ```
+    Rscript -e 'args=(commandArgs(TRUE));library(qqman);'\
+    'data=read.table("coatColor.assoc", header=TRUE); data=data[!is.na(data$P),];'\
+    'bitmap("coatColor_man.bmp", width=20, height=10);'\
+    'manhattan(data, p = "P", col = c("blue4", "orange3"),'\
+    'suggestiveline = 12,'\
+    'genomewideline = 15,'\
+    'chrlabs = c(1:38, "X"), annotateTop=TRUE, cex = 1.2);'\
+    'graphics.off();' $unad_cutoff_sug $unad_cutoff_conf
+    ```
+=== "Output"
+    ```
+    ubuntu@ip-172-31-30-100:~/GWAS$ Rscript -e 'args=(commandArgs(TRUE));library(qqman);'\
+    > 'data=read.table("coatColor.assoc", header=TRUE); data=data[!is.na(data$P),];'\
+    > 'bitmap("coatColor_man.bmp", width=20, height=10);'\
+    > 'manhattan(data, p = "P", col = c("blue4", "orange3"),'\
+    > 'suggestiveline = 12,'\
+    > 'genomewideline = 15,'\
+    > 'chrlabs = c(1:38, "X"), annotateTop=TRUE, cex = 1.2);'\
+    > 'graphics.off();' $unad_cutoff_sug $unad_cutoff_conf
 
-The output should look like this:
+    For example usage please run: vignette('qqman')
 
-![](images/Final_Output.png)
+    Citation appreciated but not required:
+    Turner, S.D. qqman: an R package for visualizing GWAS results using Q-Q and manhattan plots. biorXiv DOI: 10.1101/005165 (2014).
+    ```
 
 Run the following code to check if you've created the ".bmp" file
 
@@ -78,8 +93,8 @@ Run the following code to check if you've created the ".bmp" file
     -rw-r--r-- 1 ubuntu ubuntu 1.2K Sep 15 22:52 coatColor.pheno
     -rw-r--r-- 1 ubuntu ubuntu 116M Sep 15 22:52 pruned_coatColor_maf_geno.vcf
     ```
-You're using a few new flags here: -l outputs in a long listing format, -t sorts list by time added with newest first, -r forces sort to list in reverse order so the newest files appear on top, -h makes it human readable.
-You should have a 34K file called "coatColor_man.bmp".
+You're using a few new flags here: `-l` outputs in a long listing format, `-t` sorts list by time added with newest first, `-r` forces sort to list in reverse order so the newest files appear on top, `-h` makes it human readable.
+You should have a **34K file called "coatColor_man.bmp"**.
 
 
 ## Visualization
@@ -88,9 +103,10 @@ You can visualize the Manhattan plot by downloading the coatColor_man.bmp file t
 
 Now run the following code to do the actual copying:
 
-```
-scp -i ~/Desktop/amazon.pem ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/GWAS/coatColor_man.bmp ~/Desktop/
-```
+=== "Code"
+    ```
+    scp -i ~/Desktop/amazon.pem ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/GWAS/coatColor_man.bmp ~/Desktop/
+    ```
 
 !!! Note
     If you wish to copy the entire "GWAS" folder, you can do so by adding a `-r` flag like this:

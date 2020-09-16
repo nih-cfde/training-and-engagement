@@ -16,30 +16,33 @@ VCF stands for Variant Call Format. It is a standardized text file format for re
 
 To install vcf tools in the home directory, run the following lines of code:
 
-```
-cd ## this takes us to the home directory
-git clone https://github.com/vcftools/vcftools.git ## this line downloads the vcftools package from github
-cd vcftools
-
-```
-
-Now let's install autoconf, g++, pkg-config and other dependencies. Run the following code and type `Y + enter` when prompted.
-
-```
-sudo apt-get update
-sudo apt-get install g++
-sudo apt install gcc make autoconf automake pkg-config zlib1g-dev curl
-```
+=== "Code"
+    ```
+    cd
+    git clone https://github.com/vcftools/vcftools.git
+    cd vcftools
+    ```
 
 Finally, compile vcftools using `./autogen.sh`, `./configure` and `make`
 
-```
-./autogen.sh
-./configure
-make
-sudo make install
-```
+=== "Code"
+    ```
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+    ```
 
-If there are no errors at this point, you are good to go! Look inside the vcftools folder to see what's in it by typing `ls`
+If there are no errors at this point, you are good to go! Look inside the vcftools folder to see what's in:
 
-![](images/vcftools.png)
+=== "Code"
+    ```
+    ls
+    ```
+=== "Output"
+    ```
+    LICENSE      README.md       build-aux    config.log     depcomp     src
+    Makefile     aclocal.m4      compile      config.status  examples    stamp-h1
+    Makefile.am  autogen.sh      config.h     configure      install-sh
+    Makefile.in  autom4te.cache  config.h.in  configure.ac   missing
+    ```
