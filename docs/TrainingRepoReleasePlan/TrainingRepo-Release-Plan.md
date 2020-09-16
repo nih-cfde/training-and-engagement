@@ -114,6 +114,18 @@ This phase will include work on developing new content and enhancing published t
 
 Internal Release Deadline: five business/working days prior to release date
 
+Checklist for internal release:
+   - All PRs tagged for the upcoming release start preparation for successful merge into `dev` and successfully rendered.
+   - The original PR author should ensure all review comments (if any) are addressed prior to merge.
+   - All new tutorials should follow the style guide for formatting and tutorial arrangement.
+   - If changes requested from a reviewer on a PR cannot be completed by the internal release deadline, the PR author
+     should relabel with the next release date.
+   - Connect intra tutorials that were merged into `dev` if applicable
+
+### Final merge
+
+This phase will involve merging `dev` into `stable`. Allotted timeline would be 5 business/working days until release date.
+
 This phase will involve finalizing release-notes for the website. A draft of the release notes will be auto generated based on PR merges into `dev`.  
 To access the draft
 - access the `Releases` tab on the main repo page
@@ -122,18 +134,7 @@ To access the draft
 - Use the `Edit` button on the right top corner
 - Modify the release titles if applicable, add date and save draft
 
-Checklist for internal release:
-   - All PRs tagged for the upcoming release start preparation for successful merge into `dev` and successfully rendered.
-   - The original PR author should ensure all review comments (if any) are addressed prior to merge.
-   - All new tutorials should follow the style guide for formatting and tutorial arrangement.
-   - If changes requested from a reviewer on a PR cannot be completed by the internal release deadline, the PR author
-     should relabel with the next release date.
-   - Connect intra tutorials that were merged into `dev` if applicable
-   - Release notes are modified and merged.
-
-### Final merge
-
-This phase will involve merging `dev` into `stable`. Allotted timeline would be 5 business/working days until release date. Merging from `dev` to `stable` requires group approval. For this phase, one PR will be opened for merge into `stable` and the approval for merge will be based on the rendered website with the following checklist:
+Merging from `dev` to `stable` requires group approval. For this phase, one PR will be opened for merge into `stable` and the approval for merge will be based on the rendered website with the following checklist:
    - If new features were merged check for functionality across entire site
    - Check for tutorial rendering on multiple browsers, modes (normal, incognito) and devices (phone, tablet, laptop)
         - [ ] Chrome
