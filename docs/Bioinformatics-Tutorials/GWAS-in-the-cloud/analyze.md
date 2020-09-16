@@ -15,6 +15,7 @@ Remember that VCF files are variant calling files that have a very [specific str
 [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
 ```
+cd /home/ubuntu/GWAS
 vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
 
 ```

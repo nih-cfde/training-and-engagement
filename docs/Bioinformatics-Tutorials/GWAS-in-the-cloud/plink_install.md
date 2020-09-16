@@ -27,17 +27,6 @@ sudo rm plink-1.07-x86_64.zip
 cd plink-1.07-x86_64
 ```
 
-!!! Error
-    If you see a error like this:
-
-    `sudo: unzip: command not found`
-
-    You will need to install unzip:
-
-    `sudo apt-get install unzip`
-
-    Then re-run the unzip code block.
-
 After cd-ing into the plink-1.07-x86_64 folder, add plink to the `.bashrc`. By doing so, you are telling the computer that PLINK can be accessed from any directory. Type:
 
 ```

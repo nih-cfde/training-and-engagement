@@ -8,6 +8,8 @@ Create a Manhattan Plot
 
 ## Install qqman package
 
+The [qqman package](https://cran.r-project.org/web/packages/qqman/vignettes/qqman.html) includes functions for creating manhattan plots and q-q plots from GWAS results. Install it by running:
+
 ```
 sudo Rscript -e "install.packages('qqman',  contriburl=contrib.url('http://cran.r-project.org/'))"
 ```
@@ -22,6 +24,8 @@ unad_cutoff_conf=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.01' | head -
 ```
 
 ## Install GhostScript by running:
+
+[GhostScript](https://en.wikipedia.org/wiki/Ghostscript) is a software package that provides an interpreter for the PDF file format.
 
 ```
 sudo apt-get update -y
@@ -45,9 +49,38 @@ The output should look like this:
 
 ![](images/Final_Output.png)
 
-Do an `ls` to check if you've created the .bmp file.... and it worked!
+Run the following code to check if you've created the ".bmp" file
 
-![](images/BMP.png)
+=== "Code"
+    ```
+    ls -ltrh
+    ```
+=== "Output"
+    ```
+    -rw-rw-r-- 1 ubuntu ubuntu  34K Sep 15 23:44 coatColor_man.bmp
+    -rw-rw-r-- 1 ubuntu ubuntu 2.6K Sep 15 23:42 coatColor.log
+    -rw-rw-r-- 1 ubuntu ubuntu  61M Sep 15 23:42 coatColor.assoc.adjusted
+    -rw-rw-r-- 1 ubuntu ubuntu  56M Sep 15 23:42 coatColor.assoc
+    -rw-rw-r-- 1 ubuntu ubuntu  908 Sep 15 23:42 coatColor.nosex
+    -rw-rw-r-- 1 ubuntu ubuntu 6.4M Sep 15 23:41 coatColor.binary.bed
+    -rw-rw-r-- 1 ubuntu ubuntu 1.9K Sep 15 23:41 coatColor.binary.log
+    -rw-rw-r-- 1 ubuntu ubuntu  16M Sep 15 23:41 coatColor.binary.bim
+    -rw-rw-r-- 1 ubuntu ubuntu 1.4K Sep 15 23:41 coatColor.binary.fam
+    -rw-rw-r-- 1 ubuntu ubuntu  908 Sep 15 23:41 coatColor.binary.nosex
+    -rw-rw-r-- 1 ubuntu ubuntu 2.2K Sep 15 23:34 miss_stat.log
+    -rw-rw-r-- 1 ubuntu ubuntu  33M Sep 15 23:34 miss_stat.lmiss
+    -rw-rw-r-- 1 ubuntu ubuntu 3.1K Sep 15 23:34 miss_stat.imiss
+    -rw-rw-r-- 1 ubuntu ubuntu  908 Sep 15 23:34 miss_stat.nosex
+    -rw-rw-r-- 1 ubuntu ubuntu  555 Sep 15 23:33 plink.log
+    -rw-rw-r-- 1 ubuntu ubuntu 8.6M Sep 15 23:31 minor_alleles
+    -rw-rw-r-- 1 ubuntu ubuntu  97M Sep 15 23:29 coatColor.ped
+    -rw-rw-r-- 1 ubuntu ubuntu  14M Sep 15 23:29 coatColor.map
+    -rw-r--r-- 1 ubuntu ubuntu 1.2K Sep 15 22:52 coatColor.pheno
+    -rw-r--r-- 1 ubuntu ubuntu 116M Sep 15 22:52 pruned_coatColor_maf_geno.vcf
+    ```
+You're using a few new flags here: -l outputs in a long listing format, -t sorts list by time added with newest first, -r forces sort to list in reverse order so the newest files appear on top, -h makes it human readable.
+You should have a 34K file called "coatColor_man.bmp".
+
 
 ## Visualization
 
@@ -56,10 +89,15 @@ You can visualize the Manhattan plot by downloading the coatColor_man.bmp file t
 Now run the following code to do the actual copying:
 
 ```
-scp -i ~/Desktop/amazon.pem -r ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/GWAS/ ~/Desktop/
+scp -i ~/Desktop/amazon.pem ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/GWAS/coatColor_man.bmp ~/Desktop/
 ```
+
 !!! Note
-    The -r flag used in the copy command, copies the entire "GWAS" folder. To copy just the .bmp file, drop the -r flag and include the filename in the aws path.
+    If you wish to copy the entire "GWAS" folder, you can do so by adding a `-r` flag like this:
+
+    ```
+    scp -i ~/Desktop/amazon.pem -r ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/GWAS/ ~/Desktop/
+    ```
 
 
 The file has been copied to your Desktop! Here's what it should look like when opened using the "Preview" application in Mac:

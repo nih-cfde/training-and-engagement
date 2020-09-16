@@ -87,7 +87,7 @@ ssh -i ~/Desktop/GWAS/amazon.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.
 ![](images/AWS_Connected.png)
 
 !!! Note
-    My terminal window is yellow, but yours may not be!
+    My terminal window is black, but yours may not be!
 
 * You have now successfully logged in as user ‘ubuntu’ to the machine ‘ec2-18-216-20-166.us-east-2.compute.amazonaws.com’ using the authentication key located in ‘amazon.pem’ on the Desktop.
 
@@ -133,9 +133,10 @@ ls
 ```
 Do you see the files?
 
-* Finally, unzip the `pruned_coatColor_maf_geno.vcf.gz` file using gunzip.
+* Finally, install unzip and use it to unzip the `pruned_coatColor_maf_geno.vcf.gz` file using gunzip.
 
 ```
+sudo apt install unzip
 gunzip pruned_coatColor_maf_geno.vcf.gz
 ```
 This command should remove the `.gz` from the file name.
