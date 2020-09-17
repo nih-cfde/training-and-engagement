@@ -74,7 +74,7 @@ A pop up window will appear. Copy the line of code under "Example:", starting wi
 
 ![](../../images/GWAS_General_aws_connect_your_instance.png)
 
-In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click "enter". It should look something like this:
+In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click `ENTER`. It should look something like this:
 
 === "Code"
     ```
@@ -92,7 +92,7 @@ In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in whi
     ECDSA key fingerprint is XXX.
     Are you sure you want to continue connecting (yes/no/[fingerprint])? **yes**
 
-    Type "yes" and press "enter".
+    Type "yes" and press `ENTER`.
 
 
 * If everything works ok, the output on your terminal window should look like this:
