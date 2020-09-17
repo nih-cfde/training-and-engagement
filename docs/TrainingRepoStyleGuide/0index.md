@@ -11,7 +11,6 @@ Time | Section | About
 10 mins | 5. [Tutorial recordings style guide](./4RecordingStyleGuide.md) | How to create vidlets or screencasts?
 10 mins | 6. [Pangeo binder style guide](./5PangeoBinderGuide.md)| How to create Pangeo binders?
 5 mins | 7. [Practice repo style guide](./6PracticeGithubRepos.md) | How to create a practice Github repo?
-10 mins | 8. [Tutorial review and merge](./7ReviewAndMerge.md) | How to add content to the website?
 
 Location of important files in the training Github repo:
 ```
