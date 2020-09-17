@@ -10,7 +10,13 @@ Setting up an AWS Instance
 Amazon offers a cloud computing platform called Amazon Web Services (AWS). AWS is not free, however, you receive the benefits of the Free Tier automatically for 12 months after you sign up for an AWS account. If you are no longer eligible for the Free Tier, you're charged at the [standard billing rate](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-eligibility.html) for your AWS usage.
 
 
-Let's set up a Free Tier AWS Ubuntu instance:
+Let's set up a Free Tier AWS Ubuntu instance!
+
+!!! Important
+    AWS periodically updates its user experience. We strive to keep our tutorials up to date with AWS's constantly changing user interface. However, these updates may take some time to become incorporated into our tutorial. **Please watch this space for updates**.
+
+    To follow along, please ensure that the "New EC2 User Experience" toggle located on the [EC2 instances list](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) page is set to "off".
+    ![](../../images/GWAS_General_AWS_Updates.png)
 
 ## Step 1: Create AWS account
 
@@ -33,7 +39,7 @@ Let's set up a Free Tier AWS Ubuntu instance:
 
 ![](../../images/GWAS_General_Launch.png)
 
-### Select the right geographical region
+### Step 2A: Select the right geographical region
 
 * It is important to select the right amazon machine image from the **right geographical region**. The geographical region of your remote machine is displayed on the top right of this page (shown in image below). You want it to say "Ohio".
 ![](../../images/GWAS_General_aws_ohio.png)
@@ -41,7 +47,7 @@ Let's set up a Free Tier AWS Ubuntu instance:
 * If it does not say "Ohio", click on the drop down arrow and select: `US East (Ohio)`.
 ![](../../images/GWAS_General_aws_ohio_selection.png)
 
-### Select the right Ubuntu image
+### Step 2B: Select the right Ubuntu image
 
 * On the left navigation bar, check the "Free tier only" option, then select this Ubuntu machine: "Ubuntu Server 20.04 LTS (HVM), SSD Volume Type" (provided through 2030).
 
@@ -57,7 +63,7 @@ Let's set up a Free Tier AWS Ubuntu instance:
 
 Then click "Review and launch" --> "Launch". You should see a pop-up window like this:
 
-![](../../GWAS_General_images/KeyPair.png)
+![](../../images/GWAS_General_KeyPair.png)
 
 * Key pair for AWS:
 
@@ -71,6 +77,7 @@ Then click "Review and launch" --> "Launch". You should see a pop-up window like
 * Click on this first hyperlink: `i-038c58bfbe9612c57`. Your page should look like this:
 
 ![](../../images/GWAS_General_aws_instances_list.png)
+
 
 * This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't quality for Free Tier.
 
