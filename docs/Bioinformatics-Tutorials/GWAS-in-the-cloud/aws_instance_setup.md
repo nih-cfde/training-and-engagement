@@ -56,6 +56,8 @@ Let's set up a Free Tier AWS Ubuntu instance!
 
 ![](../../images/GWAS_General_Ubuntu.png)
 
+### Step 2C: Review and launch
+
 * Make sure the free tier version is selected. Shown here:
 
 ![](../../images/GWAS_General_AWS_Free_Tier.png)
