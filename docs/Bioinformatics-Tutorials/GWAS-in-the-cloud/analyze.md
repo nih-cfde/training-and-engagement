@@ -8,13 +8,13 @@ Summary Statistics and Association Analysis
 
 All of these steps must be performed on your Ubuntu AWS terminal window.
 
-## Convert VCF into PLINK readable format
+## Step 1: Convert VCF into PLINK readable format
 
-Remember that VCF files are variant calling files that have a very [specific structure](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
+Remember that VCF files are variant calling format files that have a very [specific structure](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
 
 [PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
 
-First change directories to the GWAS folder:
+First change directories to "GWAS":
 
 === "Code"
     ```
@@ -28,12 +28,12 @@ Then make the map and ped files:
     vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
     ```
 
-the --plink options outputs the genotype data in PLINK PED format. Two files are generated, with suffixes ".ped" and ".map"
+the --plink options outputs the genotype data in PLINK ped format. Two files are generated, with suffixes ".ped" and ".map"
 
 !!! Error
     If you get a vcftools install error, follow the directions in the error message to install vcftools. Visit the [vcftools](./vcftools_install.md) page of this tutorial for detailed installation instructions.
 
-## Create list of minor alleles
+## Step 2: Create list of minor alleles
 
 !!! note "Population Genetics Terms"
 
@@ -62,7 +62,7 @@ A detailed explanation of [`awk`](https://www.grymoire.com/Unix/Awk.html) is bey
     In the vcf file, the REF column contains major alleles and the ALT column contains minor alleles. For this tutorial, we are grabbing the ALT column from the vcf file and using it to set the minor alleles as the reference alleles in PLINK.
 
 
-## Quality Control
+## Step 3: Quality Control
 
 Quality control (QC) is an important step in GWAS and must be done per individual and per marker.
 
@@ -227,7 +227,7 @@ Look at the per SNP rates by running:
 
 
 For each SNP, you see the number of missing individuals (N_MISS) and the proportion of individuals missing (F_MISS).
-For examples, the SNP BICF2P1489653 is missing in 1 out of 53 individuals, giving it a missing frequency of 0.01886792452 (i.e. 1/53). Lower proportions are better!
+For examples, the SNP `BICF2P1489653` is missing in 1 out of 53 individuals, giving it a missing frequency of 0.01886792452 (i.e. 1/53). Lower proportions are better!
 
 You can quit this mode and return to the terminal by typing `q`.
 
@@ -270,7 +270,7 @@ The final column is the genotyping rate for that individual. Looking at the firs
 
 In this tutorial, we are *not* excluding any SNPs or individuals from downstream association analyses. However, if the missing genotype rate per SNP or individual is high, PLINK has tags to exclude those genotypes or individuals based on [user-specified criteria](http://www.cog-genomics.org/plink/1.9/filter).
 
-## PLINK binary format
+## Step 4: Convert to PLINK binary format
 
 Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) for downstream analysis:
 
@@ -280,13 +280,13 @@ Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) f
 
     ```
 
---make-bed: creates a new PLINK binary fileset, after applying sample/variant filters and other operations. Click [here](http://www.cog-genomics.org/plink/1.9/data) for more details
+--make-bed: creates a new PLINK binary file set, after applying sample/variant filters and other operations. Click [here](http://www.cog-genomics.org/plink/1.9/data) for more details
 
 
 
-## Run a simple association analysis
+## Step 5: Run a simple association analysis
 
-Learn more about association tests [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822#s7)
+Learn more about [association tests here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822#s7)
 
 === "Code"
 

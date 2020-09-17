@@ -3,7 +3,7 @@ layout: page
 title: What is GWAS?
 ---
 
-General Background
+Introduction
 ===================
 
 ## What is GWAS?

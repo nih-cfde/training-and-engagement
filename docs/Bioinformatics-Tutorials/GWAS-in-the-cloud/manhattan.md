@@ -4,18 +4,18 @@ title: Manhattan Plots
 ---
 
 Create a Manhattan Plot
-===========================================
+=========================
 
-## Install qqman package
+## Step 1: Install qqman package
 
-The [qqman package](https://cran.r-project.org/web/packages/qqman/vignettes/qqman.html) includes functions for creating manhattan plots and q-q plots from GWAS results. Install it by running:
+The [qqman package](https://cran.r-project.org/web/packages/qqman/vignettes/qqman.html) includes functions for creating Manhattan plots and q-q plots from GWAS results. Install it by running:
 
 === "Code"
     ```
     sudo Rscript -e "install.packages('qqman', contriburl=contrib.url('http://cran.r-project.org/'))"
     ```
 
-## Identify statistical cutoffs
+## Step 2: Identify statistical cutoffs
 
 This code finds the equivalent of 0.05 and 0.01 p value in the negative-log-transformed p values file. We will use these cutoffs to draw horizontal lines in the Manhattan plot for visualization of haplotypes that cross the 0.05 and 0.01 statistical threshold (i.e. have a statistically significant association with yellow coat color)
 
@@ -25,16 +25,7 @@ This code finds the equivalent of 0.05 and 0.01 p value in the negative-log-tran
     unad_cutoff_conf=$(tail -n+2 coatColor.assoc.adjusted | awk '$10>=0.01' | head -n1 | awk '{print $3}')
     ```
 
-## Install GhostScript by running:
-
-[GhostScript](https://en.wikipedia.org/wiki/Ghostscript) is a software package that provides an interpreter for the PDF file format.
-
-=== "Code"
-    ```
-    sudo apt-get install -y ghostscript-x
-    ```
-
-## Run the plotting function
+## Step 3: Run the plotting function
 
 === "Code"
     ```
@@ -93,15 +84,15 @@ Run the following code to check if you've created the ".bmp" file
     -rw-r--r-- 1 ubuntu ubuntu 1.2K Sep 15 22:52 coatColor.pheno
     -rw-r--r-- 1 ubuntu ubuntu 116M Sep 15 22:52 pruned_coatColor_maf_geno.vcf
     ```
-You're using a few new flags here: `-l` outputs in a long listing format, `-t` sorts list by time added with newest first, `-r` forces sort to list in reverse order so the newest files appear on top, `-h` makes it human readable.
+
 You should have a **34K file called "coatColor_man.bmp"**.
 
 
-## Visualization
+## Step 4: Visualization
 
-You can visualize the Manhattan plot by downloading the coatColor_man.bmp file to our local computers. To do this, open a new terminal window like before (i.e. by selecting the terminal window and typing `cmd+N`).
+You can visualize the Manhattan plot by downloading the coatColor_man.bmp file to our local computers. To do this, open a new terminal window (by selecting the terminal window and typing `cmd+N`).
 
-Now run the following code to do the actual copying:
+Now run the following code on your Mac terminal window (not Ubuntu!) to do the actual copying:
 
 === "Code"
     ```
@@ -118,11 +109,11 @@ Now run the following code to do the actual copying:
 
 The file has been copied to your Desktop! Here's what it should look like when opened using the "Preview" application in Mac:
 
-![](images/coatColor_man.png)
+![](../../images/General_GWAS_coatColor_man.png)
 
 The X- axis represents haplotypes from each region of the genome that was tested, organized by chromosome. Each colored block represents a chromosome and is made of thousands of dots that represent haplotypes. The Y axis is a p value (probability that the association was observed by chance) and is negative log transformed.
 
-In our graph, halptypes in four parts of the genome (chromosome 2, 5, 28 and X) are found to be associated with an increased occurrence of the yellow coat color phenotype.
+In our graph, haplotypes in four parts of the genome (chromosome 2, 5, 28 and X) are found to be associated with an increased occurrence of the yellow coat color phenotype.
 
 The top associated mutation is a nonsense SNP in MC1R (c.916C>T) known to control pigment production.
 

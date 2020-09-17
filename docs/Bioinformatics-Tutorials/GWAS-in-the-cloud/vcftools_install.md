@@ -6,13 +6,12 @@ title: Install VCFtools
 Install VCFtools
 ================
 
-## What is VCF?
-
 VCF stands for Variant Call Format. It is a standardized text file format for representing SNP, indel, and structural variation calls. Read more about VCF files at the [GATK forum](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format).
 
-[VCFtools](http://vcftools.sourceforge.net/man_latest.html#EXAMPLES) is a program package designed for working with VCF files. The aim of VCFtools is to provide easily accessible methods for working with complex genetic variation data in the form of VCF and BCF files. In this tutorial, you will use vcftools to convert the .vcf file into a format that PLINK likes.
+[VCFtools](http://vcftools.sourceforge.net/man_latest.html#EXAMPLES) is a program package designed for working with VCF files. The aim of VCFtools is to provide easily accessible methods for working with complex genetic variation data in the form of VCF and BCF files. In this tutorial, you will use vcftools to convert the ".vcf" file into a format that PLINK likes.
 
-## Installation
+
+## Step 1: Download vcftools from github
 
 To install vcf tools in the home directory, run the following lines of code:
 
@@ -22,8 +21,11 @@ To install vcf tools in the home directory, run the following lines of code:
     git clone https://github.com/vcftools/vcftools.git
     cd vcftools
     ```
+The first line of code changes you directory to the home directory. The second line of code does the downloading and the last line of code takes you into the newly created directory called "vcftools".
 
-Finally, compile vcftools using `./autogen.sh`, `./configure` and `make`
+## Step 2: Compile vcftools
+
+Compile vcftools by running this code:
 
 === "Code"
     ```
@@ -33,7 +35,7 @@ Finally, compile vcftools using `./autogen.sh`, `./configure` and `make`
     sudo make install
     ```
 
-If there are no errors at this point, you are good to go! Look inside the vcftools folder to see what's in:
+If there are no errors at this point, you are good to go! Look inside the "vcftools" folder to see what's in:
 
 === "Code"
     ```
