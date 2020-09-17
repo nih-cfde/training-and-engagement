@@ -55,4 +55,9 @@ markdown extensions ([`pymdownx.tabbed`](https://facelessuser.github.io/pymdown-
 ### Website host and Github branches
 The website is hosted by readthedocs.com. The development branch `dev` renders to a private (Admin access required) readthedocs website: https://cfde-training-and-engagement.readthedocs-hosted.com/en/dev/. The public-facing branch `stable` renders to a public readthedocs website: https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/.
 
-Stable releases of the website require CFDE group agreement. For more information, see the [Tutorial review and merge](./7ReviewAndMerge.md) section.
+Guidelines for adding or fixing website content are detailed in the [training website release plan](../TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md). To summarize, changes are merged from individual branches to the `dev` branch as pull requests (PR). For each public release of the website, `dev` is merged to `stable`. Each PR stage requires a form of review specified in the release plan. Release notes are generated for each new release and added to the "Releases" page of the website.
+
+
+
+
+
