@@ -1,6 +1,6 @@
-## Register for the Kids First DRC Portal
+# Register for the Kids First DRC Portal
 
-#### Step 1: Go to the portal website
+### Step 1: Go to the portal website
 
 First, we'll set up our accounts at the Kids First DRC Portal by going
 to this link:
@@ -15,14 +15,14 @@ to this link:
     the link (Windows)
 
 
-#### Step 2: Click the Join link
+### Step 2: Click the Join link
 
 This should take you to the Kids First Portal website. Please click on
-the `Join now` indicated with the purple arrow below:
+the "Join now" indicated with the purple arrow below:
 
 ![KFDRC Portal Welcome Page](../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
 
-#### Step 3: Choose your login system
+### Step 3: Choose your login system
 
 You should see three options for creating a new account: Google,
 Facebook, or with an ORCID:
@@ -31,16 +31,16 @@ Facebook, or with an ORCID:
 
 Select the platform you wish to use for your sign up.
 
-##### Connect with Google or Facebook
+#### Connect with Google or Facebook
 
 If you decide to link KF to your Google or Facebook account, click on the corresponding icon. A pop-up window will appear and you will be asked to provide your user information and password. Enter the information and click "Next". If log in is successful, the pop-up window will disappear and you will be routed back to the KF portal dashboard.
 
-##### Connect your ORCID
+#### Connect your ORCID
 
 !!! Important
     Skip this part if you decide to sign up for the KF portal using Google or Facebook     
 
-Clicking on `Log in with ORCID` will take you to a login
+Clicking on "Log in with ORCID" will take you to a login
 page:
 
 ![ORCID Login Page](../../images/KidsFirstPortal_3.png "ORCID Login Page")
@@ -54,10 +54,10 @@ for one on [this page](https://orcid.org/register).
     New ORCIDs
 
     If you are registering for an ORCID today, be sure to choose
-    `Everyone` or `Trusted Parties` in the
+    "Everyone" or "Trusted Parties" in the
     Visibility settings. You can always change this setting later, but you
     won't be able to link your ORCID account to the Kids First DRC portal
-    if you choose `Only me`
+    if you choose "Only me:
 
 !!! Error
 
@@ -69,7 +69,7 @@ for one on [this page](https://orcid.org/register).
     `Everyone` or `Trusted Parties`
 
 
-#### Step 4: Go back to the Portal
+### Step 4: Go back to the Portal
 
 Once you have signed in with your ORCID, you should be re-directed back
 to the Kids First DRC Portal and automatically logged in.
