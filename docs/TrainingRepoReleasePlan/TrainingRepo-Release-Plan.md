@@ -63,14 +63,9 @@ Following the PR to merge into `dev`, the reviewers must ensure the tutorials pa
 
 ### Review process
 
-The overall workflow is visualized in the flow diagram of the review process.
-
-![Training review process](../images/Training_review_process.png)
-
 The review process is split between the two levels of merge. Individual branches get merged into `dev` and all the changes for a release are collectively merged from `dev` into `stable` which is the base for the public facing website.
 
-Merge into `dev` from individual branch requires two reviews while merge into `stable` requires group approval. Currently,
-automated reviewer assignment has been implemented which assigns the correct number of reviewers depending on the merging branch. However, in scenario where the team member with experience in a tutorial topic is not assigned to review the tutorials, one can manually add an additional reviewer. Alternatively, that team member can offer their review in form of comments on the PR. It will be the responsibility of the PR author to communicate with the additional reviewers apart from the auto assigned reviewers are notified of the PR and that they follow up for their review.
+Merge into `dev` from individual branch requires two reviews while merge into `stable` requires group approval. Currently, automated reviewer assignment has been implemented which assigns the correct number of reviewers depending on the merging branch. However, in scenario where the team member with experience in a tutorial topic is not assigned to review the tutorials, one can manually add an additional reviewer. Alternatively, that team member can offer their review in form of comments on the PR. It will be the responsibility of the PR author to communicate with the additional reviewers apart from the auto assigned reviewers are notified of the PR and that they follow up for their review.
 
 ## Release Cycle
 
@@ -81,6 +76,10 @@ Each Release cycle will be defined as the time period between the releases. The 
 - internal release deadline
 - final merge
 - public release
+
+The overall workflow is visualized in the flow diagram of the release process.
+
+![Training release process](../images/Training_release_process.png)
 
 ### Tracking
 
