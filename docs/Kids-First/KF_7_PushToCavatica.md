@@ -49,7 +49,7 @@ To view and analyze these files in Cavatica, click the large purple **"ANALYZE I
 A message box pops up. In this case, we are authorized to copy 399 (out of 405) files. You need a Cavatica project to assign the files to. Click "Create a project" and name your project "{Last name} practice lesson".
 
 !!! note
-    You can also create projects from Cavatica. In Cavatica, under the 'Projects' tab, click on the purple '+ Create a project' button and enter a project name. Then click 'Create'. Your project name should now show up as an option in the Kids First portal when you click the 'Analyze in Cavatica' button.
+    You can also create projects from Cavatica. In Cavatica, under the "Projects" tab, click on the purple "+ Create a project" button and enter a project name. Then click "Create". Your project name should now show up as an option in the Kids First portal when you click the "Analyze in Cavatica" button.
 
 ![Create a Cavatica Project](../images/cavatica_project_created_13.png "Create a Cavatica Project")
 
@@ -61,7 +61,7 @@ If the pop-up message from the previous section disappears before you can get to
 
 ![ACCESS DATA](../images/access_data_14.png "ACCESS DATA")
 
-Log in to Cavatica with your ERA commons ID (or whichever ID you used to link your Cavatica account to KidsFirst)
+Log in to Cavatica with your eRA commons ID (or whichever ID you used to link your Cavatica account to Kids First)
 
 ![Cavatica Login](../images/cavatica_login_15.png "Cavatica Login")
 
