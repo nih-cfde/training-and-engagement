@@ -19,8 +19,7 @@ we have.
 
 To build this more complex cohort, we need to make a combined query.
 
-Step 1 Duplicate the Query
---------------------------
+### Step 1: Duplicate the Query
 
 To make a copy of our query line we can either:
 
@@ -31,7 +30,7 @@ indicated with the purple arrow below:
 
 Or you can choose any number of queries to duplicate simultaneously. To
 do this, click the checkbox at the left side of each query you want to
-duplicate, and then click the `duplicate query` button:
+duplicate, and then click the "duplicate query" button:
 
 ![Duplicate Multiple Queries](../../images/KidsFirstPortal_27.png "Duplicate Multiple Queries")
 
@@ -42,10 +41,9 @@ chose, you should now have two queries that are identical:
 
 ![Duplicated Queries](../../images/KidsFirstPortal_28.png "Duplicated Queries")
 
-Step 2 Edit the age range in one query
---------------------------------------
+### Step 2: Edit the age range in one query
 
-In query 2, edit the `Age at Diagnosis` to be 15-20 years of age.
+In query 2, edit the "Age at Diagnosis" to be 15-20 years of age.
 
 By clicking on each query, you should see that the title for the Cohort
 Results and the plots change to match the query you have highlighted (in green):
@@ -56,18 +54,16 @@ Results for **query 1 ONLY**:
 Results for **query 2 ONLY**:
 ![Query 1](../../images/KidsFirstPortal_30.png "Query 1")
 
-Step 3 Combine the Queries
---------------------------
+### Step 3: Combine the Queries
 
 Our two queries are each giving us results we want, now we need to
 combine them into a single cohort. To do that, we use the checkboxes on
 the left side of each query to select the ones we want to combine, and
-then click the `or` above the left side of the queries:
+then click the "or" above the left side of the queries:
 
 ![Combine Queries](../../images/KidsFirstPortal_31.png "Combine Queries")
 
-Step 4 View Combined Query
---------------------------
+### Step 4: View Combined Query
 
 We now have a new `Query #3` that includes individuals from
 either of our two original queries:
