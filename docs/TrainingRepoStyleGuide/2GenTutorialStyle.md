@@ -175,13 +175,13 @@ Use hyperlinks to link images, other Markdown files, or websites. Provide short 
 
 Type | Syntax
 --- | ---
-images | `![short description of image](relative/path/to/docs/images/imagefile)`*
+images | `![short description of image](relative/path/to/docs/images/imagefile "short description of image")`*
 tutorial references | `[text about the reference](relative/path/to/docs/Resources/referencefile)`
 other pages in the Github repo | `[text about the page](relative/path/to/page/in/Github/repo/filename)`
 URLs with title | `[text about the website](URL)`
 URL link itself | `<URL>`
 
-*By including a short description of the image in the brackets, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
+*By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
 
 The `htmlproofer` plugin checks for broken page and URL links when a pull request (PR) is submitted to the Github repo. The results are shown in the `Checks` tab of the PR page. Under `Build documentation on PR` and under `build-and-deploy`, expand the `Build site` section to view any error messages. Common issues:
 - `WARNING`: for links on pages that are broken, file paths that don't exist anymore because of file name changes
