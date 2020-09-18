@@ -1,13 +1,6 @@
----
-layout: page
-title: KF Portal Registration
----
-
-
 ## Register for the Kids First DRC Portal
---------------------------------------
 
-#### Step 1 Go to the portal website
+#### Step 1: Go to the portal website
 
 First, we'll set up our accounts at the Kids First DRC Portal by going
 to this link:
@@ -22,14 +15,14 @@ to this link:
     the link (Windows)
 
 
-#### Step 2 Click the Join link
+#### Step 2: Click the Join link
 
 This should take you to the Kids First Portal website. Please click on
 the `Join now` indicated with the purple arrow below:
 
 ![KFDRC Portal Welcome Page](../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
 
-#### Step 3 Choose your login system
+#### Step 3: Choose your login system
 
 You should see three options for creating a new account: Google,
 Facebook, or with an ORCID:
@@ -76,7 +69,7 @@ for one on [this page](https://orcid.org/register).
     `Everyone` or `Trusted Parties`
 
 
-#### Step 5 Go back to the Portal
+#### Step 4: Go back to the Portal
 
 Once you have signed in with your ORCID, you should be re-directed back
 to the Kids First DRC Portal and automatically logged in.
