@@ -112,18 +112,24 @@ body {
 }
 
 .md-typeset table:not([class]) th {
-    min-width: 15rem;
+    min-width: 12rem;
     background-color: #6c6c6c !important;
     font-size: medium;
 }
 
 .md-typeset table:not([class]) td {
     vertical-align: middle;
+
 }
 
 .table {
     font-size: medium;
+
 }
+
+.explicit-col-width th:nth-child(1) { width: 20%; }
+.explicit-col-width th:nth-child(2) { width: 20%; }
+.explicit-col-width th:nth-child(3) { width: 50%; }
 
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
     width: 40px
@@ -169,4 +175,3 @@ a:active {
 .md-typeset .admonition.snakemake>.admonition-title, .md-typeset details.snakemake>.admonition-title, .md-typeset details.snakemake>summary {
     background-color: rgba(223, 242, 222, 1);
 }
-
