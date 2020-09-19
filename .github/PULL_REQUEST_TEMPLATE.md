@@ -9,6 +9,8 @@
 
 ## PR Description
 Briefly describe the changes this PR will add/address
+**Preview link**
+Add the RTD auto generated preview link
 
 ## Review format
 Add how you would like to receive the review (direct editing, as comments, notes etc)
