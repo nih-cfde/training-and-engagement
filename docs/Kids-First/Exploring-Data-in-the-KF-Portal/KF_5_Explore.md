@@ -22,7 +22,7 @@ Images, Radiology Reports, Operation Reports, Annotated Somatic
 Mutations, Gene Fusions, Gene Expression, Somatic Copy Number
 Variations, and Isoform Expression.
 
-### Step 1 Get logged in to the Kids First DRC Portal
+### Step 1: Get logged in to the Kids First DRC Portal
 
 If you aren't still logged in to the Kids First Portal, navigate to
 <https://portal.kidsfirstdrc.org/> and use the credentials you set up
@@ -34,9 +34,9 @@ this screen:
 ![Kids First Dashboard](../../images/KidsFirstPortal_11.png "Kids First Dashboard")
 
 
-### Step 2 Navigate to the Explore Data tab
+### Step 2: Navigate to the Explore Data tab
 
-Click on `Explore Data`
+Click on "Explore Data"
 
 ![Go To Explore Data](../../images/KidsFirstPortal_12.png "Go To Explore Data")
 

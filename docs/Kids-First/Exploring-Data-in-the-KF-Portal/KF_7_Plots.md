@@ -21,7 +21,7 @@ which is expected given our query. All of the plots shown in this
 section respond dynamically to the query buttons, but they also can be
 used to build and refine queries, or to see extra information. For
 instance, if you hover your mouse pointer over a bar in the
-'Experimental Strategy' plot of the "Available Data" section,
+"Experimental Strategy" plot of the "Available Data" section,
 you'll get the count of that bar and its x-axis label:
 
 ![Extra Plot Information](../../images/KidsFirstPortal_19.png "Extra Plot Information")
@@ -32,7 +32,7 @@ selection in a plot, that filter is added to your query box above.
 
 !!! Exercise
 
-    Click a bar in the `Studies` plot to include only samples
+    Click a bar in the "Studies" plot to include only samples
     from the Kids First Neuroblastoma data set.
 
 
