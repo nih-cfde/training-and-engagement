@@ -112,7 +112,7 @@ body {
 }
 
 .md-typeset table:not([class]) th {
-    min-width: 12rem;
+    min-width: 11.5rem;
     background-color: #6c6c6c !important;
     font-size: medium;
 }
@@ -126,10 +126,6 @@ body {
     font-size: medium;
 
 }
-
-.explicit-col-width th:nth-child(1) { width: 20%; }
-.explicit-col-width th:nth-child(2) { width: 20%; }
-.explicit-col-width th:nth-child(3) { width: 50%; }
 
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
     width: 40px
