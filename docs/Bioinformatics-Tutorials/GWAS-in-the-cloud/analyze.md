@@ -10,20 +10,20 @@ All of these steps must be performed on your Ubuntu AWS terminal window.
 
 ## Step 1: Convert VCF into PLINK readable format
 
-Remember that VCF files are variant calling format files that have a very [specific structure](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). PLINK does not take vcf files as inputs. So you must convert the .vcf into PLINK readable format: ped and map.
+Remember that VCF files are variant calling format files that have a very [specific structure](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format). PLINK does not take vcf files as inputs. So you must convert the ".vcf" into PLINK readable format: ped and map.
 
-[PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; PED files contain genotype information (one individual per row) and MAP files contain information on the name and position of the markers in the PED file.
+[PED and MAP files](http://zzz.bwh.harvard.edu/plink/data.shtml) are plain text files; ped files contain genotype information (one individual per row) and map files contain information on the name and position of the markers in the PED file.
 
 First change directories to "GWAS":
 
-=== "Code"
+=== "AWS Instance"
     ```
     cd /home/ubuntu/GWAS
     ```
 
 Then make the map and ped files:
 
-=== "Code"
+=== "AWS Instance"
     ```
     vcftools --vcf pruned_coatColor_maf_geno.vcf --plink --out coatColor
     ```
@@ -51,7 +51,7 @@ the --plink options outputs the genotype data in PLINK ped format. Two files are
 
 In order to specify the minor allele as the reference allele for PLINK (A1), you must create a list of these alleles. We're calling the list "minor_alleles". To do so, run:
 
-=== "Code"
+=== "AWS Instance"
     ```
     cat pruned_coatColor_maf_geno.vcf | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}'  > minor_alleles
     ```
@@ -75,35 +75,11 @@ Read more about quality control in this journal article by [Anderson et al. 2011
 ### Missing rates
 In this tutorial, we will generate some simple summary statistics on rates of missing data in the file, using the [--missing option](http://www.cog-genomics.org/plink/1.9/basic_stats#missing):
 
-=== "Code"
+=== "AWS Instance"
     ```
     plink --file coatColor --make-pheno coatColor.pheno "yellow" --missing --out miss_stat --noweb --dog --reference-allele minor_alleles --allow-no-sex --adjust
     ```
-
-!!! Note
-    **What are all these PLINK tags?**
-
-    --file: tells it the name of PLINK readable files
-
-    --missing: produces sample-based and variant-based missing data reports using default filters
-
-    --out: name of the output file
-
-    --dog: tells PLINK to look at the dog genome
-    The default reference genome option is human. Other available options are: --mouse, --horse, --cow and --sheep
-
-    --make-pheno: tells PLINK to look at the coatColor.pheno file for phenotype information and sets the alternative phenotype to "yellow"
-
-    --reference-allele: sets the A1 or minor allele using the file minor_alleles
-
-    --allow-no-sex: since our dataset does NOT have a "sex" field, this option allows plink to ignore the missing sex field
-
-    --noweb: each time PLINK runs, it checks for an update. On a slow network this sometimes causes delays and the --noweb option disables this
-
-
-
-
-=== "Output"
+=== "Expected Output"
 
     ```
     @----------------------------------------------------------@
@@ -159,8 +135,28 @@ In this tutorial, we will generate some simple summary statistics on rates of mi
      Analysis finished: Wed Sep 16 20:47:10 2020
     ```
 
+!!! Note
+        **What are all these PLINK tags?**
 
-There's a lot of information here, but the relevant bits:
+        `--file`: tells it the name of PLINK readable files
+
+        `--missing`: produces sample-based and variant-based missing data reports using default filters
+
+        `--out`: name of the output file
+
+        `--dog`: tells PLINK to look at the dog genome
+        The default reference genome option is human. Other available options are: `--mouse`, `--horse`, `--cow` and `--sheep`
+
+        `--make-pheno`: tells PLINK to look at the coatColor.pheno file for phenotype information and sets the alternative phenotype to "yellow"
+
+        `--reference-allele`: sets the A1 or minor allele using the file minor_alleles
+
+        `--allow-no-sex`: since our dataset does NOT have a "sex" field, this option allows plink to ignore the missing sex field
+
+        `--noweb`: each time PLINK runs, it checks for an update. On a slow network this sometimes causes delays and the --noweb option disables this
+
+
+There's a lot of information in the output, but the relevant bits:
 
 ```
 476840 (of 476840) markers to be included from [coatColor.map]
@@ -177,7 +173,7 @@ Test value is [yellow] and missing value is [-9]
 53 of 53 individuals assigned to 2 cluster(s)
 Set 24 cases and 29 controls, 0 missing, 0 not found
 ```
-This means 53 individuals have been assigned to two clusters: test (yellow coat color) and control (dark coat color). there are 24 yellow coat color and 29 dark coat color individuals, and no individuals have missing phenotype data.
+This means 53 individuals have been assigned to two clusters: test (yellow coat color) and control (dark coat color). There are 24 yellow coat color and 29 dark coat color individuals, and no individuals have missing phenotype data.
 
 ```
 Total genotyping rate in remaining individuals is 0.977
@@ -188,20 +184,20 @@ About 2% of genotypes are missing after thresholding.
 0 SNPs failed missingness test (GENO>1)
 0 SNPs failed frequency test (MAF<0)
 ```
-Here, GENO>1 means exclude an individual if all of its genotypes are missing. Obviously, this is a pretty lenient parameter. Similarly, MAF (minor allele frequency)<0 means exclude all minor alleles that have a frequency lower than 0. You may wish to change these thresholds based on your research question by explicitly specifying --mind or --geno or --maf.
+Here, GENO>1 means exclude an individual if all of its genotypes are missing. Obviously, this is a pretty lenient parameter. Similarly, MAF (minor allele frequency)<0 means exclude all minor alleles that have a frequency lower than 0. You may wish to change these thresholds based on your research question by explicitly specifying `--mind` or `--geno` or `--maf`.
 
-The per individual and per SNP rates are then output to the files miss_stat.imiss and miss_stat.lmiss, respectively. If you had not specified an --out option, the root output filename would have defaulted to "plink".
+The per individual and per SNP rates are then output to the files "miss_stat.imiss" and "miss_stat.lmiss", respectively. If you had not specified an `--out` option, the root output filename would have defaulted to "plink".
 
 Look at the per SNP rates by running:
 
-=== "Code"
+=== "AWS Instance"
     ```
     less miss_stat.lmiss
     ```
 === "Output"
     ```
     CHR                                    SNP   N_MISS   N_GENO   F_MISS
-    1                         BICF2P1489653        1       53  0.01887
+    1                          BICF2P1489653        1       53  0.01887
     1                             chr1:11368        0       53        0
     1                        BICF2G630707787        0       53        0
     1                             chr1:22137        0       53        0
@@ -231,15 +227,15 @@ For examples, the SNP `BICF2P1489653` is missing in 1 out of 53 individuals, giv
 
 You can quit this mode and return to the terminal by typing `q`.
 
-Similarly, look at the per individual rates in the `miss_stat.imiss` by typing
+Similarly, look at the per individual rates in the "miss_stat.imiss" by typing
 
-=== "Code"
+=== "AWS Instance"
     ```
     less miss_stat.imiss
     ```
     You can quit this mode and return to the terminal by typing `q`.
 
-=== "Output"
+=== "Expected Output"
     ```
       FID       IID MISS_PHENO   N_MISS   N_GENO   F_MISS
       dark_13   dark_13          N     4994   476840  0.01047
@@ -274,13 +270,13 @@ In this tutorial, we are *not* excluding any SNPs or individuals from downstream
 
 Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) for downstream analysis:
 
-=== "Code"
+=== "AWS Instance"
     ```
     plink --file coatColor --allow-no-sex --dog --make-bed --noweb --out coatColor.binary
 
     ```
 
---make-bed: creates a new PLINK binary file set, after applying sample/variant filters and other operations. Click [here](http://www.cog-genomics.org/plink/1.9/data) for more details
+[`--make-bed`](http://www.cog-genomics.org/plink/1.9/data) creates a new PLINK binary file set, after applying sample/variant filters and other operations.
 
 
 
@@ -288,7 +284,7 @@ Next, convert the output file (coatColor) to PLINK binary format (fam,bed,bim) f
 
 Learn more about [association tests here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002822#s7)
 
-=== "Code"
+=== "AWS Instance"
 
     ```
     plink --bfile coatColor.binary --make-pheno coatColor.pheno "yellow" --assoc --reference-allele minor_alleles --allow-no-sex --adjust --dog --noweb --out coatColor
@@ -297,8 +293,8 @@ Learn more about [association tests here](https://journals.plos.org/ploscompbiol
 !!! Note
     **What are these new PLINK tags?**
 
-    --bfile: takes .binary file as input.
+    `--bfile`: takes .binary file as input.
 
-    --assoc: performs a standard case/control association analysis which is a chi-square test of allele frequency.
+    `--assoc`: performs a standard case/control association analysis which is a chi-square test of allele frequency.
 
-    --adjust: enables correction for multiple analysis and automatically calculates the genomic inflation factor
+    `--adjust`: enables correction for multiple analysis and automatically calculates the genomic inflation factor

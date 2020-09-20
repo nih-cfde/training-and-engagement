@@ -37,7 +37,8 @@ Compile vcftools by running this code:
 
 If there are no errors at this point, you are good to go!
 
-Check to make sure it's installed
+Check to make sure it's installed:
+
 === "AWS instance"
     ```
     plink -h
