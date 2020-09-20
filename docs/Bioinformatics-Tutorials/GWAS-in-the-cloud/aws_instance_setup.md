@@ -41,8 +41,11 @@ Let's set up a Free Tier AWS Ubuntu instance!
 
 ### Step 2A: Select the right geographical region
 
-* It is important to select the right amazon machine image from the **right geographical region**. The geographical region of your remote machine is displayed on the top right of this page (shown in image below). You want it to say "Ohio".
+* For this tutorial, it is important to select the "Ohio" amazon machine image. The geographical region of your remote machine is displayed on the top right of this page (shown in image below)."
+
 ![](../../images/GWAS_General_aws_ohio.png)
+
+
 
 * If it does not say "Ohio", click on the drop down arrow and select: `US East (Ohio)`.
 ![](../../images/GWAS_General_aws_ohio_selection.png)

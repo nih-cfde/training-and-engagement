@@ -18,15 +18,15 @@ This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedo
 
 | Est. Time| Lesson Name | Description|
 | ---|--------|--------|
-| 00:10|[What is GWAS?](background.md)| Background                   
-| 00:20|[Set up an AWS instance](aws_instance_setup.md)|How to set up an amazon web services instance|
-| 00:40|[Download and move data to AWS](download_accessAWS.md) | Download dog coat color data and use terminal to access data on remote computer |
-| 00:10|[Install PLINK](plink_install.md)| Install the software PLINK |
-| 00:10|[Install VCFtools](vcftools_install.md) | Install the software vcftools |
-| 00:10|[Install R and RStudio](RStudio.md) | Install the software R and RStudio |
-| 00:40|[Analyze](analyze.md) | Generate summary statistics and association analysis |
-| 00:20|[Manhattan Plots](manhattan.md) | Make some plots to visualize data |
-| 00:10|[Terminate AWS Instance](terminate_aws.md) | Shut down the cloud computer |
+| 10 mins |[What is GWAS?](background.md)| Background                   
+| 20 mins |[Set up an AWS instance](aws_instance_setup.md)|How to set up an amazon web services instance|
+| 40 mins |[Download and move data to AWS](download_accessAWS.md) | Download dog coat color data and use terminal to access data on remote computer |
+| 10 mins |[Install PLINK](plink_install.md)| Install the software PLINK |
+| 10 mins |[Install VCFtools](vcftools_install.md) | Install the software vcftools |
+| 10 mins |[Install R and RStudio](RStudio.md) | Install the software R and RStudio |
+| 10 mins |[Analyze](analyze.md) | Generate summary statistics and association analysis |
+| 20 mins |[Manhattan Plots](manhattan.md) | Make some plots to visualize data |
+| 10 mins |[Terminate AWS Instance](terminate_aws.md) | Shut down the cloud computer |
 
 !!! note "Learning Objectives"
     * learn to set up and access Amazon Web Services
@@ -38,4 +38,4 @@ This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedo
     * Background: Some expertise in biology and fundamental genetics.
     * Technology: Basic shell scripting knowledge and access to MacOS. Users must be comfortable with finding and opening a terminal window, navigating to specific directories and running pre-scripted commands in the terminal.
     * Financial: First time AWS users require a valid credit card to set up an AWS account.
-    * Time: AWS account set up needs approval by AWS, and approval times can ranges from minutes to days.
+    * Time: AWS account setup needs approval by AWS, and approval times can range from minutes to days.

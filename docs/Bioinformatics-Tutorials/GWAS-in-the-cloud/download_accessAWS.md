@@ -3,19 +3,19 @@ layout: page
 title: Download Data & Install Helper Utilities
 ---
 
-Download and move data to AWS
-==============================
+Download Data & Install Helper Utilities
+========================================
 
 !!! Important
     The coat color data lives in a website called [Cyverse](https://www.cyverse.org/). It is not easy to make AWS talk to Cyverse; the fastest way to work with this dataset in AWS is to first download it onto your LOCAL computer and then upload it to AWS.
 
 ## Step 1: Download data to local computer
 
-* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type cmd+space bar) for "terminal" on your Mac.
+* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type `cmd+space bar`) for "terminal" on your Mac.
 
 * Make a folder called "GWAS" on your "Desktop" and then navigate to the folder by typing the following commands in your terminal:
 
-=== "Code"
+=== "Local Machine"
     ```
     mkdir ~/Desktop/GWAS
     cd ~/Desktop/GWAS
@@ -23,7 +23,7 @@ Download and move data to AWS
 
 * You will use a free and open source software called [curl](https://curl.haxx.se/docs/manpage.html#-O) to retrieve data files of interest from Cyverse.
 
-=== "Code"
+=== "Local Machine"
     ```
     curl -LO https://de.cyverse.org/dl/d/E0A502CC-F806-4857-9C3A-BAEAA0CCC694/pruned_coatColor_maf_geno.vcf.gz
     curl -LO https://de.cyverse.org/dl/d/3B5C1853-C092-488C-8C2F-CE6E8526E96B/coatColor.pheno
@@ -35,11 +35,11 @@ The first command downloads the "vcf" file and the second command downloads the 
 
 * Check if your data download worked by typing `ls -ltrh` to list all files in that folder:
 
-=== "Code"
+=== "Local Machine"
     ```
     ls -lth
     ```
-=== "Output"
+=== "Expected Output"
     ```
     -rw-------@ 1 username  staff   1.7K Jul  9 15:33 amazon.pem
     -rw-r--r--  1 username  staff   1.2K Sep 15 15:47 coatColor.pheno
@@ -55,7 +55,7 @@ The first command downloads the "vcf" file and the second command downloads the 
 
 * Now run this command to set the permissions on the "amazon.pem" private key file to “closed to all evildoers”.
 
-=== "Code"
+=== "Local Machine"
     ```
     chmod og-rwx ~/Desktop/GWAS/amazon.pem
     ```
@@ -76,7 +76,7 @@ A pop up window will appear. Copy the line of code under "Example:", starting wi
 
 In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click `ENTER`. It should look something like this:
 
-=== "Code"
+=== "Local Machine"
     ```
     ssh -i ~/Desktop/GWAS/amazon.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com
     ```
@@ -86,11 +86,10 @@ In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in whi
 
 
 !!! Tip
-    You will see this message when running the ssh command for the first time:
+    You will see this message when running the `ssh`
+    command for the first time:
 
-    The authenticity of host 'ecc2-???-???-???-???.compute-1.amazonaws.com (3.129.57.169)' can't be established.
-    ECDSA key fingerprint is XXX.
-    Are you sure you want to continue connecting (yes/no/[fingerprint])? **yes**
+    > The authenticity of host 'ecc2-???-???-???-???.compute-1.amazonaws.com (3.129.57.169)' can't be established. ECDSA key fingerprint is XXX. Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
     Type "yes" and press `ENTER`.
 
@@ -108,7 +107,7 @@ In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in whi
 
 * Make a folder called "GWAS" in the Ubuntu computer by typing:
 
-=== "Code"
+=== "AWS Instance"
     ```
     mkdir GWAS
     ```
@@ -121,7 +120,7 @@ Before you use AWS, there are a few updates or installs that need to be done.
 
 First, you need to make sure the app installer is up to date because you're using LTS 20.04 which is frozen at version 20.04, and so always needs to be updated when you start:
 
-=== "Code"
+=== "AWS Instance"
     ```
     sudo apt-get update
     ```
@@ -132,18 +131,18 @@ Now you can install stuff.
 
 Unzip can be used to uncompress files that have the ".zip" extension.
 
-=== "Code"
+=== "AWS Instance"
     ```
     sudo apt-get install unzip
     ```
 
 Here's how you check if it's installed:
 
-=== "Code"
+=== "AWS Instance"
     ```
     unzip -v
     ```
-=== "Output"
+=== "Expected Output"
 
     ```
     UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
@@ -181,25 +180,25 @@ Here's how you check if it's installed:
 
 You need lots of other helper utilities to run today's pipeline so now is a good time to install them all:
 
-=== "Code"
+=== "AWS Instance"
     ```
     sudo apt-get install autoconf autogen g++ gcc make automake pkg-config zlib1g-dev curl gdebi-core -y ghostscript-x
     ```
 !!! Important
-    Installing helper utilities is VERY important, all sorts of errors in installations/plotting happen if it's not run! For example, you will install "vcftools" in later parts of this tutorial which absolutely needs "autoconf", "autogen", and "make" to be preinstalled. zlib is a library implementing the deflate compression method found in gzip and PKZIP. gdebi lets you install local deb packages resolving and installing its dependencies. And to run plotting functions in R, you will need Ghostscript, an interpreter of the PDF format.
+    Installing helper utilities is VERY important. All sorts of errors in installations/plotting happen if it's not run! For example, you will install "vcftools" in later parts of this tutorial which absolutely needs "autoconf", "autogen", and "make" to be preinstalled. zlib is a library implementing the deflate compression method found in gzip and PKZIP. gdebi lets you install local deb packages resolving and installing its dependencies. And to run plotting functions in R, you will need Ghostscript, an interpreter of the PDF format.
 
 ## Step 5: Upload data to AWS
 
 * To upload data from your local computer to AWS, you must first logout of AWS. Type:
 
-=== "Code"
+=== "AWS Instance"
     ```
     logout
     ```
 
 * Now you are back in your local Mac terminal. You can upload files to AWS by typing this command:
 
-=== "Code"
+=== "Local Machine"
     ```
     scp -i ~/Desktop/GWAS/amazon.pem ~/Desktop/GWAS/pruned_coatColor_maf_geno.vcf.gz ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
     scp -i ~/Desktop/GWAS/amazon.pem ~/Desktop/GWAS/coatColor.pheno ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
@@ -217,7 +216,7 @@ So you're copying files from the "GWAS" folder on your local machine to the "GWA
 
 * To check if this worked, log back into the remote Ubuntu instance by **typing in the ssh command described above**. Then change directory to "GWAS" and list files in it:
 
-=== "Code"
+=== "AWS Instance"
     ```
     cd GWAS
     ls
@@ -227,7 +226,7 @@ Do you see the files?
 
 * Finally, uncompress the "pruned_coatColor_maf_geno.vcf.gz" file using gunzip.
 
-=== "Code"
+=== "AWS Instance"
     ```
     gunzip pruned_coatColor_maf_geno.vcf.gz
     ```

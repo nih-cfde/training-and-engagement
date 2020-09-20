@@ -21,7 +21,7 @@ To install vcf tools in the home directory, run the following lines of code:
     git clone https://github.com/vcftools/vcftools.git
     cd vcftools
     ```
-The first line of code changes you directory to the home directory. The second line of code does the downloading and the last line of code takes you into the newly created directory called "vcftools".
+The first line of code changes your directory to the home directory. The second line of code does the downloading and the last line of code takes you into the newly created directory called "vcftools".
 
 ## Step 2: Compile vcftools
 
@@ -35,13 +35,45 @@ Compile vcftools by running this code:
     sudo make install
     ```
 
-If there are no errors at this point, you are good to go! Look inside the "vcftools" folder to see what's in:
+If there are no errors at this point, you are good to go!
 
-=== "Code"
+Check to make sure it's installed
+=== "AWS instance"
+    ```
+    plink -h
+    ```
+=== "Expected Output"
+    ```
+    The top portion of the help page:
+    @----------------------------------------------------------@
+    |        PLINK!       |     v1.07      |   10/Aug/2009     |
+    |----------------------------------------------------------|
+    |  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+    |----------------------------------------------------------|
+    |  For documentation, citation & bug-report instructions:  |
+    |        http://pngu.mgh.harvard.edu/purcell/plink/        |
+    @----------------------------------------------------------@
+
+
+    Please visit the PLINK website for a complete list of options
+
+    A few common options are listed here:
+
+    plink --file {fileroot}     Specify .ped and .map files
+      --bfile {fileroot}        Specify .bed, .fam and .map
+
+      --out {fileroot}          Specify output root filename  
+
+    ```
+
+Look inside the "vcftools" folder to see what's in:
+
+=== "AWS Instance"
     ```
     ls
     ```
-=== "Output"
+=== "Expected Output"
+
     ```
     LICENSE      README.md       build-aux    config.log     depcomp     src
     Makefile     aclocal.m4      compile      config.status  examples    stamp-h1
