@@ -37,7 +37,7 @@ Est. Time | Lesson name | Description
 
 === "Tutorial Resources"
 
-     At A Glance screencasts 
+    Screencasts:
 
      - [file](./file.md)
 
