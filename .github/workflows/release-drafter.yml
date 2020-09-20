@@ -16,7 +16,3 @@ jobs:
          name: CFDE Training Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-<<<<<<< HEAD
-=======
-        
->>>>>>> 9f2f7c89691f9eebc9e78600ef6e339540e001a6
