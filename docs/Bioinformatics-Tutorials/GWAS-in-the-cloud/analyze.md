@@ -194,7 +194,7 @@ Look at the per SNP rates by running:
     ```
     less miss_stat.lmiss
     ```
-=== "Output"
+=== "Expected Output"
     ```
     CHR                                    SNP   N_MISS   N_GENO   F_MISS
     1                          BICF2P1489653        1       53  0.01887
