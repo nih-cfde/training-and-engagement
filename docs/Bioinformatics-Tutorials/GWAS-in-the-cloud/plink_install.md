@@ -12,7 +12,7 @@ Install PLINK
 ## Step 1: Download PLINK with wget
 Type these commands into your [Ubuntu AWS terminal](./download_accessAWS.md):
 
-=== "Code"
+=== "AWS Instance"
     ```
     cd /usr/local/bin/
     sudo wget https://zzz.bwh.harvard.edu/plink/dist/plink-1.07-x86_64.zip
@@ -23,7 +23,7 @@ The first line changes your directory to the "bin". The second line of code down
 
 Now, uncompress the newly downloaded file:
 
-=== "Code"
+=== "AWS Instance"
     ```
     sudo unzip -o plink-1.07-x86_64.zip
     sudo rm plink-1.07-x86_64.zip
@@ -35,7 +35,7 @@ The first line of code does the uncompressing, the second line of code gets rid 
 
 After cd-ing into the "plink-1.07-x86_64" folder, add plink to the `.bashrc`. By doing so, you are telling the computer that PLINK can be accessed from any directory. Type:
 
-=== "Code"
+=== "AWS Instance"
     ```
     echo export PATH=$PATH:$(pwd) >> ~/.bashrc
     source ~/.bashrc

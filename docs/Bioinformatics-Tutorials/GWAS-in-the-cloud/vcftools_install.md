@@ -15,7 +15,7 @@ VCF stands for Variant Call Format. It is a standardized text file format for re
 
 To install vcf tools in the home directory, run the following lines of code:
 
-=== "Code"
+=== "AWS Instance"
     ```
     cd
     git clone https://github.com/vcftools/vcftools.git
@@ -27,7 +27,7 @@ The first line of code changes your directory to the home directory. The second 
 
 Compile vcftools by running this code:
 
-=== "Code"
+=== "AWS Instance"
     ```
     ./autogen.sh
     ./configure
