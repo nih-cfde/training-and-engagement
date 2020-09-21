@@ -5,7 +5,6 @@ categories:
   - title: 'Website Features'
     labels:
       - 'feature'
-      - 'enhancement'
   - title: 'Updates and Fixes'
     label: 'fixes'
 change-template: '- $TITLE (#$NUMBER)'
