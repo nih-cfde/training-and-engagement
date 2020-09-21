@@ -1,3 +1,5 @@
+name: Reviewer checklist
+
 on:
   pull_request:
     branches:
