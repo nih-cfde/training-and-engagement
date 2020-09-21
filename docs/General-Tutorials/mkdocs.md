@@ -28,7 +28,7 @@ MkDocs is a static site generator built for project documentation. It comes with
 
 ## Step 1: Install MkDocs
 
-MkDocs can be installed via a package manager or manually using `pip` the Python package manager. In this tutorial, installation using `pip` and `conda` are detailed.
+MkDocs can be installed via a package manager or manually using `pip` the Python package manager. In this tutorial, installation using `pip` and `conda` are detailed. Choose either one installation route to begin.
 
 === "pip install"
 
