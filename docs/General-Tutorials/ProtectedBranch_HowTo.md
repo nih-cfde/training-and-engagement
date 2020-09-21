@@ -4,20 +4,33 @@ layout: page
 ---
 
 Working with Protected Branches
-============================
+==============================
 
-Why use protected branches
---------------------------
+!!! note "Learning Objectives"
+    - learn about protected branches in GitHub
+    - learn to work with newly cloned protected branches in GitHub
+    - learn to work with previously cloned protected branches in GitHub
+    - learn to make changes to branch created by someone else
+    - learn to preview websites on GitHub branches
+    - learn the basic GitHub workflow
 
-Protected branches ensure that rules are enforced on any changes made to
-that branch in a repo. A common branch protection rule is for pull requests (PRs) to be reviewed by at least one other person before they get merged. Protected branches stop you
-from making unauthorized changes to that branch. However, you can make multiple changes locally or to other non-protected branches. For the local changes to reflect in the protected branch all the set criteria should be met and the changes should be purposefully merged.
-This type of set up is useful for repositories (repos) that render websites. The branch that hosts the live site can be protected, so that no one can incorporate changes to the
-site until someone else checks them. That's how we make sure that no one
+=== "Est. Time"
+
+    30 mins
+
+=== "Prerequisites"
+
+    - GitHub account
+    - Access to a Unix shell
+    - Basic command line skills
+
+## What are protected branches and why work with them
+
+Protected branches ensure that rules are enforced on any changes made to that branch in a repo. A common branch protection rule is for pull requests (PRs) to be reviewed by at least one other person before they get merged. Protected branches stop you
+from making unauthorized changes to that branch. However, you can make multiple changes locally or to other non-protected branches. For the local changes to reflect in the protected branch all the set criteria should be met and the changes should be purposefully merged. This type of set up is useful for repositories (repos) that render websites. The branch that hosts the live site can be protected, so that no one can incorporate changes to the site until someone else checks them. That's how we make sure that no one
 accidentally breaks the websites.
 
-How to work with protected branches
------------------------------------
+## How to work with protected branches
 
 For the purposes of this tutorial, a practice repo will be used to showcase the git commands. First, copy the repo(s) to your local computer using command line like so:
 
@@ -28,26 +41,24 @@ git clone https://github.com/nih-cfde/play-with-github.git
 !!! note "Repo name"
     The example repo is called "play-with-github". You can replace the GitHub URL with any other repo of your choice. The `.git` extension designates a [bare repo](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/)
 
-Once you have cloned your repos (now called directories on your local
-computer) and want to get started, you need to navigate into the newly created directory and work on a [branch](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions).
+Once you have cloned your repos (now called directories on your local computer) and want to get started, you need to navigate into the newly created directory and work on a [branch](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions).
 
-The command to create a new branch is as follows (you can name your
-branch whatever you like):
+The command to create a new branch is as follows (you can name your branch whatever you like):
 
 ```
 git branch <name_of_new_branch>
 git checkout <name_of_new_branch>
 ```
 
-!!! note
-    It is critical to navigate to the directory in which you wish
-    to make these changes.
+!!! Important
+    It is critical to navigate to the directory in which you wish to make these changes.
 
-The first line of code creates the branch and the second line of code switches your current directory to the new branch. Now if you make changes to the files, the changes will appear as this new branch. Please note: when you change to a new branch, nothing
-will physically change on your computer. But GitHub will recognize your directory as a new branch.
+The first line of code creates the branch and the second line of code switches your current directory to the new branch. Now if you make changes to the files, the changes will appear as this new branch.
 
-Once you have made the necessary changes (or any changes at all), you
-can push changes to GitHub. Here are the basic commands for pushing changes made to a  file:
+!!! Note
+    When you change to a new branch, nothing will physically change on your computer. But GitHub will recognize your directory as a new branch.
+
+Once you have made the necessary changes (or any changes at all), you can push changes to GitHub. Here are the basic commands for pushing changes made to a  file:
 
 ```
 git add <filename>
@@ -87,8 +98,7 @@ Until your [pull request](https://github.com/nih-cfde/organization/blob/master/G
         work), a team member(s) could access your branch and help fix the problem
         prior to the changes being merged.
 
-How to work with a previously cloned repo
------------------------------------------
+## How to work with a previously cloned repo
 
 The first step is to update your local version by typing:
 
@@ -108,8 +118,7 @@ above).
 Now you can make you changes locally, add, commit and then push those
 changes.
 
-How to make changes to branch created by someone else
-------------------------------------------------------
+## How to make changes to branch created by someone else
 
 Let's assume that Bobby (a random CFDE employee) wants to make some
 changes to the theme of *play-with-github.git* repo. She creates a branch called
@@ -138,21 +147,10 @@ git checkout --track origin/newtheme
 
 Now you can make changes locally, add and commit those changes. When you push your changes, they will be added to Bobby's PR.
 
-The most basic work flow in GitHub will look something like this:
------------------------------------------------------------------
 
--   Copy the GitHub repo to your local computer `git clone`
--   Edit, create and/or make changes in the newly created directory
--   Stage your changes `git add`
--   Save your changes `git commit`
--   Continue editing same file(s) after initial tracking
--   Save the recent changes enabling git to track all versions `git add` `git commit`
--   Add more changes/edits to the file but the previous version was better
--   Revert back to the last working version of the file `git log` `git revert <commit hash>`
--   Publish your local changes to GitHub `git push`
 
-Preview website on GitHub branch
---------------------------------
+## How to preview websites on a GitHub branch
+
 
 !!! note "Important"
     You will require admin privileges on www.readthedocs.com for previewing website changes from a GitHub repo.
@@ -184,3 +182,18 @@ git push origin <my branch>:preview
 
 (4) Click on the preview branch in readthedocs. This should take you to
     the website. Copy and paste the link on your GitHub PR.
+
+
+## Basic GitHub workflow
+
+The most basic work flow in GitHub will look something like this:
+
+  -   Copy the GitHub repo to your local computer `git clone`
+  -   Edit, create and/or make changes in the newly created directory
+  -   Stage your changes `git add`
+  -   Save your changes `git commit`
+  -   Continue editing same file(s) after initial tracking
+  -   Save the recent changes enabling git to track all versions `git add` `git commit`
+  -   Add more changes/edits to the file but the previous version was better
+  -   Revert back to the last working version of the file `git log` `git revert <commit hash>`
+  -   Publish your local changes to GitHub `git push`
