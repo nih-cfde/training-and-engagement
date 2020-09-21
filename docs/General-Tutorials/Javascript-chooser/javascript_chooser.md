@@ -3,7 +3,7 @@ layout: page
 title: Enabling User Choices with Javascript
 ---
 
-# Adding user choosable content using Javascript
+# Enabling User Choices with Javascript 
 
 There are many instances in a tutorial where you might want to give the user an option
 to only see parts of the content. For instance, you might have instructions for how to
@@ -23,7 +23,7 @@ choice of OS.
 
 === "Est. Time"
 
-    About 30 minutes
+    30 mins
 
 === "Prerequisites"
 
