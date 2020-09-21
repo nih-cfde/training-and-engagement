@@ -17,16 +17,26 @@ ability to dynamically change the content. In this tutorial, I'll show you how t
 Javascript to make a simple content chooser that changes the display based on the users
 choice of OS.
 
-You will need:
+!!! note "Learning Objectives"
+  
+    - learn some javascript
+    - learn how to create tabbed content
 
-  - a raw web page in markdown with sections you want to be user choosable
-  - a plain text editor
-  - about 30 minutes
+=== "Est. Time"
+
+    About 30 minutes
+
+=== "Prerequisites"
+
+    - a raw web page in markdown with sections you want to be user choosable
+    - a plain text editor
+    
+=== "Tutorial Resources"
+
+    - [Demo javascript script](./demo_javascript.md)
 
 
-
-
-# Overview of the process
+## Overview of the process
 
 There are three steps to creating the javascript code in a prebuilt page:
 
@@ -535,4 +545,4 @@ defaults in the script, we should add 'selected' to the Windows option here:
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
 
-[see the full script we made](./demo_javascript.md)
+[Check the full script we made!](./demo_javascript.md)
