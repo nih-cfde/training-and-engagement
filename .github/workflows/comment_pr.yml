@@ -2,8 +2,8 @@ name: Reviewer checklist
 
 on:
   pull_request:
-    branches:
-      - dev
+    branches: [dev]
+    types: [opened, reopened]
 
 jobs:
   example_comment_pr:
