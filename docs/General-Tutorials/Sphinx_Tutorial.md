@@ -61,7 +61,7 @@ Please choose your operating system and follow along.
 
     Based on [the official Sphinx installation guide tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html):
 
-    Install [Python](https://www.python.org/downloads/) or use conda to install both python and Sphinx in Windows.
+    Install [python](https://www.python.org/downloads/) or use conda to install both python and Sphinx in Windows.
 
     Open `command prompt` for Windows. To check if python 3 is installed on your computer, enter the command:
 
