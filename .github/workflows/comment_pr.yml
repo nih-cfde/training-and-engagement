@@ -14,12 +14,12 @@ jobs:
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@master
         with:
-          message: 'Reviewer Checklist
-          - [ ] spelling and grammar
-          - [ ] successful run of all installation and code chunks
-          - [ ] sufficient explanation and details for the tutorial content
-          - [ ] code syntax and naming convention
-          - [ ] adherence of tutorial format to style guide
+          message: 'Reviewer Checklist \n
+          - [ ] spelling and grammar \n
+          - [ ] successful run of all installation and code chunks \n
+          - [ ] sufficient explanation and details for the tutorial content \n
+          - [ ] code syntax and naming convention \n
+          - [ ] adherence of tutorial format to style guide \n
           - [ ] functional links (inter and intra)
           - [ ] accessible hyperlink text'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
