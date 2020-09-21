@@ -19,8 +19,7 @@ choice of OS.
 
 !!! note "Learning Objectives"
   
-    - learn some javascript
-    - learn how to create tabbed content
+    - learn how to create and customize dropdown boxes for webpages
 
 === "Est. Time"
 
@@ -29,12 +28,14 @@ choice of OS.
 === "Prerequisites"
 
     - a raw web page in markdown with sections you want to be user choosable
+    
     - a plain text editor
     
 === "Tutorial Resources"
 
     - [Demo javascript script](./demo_javascript.md)
-
+    
+    - [Demo rendered dropdown boxes](./demo_javascript_rendered.md)
 
 ## Overview of the process
 
@@ -545,4 +546,5 @@ defaults in the script, we should add 'selected' to the Windows option here:
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
 
-[Check the full script we made!](./demo_javascript.md)
+[Check the full script we made!](./demo_javascript.md). When the script is rendered on a webpage, our script
+will have the [dropdown boxes for different operating systems](./demo_javascript_rendered.md)!
