@@ -1,4 +1,4 @@
-name: Reviewer Checklist
+name: Reviewer checklist
 
 on:
   pull_request:
