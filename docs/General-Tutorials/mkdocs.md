@@ -16,11 +16,15 @@ MkDocs is a static site generator built for project documentation. It comes with
 
 === "Est. Time"
 
-    30 mins including installation
+    35 mins
 
 === "Prerequisites"
 
-    This tutorial can be run on MacOS, Windows or Linux operating systems. To install MkDocs the system should either have suitable package manager or Python > v3.5 installed. Admin and/or owner access to [readthedocs.com](https://readthedocs.com/) is required for hosting the website.   
+    This tutorial can be run on MacOS, Windows or Linux operating systems. To install MkDocs the system should either have suitable package manager or Python > v3.5 installed. Also require access to git. Admin and/or owner access to [readthedocs.com](https://readthedocs.com/) is required for hosting the website.  
+
+=== "Tutorial Resources"    
+
+    [Demo GitHub repository with MkDocs Template](https://github.com/nih-cfde/MkDocs-demo)   
 
 ## Step 1: Install MkDocs
 
