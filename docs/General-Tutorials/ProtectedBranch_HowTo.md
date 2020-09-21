@@ -10,7 +10,7 @@ Working with Protected Branches
     - learn about protected branches in GitHub
     - learn to work with newly cloned protected branches in GitHub
     - learn to work with previously cloned protected branches in GitHub
-    - learn to make changes to branch created by someone else
+    - learn to make changes to a branch created by someone else
     - learn to preview websites on GitHub branches
     - learn the basic GitHub workflow
 
