@@ -546,5 +546,5 @@ defaults in the script, we should add 'selected' to the Windows option here:
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
 
-[Check the full script we made](./demo_javascript.md)! When the script is rendered on a webpage, our script
+[Check the full script we made](./demo_javascript.md)! When the script is rendered on a webpage, our webpage
 will have the [dropdown boxes for different operating systems](./demo_javascript_rendered.md)!
