@@ -3,8 +3,7 @@ layout: page
 title: Rendering a GitHub website locally with Sphinx
 ---
 
-Sphinx for static websites editing
-==================================
+# Rendering a GitHub website locally with Sphinx
 
 Sphinx is python based tool that enables generation of documentation. Originally intended for python projects, it has versatility to be adapted for any number of projects that generate plain text.
 
@@ -24,7 +23,9 @@ Sphinx is python based tool that enables generation of documentation. Originally
     
 === "Prerequisites"
 
-    - GitHub account
+    - Have [`git`](https://git-scm.com/) installed on your computer
+    
+    - This tutorial uses python and conda. These can be configured on your computer by installing Anaconda or Miniconda. Please see our [tutorial](./install_conda_tutorial.md) for help installing and using Miniconda on MacOS.
     
     - Basic command line skills
     
@@ -32,16 +33,16 @@ Sphinx is python based tool that enables generation of documentation. Originally
 
 === "Tutorial Resources"
 
-    - [Demo Github repository for Sphinx](https://github.com/nih-cfde/Sphinx-demo)
+    [Demo Github repository for Sphinx](https://github.com/nih-cfde/Sphinx-demo)
 
 
 Please choose your operating system and follow along.
 
 ===  "MacOS Instructions"
 
-    Based on [this tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
+    Based on [the official Sphinx installation guide tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html):
 
-    We will utilize conda package management system to install Sphinx. If you do not have conda installed, you can follow installation steps [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
+    We will utilize the [conda package management system](./install_conda_tutorial.md) to install Sphinx.
 
     Create a new conda environment called `sphinx` that runs python 3.5 like so:
 
@@ -58,9 +59,9 @@ Please choose your operating system and follow along.
 
 === "Windows Instructions"
 
-    Based on this [tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html).
+    Based on [the official Sphinx installation guide tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html):
 
-    Install Python (*if necessary*). *Note you can also use conda to install both python and Sphinx in Windows*.
+    Install [Python](https://www.python.org/downloads/) or use conda to install both python and Sphinx in Windows.
 
     Open `command prompt` for Windows. To check if python 3 is installed on your computer, enter the command:
 
@@ -69,9 +70,7 @@ Please choose your operating system and follow along.
     Python 3.7.4
     ```
 
-    If Python is not installed, you can download from [here](https://www.python.org/downloads/).
-
-    To install [Sphinx](https://www.sphinx-doc.org/en/master/usage/quickstart.html), we will use `pip` which is a python package installer.
+    To install [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html), we will use `pip` which is a python package installer.
 
     Open `command prompt` for Windows and type the following code:
 
@@ -87,8 +86,7 @@ Please choose your operating system and follow along.
     sphinx-build --version
     ```
 
-Build Sphinx site using template from GitHub
---------------------------------------------    
+## Step 1: Build Sphinx site using template from GitHub
 
 For this tutorial, we will use a template website hosted on GitHub, that was generated using Sphinx to modify and add content. First, we will create a local copy of the repo:
 
@@ -147,8 +145,7 @@ make html
 
 The newly rendered website with the added changes can be viewed by clicking "index.html" located in the "sphinx/_build/html" folder.
 
-Adding files to Sphinx site
-----------------------------  
+## Step 2: Adding files to Sphinx site
 
 Next, we will add some files to build the website. Let us create an empty file within the "docs" folder:
 
@@ -182,8 +179,7 @@ make html
 
 We can add multiple files to the website in similar manner.
 
-Embed video on Sphinx site
----------------------------
+### Embed video on Sphinx site
 
 In addition to text files, images and videos can also be embedded. Next, we will embed a talk by Paul Everitt exploring the feature set of Sphinx, hosted on [YouTube](https://www.youtube.com/watch?v=7adnbsj9A4w).
 
@@ -205,8 +201,7 @@ make html
 
 The rendered website will now have the embedded video on the landing page. Full set of Sphinx capabilities can be found at the official [Sphinx documentation site](https://www.sphinx-doc.org/en/master/).
 
-Build local Sphinx site
-------------------------
+## Step 3: Build local Sphinx site
 
 A previously created website template was used in this tutorial. However, you can also build a local version of the Sphinx site.
 
