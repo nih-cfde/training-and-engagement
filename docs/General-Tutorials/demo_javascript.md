@@ -1,3 +1,4 @@
+```
 <script language="javascript" type="text/javascript">
 
 function set_page_view_defaults() {
@@ -50,3 +51,4 @@ A mac option of text
 </div>
 
 Even more text that is always displayed
+```
