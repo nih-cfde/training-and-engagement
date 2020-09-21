@@ -17,13 +17,3 @@ Add how you would like to receive the review (direct editing, as comments, notes
 
 ## Timeline
 Add expected timeline to finish review and merge adding note for time critical updates
-
-<!--- ## Reviewer Checklist
-
-- [ ] spelling and grammar
-- [ ] successful run of all installation and code chunks
-- [ ] sufficient explanation and details for the tutorial content
-- [ ] code syntax and naming convention
-- [ ] adherence of tutorial format to style guide
-- [ ] functional links (inter and intra)
-- [ ] accessible hyperlink text --->
