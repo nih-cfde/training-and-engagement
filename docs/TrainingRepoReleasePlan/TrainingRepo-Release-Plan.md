@@ -38,7 +38,15 @@ A series of checklists will be implemented to ensure error free working tutorial
 
 Individual tutorials will follow the formatting, organization, and layout details described in the [training website style guide](https://hackmd.io/Znxo_eOBQsaxszl_Uduk5A?view#Contributing-to-the-nih-cfde-Training-and-Engagement-website).
 
-Individual branches create a PR for merge into `dev`.
+Individual branches create a PR for merge into `dev`. Good practices for creating PR branches are:
+- create a new branch off `dev`
+- name the branch with included feature/fix/content along with PR author's name. e.g. scanchi-mime-new or marisa-sphinx-javascript or abhijna_kf_edits
+- keep the PR branch up to date with `dev` by pulling latest merged changes. *Note on the GitHub interface for the PR you will get an indication to update your branch which essentially merges latest changes in `dev` to your branch*
+- After the PR has been successfully merged, delete the branch in remote and in local repo
+
+Generally we want to avoid merging between branches with open PRs. This is because by committing the changes between branches, they effectively become the same branch. When one branch is merged the other branch with the same commit log with automatically be merged irrespective of the review stage. However in scenario where there might be dependency between branches, one can merge one branch into the other restricting it to only one direction. For example say we have PR A and PR B on two different branches and the fixes in PR A are relevant to PR B. We would then merge the branch for PR A into the branch for PR B but not vice versa.
+If not time sensitive, then one can wait for PR A to merge into `dev` before pulling those changes into PR B. 
+
 The PR author should ensure:
 - [ ] Descriptive title - Title should convey PR changes and will reflect in release notes
 - [ ] Clean build logs - Automated check for correct documentation build
