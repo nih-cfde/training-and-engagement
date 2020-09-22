@@ -19,9 +19,8 @@ Web Development:
   - [Rendering a GitHub website locally with Sphinx](Sphinx_Tutorial.md)
   - [Rendering a GitHub website locally with MkDocs](mkdocs.md)
   - [Editing Mkdocs websites with cfde-bot](cfdebot_website_editing.md)
-  - [Enabling User Choices with Javascript](./Javascript-dropdown-box/javascript_chooser.md)
+  - [Enabling User Choices with Javascript](Javascript-dropdown-box/javascript_chooser.md)
 
 Conda:
 
   - [Set up Conda computing environment](install_conda_tutorial.md)
-  
