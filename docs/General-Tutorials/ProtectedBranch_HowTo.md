@@ -6,6 +6,12 @@ layout: page
 Working with Protected Branches
 ==============================
 
+Protected branches ensure that rules are enforced on any changes made to that branch in a repo. A common branch protection rule is for pull requests (PRs) to be reviewed by at least one other person before they get merged. Protected branches stop you
+from making unauthorized changes to that branch. However, you can make multiple changes locally or to other non-protected branches. For the local changes to reflect in the protected branch all the set criteria should be met and the changes should be purposefully merged. This type of set up is useful for repositories (repos) that render websites. The branch that hosts the live site can be protected, so that no one can incorporate changes to the site until someone else checks them. That's how we make sure that no one
+accidentally breaks the websites.
+
+
+
 !!! note "Learning Objectives"
     - learn about protected branches in GitHub
     - learn to work with newly cloned protected branches in GitHub
@@ -21,14 +27,14 @@ Working with Protected Branches
 === "Prerequisites"
 
     - GitHub account
+    - Git installed on your computer
     - Access to a Unix shell
     - Basic command line skills
 
-## What are protected branches and why work with them
+=== "Tutorial Resources"
+    Link to practice repo:
+    <https://github.com/nih-cfde/play-with-github>
 
-Protected branches ensure that rules are enforced on any changes made to that branch in a repo. A common branch protection rule is for pull requests (PRs) to be reviewed by at least one other person before they get merged. Protected branches stop you
-from making unauthorized changes to that branch. However, you can make multiple changes locally or to other non-protected branches. For the local changes to reflect in the protected branch all the set criteria should be met and the changes should be purposefully merged. This type of set up is useful for repositories (repos) that render websites. The branch that hosts the live site can be protected, so that no one can incorporate changes to the site until someone else checks them. That's how we make sure that no one
-accidentally breaks the websites.
 
 ## How to work with protected branches
 

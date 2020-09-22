@@ -6,7 +6,7 @@ title: Rendering a GitHub website locally with Jekyll
 Rendering a GitHub website locally with Jekyll
 ===============================================
 
-Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content. The first part of the tutorial includes instructions for downloading Jekyll on:
+Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content.
 
 !!! note "Learning Objectives"
     - learn to install Jekyll
@@ -22,11 +22,14 @@ Jekyll is a static site generator written in Ruby. It can be easily integrated i
 === "Prerequisites"
 
     - GitHub account
+    - Git installed on your computer
     - Basic command line skills
     - Access to MacOS, Windows or Linux
 
+=== "Tutorial Resources"
+    <https://github.com/nih-cfde/Jekyll-demo>
 
-Please choose your operating system and follow along.
+The first part of the tutorial includes instructions for downloading Jekyll on Mac, Windows and Linux OS. Please choose your operating system and follow along.
 
 === "MacOS"
 
@@ -35,7 +38,7 @@ Please choose your operating system and follow along.
 
     The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).
 
-    #### Command line tools
+    #### Step 1: Install command line tools
 
     First, we install the command line utility tool for OS platform, by
     running the following code in the terminal:
@@ -44,12 +47,12 @@ Please choose your operating system and follow along.
     xcode-select --install
     ```
 
-    #### Ruby
+    #### Step 2: Install ruby
 
     Jekyll requires Ruby \> 2.5.0. macOS Catalina 10.15 comes with ruby
     2.6.3. For older versions of macOS system, instructions for [installing newer Ruby version are available](https://jekyllrb.com/docs/installation/macos/#brew).
 
-    #### Jekyll
+    #### Step 3: Install Jekyll
 
     A software package with packaged Ruby library is called a `gem`. In addition to Jekyll, we will also install `bundler` which ensures consistency of environment for Ruby projects. To install a local version, we run:
 
@@ -98,7 +101,7 @@ Please choose your operating system and follow along.
 
     This version was performed on a Windows 10 machine using VS Code on the terminal.
 
-    #### Install Jekyll and Ruby
+    #### Step 1: Install Jekyll and Ruby
 
     ```
     install jekyll
@@ -106,7 +109,7 @@ Please choose your operating system and follow along.
     install bundle
     ```
 
-    #### Additional Windows requirements: Fix TimeZone issues
+    #### Step 2: Additional Windows requirements: Fix TimeZone issues
 
     ```
     gem install tzinfo
@@ -126,7 +129,7 @@ Please choose your operating system and follow along.
     The installation follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this
     tutorial.
 
-    #### Setup Ubuntu terminal
+    #### Step 1: Setup Ubuntu terminal
 
     Search for `Turn Windows features on or off` on the
     the Windows start search bar. Check the `Windows Subsystem for
@@ -152,7 +155,7 @@ Please choose your operating system and follow along.
     sudo apt-get update -y
     ```
 
-    #### Install Ruby and Jekyll
+    #### Step 2: Install Ruby and Jekyll
 
     The following commands are edited based on most up-to-date ruby version:
 
