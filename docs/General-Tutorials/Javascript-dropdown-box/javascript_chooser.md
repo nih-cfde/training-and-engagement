@@ -3,7 +3,7 @@ layout: page
 title: Enabling User Choices with Javascript
 ---
 
-# Adding user choosable content using Javascript
+# Enabling User Choices with Javascript 
 
 There are many instances in a tutorial where you might want to give the user an option
 to only see parts of the content. For instance, you might have instructions for how to
@@ -17,16 +17,27 @@ ability to dynamically change the content. In this tutorial, I'll show you how t
 Javascript to make a simple content chooser that changes the display based on the users
 choice of OS.
 
-You will need:
+!!! note "Learning Objectives"
+  
+    - learn how to create and customize dropdown boxes for webpages
 
-  - a raw web page in markdown with sections you want to be user choosable
-  - a plain text editor
-  - about 30 minutes
+=== "Est. Time"
 
+    30 mins
 
+=== "Prerequisites"
 
+    - a raw web page in markdown with sections you want to be user choosable
+    
+    - a plain text editor
+    
+=== "Tutorial Resources"
 
-# Overview of the process
+    - [Demo javascript script](./demo_javascript.md)
+    
+    - [Demo rendered dropdown boxes](./demo_javascript_rendered.md)
+
+## Overview of the process
 
 There are three steps to creating the javascript code in a prebuilt page:
 
@@ -535,4 +546,5 @@ defaults in the script, we should add 'selected' to the Windows option here:
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
 
-[see the full script we made](./demo_javascript.md)
+[Check the full script we made](./demo_javascript.md)! When the script is rendered on a webpage, our webpage
+will have the [dropdown boxes for different operating systems](./demo_javascript_rendered.md)!
