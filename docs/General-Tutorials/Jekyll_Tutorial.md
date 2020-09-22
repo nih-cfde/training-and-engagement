@@ -6,156 +6,177 @@ title: Rendering a GitHub website locally with Jekyll
 Rendering a GitHub website locally with Jekyll
 ===============================================
 
-Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content. The first part of the tutorial includes instructions for downloading Jekyll on:
+Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content.
 
-- [MacOS](#install-jekyll-on-macos-using-command-line)
-- [Windows OS](#install-jekyll-on-windows-os)
-- [Windows Subsystem for Linux](#install-jekyll-using-windows-subsystem-for-linux-wsl)
+!!! note "Learning Objectives"
+    - learn to install Jekyll
+    - learn to build a Jekyll website
+    - learn to render Jekyll websites locally
+    - learn to edit content on a Jekyll website
 
-Install Jekyll on MacOS using command line
--------------------------------------------
 
-The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).
+=== "Est. Time"
 
-#### Command line tools
+    40 mins
 
-First, we install the command line utility tool for OS platform, by
-running the following code in the terminal:
+=== "Prerequisites"
 
-```
-xcode-select --install
-```
+    - GitHub account
+    - Git installed on your computer
+    - Basic command line skills
+    - Access to MacOS, Windows or Linux
 
-#### Ruby
+=== "Tutorial Resources"
+    <https://github.com/nih-cfde/Jekyll-demo>
 
-Jekyll requires Ruby \> 2.5.0. macOS Catalina 10.15 comes with ruby
-2.6.3. For older versions of macOS system, instructions for [installing newer Ruby version are available](https://jekyllrb.com/docs/installation/macos/#brew).
+The first part of the tutorial includes instructions for downloading Jekyll on Mac, Windows and Linux OS. Please choose your operating system and follow along.
 
-#### Jekyll
+=== "MacOS"
 
-A software package with packaged Ruby library is called a `gem`. In addition to Jekyll, we will also install `bundler` which ensures consistency of environment for Ruby projects. To install a local version, we run:
+    Install Jekyll on MacOS using command line
+    -------------------------------------------
 
-```
-gem install --user-install bundler jekyll
-```
+    The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).
 
-Next, obtain the Ruby version on your computer:
+    #### Step 1: Install command line tools
 
-```
-ruby -v
-```
+    First, we install the command line utility tool for OS platform, by
+    running the following code in the terminal:
 
-Append your path file with the following, replacing the X.X with the
-first two digits of our Ruby version. E.g. my `ruby -v` was 2.6.3, so I
-replaced X.X.0 with 2.6.0.
+    ```
+    xcode-select --install
+    ```
 
-```
-echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
-```
+    #### Step 2: Install ruby
 
-To check that our gem paths point to our home directory, we run:
+    Jekyll requires Ruby \> 2.5.0. macOS Catalina 10.15 comes with ruby
+    2.6.3. For older versions of macOS system, instructions for [installing newer Ruby version are available](https://jekyllrb.com/docs/installation/macos/#brew).
 
-```
-gem env
-```
+    #### Step 3: Install Jekyll
 
-Gem paths should look something like this:
+    A software package with packaged Ruby library is called a `gem`. In addition to Jekyll, we will also install `bundler` which ensures consistency of environment for Ruby projects. To install a local version, we run:
 
-```
-- GEM PATHS:
-   - /Library/Ruby/Gems/2.6.0
-   - /Users/abbysmith/.gem/ruby/2.6.0
-   - /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
-```
-To check if the installation worked, run this:
+    ```
+    gem install --user-install bundler jekyll
+    ```
 
-```
-jekyll -v
-```
+    Next, obtain the Ruby version on your computer:
 
-This should return a string similar to this : `jekyll 4.x.x`
+    ```
+    ruby -v
+    ```
 
-Install Jekyll on Windows OS
-------------------------------
+    Append your path file with the following, replacing the X.X with the
+    first two digits of our Ruby version. E.g. my `ruby -v` was 2.6.3, so I
+    replaced X.X.0 with 2.6.0.
 
-This version was performed on a Windows 10 machine using VS Code on the terminal.
+    ```
+    echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
+    ```
 
-#### Install Jekyll and Ruby
+    To check that our gem paths point to our home directory, we run:
 
-```
-install jekyll
-install ruby
-install bundle
-```
+    ```
+    gem env
+    ```
 
-#### Additional Windows requirements: Fix TimeZone issues
+    Gem paths should look something like this:
 
-```
-gem install tzinfo
-gem install tzinfo-data
-```
+    ```
+    - GEM PATHS:
+      - /Library/Ruby/Gems/2.6.0
+      - /Users/abbysmith/.gem/ruby/2.6.0
+      - /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
+    ```
+    To check if the installation worked, run this:
 
-In the Gemfile edit to include:
+    ```
+    jekyll -v
+    ```
 
-```
-gem 'tzinfo-data'
-```
+    This should return a string similar to this : `jekyll 4.x.x`
 
-Install Jekyll using Windows Subsystem for Linux (WSL)
----------------------------------------------------------
+=== "Windows"
+    ## Install Jekyll on Windows OS
 
-The installation follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with
-modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this
-tutorial.
+    This version was performed on a Windows 10 machine using VS Code on the terminal.
 
-#### Setup Ubuntu terminal
+    #### Step 1: Install Jekyll and Ruby
 
-Search for `Turn Windows features on or off` on the
-the Windows start search bar. Check the `Windows Subsystem for
-Linux` box. Follow prompts and restart the computer.
+    ```
+    install jekyll
+    install ruby
+    install bundle
+    ```
 
-To enable developer mode, go to Settings \> Update & Security \> For
-developers. Select the `Developer mode` option. This may take a
-few minutes to finish.
+    #### Step 2: Additional Windows requirements: Fix TimeZone issues
 
-To get Ubuntu, open the Microsoft Store and search for `Ubuntu` (you will need to login to your Microsoft account).
-Select the blue `Get` box. After installation is complete, select
-`Launch`.
+    ```
+    gem install tzinfo
+    gem install tzinfo-data
+    ```
 
-An Ubuntu terminal window will appear with this message: `Installing, this may take a few minutes...`. 
-Set up a username and password.
+    In the Gemfile edit to include:
 
-!!! note
-    The credentials setup are for using the bash window and need not match the computer logins.
+    ```
+    gem 'tzinfo-data'
+    ```
 
-Finally, set up local package database for Ubuntu:
+=== "Linux"
 
-```
-sudo apt-get update -y
-```
+    ## Install Jekyll using Windows Subsystem for Linux (WSL)
 
-#### Install Ruby and Jekyll
+    The installation follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this
+    tutorial.
 
-The following commands are edited based on most up-to-date ruby version:
+    #### Step 1: Setup Ubuntu terminal
 
-```
-sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-autoreconf -y
-```
+    Search for `Turn Windows features on or off` on the
+    the Windows start search bar. Check the `Windows Subsystem for
+    Linux` box. Follow prompts and restart the computer.
 
-Next, update RubyGems, the Ruby package manager
+    To enable developer mode, go to Settings \> Update & Security \> For
+    developers. Select the `Developer mode` option. This may take a
+    few minutes to finish.
 
-```
-sudo gem update
-```
+    To get Ubuntu, open the Microsoft Store and search for `Ubuntu` (you will need to login to your Microsoft account).
+    Select the blue `Get` box. After installation is complete, select
+    `Launch`.
 
-Finally, install Jekyll and bundler (this step may take several minutes to complete):
+    An Ubuntu terminal window will appear with this message: `Installing, this may take a few minutes...`.
+    Set up a username and password.
 
-```
-sudo gem install jekyll bundler
-```
+    !!! note
+        The credentials setup are for using the bash window and need not match the computer logins.
 
-Build Jekyll site using template from GitHub
----------------------------------------------
+    Finally, set up local package database for Ubuntu:
+
+    ```
+    sudo apt-get update -y
+    ```
+
+    #### Step 2: Install Ruby and Jekyll
+
+    The following commands are edited based on most up-to-date ruby version:
+
+    ```
+    sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-autoreconf -y
+    ```
+
+    Next, update RubyGems, the Ruby package manager
+
+    ```
+    sudo gem update
+    ```
+
+    Finally, install Jekyll and bundler (this step may take several minutes to complete):
+
+    ```
+    sudo gem install jekyll bundler
+    ```
+
+
+## Build Jekyll site using template from GitHub
 
 For the second half of the tutorial, we will use a template website hosted on GitHub that was generated using Jekyll to modify and add content. Navigate (`cd <directory name>`) to the location (e.g., Desktop) where you want to save the template directory on your computer and create a local copy of the repo:
 
@@ -164,7 +185,7 @@ git clone https://github.com/nih-cfde/Jekyll-demo.git
 ```
 
 !!! note "Building Jekyll site in Windows OS using WSL"
-    
+
       In Windows OS using the WSL, you would type this to navigate to the repo directory if you cloned it to your Desktop:
 
       ```

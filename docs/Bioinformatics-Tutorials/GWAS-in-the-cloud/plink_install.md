@@ -6,43 +6,39 @@ title: Install PLINK
 Install PLINK
 ===============
 
-## What is PLINK?
 [PLINK](http://zzz.bwh.harvard.edu/plink/index.shtml) is a free, open-source whole-genome association analysis toolset. The software is designed flexibly to perform a wide range of basic, large-scale genetic analyses including GWAS.
 
-## Installation
 
-To install PLINK, type these commands into your [Ubuntu AWS terminal](./download_accessAWS.md):
+## Step 1: Download PLINK with wget
+Type these commands into your [Ubuntu AWS terminal](./download_accessAWS.md):
 
-```
-cd /usr/local/bin/
-sudo wget https://zzz.bwh.harvard.edu/plink/dist/plink-1.07-x86_64.zip
+=== "AWS Instance"
+    ```
+    cd /usr/local/bin/
+    sudo wget https://zzz.bwh.harvard.edu/plink/dist/plink-1.07-x86_64.zip
+    ```
+The first line changes your directory to the "bin". The second line of code downloads the software in the "bin" directory.
 
-```
+## Step 2: Unzip
 
-Next, unzip and cd into the folder:
+Now, uncompress the newly downloaded file:
 
-```
-sudo unzip -o plink-1.07-x86_64.zip
-sudo rm plink-1.07-x86_64.zip
-cd plink-1.07-x86_64
-```
+=== "AWS Instance"
+    ```
+    sudo unzip -o plink-1.07-x86_64.zip
+    sudo rm plink-1.07-x86_64.zip
+    cd plink-1.07-x86_64
+    ```
+The first line of code does the uncompressing, the second line of code gets rid of the ".zip" version (you don't need it anymore) and the last line of code takes you into the newly created "plink-1.07-x86_64" directory.
 
-!!! Error
-    If you see a error like this:
+## Step 3: Add PLINK to the .bashrc
 
-    `sudo: unzip: command not found`
+After cd-ing into the "plink-1.07-x86_64" folder, add plink to the `.bashrc`. By doing so, you are telling the computer that PLINK can be accessed from any directory. Type:
 
-    You will need to install unzip:
-
-    `sudo apt-get install unzip`
-
-    Then re-run the unzip code block.
-
-After cd-ing into the plink-1.07-x86_64 folder, add plink to the `.bashrc`. By doing so, you are telling the computer that PLINK can be accessed from any directory. Type:
-
-```
-echo export PATH=$PATH:$(pwd) >> ~/.bashrc
-source ~/.bashrc
-```
+=== "AWS Instance"
+    ```
+    echo export PATH=$PATH:$(pwd) >> ~/.bashrc
+    source ~/.bashrc
+    ```
 
 PLINK has now been successfully installed!
