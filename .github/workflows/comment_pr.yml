@@ -17,11 +17,11 @@ jobs:
         uses: thollander/actions-comment-pull-request@master
         with:
           message: '**Reviewer Checklist**<br/>
-          - spelling and grammar<br/>
-          - successful run of all installation and code chunks<br/>
-          - sufficient explanation and details for the tutorial content<br/>
-          - code syntax and naming convention<br/>
-          - adherence of tutorial format to style guide<br/>
-          - functional links (inter and intra)<br/>
-          - accessible hyperlink text'
+          - [ ] spelling and grammar<br/>
+          - [ ] successful run of all installation and code chunks<br/>
+          - [ ] sufficient explanation and details for the tutorial content<br/>
+          - [ ] code syntax and naming convention<br/>
+          - [ ] adherence of tutorial format to style guide<br/>
+          - [ ] functional links (inter and intra)<br/>
+          - [ ] accessible hyperlink text'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
