@@ -10,7 +10,7 @@ Latest Release
 ## New Tutorials
 
 - [MIME type tutorial](../CF-Tutorials/MIME-type/index.md)
-- [Adding user choosable content using Javascript](../General-Tutorials/javascript_chooser.md)
+- [Adding user choosable content using Javascript](../General-Tutorials/Javascript-dropdown-box/javascript_chooser.md)
 
 ## Website Features
 
