@@ -170,7 +170,7 @@ MkDocs comes installed with two themes: `Bootstrap` and `readthedocs`. To change
 theme: readthedocs
 ```
 
-To recreate the look of [CFDE training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/), we will install an external MkDocs theme called [Material for MkDocs](https://github.com/squidfunk/mkdocs-material). List of all available external MkDocs themes can be found at [MkDocs wiki page](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes).
+To recreate the look of [CFDE training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/), we will install an external MkDocs theme called [Material for MkDocs](https://github.com/squidfunk/mkdocs-material). List of all available external MkDocs themes can be found at [MkDocs wiki page](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes). Choose either `pip` or `conda` to install  the material theme.
 
 === "pip install"
 
