@@ -20,7 +20,11 @@ MkDocs is a static site generator built for project documentation. It comes with
 
 === "Prerequisites"
 
-    This tutorial can be run on MacOS, Windows or Linux operating systems. To install MkDocs the system should either have suitable package manager or Python > v3.5 installed. Also require access to git. Admin and/or owner access to [readthedocs.com](https://readthedocs.com/) is required for hosting the website.  
+    - Access to MacOS, Windows or Linux system
+    - To install MkDocs the system should either have suitable package manager or Python > v3.5 installed.
+    - Have [`git`](https://git-scm.com/) installed on your computer
+    - Basic command line skills
+    - Admin and/or owner access to [readthedocs.com](https://readthedocs.com/) is required for hosting the website.  
 
 === "Tutorial Resources"    
 
