@@ -15,7 +15,7 @@ docs_dir: docs
 plugins:
   - search: # necessary for search to work
       separator: '[\s\-\.]+'
-  - awesome-pages
+  #- awesome-pages
   - git-revision-date-localized
   #- htmlproofer
 
