@@ -7,7 +7,8 @@ theme:
   palette:
     primary: white
   features:
-    - tabs
+    - navigation.tabs
+    - navigation.instant
   logo: images/CFDE-logo.png
   custom_dir: docs/templates
 docs_dir: docs
