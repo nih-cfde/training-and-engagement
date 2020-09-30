@@ -175,7 +175,7 @@ Use hyperlinks to link images, other Markdown files, or websites. Provide short 
 
 Type | Syntax
 --- | ---
-images | `![short description of image](relative/path/to/docs/images/imagefile "short description of image")`*
+images | `![short description of image](relative/path/to/docs/images/imagefile "short description of image")`* or to resize images, `<img src="path/to/img" title="short description of image" width="200" height="300">`
 tutorial references | `[text about the reference](relative/path/to/docs/Resources/referencefile)`
 other pages in the Github repo | `[text about the page](relative/path/to/page/in/Github/repo/filename)`
 URLs with title | `[text about the website](URL)`
