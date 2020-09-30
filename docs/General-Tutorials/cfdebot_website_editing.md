@@ -30,7 +30,7 @@ In this tutorial, we lay out the general steps for the single stage PR process.
 
 If working from Github, type a new branch name (e.g., `my_branch`) and hit `ENTER`. The new branch should be created with the `dev` branch as its base.
 
-![](../images/github-new-branch.png "create new github branch")
+<img src="../images/github-new-branch.png" title="create new github branch" width="300" height="300">
 
 ### Step 3: Make edits
 
