@@ -118,4 +118,4 @@ The X- axis represents haplotypes from each region of the genome that was tested
 
 In our graph, haplotypes in four parts of the genome (chromosome 2, 5, 28 and X) are found to be associated with an increased occurrence of the yellow coat color phenotype.
 
-The top associated mutation is a nonsense SNP in MC1R (c.916C>T) known to control pigment production.
+The top associated mutation is a nonsense SNP in the gene MC1R known to control pigment production. The MC1R allele encoding yellow coat color contains a single base change (from C to T) at the 916th nucleotide.
