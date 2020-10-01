@@ -1,4 +1,4 @@
-arrange:
+nav:
  - index.md
  - ProtectedBranch_HowTo.md
  - Jekyll_Tutorial.md
