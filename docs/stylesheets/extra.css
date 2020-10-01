@@ -1,5 +1,4 @@
 
-
 body {
     font-family: “Open Sans”, Arial, Helvetica, sans-serif;
 }
@@ -152,7 +151,6 @@ a:hover {
 a:active {
   color: #3094a4 ;
 }
-
 
 .tooltip_templates { display: none; }
 

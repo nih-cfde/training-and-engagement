@@ -7,7 +7,8 @@ theme:
   palette:
     primary: white
   features:
-    - tabs
+    - navigation.tabs
+    - navigation.instant
   logo: images/CFDE-logo.png
   custom_dir: docs/templates
 docs_dir: docs
@@ -17,7 +18,7 @@ plugins:
       separator: '[\s\-\.]+'
   - awesome-pages
   - git-revision-date-localized
-  - htmlproofer
+  #- htmlproofer
 
 markdown_extensions:
 - admonition
@@ -26,6 +27,9 @@ markdown_extensions:
 - pymdownx.tabbed
 - pymdownx.emoji
 - pymdownx.extra
+- pymdownx.highlight
+- pymdownx.keys
+- pymdownx.inlinehilite
 - codehilite:
     guess_lang: false
 - toc:

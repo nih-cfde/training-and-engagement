@@ -3,8 +3,7 @@ layout: page
 title: Rendering a GitHub website locally with Jekyll
 ---
 
-Rendering a GitHub website locally with Jekyll
-===============================================
+# Rendering a GitHub website locally with Jekyll
 
 Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content.
 
@@ -29,16 +28,15 @@ Jekyll is a static site generator written in Ruby. It can be easily integrated i
 === "Tutorial Resources"
     <https://github.com/nih-cfde/Jekyll-demo>
 
+## Step 1: Install Jekyll
+
 The first part of the tutorial includes instructions for downloading Jekyll on Mac, Windows and Linux OS. Please choose your operating system and follow along.
 
 === "MacOS"
 
-    Install Jekyll on MacOS using command line
-    -------------------------------------------
+    The instructions follow the [official Jekyll tutorial](https://jekyllrb.com/docs/installation/macos/#brew).
 
-    The instructions follow the official Jekyll tutorial posted [here](https://jekyllrb.com/docs/installation/macos/#brew).
-
-    #### Step 1: Install command line tools
+    **Install command line tools**
 
     First, we install the command line utility tool for OS platform, by
     running the following code in the terminal:
@@ -47,12 +45,12 @@ The first part of the tutorial includes instructions for downloading Jekyll on M
     xcode-select --install
     ```
 
-    #### Step 2: Install ruby
+    **Install ruby**
 
     Jekyll requires Ruby \> 2.5.0. macOS Catalina 10.15 comes with ruby
     2.6.3. For older versions of macOS system, instructions for [installing newer Ruby version are available](https://jekyllrb.com/docs/installation/macos/#brew).
 
-    #### Step 3: Install Jekyll
+    **Install Jekyll**
 
     A software package with packaged Ruby library is called a `gem`. In addition to Jekyll, we will also install `bundler` which ensures consistency of environment for Ruby projects. To install a local version, we run:
 
@@ -97,11 +95,10 @@ The first part of the tutorial includes instructions for downloading Jekyll on M
     This should return a string similar to this : `jekyll 4.x.x`
 
 === "Windows"
-    ## Install Jekyll on Windows OS
 
     This version was performed on a Windows 10 machine using VS Code on the terminal.
 
-    #### Step 1: Install Jekyll and Ruby
+    **Install Jekyll and Ruby**
 
     ```
     install jekyll
@@ -109,27 +106,11 @@ The first part of the tutorial includes instructions for downloading Jekyll on M
     install bundle
     ```
 
-    #### Step 2: Additional Windows requirements: Fix TimeZone issues
-
-    ```
-    gem install tzinfo
-    gem install tzinfo-data
-    ```
-
-    In the Gemfile edit to include:
-
-    ```
-    gem 'tzinfo-data'
-    ```
-
 === "Linux"
 
-    ## Install Jekyll using Windows Subsystem for Linux (WSL)
+    The installation follows uses Windows Subsystem for Linux (WSL) and follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this tutorial.
 
-    The installation follows some of the steps from this [tutorial](https://connelhooley.uk/blog/2018/03/11/installing-jekyll) but with modifications for updated software. A Ubuntu terminal on Windows 10 OS was used for this
-    tutorial.
-
-    #### Step 1: Setup Ubuntu terminal
+    **Setup Ubuntu terminal**
 
     Search for `Turn Windows features on or off` on the
     the Windows start search bar. Check the `Windows Subsystem for
@@ -155,7 +136,7 @@ The first part of the tutorial includes instructions for downloading Jekyll on M
     sudo apt-get update -y
     ```
 
-    #### Step 2: Install Ruby and Jekyll
+    **Install Ruby and Jekyll**
 
     The following commands are edited based on most up-to-date ruby version:
 
@@ -176,7 +157,7 @@ The first part of the tutorial includes instructions for downloading Jekyll on M
     ```
 
 
-## Build Jekyll site using template from GitHub
+## Step 2: Build Jekyll site using template from GitHub
 
 For the second half of the tutorial, we will use a template website hosted on GitHub that was generated using Jekyll to modify and add content. Navigate (`cd <directory name>`) to the location (e.g., Desktop) where you want to save the template directory on your computer and create a local copy of the repo:
 
@@ -211,7 +192,7 @@ The `_posts` folder will host all the content for the website and contains a mar
 The `_config.yml` file is in `yaml` format and stores attributes about the site as key value pairs.
 The `Gemfile` is a Ruby file which stores all the dependencies for the Jekyll site.
 
-#### Additional Windows requirements: Fix TimeZone issues
+#### Step 2A: Fix TimeZone issues in Windows
 
 Ruby runs into timezone issues on Windows due to absence of native zoneinfo data. Sites generated with the Jekyll \> v3.4 will have instructions for handling the missing data added to the `Gemfile`. For older versions, the workaround is as follows:
 
@@ -242,7 +223,7 @@ nano _config.yml
 !!! warning
     Until exclude list in `_config.yml` is correctly formatted, you are bound to run into invalid time errors.
 
-#### Building the website locally
+#### Step 2B: Build local site
 
 We are ready to build the site locally and the following code sets it up:
 
@@ -285,12 +266,11 @@ Configuration file: /mnt/c/Users/<username>/Desktop/Jekyll-demo/_config.yml
   Server running... press ctrl-c to stop
 ```
 
-Copy and paste the server address to a web browser to render the site. When you are done checking the local version, `ctrl-c` to close the server.
+Copy and paste the server address to a web browser to render the site. When you are done checking the local version, ++ctrl+c++ to close the server.
 
 Site set up generates a `_site` folder that will have all the content associated with the rendered site.
 
-Add content on Jekyll site
-----------------------------
+## Step 3: Add content on Jekyll site
 
 A neat functionality of the static site generator is the fast rendering. With the Jekyll site running (`bundle exec jekyll serve` step), navigate to the `_posts` folder and open the `.markdown` file in a text editor (in a separate terminal tab or outside editor, like Atom).
 
@@ -332,8 +312,8 @@ git status
 {% endhighlight %}
 ```
 
-Build local Jekyll site
--------------------------
+## Step 4: Build local Jekyll site from scratch
+
 
 So far we used an existing Jekyll template to make changes. We can also build the site locally. This requires installation of Ruby and Jekyll.
 
