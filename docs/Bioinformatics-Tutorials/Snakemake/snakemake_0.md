@@ -1,4 +1,4 @@
-# Snakemake Introduction
+# Introduction
 
 ## What is a workflow system and why use one?
 
