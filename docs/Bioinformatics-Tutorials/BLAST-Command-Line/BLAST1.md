@@ -32,20 +32,21 @@ Est. time | Lesson name | Description
 
 !!! note "Learning Objectives"
 
-  - Gain hands-on exposure to the linux command line
+    - Gain hands-on exposure to the linux command line
   
-  - Understand how data is turned into results by programs run at the command line
+    - Understand how data is turned into results by programs run at the command line
 
 === "Prerequisites"
   
-  - Some expertise in biology and genetics.
+    - Some expertise in biology and genetics.
   
-  - You need an AWS account. Please see our [tutorial](../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md) on setting up an AWS instance for help.
-  - Basic shell scripting knowledge. Users must be comfortable with finding and opening a terminal window.
+    - You need an AWS account. Please see our [tutorial](../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md) on setting up an AWS instance for help.
+  
+    - Basic shell scripting knowledge. Users must be comfortable with finding and opening a terminal window.
   
 === "Tutorial Resources"
 
-   [BLAST tutorial walk-through vidlet](../BLAST-Command-Line/BLAST2.md)
+    [BLAST tutorial walk-through vidlet](../BLAST-Command-Line/BLAST2.md)
 
 
 
