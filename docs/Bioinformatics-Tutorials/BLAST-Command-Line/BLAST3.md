@@ -26,6 +26,7 @@ Check that the installation was successful:
 	```
 	blastp -version
 	```
+	
 === "Expected Output"
 	```
 	ubuntu@ip-172-31-17-217:~$ blastp -version
