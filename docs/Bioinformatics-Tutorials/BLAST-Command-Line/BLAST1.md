@@ -46,7 +46,7 @@ Est. time | Lesson name | Description
   
 === "Tutorial Resources"
 
-    [BLAST tutorial walk-through vidlet](../BLAST-Command-Line/BLAST2.md)
+    [BLAST tutorial walk-through vidlet](../BLAST2.md)
 
 
 
