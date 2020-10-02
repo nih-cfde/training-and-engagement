@@ -110,9 +110,9 @@ Click on this first hyperlink, in the image above, "i-038c58bfbe9612c57". Your h
 
 ![Remote Host](../../images/aws_12.PNG "AWS instance running page")
 
-This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't quality for the Free Tier.
+This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't quality for the Free Tier. On this page, there is a "Public DNS" address, with the format `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. You'll need this address to connect to your AWS computer.
 
-You have now successfully launched your AWS instance! You will need some information from this amazon webpage to access your AWS computer, so do not close the page yet. 
+You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS computer, so do not close the page yet. 
 
 If you happen to close the webpage on accident, click on this link: https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId
 
