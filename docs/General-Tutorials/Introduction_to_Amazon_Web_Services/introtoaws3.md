@@ -2,6 +2,8 @@
 
 To start, we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system. Ubuntu 20.04 Pro LTS is one of the programs offered in the Amazon Free Tier as well as one of the most popular open source operating systems.
 
+Follow along with these steps and/or watch our [walk-through tutorial](./introtoaws2.md) to get started!
+
 ### Step 1: Log in to an AWS account
 
 Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the "My Account" menu option "AWS Management Console". Log in with your username & password.
