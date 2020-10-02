@@ -20,19 +20,21 @@ Est. time | Lesson name | Description
 !!! note "Learning Objectives"
 
     - introduce Researchers to cloud computing resources and how to use them
+    
     - learn how to connect to an instance (virtual server) in Amazon's Elastic Compute Cloud (EC2)
+    
     - learn how to transfer files to or from the instance in Amazon EC2
+    
     - learn how to terminate an instance
 
 === "Prerequisites"
 
-    You need to have an Amazon Web Services account created.
+    - Technology: Users must be comfortable with finding and opening a terminal window.
 
-    There are three steps to connecting to an instance
+    - Financial: First time AWS users require a valid credit card to set up an AWS account.
 
-        1. Create an Amazon Web Services Account
-        2. Run an Instance on AWS
-        3. Connect your Local Computer to the Instance
+    - Time: You need to have an Amazon Web Services account. AWS account setup needs approval by AWS, and approval times can range from minutes to days.
+
 
 === "Tutorial Resources"
 
