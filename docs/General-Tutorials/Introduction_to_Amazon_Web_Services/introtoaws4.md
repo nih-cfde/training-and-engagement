@@ -120,7 +120,7 @@
     scp -i /directory/to/amazon.pem /your/local/file/to/copy ubuntu@ec2-xx-xx-xxx-xxx.compute-1.amazonaws.com:path/to/file
     ```
 
-    !!! Note:
+    !!! note
 
             You need to make sure that the user "user" has the permission to write in the target directory. In this example, if ~/path/to/file was created by user "user", it should fine.
 
@@ -129,7 +129,7 @@
 
     Once you have completed your tasks and are sure you do not need the instance any longer, you may terminate the instance by returning to AWS Management Console.
 
-    !!! Warning
+    !!! warning
         
             If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it. Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
         
