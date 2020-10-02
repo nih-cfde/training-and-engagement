@@ -88,7 +88,7 @@ There are several optional set up configurations. You can either click "Review a
 
 === "Configure Security Group"
 
-    A security group s a set of firewall rules that control the traffic for your instance. On this page you can add rules to allow specific traffic to reach your instance. You can create a new security group or select from an existing one.
+    A security group is a set of firewall rules that control the traffic for your instance. On this page you can add rules to allow specific traffic to reach your instance. You can create a new security group or select from an existing one.
 
 ### Step 6: Review and Launch instance
 
