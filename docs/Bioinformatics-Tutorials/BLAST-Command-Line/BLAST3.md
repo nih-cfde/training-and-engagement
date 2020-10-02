@@ -23,11 +23,13 @@ The `sudo apt-get update` command is used to download package information from a
 Check that the installation was successful:
 
 === "Input"
+
 	```
 	blastp -version
 	```
 	
 === "Expected Output"
+
 	```
 	ubuntu@ip-172-31-17-217:~$ blastp -version
 	blastp: 2.9.0+
