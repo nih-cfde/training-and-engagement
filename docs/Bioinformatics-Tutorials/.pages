@@ -1,4 +1,4 @@
-nav:
+arrange:
   - index.md
   - GWAS-in-the-cloud
   - Snakemake
