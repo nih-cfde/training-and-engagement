@@ -40,7 +40,7 @@ Est. time | Lesson name | Description
   
     - Some expertise in biology and genetics.
   
-    - This tutorial was written to be run from an AWS remote instance. You need an AWS account. Please see our [tutorial](../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md) on setting up an AWS instance for help.
+    - This tutorial was written to be run from an AWS remote instance. You need an AWS account. Please see our [tutorial](../../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md) on setting up an AWS instance for help.
   
     - Basic shell scripting knowledge. Users must be comfortable with finding and opening a terminal window.
   
