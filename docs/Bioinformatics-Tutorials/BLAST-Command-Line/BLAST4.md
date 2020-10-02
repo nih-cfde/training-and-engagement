@@ -12,7 +12,7 @@ cd /mnt
 
 	`chmod` command stands for **change mode** and it is used to define or change permissions or modes on files and limit access to only those who are allowed access. It's the same as using your mouse to right-click a file or folder and selecting the permission tabs and defining who can access the resource.
 	
-Now, we'll use `curl` to download the files from the [NCBI FTP site](ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot) to the AWS remote instance.
+Now, we'll use `curl` to download the files from an online OSF repository to the AWS remote instance. These are copies of the files from the [NCBI FTP site](ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot).
 
 !!! Note
 	You can Copy/Paste multiple commands at a time, and they will execute in order. 
