@@ -116,6 +116,7 @@ sequences are (a) a database, and (b) a protein database.  That's done by callin
 
 === "Expected Output"
 
+	```
 	Building a new DB, current time: 10/02/2020 20:38:17
 	New DB name:   /home/ubuntu/zebrafish.1.protein.faa
 	New DB title:  zebrafish.1.protein.faa
@@ -123,6 +124,7 @@ sequences are (a) a database, and (b) a protein database.  That's done by callin
 	Keep MBits: T
 	Maximum file size: 1000000000B
 	Adding sequences from FASTA; added 53088 sequences in 1.69959 seconds.
+	```
 
 ## Step 4: Run a BLAST search
 
@@ -136,38 +138,33 @@ This should run pretty quickly, but you're going to get a lot of output!!
 To save it to a file instead of watching it go past on the screen,
 ask BLAST to save the output to a file that we'll name `mm-first.x.zebrafish.txt`:
 
-=== "Input"
 
-	```
-	blastp -query mm-first.faa -db zebrafish.1.protein.faa -out mm-first.x.zebrafish.txt
-	```
+```
+blastp -query mm-first.faa -db zebrafish.1.protein.faa -out mm-first.x.zebrafish.txt
+```
 
-=== "Expected Output"
+Now you can page through this file by typing:
 
-	Now you can page through this file by typing:
+```
+less mm-first.x.zebrafish.txt
+```
 
-	```
-	less mm-first.x.zebrafish.txt
-	```
-
-	Use the arrow keys to move up/down, and `q` to exit the paging mode.
+Use the arrow keys to move up/down, and `q` to exit the paging mode.
 
 
 Let's run some more sequences (this search will take a little longer to run). 
 Using the `head -n` command, we'll select the first 498 lines of the mouse protein fasta file.
 Since these fasta files are divided over five lines per sequence, this subset will include 96 sequences.
 
-=== "Input"
-	```
-	head -n 498 mouse.1.protein.faa > mm-second.faa
-	blastp -query mm-second.faa -db zebrafish.1.protein.faa -out mm-second.x.zebrafish.txt
-	```
+```
+head -n 498 mouse.1.protein.faa > mm-second.faa
+blastp -query mm-second.faa -db zebrafish.1.protein.faa -out mm-second.x.zebrafish.txt
+```
 
-=== "Expected Output"
-
-	```
-	less mm-second.x.zebrafish.txt
-	```
+Check the output file:
+```
+less mm-second.x.zebrafish.txt
+```
 
 !!! tip
 	
@@ -199,7 +196,7 @@ is the most commonly used.
 	blastp -query mm-second.faa -db zebrafish.1.protein.faa -out mm-second.x.zebrafish.tsv -outfmt 6
 	```
 
-=== "Expected Output:
+=== "Expected Output"
 
 	```
 	less mm-second.x.zebrafish.tsv
