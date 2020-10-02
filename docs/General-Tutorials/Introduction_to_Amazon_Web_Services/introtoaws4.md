@@ -21,13 +21,11 @@
 
     ### Specify the session key
 
-    Enter the public DNS address from the AWS instance page for "Remote host". It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. 
+    Enter the public DNS address from the AWS instance page for "Remote host". It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. Enter `ubuntu` for "Specify username". 
     
     ![Hostname](../../images/mobaxterm_3.PNG "remote host ec2 address")
-    
-    Enter `ubuntu` for "Specify username".
 
-    Check the box by "Use private key" and search for the path to your "amazon.pem" key pair file/ 
+    Under "Advanced SSH settings", check the box by "Use private key" and search for the path to your "amazon.pem" key pair file/ 
 
     ![Private Key](../../images/mobaxterm_3_2.PNG "use private key file path")
 
@@ -49,9 +47,7 @@
 
     !!! Warning
         
-       If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it.
-       
-       Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
+            If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it. Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
         
     - Click on "Services"
     - Click "EC2"
@@ -126,7 +122,7 @@
 
     !!! Note:
 
-        You need to make sure that the user "user" has the permission to write in the target directory. In this example, if ~/path/to/file was created by user "user", it should fine.
+            You need to make sure that the user "user" has the permission to write in the target directory. In this example, if ~/path/to/file was created by user "user", it should fine.
 
 
     ## Step 4: Terminating the Instance
@@ -135,9 +131,7 @@
 
     !!! Warning
         
-       If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it.
-       
-       Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
+            If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it. Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
         
     - Click on "Services"
     - Click "EC2"
