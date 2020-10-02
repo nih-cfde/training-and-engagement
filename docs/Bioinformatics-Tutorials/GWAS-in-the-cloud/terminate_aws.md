@@ -19,7 +19,7 @@ When you are done with all the analyses, be sure to terminate the AWS instance. 
 ![](../../images/GWAS_General_Terminate_AWS.png)
 
 
-!!! note "The End"
+!!! note "Key Points"
 
     You've reached the end of the GWAS tutorial. You should now be able to:
 
