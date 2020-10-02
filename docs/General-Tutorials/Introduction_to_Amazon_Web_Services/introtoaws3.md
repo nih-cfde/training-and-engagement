@@ -1,6 +1,6 @@
 # Setting up an AWS instance
 
-To start, we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system. Ubuntu 20.04 Pro LTS is one of the programs offered in Amazon Free Tier as well as one of the most popular open source operating systems.
+To start, we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system. Ubuntu 20.04 Pro LTS is one of the programs offered in the Amazon Free Tier as well as one of the most popular open source operating systems.
 
 ### Step 1: Log in to an AWS account
 
@@ -106,7 +106,7 @@ Then select your key pair, check the acknowledgement box, and click "Launch Inst
 
 ![SSH](../../images/aws_11.png "Instance ID link")
 
-Click on this first hyperlink, in the image above, "i-038c58bfbe9612c57". Your hyperlink will be different.
+Click on this first hyperlink, in the image above, "i-038c58bfbe9612c57". Your hyperlink may be different.
 
 ![Remote Host](../../images/aws_12.PNG "AWS instance running page")
 
