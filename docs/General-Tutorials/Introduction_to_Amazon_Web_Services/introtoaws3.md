@@ -1,134 +1,125 @@
----
-layout: page
-title: Setup an Instance
----
+# Setting up an AWS instance
 
+To start, we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system. Ubuntu 20.04 Pro LTS is one of the programs offered in Amazon Free Tier as well as one of the most popular open source operating systems.
 
-## Step 1: Create and Log into an AWS Account
+### Step 1: Log in to an AWS account
 
-Go to [Amazon Web Services](https://aws.amazon.com) in a Web browser.
+Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the "My Account" menu option "AWS Management Console". Log in with your username & password.
 
-Select 'My Account' menu option 'AWS Management Console."
-
-![AWS Management Console](../../images/aws_1.PNG)
-
-Log in with your username & password.
+![AWS Management Console](../../images/aws_1.PNG "AWS my account button")
 
 !!! Note
 
-          If you need to create an account, please follow these instructions. <https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/>
+          If you need to create an account, please follow the [AWS instructions for creating an account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 
 !!! Warning
-    If you are creating an account, then the account could take up to 24 hours to activate.
+    
+    If you are creating a new account, it could take up to 24 hours to be activated. You'll need a credit card to set up the account.
 
-Check to make sure the location that corresponds to your actual location is correct. 
-For me, it is US West (N. California).
+### Step 2: Choose virtual machine
 
-## Step 2: Run an Instance
-![AWS Dashboard](../../images/aws_2.PNG)
+For this tutorial, it is important to select the "US West (N. California)" amazon machine image. The geographical region of your remote machine is displayed on the top right of this page:
 
-Click on `Services` (upper left).
+![AWS Dashboard](../../images/aws_2.PNG "AWS amazon machine selection")
 
-![AWS Services](../../images/aws_3.png)
+Click on "Services" (upper left):
 
-Click on `EC2`.
+![AWS Services](../../images/aws_3.png "AWS Services button")
 
-![EC2](../../images/aws_4.png)
+Click on "EC2":
 
-Click on `Launch Instance`.
-
-!!! Note
-         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity.
-         For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilised the most. 
-
-
-![Launch Instance](../../images/aws_5.png)
-
-Select `AWS Marketplace` on the left hand side tab
-
-![AWS Marketplace](../../images/aws_6.png)
-
-Type `Ubuntu 20.04 Pro LTS` on the search bar underneath
-
-Step 1: Choose an Amazon Machine Image (AMI)
-
-An Amazon Machine Image is a special type of virtual appliance that is used to create a virtual machine within the Amazon Elastic Compute Cloud. It is a template for the root volume of an instance (operating system, application server, and applications.)
-
-Select `Ubuntu Server 20.04 Pro LTS (HVM)`.
+![EC2](../../images/aws_4.png "AWS EC2 button")
 
 !!! Note
-    The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use the service with limits without being charged. Limits could be based on how much storage you can use and how many hours you can use in one month.
+         
+         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilised the most. 
 
-![AMI](../../images/aws_7.png)
+Click on "Launch Instance":
 
-Step 2: Choose an Instance Type
+![Launch Instance](../../images/aws_5.png "AWS launch button")
+
+Select "AWS Marketplace" on the left hand side tab:
+
+![AWS Marketplace](../../images/aws_6.png "AWS marketplace button")
+
+### Step 3: Choose an Amazon Machine Image (AMI)
+
+An Amazon Machine Image is a special type of virtual appliance that is used to create a virtual machine within the Amazon Elastic Compute Cloud. It is a template for the root volume of an instance (operating system, application server, and applications).
+
+Type `Ubuntu 20.04 Pro LTS` in the search bar. Click "Select":
+
+![AMI](../../images/aws_7.png "AWS Ubuntu AMI")
+
+Click "Continue":
+
+![Ubuntu Pro](../../images/aws_9.PNG "Ubuntu Pro information")
+
+### Step 4: Choose an instance type
 
 Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instances are virtual servers that can run applications. They have varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications. Learn more about instance types and how they can meet your computing needs.
 
+Select the row with `t2.micro`, the free tier eligible option:
 
-Select `t2 micro`.
-
-![t2.micro](../../images/aws_8.png)
-
-Click `Continue`.
-
-![Ubuntu Pro](../..images/aws_9.png)
+![t2.micro](../../images/aws_8.png "t2 micro instance type")
 
 !!! Note
     
-    You may skip steps 3-6 as it is 
+    The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use the service with limits without being charged. Limits could be based on how much storage you can use and how many hours you can use in one month.
 
-Steps 3: Configure Instance
+### Step 5: Set up optional configurations
 
-Configure the instance to suit your requirements. You can launch multiple instances from the same AMI, request Spot instances to take advantage of the lower pricing, assign an access management role to the instance, and more.
+There are several optional set up configurations. You can either click "Review and Launch" now to start the instance we've configured thus far in the tutorial without these additional configurations or as necessary, click on the following tabs to continue configuring. Start the first option by clicking "Next: Configure Instance Details" on the AWS page.
 
-!!! Note
-    A Spot Instance is an unused EC2 instance that is available for less than the On-Demand price. Because Spot Instances enable you to request unused EC2 instances at steep discounts, you can lower your Amazon EC2 costs significantly.
+=== "Configure Instance Details"
 
-Step 4: Add Storage
+          Configure the instance to suit your requirements. You can launch multiple instances from the same AMI, request Spot instances to take advantage of the lower pricing, assign an access management role to the instance, and more.
 
-Your instance will be launched with the following storage device settings. You can attach additional EBS volumes and instance store volumes to your instance, or edit the settings of the root volume. You can also attach additional EBS volumes after launching an instance, but not instance store volumes. Learn more about storage options in Amazon EC2.
+          A Spot Instance is an unused EC2 instance that is available for less than the On-Demand price. Because Spot Instances enable you to request unused EC2 instances at steep discounts, you can lower your Amazon EC2 costs significantly.
 
-Step 5: Add Tags
+=== "Add Storage"
 
-A tag consists of a case-sensitive key-value pair. For example, you could define a tag with key = Name and value = Webserver.
-A copy of a tag can be applied to volumes, instances or both.
-Tags will be applied to all instances and volumes. Learn more about tagging your Amazon EC2 resources.
+          Your instance will be launched with the following storage device settings. You can attach additional EBS volumes and instance store volumes to your instance, or edit the settings of the root volume. You can also attach additional EBS volumes after launching an instance, but not instance store volumes. Learn more about storage options in Amazon EC2.
 
-Step 6: Configure Security Groups
+=== "Add Tags"
 
-A security group s a set of firewall rules that control the traffic for your instance. On this page you can add rules to allow specific traffic to reach your instance. You can create a new security group or select from an existing one.
+          A tag consists of a case-sensitive key-value pair. For example, you could define a tag with key = Name and value = Webserver. A copy of a tag can be applied to volumes, instances or both. Tags will be applied to all instances and volumes. Learn more about tagging your Amazon EC2 resources.
 
-### First Time Through (generate a new key pair)
+=== "Configure Security Group"
 
-If you do not have any key pairs, enter a key pair name and then download a key pair. Then click Launch Instance
+          A security group s a set of firewall rules that control the traffic for your instance. On this page you can add rules to allow specific traffic to reach your instance. You can create a new security group or select from an existing one.
 
-!!! Note
+### Step 6: Review and Launch instance
 
-    **Why do I need a key pair?**
-    Easy Answer: *Security*. 
+After configuration settings are complete, click "Review and Launch" and "Launch". If you are launching an AWS instance for the first time, you will need to generate a key pair. 
 
-    The SSH (Secure Shell) protocol uses encryption to secure the connection between a client and a server. All user authentication, commands, output, and file transfers are encrypted to protect against attacks in the network. With SSH protocol (secure Shell) public key authenticantion improves security as it frees users from remembering complicated passwords.
+Choose the "Create a new key pair" option from the drop down menu. Under key pair name, type "amazon" and click "save". The default location for saving files on a Mac is the "Downloads" folder -- that's where your key pair can be found. Next time you launch an instance, you can reuse the key pair you just generated.
 
-![mobaxterm](../../images/aws_10.png)
+If you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, we are calling the key pair "amazon.pem". 
 
-### Next time through (select an existing key pair)
+![mobaxterm](../../images/aws_10.png "key pair set up")
 
-Select a key pair and click 'Launch Instances'.
+!!! Note "Why do I need a key pair?"
 
-## Click on View Instances
+    For security purposes, the SSH (Secure Shell) protocol uses encryption to secure the connection between a client and a server. All user authentication, commands, output, and file transfers are encrypted to protect against attacks in the network. With SSH protocol (secure Shell) public key authentication improves security as it frees users from remembering complicated passwords.
 
-* After you click 'Launch Instance', you should see this:
+Then select your key pair, check the acknowledgement box, and click "Launch Instance". Now you should see:
 
-![SSH](../../images/aws_11.png)
+![SSH](../../images/aws_11.png "Instance ID link")
 
-* Click on this first hyperlink: i-038c58bfbe9612c57. Your hyperlink may not be exactly the same. 
+Click on this first hyperlink, in the image above, "i-038c58bfbe9612c57". Your hyperlink will be different.
 
-## Select the public DNS name for later use
+![Remote Host](../../images/aws_12.PNG "AWS instance running page")
 
-Highlight and copy the Public DNS address or write it down for future steps. This is highly important for connecting to an instance.
+This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't quality for the Free Tier.
 
-![Remote Host](../../images/aws_12.PNG)
+You have now successfully launched your AWS instance! You will need some information from this amazon webpage to access your AWS computer, so do not close the page yet. 
+
+If you happen to close the webpage on accident, click on this link: https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId
+
+Continue on to the next lesson to learn how to connect to your AWS computer!
+
+
+
 
 
 
