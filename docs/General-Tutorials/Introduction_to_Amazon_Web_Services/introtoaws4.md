@@ -122,7 +122,7 @@
 
     !!! note
 
-            You need to make sure that the user "user" has the permission to write in the target directory. In this example, if ~/path/to/file was created by user "user", it should fine.
+            You need to make sure that the user "user" has the permission to write in the target directory. In this example, if ~/path/to/file was created by you, it should be fine.
 
 
     ## Step 4: Terminating the Instance
