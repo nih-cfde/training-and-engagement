@@ -116,7 +116,7 @@ This page shows you a list of all your active instances. Users may launch as man
 
 You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS computer, so do not close the page yet. 
 
-If you happen to close the webpage on accident, click on this [link](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId) :
+If you happen to close the webpage on accident, click on this [link](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId):
 
 Continue on to the next lesson to learn how to connect to your AWS computer!
 
