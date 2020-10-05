@@ -29,8 +29,10 @@ There should now be two protein files in the current directory:
 
 === "Input"
 	
+	Use the `ls` command to list the files in the directory. The `-l` flag adds file permissions, ownership, size, and creation time information. The `-h` flag converts the file sizes into human-readable units and the `-t` flag sorts the files starting with the most recently created file.
+	
 	```
-	ls -l
+	ls -lht
 	```
 
 === "Expected Output"
