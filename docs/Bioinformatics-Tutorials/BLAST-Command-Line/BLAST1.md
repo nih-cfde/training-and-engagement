@@ -28,7 +28,7 @@ However, running BLAST through the commmand line has many benefits:
 Est. time | Lesson name | Description
 --- | --- | ---
 30 mins | [Install BLAST](../BLAST-Command-Line/BLAST3.md) | Set up local BLAST installation on your computer
-30 mins | [How to Run BLAST+](../BLAST-Command-Line/BLAST4.md) | Run BLAST analysis with AWS
+15 mins | [How to Run BLAST+](../BLAST-Command-Line/BLAST4.md) | Run BLAST analysis with AWS
 
 !!! note "Learning Objectives"
 
