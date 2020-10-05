@@ -30,7 +30,7 @@ There should now be two protein files in the current directory:
 === "Input"
 	
 	```
-	ls -lht
+	ls -l
 	```
 
 === "Expected Output"
