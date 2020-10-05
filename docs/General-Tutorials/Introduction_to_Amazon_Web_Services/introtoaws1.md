@@ -12,7 +12,7 @@ Amazon Web Services (AWS) is a subsidiary of Amazon that provides on-demand clou
 Est. time | Lesson name | Description
 --- | --- | ---
 30 mins | [Setting up an AWS instance](./introtoaws3.md) | How to start and configure an AWS instance?
-30 mins | [Connect to an instance](./introtoaws4.md) | How to begin working on your AWS instance?
+10 mins | [Connect to an instance](./introtoaws4.md) | How to begin working on your AWS instance?
 
 !!! note "Learning Objectives"
 
