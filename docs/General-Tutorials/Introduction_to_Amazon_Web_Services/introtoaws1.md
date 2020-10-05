@@ -26,7 +26,7 @@ Est. time | Lesson name | Description
 
 === "Prerequisites"
 
-    - Technology: Users must be comfortable with finding and opening a terminal window. For Windows OS, please install [MobaXterm](https://mobaxterm.mobatek.net/). You can use this download link: https://download.mobatek.net/2032020060430358/MobaXterm_Portable_v20.3.zip.
+    - Technology: Users must be comfortable with finding and opening a terminal window. For Windows OS, please install [MobaXterm](https://mobaxterm.mobatek.net/). You can use this download [link](https://download.mobatek.net/2032020060430358/MobaXterm_Portable_v20.3.zip).
 
     - Financial: First time AWS users require a valid credit card to set up an AWS account.
 
