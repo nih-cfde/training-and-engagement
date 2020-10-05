@@ -49,7 +49,7 @@ MkDocs can be installed via a package manager or manually using `pip` the Python
 
     Then install MkDocs:
 
-    ``` 
+    ```
     pip install mkdocs
     ```
 
