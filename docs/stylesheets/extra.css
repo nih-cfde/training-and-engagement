@@ -155,19 +155,3 @@ a:active {
 
 
 .tooltip_templates { display: none; }
-
-
-.md-typeset .admonition.output, .md-typeset details.output {
-    border-left: .2rem solid #5e5cc1;
-}
-.md-typeset .admonition.output>.admonition-title, .md-typeset details.output>.admonition-title, .md-typeset details.output>summary {
-    background-color: rgba(170, 0, 255, .1);
-}
-
-
-.md-typeset .admonition.snakemake, .md-typeset details.snakemake {
-    border-left: .2rem solid #24b72c;
-}
-.md-typeset .admonition.snakemake>.admonition-title, .md-typeset details.snakemake>.admonition-title, .md-typeset details.snakemake>summary {
-    background-color: rgba(223, 242, 222, 1);
-}
