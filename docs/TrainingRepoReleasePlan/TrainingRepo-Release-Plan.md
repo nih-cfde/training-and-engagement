@@ -45,7 +45,7 @@ Individual branches create a PR for merge into `dev`. Good practices for creatin
 - After the PR has been successfully merged, delete the branch in remote and in local repo
 
 Generally we want to avoid merging between branches with open PRs. This is because by committing the changes between branches, they effectively become the same branch. When one branch is merged the other branch with the same commit log with automatically be merged irrespective of the review stage. However in scenario where there might be dependency between branches, one can merge one branch into the other restricting it to only one direction. For example say we have PR A and PR B on two different branches and the fixes in PR A are relevant to PR B. We would then merge the branch for PR A into the branch for PR B but not vice versa.
-If not time sensitive, then one can wait for PR A to merge into `dev` before pulling those changes into PR B. 
+If not time sensitive, then one can wait for PR A to merge into `dev` before pulling those changes into PR B.
 
 The PR author should ensure:
 - [ ] Descriptive title - Title should convey PR changes and will reflect in release notes
@@ -68,6 +68,8 @@ Following the PR to merge into `dev`, the reviewers must ensure the tutorials pa
 - [ ] adherence of tutorial format to style guide
 - [ ] functional links (inter and intra) - check the automated broken links check for clean build, suggest intra links if applicable
 - [ ] accessible hyperlink text - meaningful text hyperlinked instead of default click here
+
+The reviewer checklist will auto generated as a comment on any open PR to `dev` branch. The list will appear in the raw markdown format but will render as a checklist after the list is copied, pasted and submitted as a comment. This would allow each reviewer to have an independent checklist that can be updated as the review progresses. 
 
 ### Review process
 
