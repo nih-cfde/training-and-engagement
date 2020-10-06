@@ -28,7 +28,7 @@ In this tutorial, we lay out the general steps for the single stage PR process.
 
 ### Step 2: Create a new branch
 
-If working from Github, type a new branch name (e.g., `my_branch`) and hit `ENTER`. The new branch should be created with the `dev` branch as its base.
+If working from Github, type a new branch name (e.g., `my_branch`) and hit ++enter++. The new branch should be created with the `dev` branch as its base.
 
 ![](../images/github-new-branch.png "create new github branch")
 
