@@ -6,8 +6,8 @@
     - [OBS Studio](https://obsproject.com/)
 - Screencasts: [asciinema](https://asciinema.org/) (preferred)
 - Video editing: [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/)
-    - Computer Requirements: 8GB (16GB Recommended) RAM and a minimum 256GB memory to operate basic functions
-    Though we recommend this software, most generic video editors will work fine (Kaltura has a very basic editing suite)
+    - Computer Requirements: 8GB (16GB Recommended) RAM and a minimum 256GB memory to operate basic functions.
+    Though we recommend this software, most generic video editors will work fine (Kaltura has a very basic editing suite).
 - Hosting Vidlets: [Kaltura](https://video.ucdavis.edu/) (Currently via AggieVideo)
 
 ### Video format guide
@@ -23,7 +23,7 @@ Vidlets will have accompanying video, text translation, and audio. They will typ
     - vidlets should have titles overlaid on the video
     - used iMovies or DaVinci Resolve for editing
 
-Screencasts have a `.cast` extension and are typically in the order of tens of KB. Screencasts can be used to showcase a code chunk for a tool/ utility or some series of commands to accomplish a task. Screencasts should not be used for running long scripts or commands that have a long execute time. The screencasts should include the commands and the associated text comments for clarity. The screencasts are currently hosted in a subfolder within the associated tutorial directory.
+Screencasts have a `.cast` extension and are typically in the order of tens of KB. Screencasts can be used to showcase a code chunk for a tool/utility or some series of commands to accomplish a task. Screencasts should not be used for running long scripts or commands that have a long execute time. The screencasts should include the commands and the associated text comments for clarity. The screencasts are currently hosted in a subfolder within the associated tutorial directory.
 
 - screencast pacing: total length should be ~5 minutes or less
      - default parameters are no autoplay, preload, or looping
