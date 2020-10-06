@@ -1,27 +1,37 @@
----
-layout: page
-title: Install BLAST
----
+# Install BLAST
 
-## Set-up an Instance
+## Step 1: Launch AWS instance
 
-Boot a t2.micro instance on AWS and connect your shell prompt.
+If you do not have access to a command line terminal on your computer (e.g., WindowsOS), you can set up an AWS remote instance to run command line programs.
+
+Boot a `t2.micro` instance on AWS and connect your shell prompt. 
 
 !!! Tip 
 	
-	If you need assistance setting up an instance check out the tutorial [Intro to AWS](<../../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md>)!
+	If you need assistance setting up an instance check out the tutorial [Intro to AWS](../../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md)!
 
 
-# Install BLAST software using Command Line
-Now, install some software. We will need NCBI BLAST for the below tutorial
+## Step 2: Install BLAST software using command line
+Now, install the NCBI BLAST software. Copy and paste the following installation commands:
 
-
-Copy and paste the following commands
 ```
-   sudo apt-get update && sudo apt-get -y install python ncbi-blast+
+sudo apt-get update && sudo apt-get -y install python ncbi-blast+
 ```
 
-sudo apt-get update command is used to download package information from all configured sources
+The `sudo apt-get update` command is used to download package information from all configured sources. So when you run the `update` command, it downloads the package information from the internet. This updates the software list and installs the Python programming language and NCBI BLAST+.
 
-So when you run update command, it downloads the package information from the internet. This updates the software list and installs the Python programming
-language and NCBI BLAST+.
+Check that the installation was successful:
+
+=== "Input"
+
+	```
+	blastp -version
+	```
+	
+=== "Expected Output"
+
+	```
+	ubuntu@ip-172-31-17-217:~$ blastp -version
+	blastp: 2.9.0+
+ 	Package: blast 2.9.0, build Sep 30 2019 01:57:31
+	```

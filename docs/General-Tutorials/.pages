@@ -1,18 +1,10 @@
-arrange:
+nav:
  - index.md
  - Introduction_to_Amazon_Web_Services
  - install_conda_tutorial.md
- - Jekyll_Tutorial.md
- - mkdocs.md
- - Sphinx_Tutorial.md
- - cfdebot_website_editing.md
-
  - ProtectedBranch_HowTo.md
-
-
- 
-
- 
-
- - install_conda_tutorial.md
+ - Jekyll_Tutorial.md
+ - Sphinx_Tutorial.md
+ - mkdocs.md
+ - cfdebot_website_editing.md
  - Javascript-dropdown-box

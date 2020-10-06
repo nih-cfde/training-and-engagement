@@ -7,27 +7,35 @@ title: Introduction to Amazon Web Services
 
 ## What is Amazon Web Services
 
-Amazon Web Services is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies and governments, on a metered pay-as-you-go basis. Subscribers can pay for a single virtual AWS computer, a dedicated physical computer or clusters of either.
+Amazon Web Services (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies and governments, on a metered pay-as-you-go basis. Subscribers can pay for a single virtual AWS computer, a dedicated physical computer, or clusters of either. AWS cloud computing resources are useful for conducting large-scale genomic analyses that would otherwise take too long or crash local computers.
 
-## Goals
+Est. time | Lesson name | Description
+--- | --- | ---
+30 mins | [Setting up an AWS instance](./introtoaws3.md) | How to start and configure an AWS instance?
+10 mins | [Connect to an instance](./introtoaws4.md) | How to begin working on your AWS instance?
 
-- Introduce Researchers to cloud computing resources and how to use them
-- How to connect to an instance (virtual server) in Amazon's Elastic Compute Cloud (EC2)
-- How to transfer files to or from the instance in Amazon EC2
-- How to terminate an instance
+!!! note "Learning Objectives"
 
-## Prerequisites
+    - introduce Researchers to cloud computing resources and how to use them
+    
+    - learn how to connect to an instance (virtual server) in Amazon's Elastic Compute Cloud (EC2)
+    
+    - learn how to transfer files to or from the instance in Amazon EC2
+    
+    - learn how to terminate an instance
 
-You need to have an Amazon Web Services account created.
+=== "Prerequisites"
 
-There are three steps to connecting to an instance
+    - Technology: Users must be comfortable with finding and opening a terminal window. For Windows OS, please install [MobaXterm](https://mobaxterm.mobatek.net/). You can use this download [link](https://download.mobatek.net/2032020060430358/MobaXterm_Portable_v20.3.zip).
 
-    1. Create an Amazon Web Services Account
-    2. Run an Instance on AWS
-    3. Connect your Local Computer to the Instance
+    - Financial: First time AWS users require a valid credit card to set up an AWS account.
+
+    - Time: You need to have an Amazon Web Services account. AWS account setup needs approval by AWS, and approval times can range from minutes to days.
 
 
-To start we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system. Ubuntu 20.04 Pro LTS is one of the programs offered in Amazon Free Tier as well as one of the most popular open source operating systems. 
+=== "Tutorial Resources"
+
+    [Setting up an instance vidlet](./introtoaws2.md)
 
 
 
