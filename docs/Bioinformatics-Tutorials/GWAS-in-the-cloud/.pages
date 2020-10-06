@@ -1,4 +1,4 @@
-nav:
+arrange:
  - index.md
  - background.md
  - aws_instance_setup.md
