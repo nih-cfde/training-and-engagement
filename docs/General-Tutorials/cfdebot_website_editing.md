@@ -28,7 +28,7 @@ In this tutorial, we lay out the general steps for the single stage PR process.
 
 ### Step 2: Create a new branch
 
-If working from Github, type a new branch name (e.g., `my_branch`) and hit ++enter++. The new branch should be created with the `dev` branch as its base.
+If working from Github, type a new branch name (e.g., `my_branch`) in the `Branch:stable` dropdown button and hit ++enter++. The new branch should be created with the `stable` branch as its base.
 
 ![](../images/github-new-branch.png "create new github branch")
 
@@ -64,23 +64,23 @@ The website created by the `published-documentation` repo pulls some docs that a
 
 ### A) **To edit documents that are *in* the `published-documentation` repo**
 
-Follow the general steps above.
+Follow the general steps above. Note that this repo currently labels branches as `master` instead of `stable`. This will be updated in the near future.
 
 ### B) **To edit documents that are in the sub-module `the-fair-cookbook` repo**
 
 The cfde-bot's process for checking changes to this repo is slightly different:
 
-- The `published-documentation` cfde-bot monitors the `the-fair-cookbook` repo `stable` branch every 6 hours. Note that `the-fair-cookbook` website is not one of the websites that the Brown lab maintains, though we may contribute material.
+- The `published-documentation` cfde-bot monitors the `the-fair-cookbook` repo `master` branch every 6 hours. Note that `the-fair-cookbook` website is not one of the websites that the Brown lab maintains, though we may contribute material. Also, this repo currently labels branches as `master` instead of `stable`.
 
-- It pulls any changes into the `dev` branch of the `published-documentation` repo as a PR.
+- It pulls any changes into the `preview` branch of the `published-documentation` repo as a PR.
 
-- If the website build checks pass, the bot auto-merges changes into the `dev` branch and renders the preview website.
+- If the website build checks pass, the bot auto-merges changes into the `preview` branch and renders the preview website.
 
-- The cfde-bot simultaneously creates a PR of the changes to the `published-documentation` `stable` branch so you can request a reviewer to merge to the `stable` branch if you decide the preview looks good.
+- The cfde-bot simultaneously creates a PR of the changes to the `published-documentation` `master` branch so you can request a reviewer to merge to the `master` branch if you decide the preview looks good.
 
 #### Step 1: Go to `the-fair-cookbook` repo: https://github.com/nih-cfde/the-fair-cookbook
 
-#### Step 2: Make changes *directly* on the `stable` branch.
+#### Step 2: Make changes *directly* on the `master` branch.
 
 #### Step 3: Check progress from the cfde-bot.
 
@@ -90,7 +90,7 @@ The website link is https://cfde-published-documentation.readthedocs-hosted.com/
 
 #### Step 5: Request review 
 
-To keep these changes, you need to request a reviewer for the PR to the `stable` branch the cfde-bot created in the `published-documentation` repo. 
+To keep these changes, you need to request a reviewer for the PR to the `master` branch the cfde-bot created in the `published-documentation` repo. 
 
 #### Step 6: Merge changes
 
