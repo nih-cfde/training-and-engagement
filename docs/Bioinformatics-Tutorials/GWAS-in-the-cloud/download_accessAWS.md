@@ -1,17 +1,11 @@
----
-layout: page
-title: Download Data & Install Helper Utilities
----
-
-Download Data & Install Helper Utilities
-========================================
+# Download Data & Install Helper Utilities
 
 !!! Important
     The coat color data lives in a website called [Cyverse](https://www.cyverse.org/). It is not easy to make AWS talk to Cyverse; the fastest way to work with this dataset in AWS is to first download it onto your LOCAL computer and then upload it to AWS.
 
 ## Step 1: Download data to local computer
 
-* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type `cmd+space bar`) for "terminal" on your Mac.
+* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type ++command+space++) for "terminal" on your Mac.
 
 * Make a folder called "GWAS" on your "Desktop" and then navigate to the folder by typing the following commands in your terminal:
 
@@ -37,7 +31,7 @@ The first command downloads the "vcf" file and the second command downloads the 
 
 === "Local Machine"
     ```
-    ls -lth
+    ls -ltrh
     ```
 === "Expected Output"
     ```
@@ -76,7 +70,7 @@ The information you will need lives on the [AWS page that lists your active inst
 
 ![](../../images/GWAS_General_aws_connect_your_instance.png)
 
-* In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click `ENTER`. It should look something like this:
+* In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click ++enter++. It should look something like this:
 
 === "Local Machine"
     ```
@@ -93,7 +87,7 @@ The information you will need lives on the [AWS page that lists your active inst
 
     > The authenticity of host 'ecc2-???-???-???-???.compute-1.amazonaws.com (3.129.57.169)' can't be established. ECDSA key fingerprint is XXX. Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
-    Type "yes" and press `ENTER`.
+    Type "yes" and press ++enter++.
 
 
 * If everything works ok, the output on your terminal window should look like this:
