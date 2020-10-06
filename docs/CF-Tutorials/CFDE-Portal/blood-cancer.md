@@ -82,7 +82,21 @@ The `id` column lists the unique sample IDs within the cohort and will be key in
 
 [The Gabriella Miller Kids First Data Resource Center](https://kidsfirstdrc.org/) provides researchers access to data collected from children affected with cancer and structural birth defects to enable new discoveries and treatment strategies. [Follow our guide to login into the KF data portal](../../Kids-First/Portal-Setup-And-Permissions/KF_3_KF_Registration.md) which is via one of the three routes including ORCID, Google or Facebook.
 
-[ORCID NOT WORKING - SHOW SCREENSHOTS OF DATA IN PORTAL] Add link to apply for data Access
+After login, select the "File Repository" and in the "Clinical Filters" tab, scroll all the way to the bottom to choose the "Search Files by Biospecimen ID". Click on "upload your list of ids".
+
+![KF select biospecimen id](../../images/KF-select-biospecimen-id.png "KF select biospecimen id")  
+
+You can either paste the comma separated list of IDs which is same as the values in the `id` column of the exported file from the portal or upload a file. Choose "View Results" to view all the associated metadata data.
+
+![KF upload ids](../../images/KF-upload-ids.png "KF upload ids")
+
+The resulting view in the portal lists all the participants and files associated with the study. Using the "File Filters" tab the details of the experimental strategy, data type and file formats can also be viewed. The lock icon under the "Actions" column implies protected data and access has to be requested.
+
+![KF subset list](../../images/KF-subset-list.png "KF subset list")
+
+The data access request can be applied through [National Cancer Institute's Cancer Research Data Commons](https://datascience.cancer.gov/data-commons).
+
+![KF data access](../../images/KF-data-access.png "KF data access")
 
 ## Step 7: GTEx Data Portal
 
