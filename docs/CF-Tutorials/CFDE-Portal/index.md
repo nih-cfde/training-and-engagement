@@ -5,7 +5,7 @@ title: CFDE Portal Tutorials
 
 **CFDE Portal Use Cases**
 
-[Common Fund Data Ecosystem (CFDE) portal](https://app.nih-cfde.org) is the first step in addressing the goal of making NIH Common Fund (CF) data Findable, Accessible, Interoperable and Reusable (FAIR) both within and between CF programs. The wide range of data types, models and formats are harmonized using well-defined metadata, common controlled vocabularies using the [Crosscut Metadata Model](https://cfde-published-documentation.readthedocs-hosted.com/en/latest/). Here two disparate use cases are explored to showcase the potential of the CFDE portal in accelerating discovery and novel scientific research.  
+[Common Fund Data Ecosystem (CFDE) portal](https://app.nih-cfde.org) is the first step in addressing the goal of making NIH Common Fund (CF) data Findable, Accessible, Interoperable and Reusable (FAIR) both within and between CF programs. The wide range of data types, models and formats are harmonized using well-defined metadata, common controlled vocabularies using the [Crosscut Metadata Model](https://cfde-published-documentation.readthedocs-hosted.com/en/latest/). Here, we explore two use cases to showcase the potential of the CFDE portal in accelerating discovery and novel scientific research.  
 
 Est. Time | Lesson name | Description
 --- | --- | ---
@@ -23,7 +23,7 @@ Est. Time | Lesson name | Description
 === "Prerequisites"
 
       - Access to MacOS, Windows or Linux
-      - Access to internet and a web browser
+      - Access to the internet and a web browser
       - Basic knowledge of mammalian biology
 
 
