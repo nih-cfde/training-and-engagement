@@ -14,8 +14,7 @@ inheritable. Parkinson's is a degenerative condition which results from death of
 neurotransmitter dopamine in the brain. Multiple Sclerosis (MS) is an autoimmune disorder wherein myelin, the protective sheath covering the neurons is damaged, hindering the brain's ability to communicate with rest of the body. All are disorders involve brain, share similar symptoms
 and can be difficult to diagnose in early stages.
 
-Identifying key differences between the Movement-related disorders can help identify disease processes along with
-potential biomarkers. In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
+Identifying key differences between the Movement-related disorders can help identify disease processes along with potential biomarkers. In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
 
 A video walk through demonstrating the cohort selection for Movement-Related Disorders.
 
@@ -51,7 +50,7 @@ LDG-1338, LDG-1339].
 
 ![IPSC final datasets](../../images/Neurodegeneration-part-of-collection-ipsc.png "IPSC final datasets")   
 
-This results in 9 matching records from Metabolomics and Library of Integrated Network-Based Cellular Signatures (LINCS). The subset cohort is exported to a `csv` file.
+This results in 9 matching records from Metabolomics and Library of Integrated Network-Based Cellular Signatures (LINCS). The subset cohort is exported to a `csv` file using the "Export" option.
 
 ## Step 4: Search all columns: Stem Cell
 
@@ -60,9 +59,9 @@ Use "Clear all filters" to remove the previous selection and use **stem cell neu
 ![Stem Cell final datasets](../../images/Neurodegeneration-stem-cell.png "Stem Cell final datasets")
 
 !!! note "Duplicated studies"
-    The two LINCS datasets (LDG-1338, LDG-1393) in the subset are not selected as they are included in the previous filtered list.
+    The two LINCS datasets (LDG-1338, LDG-1393) in the subset are not selected as they are already included in the previous filtered list.
 
-This results in two records and are exported to a `csv` file.
+This results in two records and are exported to a `csv` file using the "Export" option.
 
 ## Step 5: Merge Cohort
 
