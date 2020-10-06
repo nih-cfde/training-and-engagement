@@ -56,19 +56,16 @@ Folder names | create a folder called "KF_Data"
 
 Use | Example
 --- | ---
-Command names | `nano` 
+Command names | `nano`
 Package names | `plink`
 Optional commands | `git branch -d`
 Conda environment names | `base`
-File names and paths | `./docs/images/`**
+File names and paths | `./docs/images/`*
 File extensions | `.fastq.gz`
 Ports | `:3000`
-Key presses |`ENTER`, `CTRL+X`*
 Github branches | `stable`
 
-*Use caps and a plus symbol for keys that are pressed at the same time
-
-**Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
+* Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
 
 **2. Quotes**
 
@@ -168,8 +165,15 @@ We are also using this tabbed format for "Prerequisites" and "Tutorial Resources
 
     e.g., cheat sheets, example scripts
 ```
-    
-**4. Hyperlink syntax**
+
+**4. Keys syntax**
+
+Syntax for keyboard keys will follow the [Keys PyMdown extension format](https://facelessuser.github.io/pymdown-extensions/extensions/keys/). It is built around the `+` symbol. A single of combination of keys is surrounded by `++` while each key is separated by a single `+`.
+List of all available key syntax are listed on the official Keys extension page.
+
+Example syntax for `CTRL+C` would be ++ctrl+c++ which will render as keyboard keys in the site. 
+
+**5. Hyperlink syntax**
 
 Use hyperlinks to link images, other Markdown files, or websites. Provide short but descriptive text for the links instead of 'Click here' or 'Click this'.
 
@@ -181,7 +185,7 @@ other pages in the Github repo | `[text about the page](relative/path/to/page/in
 URLs with title | `[text about the website](URL)`
 URL link itself | `<URL>`
 
-*By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
+* By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
 
 Note that this image link format - `<img src="path/to/img" title="short description of image" width="200" height="300">` - results in a broken image file on Mkdocs, even though it renders on Markdown.
 
@@ -189,7 +193,7 @@ The `htmlproofer` plugin checks for broken page and URL links when a pull reques
 - `WARNING`: for links on pages that are broken, file paths that don't exist anymore because of file name changes
 - `404 error`: page does not exist. This might be because it is a brand new file or the file was changed and neither are on the `latest` branch of the Github repo. You don't need to worry about this - it'll be solved when PR changes are merged.
 
-**5. Admonition types**
+**6. Admonition types**
 
 There are several [built-in admonition styles, and it is possible to add custom titles and styles](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#types). Below is the syntax for commonly used built-in styles to highlight important information:
 
@@ -197,11 +201,11 @@ There are several [built-in admonition styles, and it is possible to add custom 
 !!! tip
 
     Lesson tips/shortcuts/alternatives
-    
+
 !!! note
 
     Lesson notes, learning objectives, prerequisites (see below)
-    
+
 !!! warning
 
     Warnings (e.g., actions that result in data loss or incur costs to run)
@@ -209,15 +213,15 @@ There are several [built-in admonition styles, and it is possible to add custom 
 !!! error
 
     Errors users may encounter and what to do about them (e.g., software installation errors)
-    
+
 # Customize admonition titles by specifying the admonition title in quotes. For example:
 
 !!! note "Learning Objectives"
-    
+
     Learning objectives for the lesson
 
 !!! note "Key Points"
-    
+
     Lesson key points/take home messages
 ```
 
