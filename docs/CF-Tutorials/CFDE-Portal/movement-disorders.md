@@ -7,16 +7,14 @@ title: Integrated Analysis of Movement-Related Disorders
 
 Movement-related disorders affects the neuromuscular system which involves the combination of
 nervous system and muscles working in a concerted manner to enable movement. Amyotrophic Lateral
-Sclerosis (ALS) or Lou Gehrig’s disease is a motor neuron disease which involve the loss of neurons
-that control voluntary movement of the muscles the brain and spinal cord. While ALS is not inheritable,
+Sclerosis (ALS) or Lou Gehrig’s disease is a motor neuron disease which involves the loss of neurons
+in brain and spinal cord that control voluntary movement of the muscles. While ALS is not inheritable,
 Spinal Muscular Atrophy (SMA), another example of motor neuron disease has known genetic cause and is
 inheritable. Parkinson's is a degenerative condition which results from death of neurons producing
-neurotransmitter dopamine in the brain. Multiple Sclerosis (MS) on the other hand is an autoimmune
-disorder wherein myelin, the protective sheath covering the neurons is damaged hindering the brain's
-ability to communicate with rest of the body. All are disorders involve brain, share similar symptoms
+neurotransmitter dopamine in the brain. Multiple Sclerosis (MS) is an autoimmune disorder wherein myelin, the protective sheath covering the neurons is damaged, hindering the brain's ability to communicate with rest of the body. All are disorders involve brain, share similar symptoms
 and can be difficult to diagnose in early stages.
 
-Identifying key differences between the disorders can help identify disease processes along with
+Identifying key differences between the Movement-related disorders can help identify disease processes along with
 potential biomarkers. In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
 
 A video walk through demonstrating the cohort selection for Movement-Related Disorders.
