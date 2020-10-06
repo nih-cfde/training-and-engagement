@@ -31,10 +31,10 @@ Text editing with nano | description
 --- | ---
 ++ctrl+k++  | cut text
 ++ctrl+u++  | paste text
-++ctrl+underscore++, enter line number, return key | go to specific line number
+++ctrl+underscore++, enter line number, ++enter++ | go to specific line number
 ++ctrl+e++  | go to end of line
 ++ctrl+v++  | scroll down page
-++ctrl+o++ , edit file name if needed, return key| saving changes (Write Out)
+++ctrl+o++ , edit file name if needed, ++enter++ | saving changes (Write Out)
 ++ctrl+x++  | exit nano
 
 `#` in text files = comments; these lines of text are not interpreted as code
