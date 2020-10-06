@@ -5,7 +5,7 @@
 
 ## Step 1: Download data to local computer
 
-* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type ++cmd+space++) for "terminal" on your Mac.
+* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type ++command+space++) for "terminal" on your Mac.
 
 * Make a folder called "GWAS" on your "Desktop" and then navigate to the folder by typing the following commands in your terminal:
 
