@@ -102,7 +102,7 @@ Select the first 11 lines of the file and save as a new file:
 
 !!! tip
 	
-	if you try `less mm-first.faa`, exit back to the terminal by pressing the `q` key in your keyboard.
+	if you try `less mm-first.faa`, exit back to the terminal by pressing the ++q++ key in your keyboard.
 
 ## Step 3: Create blast database
 
@@ -151,7 +151,7 @@ Now you can page through this file by typing:
 less mm-first.x.zebrafish.txt
 ```
 
-Use the arrow keys to move up/down, and `q` to exit the paging mode.
+Use the ++up++ and ++down++ keys to move up/down, and ++q++ to exit the paging mode.
 
 
 Let's run some more sequences (this search will take a little longer to run). 
