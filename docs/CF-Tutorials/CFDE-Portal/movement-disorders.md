@@ -11,10 +11,10 @@ Sclerosis (ALS) or Lou Gehrig’s disease is a motor neuron disease which involv
 in brain and spinal cord that control voluntary movement of the muscles. While ALS is not inheritable,
 Spinal Muscular Atrophy (SMA), another example of motor neuron disease has known genetic cause and is
 inheritable. Parkinson's is a degenerative condition which results from death of neurons producing
-neurotransmitter dopamine in the brain. Multiple Sclerosis (MS) is an autoimmune disorder wherein myelin, the protective sheath covering the neurons is damaged, hindering the brain's ability to communicate with rest of the body. All are disorders involve brain, share similar symptoms
+neurotransmitter dopamine in the brain. Multiple Sclerosis (MS) is an autoimmune disorder wherein myelin, the protective sheath covering the neurons is damaged, hindering the brain's ability to communicate with rest of the body. All are disorders that involve the brain, share similar symptoms
 and can be difficult to diagnose in early stages.
 
-Identifying key differences between the Movement-related disorders can help identify disease processes along with potential biomarkers. In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
+Identifying key differences between the movement-related disorders can help identify disease processes along with potential biomarkers. In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
 
 A video walk through demonstrating the cohort selection for Movement-Related Disorders.
 
@@ -26,7 +26,7 @@ From the main landing page for the [CFDE portal](https://app.nih-cfde.org) there
 options to access the "Collection" view of the CFDE data browser.
 
 By using the "Collection" link under the "Or browse by feature" section listed
-under "Explore our Repository" or by selecting the "Collection" option under the "Browse" option in the top left navigation bar.
+under "Explore our Repository" or by selecting "Collection" under the "Browse" option in the top left navigation bar.
 
 ![CFDE portal Collection](../../images/CFDE-portal-collection.png "CFDE portal Collection")   
 
