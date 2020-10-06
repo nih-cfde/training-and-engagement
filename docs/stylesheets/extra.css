@@ -112,17 +112,19 @@ body {
 }
 
 .md-typeset table:not([class]) th {
-    min-width: 15rem;
+    min-width: 11.5rem;
     background-color: #6c6c6c !important;
     font-size: medium;
 }
 
 .md-typeset table:not([class]) td {
     vertical-align: middle;
+
 }
 
 .table {
     font-size: medium;
+
 }
 
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
@@ -169,4 +171,3 @@ a:active {
 .md-typeset .admonition.snakemake>.admonition-title, .md-typeset details.snakemake>.admonition-title, .md-typeset details.snakemake>summary {
     background-color: rgba(223, 242, 222, 1);
 }
-
