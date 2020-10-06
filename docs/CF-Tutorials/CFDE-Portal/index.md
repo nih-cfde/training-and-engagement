@@ -9,8 +9,8 @@ title: CFDE Portal Tutorials
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-15 mins | [Functional Genetic Variation in Blood Cancer](./blood-cancer.md) | Identifying RNA-seq and whole genome sequencing (WGS) datasets
-15 mins | [Integrated Analysis of Movement-Related Disorders](./movement-disorders.md) | Identifying multiomics datasets
+15 mins | [Functional Genetic Variation in Blood Cancer](./blood-cancer.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets
+15 mins | [Integrated Analysis of Movement-Related Disorders](./movement-disorders.md) | Identify multiomics datasets
 
 !!! note "Learning Objectives"
 
