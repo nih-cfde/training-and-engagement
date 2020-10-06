@@ -39,3 +39,7 @@ This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedo
     * Technology: Basic shell scripting knowledge and access to MacOS. Users must be comfortable with finding and opening a terminal window, navigating to specific directories and running pre-scripted commands in the terminal.
     * Financial: First time AWS users require a valid credit card to set up an AWS account.
     * Time: AWS account setup needs approval by AWS, and approval times can range from minutes to days.
+=== "Tutorial Resources"
+    - [AWS website](http://aws.amazon.com/)
+
+    - [Manhattan plots explained](https://www.google.com/search?q=how+to+read+a+manhattan+plot&oq=how+to+read+a+manhattan+plot&aqs=chrome..69i57.7911j0j4&sourceid=chrome&ie=UTF-8#kpvalbx=_tXIPX9mmFsmT0PEP64-OkAk26)
