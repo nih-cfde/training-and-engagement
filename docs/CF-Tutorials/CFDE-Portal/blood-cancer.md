@@ -13,7 +13,9 @@ Combining whole genome sequencing (WGS) data with global transcriptomic profilin
 In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable AML WGS and RNA-seq datasets from across the
 CF programs.
 
-[vidlet]
+A video walk through demonstrating the cohort selection for AML.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_2xx7dwci&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_uoyyydlh" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ## Step 1: Access the Biosample information
 
@@ -23,7 +25,7 @@ options to access the "Biosample" view of the CFDE data browser.
 By using the "Biosample" link under the "Or browse by feature" section listed
 under "Explore our Repository" or by selecting the "Biosample" option under the "Browse" option in the top left navigation bar.
 
-[CFDE portal Biosample](../../images/CFDE-portal-biosample.png "CFDE portal Biosample")   
+![CFDE portal Biosample](/../../images/CFDE-portal-biosample.png "CFDE portal Biosample")   
 
 The default page shows a total of 289,320 records.
 
@@ -32,12 +34,12 @@ The default page shows a total of 289,320 records.
 Access the "Anatomy" filter listed under the Refine Search panel. Search for "blood" in the
 search box within "Anatomy" filter.
 
-[Applying blood filter](../../images/AML-blood-filter.png "Applying blood filter")   
+![Applying blood filter](../../images/AML-blood-filter.png "Applying blood filter")   
 
 Click on the "Show More" option which opens a pop up window with all search results.
 Select "blood" and "venous blood" options and choose "Submit".
 
-[Select blood anatomy types](../../images/AML-blood-anatomy.png "Select blood anatomy types")   
+![Select blood anatomy types](../../images/AML-blood-anatomy.png "Select blood anatomy types")   
 
 This results in 10,229 results.
 
@@ -47,7 +49,7 @@ Next use the "Assay" filter listed under the Refine Search panel to select the b
 for whole genome sequencing assay (WGS) and RNA-seq assay values.
 This results in 7693 records.
 
-[Apply assay filter](../../images/AML-assay-anatomy.png "Apply assay filter")   
+![Apply assay filter](../../images/AML-assay-anatomy.png "Apply assay filter")   
 
 ## Step 4: Apply Project Filter
 
@@ -63,7 +65,7 @@ Consortium (MoTrPAC).
 
 Check the boxes corresponding to "Genotype-Tissue Expression (GTEx)" and "TARGET: Acute Myeloid Leukemia" in the "Name" column and "Submit".
 
-[Apply project filter](../../images/AML-final-cohort.png "Apply project filter")   
+![Apply project filter](../../images/AML-final-cohort.png "Apply project filter")   
 
 This results in 1,140 matching records.
 
@@ -71,7 +73,7 @@ This results in 1,140 matching records.
 
 The filtered cohort can now be exported as a `csv` file to further investigate using the data portals of the originating CF program i.e. GTEx and KF respectively.
 
-[CFDE portal exported file](../../images/CFDE-portal-blood-cancer-export.png "CFDE portal exported file")   
+![CFDE portal exported file](../../images/CFDE-portal-blood-cancer-export.png "CFDE portal exported file")   
 
 The exported `csv` file has thirteen columns. The `anatomy` columns lists the [UBERON](http://uberon.github.io/about.html) values for venous blood (UBERON:0013756) and blood (UBERON:0000178). The `assay_type` lists the [Ontology for Biomedical Investigations (OBI)](http://obi-ontology.org) IDs for WGS (OBI:0002117) and RNA-seq (OBI:0001271).
 The `id` column lists the unique sample IDs within the cohort and will be key in obtaining the associated files from data portals for GTEx and KF respectively.
@@ -91,24 +93,24 @@ The `id` column lists the unique sample IDs within the cohort and will be key in
 
 Login in to the portal is via Google.
 
-[GTEx login page](../../images/GTEx-login-page.png "GTEx login page")     
+![GTEx login page](../../images/GTEx-login-page.png "GTEx login page")     
 
 The relevant data available for download can be accessed via the `Datasets` option in the main menu bar.
 
-[GTEx data download](../../images/GTEx-data-download.png "GTEx data download")
+![GTEx data download](../../images/GTEx-data-download.png "GTEx data download")
 
 The subject and sample level metadata are listed under the `Annotations` tab on the latest data release page. The plain text files ending in `.txt` contain the sample and subject annotations while the excel files ending in `.xlsx` contain the dictionary for all the columns listed in the sample and subject annotations files.
 
-[GTEx data annotations](../../images/GTEx-data-annotations.png "GTEx data annotations")
+![GTEx data annotations](../../images/GTEx-data-annotations.png "GTEx data annotations")
 
 The sample annotations file contains the `SAMPID` that correspond to the `ID` column in the exported `csv` file from the CFDE portal.
 
-[GTEx sample annotations](../../images/GTEx-sample-annotations.png "GTEx sample annotations")
+![GTEx sample annotations](../../images/GTEx-sample-annotations.png "GTEx sample annotations")
 
 The subject annotations file contains `SUBJID` which corresponds to the first ten characters of the `SAMPID`.
 
-[GTEx subject annotations](../../images/GTEx-subject-annotations.png "GTEx subject annotations")
+![GTEx subject annotations](../../images/GTEx-subject-annotations.png "GTEx subject annotations")
 
 These lists can be combined and filtered to obtain subjects and data corresponding to blood DNA and RNA samples from individuals in the youngest age bracket to make comparable analysis with the KF AML data.
 
-Based on the filtered cohort, the researcher can access the [GTEx data](https://gtexportal.org/home/protectedDataAccess) after approval of dbGAP controlled access application.
+Based on the filtered cohort, a researcher can access the [GTEx data](https://gtexportal.org/home/protectedDataAccess) after approval of dbGAP controlled access application.
