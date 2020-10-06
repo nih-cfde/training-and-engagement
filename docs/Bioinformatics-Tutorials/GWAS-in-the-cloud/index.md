@@ -20,7 +20,7 @@ This tutorial is based on the [ANGUS 2017 GWAS tutorial](https://angus.readthedo
 | ---|--------|--------|
 | 10 mins |[What is GWAS?](background.md)| Background                   
 | 20 mins |[Set up an AWS instance](aws_instance_setup.md)|How to set up an amazon web services instance|
-| 40 mins |[Download and move data to AWS](Access_AWS_And_Download_Data/Direct_Download.md) | Download dog coat color data and use terminal to access data on remote computer |
+| 40 mins |[Download and move data to AWS](download_accessAWS.md) | Download dog coat color data and use terminal to access data on remote computer |
 | 10 mins |[Install PLINK](plink_install.md)| Install the software PLINK |
 | 10 mins |[Install VCFtools](vcftools_install.md) | Install the software vcftools |
 | 10 mins |[Install R and RStudio](RStudio.md) | Install the software R and RStudio |

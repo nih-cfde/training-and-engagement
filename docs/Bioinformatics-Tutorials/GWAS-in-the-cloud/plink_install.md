@@ -10,7 +10,7 @@ Install PLINK
 
 
 ## Step 1: Download PLINK with wget
-Type these commands into your [Ubuntu AWS terminal](Access_AWS_And_Download_Data/Direct_Download.md):
+Type these commands into your [Ubuntu AWS terminal](./download_accessAWS.md):
 
 === "AWS Instance"
     ```

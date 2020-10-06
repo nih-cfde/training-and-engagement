@@ -1,14 +1,17 @@
 ---
 layout: page
-title: Direct Download
+title: Download Data & Install Helper Utilities
 ---
 
-Access AWS instance, download data & install helper functions
-=================================================================
+Download Data & Install Helper Utilities
+========================================
 
-## Step 1: Make a folder called GWAS on the Desktop
+!!! Important
+    The coat color data lives in a website called [Cyverse](https://www.cyverse.org/). It is not easy to make AWS talk to Cyverse; the fastest way to work with this dataset in AWS is to first download it onto your LOCAL computer and then upload it to AWS.
 
-* First, open up a terminal window. You can do this by searching (type `cmd+space bar`) for "terminal" on your Mac.
+## Step 1: Download data to local computer
+
+* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type `cmd+space bar`) for "terminal" on your Mac.
 
 * Make a folder called "GWAS" on your "Desktop" and then navigate to the folder by typing the following commands in your terminal:
 
@@ -18,11 +21,37 @@ Access AWS instance, download data & install helper functions
     cd ~/Desktop/GWAS
     ```
 
+* You will use a free and open source software called [curl](https://curl.haxx.se/docs/manpage.html#-O) to retrieve data files of interest from Cyverse.
+
+=== "Local Machine"
+    ```
+    curl -LO https://de.cyverse.org/dl/d/E0A502CC-F806-4857-9C3A-BAEAA0CCC694/pruned_coatColor_maf_geno.vcf.gz
+    curl -LO https://de.cyverse.org/dl/d/3B5C1853-C092-488C-8C2F-CE6E8526E96B/coatColor.pheno
+    ```
+
+`-L` flag redirects the user to the right URL if the server reports that the requested page has been moved. The `-O` flag names the local file the same as its remote counterpart.
+
+The first command downloads the "vcf" file and the second command downloads the file that specifies phenotype information. This step may take a few seconds.
+
+* Check if your data download worked by typing `ls -ltrh` to list all files in that folder:
+
+=== "Local Machine"
+    ```
+    ls -lth
+    ```
+=== "Expected Output"
+    ```
+    -rw-------@ 1 username  staff   1.7K Jul  9 15:33 amazon.pem
+    -rw-r--r--  1 username  staff   1.2K Sep 15 15:47 coatColor.pheno
+    -rw-r--r--  1 username  staff    11M Sep 15 15:47 pruned_coatColor_maf_geno
+    ```
+`-l` flag outputs in a long listing format, `-t` sorts list by time added with newest first, `-r` forces sort to list in reverse order so the newest files appear on top, `-h` makes it human readable.
+
 ## Step 2: Locate the AWS private key file and change permissions
 
-* Find the private key file; it is the `.pem` file you [downloaded when starting up the EC2 instance](../aws_instance_setup.md). If you saved it in the default location, it should be in the "Downloads" folder. Remember, you named it "amazon.pem".
+* Find the private key file; it is the `.pem` file you [downloaded when starting up the EC2 instance](aws_instance_setup.md). If you saved it in the default location, it should be in the "Downloads" folder. Remember, you named it "amazon.pem".
 
-* Move "amazon.pem" to your `~/Desktop/GWAS` folder with copy+Paste. Remember to delete "amazon.pem" from the "Downloads" folder to avoid clutter. Check the contents of your `~/Desktop/GWAS` folder again with `ls`. Do you see the "amazon.pem" file?
+* Move "amazon.pem" to your `~Desktop/GWAS` folder with copy+paste. Remember to delete "amazon.pem" from the "Downloads" folder to avoid clutter. Check the contents of your `~Desktop/GWAS` folder again with `ls`. Do you see the "amazon.pem" file?
 
 * Now run this command to set the permissions on the "amazon.pem" private key file to “closed to all evildoers”.
 
@@ -35,15 +64,15 @@ Access AWS instance, download data & install helper functions
 
 ## Step 3: Access the AWS instance
 
-OK, so you've created a [running computer on the cloud](../aws_instance_setup.md). How do you get to it? AWS makes it easy to connect to the cloud computer via your terminal window.
+OK, so you've created a [running computer on the cloud](aws_instance_setup.md). How do you get to it? AWS makes it easy to connect to the cloud computer via your terminal window.
 
 The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:). On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
 
-![](../../../images/GWAS_General_publicDNS.png)
+![](../../images/GWAS_General_publicDNS.png)
 
 A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
 
-![](../../../images/GWAS_General_aws_connect_your_instance.png)
+![](../../images/GWAS_General_aws_connect_your_instance.png)
 
 In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click `ENTER`. It should look something like this:
 
@@ -67,10 +96,10 @@ In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in whi
 
 * If everything works ok, the output on your terminal window should look like this:
 
-![](../../../images/GWAS_General_AWS_Connected.png)
+![](../../images/GWAS_General_AWS_Connected.png)
 
 !!! Note
-    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting "Inspector". I've chosen the "Pro" theme.
+    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting inspector. I've chosen the "Pro" theme.
 
 * You have now successfully logged in as user "ubuntu" to the machine "ec2-18-216-20-166.us-east-2.compute.amazonaws.com" using the "amazon.pem" authentication key.
 
@@ -158,44 +187,40 @@ You need lots of other helper utilities to run today's pipeline so now is a good
 !!! Important
     Installing helper utilities is VERY important. All sorts of errors in installations/plotting happen if it's not run! For example, you will install "vcftools" in later parts of this tutorial which absolutely needs "autoconf", "autogen", and "make" to be preinstalled. zlib is a library implementing the deflate compression method found in gzip and PKZIP. gdebi lets you install local deb packages resolving and installing its dependencies. And to run plotting functions in R, you will need Ghostscript, an interpreter of the PDF format.
 
-## Step 5: Download the data
+## Step 5: Upload data to AWS
 
-Finally, you download the dog coat color data onto AWS.
-
-Make sure you are in the GWAS folder on your AWS instance
+* To upload data from your local computer to AWS, you must first logout of AWS. Type:
 
 === "AWS Instance"
     ```
-    cd ~/home/GWAS
+    logout
     ```
 
-Now run these data download commands inside the GWAS folders
+* Now you are back in your local Mac terminal. You can upload files to AWS by typing this command:
 
-=== "AWS instance"
+=== "Local Machine"
     ```
-    curl -LO https://de.cyverse.org/dl/d/E0A502CC-F806-4857-9C3A-BAEAA0CCC694/pruned_coatColor_maf_geno.vcf.gz
-    curl -LO https://de.cyverse.org/dl/d/3B5C1853-C092-488C-8C2F-CE6E8526E96B/coatColor.pheno
-    ```
-
-`-L` flag redirects the user to the right URL if the server reports that the requested page has been moved. The `-O` flag names the local file the same as its remote counterpart.
-
-The first command downloads the "vcf" file and the second command downloads the file that specifies phenotype information. This step may take a few seconds.
-
-* Check if your data download worked by typing `ls -ltrh` to list all files in that folder:
-
-=== "AWS instance"
-    ```
-    ls -lth
-    ```
-=== "Expected Output"
-    ```
-    -rw-------@ 1 username  staff   1.7K Jul  9 15:33 amazon.pem
-    -rw-r--r--  1 username  staff   1.2K Sep 15 15:47 coatColor.pheno
-    -rw-r--r--  1 username  staff    11M Sep 15 15:47 pruned_coatColor_maf_geno
+    scp -i ~/Desktop/GWAS/amazon.pem ~/Desktop/GWAS/pruned_coatColor_maf_geno.vcf.gz ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
+    scp -i ~/Desktop/GWAS/amazon.pem ~/Desktop/GWAS/coatColor.pheno ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/
     ```
 
-`-l` flag outputs in a long listing format, `-t` sorts list by time added with newest first, `-r` forces sort to list in reverse order so the newest files appear on top, `-h` makes it human readable.
+Here `scp` is short for secure copy. [`scp` allows files to be copied to, from, or between different hosts](http://www.hypexr.org/linux_scp_help.php). It takes three arguments:
 
+1) The first `~/Desktop/GWAS/amazon.pem` is the path to your private key file ("amazon.pem" in this case) which serves as a password for AWS. You will also need the `-i` flag; it tells `scp` to look for a private key file.
+
+2) The second argument `~/Desktop/GWAS/pruned_coatColor_maf_geno.vcf.gz` is the path to the file on your local machine (that needs to be copied).
+
+3) The last argument `ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com:~/GWAS/` is the path to the AWS folder where the file will be pasted.
+
+So you're copying files from the "GWAS" folder on your local machine to the "GWAS" folder in the remote Ubuntu computer. Be sure to **change the ec2 instance name** like you did earlier.
+
+* To check if this worked, log back into the remote Ubuntu instance by **typing in the ssh command described above**. Then change directory to "GWAS" and list files in it:
+
+=== "AWS Instance"
+    ```
+    cd GWAS
+    ls
+    ```
 
 Do you see the files?
 

@@ -1,8 +1,8 @@
-arrange:
+nav:
  - index.md
  - background.md
  - aws_instance_setup.md
- - Access_AWS_And_Download_Data
+ - download_accessAWS.md
  - plink_install.md
  - vcftools_install.md
  - RStudio.md
