@@ -7,7 +7,7 @@ title: Functional Genetic Variation in Blood Cancer
 
 Acute Myeloid Leukemia (AML) is a type of blood cancer. In AML, the affected myeloid cells which are a type of white blood cells, are not functional and build up in the bone marrow leaving reduced capacity for healthy white and red blood cells. While
 risk factors for developing AML exist, often times the underlying cause remains unknown. Gene mutations and chromosomal abnormality in the leukemia cells occur sporadically. Characterization of the wide spectrum of genetic events involved in AML will aide in better
-understanding of AML etiology and ultimately in development of improved therapy.
+understanding of its etiology and ultimately in development of improved therapy.
 
 Combining whole genome sequencing (WGS) data with global transcriptomic profiling using RNA-sequencing (RNA-seq) can help elucidate functional dysregulation for genes of interest.
 In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable AML WGS and RNA-seq datasets from across the
@@ -23,7 +23,7 @@ From the main landing page for the [CFDE portal](https://app.nih-cfde.org) there
 options to access the "Biosample" view of the CFDE data browser.
 
 By using the "Biosample" link under the "Or browse by feature" section listed
-under "Explore our Repository" or by selecting the "Biosample" option under the "Browse" option in the top left navigation bar.
+under "Explore our Repository" or by selecting the "Biosample" under the "Browse" option in the top left navigation bar.
 
 ![CFDE portal Biosample](/../../images/CFDE-portal-biosample.png "CFDE portal Biosample")   
 
