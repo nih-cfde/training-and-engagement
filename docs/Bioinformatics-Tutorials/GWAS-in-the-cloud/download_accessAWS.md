@@ -99,7 +99,7 @@ In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in whi
 ![](../../images/GWAS_General_AWS_Connected.png)
 
 !!! Note
-    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting inspector. I've chosen the "Pro" theme.
+    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting "Inspector". I've chosen the "Pro" theme.
 
 * You have now successfully logged in as user "ubuntu" to the machine "ec2-18-216-20-166.us-east-2.compute.amazonaws.com" using the "amazon.pem" authentication key.
 
