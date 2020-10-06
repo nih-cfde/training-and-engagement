@@ -66,15 +66,17 @@ The first command downloads the "vcf" file and the second command downloads the 
 
 OK, so you've created a [running computer on the cloud](aws_instance_setup.md). How do you get to it? AWS makes it easy to connect to the cloud computer via your terminal window.
 
-The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:). On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
+The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:).
+
+* On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
 
 ![](../../images/GWAS_General_publicDNS.png)
 
-A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
+* A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
 
 ![](../../images/GWAS_General_aws_connect_your_instance.png)
 
-In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click `ENTER`. It should look something like this:
+* In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click `ENTER`. It should look something like this:
 
 === "Local Machine"
     ```
@@ -118,7 +120,7 @@ Check if you have this directory by typing `ls`. Do you see it?
 
 Before you use AWS, there are a few updates or installs that need to be done.
 
-First, you need to make sure the app installer is up to date because you're using LTS 20.04 which is frozen at version 20.04, and so always needs to be updated when you start:
+* First, you need to make sure the app installer is up to date because you're using LTS 20.04 which is frozen at version 20.04, and so always needs to be updated when you start:
 
 === "AWS Instance"
     ```
