@@ -15,7 +15,7 @@ Movement-related disorders affect the neuromuscular system, disrupting the abili
 
 - Multiple Sclerosis (MS): is an autoimmune disorder in which the protective sheath covering some neurons (called myelin) is damaged. Neurons with damaged myelin disrupt electrical communications that are necessary for normal movement and coordination. 
 
-A few common features of these neuromuscular disorders are that they all involve brain neurons, they share many symptoms, and they are all difficult to diagnose in their early stages. Identifying key genomic, genetic, transcriptomic or proteomic differences between these movement-related disorders may help identify underlying disease mechanisms or biomarkers to aide in early diagnosis and/or targeted drug development. 
+A few common features of these neuromuscular disorders are that they all involve brain neurons, they share many symptoms, and they are all difficult to diagnose in their early stages. Identifying key genomic, genetic, transcriptomic or proteomic differences between these conditions may help identify underlying disease mechanisms or biomarkers to aide in early diagnosis and/or targeted drug development. 
 
 In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
 
