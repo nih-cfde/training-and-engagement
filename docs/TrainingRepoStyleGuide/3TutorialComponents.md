@@ -1,6 +1,6 @@
-## Tutorial components
+# Tutorial components
 
-### Tutorial audience
+## Tutorial audience
 
 Who is our target audience?
 - clinicians, biomedical data scientists 
@@ -11,7 +11,7 @@ In general, tutorials should avoid assuming the user's experience level, unless 
 
 For a thorough guide to tutorial style best practices, please read [DigitalOcean's style guide section](https://www.digitalocean.com/community/tutorials/digitalocean-s-technical-writing-guidelines#style).
 
-### Tutorial content
+## Tutorial content
 
 Tutorials should consist primarily of original content. If lesson material is adapted from other sources, please attribute work appropriately (e.g., "This material was adapted from ANGUS (link to source material)."). If you want to include original video or animation content from other sources, check that:
 
@@ -20,7 +20,7 @@ Tutorials should consist primarily of original content. If lesson material is ad
 3) where possible, we tell the original authors we are using their material and appreciate their work! and,
 4) the addition of these materials are supplements to the tutorial and not the primary content.
 
-### Tutorial structure
+## Tutorial structure
 
 All tutorials should begin with landing page information. For longer tutorials that are split over multiple pages, start the tutorial steps on a new page (more details below). See the [tutorial template](./tutorial_template_docs/TutorialTemplate.md) for a page outline. For one-page tutorials, the landing "page" information may all be on the same page as the tutorial steps.
 
@@ -85,7 +85,7 @@ They are formatted with a tabbed box:
 
 *"Tutorial Resources" (optional)*
 
-If applicable, add in hyperlinks to any tutorial reference material (e.g., cheatsheets, scripts, example data, vidlets, etc.).
+If applicable, add in hyperlinks to any tutorial reference material (e.g., cheat sheets, scripts, example data, vidlets, etc.).
 
 They are formatted with a tabbed box:
 
@@ -157,16 +157,15 @@ Use the admonition `note` format:
 - save markdown files in `./docs/`
 - save images in `./docs/images/` as .jpeg or .png files
 - there are several ways to save files that accompany tutorials:
-    - save reference material in `./docs/Resources/` (e.g., code syntax cheatsheets)
+    - save reference material in `./docs/Cheat Sheets/` (e.g., code syntax cheat sheets)
     - for example data files that users should access with `wget` or `curl`, upload files to the [CFDE Training Data Files osf project](https://osf.io/c8txv/#show_login). Login to the osf project is restricted to CFDE members. Create a new folder and upload your file(s).
     - for small files that users should download from the website (e.g., template script files), format the file name as a hyperlink in the tutorial. If the file has a file extension, a download option is available when users click the link.
     - for scripts/example scripts associated with a specific tutorial, save files in the tutorial folder.
     - save binder files in a new Github repo (binders are made for entire repos, and we do not want a binder of the entire training-and-engagement repo!)
 
-For future discussion:
-- pending need: save scripts in a general `./docs/tutorial_scripts/` folder 
+## Additional/optional user-friendly components
 
-### Additional/optional user-friendly components
+Check out the next pages for guidelines on the following:
 - walk-through vidlets
 - walk-through screencasts
 - binder set-up so users can follow along without worrying about computer set up or software installations
