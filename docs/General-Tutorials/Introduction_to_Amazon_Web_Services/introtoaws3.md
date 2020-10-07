@@ -66,7 +66,7 @@ Select the row with `t2.micro`, the free tier eligible option:
 
 !!! Note
     
-    The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use the service with limits without being charged. Limits could be based on how much storage you can use and how many hours you can use in one month.
+    The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use (limited) services without being charged. Limits could be based on how much storage you have access to and/or how many hours of compute you can perform in a one month.
 
 ### Step 5: Set up optional configurations
 
