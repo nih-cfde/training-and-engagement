@@ -41,7 +41,7 @@ row 2 thing | row 2 thing | row 2 thing
 
 Use Markdown formatting to differenciate blocks of text, code, quotes, and hyperlinks. Several format guidelines are inspired from [DigitalOcean's technical writing guide](https://www.digitalocean.com/community/tutorials/digitalocean-s-technical-writing-guidelines#formatting).
 
-**0. In-line text formatting with quotation marks should be used for:**
+### In-line text formatting with quotation marks
 
 Use | Example
 --- | ---
@@ -52,7 +52,7 @@ Folder names | create a folder called "KF_Data"
 
 *If you refer to this specific file many times, you can put the file name in quotations for the first mention. The "Snakefile" in the Snakemake tutorial is an example where we state that the file is called "Snakefile" but thereafter simply refer to it as Snakefile.
 
-**1. In-line code formatting with single backticks should be used for:**
+### In-line code formatting with single backticks
 
 Use | Example
 --- | ---
@@ -67,7 +67,7 @@ Github branches | `stable`
 
 * Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
 
-**2. Quotes**
+### Quotes
 
 Use `> ` for quoted text.
 
@@ -78,7 +78,7 @@ Use `> ` for quoted text.
 renders as:
 > This is a quote!
 
-**3. Code blocks**
+### Code blocks
 
 Use triple backticks for lines of code that users need to execute to do the tutorial, example code syntax, and command-line terminal outputs.
 
@@ -183,14 +183,14 @@ We are also using this tabbed format for "Prerequisites" and "Tutorial Resources
     e.g., cheat sheets, example scripts
 ```
 
-**4. Keys syntax**
+### Keys syntax
 
 Syntax for keyboard keys will follow the [Keys PyMdown extension format](https://facelessuser.github.io/pymdown-extensions/extensions/keys/). It is built around the `+` symbol. A single of combination of keys is surrounded by `++` while each key is separated by a single `+`.
 List of all available key syntax are listed on the official Keys extension page.
 
 Example syntax for `CTRL+C` would be ++ctrl+c++ which will render as keyboard keys in the site. 
 
-**5. Hyperlink syntax**
+### Hyperlink syntax
 
 Use hyperlinks to link images, other Markdown files, or websites. Provide short but descriptive text for the links instead of 'Click here' or 'Click this'.
 
@@ -210,7 +210,7 @@ The `htmlproofer` plugin checks for broken page and URL links when a pull reques
 - `WARNING`: for links on pages that are broken, file paths that don't exist anymore because of file name changes
 - `404 error`: page does not exist. This might be because it is a brand new file or the file was changed and neither are on the `latest` branch of the Github repo. You don't need to worry about this - it'll be solved when PR changes are merged.
 
-**6. Admonition types**
+### Admonition types
 
 There are several [built-in admonition styles, and it is possible to add custom titles and styles](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#types). Below is the syntax for commonly used built-in styles to highlight important information:
 
