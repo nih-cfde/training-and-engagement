@@ -3,8 +3,11 @@
 ## Accessibility
 
 Please ensure that our tutorials are [accessible to the blind or visually impaired](https://www.lehman.cuny.edu/academics/education/education-technology/online-accessibility/documents/LehmanCollege_BlindandVisuallyImpairedAccessibilityChecklist_002.pdf) by:
+
 - writing descriptive text for hyperlinks. Avoid using "Click here".
+
 - writing descriptive text for images that screenreaders can detect. If you want to check how images look, use a color blindness simulator, such as [toptal](https://www.toptal.com/designers/colorfilter/)
+
 - when possible, avoiding color combinations or images that are not color-blind friendly. If you are creating figures in R, there is a [colorblind friendly palette](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette).
 
 More details on accessible formats below.
@@ -32,6 +35,7 @@ row 2 thing | row 2 thing | row 2 thing
 ```
 
 When rendered, the table looks like this:
+
 col1 | col2 | col 3
 --- | --- | ---
 row 1 thing | row 1 thing | row 1 thing
@@ -65,7 +69,7 @@ File extensions | `.fastq.gz`
 Ports | `:3000`
 Github branches | `stable`
 
-* Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
+*Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
 
 ### Quotes
 
@@ -202,7 +206,7 @@ other pages in the Github repo | `[text about the page](relative/path/to/page/in
 URLs with title | `[text about the website](URL)`
 URL link itself | `<URL>`
 
-* By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
+*By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
 
 Note that this image link format - `<img src="path/to/img" title="short description of image" width="200" height="300">` - results in a broken image file on Mkdocs, even though it renders on Markdown.
 
