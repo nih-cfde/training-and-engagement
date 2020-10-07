@@ -1,6 +1,6 @@
-## General tutorial text style guide
+# General tutorial text style guide
 
-### Accessibility
+## Accessibility
 
 Please ensure that our tutorials are [accessible to the blind or visually impaired](https://www.lehman.cuny.edu/academics/education/education-technology/online-accessibility/documents/LehmanCollege_BlindandVisuallyImpairedAccessibilityChecklist_002.pdf) by:
 - writing descriptive text for hyperlinks. Avoid using "Click here".
@@ -9,7 +9,7 @@ Please ensure that our tutorials are [accessible to the blind or visually impair
 
 More details on accessible formats below.
 
-### Headers
+## Headers
 All tutorials are written with Markdown syntax. Each page should have a title (`#`) and sub-sections (`##` or `###`). The sub-sections cannot use `#`, otherwise the right-side TOC will not render. The syntax must have a space between the `#` and the text to render as a header:
 ```
 # Title
@@ -21,7 +21,7 @@ All tutorials are written with Markdown syntax. Each page should have a title (`
 
 Markdown syntax allows up to [6 levels of hierarchy](https://www.markdownguide.org/basic-syntax/#headings), however, if you need headings beyond level 3, this is a good indication that the tutorial page could benefit from being broken down into separate pages. Please try to only use level 2 (`##`) and 3 (`###`) headings.
 
-### Markdown tables
+## Markdown tables
 Tables columns are defined with | and rows with -. Markdown cell widths are set to be the same for each column when rendered by Mkdocs. The syntax looks like this:
 
 ```
@@ -37,7 +37,7 @@ col1 | col2 | col 3
 row 1 thing | row 1 thing | row 1 thing
 row 2 thing | row 2 thing | row 2 thing
 
-### Differentiating text
+## Differentiating text
 
 Use Markdown formatting to differenciate blocks of text, code, quotes, and hyperlinks. Several format guidelines are inspired from [DigitalOcean's technical writing guide](https://www.digitalocean.com/community/tutorials/digitalocean-s-technical-writing-guidelines#formatting).
 
