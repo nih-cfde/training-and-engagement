@@ -14,7 +14,7 @@ Est. time | Lesson name | Description
 
 !!! note "Learning Objectives"
 
-    - introduce Researchers to cloud computing resources and how to use them
+    - introduce researchers to cloud computing resources and how to use them
     
     - learn how to connect to an instance (virtual server) in Amazon's Elastic Compute Cloud (EC2)
     
