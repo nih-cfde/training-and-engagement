@@ -35,6 +35,7 @@ Extension | About
 `toc` with `permalink: true` | [Table of contents formatting](https://www.mkdocs.org/user-guide/configuration/#formatting-options)
 `pymdownx.superfences` | [Nesting of code/quote block fences and tabbed fences](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)
 `pymdownx.extra` | [Improve compatibility of Python Markdown with PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/extensions/extra/)
+`pymdownx.keys` | [Render keyboard keys](https://facelessuser.github.io/pymdown-extensions/extensions/keys/)
 
 These are the plugins the website uses:
 
@@ -63,7 +64,7 @@ markdown extensions ([`pymdownx.tabbed`](https://facelessuser.github.io/pymdown-
 ### Website host and Github branches
 The website is hosted by readthedocs.com. The development branch `dev` renders to a private (Admin access required) readthedocs website: https://cfde-training-and-engagement.readthedocs-hosted.com/en/dev/. The public-facing branch `stable` renders to a public readthedocs website: https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/.
 
-Guidelines for adding or fixing website content are detailed in the [training website release plan](../../TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md). To summarize, changes are merged from individual branches to the `dev` branch as pull requests (PR). For each public release of the website, `dev` is merged to `stable`. Each PR stage requires a form of review specified in the release plan. Release notes are generated for each new release and added to the "Releases" page of the website.
+Guidelines for adding or fixing website content are detailed in the CFDE's training website release plan. To summarize, changes are merged from individual branches to the `dev` branch as pull requests (PR). For each public release of the website, `dev` is merged to `stable`. Each PR stage requires a form of review specified in the release plan. Release notes are generated for each new release and added to the "Releases" page of the website.
 
 
 
