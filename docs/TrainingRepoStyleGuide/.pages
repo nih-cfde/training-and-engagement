@@ -1,1 +1,9 @@
-hide: true
+nav:
+  - 0index.md
+  - 1WebsiteNavStyle.md
+  - 2GenTutorialStyle.md
+  - 3TutorialComponents.md
+  - 4RecordingStyleGuide.md
+  - 5PangeoBinderGuide.md
+  - 6PracticeGithubRepos.md
+ 
