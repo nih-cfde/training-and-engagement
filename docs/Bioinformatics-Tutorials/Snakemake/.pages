@@ -1,4 +1,4 @@
-arrange:
+nav:
   - index.md
   - snakemake_0.md
   - snakemake_1.md
