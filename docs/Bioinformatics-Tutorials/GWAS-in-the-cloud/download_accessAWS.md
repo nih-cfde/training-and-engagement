@@ -1,17 +1,11 @@
----
-layout: page
-title: Download Data & Install Helper Utilities
----
-
-Download Data & Install Helper Utilities
-========================================
+# Download Data & Install Helper Utilities
 
 !!! Important
     The coat color data lives in a website called [Cyverse](https://www.cyverse.org/). It is not easy to make AWS talk to Cyverse; the fastest way to work with this dataset in AWS is to first download it onto your LOCAL computer and then upload it to AWS.
 
 ## Step 1: Download data to local computer
 
-* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type `cmd+space bar`) for "terminal" on your Mac.
+* To download data onto your local computer you need to open up a terminal window. You can do this by searching (type ++command+space++) for "terminal" on your Mac.
 
 * Make a folder called "GWAS" on your "Desktop" and then navigate to the folder by typing the following commands in your terminal:
 
@@ -37,7 +31,7 @@ The first command downloads the "vcf" file and the second command downloads the 
 
 === "Local Machine"
     ```
-    ls -lth
+    ls -ltrh
     ```
 === "Expected Output"
     ```
@@ -66,15 +60,17 @@ The first command downloads the "vcf" file and the second command downloads the 
 
 OK, so you've created a [running computer on the cloud](aws_instance_setup.md). How do you get to it? AWS makes it easy to connect to the cloud computer via your terminal window.
 
-The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:). On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
+The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:).
+
+* On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
 
 ![](../../images/GWAS_General_publicDNS.png)
 
-A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
+* A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
 
 ![](../../images/GWAS_General_aws_connect_your_instance.png)
 
-In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click `ENTER`. It should look something like this:
+* In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click ++enter++. It should look something like this:
 
 === "Local Machine"
     ```
@@ -91,7 +87,7 @@ In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in whi
 
     > The authenticity of host 'ecc2-???-???-???-???.compute-1.amazonaws.com (3.129.57.169)' can't be established. ECDSA key fingerprint is XXX. Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
-    Type "yes" and press `ENTER`.
+    Type "yes" and press ++enter++.
 
 
 * If everything works ok, the output on your terminal window should look like this:
@@ -99,7 +95,7 @@ In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in whi
 ![](../../images/GWAS_General_AWS_Connected.png)
 
 !!! Note
-    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting inspector. I've chosen the "Pro" theme.
+    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting "Inspector". I've chosen the "Pro" theme.
 
 * You have now successfully logged in as user "ubuntu" to the machine "ec2-18-216-20-166.us-east-2.compute.amazonaws.com" using the "amazon.pem" authentication key.
 
@@ -118,7 +114,7 @@ Check if you have this directory by typing `ls`. Do you see it?
 
 Before you use AWS, there are a few updates or installs that need to be done.
 
-First, you need to make sure the app installer is up to date because you're using LTS 20.04 which is frozen at version 20.04, and so always needs to be updated when you start:
+* First, you need to make sure the app installer is up to date because you're using LTS 20.04 which is frozen at version 20.04, and so always needs to be updated when you start:
 
 === "AWS Instance"
     ```
