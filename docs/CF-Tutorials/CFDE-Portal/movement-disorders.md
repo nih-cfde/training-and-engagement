@@ -7,13 +7,13 @@ title: Integrated Analysis of Movement-Related Disorders
 
 Movement-related disorders affect the neuromuscular system, disrupting the ability of the nervous and muscular systems to work together. There are several known movement-related disorders, including Amyotrophic Lateral Sclerosis (ALS) or Lou Gehrig’s disease, Parkinson's disease, Spinal Muscular Atrophy (SMA) and Multiple Sclerosis (MS). 
 
-Amyotrophic Lateral Sclerosis (ALS): is a motor neuron disease which involves the loss of neurons in the brain and spinal cord that control voluntary movement of the muscles. ALS is not heritable.
+- Amyotrophic Lateral Sclerosis (ALS): is a motor neuron disease which involves the loss of neurons in the brain and spinal cord that control voluntary movement of the muscles. ALS is not heritable.
 
-Spinal Muscular Atrophy (SMA): is a heritable motor neuron disease with known genetic causes. 
+- Spinal Muscular Atrophy (SMA): is a heritable motor neuron disease with known genetic causes. 
 
-Parkinson's disease: is a degenerative condition which results from the death of dopamine producing neurons. 
+- Parkinson's disease: is a degenerative condition which results from the death of dopamine producing neurons. 
 
-Multiple Sclerosis (MS): is an autoimmune disorder in which the protective sheath covering some neurons (called myelin) is damaged. Neurons with damaged myelin disrupt electrical communications that are necessary for normal movement and coordination. 
+- Multiple Sclerosis (MS): is an autoimmune disorder in which the protective sheath covering some neurons (called myelin) is damaged. Neurons with damaged myelin disrupt electrical communications that are necessary for normal movement and coordination. 
 
 A few common features of these neuromuscular disorders are that they all involve brain neurons, they share many symptoms, and they are all difficult to diagnose in their early stages. Identifying key genomic, genetic, transcriptomic or proteomic differences between these movement-related disorders may help identify underlying disease mechanisms or biomarkers to aide in early diagnosis and/or targeted drug development. 
 
