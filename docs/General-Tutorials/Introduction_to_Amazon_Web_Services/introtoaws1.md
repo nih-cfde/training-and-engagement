@@ -33,7 +33,7 @@ Est. time | Lesson name | Description
 
 === "Tutorial Resources"
 
-    [Setting up an instance vidlet](./introtoaws2.md)
+    [Vidlet: Setting up an AWS instance](./introtoaws2.md)
 
 
 
