@@ -60,10 +60,7 @@ A Markdown formatted table for each page of the tutorial. The table columns shou
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-
-Est. Time: Provide estimated completion times for each page (e.g., 30 secs, 10 mins, 1 hour)
-Lesson name: The title of each page, with a hyperlink to the page
-Description: Formatted as a short phrase or question about the primary learning goal of each section
+Est. Time: Provide estimated completion times for each page (e.g., 30 secs, 10 mins, 1 hour) | Lesson name: The title of each page, with a hyperlink to the page | Description: Formatted as a short phrase or question about the primary learning goal of each section
 
 *"Learning Objectives"*
 
@@ -79,9 +76,9 @@ They are formatted with a `note` admonition box:
 !!! note "Learning Objectives"
 ```
 
-*Est. Time (for **1-page** tutorials)*
+*Est. Time (for 1-page tutorials)*
 
-For 1-page tutorials, include the "Est. Time" as a tabbed box rather than a table and put it AFTER the "Learning Objectives" so that the time, prereqs, and tutorial resources are grouped together (see Conda installation tutorial for an example):
+For **1-page** tutorials, include the "Est. Time" as a tabbed box rather than a table and put it AFTER the "Learning Objectives" so that the time, prereqs, and tutorial resources are grouped together (see Conda installation tutorial for an example):
 
 ```
 === "Est. Time" 
