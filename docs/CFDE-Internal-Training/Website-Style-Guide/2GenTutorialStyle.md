@@ -120,6 +120,23 @@ Use javascript user-chooseable tabs to differentiate between input/expected outp
     ```
 ```
 
+This renders as:
+
+=== "Input"
+
+    ```
+    samtools --version
+    ```
+
+=== "Expected Output"
+
+    ```
+    samtools 1.10
+    Using htslib 1.10.2
+    Copyright (C) 2019 Genome Research Ltd.
+    ```
+Use this structure for exercises:
+
 ```
 === "Exercise"
 
@@ -201,28 +218,62 @@ There are several [built-in admonition styles, and it is possible to add custom 
 !!! tip
 
     Lesson tips/shortcuts/alternatives
+```
+
+!!! tip
+
+    Lesson tips/shortcuts/alternatives
+
+```
+!!! note
+
+    Lesson notes, learning objectives, prerequisites (see below)
+```
 
 !!! note
 
     Lesson notes, learning objectives, prerequisites (see below)
 
+```
 !!! warning
 
     Warnings (e.g., actions that result in data loss or incur costs to run)
+```
+
+!!! warning
+
+    Warnings (e.g., actions that result in data loss or incur costs to run)
+
+```
+!!! error
+
+    Errors users may encounter and what to do about them (e.g., software installation errors)
+```
 
 !!! error
 
     Errors users may encounter and what to do about them (e.g., software installation errors)
 
-# Customize admonition titles by specifying the admonition title in quotes. For example:
+Customize admonition titles by specifying the admonition title in quotes. For example:
+
+```
+!!! note "Learning Objectives"
+
+    Learning objectives for the lesson
+```
 
 !!! note "Learning Objectives"
 
     Learning objectives for the lesson
 
+```
 !!! note "Key Points"
 
     Lesson key points/take home messages
 ```
 
-Admonition blocks will only render in Mkdocs. Examples are shown on the [supported types page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types).
+!!! note "Key Points"
+
+    Lesson key points/take home messages
+
+Admonition blocks do not render on Github. More examples are shown on the [supported types page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types).
