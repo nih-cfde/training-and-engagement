@@ -12,6 +12,11 @@ Time | Section | About
 10 mins | 6. [Pangeo binder style guide](./5PangeoBinderGuide.md)| How to create Pangeo binders?
 5 mins | 7. [Practice repo style guide](./6PracticeGithubRepos.md) | How to create a practice Github repo?
 
+=== "Prerequisites"
+
+    To contribute to the CFDE's website, you must be onboarded to the CFDE. Contact us for help if you're interested in contributing training materials!
+
+
 Location of important files in the training Github repo:
 ```
 ├── mkdocs.yml
