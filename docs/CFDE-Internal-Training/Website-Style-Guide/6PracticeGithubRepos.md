@@ -1,4 +1,4 @@
-## Practice Github repo style guide
+# Practice Github repo style guide
 
 Some of the tutorials in the "General Tutorials" section link to a practice repo that is used as starting guide. For any new tutorial that requires setting a practice repo as a start point, the following guidelines can be used:
 
