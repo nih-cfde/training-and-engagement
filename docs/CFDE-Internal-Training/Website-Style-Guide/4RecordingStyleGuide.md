@@ -1,6 +1,6 @@
-## Tutorial recordings style guide
+# Tutorial recordings style guide
 
-### Recording and video hosting tools
+## Recording and video hosting tools
 - Vidlets: for speaker appearances we prefer the 'circle' picture window   
     - [loom](https://www.loom.com/) (preferred)
     - [OBS Studio](https://obsproject.com/)
@@ -10,9 +10,9 @@
     Though we recommend this software, most generic video editors will work fine (Kaltura has a very basic editing suite).
 - Hosting Vidlets: [Kaltura](https://video.ucdavis.edu/) (Currently via AggieVideo)
 
-### Video format guide
+## Video format guide
 
-Vidlets will have accompanying video, text translation, and audio. They will typically be a few hundred MB in size. We are currently using Kaltura via [AggieVideo Services](https://video.ucdavis.edu/) to host vidlets. Vidlets with or without narrator view should be used to demonstrate a concept, tasks that may require multiple windows, or tasks that may require explanation of UI with/without clicks. Short vidlets can also be used for video walkthroughs for UI. The vidlet should be complete in itself with respect to content without relying on the associated tutorial text. Setup, installation, and introductory concepts are good choices for vidlets.
+Vidlets will have accompanying video, text translation, and audio. They will typically be a few hundred MB in size. We are currently using Kaltura via [AggieVideo Services](https://video.ucdavis.edu/) to host vidlets (requires membership). Vidlets with or without narrator view should be used to demonstrate a concept, tasks that may require multiple windows, or tasks that may require explanation of UI with/without clicks. Short vidlets can also be used for video walkthroughs for UI. The vidlet should be complete in itself with respect to content without relying on the associated tutorial text. Setup, installation, and introductory concepts are good choices for vidlets.
 
 - pacing: total length should be ~15 minutes or less
 - uploading and editing videos requires an account on AggieVideo
