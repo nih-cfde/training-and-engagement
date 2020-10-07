@@ -5,16 +5,21 @@ title: Integrated Analysis of Movement-Related Disorders
 
 # Integrated Analysis of Movement-Related Disorders
 
-Movement-related disorders affects the neuromuscular system which involves the combination of
-nervous system and muscles working in a concerted manner to enable movement. Amyotrophic Lateral
-Sclerosis (ALS) or Lou Gehrig’s disease is a motor neuron disease which involves the loss of neurons
-in brain and spinal cord that control voluntary movement of the muscles. While ALS is not inheritable,
-Spinal Muscular Atrophy (SMA), another example of motor neuron disease has known genetic cause and is
-inheritable. Parkinson's is a degenerative condition which results from death of neurons producing
-neurotransmitter dopamine in the brain. Multiple Sclerosis (MS) is an autoimmune disorder wherein myelin, the protective sheath covering the neurons is damaged, hindering the brain's ability to communicate with rest of the body. All are disorders that involve the brain, share similar symptoms
-and can be difficult to diagnose in early stages.
+Movement-related disorders affect the neuromuscular system, disrupting the ability of the nervous and muscular systems to work together. There are several known movement-related disorders, including Amyotrophic Lateral Sclerosis (ALS) or Lou Gehrig’s disease, Parkinson's disease, Spinal Muscular Atrophy (SMA) and Multiple Sclerosis (MS). 
 
-Identifying key differences between the movement-related disorders can help identify disease processes along with potential biomarkers. In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
+Amyotrophic Lateral Sclerosis (ALS): is a motor neuron disease which involves the loss of neurons in the brain and spinal cord that control voluntary movement of the muscles. ALS is not heritable.
+
+Spinal Muscular Atrophy (SMA): is a heritable motor neuron disease with known genetic causes. 
+
+Parkinson's disease: is a degenerative condition which results from the death of dopamine producing neurons. 
+
+Multiple Sclerosis (MS): is an autoimmune disorder in which the protective sheath covering some neurons (called myelin) is damaged. Neurons with damaged myelin disrupt electrical communications that are necessary for normal movement and coordination. 
+
+A few common features of these neuromuscular disorders are that they all involve brain neurons, they share many symptoms, and they are all difficult to diagnose in their early stages.
+
+Identifying key genomic, genetic, transcriptomic or proteomic differences between these movement-related disorders may help identify underlying disease mechanisms or biomarkers to aide in early diagnosis and/or targeted drug development. 
+
+In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
 
 A video walk through demonstrating the cohort selection for Movement-Related Disorders.
 
