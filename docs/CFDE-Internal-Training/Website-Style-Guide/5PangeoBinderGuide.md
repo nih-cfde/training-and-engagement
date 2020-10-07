@@ -1,4 +1,4 @@
-## Pangeo binder style guide
+# Pangeo binder style guide
 
 We are using [pangeo binders](https://binder.pangeo.io/) to create pre-configured computing environments for tutorials where useful.
 
