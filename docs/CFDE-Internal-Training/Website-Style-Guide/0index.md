@@ -34,6 +34,5 @@ Location of important files in the training Github repo:
         ├── extra.js
         ├── medium-zoom.min.js
     ├── <tutorial-folders-go-here>
-    ├── Resources
-    ├── tutorial_scripts ### for future consideration, possibly as part of Resources/
+    ├── TrainingRepoReleasePlan
 ```
