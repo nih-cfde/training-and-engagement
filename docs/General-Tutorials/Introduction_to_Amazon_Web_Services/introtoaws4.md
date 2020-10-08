@@ -62,7 +62,7 @@
 
 === "Mac OS"
     
-    OK, so you've created a running computer. How do you get to it?
+    Ok, so you've created a running computer. How do you get to it?
 
     The main thing you'll need is the network name of your new computer. To retrieve this, go to the AWS instance view and click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
 
