@@ -3,19 +3,25 @@ layout: page
 title: Internal Training Overview
 ---
 
-CFDE Internal Training tutorials
+CFDE Internal Training
 ===========================================
 
 
-- [Website Style Guide](./Website-Style-Guide/0index.md)
 
-- [Identifying MIME types](./MIME-type/index.md)
+CFDE-CC: 
+    
+    - [Website Style Guide](./Website-Style-Guide/0index.md)
+    - [Editing Mkdocs websites with cfde-bot](cfdebot_website_editing.md)
 
-GitHub Tutorials:
+  
+Common Fund DCCs
+   
+    - [Identifying MIME types](./MIME-type/index.md)
 
-  - [Working with Protected Branches](ProtectedBranch_HowTo.md)
-  - [Editing Mkdocs websites with cfde-bot](cfdebot_website_editing.md)
+GitHub:
 
+    - [Working with Protected Branches](ProtectedBranch_HowTo.md)
+    
 
 
 
