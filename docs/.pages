@@ -1,8 +1,9 @@
-arrange:
+nav:
   - index.md
-  - Releases
   - General-Tutorials
   - Bioinformatics-Tutorials
   - Kids-First
   - CF-Tutorials
   - Resources
+  - CFDE-Internal-Training
+  - Releases

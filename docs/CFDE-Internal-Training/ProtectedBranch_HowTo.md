@@ -13,6 +13,7 @@ accidentally breaks the websites.
 
 
 !!! note "Learning Objectives"
+
     - learn about protected branches in GitHub
     - learn to work with newly cloned protected branches in GitHub
     - learn to work with previously cloned protected branches in GitHub
@@ -32,6 +33,7 @@ accidentally breaks the websites.
     - Basic command line skills
 
 === "Tutorial Resources"
+
     Link to practice repo:
     <https://github.com/nih-cfde/play-with-github>
 
