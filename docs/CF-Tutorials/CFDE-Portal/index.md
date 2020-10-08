@@ -9,7 +9,8 @@ The [Common Fund Data Ecosystem (CFDE) Portal](https://app.nih-cfde.org) is the 
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-15 mins | [Functional Genetic Variation in Blood Cancer](./blood-cancer.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets
+10 mins | [Functional Genetic Variation in Blood Cancer](./blood-cancer-portal-export.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets in CFDE portal
+15 mins | [Blood Cancer Data Access from Common Fund Portals](./blood-cancer-data-access.md) | Access identified cohort datasets in individual CF data portals
 15 mins | [Integrated Analysis of Movement-Related Disorders](./movement-disorders.md) | Identify multiomics datasets
 
 !!! note "Learning Objectives"
@@ -31,6 +32,6 @@ Est. Time | Lesson name | Description
 
     Vidlets:
 
-     - [Acute Myeloid Leukemia Demonstration](./blood-cancer.md)
+     - [Acute Myeloid Leukemia Demonstration](./blood-cancer-portal-export.md)
 
      - [Movement-Related Disorders Demonstration](./movement-disorders.md)
