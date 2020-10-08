@@ -19,6 +19,10 @@ A few common features of these neuromuscular disorders are that they all involve
 
 In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
 
+A video walk through demonstrating the cohort selection for Movement-Related Disorders.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_v3ggfiv3&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_ik6qjpq6" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
 ## Step 1: Access the Collection information
 
 From the main landing page for the [CFDE portal](https://app.nih-cfde.org) there are two
@@ -74,27 +78,3 @@ The two CFDE portal exported `csv` files are combined into a single `csv` file i
 ![CFDE portal exported file](../../images/CFDE-portal-movement-disorder-export.png "CFDE portal exported file")   
 
 The relevant individual study details are in the `id`, `name` and `description` columns. The `persistant_id` column lists the permanent URL which can be used to access each of the studies in [Metabolomics]((https://www.metabolomicsworkbench.org) and [LINCS]((http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.
-
-A video walk through demonstrating the cohort selection for Movement-Related Disorders.
-
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_b89l89ba&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_j485yhqf" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
-
-## Step 6: Metabolomics WorkBench
-
-The details of each Metabolomics study can be viewed, analyzed and downloaded using the [Metabolomics WorkBench](https://www.metabolomicsworkbench.org). The `persistant_id` for each study is associated with a summary page which lists all the available analyzed and raw data, metadata associated with study design, experimental conditions, sample preparation details and analysis techniques along with   contributor information and creation date.
-
-![Metabolomics Workbench summary](../../images/Metabolomics-workbench-summary.png "Metabolomics Workbench summary")  
-
-The associated metadata for the different fields can be listed as tabs. Study data can be downloaded as `zip` files. Selecting the `Perform statistical analysis` lists multiple options for statistical tests, clustering, pathway mapping and visualization that can be run on the study data.
-
-![Metabolomics statistical tests](../../images/Metabolomics-statistical-test.png "Metabolomics statistical tests")  
-
-## Step 7:  LINCS Data Portal
-
-The `persistant_id` for each LINCS dataset is linked to the study page in the [LINCS data portal](http://lincsportal.ccs.miami.edu/datasets/) which list the Description, Metadata and Download tabs. The associated metadata and analyzed data are available for direct download.
-
-![LINCS data portal](../../images/LINCS-data-portal.png "LINCS data portal")  
-
-The "Data Source" lists the link to the dbGaP study which all relevant study description, sequencing details and associated published literature.
-
-![LINCS data source](../../images/dbGaP-data-source.png "LINCS data source")  
