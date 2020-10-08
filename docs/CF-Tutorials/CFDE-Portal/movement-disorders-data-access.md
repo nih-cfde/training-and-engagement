@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Movement-Related Disorders Datasets from Common Fund Portals
+title: Datasets of Movement-Related Disorders from Common Fund Portals
 ---
 
-# Movement-Related Disorders Datasets from Common Fund Portals
+# Datasets of Movement-Related Disorders from Common Fund Portals
 
 Using the details in the [CFDE portal exported `csv` manifest](./movement-disorders-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [Metabolomics](https://www.metabolomicsworkbench.org) and [LINCS](http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.
 
