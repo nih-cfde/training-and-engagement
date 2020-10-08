@@ -130,6 +130,7 @@
 
     Once you have completed your tasks and are sure you do not need the instance any longer, you may terminate the instance by returning to [AWS Management Console](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId)
 
+
     !!! warning
 
             If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it. Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
