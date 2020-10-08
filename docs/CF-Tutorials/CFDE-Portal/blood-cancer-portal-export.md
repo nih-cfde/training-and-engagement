@@ -19,7 +19,7 @@ From the main landing page for the [CFDE portal](https://app.nih-cfde.org) there
 options to access the "Biosample" view of the CFDE data browser.
 
 By using the "Biosample" link under the "Or browse by feature" section listed
-under "Explore our Repository" or by selecting the "Biosampleunder the "Browse" option in the top left navigation bar.
+under "Explore our Repository" or by selecting the "Biosample under the "Browse" option in the top left navigation bar.
 
 ![CFDE portal Biosample](/../../images/CFDE-portal-biosample.png "CFDE portal Biosample")   
 
@@ -42,7 +42,7 @@ The Biosample page shows the subset of matches for "Anatomy" filters. This resul
 ## Step 3: Apply Assay Filter
 
 Next use the "Assay" filter listed under the Refine Search panel to select the boxes
-for whole genome sequencing assay (WGS) and RNA-seq assay values. This results in 7693 records.
+for whole genome sequencing assay (WGS) and RNA-seq assay values. This results in 7,693 records.
 
 ![Apply assay filter](../../images/AML-assay-anatomy.png "Apply assay filter")   
 
@@ -72,7 +72,6 @@ The filtered cohort containing 1,140 records can now be exported as a `csv` file
 ![Export final cohort](../../images/AML-cohort-export.png "Export final cohort")   
 
 !!! note "Cohort manifest contains metadata only"
-
     The exported `csv` contains metadata only. To further investigate the selected cohort, use the data portals of the originating Common Fund (CF) program i.e. GTEx and KF respectively.
 
 The exported `csv` file has thirteen columns.

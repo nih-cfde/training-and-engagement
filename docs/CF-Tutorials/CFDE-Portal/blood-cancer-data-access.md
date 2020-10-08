@@ -22,7 +22,7 @@ You can paste the comma separated list of IDs which is same as the values in the
 
 ![KF upload ids](../../images/KF-upload-ids.png "KF upload ids")
 
-The resulting view in the portal lists all the participants and files associated with the study. Using the "File Filters" tab the details of the experimental strategy, data type and file formats can also be viewed. The lock icon under the "Actions" column implies protected data and access has to be requested.
+The resulting view in the portal lists all the participants and files associated with the study. Using the "File Filters" tab the details of the experimental strategy, data type and file formats can be viewed. The lock icon under the "Actions" column implies protected data and access has to be requested.
 
 ![KF subset list](../../images/KF-subset-list.png "KF subset list")
 
@@ -34,7 +34,7 @@ Request for the controlled data access for the AML dataset can be applied throug
 
 [The GTEx project](https://gtexportal.org/home/) is an ongoing effort to build a comprehensive public resource to study tissue-specific gene expression and regulation. Data was collected from over 1000 individuals across 54 non-diseased tissue sites and thus represent baseline values.
 
-!!! note "GTEx"
+!!! note "GTEx Portal"
     The portal website address is listed in the exported csv file for the CFDE portal in both the `id_namespace` and in the `project_id_namespace` columns.
 
 Login in to the portal is via Google credentials.
