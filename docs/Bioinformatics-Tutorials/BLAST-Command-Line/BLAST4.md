@@ -11,11 +11,11 @@ cd /mnt
 !!! Note
 
 	`chmod` command stands for **change mode** and it is used to define or change permissions or modes on files and limit access to only those who are allowed access. It's the same as using your mouse to right-click a file or folder and selecting the permission tabs and defining who can access the resource.
-	
+
 Now, we'll use `curl` to download the files from an online OSF repository to the AWS remote instance. These are copies of the files from the [NCBI FTP site](ftp://ftp.ncbi.nih.gov/refseq/M_musculus/mRNA_Prot).
 
 !!! Note
-	You can Copy/Paste multiple commands at a time, and they will execute in order. 
+	You can Copy/Paste multiple commands at a time, and they will execute in order.
 
 ```
 curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
@@ -28,15 +28,13 @@ curl -o zebrafish.1.protein.faa.gz -L https://osf.io/68mgf/download
 There should now be two protein files in the current directory:
 
 === "Input"
-	
-	Use the `ls` command to list the files in the directory. The `-l` flag adds file permissions, ownership, size, and creation time information. The `-h` flag converts the file sizes into human-readable units and the `-t` flag sorts the files starting with the most recently created file.
-	
 	```
 	ls -lht
 	```
+	Use the `ls` command to list the files in the directory. The `-l` flag adds file permissions, ownership, size, and creation time information. The `-h` flag converts the file sizes into human-readable units and the `-t` flag sorts the files starting with the most recently created file.
 
 === "Expected Output"
-	
+
 	Your output should look similar, though the download dates will be the current date and time when you downloaded the files:
 	```
 	total 30M
@@ -56,7 +54,7 @@ gunzip *.faa.gz
 Let's look at the first few sequences in the file:
 
 ```
-head mouse.1.protein.faa 
+head mouse.1.protein.faa
 ```
 
 These are protein sequences in FASTA format.  FASTA format is something
@@ -84,9 +82,9 @@ Select the first 11 lines of the file and save as a new file:
 
 	So now, for example, you can do `cat mm-first.faa` to see the contents of
 	that file (or `less mm-first.faa`):
-	
+
 	```
-	ubuntu@ip-172-31-17-217:~$ cat mm-first.faa 
+	ubuntu@ip-172-31-17-217:~$ cat mm-first.faa
 	>YP_220550.1 NADH dehydrogenase subunit 1 (mitochondrion) [Mus musculus domesticus]
 	MFFINILTLLVPILIAMAFLTLVERKILGYMQLRKGPNIVGPYGILQPFADAMKLFMKEPMRPLTTSMSLFIIAPTLSLT
 	LALSLWVPLPMPHPLINLNLGILFILATSSLSVYSILWSGWASNSKYSLFGALRAVAQTISYEVTMAIILLSVLLMNGSY
@@ -101,7 +99,7 @@ Select the first 11 lines of the file and save as a new file:
 	```
 
 !!! tip
-	
+
 	if you try `less mm-first.faa`, exit back to the terminal by pressing the ++q++ key in your keyboard.
 
 ## Step 3: Create blast database
@@ -154,7 +152,7 @@ less mm-first.x.zebrafish.txt
 Use the ++up++ and ++down++ keys to move up/down, and ++q++ to exit the paging mode.
 
 
-Let's run some more sequences (this search will take a little longer to run). 
+Let's run some more sequences (this search will take a little longer to run).
 Using the `head -n` command, we'll select the first 498 lines of the mouse protein fasta file.
 Since these fasta files are divided over five lines per sequence, this subset will include 96 sequences.
 
@@ -169,27 +167,27 @@ less mm-second.x.zebrafish.txt
 ```
 
 !!! tip
-	
+
 	We can verify the number of records by searching for all of the lines that include the `>` symbol.
-	Type 
+	Type
 	```
 	grep '>' mm-second.faa | wc -l
 	```
-	
+
 	`grep` is a powerful tool for finding patterns and words on Unix and Linux Systems. `wc -l` tells `wc` to count the number of lines that have the matching pattern `>`. The command should tell you there are 96 lines in this file.
 
 
 === "Exercise"
-	
+
 	Why did it take longer to BLAST `mm-second.faa` than `mm-first.faa`?
 
 === "Answer"
-	
+
 	`mm-second.faa` has 96 sequences in comparison to `mm-first.faa` which only had 2 sequences.
-	
+
 
 Last, but not least, let's generate a more machine-readable version of that
-last file. There are several BLAST output formats. The [blast output format 6](http://www.metagenomics.wiki/tools/blast/blastn-output-format-6) 
+last file. There are several BLAST output formats. The [blast output format 6](http://www.metagenomics.wiki/tools/blast/blastn-output-format-6)
 is the most commonly used.
 
 === "Input"
@@ -203,7 +201,7 @@ is the most commonly used.
 	```
 	less mm-second.x.zebrafish.tsv
 	```
-	
+
 	The first few lines look like this:
 	```
 	YP_220550.1     NP_059331.1     69.010  313     97      0       4       316     10      322     1.24e-150       426
@@ -211,7 +209,7 @@ is the most commonly used.
 	YP_220551.1     NP_059341.1     24.540  163     112     3       112     263     231     393     5.15e-06        49.7
 	```
 
-For this particular example, the blast search results show that the sequences we compared are quite different. The top match from the mouse data was only 69% similar to the zebrafish reference database. Of course, this makes sense since mouse and zebrafish species are very divergent! 
+For this particular example, the blast search results show that the sequences we compared are quite different. The top match from the mouse data was only 69% similar to the zebrafish reference database. Of course, this makes sense since mouse and zebrafish species are very divergent!
 
 !!! Warning
 
@@ -219,6 +217,4 @@ For this particular example, the blast search results show that the sequences we
 
 !!! note "Key Points"
 
-	BLAST searches can be conducted between DNA and protein sequences, including translating DNA to protein or protein to DNA. For this tutorial, we used the `blastp` command to compare protein sequences. Other commands include `blastn` for comparing DNA sequences and `blastx` or `tblastn` for comparing translated sequences. This flexibility and ease of use has made BLAST a very popular tool for quickly comparing sequences. Command line BLAST searches can also be scaled up to compare sequences for multiple samples to large databases. For more information about BLAST, check out the [NCBI webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi). 
-	
-
+	BLAST searches can be conducted between DNA and protein sequences, including translating DNA to protein or protein to DNA. For this tutorial, we used the `blastp` command to compare protein sequences. Other commands include `blastn` for comparing DNA sequences and `blastx` or `tblastn` for comparing translated sequences. This flexibility and ease of use has made BLAST a very popular tool for quickly comparing sequences. Command line BLAST searches can also be scaled up to compare sequences for multiple samples to large databases. For more information about BLAST, check out the [NCBI webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi).
