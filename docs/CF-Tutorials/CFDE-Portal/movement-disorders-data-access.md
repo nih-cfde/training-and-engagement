@@ -5,7 +5,7 @@ title: Movement-Related Disorders Datasets from Common Fund Portals
 
 # Movement-Related Disorders Datasets from Common Fund Portals
 
-Using the details in the [CFDE portal exported `csv` manifest](./movement-disorders-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [Metabolomics]((https://www.metabolomicsworkbench.org) and [LINCS]((http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.
+Using the details in the [CFDE portal exported `csv` manifest](./movement-disorders-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [Metabolomics](https://www.metabolomicsworkbench.org) and [LINCS](http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.
 
 
 ## Metabolomics WorkBench
@@ -16,7 +16,7 @@ The details of each Metabolomics study can be viewed, analyzed and downloaded us
 
 The associated metadata for the different fields can be listed as tabs. Study data can be downloaded as `zip` files using the "Download data" option. Some studies have processed datasets while some have raw and processed datasets. One can use the "View archive contents" to explore the contents of the `zip` file prior to download.
 
-![Metabolomics data download](../../images/Metabolomics-data-download.png "Metabolomics data download")
+![Metabolomics data download](../../images/Metabolomics-download-data.png "Metabolomics data download")
 
 Selecting the `Perform statistical analysis` lists multiple options for statistical tests, clustering, pathway mapping and visualization that can be run on the study data.
 
