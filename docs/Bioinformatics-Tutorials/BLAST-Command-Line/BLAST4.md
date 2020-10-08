@@ -153,8 +153,8 @@ Use the ++up++ and ++down++ keys to move up/down, and ++q++ to exit the paging m
 
 
 Let's run some more sequences (this search will take a little longer to run).
-Using the `head -n` command, we'll select the first 498 lines of the mouse protein fasta file.
-Since these fasta files are divided over five lines per sequence, this subset will include 96 sequences.
+Using the `head -n` command, we'll select the first 498 lines of the mouse protein FASTA file.
+Since these FASTA files are divided over five lines per sequence, this subset will include 96 sequences.
 
 ```
 head -n 498 mouse.1.protein.faa > mm-second.faa
