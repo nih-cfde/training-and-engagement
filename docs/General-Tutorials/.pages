@@ -1,9 +1,7 @@
-arrange:
+nav:
  - index.md
- - ProtectedBranch_HowTo.md
  - Jekyll_Tutorial.md
  - Sphinx_Tutorial.md
  - mkdocs.md
- - cfdebot_website_editing.md
  - install_conda_tutorial.md
- - javascript_chooser.md
+ - Javascript-dropdown-box
