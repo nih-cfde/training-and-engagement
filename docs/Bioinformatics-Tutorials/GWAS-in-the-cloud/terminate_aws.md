@@ -17,3 +17,24 @@ When you are done with all the analyses, be sure to terminate the AWS instance. 
  "Actions" --> "Instance State" --> "Terminate"
 
 ![](../../images/GWAS_General_Terminate_AWS.png)
+
+
+!!! note "Key Points"
+
+    You've reached the end of the GWAS tutorial. You should now be able to:
+
+    - Set up an AWS instance
+
+    - Access your AWS instance via your Mac terminal
+
+    - Move data into the AWS computer
+
+    - Download and install all the software necessary for GWAS 
+
+    - Run some basic GWAS analyses
+
+    - Make Manhattan plots
+
+    - Terminate your instance
+
+    We hope you found this tutorial helpful!

@@ -225,7 +225,7 @@ Look at the per SNP rates by running:
 For each SNP, you see the number of missing individuals (N_MISS) and the proportion of individuals missing (F_MISS).
 For examples, the SNP `BICF2P1489653` is missing in 1 out of 53 individuals, giving it a missing frequency of 0.01886792452 (i.e. 1/53). Lower proportions are better!
 
-You can quit this mode and return to the terminal by typing `q`.
+You can quit this mode and return to the terminal by typing ++q++.
 
 Similarly, look at the per individual rates in the "miss_stat.imiss" by typing
 
@@ -233,7 +233,7 @@ Similarly, look at the per individual rates in the "miss_stat.imiss" by typing
     ```
     less miss_stat.imiss
     ```
-    You can quit this mode and return to the terminal by typing `q`.
+    You can quit this mode and return to the terminal by typing ++q++.
 
 === "Expected Output"
     ```
