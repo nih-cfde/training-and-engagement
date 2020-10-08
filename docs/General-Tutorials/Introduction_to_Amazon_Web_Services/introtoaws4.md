@@ -4,7 +4,7 @@
 
     Ok, so you've created a running computer. How do you get to it?
 
-    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId), click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
+    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId), click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
 
     ## Step 1: Open MobaXTerm
 
@@ -22,7 +22,7 @@
 
     ### Specify the session key
 
-    Enter the public DNS address from the [AWS instance](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) page in the "Remote host" box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. Enter `ubuntu` for "Specify username".
+    Enter the public DNS address from the [AWS instance](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId) page in the "Remote host" box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. Enter `ubuntu` for "Specify username".
 
     ![Hostname](../../images/mobaxterm_3.PNG "remote host ec2 address")
 
@@ -65,7 +65,7 @@
 
     Ok, so you've created a running computer. How do you get to it?
 
-    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId), click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
+    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId), click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
 
     ## Step 1: Locate private key
 
