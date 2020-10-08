@@ -22,7 +22,7 @@
 
     ### Specify the session key
 
-    Enter the public DNS address from the AWS instance page for "Remote host". It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. Enter `ubuntu` for "Specify username". 
+    Enter the public DNS address from the [AWS instance](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) page in the "Remote host" box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. Enter `ubuntu` for "Specify username". 
     
     ![Hostname](../../images/mobaxterm_3.PNG "remote host ec2 address")
 
