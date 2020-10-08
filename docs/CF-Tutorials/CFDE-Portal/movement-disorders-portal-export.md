@@ -77,4 +77,4 @@ The two CFDE portal exported `csv` files are combined into a single `csv` file i
 
 ![CFDE portal exported file](../../images/CFDE-portal-movement-disorder-export.png "CFDE portal exported file")   
 
-The relevant individual study details are in the `id`, `name` and `description` columns. The `persistant_id` column lists the permanent URL which can be used to access each of the studies in [Metabolomics]((https://www.metabolomicsworkbench.org) and [LINCS]((http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.
+The relevant individual study details are in the `id`, `name` and `description` columns. The `persistant_id` column lists the permanent URL which can be used to access each of the studies in [Metabolomics](https://www.metabolomicsworkbench.org) and [LINCS](http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.
