@@ -17,7 +17,7 @@ However, running BLAST through the commmand line has many benefits:
 
 - Running BLAST with the command line is reproducible and can be documented in a script
 
-- The results can be saved in a machine-readable format that can be analyzed later on
+- The results can be saved in a machine-readable format that can be analyzed later
 
 - You can create your own databases to search rather than using NCBI's pre-built databases
 
@@ -33,20 +33,17 @@ Est. time | Lesson name | Description
 !!! note "Learning Objectives"
 
     - Gain hands-on exposure to the linux command line
-  
+
     - Understand how data is turned into results by programs run at the command line
 
 === "Prerequisites"
-  
+
     - Some expertise in biology and genetics.
-  
+
     - This tutorial was written to be run from an AWS remote instance. You need an AWS account. Please see our [tutorial](../../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md) on setting up an AWS instance for help.
-  
+
     - Basic shell scripting knowledge. Users must be comfortable with finding and opening a terminal window.
-  
+
 === "Tutorial Resources"
 
-    [BLAST tutorial walk-through vidlet](./BLAST2.md)
-
-
-  
+    Vidlet: [BLAST tutorial walk-through](./BLAST2.md)
