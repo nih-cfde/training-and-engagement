@@ -8,8 +8,9 @@
 
     ## Step 1: Open MobaXTerm
 
-    MobaXTerm is a terminal for Windows with an X11 server, a tabbed SSH client and several other network tools for remote computing (VNC, RDP, telnet,rlogin)
-    MobaXterm brings all the essential Unix commands to Windows desktop, in a single portable exe file which works out of the box.
+    [MobaXTerm](https://mobaxterm.mobatek.net/) is a terminal for Windows with an X11 server, a tabbed SSH client and several other network tools for remote computing (VNC, RDP, telnet,rlogin).
+    
+    MobaXterm brings all the essential Unix commands to Windows desktop, in a single portable exe file which works out of the box. You can download the [Home Edition](https://mobaxterm.mobatek.net/download.html) for free.
 
     ## Step 2: Start a new session
 
