@@ -58,7 +58,7 @@ head mouse.1.protein.faa
 ```
 
 These are protein sequences in FASTA format.  FASTA format is something
-many of you have probably seen in one form or another -- it's very ubiquitous!
+many of you have probably seen in one form or another -- it's ubiquitous!
 
 It's a text file, containing sequence records. Each record
 starts with a `>`, and then contains one or more lines of sequence text. The information associated with each
