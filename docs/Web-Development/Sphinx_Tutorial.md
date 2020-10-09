@@ -10,25 +10,25 @@ Sphinx is python based tool that enables generation of documentation. Originally
 !!! note "Learning Objectives"
 
     - learn to install Sphinx
-    
+
     - learn to build a Sphinx website
-    
+
     - learn to edit content on a Sphinx website
-    
+
     - learn to render Sphinx websites locally
 
 === "Est. Time"
 
     40 mins
-    
+
 === "Prerequisites"
 
     - Have [`git`](https://git-scm.com/) installed on your computer
-    
-    - This tutorial uses python and conda. These can be configured on your computer by installing Anaconda or Miniconda. Please see our [tutorial](./install_conda_tutorial.md) for help installing and using Miniconda on MacOS.
-    
+
+    - This tutorial uses python and conda. These can be configured on your computer by installing Anaconda or Miniconda. Please see our [tutorial](../Bioinformatics-Skills/install_conda_tutorial.md) for help installing and using Miniconda on MacOS.
+
     - Basic command line skills
-    
+
     - Access to MacOS or Windows
 
 === "Tutorial Resources"
@@ -42,7 +42,7 @@ Please choose your operating system and follow along.
 
     Based on [the official Sphinx installation guide tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html):
 
-    We will utilize the [conda package management system](./install_conda_tutorial.md) to install Sphinx.
+    We will utilize the [conda package management system](../Bioinformatics-Skills/install_conda_tutorial.md) to install Sphinx.
 
     Create a new conda environment called `sphinx` that runs python 3.5 like so:
 
@@ -97,7 +97,7 @@ git clone https://github.com/nih-cfde/Sphinx-demo.git
 Navigate to the newly created directory with the name of the repo.  
 
 !!! note "Add folders"
-    
+
     Since GitHub does not allow for empty folders, some of Sphinx generated folders are missing from the repo. These can be directly added to the downloaded repo locally. The folders should be created within sphinx folder with exactly these names: "_static", "_templates", "docs".
 
 This is the overall structure of the sphinx directory after the necessary folders have been created:

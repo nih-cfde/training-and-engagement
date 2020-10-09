@@ -183,7 +183,7 @@ Check the working directory again. The directory is populated by many output fil
 
 !!! Tip
 
-    Please refer to the [Snakemake command cheatsheet](../../Resources/snakemake_cheatsheet.md) for commonly used Snakemake commands!
+    Please refer to the [Snakemake command cheat sheet](../../Cheat-Sheets/snakemake_cheatsheet.md) for commonly used Snakemake commands!
 
 !!! note "Key Points"
 
