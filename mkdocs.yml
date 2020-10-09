@@ -38,7 +38,7 @@ extra:
   hypothesis: true
   social:
     - icon: fontawesome/solid/envelope-square
-      link: mailto:<email-address>
+      link: mailto:<coordination@CFDE.groups.io>
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/CfdeNih
     - icon: fontawesome/brands/github
