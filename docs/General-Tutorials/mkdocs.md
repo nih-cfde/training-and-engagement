@@ -65,9 +65,6 @@ MkDocs can be installed via a package manager or manually using `pip` the Python
 
          ```
          python -m pip install mkdocs
-         ```
-
-         ```
          python -m mkdocs
          ```
 
@@ -137,7 +134,7 @@ We can render the website locally.
     INFO    -  Start detecting changes
     ```
 
-Copy and paste the server address to a web browser to render the site. When you are done checking the local version, `CLTR+C` to close the server.
+Copy and paste the server address to a web browser to render the site. When you are done checking the local version, ++ctrl+c++ to close the server.
 
 ## Step 3: Add content on MkDocs site
 
@@ -181,10 +178,10 @@ To recreate the look of [CFDE training website](https://cfde-training-and-engage
 === "conda install"
 
     ```
-    conda install mkdocs-material=5.4.0
+    conda install mkdocs-material
     ```
 
-Here we specify the latest available version for this theme. The website should automatically update with the new theme.
+We can either choose to install a specific version for this theme or by default install the latest available version. The website should automatically update with the new theme.
 
 Options to deploy the generated website are elaborated on the [MkDocs official website](https://www.mkdocs.org/user-guide/deploying-your-docs/).
 

@@ -1,4 +1,4 @@
-# Editing MkDocs websites with cfde-bot
+# Editing MkDocs Websites with cfde-bot
 
 This is a tutorial on how to edit MkDocs websites from Github repos that use the cfde-bot robot. The cfde-bot handles changes in each website GitHub repo to check  edits and most importantly, prevent changes that could break the website.
 
@@ -7,21 +7,21 @@ This is a tutorial on how to edit MkDocs websites from Github repos that use the
     - learn how to edit Mkdocs website docs on Github using the cfde-bot
 
 === "Est. Time"
-    
+
     ~20 mins (depending on the website, it make take longer for all the bot's checks to complete)
 
 === "Prerequisites"
-    
-    The cfde-bot was constructed for managing CFDE websites. To edit any of these websites, you must be onboarded to the CFDE to gain access to the nih-cfde Github repo files. 
+
+    The cfde-bot was constructed for managing CFDE websites. To edit any of these websites, you must be onboarded to the CFDE to gain access to the nih-cfde Github repo files.
 
 ## General steps for editing CFDE websites with cfde-bots
 
 For the CFDE, the key websites we maintain are: `welcome-to-cfde`, `training-and-engagement`, `usecases`, and `published-documentation`. *See section below for specific instructions on editing the `published-documentation` website.*
-    
+
 The `welcome-to-cfde`, `usecases`, and `published-documentation` CFDE websites currently have a single PR and review stage to merge changes to the public-facing website. For these websites, the public-facing website is rendered from the `stable` branch.
-    
-The `training-and-engagement` repo has a 2-stage PR and review stage. Changes are initially pushed to a development branch `dev` and then merged to `stable` for new releases of the public-facing website. Consequently, the steps of the PR process are slightly different compared to the other CFDE websites. The details are available in the website repo's style guide and release plan. 
-    
+
+The `training-and-engagement` repo has a 2-stage PR and review stage. Changes are initially pushed to a development branch `dev` and then merged to `stable` for new releases of the public-facing website. Consequently, the steps of the PR process are slightly different compared to the other CFDE websites. The details are available in the website repo's style guide and release plan.
+
 In this tutorial, we lay out the general steps for the single stage PR process.
 
 ### Step 1: Go to website's GitHub repository.
@@ -34,7 +34,7 @@ If working from Github, type a new branch name (e.g., `my_branch`) in the `Branc
 
 ### Step 3: Make edits
 
-You should now be on your new branch, otherwise click `Branch:stable` and switch to your new branch. 
+You should now be on your new branch, otherwise click `Branch:stable` and switch to your new branch.
 
 Find the file(s) you want to change and make changes directly in the web interface (while not necessary, you can also make changes via a local copy of the repo with `git` commands). When you’re done editing, scroll to the bottom of the page to commit the changes; Github knows to commit the changes to your branch.
 
@@ -52,7 +52,7 @@ If the checks pass, changes should be automatically merged into a preview versio
 
 ### Step 7: Request reviews
 
-If you are satisfied with the edits, request reviewers to check, request changes, and approve the changes. 
+If you are satisfied with the edits, request reviewers to check, request changes, and approve the changes.
 
 ### Step 8: Merge changes
 
@@ -88,9 +88,9 @@ The cfde-bot's process for checking changes to this repo is slightly different:
 
 The website link is https://cfde-published-documentation.readthedocs-hosted.com/en/preview. You must have admin permissions to acces the readthedocs website.
 
-#### Step 5: Request review 
+#### Step 5: Request review
 
-To keep these changes, you need to request a reviewer for the PR to the `master` branch the cfde-bot created in the `published-documentation` repo. 
+To keep these changes, you need to request a reviewer for the PR to the `master` branch the cfde-bot created in the `published-documentation` repo.
 
 #### Step 6: Merge changes
 

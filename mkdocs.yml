@@ -1,7 +1,5 @@
 site_name: Common Fund Data Ecosystem Training
 
-repo_url: https://github.com/nih-cfde/training-and-engagement
-
 theme:
   name: material
   palette:
@@ -32,6 +30,9 @@ markdown_extensions:
 - pymdownx.superfences
 
 - pymdownx.extra
+- pymdownx.highlight
+- pymdownx.keys
+- pymdownx.inlinehilite
 
 - codehilite:
     guess_lang: false
@@ -39,6 +40,13 @@ markdown_extensions:
     permalink: true
 extra:
   hypothesis: true
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:CFDE-Coordination%20<coordination@CFDE.groups.io>
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CfdeNih
+    - icon: fontawesome/brands/github
+      link: https://github.com/nih-cfde/training-and-engagement/tree/stable
 extra_css:
   - stylesheets/extra.css
   - stylesheets/asciinema-player.css

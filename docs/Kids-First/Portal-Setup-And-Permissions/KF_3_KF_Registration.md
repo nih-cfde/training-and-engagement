@@ -11,7 +11,7 @@ to this link:
 
     Open the link in a new tab by right clicking the link and selecting
     `open in a new tab`; or by holding `command` while you
-    click the link (MacOS); or by holding `Ctrl` while you click
+    click the link (MacOS); or by holding ++ctrl++ while you click
     the link (Windows)
 
 
