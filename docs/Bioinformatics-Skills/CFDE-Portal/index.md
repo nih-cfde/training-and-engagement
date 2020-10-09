@@ -13,8 +13,8 @@ Est. Time | Lesson name | Description
 --- | --- | ---
 10 mins | [Cohort Selection for Blood Cancer](./Blood-Cancer/blood-cancer-portal-export.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets in CFDE portal
 15 mins | [Blood Datasets from CF Program Portals](./Blood-Cancer/blood-cancer-data-access.md) | Access identified cohort in individual CF data portals
-10 mins | [Multi-omics Data Discovery for Movement-Related Disorders](./movement-disorders-portal-export.md) | Identify multiomics datasets
-10 mins | [Movement Disorders Datasets in CF Program Portals](./movement-disorders-data-access.md) | Access identified datasets in individual CF data portals
+10 mins | [Multi-omics Data Discovery for Movement-Related Disorders](./Movement-Related-Disorders/movement-disorders-portal-export.md) | Identify multiomics datasets
+10 mins | [Movement Disorders Datasets in CF Program Portals](./Movement-Related-Disorders/movement-disorders-data-access.md) | Access identified datasets in individual CF data portals
 
 !!! note "Learning Objectives"
 
@@ -35,6 +35,6 @@ Est. Time | Lesson name | Description
 
     Vidlets:
 
-     - [Acute Myeloid Leukemia Demonstration](./blood-cancer-portal-export.md)
+     - [Acute Myeloid Leukemia Demonstration](./Blood-Cancer/blood-cancer-portal-export.md)
 
-     - [Movement-Related Disorders Demonstration](./movement-disorders-portal-export.md)
+     - [Movement-Related Disorders Demonstration](./Movement-Related-Disorders/movement-disorders-portal-export.md)
