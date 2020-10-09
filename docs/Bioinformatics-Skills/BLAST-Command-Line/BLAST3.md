@@ -4,11 +4,11 @@
 
 If you do not have access to a command line terminal on your computer (e.g., WindowsOS), you can set up an AWS remote instance to run command line programs.
 
-Boot a `t2.micro` instance on AWS and connect your shell prompt. 
+Boot a `t2.micro` instance on AWS and connect your shell prompt.
 
-!!! Tip 
-	
-	If you need assistance setting up an instance check out the tutorial [Intro to AWS](../../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md)!
+!!! Tip
+
+	If you need assistance setting up an instance check out the tutorial [Intro to AWS](../Introduction_to_Amazon_Web_Services/introtoaws1.md)!
 
 
 ## Step 2: Install BLAST software using command line
@@ -27,7 +27,7 @@ Check that the installation was successful:
 	```
 	blastp -version
 	```
-	
+
 === "Expected Output"
 
 	```

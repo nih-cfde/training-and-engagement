@@ -213,7 +213,7 @@ For this particular example, the blast search results show that the sequences we
 
 !!! Warning
 
-	Remember to download any files you want to save and terminate your instance when you have completed your tasks with AWS. See the AWS [tutorial](../../General-Tutorials/Introduction_to_Amazon_Web_Services/introtoaws1.md) for help.
+	Remember to download any files you want to save and terminate your instance when you have completed your tasks with AWS. See the AWS [tutorial](../Introduction_to_Amazon_Web_Services/introtoaws1.md) for help.
 
 !!! note "Key Points"
 
