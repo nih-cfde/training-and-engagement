@@ -13,7 +13,7 @@ CFDE-CC:
 
 Common Fund Programs
 
-   - [Identifying MIME type](./MIME-type/index.md)
+   - [Identifying MIME Types](./MIME-type/index.md)
 
 GitHub:
 
