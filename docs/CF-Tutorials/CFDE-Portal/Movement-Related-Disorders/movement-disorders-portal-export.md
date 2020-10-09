@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Integrated Analysis of Movement-Related Disorders
+title: Multi-omics Data Discovery for Movement-Related Disorders
 ---
 
-# Integrated Analysis of Movement-Related Disorders
+# Multi-omics Data Discovery for Movement-Related Disorders
 
 Movement-related disorders affect the neuromuscular system, disrupting the ability of the nervous and muscular systems to work together. There are several known movement-related disorders, including Amyotrophic Lateral Sclerosis (ALS) or Lou Gehrig’s disease, Parkinson's disease, Spinal Muscular Atrophy (SMA) and Multiple Sclerosis (MS).
 

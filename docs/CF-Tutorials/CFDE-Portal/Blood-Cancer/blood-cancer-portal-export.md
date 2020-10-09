@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Functional Genetic Variation in Blood Cancer
+title: Cohort Selection for Blood Cancer
 ---
 
-# Functional Genetic Variation in Blood Cancer
+# Cohort Selection for Blood Cancer
 
 Acute Myeloid Leukemia (AML) is a type of blood cancer. In AML, the affected myeloid cells which are a type of white blood cells, are not functional and build up in the bone marrow leaving reduced capacity for healthy white and red blood cells. While risk factors for developing AML exist, often times the underlying cause remains unknown. Gene mutations and chromosomal abnormality in the leukemia cells occur sporadically. Characterization of the wide spectrum of genetic events involved in AML will aide in better understanding of its etiology and ultimately in development of improved therapy.
 
 Combining whole genome sequencing (WGS) data with global transcriptomic profiling using RNA-sequencing (RNA-seq) can help elucidate functional dysregulation for genes of interest.
-In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable AML WGS and RNA-seq datasets from across the
-CF programs.
+In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable WGS and RNA-seq datasets derived from blood from across the CF programs.
 
 A video walk through demonstrating the cohort selection for AML.
 

@@ -11,9 +11,9 @@ By following these tutorials researchers and clinicians will learn to navigate w
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-10 mins | [Functional Genetic Variation in Blood Cancer](./Blood-Cancer/blood-cancer-portal-export.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets in CFDE portal
+10 mins | [Cohort Selection for Blood Cancer](./Blood-Cancer/blood-cancer-portal-export.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets in CFDE portal
 15 mins | [Blood Datasets from CF Program Portals](./Blood-Cancer/blood-cancer-data-access.md) | Access identified cohort in individual CF data portals
-10 mins | [Integrated Analysis of Movement-Related Disorders](./movement-disorders-portal-export.md) | Identify multiomics datasets
+10 mins | [Multi-omics Data Discovery for Movement-Related Disorders](./movement-disorders-portal-export.md) | Identify multiomics datasets
 10 mins | [Movement Disorders Datasets in CF Program Portals](./movement-disorders-data-access.md) | Access identified datasets in individual CF data portals
 
 !!! note "Learning Objectives"
