@@ -1,9 +1,12 @@
 nav:
   - index.md
+  - install_conda_tutorial
+  - Introduction_to_Amazon_Web_Services
+  - BLAST-Command-Line
   - GWAS-in-the-cloud
   - Snakemake
-  - BLAST-Command-Line
   - Kids-First
+  - CFDE-Portal
 
  
 
