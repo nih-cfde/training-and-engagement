@@ -5,7 +5,7 @@ title: Datasets of Movement-Related Disorders from Common Fund Portals
 
 # Datasets of Movement-Related Disorders from Common Fund Portals
 
-Using the details in the [CFDE portal exported `csv` manifest](./movement-disorders-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [Metabolomics](https://www.metabolomicsworkbench.org) and [LINCS](http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.
+[Using the `csv` manifest details we just exported from the CFDE portal](./movement-disorders-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [Metabolomics](https://www.metabolomicsworkbench.org) and [LINCS](http://lincsportal.ccs.miami.edu/datasets/) respectively. In this use case, the selected cohort from the CFDE Portal represents genomic, transcriptomic and metabolomic data from induced pluripotent stem cells and neural stem cells of individuals with ALS, SMA (LINCS), Parkinson's and MS (Metabolomics) along with healthy controls. 
 
 
 ## Metabolomics WorkBench

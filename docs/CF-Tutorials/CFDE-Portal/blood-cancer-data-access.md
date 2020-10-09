@@ -5,7 +5,10 @@ title: Blood Cancer Data Access from Common Fund Portals
 
 # Blood Cancer Data Access from Common Fund Portals
 
-Using the details in the [CFDE portal exported `csv` manifest](./blood-cancer-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [GTEx](https://gtexportal.org/home/) and [KF](https://kidsfirstdrc.org/) respectively.
+[Using the `csv` manifest details we just exported from the CFDE portal](./blood-cancer-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [GTEx](https://gtexportal.org/home/) and [KF](https://kidsfirstdrc.org/) respectively. In this use case, the selected cohort from the CFDE Portal represents genomic and transcriptomic data from blood of healthy individuals (GTEx) and individuals with acute myeloid leukemia (KF).
+
+!!! note "Data Access"
+    The metadata manifest for the selected cohort obtained from the [CFDE portal](https://app.nih-cfde.org) serves as a guide to obtaining the data files from the individual Common Fund data portals. While generally human biomedical data is controlled access, individual program level data access rules will preside to obtaining access to the associated files.
 
 ## KF Data Portal
 

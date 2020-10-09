@@ -7,6 +7,9 @@ title: CFDE Portal Tutorials
 
 The [Common Fund Data Ecosystem (CFDE) Portal](https://app.nih-cfde.org) is the first step in addressing the goal of making NIH Common Fund (CF) data Find-able, Accessible, Interoperable and Reusable (FAIR) both within and between CF programs. The wide range of data types, models and formats are harmonized using well-defined metadata, common controlled vocabularies using the [Crosscut Metadata Model](https://cfde-published-documentation.readthedocs-hosted.com/en/latest/). Here, we explore two disparate use cases to showcase the potential of the CFDE portal in accelerating discovery and novel scientific research.  
 
+!!! note "Data Access"
+    The metadata manifest for the selected cohort obtained from the [CFDE portal](https://app.nih-cfde.org) serves as a guide to obtaining the data files from the individual Common Fund data portals. While generally human biomedical data is considered controlled-access data, individual program level data access rules will preside in obtaining access to the associated files.
+
 Est. Time | Lesson name | Description
 --- | --- | ---
 10 mins | [Functional Genetic Variation in Blood Cancer](./blood-cancer-portal-export.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets in CFDE portal
