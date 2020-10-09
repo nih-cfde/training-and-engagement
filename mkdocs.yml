@@ -36,8 +36,7 @@ extra:
   hypothesis: true
   social:
     - icon: fontawesome/solid/envelope
-      link: mailto:coordination@CFDE.groups.io
-      name: CFDE-Coordination
+      link: mailto:"CFDE-Coordination" coordination@CFDE.groups.io
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/CfdeNih
     - icon: fontawesome/brands/github
