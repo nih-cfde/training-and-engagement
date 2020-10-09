@@ -1,6 +1,6 @@
 nav:
   - index.md
-  - install_conda_tutorial
+  - install_conda_tutorial.md
   - Introduction_to_Amazon_Web_Services
   - BLAST-Command-Line
   - GWAS-in-the-cloud
