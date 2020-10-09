@@ -3,10 +3,8 @@ layout: page
 title: Overview
 ---
 
-Tutorial Resources
+Cheat Sheets
 ===========================================
-
-Command line cheatsheets:
 
 - [Bash and nano](./bash_cheatsheet.md)
 - [Conda](./conda_cheatsheet.md)
