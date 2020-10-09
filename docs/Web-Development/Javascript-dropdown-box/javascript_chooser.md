@@ -3,7 +3,7 @@ layout: page
 title: Enabling User Choices with Javascript
 ---
 
-# Enabling User Choices with Javascript 
+# Enabling User Choices with Javascript
 
 There are many instances in a tutorial where you might want to give the user an option
 to only see parts of the content. For instance, you might have instructions for how to
@@ -18,7 +18,7 @@ Javascript to make a simple content chooser that changes the display based on th
 choice of OS.
 
 !!! note "Learning Objectives"
-  
+
     - learn how to create and customize dropdown boxes for webpages
 
 === "Est. Time"
@@ -28,13 +28,13 @@ choice of OS.
 === "Prerequisites"
 
     - a raw web page in markdown with sections you want to be user choosable
-    
+
     - a plain text editor
-    
+
 === "Tutorial Resources"
 
     - [Demo javascript script](./demo_javascript.md)
-    
+
     - [Demo rendered dropdown boxes](./demo_javascript_rendered.md)
 
 ## Overview of the process

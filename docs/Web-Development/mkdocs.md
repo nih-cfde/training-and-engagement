@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Rendering a GitHub website locally with MkDocs
+title: Rendering a GitHub Website Locally with MkDocs
 ---
 
-# Rendering a GitHub website locally with MkDocs
+# Rendering a GitHub Website Locally with MkDocs
 
 MkDocs is a static site generator built for project documentation. It comes with easy to use and customizable themes and features. The documentation files are written in Markdown and configured using a single configuration file in YAML format. The generated site can be hosted on any hosting platform including [GitHub pages](https://pages.github.com), [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) or [readthedocs](https://readthedocs.com/).  
 

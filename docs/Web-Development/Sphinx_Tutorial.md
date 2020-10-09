@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Rendering a GitHub website locally with Sphinx
+title: Rendering a GitHub Website Locally with Sphinx
 ---
 
-# Rendering a GitHub website locally with Sphinx
+# Rendering a GitHub Website Locally with Sphinx
 
 Sphinx is python based tool that enables generation of documentation. Originally intended for python projects, it has versatility to be adapted for any number of projects that generate plain text.
 

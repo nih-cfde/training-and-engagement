@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Rendering a GitHub website locally with Jekyll
+title: Rendering a GitHub Website Locally with Jekyll
 ---
 
-# Rendering a GitHub website locally with Jekyll
+# Rendering a GitHub Website Locally with Jekyll
 
 Jekyll is a static site generator written in Ruby. It can be easily integrated into GitHub pages to host project documentation, blogs or other relevant content.
 
