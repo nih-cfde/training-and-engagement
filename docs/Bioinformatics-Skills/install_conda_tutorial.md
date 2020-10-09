@@ -1,4 +1,4 @@
-# Set up Conda computing environment
+# Set up Conda Computing Environment
 
 Conda makes software installation and compute environment management easier by making sure that all the software you are using for a particular project works together. Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda. From the conda website:
 

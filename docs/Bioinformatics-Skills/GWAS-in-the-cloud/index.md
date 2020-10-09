@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GWAS tutorial overview
+title: GWAS Tutorial Overview
 ---
 
 How to do GWAS in the cloud using Amazon Web Services

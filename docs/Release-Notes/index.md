@@ -9,8 +9,8 @@ Latest Release
 
 ## New Tutorials
 
-- [MIME type tutorial](../CF-Tutorials/MIME-type/index.md)
-- [Adding user choosable content using Javascript](../General-Tutorials/Javascript-dropdown-box/javascript_chooser.md)
+- [Identifying MIME Types](../CFDE-Internal-Training/MIME-type/index.md)
+- [Enabling User Choices with Javascript](../Web-Development/Javascript-dropdown-box/javascript_chooser.md)
 
 ## Website Features
 
@@ -19,6 +19,6 @@ Latest Release
 
 ## Updates and Fixes
 
-- [Set up computing environment with conda on MacOS](../General-Tutorials/install_conda_tutorial.md) - Additional context for conda installation
-- [Snakemake](../Bioinformatics-Tutorials/Snakemake/index.md) - Formatting edits and addition of Resources tab
-- [GWAS in the cloud](../Bioinformatics-Tutorials/GWAS-in-the-cloud/index.md) - GWAS tutorial edits for key access pair, data download and instance recovery
+- [Enabling User Choices with Javascript](../Bioinformatics-Skills/install_conda_tutorial.md) - Additional context for conda installation
+- [Snakemake](../Bioinformatics-Skills/Snakemake/index.md) - Formatting edits and addition of Resources tab
+- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md) - GWAS tutorial edits for key access pair, data download and instance recovery
