@@ -37,7 +37,7 @@ markdown_extensions:
 extra:
   hypothesis: true
   social:
-    - icon: fontawesome/solid/paper-plane
+    - icon: fontawesome/solid/envelope-square
       link: mailto:<email-address>
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/CfdeNih
