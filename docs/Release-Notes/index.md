@@ -20,5 +20,5 @@ Latest Release
 ## Updates and Fixes
 
 - [Set up computing environment with conda on MacOS](../General-Tutorials/install_conda_tutorial.md) - Additional context for conda installation
-- [Snakemake](../Bioinformatics-Tutorials/Snakemake/index.md) - Formatting edits and addition of Resources tab
-- [GWAS in the cloud](../Bioinformatics-Tutorials/GWAS-in-the-cloud/index.md) - GWAS tutorial edits for key access pair, data download and instance recovery
+- [Snakemake Workflow Management](../Bioinformatics-Tutorials/Snakemake/index.md) - Formatting edits and addition of Resources tab
+- [GWAS in the Cloud](../Bioinformatics-Tutorials/GWAS-in-the-cloud/index.md) - GWAS tutorial edits for key access pair, data download and instance recovery

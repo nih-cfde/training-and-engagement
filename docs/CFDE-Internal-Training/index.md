@@ -12,7 +12,7 @@ CFDE-CC:
    - [Editing MkDocs Websites with cfde-bot](cfdebot_website_editing.md)
 
 
-Common Fund DCCs
+Common Fund Programs
 
    - [Identifying MIME type](./MIME-type/index.md)
 
