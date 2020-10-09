@@ -48,7 +48,7 @@ git clone https://github.com/nih-cfde/play-with-github.git
 !!! note "Repo name"
     The example repo is called "play-with-github". You can replace the GitHub URL with any other repo of your choice. The `.git` extension designates a [bare repo](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/)
 
-Once you have cloned your repos (now called directories on your local computer) and want to get started, you need to navigate into the newly created directory and work on a [branch](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions).
+Once you have cloned your repos (now called directories on your local computer) and want to get started, you need to navigate into the newly created directory and work on a [branch](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches).
 
 The command to create a new branch is as follows (you can name your branch whatever you like):
 
@@ -92,7 +92,7 @@ The first line of code adds your changes and the second line of code
 saves your changes. The last line pushes your changes to the main GitHub
 repo as a new branch.
 
-Until your [pull request](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#definitions) is [merged](https://github.com/nih-cfde/organization/blob/master/GitHubUsage.md#merging-pull-requests), you can continue to work on the same branch and push multiple changes. It is not required to create a new branch for ever change. However, after your pull request has been merged and the branch is deleted, any new changes will require to be tracked on a new branch, which incidentally can have the same branch name as previously used.
+Until your [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests) is [merged](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request), you can continue to work on the same branch and push multiple changes. It is not required to create a new branch for ever change. However, after your pull request has been merged and the branch is deleted, any new changes will require to be tracked on a new branch, which incidentally can have the same branch name as previously used.
 
 !!! note "Important housekeeping notes"
     -   It is important to keep the workspace clean by deleting abandoned
