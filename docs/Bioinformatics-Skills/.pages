@@ -4,7 +4,7 @@ nav:
   - Introduction_to_Amazon_Web_Services
   - BLAST-Command-Line
   - GWAS-in-the-cloud
-  - Snakemake
+  - Snakemake Workflow Management: Snakemake
   - Kids-First
   - CFDE-Portal
 

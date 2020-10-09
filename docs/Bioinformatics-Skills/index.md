@@ -10,15 +10,12 @@ Setup & Computing Software:
 
 - [Set up Conda Computing Environment](install_conda_tutorial.md)
 - [Introduction to Amazon Web Services](Introduction_to_Amazon_Web_Services/introtoaws1.md)
-- [BLAST Command Line](BLAST-Command-Line/BLAST1.md)
-- [GWAS in the Cloud](GWAS-in-the-cloud/index.md)
-- [Snakemake Workflow Management](Snakemake/index.md)
 
 Bioinformatics Analysis:
 
-- [BLAST Command Line](./BLAST-Command-Line/BLAST1.md)
-- [GWAS in the Cloud](./GWAS-in-the-cloud/index.md)
-- [Snakemake](./Snakemake/index.md)
+- [BLAST Command Line](BLAST-Command-Line/BLAST1.md)
+- [GWAS in the Cloud](GWAS-in-the-cloud/index.md)
+- [Snakemake Workflow Management](Snakemake/index.md)
 
 Common Fund Data:
 
