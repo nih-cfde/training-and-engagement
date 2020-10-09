@@ -37,6 +37,7 @@ extra:
   social:
     - icon: fontawesome/solid/envelope
       link: mailto:coordination@CFDE.groups.io
+      name: CFDE-Coordination
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/CfdeNih
     - icon: fontawesome/brands/github
