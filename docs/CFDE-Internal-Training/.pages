@@ -1,7 +1,6 @@
 nav:
   - index.md
   - Website-Style-Guide
-  - cfdebot_website_editing.md 
-  - MIME-type
+  - cfdebot_website_editing.md
+  - Identifying MIME Types: MIME-type
   - ProtectedBranch_HowTo.md 
-
