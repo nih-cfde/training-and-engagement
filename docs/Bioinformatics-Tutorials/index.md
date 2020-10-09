@@ -3,10 +3,14 @@ layout: page
 title: Overview
 ---
 
-Bioinformatics tutorials
+Bioinformatics Tutorials
 ===========================================
 
 All currently available bioinformatics tutorials can be found here.
 
-- [GWAS in the cloud](./GWAS-in-the-cloud/index.md)
+
+- [GWAS in the Cloud](./GWAS-in-the-cloud/index.md)
 - [Snakemake](./Snakemake/index.md)
+- [BLAST Command Line](./BLAST-Command-Line/BLAST1.md)
+
+
