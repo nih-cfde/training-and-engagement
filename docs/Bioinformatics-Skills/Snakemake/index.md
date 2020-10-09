@@ -23,24 +23,24 @@ Est. Time | Lesson name | Description
 !!! note "Learning Objectives"
 
     The objectives of this tutorial are to:
-    
+
     - learn how to write basic workflows with Snakemake rules
-    
+
     - learn variable substitution for Snakemake rules
-    
+
     - learn wildcard matching for Snakemake rules
-    
+
     - understand why workflow systems can help you do your computing more easily
 
 
 === "Prerequisites"
-    
+
     This tutorial is written for a Unix or Linux compute environment (e.g., MacOS, Linux-based HPC, pre-configured binder). It assumes basic knowledge of navigating, editing files, and executing scripts from the command line. Some knowledge of Python is useful, but not required.    
 
 
 === "Tutorial Resources"
 
-    Videos: 
+    Videos:
 
     - Part 1: [Introducing the Snakefile and Snakemake](./snakemake_2.md)
 
@@ -50,10 +50,10 @@ Est. Time | Lesson name | Description
 
     [Example Snakefile](./example_snakefile.md)
 
-    Cheatsheets:
+    Cheat sheets:
 
-    - [bash and nano](../../Resources/bash_cheatsheet.md)
-    
-    - [conda](../../Resources/conda_cheatsheet.md)
-  
-    - [Snakemake](../../Resources/snakemake_cheatsheet.md)
+    - [bash and nano](../../Cheat-Sheets/bash_cheatsheet.md)
+
+    - [conda](../../Cheat-Sheets/conda_cheatsheet.md)
+
+    - [Snakemake](../../Cheat-Sheets/snakemake_cheatsheet.md)

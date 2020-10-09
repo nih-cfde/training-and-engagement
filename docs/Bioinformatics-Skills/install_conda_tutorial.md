@@ -6,7 +6,7 @@ Conda makes software installation and compute environment management easier by m
 
 !!! note "Learning Objectives"
 
-    - Install Miniconda 
+    - Install Miniconda
     - Set up a conda environment
 
 === "Est. Time"
@@ -15,17 +15,17 @@ Conda makes software installation and compute environment management easier by m
 
 === "Prerequisites"
 
-    This tutorial is written specifically for installing the MacOS version of Miniconda. 
-    
+    This tutorial is written specifically for installing the MacOS version of Miniconda.
+
 === "Tutorial Resources"
 
-    Please refer to the [conda command cheatsheet](../Resources/conda_cheatsheet.md) for commonly used conda commands!
+    Please refer to the [conda command cheat sheet](../Cheat-Sheets/conda_cheatsheet.md) for commonly used conda commands!
 
 
 ### Step 1: Download the installer
-We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html). 
+We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
-Select the [installer](https://docs.conda.io/en/latest/miniconda.html) for: "Miniconda3 MacOSX 64-bit bash". We are using the 64-bit version for working with Python 3.x. 
+Select the [installer](https://docs.conda.io/en/latest/miniconda.html) for: "Miniconda3 MacOSX 64-bit bash". We are using the 64-bit version for working with Python 3.x.
 
 ### Step 2: Verify your installer hashes
 
@@ -42,7 +42,7 @@ cd Downloads
     ```
 
 === "Expected Output"
-    
+
     ```
     ccc1bded923a790cd61cd17c83c3dcc374dc0415cfa7fb1f71e6a2438236543d  Miniconda3-latest-MacOSX-x86_64.sh
     ```
@@ -80,11 +80,11 @@ Check the version of your new conda installation:
     ```
     conda --version
     ```
-    
+
 === "Expected Output"
 
     If you got a conda version, then you are ready for the next step!
-    
+
     ```
     conda 4.8.3
     ```
@@ -159,4 +159,3 @@ You'll now be back in the `(base)` environment.
 !!! note "Key Points"
 
     Now you should have a working conda installation that you can use to create custom conda environments!
-

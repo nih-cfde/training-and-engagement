@@ -37,7 +37,7 @@ We will use conda to create an computer software for this tutorial. If you don't
 
 !!! Tip
 
-    Please refer to the [conda command cheatsheet](../../Resources/conda_cheatsheet.md) for commonly used conda commands!
+    Please refer to the [conda command cheat sheet](../../Cheat-Sheets/conda_cheatsheet.md) for commonly used conda commands!
 
 ### Step 1: Download tutorial files:
 
