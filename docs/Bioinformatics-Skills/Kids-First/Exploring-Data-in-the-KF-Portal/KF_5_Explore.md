@@ -31,18 +31,18 @@ previously in this lesson to log in.
  When you first log in, you will see
 this screen:
 
-![Kids First Dashboard](../../images/KidsFirstPortal_11.png "Kids First Dashboard")
+![Kids First Dashboard](../../../images/KidsFirstPortal_11.png "Kids First Dashboard")
 
 
 ### Step 2: Navigate to the Explore Data tab
 
 Click on "Explore Data"
 
-![Go To Explore Data](../../images/KidsFirstPortal_12.png "Go To Explore Data")
+![Go To Explore Data](../../../images/KidsFirstPortal_12.png "Go To Explore Data")
 
 You should now be on a page that looks like this:
 
-![Explore Data](../../images/KidsFirstPortal_13.png "Explore Data")
+![Explore Data](../../../images/KidsFirstPortal_13.png "Explore Data")
 
 Exploring the Data
 ------------------

@@ -13,7 +13,7 @@ The other big change on this page is that all of the plots have
 dynamically updated, and this section has been renamed from "All data"
 to "Cohort Results for Query":
 
-![Cohort Results Plots](../../images/KidsFirstPortal_18.png "Cohort Results Plots")
+![Cohort Results Plots](../../../images/KidsFirstPortal_18.png "Cohort Results Plots")
 
 The most notable difference here, is that the distribution in the "Age
 at Diagnosis" plot in the center bottom has narrowed dramatically,
@@ -24,7 +24,7 @@ instance, if you hover your mouse pointer over a bar in the
 "Experimental Strategy" plot of the "Available Data" section,
 you'll get the count of that bar and its x-axis label:
 
-![Extra Plot Information](../../images/KidsFirstPortal_19.png "Extra Plot Information")
+![Extra Plot Information](../../../images/KidsFirstPortal_19.png "Extra Plot Information")
 
 You can continue to filter and refine your cohort by clicking on the bar
 in a chart or slices in a pie chart. Note that each time you make a
@@ -39,7 +39,7 @@ selection in a plot, that filter is added to your query box above.
 If you applied this filter successfully, you should see something like
 the following:
 
-![Filtered by Age and Study](../../images/KidsFirstPortal_20.png "Filtered by Age and Study")
+![Filtered by Age and Study](../../../images/KidsFirstPortal_20.png "Filtered by Age and Study")
 
 
 !!! Note

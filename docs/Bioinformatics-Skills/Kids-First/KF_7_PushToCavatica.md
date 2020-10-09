@@ -10,7 +10,7 @@ Push to Cavatica
 
 Before you start, check your Kids First settings (under you name on the top right) to make sure Data Repository Integrations are connected. Your screen should look like this:
 
-![KFDRC Portal Settings Page](../images/kf_settings_10.png "KFDRC Portal Settings Page")
+![KFDRC Portal Settings Page](../../images/kf_settings_10.png "KFDRC Portal Settings Page")
 
 ## Set filters and choose files
 
@@ -23,7 +23,7 @@ Go back to your [File Repository](https://portal.kidsfirstdrc.org/search/file) t
 
 - Diagnosis (Source Text) --> high grade glioma
 
-![Clinical Filters](../images/Clinical_Filters_11.png "Clinical Filters")
+![Clinical Filters](../../images/Clinical_Filters_11.png "Clinical Filters")
 
 **File Filters**:
 
@@ -31,7 +31,7 @@ Go back to your [File Repository](https://portal.kidsfirstdrc.org/search/file) t
 
 - File Format --> tsv
 
-![File Filters](../images/File_Filters_12.png "File Filters")
+![File Filters](../../images/File_Filters_12.png "File Filters")
 
 On the main screen, scroll to the bottom and select the number of files you wish to view at one time (see blue circle in the clinical filters image above).
 
@@ -51,7 +51,7 @@ A message box pops up. In this case, we are authorized to copy 399 (out of 405) 
 !!! note
     You can also create projects from Cavatica. In Cavatica, under the "Projects" tab, click on the purple "+ Create a project" button and enter a project name. Then click "Create". Your project name should now show up as an option in the Kids First portal when you click the "Analyze in Cavatica" button.
 
-![Create a Cavatica Project](../images/cavatica_project_created_13.png "Create a Cavatica Project")
+![Create a Cavatica Project](../../images/cavatica_project_created_13.png "Create a Cavatica Project")
 
 A message pops up for a few seconds that says the files were transferred successfully. Click on "Open project in Cavatica".
 
@@ -59,19 +59,19 @@ A message pops up for a few seconds that says the files were transferred success
 
 If the pop-up message from the previous section disappears before you can get to it, visit <https://www.cavatica.org> on a new tab and scroll to the bottom of the page. Click the "ACCESS DATA" button.
 
-![ACCESS DATA](../images/access_data_14.png "ACCESS DATA")
+![ACCESS DATA](../../images/access_data_14.png "ACCESS DATA")
 
 Log in to Cavatica with your eRA commons ID (or whichever ID you used to link your Cavatica account to Kids First)
 
-![Cavatica Login](../images/cavatica_login_15.png "Cavatica Login")
+![Cavatica Login](../../images/cavatica_login_15.png "Cavatica Login")
 
 Your Cavatica homepage should look something like this after login:
 
-![Cavatica Homepage](../images/cavatic_homepage_16.png "Cavatica Homepage")
+![Cavatica Homepage](../../images/cavatic_homepage_16.png "Cavatica Homepage")
 
 Click on your project and then click on the Files option next to Dashboard on the top left of the screen.
 
-![Files in Cavatica](../images/cavatica_metadata_17.png "Files in Cavatica")
+![Files in Cavatica](../../images/cavatica_metadata_17.png "Files in Cavatica")
 
 All our files copied over! Hurray!
 

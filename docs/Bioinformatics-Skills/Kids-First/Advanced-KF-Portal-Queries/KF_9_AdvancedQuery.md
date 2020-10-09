@@ -20,4 +20,4 @@ understanding of the basic interface.
 
 === "Answer"
 
-    [![](../../images/KidsFirstPortal_20.png)](../../images/KidsFirstPortal_20.png "Multiple Filters")
+    [![](../../../images/KidsFirstPortal_20.png)](../../../images/KidsFirstPortal_20.png "Multiple Filters")
