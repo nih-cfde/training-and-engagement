@@ -1,7 +1,5 @@
 nav:
  - index.md
- - blood-cancer-portal-export.md
- - blood-cancer-data-access.md
- - movement-disorders-portal-export.md
- - movement-disorders-data-access.md
+ - Blood-Cancer
+ - Movement-Related-Disorders
  
