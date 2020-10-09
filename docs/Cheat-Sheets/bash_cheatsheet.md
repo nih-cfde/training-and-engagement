@@ -1,4 +1,4 @@
-# bash command cheatsheet
+# Bash Command Cheat Sheet
 
 Keyboard shortcuts for terminal:
 

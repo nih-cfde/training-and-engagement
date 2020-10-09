@@ -1,4 +1,4 @@
-# conda command cheatsheet
+# Conda Command Cheat Sheet
 
 conda | Description
 --- | ---

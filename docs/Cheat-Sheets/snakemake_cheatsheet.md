@@ -1,4 +1,4 @@
-# snakemake command cheatsheet
+# Snakemake Command Cheat Sheet
 
 Snakemake | description
 --- | ---

@@ -6,6 +6,6 @@ title: Overview
 Cheat Sheets
 ==============
 
-- [Bash and nano](./bash_cheatsheet.md)
-- [Conda](./conda_cheatsheet.md)
-- [Snakemake](./snakemake_cheatsheet.md )
+- [Bash and nano Commands](./bash_cheatsheet.md)
+- [Conda Commands](./conda_cheatsheet.md)
+- [Snakemake Commands](./snakemake_cheatsheet.md )
