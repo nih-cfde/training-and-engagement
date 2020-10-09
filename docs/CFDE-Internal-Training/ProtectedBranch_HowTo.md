@@ -11,7 +11,6 @@ from making unauthorized changes to that branch. However, you can make multiple 
 accidentally breaks the websites.
 
 
-
 !!! note "Learning Objectives"
 
     - learn about protected branches in GitHub
