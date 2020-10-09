@@ -26,7 +26,13 @@ markdown_extensions:
 - pymdownx.superfences
 - pymdownx.tabbed
 - pymdownx.emoji
+
+- pymdownx.tabbed
 - pymdownx.extra
+- pymdownx.superfences
+
+- pymdownx.extra
+
 - codehilite:
     guess_lang: false
 - toc:
