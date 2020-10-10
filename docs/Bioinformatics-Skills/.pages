@@ -2,7 +2,7 @@ nav:
   - index.md
   - install_conda_tutorial.md
   - Introduction_to_Amazon_Web_Services
-  - BLAST-Command-Line
+  - Command-Line-BLAST
   - GWAS in the Cloud: GWAS-in-the-cloud
   - Snakemake Workflow Management: Snakemake
   - Kids-First
