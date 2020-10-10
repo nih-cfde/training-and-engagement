@@ -1,9 +1,8 @@
 nav:
   - index.md
-  - General-Tutorials
-  - Bioinformatics-Tutorials
-  - Kids-First
-  - CF-Tutorials
-  - Resources
+  - Bioinformatics-Skills
+  - Cheat-Sheets
+  - Web-Development
   - CFDE-Internal-Training
-  - Releases
+  - Release-Notes
+

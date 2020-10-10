@@ -43,7 +43,7 @@ Kids First Files
 For this tutorial, you can also use open access files from the [Kids First Data Portal](https://kidsfirstdrc.org) (KF Data Portal).
 
 !!! note "KF Data Portal Login"
-    Downloading the files requires an account on the [KF data portal](https://kidsfirstdrc.org). You can choose one of three available options (Google, ORCID, Facebook) to setup an account, although we recommend using ORCID if you have one. For more details can be found on the [Registration tutorial for Kids First](../../Kids-First/Portal-Setup-And-Permissions/KF_3_KF_Registration.md).
+    Downloading the files requires an account on the [KF data portal](https://kidsfirstdrc.org). You can choose one of three available options (Google, ORCID, Facebook) to setup an account, although we recommend using ORCID if you have one. For more details can be found on the [Registration tutorial for Kids First](../../Bioinformatics-Skills/Kids-First/Portal-Setup-And-Permissions/KF_3_KF_Registration.md).
 
 Download the [KF_File_ID.csv](./mime_supplementary_files/KF_File_ID.csv). Login to [Kids First Data Portal](https://kidsfirstdrc.org), select `File Repository` and `File Filters`. Scroll all the way down to `Search by File ID` field and click on `upload your list of ids`.
 
