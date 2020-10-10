@@ -19,6 +19,6 @@ Latest Release
 
 ## Updates and Fixes
 
-- [Enabling User Choices with Javascript](../General-Tutorials/install_conda_tutorial.md) - Additional context for conda installation
-- [Snakemake Workflow Management](../Bioinformatics-Tutorials/Snakemake/index.md) - Formatting edits and addition of Resources tab
-- [GWAS in the Cloud](../Bioinformatics-Tutorials/GWAS-in-the-cloud/index.md) - GWAS tutorial edits for key access pair, data download and instance recovery
+- [Set up Conda Computing Environment](../Bioinformatics-Skills/install_conda_tutorial.md) - Additional context for conda installation
+- [Snakemake Workflow Management](../Bioinformatics-Skills/Snakemake/index.md) - Formatting edits and addition of Resources tab
+- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md) - GWAS tutorial edits for key access pair, data download and instance recovery

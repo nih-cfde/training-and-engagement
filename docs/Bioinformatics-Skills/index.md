@@ -13,7 +13,7 @@ Setup & Computing Software:
 
 Bioinformatics Analysis:
 
-- [Command Line BLAST](BLAST-Command-Line/BLAST1.md)
+- [Command Line BLAST](Command-Line-BLAST/BLAST1.md)
 - [GWAS in the Cloud](GWAS-in-the-cloud/index.md)
 - [Snakemake Workflow Management](Snakemake/index.md)
 

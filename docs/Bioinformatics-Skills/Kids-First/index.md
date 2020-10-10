@@ -17,7 +17,7 @@ Our aim is to teach researchers basic concepts, skills, and tools for
 working with data so that they can get more done in less time, and with
 less pain. **The goal of this training module is to enable clinician
 researchers to use the data portal to build cohorts, and to move that
-data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/))**. 
+data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/))**.
 
 Setting up your KF Portal Permissions:
 
@@ -59,15 +59,14 @@ Est. Time | Lesson name | Description
 !!! note "Learning Objectives"
 
     -   learn how to connect your Kids First, Cavatica, and protected access accounts
-    
+
     -   learn how to find and filter Kids First data sets
-    
+
     -   learn how to move your chosen cohort to Cavatica for analysis
-    
+
     -   learn how to apply for access to new data sets
 
 
 === "Prerequisites"
 
      This training assumes a basic background in human medicine. For this tutorial, you'll need a modern web browser (e.g., Chrome, Firefox, Safari). You'll also need 1) either ORCID or Google account and 2) eRA Commons ID credentials to login and connect portals.
-
