@@ -6,7 +6,7 @@ title: Home
 Welcome to Common Fund Data Ecosystem Training Resources
 ========================================================
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <br /> 
 
 <script src="http://thibaultjanbeyer.github.io/carousel-slider.js/cls.min.js"></script>
 
