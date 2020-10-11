@@ -7,16 +7,19 @@ Welcome to Common Fund Data Ecosystem Training Resources
 ========================================================
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <br /> 
-
 <script src="http://thibaultjanbeyer.github.io/carousel-slider.js/cls.min.js"></script>
 
-<div class="carousel-slider" data-width="40vw" data-height="150px">
+<div class="carousel-slider" data-width="640px" data-height="310px" data-speed="2000" data-overflow="hidden">
 	<div class="inner">
-		<div class="slide" style="background:url('free1.jpg'); background-size: cover"></div>
-		<div class="slide" style="background:url('free2.jpg'); background-size: cover"></div>
-		<div class="slide" style="background:url('free3.jpg'); background-size: cover">
-			<div class="content" style="color:white">Text on an image</div>
-		</div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.001.jpeg'); background-size: contain; background-position:   center; background-repeat: no-repeat"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.002.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.003.jpeg'); background-size: cover"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.004.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.005.jpeg'); background-size: cover"></div>	
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.006.jpeg'); background-size: cover"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.007.jpeg'); background-size: cover"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.008.jpeg'); background-size: cover"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.009.jpeg'); background-size: cover"></div>
 	</div>
 	<div class="arrow left"></div>
 	<div class="arrow right"></div>
