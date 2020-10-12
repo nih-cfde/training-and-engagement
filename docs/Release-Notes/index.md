@@ -11,7 +11,7 @@ Latest Release
 
 - [CFDE Portal Tutorial](../Bioinformatics-Skills/CFDE-Portal/index.md)
 - [Command Line BLAST](../Bioninformatics-Skills/Command-Line-BLAST/BLAST1.md)
-- [Introduction to Amazon Web Services(AWS)](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws.md)
+- [Introduction to Amazon Web Services(AWS)](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1.md)
 - [Identifying MIME Types](../CFDE-Internal-Training/MIME-type/index.md)
 - [Enabling User Choices with Javascript](../Web-Development/Javascript-dropdown-box/javascript_chooser.md)
 
