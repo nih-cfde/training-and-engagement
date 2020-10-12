@@ -11,7 +11,7 @@ Welcome to Common Fund Data Ecosystem Training Resources
 
 <div class="carousel-slider" data-width="640px" data-height="310px" data-speed="2000" data-overflow="hidden">
 	<div class="inner">
-		<div class="slide" style="background:url('./images/carousel-images/carousel-images.001.jpeg'); background-size: contain; background-position:   center; background-repeat: no-repeat"></div>
+		<div class="slide" style="background:url('./images/carousel-images/carousel-images.001.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.002.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.003.jpeg'); background-size: cover"></div>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.004.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
@@ -21,8 +21,6 @@ Welcome to Common Fund Data Ecosystem Training Resources
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.008.jpeg'); background-size: cover"></div>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.009.jpeg'); background-size: cover"></div>
 	</div>
-	<div class="arrow left"></div>
-	<div class="arrow right"></div>
 </div>
 
 
