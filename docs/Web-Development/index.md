@@ -15,4 +15,4 @@ Building Websites:
 
 Customization:  
 
-- [Javascript Tutorials](Javascript-dropdown-box/javascript_chooser.md)
+- [Dropdown with Javascript](Javascript-dropdown-box/javascript_chooser.md)
