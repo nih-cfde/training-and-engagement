@@ -9,7 +9,7 @@ Welcome to Common Fund Data Ecosystem Training Resources
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src='./javascripts/cls.min.js'></script>
 
-<div class="carousel-slider" data-width="640px" data-height="310px" data-speed="2000" data-overflow="hidden">
+<div class="carousel-slider" data-width="640px" data-height="310px" data-speed="1000" data-overflow="hidden">
 	<div class="inner">
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.001.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.002.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
