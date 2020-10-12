@@ -18,7 +18,7 @@ Latest Release
 ## Updates and Fixes
 
 - [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md) - PR steps updated
-- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md) - Additional key points with edits for key access pair, data download, and instance recovery 
+- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md) - Additional explanation and context to code, workflow streamlining with edits to key access pair, data download, and instance recovery 
 - [Set up Conda Computing Environment](../Bioinformatics-Skills/install_conda_tutorial.md) - Additional context for conda installation
 - [Snakemake Workflow Management](../Bioinformatics-Skills/Snakemake/index.md) - Formatting edits and addition of Resources tab
 
