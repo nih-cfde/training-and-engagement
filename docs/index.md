@@ -3,12 +3,12 @@ layout: page
 title: Home
 ---
 
-Welcome to Common Fund Data Ecosystem Training Resources
+Welcome to Common Fund Data Ecosystem Training Resources!
 ========================================================
-
-![](./images/CFDEwordcloud.png "CFDE word cloud")
 
 This website contains a growing library of training modules for Common
 Fund Data Centers as well as more general bioinformatics training.
 
 To get started, choose a Lesson Topic from the navigation bar.
+
+![](./images/CFDEwordcloud.png "CFDE word cloud")
