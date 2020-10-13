@@ -33,9 +33,9 @@ choice of OS.
 
 === "Tutorial Resources"
 
-    - [Demo javascript script](./demo_javascript.md)
+    - [Demo javascript script](./Javascript-dropdown-box-resources/demo_javascript.md)
 
-    - [Demo rendered dropdown boxes](./demo_javascript_rendered.md)
+    - [Demo rendered dropdown boxes](./Javascript-dropdown-box-resources/demo_javascript_rendered.md)
 
 ## Overview of the process
 
@@ -546,5 +546,5 @@ defaults in the script, we should add 'selected' to the Windows option here:
     <option value="value_unix" id="id_unix" > UNIX </option></select>
 ```
 
-[Check the full script we made](./demo_javascript.md)! When the script is rendered on a webpage, our webpage
-will have the [dropdown boxes for different operating systems](./demo_javascript_rendered.md)!
+[Check the full script we made](./Javascript-dropdown-box-resources/demo_javascript.md)! When the script is rendered on a webpage, our webpage
+will have the [dropdown boxes for different operating systems](./Javascript-dropdown-box-resources/demo_javascript_rendered.md)!

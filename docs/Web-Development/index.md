@@ -15,4 +15,4 @@ Building Websites:
 
 Customization:  
 
-- [Dropdown with Javascript](Javascript-dropdown-box/javascript_chooser.md)
+- [Enabling User Choices with Javascript](javascript_chooser.md)
