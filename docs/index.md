@@ -3,12 +3,16 @@ layout: page
 title: Home
 ---
 
-Welcome to Common Fund Data Ecosystem Training Resources!
-========================================================
+# Welcome to the CFDE Training Resource Center!
 
-This website contains a growing library of training modules for Common
-Fund Data Centers as well as more general bioinformatics training.
+Our mission as the Common Fund Data Ecosystem (CFDE) Coordinating Center is to make Common Fund (CF) data accessible to researchers like you. Choose from our growing list of tutorials and resources to learn how to access data and perform bioinformatic analyses. 
 
-To get started, choose a Lesson Topic from the navigation bar.
+To get started, visit the [Bioinformatics Skills](./Bioinformatics-Skills/index.md) section to learn how to set up a computing environment and conduct common bioinformatic analyses. 
+
+Learn how to build cohorts at the [Kids First portal](./Bioinformatics-Skills/Kids-First/index.md) and across multiple CF datasets using the [CFDE Portal](./Bioinformatics-Skills/CFDE-Portal/index.md).
 
 ![](./images/CFDEwordcloud.png "CFDE word cloud")
+
+Check the [release notes](./Release-Notes/index.md) for our latest tutorial updates. If you have comments or suggestions, please [contact us](mailto:coordination@CFDE.groups.io)!
+
+
