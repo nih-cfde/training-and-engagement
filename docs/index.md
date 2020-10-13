@@ -11,10 +11,10 @@ Welcome to Common Fund Data Ecosystem Training Resources
 
 <div class="carousel-slider" data-width="640px" data-height="310px" data-speed="1000" data-overflow="hidden">
 	<div class="inner">
-		<div class="slide" style="background:url('./images/carousel-images/carousel-images.001.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
-		<div class="slide" style="background:url('./images/carousel-images/carousel-images.002.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
+    <div class="slide" style="background:url('./images/carousel-images/carousel-images.001.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
+	  <a class="slide" style="background:url('./images/carousel-images/carousel-images.002.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat" href="./Bioinformatics-Skills/Kids-First/index.md"></a>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.003.jpeg'); background-size: cover"></div>
-		<div class="slide" style="background:url('./images/carousel-images/carousel-images.004.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat"></div>
+		<a class="slide" style="background:url('./images/carousel-images/carousel-images.004.jpeg'); background-size: contain; background-position: center; background-repeat: no-repeat" href="../../Bioinformatics-Skills/Kids-First/index.md"></a>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.005.jpeg'); background-size: cover"></div>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.006.jpeg'); background-size: cover"></div>
 		<div class="slide" style="background:url('./images/carousel-images/carousel-images.007.jpeg'); background-size: cover"></div>
