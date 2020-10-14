@@ -7,7 +7,7 @@ title: Overview
 Web Development
 ==================
 
-Tutorials in this section include building static websites in the user's local machine to serve on any compatible hosting provider's platform. Steps to customize a site by creating a dropdown list with javascript are also available. 
+The Building Websites tutorials describe how to render GitHub Websites locally on a variety of platforms and hardware. The Customization section includes a Javascript tutorial for creating a content chooser in web pages (enabling users to choose from different versions of page content).
 
 Building Websites:
 
