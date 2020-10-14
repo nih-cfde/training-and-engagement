@@ -20,7 +20,7 @@ Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the
 
 ### Step 2: Choose virtual machine
 
-For this tutorial, it is important to select the "US West (N. California)" amazon machine image. The geographical region of your remote machine is displayed on the top right of this page:
+For this tutorial, it is important to select your current geographical location. The geographical region of your remote machine is displayed on the top right of this page:
 
 ![AWS Dashboard](../../images/aws_2.PNG "AWS amazon machine selection")
 
@@ -34,7 +34,7 @@ Click on "EC2":
 
 !!! Note
          
-         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilised the most. 
+         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilized the most. 
 
 Click on "Launch Instance":
 
@@ -68,7 +68,7 @@ Select the row with `t2.micro`, the free tier eligible option:
     
     The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use (limited) services without being charged. Limits could be based on how much storage you have access to and/or how many hours of compute you can perform in a one month.
 
-### Step 5: Set up optional configurations
+### Step 5: Optional Configurations
 
 There are several optional set up configurations. You can either click "Review and Launch" now to start the instance we've configured thus far in the tutorial without these additional configurations or as necessary, click on the following tabs to continue configuring. Start the first option by clicking "Next: Configure Instance Details" on the AWS page.
 
