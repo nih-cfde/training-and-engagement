@@ -6,14 +6,14 @@ title: Overview
 Bioinformatics Skills
 =======================
 
-The current tutorials are divided into three categories 1) finding datasets for analysis 2) setting up the compute environment for analysis 3) analysis using established algorithms and streamlining with workflows.
+Our Bioinformatics Skills tutorials provide lessons for finding data sets, setting up compute environments for analysis, and hands on bioninformatics analysis. 
 
-Common Fund Data:
+Common Fund Data - Finding Datasets for Analysis:
 
 - [Kids First Tutorials](Kids-First/index.md)
 - [CFDE Portal Tutorials](CFDE-Portal/index.md)
 
-Setup & Computing Software:
+Software and Compute Set up for Analysis:
 
 - [Set up Conda Computing Environment](install_conda_tutorial.md)
 - [Introduction to Amazon Web Services](Introduction_to_Amazon_Web_Services/introtoaws1.md)
