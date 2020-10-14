@@ -6,7 +6,7 @@ title: Overview
 CFDE Internal Training
 =========================
 
-This section lists tutorials for working in GitHub, the preferred project management platform for CFDE, along with essential resources for contributing to the website. Tutorial for MIME type is specifically aimed at CF programs as part of their data ingest workflow for CFDE Portal.
+This section lists tutorials for working in GitHub, the preferred project management platform for CFDE, along with essential resources for contributing to the website. The tutorial for identifying MIME type is specifically aimed at CF programs as part of their data ingest workflow for the CFDE Portal.
 
 CFDE-CC:
 
