@@ -1,0 +1,5 @@
+nav:
+  - index.md
+  - Bash and nano commands: bash_cheatsheet.md
+  - Conda commands: conda_cheatsheet.md
+  - Snakemake commands: snakemake_cheatsheet.md

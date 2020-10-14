@@ -3,4 +3,4 @@ nav:
  - Jekyll_Tutorial.md
  - Sphinx_Tutorial.md
  - mkdocs.md
- - Javascript-dropdown-box
+ - Enabling User Choices with Javascript: javascript_chooser.md
