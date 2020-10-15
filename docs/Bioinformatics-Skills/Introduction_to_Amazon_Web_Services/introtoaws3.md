@@ -24,6 +24,9 @@ For this tutorial, it is important to select your current geographical location.
 
 ![AWS Dashboard](../../images/aws_2.PNG "AWS amazon machine selection")
 
+!!! note "AWS Region"
+    The default region is automatically displayed in the AWS Dashboard. [Find more information](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan- region.html) about choosing a AWS region and its implication on fees, speed and performance.
+
 Click on "Services" (upper left):
 
 ![AWS Services](../../images/aws_3.png "AWS Services button")
