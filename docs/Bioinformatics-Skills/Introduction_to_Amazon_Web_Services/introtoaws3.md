@@ -15,7 +15,7 @@ Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the
           If you need to create an account, please follow the [AWS instructions for creating an account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 
 !!! Warning
-    
+
     If you are creating a new account, it could take up to 24 hours to be activated. You'll need a credit card to set up the account.
 
 ### Step 2: Choose virtual machine
@@ -25,8 +25,9 @@ For this tutorial, select the AWS region that is closest to your current geograp
 ![AWS Dashboard](../../images/aws_2.PNG "AWS amazon machine selection")
 
 !!! note "AWS Region"
-    The default region is automatically displayed in the AWS Dashboard. The [choice of region](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan- region.html) has implications on fees, speed, and performance.
-    
+
+    The default region is automatically displayed in the AWS Dashboard. The [choice of region](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-region.html) has implications on fees, speed, and performance.
+
 Click on "Services" (upper left):
 
 ![AWS Services](../../images/aws_3.png "AWS Services button")
@@ -36,8 +37,8 @@ Click on "EC2":
 ![EC2](../../images/aws_4.png "AWS EC2 button")
 
 !!! Note
-         
-         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilized the most. 
+
+         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilized the most.
 
 Click on "Launch Instance":
 
@@ -68,7 +69,7 @@ Select the row with `t2.micro`, the free tier eligible option:
 ![t2.micro](../../images/aws_8.png "t2 micro instance type")
 
 !!! Note
-    
+
     The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use (limited) services without being charged. Limits could be based on how much storage you have access to and/or how many hours of compute you can perform in a one month.
 
 ### Step 5: Optional Configurations
@@ -95,11 +96,11 @@ There are several optional set up configurations. You can either click "Review a
 
 ### Step 6: Review and Launch instance
 
-After configuration settings are complete, click "Review and Launch" and "Launch". If you are launching an AWS instance for the first time, you will need to generate a key pair. 
+After configuration settings are complete, click "Review and Launch" and "Launch". If you are launching an AWS instance for the first time, you will need to generate a key pair.
 
 Choose the "Create a new key pair" option from the drop down menu. Under key pair name, type "amazon" and click "save". The default location for saving files on a Mac is the "Downloads" folder -- that's where your key pair can be found. Next time you launch an instance, you can reuse the key pair you just generated.
 
-If you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, we are calling the key pair "amazon.pem". 
+If you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, we are calling the key pair "amazon.pem".
 
 ![mobaxterm](../../images/aws_10.png "key pair set up")
 
@@ -117,16 +118,8 @@ Click on this first hyperlink, in the image above, "i-038c58bfbe9612c57". Your h
 
 This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't qualify for the Free Tier. On this page, there is a "Public DNS" address, with the format `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. You'll need this address to connect to your AWS computer.
 
-You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS computer, so do not close the page yet. 
+You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS computer, so do not close the page yet.
 
 If you happen to close the webpage on accident, [click on this link](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId)
 
 Continue on to the next lesson to learn how to connect to your AWS computer!
-
-
-
-
-
-
-
-
