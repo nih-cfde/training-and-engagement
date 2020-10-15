@@ -6,7 +6,7 @@ title: Overview
 Bioinformatics Skills
 =======================
 
-Our Bioinformatics Skills tutorials provide lessons for finding data sets, setting up compute environments for analysis, and hands on bioninformatics analysis. 
+Tutorials in this section provide lessons for finding data sets, setting up compute environments for analysis, and hands on bioinformatics analysis. 
 
 Common Fund Data - Finding Datasets for Analysis:
 
