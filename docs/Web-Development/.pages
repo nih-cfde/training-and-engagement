@@ -1,0 +1,6 @@
+nav:
+ - index.md
+ - Jekyll_Tutorial.md
+ - Sphinx_Tutorial.md
+ - mkdocs.md
+ - Enabling User Choices with Javascript: javascript_chooser.md

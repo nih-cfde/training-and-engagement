@@ -1,13 +1,12 @@
 site_name: Common Fund Data Ecosystem Training
 
-repo_url: https://github.com/nih-cfde/training-and-engagement
-
 theme:
   name: material
   palette:
     primary: white
   features:
-    - tabs
+    - navigation.tabs
+    - navigation.instant
   logo: images/CFDE-logo.png
   custom_dir: docs/templates
 docs_dir: docs
@@ -17,20 +16,39 @@ plugins:
       separator: '[\s\-\.]+'
   - awesome-pages
   - git-revision-date-localized
-  - htmlproofer
+  #- htmlproofer
 
 markdown_extensions:
 - admonition
 - pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed
 - pymdownx.emoji
+- pymdownx.tabbed
+- pymdownx.extra
+- pymdownx.superfences
+- pymdownx.extra
+- pymdownx.highlight
+- pymdownx.keys
+- pymdownx.inlinehilite
+
 - codehilite:
     guess_lang: false
 - toc:
     permalink: true
 extra:
   hypothesis: true
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:CFDE-Coordination%20<coordination@CFDE.groups.io>
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/CfdeNih
+    - icon: fontawesome/brands/github
+      link: https://github.com/nih-cfde/training-and-engagement/tree/stable
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/asciinema-player.css
 extra_javascript:
   - javascripts/medium-zoom.min.js
   - javascripts/extra.js
+  - javascripts/asciinema-player.js

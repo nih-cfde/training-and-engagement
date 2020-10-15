@@ -1,0 +1,11 @@
+nav:
+ - index.md
+ - Intro_MIME_type.md
+ - Example_data_files.md
+ - file.md
+ - mimetype.md
+ - xdg-utils.md
+ - siegfried.md
+ - Multiple_file_MIME.md
+ - Unexpected_behavior.md
+ 

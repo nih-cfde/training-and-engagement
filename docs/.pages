@@ -1,5 +1,8 @@
-arrange:
+nav:
   - index.md
-  - General-Tutorials
-  - Bioinformatics-Tutorials
-  - Kids-First
+  - Bioinformatics-Skills
+  - Cheat-Sheets
+  - Web-Development
+  - CFDE-Internal-Training
+  - Release-Notes
+

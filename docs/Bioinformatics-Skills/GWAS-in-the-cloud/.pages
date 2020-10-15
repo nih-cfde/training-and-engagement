@@ -1,0 +1,11 @@
+nav:
+ - index.md
+ - background.md
+ - aws_instance_setup.md
+ - download_accessAWS.md
+ - plink_install.md
+ - vcftools_install.md
+ - RStudio.md
+ - analyze.md
+ - manhattan.md
+ - terminate_aws.md
