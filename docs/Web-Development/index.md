@@ -7,7 +7,7 @@ title: Overview
 Web Development
 ==================
 
-The Building Websites tutorials describe how to render GitHub Websites locally on a variety of platforms and hardware. The Customization section includes a Javascript tutorial for creating a content chooser in web pages (enabling users to choose from different versions of page content).
+The Building Websites tutorials describe how to render GitHub Websites locally on a variety of platforms and hardware. The Customization section includes a Javascript tutorial for creating a dropdown list in web pages (enabling users to choose from different versions of page content).
 
 Building Websites:
 
