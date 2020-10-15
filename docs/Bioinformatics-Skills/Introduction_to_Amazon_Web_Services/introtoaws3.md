@@ -20,13 +20,13 @@ Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the
 
 ### Step 2: Choose virtual machine
 
-For this tutorial, it is important to select your current geographical location. The geographical region of your remote machine is displayed on the top right of this page:
+For this tutorial, select the AWS region that is closest to your current geographic location. The AWS region of your remote machine is displayed on the top right of this page:
 
 ![AWS Dashboard](../../images/aws_2.PNG "AWS amazon machine selection")
 
 !!! note "AWS Region"
-    The default region is automatically displayed in the AWS Dashboard. [Find more information](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan- region.html) about choosing a AWS region and its implication on fees, speed and performance.
-
+    The default region is automatically displayed in the AWS Dashboard. The [choice of region](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan- region.html) has implications on fees, speed, and performance.
+    
 Click on "Services" (upper left):
 
 ![AWS Services](../../images/aws_3.png "AWS Services button")
