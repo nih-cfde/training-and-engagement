@@ -18,7 +18,8 @@ Time | Section | About
 
 === "Resources"
 
-    [Tutorial template markdown doc](./tutorial_template_docs/TutorialTemplate.md)
+    - [Tutorial template markdown doc](./tutorial_template_docs/TutorialTemplate.md)
+    - [Powerpoint slide template](./tutorial_template_docs/Template Powerpoint.pptx)
 
 
 Location of important files in the training Github repo:
