@@ -12,7 +12,7 @@
 
 ## Video format guide
 
-Vidlets will have accompanying video, text translation, and audio. They will typically be a few hundred MB in size. We are currently using Kaltura via [AggieVideo Services](https://video.ucdavis.edu/) to host vidlets (requires membership). Vidlets with or without narrator view should be used to demonstrate a concept, tasks that may require multiple windows, or tasks that may require explanation of UI with/without clicks. Short vidlets can also be used for video walkthroughs for UI. The vidlet should be complete in itself with respect to content without relying on the associated tutorial text. Setup, installation, and introductory concepts are good choices for vidlets.
+Vidlets will have accompanying video, text translation, and audio. They will typically be a few hundred MB in size. We are currently using Kaltura via [AggieVideo Services](https://video.ucdavis.edu/) to host vidlets (requires membership). Vidlets with or without narrator view should be used to demonstrate a concept, tasks that may require multiple windows, or tasks that may require explanation of UI with/without clicks. Short vidlets can also be used for video walkthroughs for UI. The vidlet should be complete in itself with respect to content without relying on the associated tutorial text. Setup, installation, and introductory concepts are good choices for vidlets. Please use the [powerpoint slide template](./tutorial_template_docs/Template Powerpoint.pptx), if there is a slide presentation in the vidlet.
 
 - pacing: total length should be ~15 minutes or less
 - uploading and editing videos requires an account on AggieVideo
