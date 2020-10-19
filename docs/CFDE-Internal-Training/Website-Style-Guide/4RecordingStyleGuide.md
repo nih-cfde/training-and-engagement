@@ -25,7 +25,7 @@ Vidlets will have accompanying video, text translation, and audio. They will typ
     - vidlets should have
         - titles overlaid on the video ([use intro title slide](https://drive.google.com/drive/u/0/folders/14dOaf7-G4k7rCw5mL2Q5jdRWXrO0Y5i-)) at the start of the video
         - CFDE Logo watermark in the bottom left side of the screen
-    - used iMovies or DaVinci Resolve for editing
+    - use iMovies or DaVinci Resolve for editing
 
 Screencasts have a `.cast` extension and are typically in the order of tens of KB. Screencasts can be used to showcase a code chunk for a tool/utility or some series of commands to accomplish a task. Screencasts should not be used for running long scripts or commands that have a long execute time. The screencasts should include the commands and the associated text comments for clarity. The screencasts are currently hosted in a subfolder within the associated tutorial directory.
 
