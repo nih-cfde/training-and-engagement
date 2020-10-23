@@ -4,7 +4,7 @@ The website uses several forms of navigation:
 
 Navigation type | Specified in | About
 --- | --- | ---
-Navigation tabs | name of tutorial folder, separated by hyphens (e.g., 'Bioinformatics-Tutorials/' is rendered as 'Bioinformatics Tutorials')* | Organized by tutorial type (**at the moment**)
+Navigation tabs | name of tutorial folder, separated by hyphens (e.g., 'Bioinformatics-Skills/' is rendered as 'Bioinformatics Skills')* | Currently organized by topic and user type 
 Left TOC | `.pages` | Table of contents for each tab and tutorial (if there are multiple pages)
 Right TOC | `#`, `##`, etc. markdown headers | Table of contents for each tutorial page
 Tab overview | `index.md` for tab section | Landing page describing the contents of the tab

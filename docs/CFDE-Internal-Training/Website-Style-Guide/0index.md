@@ -16,6 +16,10 @@ Time | Section | About
 
     To contribute to the CFDE's website, you must be onboarded to the CFDE. Contact us for help if you're interested in contributing training materials!
 
+=== "Resources"
+
+    [Tutorial template markdown doc](./tutorial_template_docs/TutorialTemplate.md)
+
 
 Location of important files in the training Github repo:
 ```
