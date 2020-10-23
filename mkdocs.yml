@@ -1,15 +1,20 @@
 site_name: Common Fund Data Ecosystem Training
+site_description: >-
+  Our mission as the Common Fund Data Ecosystem (CFDE) Coordination Center is to make Common Fund (CF) data accessible to researchers like you! </br></br>Choose from our growing list of tutorials and resources to learn how to perform bioinformatic analyses and access data
+
 
 theme:
   name: material
   palette:
-    primary: white
+    primary: indigo
   features:
     - navigation.tabs
     - navigation.instant
-  logo: images/CFDE-logo.png
-  custom_dir: docs/templates
-docs_dir: docs
+  favicon: images/CFDE-logo-white-outline.png
+  logo: images/CFDE-logo-white-outline.png
+  custom_dir: custom
+  docs_dir: docs
+
 
 plugins:
   - search: # necessary for search to work
@@ -50,6 +55,7 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/asciinema-player.css
+  - stylesheets/overrides.min.css
 extra_javascript:
   - javascripts/medium-zoom.min.js
   - javascripts/extra.js

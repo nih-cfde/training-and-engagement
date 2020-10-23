@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  <a href="mailto:CFDE-Coordination%20<coordination@CFDE.groups.io">
+    <strong>Contact us! </strong>
+    <span class="twemoji email">
+      {% include ".icons/fontawesome/solid/envelope.svg" %}
+    </span>
+  </a>
+  <a href="https://twitter.com/CfdeNih">
+    <span class="twemoji twitter">
+      {% include ".icons/fontawesome/brands/twitter.svg" %}
+    </span>
+  </a>
+  <a href="https://github.com/nih-cfde/training-and-engagement/tree/stable">
+    <span class="twemoji github">
+      {% include ".icons/fontawesome/brands/github.svg" %}
+    </span>
+  </a>
+{% endblock %}
+
+{% block analytics %}
+  <script async defer data-domain="cfde-training-and-engagement.readthedocs-hosted.com/en/latest" src="https://plausible.io/js/plausible.js"></script>
+{% endblock %}
+
+{% block disqus %}
+    {% include "partials/integrations/disqus.html" %}
+{% endblock %}

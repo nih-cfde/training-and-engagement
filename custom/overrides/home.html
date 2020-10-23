@@ -1,0 +1,110 @@
+{% extends "overrides/main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/overrides.min.css' | url }}">
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+          <div class="slider">
+            <input type="radio" name="toggle" id="btn-1" checked>
+            <input type="radio" name="toggle" id="btn-2">
+            <input type="radio" name="toggle" id="btn-3">
+            <input type="radio" name="toggle" id="btn-4">
+            <input type="radio" name="toggle" id="btn-5">
+            <input type="radio" name="toggle" id="btn-6">
+            <input type="radio" name="toggle" id="btn-7">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+              <label for="btn-4"></label>
+              <label for="btn-5"></label>
+              <label for="btn-6"></label>
+              <label for="btn-7"></label>
+            </div>
+            <ul class="slides">
+              <li class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">New at CFDE Training</h2>
+                  <p class="slide-text"><em>Explore our latest tutorial additions and </br>discover lessons across a broad spectrum </br>of technical topics.</em></p>
+                  <a href="./Release-Notes/" class="slide-link">Learn more</a>
+                </div>
+                <p class="slide-image">
+                  <img src="{{ 'assets/carousel-images/carousel-images.001.jpeg' | url }}" alt="stuff" width="320" height="240">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">GWAS in the Cloud</h2>
+                  <p class="slide-text"><em>Analyse genetic variants to obtain </br>correlations to phenotypes and visualize </br>using a Manhattan plot.</em></p>
+                  <a href="./Bioinformatics-Skills/GWAS-in-the-cloud/" class="slide-link">Get Started</a>
+                </div>
+                <p class="slide-image">
+                  <img src="{{ 'assets/carousel-images/carousel-images.002.jpeg' | url }}" alt="stuff" width="320" height="240">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">AWS</h2>
+                  <p class="slide-text"><em>Learn to connect, setup and conduct </br>analysis using Amazon's cloud </br>computing services.</em></p>
+                  <a href="./Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1" class="slide-link">Get Started</a>
+                </div>
+                <p class="slide-image">
+                  <img src="{{ 'assets/carousel-images/carousel-images.003.jpeg' | url }}" alt="stuff" width="320" height="240">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">Snakemake Workflows</h2>
+                  <p class="slide-text"><em>Get introduced to Snakemake workflow managmenet system, a tool to create reproducible and scalable data analysis.</em></p>
+                  <a href="./Bioinformatics-Skills/Snakemake/"  class="slide-link">Get started</a>
+                </div>
+                <p class="slide-image">
+                  <img src="{{ 'assets/carousel-images/carousel-images.004.jpeg' | url }}" alt="stuff" width="320" height="240">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">CFDE Data Portal</h2>
+                  <p class="slide-text"><em>Discover multiple datasets across all </br>Common Fund programs and generate </br>data manifests all in one single search.</em></p>
+                  <a href="./Bioinformatics-Skills/CFDE-Portal/" class="slide-link">Get started</a>
+                </div>
+                <p class="slide-image">
+                  <img src="{{ 'assets/carousel-images/carousel-images.006.jpeg' | url }}" alt="stuff" width="320" height="240">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">Analysis with Cavatica</h2>
+                  <p class="slide-text"><em>Explore transfer, analysis and </br>download of Kids First data using </br>Cavatica cloud platform.</em></p>
+                  <a href="./Bioinformatics-Skills/Kids-First/KF_7_PushToCavatica/" class="slide-link">Get Started</a>
+                </div>
+                <p class="slide-image">
+                  <img src="{{ 'assets/carousel-images/carousel-images.005.jpeg' | url }}" alt="stuff" width="320" height="240">
+                </p>
+              </li>
+              <li class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">CFDE Internal Resources</h2>
+                  <p class="slide-text"><em>Find lessons on navigating GitHub, </br>contributing to our websites and </br>identifying MIME type.</em></p>
+                  <a href="./CFDE-Internal-Training/" class="slide-link">Get Started</a>
+                </div>
+                <p class="slide-image">
+                  <img src="{{ 'assets/carousel-images/carousel-images.007.jpeg' | url }}" alt="stuff" width="320" height="240">
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tx-hero__content">
+          <h1>Welcome to CFDE Training Resources!</h1>
+          <p>{{ config.site_description }}. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
