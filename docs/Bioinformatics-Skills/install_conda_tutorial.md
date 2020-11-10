@@ -53,11 +53,11 @@ cd Downloads
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
-- you will be asked to review the license. Hit `RETURN` key and scroll through.
+- you will be asked to review the license. Hit ++enter++ key and scroll through.
 
 - you will be asked if you accept the license terms. Type `yes`.
 
-- Miniconda will be installed in the location printed on the screen. Hit `RETURN` key to confirm.
+- Miniconda will be installed in the location printed on the screen. Hit ++enter++ key to confirm.
 
 - Miniconda will now be installed. This takes a few minutes to complete. The progress will be displayed in the Terminal window.
 
@@ -114,7 +114,8 @@ This takes a few minutes (you'll see the message "Solving environment"). Conda w
 More options to customize the environment are documented under the help page for this command: `conda create -h`.
 
 If you want to create an environment from a text file called "environment.yml" that specifies the environment's requirements, the command would look like this:
-`conda env create -n <new conda env name> -f environment.yml`. The `-f` flag specifies the `.yml` file that contains software requirements.
+
+`conda env create -n <new conda env name> -f environment.yml`. The `-f` flag specifies the ".yml" file that contains software requirements.
 
 ### Step 7: Activate conda environment
 

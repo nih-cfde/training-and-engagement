@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Introduction to Amazon Web Services
 ---
 
 # Introduction to Amazon Web Services
@@ -16,10 +15,6 @@ Est. time | Lesson name | Description
 
     - introduce researchers to cloud computing resources and how to use them
     
-    - learn how to connect to an instance (virtual server) in Amazon's Elastic Compute Cloud (EC2)
-    
-    - learn how to transfer files to or from the instance in Amazon EC2
-    
     - learn how to terminate an instance
 
 === "Prerequisites"
@@ -34,18 +29,3 @@ Est. time | Lesson name | Description
 === "Tutorial Resources"
 
     [Vidlet: Setting up an AWS instance](./introtoaws2.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
