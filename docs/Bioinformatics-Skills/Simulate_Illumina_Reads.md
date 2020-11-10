@@ -50,17 +50,14 @@ Now you can install InSilicoSeq:
 
 InSilicoSeq simulates reads based on one or more input reference genomes. You will use the human reference genome GRCh38.
 
-First, make a directory called "reference_genome" using the command `mkdir`. Then download the compressed (".gz" extension) human reference genome inside the new folder and unzip the ".fasta" file.
+First, make a directory called "reference_genome" using the command `mkdir`. Then download the compressed (".gz" extension) human reference genome inside the new folder and unzip the ".fna" file.
 
 === "AWS Instance Code"
 
     ```
     mkdir reference_genome
-
     cd reference_genome
-
     curl -LO ftp://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh38_latest/refseq_identifiers/GRCh38_latest_genomic.fna.gz
-
     gunzip GRCh38_latest_genomic.fna.gz
     ```
 
@@ -77,8 +74,6 @@ For the Ubuntu machine to recognize the InSilicoSeq executable, we need to add t
 
 Now your Ubuntu machine should be able to find InSilicoSeq.
 
-
-
 ## Running InSilicoSeq
 
 Make a directory called "fastq" in which the simulated fastq files can be saved.
@@ -92,7 +87,7 @@ Make a directory called "fastq" in which the simulated fastq files can be saved.
 
 Finally, run the code to make your simulated fastq file.
 
-=== "Code"
+=== "AWS Instance Code"
 
     ```
     iss generate --genomes ../reference_genome/GRCh38_latest_genomic.fna --model hiseq --n_reads 5M --cpus 4 --output my_sim --compress true
@@ -136,48 +131,86 @@ If your run is successful, you will see two ".fastq" files, "my_sim_1.fastq" and
 
 If you want to repeat the simulation multiple times, modify this code block by changing the `n` to an integer corresponding to the number of time you wish to run the simulation. Your output files will be names 1_my_sim, 2_my_sim, ..., n_my_sim.
 
+=== "AWS Instance Code"
 
-```
-for i in {1..n};
-do iss generate --genomes ../reference_genome/GRCh38_latest_genomic.fna --model hiseq --n_reads 5M --cpus 4 --output ${i}_my_sim;
-done
-```
+    ```
+    for i in {1..n};
+    do iss generate --genomes ../reference_genome/GRCh38_latest_genomic.fna --model hiseq --n_reads 5M --cpus 4 --compress true --output ${i}_my_sim;
+    done
+    ```
 
-!!! Note
+!!! Warning
     Depending on how many times you run the simulation and/or how many reads you simulate, the code may take a really long time to complete!
 
 
 
 
 ## Quality control
-With real data, one must always perform some simple quality control to ensure that the raw data looks good. With simulated data, you can do some quality control to make sure nothing went terrible wrong with the simulation and that you have the desired read length.
+
+With real data, one must always perform some simple quality control to ensure that the raw data looks good. With simulated data, you can do some quality control to make sure nothing went terrible wrong with the simulation itself and that you have the desired read length.
 
 Let's use FastQC to generate a quality control report.
 
-### FastQC
+### Install FastQC
 
-Install
+To install FastQC run this code:
+
+=== "AWS Instance Code"
 
     ```
-    apt install fastqc
-    pip3 install multiqc
+    sudo apt install fastqc
     ```
-Running
+
+### Run FastQC
+Now run FastQC on your fastq files:
+
+=== "AWS Instance Code"
 
     ```
     cd fastqc
     fastqc *.gz
+    ```
+You are using the `*` wildcard to help specify all of the .fastq.gz files here.
+
+### Transfer to Local Computer
+
+The easiest way to visualize the output is to transfer it to your local computer. First, let's list all the files and pull out the report summaries (.html) using ls:
+
+=== "AWS Instance Code"
+
+    ```
     ls *fastqc.zip
     ls *.html
     ```
-Move the html onto local computer to visualize
+
+Now you can move the ".html" files to your local computer to visualize:
 
     ```
-    scp -i ~/Desktop/amazon.pem ubuntu@ec2-18-191-250-44.us-east-2.compute.amazonaws.com:/home/ubuntu/fastq/\*.html ~/Desktop/fastqc/.
+    scp -i ~/Desktop/amazon.pem ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/fastq/\*.html ~/Desktop/fastqc/.
     ```
 
-They all seem to be 125 bp long. Which is a good size to work with :)
+!!! Important
 
+    Remember to replace:
+
+    - `~/Desktop/amazon.pem` with the [path to your amazon.pem](GWAS-in-the-cloud/aws_instance_setup.md)
+
+    - `??-???-???-??.us-east-2.compute.amazonaws.com` with your specific instance. For more details on how to connect to an instance, visit the [AWS set up page of the "GWAS in the Cloud" tutorial](GWAS-in-the-cloud/download_accessAWS.md).
+
+
+Here is an image of the top of an example FastQC report.
+
+![FastQC report](../images/Simulated_Data_Fastqc.png)
+
+
+
+### Interpretation
+
+**Watch this [YouTube video](https://www.youtube.com/watch?v=bz93ReOv87Y) on how to interpret FastQC results**:
+
+[![FastQC video tutorial](http://img.youtube.com/vi/bz93ReOv87Y/0.jpg)](https://www.youtube.com/watch?v=bz93ReOv87Y "FastQC Interpretation")
+
+All simulated reads are 125 bp long :)
 
 ## Additional Resources
 
@@ -190,3 +223,7 @@ They all seem to be 125 bp long. Which is a good size to work with :)
 [Human reference genome download](https://www.ncbi.nlm.nih.gov/genome/guide/human/)
 
 [Recommended read dept and coverage for NGS applications](https://genohub.com/recommended-sequencing-coverage-by-application/)
+
+[What is FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+
+[FastQC video tutorial](https://www.youtube.com/watch?v=bz93ReOv87Y)
