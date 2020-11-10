@@ -16,6 +16,7 @@ Bioinformatics Analysis:
 - [BLAST Command Line](BLAST-Command-Line/BLAST1.md)
 - [GWAS in the Cloud](GWAS-in-the-cloud/index.md)
 - [Snakemake Workflow Management](Snakemake/index.md)
+- [Simulate Illumina Reads](Simulate_Illumina_Reads.md)
 
 Common Fund Data:
 
