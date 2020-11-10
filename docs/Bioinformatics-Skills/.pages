@@ -7,4 +7,4 @@ nav:
   - Command-Line-BLAST
   - GWAS in the Cloud: GWAS-in-the-cloud
   - Snakemake Workflow Management: Snakemake
-  - Simulate_Illumina_Reads
+  - Simulate_Illumina_Reads.md

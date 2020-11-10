@@ -8,19 +8,19 @@ There are a myriad of bioinformatics tools currently available to users. Before 
 
 ## Selecting the right AWS instance to run InSilicoSeq
 
-To run InSilicoSeq, you will need to launch a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance as described in [the AWS tutorial](linktutorialhere) with a **few modifications**:
+To run InSilicoSeq, you will need to launch a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance as described in [the AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws2.md) with a **few modifications**:
 
  1) You must select the the t2.xlarge instance (instead of the default t2.micro instance selection described in the tutorial):
 
-![]../../images/t2xlarge
+![t2 xlarge](../images/Simulated_Data_t2xlarge.png)
 
 2) Add additional storage by selecting the "4.Add Storage" tab on the instance launch page and then changing the number on the "Size (GB)" tab to read "16", as shown in the image below:
 
-![]../../images/t2xlarge_stroage
+![Add storage to t2 xlarge](../images/Simulated_Data_t2xlarge_storage.png)
 
 3) Click "Review and launch"
 
-4) Then go back to the [AWS tutorial](../linkgoeshere) and follow instructions on how to access the instance via the MacOS terminal window
+4) Then go back to the [AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws2.md) and follow instructions on how to access the instance via the MacOS terminal window
 
 ## Installing InSilicoSeq
 
@@ -179,7 +179,7 @@ Move the html onto local computer to visualize
 They all seem to be 125 bp long. Which is a good size to work with :)
 
 
-## Additional Resources:
+## Additional Resources
 
 [Gourlé, H., Karlsson-Lindsjö, O., Hayer, J., & Bongcam-Rudloff, E. (2019). Simulating Illumina metagenomic data with InSilicoSeq. Bioinformatics, 35(3), 521-522](https://academic.oup.com/bioinformatics/article/35/3/521/5055123)
 
