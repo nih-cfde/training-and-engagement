@@ -180,6 +180,7 @@ You need lots of other helper utilities to run today's pipeline so now is a good
     ```
     sudo apt-get install autoconf autogen g++ gcc make automake pkg-config zlib1g-dev curl gdebi-core -y ghostscript-x
     ```
+    
 !!! Important
     Installing helper utilities is VERY important. All sorts of errors in installations/plotting happen if it's not run! For example, you will install "vcftools" in later parts of this tutorial which absolutely needs "autoconf", "autogen", and "make" to be preinstalled. zlib is a library implementing the deflate compression method found in gzip and PKZIP. gdebi lets you install local deb packages resolving and installing its dependencies. And to run plotting functions in R, you will need Ghostscript, an interpreter of the PDF format.
 
