@@ -7,7 +7,7 @@ title: Custom Terra Workflow Overview
 
 - what is Terra
 - what are the components of a workflow in Terra
-  - a computer (GCP instance)
+  - a computer (GCP instance). For more about a GCP instance, see our [tutorial](../Introduction-to-GCP/index.md) on setting up a GCP instance.
   - software environment (docker)
   - a workflow of steps to do (WDL)
   - data (upload data to Terra workspace)
@@ -17,8 +17,9 @@ title: Custom Terra Workflow Overview
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-
-
+  | [Building a docker](./docker.md) |
+  | [Building a WDL script](./wdl.md) |
+  | [Custom workflow on Terra](./custom-workflow-terra.md) |
 
 !!! note "Learning Objectives"
 
