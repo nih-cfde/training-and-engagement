@@ -4,7 +4,8 @@ This is a tutorial on how to edit MkDocs websites from Github repos that use the
 
 !!! note "Learning Objectives"
 
-    - learn how to edit Mkdocs website docs on Github using the cfde-bot
+    - learn how to edit Mkdocs website documents on Github using the cfde-bot
+    - learn how to edit documents from sub-module repositories
 
 === "Est. Time"
 
