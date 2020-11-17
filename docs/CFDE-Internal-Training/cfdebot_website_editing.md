@@ -79,7 +79,7 @@ The cfde-bot's process for checking changes to the sub-module repos (`the-fair-c
 
 - If the website build checks pass, the bot auto-merges changes into the `preview` branch and renders the preview website.
 
-- The cfde-bot simultaneously creates a PR of the changes to the `published-documentation` `master` branch so you can request a reviewer to merge to the `master` branch if you decide the preview looks good.
+- The cfde-bot simultaneously creates a PR to push the changes to the public website. After review by the admin team, the changes will be merged.
 
 #### Step 1: Go to the sub-module's Github repository
 
