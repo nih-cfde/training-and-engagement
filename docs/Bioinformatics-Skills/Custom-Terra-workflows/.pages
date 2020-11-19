@@ -2,4 +2,5 @@ nav:
   - index.md
   - docker.md
   - wdl.md
+  - terra.md
   - custom-workflow-terra.md
