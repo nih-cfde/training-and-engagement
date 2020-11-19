@@ -1,4 +1,4 @@
-# Moving local files to a google bucket
+# Uploading and downloading files
 
 **We need data to work with - follow these steps to upload files to a Google storage bucket, either to analyze on a custom VM on the GCP interface or in Terra.**
 

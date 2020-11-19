@@ -13,9 +13,9 @@ The Google Cloud Platform is..
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-  | [Setting up a GCP account overview](./gcp1.md) |
-  | [Setting up a GCP instance](./gcp2.md) |
-  | [Moving local files to a google bucket](./gcp3.md) |
+15 mins  | [Setting up a GCP account](./gcp1.md) | How to set up a GCP billing account?
+  | [Setting up a GCP instance](./gcp2.md) | How to start a GCP instance?
+  | [Uploading and downloading files](./gcp3.md) | How to upload or download files with Google buckets
   | [Using Docker containers in a GCP instance](./gcp4.md) |
 
 
