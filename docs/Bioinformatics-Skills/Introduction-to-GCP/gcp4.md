@@ -1,5 +1,22 @@
 # Using Docker containers in a GCP instance
 
+
+
+6. If you want to use a docker container, this is how to install docker (it may not be installed in your VM):
+```
+curl -sSL https://get.docker.com/ | sh
+# grant user permissions to run docker commands, otherwise you have to use sudo each time
+sudo usermod -aG docker $USER
+# exit VM instance and open it back to complete set up
+exit
+# after opening terminal up again, this is how to install GATK docker
+docker pull us.gcr.io/broad-gatk/gatk:4.1.3.0
+# mount filesystem demo folder to use in the GATK docker container
+docker run -v ~/book:/home/book -it us.gcr.io/broad-gatk/gatk:4.1.3.0 /bin/bash
+# then you can use the gatk command on the files in local VM instance
+gatk
+```
+
 **Docker containers can be loaded to a GCP VM and also to Terra. These are some basic commands. Not a step by step guide yet, still learning how to set up new containers.**
 
 The syntax to pull in a docker image is:

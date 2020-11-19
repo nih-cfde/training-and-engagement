@@ -33,34 +33,22 @@ gcloud compute ssh --project [PROJECT_ID] --zone [ZONE] [INSTANCE_NAME]
 - you can configure a default Compute Region and Zone or not
 
 *After this step, you now have a custom configured VM. Things we could do at this point are:*
+- [upload or download files](./gcp3.md)
+- [pull in a docker container](./gcp4.md) to get software without a bunch of software installations
+- do some analysis
 
-- test AWS-based tutorials (e.g., BLAST, GWAS) on GCP and document those steps
 
-Optional other things you can do in a GCP VM:
 
-5. This is how to move files to instance.
 
-- for example, this command downloads the book demo to instance (there are a lot of files, you can cancel the download with Ctrl+z).
-```
-# -r is a recursive flag to download all files in the v1 directory
-# -m parallel multi-threaded/multi-processing copy, use when copying many large files
-gsutil -m cp -r gs://genomics-in-the-cloud/v1/* ~/book/
-```
-6. If you want to use a docker container, this is how to install docker (it may not be installed in your VM):
-```
-curl -sSL https://get.docker.com/ | sh
-# grant user permissions to run docker commands, otherwise you have to use sudo each time
-sudo usermod -aG docker $USER
-# exit VM instance and open it back to complete set up
-exit
-# after opening terminal up again, this is how to install GATK docker
-docker pull us.gcr.io/broad-gatk/gatk:4.1.3.0
-# mount filesystem demo folder to use in the GATK docker container
-docker run -v ~/book:/home/book -it us.gcr.io/broad-gatk/gatk:4.1.3.0 /bin/bash
-# then you can use the gatk command on the files in local VM instance
-gatk
-```
-7. Terminating the instance - 2 options:
+
+## Terminating the instance
+
+When you're finished using the virtual machine, be sure to stop or terminate it, otherwise it will continue to incur compute engine and/or storage costs (?).
+
+There are two options:
 
 - You can "Stop" the instance (on the console page, click the 3 vertical dots). This will pause the instance, so it's not running, but it will still incur storage costs. This is a good option if you want to be able to come back to the instance (click "Start") without having to reconfigure and download files every time.
+
 - If you're completely done with the instance, you can "Delete" it. This will delete all files though, so download whatever you want to keep!
+
+ADD IMAGE HERE - can i show both stop and delete and add numbers to them?

@@ -1,5 +1,15 @@
 # Uploading and downloading files
 
+5. This is how to move files to instance.
+
+- for example, this command downloads the book demo to instance (there are a lot of files, you can cancel the download with Ctrl+z).
+```
+# -r is a recursive flag to download all files in the v1 directory
+# -m parallel multi-threaded/multi-processing copy, use when copying many large files
+gsutil -m cp -r gs://genomics-in-the-cloud/v1/* ~/book/
+```
+
+
 **We need data to work with - follow these steps to upload files to a Google storage bucket, either to analyze on a custom VM on the GCP interface or in Terra.**
 
 *This might be useful for users bringing their own data (e.g., broader use of Terra/GCP besides CFDE purposes) or loading test data.*
