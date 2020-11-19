@@ -84,8 +84,10 @@ The cfde-bot's process for checking changes to the sub-module repos (`the-fair-c
 
 #### Step 1: Go to the sub-module's Github repository
 
-- `the-fair-cookbook` repo: https://github.com/nih-cfde/the-fair-cookbook
-- `specifications-and-documentation` repo: https://github.com/nih-cfde/specifications-and-documentation
+Reminder: you must be onboarded to the CFDE to edit these repositories:
+
+- `the-fair-cookbook` repo: [https://github.com/nih-cfde/the-fair-cookbook](https://github.com/nih-cfde/the-fair-cookbook)
+- `specifications-and-documentation` repo: [https://github.com/nih-cfde/specifications-and-documentation](https://github.com/nih-cfde/specifications-and-documentation)
 
 #### Step 2: Make changes *directly* on the `master` branch.
 
@@ -97,8 +99,8 @@ The bot will automatically create preview branches (`update-<repo>-preview`) if 
 
 If the website build checks all pass, the bot will then automatically merge:
 
-- `update-fair-preview` into `cookbookpreview`, and will build a preview site for you to browse at: https://cfde-published-documentation.readthedocs-hosted.com/en/cookbookpreview/
-- `update-specsdocs-preview` into `specspreview`, and will build a preview site for you to browse at: https://cfde-published-documentation.readthedocs-hosted.com/en/specspreview/
+- `update-fair-preview` into `cookbookpreview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/cookbookpreview/](https://cfde-published-documentation.readthedocs-hosted.com/en/cookbookpreview/)
+- `update-specsdocs-preview` into `specspreview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/specspreview/](https://cfde-published-documentation.readthedocs-hosted.com/en/specspreview/)
 
 #### Step 5: Publishing your changes
 
