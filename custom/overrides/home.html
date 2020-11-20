@@ -2,10 +2,10 @@
 {% block tabs %}
   {{ super() }}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/overrides.min.css' | url }}">
-  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}.md-container{display:block}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
   <section class="tx-container">
    <div class="content">
-     <div class="tx-hero">
+      <div class="tx-hero">
         <div class="tx-hero__image">
           <div class="slider">
             <input type="radio" name="toggle" id="btn-1" checked>
@@ -59,7 +59,7 @@
                 <div class="slide-content">
                   <h2 class="slide-title">Snakemake Workflows</h2>
                   <p class="slide-text">Get introduced to Snakemake workflow managmenet system, a tool to create reproducible and scalable data analysis.</p>
-                  <a href="./Bioinformatics-Skills/Snakemake/"  class="slide-link">Get started</a>
+                  <a href="./Bioinformatics-Skills/Snakemake/" class="slide-link">Get started</a>
                 </div>
                 <p class="slide-image">
                   <img src="{{ 'assets/carousel-images/carousel-images.004.jpeg' | url }}" alt="stuff" width="320" height="240">
@@ -98,45 +98,45 @@
             </ul>
           </div>
         </div>
-      <div class="tx-hero__content">
+        <div class="tx-hero__content">
           <h1>Welcome to CFDE Training Resources!</h1>
           <p>{{ config.site_description }}. </p>
-      </div>
-    </div>
-    <div class="content__bottom">
-      <div class="content__col left">
-        <div class="data_header">
-          <p>Training & Workshops</p>
-       </div>
-      <div class="data_content">
-          <div style="padding-top: 20px; padding-left: 15px; padding-bottom: 20px; float: center ">
-            <p>Coming Soon</p>
-          </div>
-      </div>
-      </div>
-      <div class="content__col middle">
-        <div class="data_header">
-          <p>Social Media</p>
-       </div>
-       <div class="data_content">
-         <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/CfdeNih?ref_src=twsrc%5Etfw">Tweets by CfdeNih</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      </div>
-      <div class="content__col right">
-        <div class="data_header">
-          <p>About CFDE</p>
         </div>
-        <div class="data_content">
-          <div style="padding-top: 20px; padding-left: 15px; padding-bottom: 20px; float: center ">
-            <p>The Common Fund Data Ecosystem (CFDE) Coordination Center (CC) is an NIH effort to identify and solve issues that inhibit data access and reuse across NIH Common Fund programs. The Ecosystem is the Coordination Center plus all of the Common Fund Programs who participate. The ultimate goal of the CFDE is for the data to be more usable and useful both within a program’s own data and among datasets from multiple programs. By connecting the data and making them more accessible, the CFDE is intended to enable novel scientific research that was not possible before, </br>including hypothesis generation, discovery, and validation.</br></p>
-            <div style="padding-top: 20px; padding-left: 10px; float: center ">
-           <a href="https://commonfund.nih.gov/dataecosystem" target="_blank"><img width="380px" src="{{ 'assets/carousel-images/nih-logo-color.png' | url }}" title="NIH"></a></div>
-         </div>
+      </div>
+      <div class="content__bottom">
+        <div class="content__col left">
+          <div class="data_header">
+            <p>Training & Workshops</p>
+          </div>
+          <div class="data_content">
+            <div style="padding-top: 20px; padding-left: 15px; padding-bottom: 20px; float: center ">
+              <p>Coming Soon</p>
+            </div>
+          </div>
+        </div>
+        <div class="content__col middle">
+          <div class="data_header">
+            <p>Social Media</p>
+          </div>
+          <div class="data_content">
+           <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/CfdeNih?ref_src=twsrc%5Etfw">Tweets by CfdeNih</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+        <div class="content__col right">
+          <div class="data_header">
+             <p>About CFDE</p>
+          </div>
+          <div class="data_content">
+             <div style="padding-top: 20px; padding-left: 15px; padding-bottom: 20px; float: center ">
+               <p>The Common Fund Data Ecosystem (CFDE) Coordination Center (CC) is an NIH effort to identify and solve issues that inhibit data access and reuse across NIH Common Fund programs. The Ecosystem is the Coordination Center plus all of the Common Fund Programs who participate. The ultimate goal of the CFDE is for the data to be more usable and useful both within a program’s own data and among datasets from multiple programs. By connecting the data and making them more accessible, the CFDE is intended to enable novel scientific research that was not possible before, </br>including hypothesis generation, discovery, and validation.</br></p>
+              <div style="padding-top: 20px; padding-left: 10px; float: center ">
+              <a href="https://commonfund.nih.gov/dataecosystem" target="_blank"><img width="380px" src="{{ 'assets/carousel-images/nih-logo-color.png' | url }}" title="NIH"></a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
- </div>  
-</section>
+  </section>
 {% endblock %}
 {% block content %}{% endblock %}
 {% block footer %}{% endblock %}
