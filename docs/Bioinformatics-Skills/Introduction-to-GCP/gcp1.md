@@ -1,13 +1,11 @@
 # Setting up GCP account
 
-There are two options for creating a GCP billing account:
+There are two options for creating a Google Cloud Platform (GCP) billing account:
 
 - set up the account as an individual and pay with your own credit card, or
 - set up a G Suite organization account that shares a centralized Google Billing Account and pay with the organization host’s credit card.
 
-In this tutorial, we will show you how to set up an individual account.
-
-!!! information
+!!! note "Centralized billing"
 
     You can also set up a G Suite organization with a centralized billing account. The Google documentation provides a [quick start guide](https://cloud.google.com/resource-manager/docs/quickstart-organizations) to set this up.
 
@@ -15,9 +13,11 @@ In this tutorial, we will show you how to set up an individual account.
 
     First, Jon would create an Organization in G Suite, which would make him the “Resource Manager Organization Administrator”. Once the organization has been created, it will automatically have the additional roles of “Resource Manager Project Creator” and “Billing Account Creator”. Jon can then add Janice as either a User or Admin to the G Suite organization. Jon must be an Admin on the G Suite organization to access account management pages on the GCP console (for e.g. to change settings, add/change member permissions, add members). However, since the administrator has the credit card information, Janice has to set up the billing account. Janice would then go to the GCP console to create the Google Billing Account and link a credit card to it. Janice must add Jon to the Google Billing Account as a “Billing Account Administrator” to give him the ability to edit the billing account and add members/permissions to the billing account.
 
+In this tutorial, we will show you how to set up an individual account.
+
 ## Step 1: Sign in to GCP
 
-- Click on "Sign in" on the top right corner and sign in with a Google account at: [https://cloud.google.com/](https://cloud.google.com/)
+- Click on "Sign in" on the top right corner and sign in with a Google account at: [https://cloud.google.com/](https://cloud.google.com/). 
 
 ![](../../images/gcp_images/gcp_login.png "GCP sign in button")
 
@@ -50,4 +50,4 @@ On this page, check the box next to your billing account, below it is called "My
 
     You can add members with roles such as "Billing Account User" if, for example, you want others to have access to your GCP billing account, like team members or other platforms that use the Google cloud, such as the [Terra platform](https://app.terra.bio/).
 
-Now that the billing account is set up, you can now use GCP resources!
+Now that the billing account is set up, you can use GCP resources!

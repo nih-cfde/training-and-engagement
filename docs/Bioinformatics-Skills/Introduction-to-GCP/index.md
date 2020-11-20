@@ -7,7 +7,7 @@ title: GCP Overview
 
 The Google Cloud Platform is..
 
-- what is GCP, what is an instance
+- what is GCP, what is an instance (aka an instance of a VM = virtual machine)
 -> organize this one like AWS format
 
 

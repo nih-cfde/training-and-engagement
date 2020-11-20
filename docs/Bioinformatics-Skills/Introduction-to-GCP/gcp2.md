@@ -1,54 +1,102 @@
-# Configure custom VM
+# Setting up a GCP instance
 
-- need to make new demo files for the bucket steps
+## Step 1: Create a project
 
-**The Google Cloud Shell is free, but doesn't have enough CPU or memory to do bioinformatics analyses. Here's how to set up a custom VM with more CPU/memory and other configurations.**
+- Go to the "Manage Resources" page (it's in the IAM & Admin section) and click "Create Project".
 
-1. On the GCP console, go to "VM instances" in the "Compute Engine" section. It may take a few minutes to load up.
-![image](https://user-images.githubusercontent.com/5659802/96937594-57b6d700-147d-11eb-9220-321151fc5b98.png)
-2. Click "Create". There are several configuration options to set up
-![image](https://user-images.githubusercontent.com/5659802/96938921-72d71600-1480-11eb-84c4-cf4134eca73b.png)
+**TO DO: add image**
+**TO DO: some images have "My First Project" and one has "test-GCP-VM" as project name...let's make those all the same**
 
-- name your VM
-- choose Region (less important which zone you choose). This tool can help to choose the region closest to you (http://www.gcping.com/). You may need to refresh several times.
-- choose machine type. The cost for each machine type is shown on the right side panel of the console page. From the book example, they set used Series N1 and machine type `n1-standard-2`. There are more options on the current interface. Series N1 isn't an option anymore, it's now N2. I chose `n2-standard-2`.
-- customize boot disk. Click on "Change". The default OS is Debian, change it to Ubuntu. For the version, to match AWS tutorials, I chose Ubuntu 20.04 LTS. Set the amount of persistent disk storage you want (the book suggests 100Gb for its tutorials; I set it at 50Gb for testing).
+- Enter a project name. The name must be unique. Click "Create".
 
-When you're done configuring, click "Create".
+## Step 2: Configure custom VM
 
-3. Click on the "SSH" dropdown option for your new instance and select "Open in browser window"
-![image](https://user-images.githubusercontent.com/5659802/96941450-4d013f80-1487-11eb-9951-2ccc6950a899.png)
+- On the GCP console left-hand panel, scroll down the "Compute Engine" section and select "VM instances". It may take a few minutes to load.
 
-A new window will open with the instance terminal. The gear icon at the top right can be used to customize terminal window settings (e.g., appearance, text size). You can also access the instance via command line, e.g., from the Google Cloud Shell or local laptop terminal (but you then need to install/set up/authorize `gcloud`):
+![](../../images/gcp_images/gcp_vm.png "VM instances")
+
+- Click "Create". There are several configuration options to set up:
+
+![](../../images/gcp_images/gcp_vmconfig.png "VM configuration options")
+
+### 1. Name your VM
+
+Names must be in lowercase letters, numbers. Use hyphens "-" instead of spaces.
+
+### 2. Choose a Region
+
+Several regions are available from the dropdown menu. It is less important which zone you choose, and the interface automatically selects a zone based on the region you choose. We are using "us-west1 (Oregon)".
+
+!!! note "Machine regions"
+
+    **TO DO: add what region and zones mean for GCP**
+
+    This tool can help to choose the region closest to you (http://www.gcping.com/). You may need to refresh several times.
+
+### 3\. Choose machine type and configuration
+
+The estimated monthly cost for each machine type is shown on the right side panel of the console page. For this tutorial, select Series "N2" and Machine type `n2-standard-2`.
+
+!!! note "Machine types"
+
+    **TO DO: add info about what these machine types mean, how to select, etc.**
+
+    **TO DETERMINE: is this a good machine to use?**
+
+### 4\. Customize boot disk
+
+Click on "Change". The default operating system is Debian, change it to "Ubuntu" and select version "Ubuntu 20.04 LTS". Set the [persistent disk storage](https://cloud.google.com/persistent-disk); the default is 10Gb. Depending on the tasks you will use the VM for, you may need to increase the storage amount (e.g., to 100Gb).
+
+!!! note "Persistent disk storage"
+
+    **TO DO: add info about what this is for and how to choose**
+
+When you're done configuring the VM, click "Create".
+
+## Step 3: Connect to your VM
+
+- Click on the "SSH" dropdown option for your new instance and select "Open in browser window".
+
+![](../../images/gcp_images/gcp_vmssh.png "VM SSH dropdown")
+
+A new window will open with the instance terminal. The gear icon at the top right can be used to customize terminal window settings (e.g., appearance, text size).
+
+!!! note "Google Cloud Shell"
+
+    Alternatively, you can also access the instance from the Google Cloud Shell or a local laptop terminal (will require installing and setting up [`gcloud`](https://cloud.google.com/sdk/docs/install)).
+
+    The GCP console provides a free Google Cloud Shell. This shell environment is useful for small tasks that do *not* require a lot of CPU or memory (as most bioinformatic analyses do). For example, it is a good place to learn how to use the Google shell environment without incurring cost or to access Google Cloud products (e.g., a Google Storage bucket or GCP virtual machine).
+
+    ![](../../images/gcp_images/gcp_gcshell.png "Activate Cloud Shell button")
+
+    Click on the "Activate Cloud Shell" icon. The first time you start the shell, you'll need to agree to the Google Cloud terms of service and privacy policy. After you start the shell, it may take a few minutes to connect. Check the Google support [documentation](https://cloud.google.com/shell/docs/using-cloud-shell) for more information.
+
+- Access the instance, by entering the `gcloud compute ssh` command in the instance terminal window. You'll need your project ID, zone, and instance name.
+
+**TO DO: test this command again, don't remember having to set the zone**
+
 ```
-gcloud compute ssh --project [PROJECT_ID] --zone [ZONE] [INSTANCE_NAME]
+gcloud compute ssh --project <PROJECT_ID> --zone <ZONE> <INSTANCE_NAME>
 ```
-4. Set up gcloud authorization so you can move files to/from your instance.
 
-- `gcloud init`
-- type "2"
-- click the link that appears on the terminal. A new web browser page will open, log in with your GCP google account
-- copy/paste the verification code back to the terminal
-- enter the number that corresponds to your project
-- you can configure a default Compute Region and Zone or not
+## Step 4: Use the VM
 
-*After this step, you now have a custom configured VM. Things we could do at this point are:*
-- [upload or download files](./gcp3.md)
-- [pull in a docker container](./gcp4.md) to get software without a bunch of software installations
-- do some analysis
+You now have a custom configured VM! Things we could do at this point include:
 
+- [Upload or download files](./gcp3.md)
+- [Pull in a docker container](./gcp4.md) to get software without a bunch of software installations
+- Run analysis. For example, we could run the [command-line Blast tutorial commands](../Command-Line-BLAST/BLAST1.md) in this GCP instance (instead of the AWS instance used in the tutorial).
 
+**TO DO: test if blast steps work in GCP instance - probably can choose a smaller VM**
 
+## Step 5: Terminating the instance
 
-
-## Terminating the instance
-
-When you're finished using the virtual machine, be sure to stop or terminate it, otherwise it will continue to incur compute engine and/or storage costs (?).
+When you're finished using the virtual machine, be sure to stop or terminate it, otherwise it will continue to incur costs.
 
 There are two options:
 
-- You can "Stop" the instance (on the console page, click the 3 vertical dots). This will pause the instance, so it's not running, but it will still incur storage costs. This is a good option if you want to be able to come back to the instance (click "Start") without having to reconfigure and download files every time.
+- You can "Stop" the instance (on the console page, click the 3 vertical dots). This will pause the instance, so it's not running, but it will still incur storage costs. This is a good option if you want to come back to this instance (click "Start") without having to reconfigure and download files every time.
 
-- If you're completely done with the instance, you can "Delete" it. This will delete all files though, so download whatever you want to keep!
+- If you're completely done with the instance, you can "Delete" it. This will delete all files though, so [download](./gcp3.md) the files you want to keep!
 
-ADD IMAGE HERE - can i show both stop and delete and add numbers to them?
+**TO DO: add image of these options**

@@ -1,5 +1,16 @@
 # Uploading and downloading files
 
+4. Set up gcloud authorization so you can move files to/from your instance.
+
+- `gcloud init`
+- type "2"
+- click the link that appears on the terminal. A new web browser page will open, log in with your GCP google account
+- copy/paste the verification code back to the terminal
+- enter the number that corresponds to your project
+- you can configure a default Compute Region and Zone or not
+
+
+
 5. This is how to move files to instance.
 
 - for example, this command downloads the book demo to instance (there are a lot of files, you can cancel the download with Ctrl+z).
