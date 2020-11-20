@@ -11,6 +11,7 @@
   box-shadow: 0 0 .2rem rgba(0, 0, 0, 0), 0 .2rem .4rem rgba(0, 0, 0, 0);
   transition:color 250ms, background-color 250ms
   font-weight: 600;
+
 }
 
 @media only screen and (max-width: 76.1875em) {
@@ -73,7 +74,7 @@
 
 .md-announce .email {
     margin-left: .6em;
-    color:#33cccc
+    color:#C3E1E6
 }
 .md-announce .twitter {
     margin-left: .6em;
@@ -86,33 +87,83 @@
 }
 
 .tx-container {
-    padding-top: 1rem;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 0'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") repeat bottom, linear-gradient(to bottom, #0355ab, #33cccc 99%)
-
-
-    [data-md-color-scheme=slate] .tx-container {
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 0'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(232, 15%, 21%, 1)' /></svg>") repeat bottom, linear-gradient(to bottom, #0355ab, #33cccc 99%)
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    min-height: auto;
+    overflow-x: auto;
+    padding: 1.5rem 1.5rem;
   }
 
-}
+.content {
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+.data_header {
+    padding:10px 10px 10px 20px;
+    background: #C3E1E6;
+    font-size: 1.5vw;
+    color: #0355ab;
+  }
+
+.data_header p {
+    padding:0;
+    margin:0;
+  }
+
+.content__bottom {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+.content__col {
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+
+@media (min-width:768px) {
+    .content__bottom {
+      flex-wrap: nowrap;
+    }
+
+    .left {
+      flex: 1 0 280px;
+      margin-right: 20px;
+    }
+
+    .right {
+      flex: 1 0 940px;
+    }
+  }
 
 /*# content inside the container*/
 .tx-hero {
     margin: 0 .8rem;
-    color: #ffffff;
-    font-weight: 600;
+    /*color: #0355ab;*/
+    font-weight: 500;
+    font-size: large;
 }
 
 .tx-hero h1 {
     margin-bottom: 1rem;
-    color: currentColor;
+    color: #0355ab;
+    font-size:2.5vw;
     font-weight:900
 }
 
 @media screen and (max-width: 29.9375em) {
     .tx-hero h1 {
-        font-size:2rem
+        font-size:3vw
     }
 }
 
@@ -123,21 +174,40 @@
 @media screen and (min-width: 60em) {
     .tx-hero {
         display: flex;
-        align-items:stretch
+        align-items:stretch;
     }
 
     .tx-hero__content {
         max-width: 25rem;
-        margin-top: 3.5rem;
-        padding-bottom:14vw
+        margin-top: 3rem;
+        padding-bottom:5vw
     }
 
     .tx-hero__image {
-        order: 4;
-        width: 36rem
+        margin-top: 1rem;
+        order: 1;
+        max-width: 32rem;
         transform:translateX(6rem)
+
     }
+
+    .content__bottom .left {
+        flex: 1 0 400px;
+        margin-right: 20px;
+      }
+
+    .content__bottom .middle {
+        flex: 1 0 400px;
+        margin-right: 20px;
+      }
+
+    .content__bottom .right {
+        flex: 1 0 400px;
+
+      }
+
 }
+
 
 @media screen and (min-width: 76.25em) {
     .tx-hero__image {
@@ -147,6 +217,7 @@
 
 html {
   box-sizing: border-box;
+
 }
 
 *,
@@ -155,22 +226,18 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 
 body {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
   font-family: Roboto, sans-serif;
   width: 100%;
   height: 100%;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(to bottom, #0355ab 20%, #33cccc 99%);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradientto bottom, #0355ab 20%, #33cccc 99%);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to bottom, #0355ab 20%, #33cccc 99%);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, #0355ab 20%, #33cccc 99%);
+  background:#fff;
   /* Standard syntax (must be last) */
   margin: auto;
   position: absolute;
@@ -178,7 +245,10 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
+
 }
+
+/* Slider */
 
 .slider {
   position: relative;
@@ -189,6 +259,8 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  background: #C3E1E6;
+  /*background:linear-gradient(to bottom, #68a0cc, #C3E1E6 99%); */
 }
 
 .slider-controls {
@@ -220,36 +292,36 @@ body {
   width: 15px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: #636060;
+  background-color: #adacac;
   transition: background-color 0.2s linear;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"] {
-  background-color: #ffffff;
+  background-color: #0355ab;
 }
 
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
-  background-color: #ffffff;
+  background-color: #0355ab;
 }
 
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background-color: #ffffff;
+  background-color: #0355ab;
 }
 
 #btn-4:checked ~ .slider-controls label[for="btn-4"] {
-  background-color: #ffffff;
+  background-color: #0355ab;
 }
 
 #btn-5:checked ~ .slider-controls label[for="btn-5"] {
-  background-color: #ffffff;
+  background-color: #0355ab;
 }
 
 #btn-6:checked ~ .slider-controls label[for="btn-6"] {
-  background-color: #ffffff;
+  background-color: #0355ab;
 }
 
 #btn-7:checked ~ .slider-controls label[for="btn-7"] {
-  background-color: #ffffff;
+  background-color: #0355ab;
 }
 
 /* SLIDES */
@@ -285,23 +357,30 @@ body {
 
 .slide-title {
   margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 1.5vw;
+  color: #0355ab;
 }
 
 .slide-text {
   margin-bottom: 40px;
-  font-size: 15px;
+  font-size: 17px;
+  color: currentColor;
+  font-weight: normal;
 
 }
 
 .slide-link {
   display: inline-block;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #0355ab;
   border-radius: 5px;
   text-decoration: none;
   background-color: #ffffff;
+}
+
+a:hover, a:active {
+    background-color: #0355ab;
+    color: #ffffff;
 }
 
 .slide-image img {
