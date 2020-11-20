@@ -6,9 +6,7 @@ title: Set up an AWS Instance
 Setting up an AWS Instance
 ==========================
 
-
 Amazon offers a cloud computing platform called Amazon Web Services (AWS). AWS is not free, however, you receive the benefits of the Free Tier automatically for 12 months after you sign up for an AWS account. If you are no longer eligible for the Free Tier, you're charged at the [standard billing rate](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-eligibility.html) for your AWS usage.
-
 
 Let's set up a Free Tier AWS Ubuntu instance!
 
