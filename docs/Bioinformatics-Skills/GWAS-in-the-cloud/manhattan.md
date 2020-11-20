@@ -112,7 +112,7 @@ Be sure to change the `ec2-??-???-???-??` part like you did before.
 
 The file has been copied to your Desktop! Here's what it should look like when opened using the "Preview" application in Mac:
 
-![](../../images/General_GWAS_coatColor_man.png)
+![](../../images/General_GWAS_coatColor_man.png "Manhattan plot")
 
 The X- axis represents haplotypes from each region of the genome that was tested, organized by chromosome. Each colored block represents a chromosome and is made of thousands of dots that represent haplotypes. The Y axis is a p value (probability that the association was observed by chance) and is negative log transformed.
 
