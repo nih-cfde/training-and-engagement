@@ -34,12 +34,12 @@ Here, Snakemake interprets the `input:` and `output:` sections as Python code, a
 
 ### Step 4: Adding output files
 
-Let's start with a clean slate. 
+Let's start with a clean slate.
 
 !!! warning
 
     Be careful with `rm` command - it deletes files forever!
-    
+
 Delete any output files you created in the sections above, such that you only have the Snakefile in your directory: `rm <file name>`.
 
 The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to the rule, note that the output file must be in quotes `""`:
@@ -48,7 +48,7 @@ The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to t
 
     ```
     rule download_data:
-    
+
         output: "SRR2584857_1.fastq.gz"
         shell:
             "wget https://osf.io/4rdza/download -O SRR2584857_1.fastq.gz"
@@ -64,10 +64,10 @@ Try: Run the `download_data` rule twice.
     ```
 
 === "Expected Output"
-    
+
     You will notice the following message after the second run of `download_data`:
 
-    ![snakemake nothing to be done message](../../images/snakemake_nothingtobedone.jpeg)
+    ![snakemake nothing to be done message](../../images/snakemake_nothingtobedone.jpeg "snakemake nothing to be done message")
 
 Delete the file: `rm SRR2584857_1.fastq.gz`. Now run the rule again.
 
@@ -104,16 +104,16 @@ The code chunk informs Snakemake that `uncompress_genome` depends on having the 
 In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked!
 
 === "Input"
-    
+
     ```
     snakemake -p uncompress_genome
     ```
 
 === "Expected Output"
-    
+
     As expected, two rules are executed in the specified order: first the `download_genome` followed by `uncompress_genome` rule.
-    
-    ![snakemake runs two steps in order](../../images/snakemake_twosteps.jpeg)
+
+    ![snakemake runs two steps in order](../../images/snakemake_twosteps.jpeg "snakemake runs two steps in order")
 
 !!! note "Key Points"
 
