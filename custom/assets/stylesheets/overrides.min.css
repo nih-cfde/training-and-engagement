@@ -272,7 +272,6 @@ body {
   text-align: center;
   transform: translatex(-50%);
   z-index: 1000;
-
   list-style: none;
   text-align: center;
 }
@@ -358,7 +357,7 @@ body {
 
 .slide-title {
   margin-bottom: 20px;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   color: #0355ab;
 }
 
