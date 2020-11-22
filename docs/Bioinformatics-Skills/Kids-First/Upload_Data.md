@@ -4,6 +4,30 @@ There are several ways in which users can upload data from their local computers
 
 In this tutorial, we expand on using the Cavatica's Command Line Uploader to move fastq files from your AWS Instance on to Cavatica via the command line interface.
 
+
+!!! note "Learning Objectives"
+
+    - Learn to upload files to Cavatica
+
+    - Learn to edit metadata of files on Cavatica
+
+=== "Est. Time"
+
+    ~ 30 min
+
+=== "Est. Cost"
+
+      < $1.00
+
+=== "Prerequisites"
+
+    - AWS account
+
+    - Cavatica account (check out all requirements in the [Register for Cavatica](Portal-Setup-And-Permissions/KF_4_Cavatica_Registration.md) page)
+
+    - Basic command line
+
+
 ## Step 1: Update Instance
 
 Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance. LTS 20.04 is frozen at version 20.04, and so you always needs to be updated the app installer before you start:
