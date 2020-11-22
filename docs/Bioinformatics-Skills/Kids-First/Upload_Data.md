@@ -30,7 +30,7 @@ In this tutorial, we expand on using the Cavatica's Command Line Uploader to mov
 
 ## Step 1: Update Instance
 
-Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance. LTS 20.04 is frozen at version 20.04, and so you always needs to be updated the app installer before you start:
+Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance. `LTS 20.04` is frozen at `version 20.04`, and so you always needs to be updated the app installer before you start:
 
 === "AWS Instance Code"
 
