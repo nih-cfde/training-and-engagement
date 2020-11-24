@@ -103,7 +103,7 @@ Next, download the Cavatica Uploader by running this code:
     curl -LO https://cavatica.sbgenomics.com/downloads/cli/cavatica-uploader.tgz
     ```
 The -O flag names the local file the same as its remote counterpart. 
-Now uncompressed the Cavatica Uploader by running:
+Now uncompress the Cavatica Uploader by running:
 
 === "AWS Instance Code"
 
