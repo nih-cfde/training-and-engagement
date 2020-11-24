@@ -288,8 +288,10 @@ Now the program can be called from any directory on your instance using the name
     
 !!! note "PATH"
     Adding the program to the $PATH variable will only last the length of the session. 
-           
-### Find your Cavatica Authentication Token and Username
+
+## Step 5: Move Files
+
+### Step 5a: Find your Cavatica Authentication Token and Username
 
 The Authentication Token is a personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token on you Cavatica account under the "Developer" tab.
 
@@ -298,12 +300,12 @@ Copy the Authentication token. You will replace `a??????????????????????????????
 Next, find and remember your username visible at the top right corner of your Cavatica account page. Replace `username` in the code block below with your personal username.
 
 
-### Choose a Cavatica Project
+### Step 5b: Choose a Cavatica Project
 
 You can either create a new project or choose an existing project.
 
 #### New project
-Create a new Cavatica project by clicking on the "Projects" tab on the Cavatica homepage and selecting the " + Create a project" option. You can name your new project whatever you like.  Remember your project name and replace "project-name" with the name of your project.
+Create a new Cavatica project by clicking on the "Projects" tab on the Cavatica homepage and selecting the " + Create a project" option. You can name your new project whatever you like.  Remember your project name and replace "project-name" with the name of your project in the code block below.
 
 
 #### Existing project
@@ -311,24 +313,22 @@ Alternatively, you may choose to select an existing project. To get a list of al
 
 === "AWS Instance Code"
   ```
-  ~/cavatica-uploader/bin/cavatica-uploader.sh -t a??????????????????????????????? --list-projects
+  uploader -t a??????????????????????????????? --list-projects
   ```
-  Please replace `a???????????????????????????????` with your own Authentication token.
 
-Remember your project name and replace "project-name" with the name of your project.
+The `-t` flag tells AWS to look for an Authentication token. Remember to replace `a???????????????????????????????` with your own Authentication token.
 
 !!! Important
     If you have `_`s in your project name, replace them with `-` in the uploader code.
 
+### Step 5c: Moving Files
 
-### Moving Files
-
-Finally, you can transfer files by running this code:
+Finally, you can transfer files by running the following code. Remember to replace "project-name" with the name of your project and "username" with you cavatica login name.
 
 === "AWS Instance Code"
     ```
     cd ~/fastq
-    ~/cavatica-uploader/bin/cavatica-uploader.sh -t a??????????????????????????????? -p username/project-name *.fastq.gz
+    uploader -t a??????????????????????????????? -p username/project-name *.fastq.gz
     ```
 === "Expected Output"
 
@@ -341,6 +341,6 @@ Finally, you can transfer files by running this code:
     5fadb1dce4b05495de67d7f1	/home/ubuntu/fastq/ERR458494.fastq.gz   45.52%
     ```
 
-By running this code, you are moving files from your AWS instance to the "project-name" project in Cavatica. The `*` wildcard copies all the files ending in ".fastq.gz". The `-t` flag tells AWS to look for an Authentication token, the `-p` flag tells AWS which Cavatica project to put the files into. If you wish, you could use the `-f` flag to create a subfolder inside the project (not shown here).
+By running this code, you are moving files from your AWS instance to the "project-name" project within Cavatica. The `*` wildcard copies all the files with extension ".fastq.gz". The `-p` flag tells AWS which Cavatica project to put the files into. If you wish, you could use the `-f` flag to create a subfolder inside the project (not shown here).
 
 You're all done! Log in to Cavatica and look for your files in the the "Files" tab in your project.
