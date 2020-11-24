@@ -102,7 +102,7 @@ Next, download the Cavatica Uploader by running this code:
     ```
     curl -LO https://cavatica.sbgenomics.com/downloads/cli/cavatica-uploader.tgz
     ```
-
+The -O flag names the local file the same as its remote counterpart. 
 Now uncompressed the Cavatica Uploader by running:
 
 === "AWS Instance Code"
@@ -119,6 +119,100 @@ Check if the Uploader works by running this code:
 
     ```
     ~/cavatica-uploader/bin/cavatica-uploader.sh -h
+    ```
+    
+=== "Expected Output"
+
+    ```
+    ubuntu@ip-172-31-26-145:~$ ~/cavatica-uploader/bin/cavatica-uploader.sh -h
+    Upload files to Cavatica
+    usage: cavatica-uploader.sh [-h] [-l] [-p id] [-t token] [-x url] file ...
+    -a,--automation                 Start automation from manifest file.
+                                 This option must be used together with
+                                 --manifest-file.
+    --dry-run                    Dry run the upload (manifest) and/or
+                                 metadata setting process.
+    -f,--folder <arg>            Specify optional folder, inside of a
+                                 specified project, to upload the files
+                                 into.
+                                 You can specify nested folder structure
+                                 separated by the path separator `/`.
+                                 If any of the specified folders is
+                                 missing it will be created.
+    -h,--help                    Print a short usage summary.
+    -l,--list-projects           Print a list of projects available as
+                                 upload targets. The output is a
+                                 tab-separated list of project IDs and
+                                 names.
+    --list-tags                  Print a list of tags present in a project
+                                 and exit.
+                                 This option must be used together with
+                                 --project.
+    -mf,--manifest-file <arg>       Specify manifest tabular file to set
+                                 metadata.
+                                 This option must be used together with
+                                 --project.
+    -mm,--manifest-metadata <arg>   Parse metadata from manifest file.
+                                 You can list metadata field names as
+                                 argument to this option.
+                                 This option must be used together with
+                                 --manifest-file.
+    -p,--project <arg>              Specify the ID of the project to upload
+                                 files to.
+    -pf,--preserve-folders          Should the folder structure for specified
+                                 input folders be preserved while
+                                 uploading recursively.
+                                 By default, files encountered in the
+                                 nested folders are `flattened`, and
+                                 uploaded into root target folder.
+                                 With this flag, inner folders are created
+                                 along the way, and files are uploaded
+                                 into them.
+    --skip-partial               Do not attempt to resume incomplete
+                                 uploads.
+                                 If omitted, the uploader will resume an
+                                 upload when the local file matches in
+                                 name and size.
+    -t,--token <arg>                Specify an authorization token.
+    --tag <arg>                  Apply tag <arg> to all the files in this
+                                 upload.
+                                 This option may appear multiple times.
+    -u,--username <arg>             Specify username.
+                                 If omitted and not using the -t option,
+                                 user will be prompted for a username.
+    -x,--proxy <arg>                Specify a proxy server through which the
+                                 uploader should connect.
+                                 The URL to the proxy server in the form
+                                 proto://[user:pass]@host[:port].
+                                 Proto can be `http' or `socks'. Supports
+                                 SOCKS4 and SOCKS5.
+    The program outputs a tab-separated list of newly created remote file IDs
+    and local file names.
+    Complete documentation is available at:
+    http://docs.sevenbridges.com/docs/upload-via-the-command-line
+    ```
+You can add the program to the instance's PATH variable to avoid using the full path for exceution.
+
+=== "AWS Instance Code"
+
+    ```
+    export PATH=$PATH:~/cavatica-uploader/bin/
+    echo $PATH
+    ```
+
+=== "Expected Output"
+
+    ```
+    /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/cavatica-uploader/bin/
+    ```
+
+Now the program can be called from any directory on your instance using the name `cavatica-uploader.sh`. You can also create an alias for the program to shorten the name.
+
+=== "AWS Instance Code"
+
+    ```
+    alias uploader=cavatica-uploader.sh
+    uploader -h
     ```
 
 === "Expected Output"
@@ -190,11 +284,11 @@ Check if the Uploader works by running this code:
     and local file names.
     Complete documentation is available at:
     http://docs.sevenbridges.com/docs/upload-via-the-command-line
-
     ```
-
-## Step 5: Move files
-
+    
+!!! note "PATH"
+    Adding the program to the $PATH variable will only last the length of the session.
+           
 ### Find your Cavatica Authentication Token and Username
 
 The Authentication Token is a personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token on you Cavatica account under the "Developer" tab.
