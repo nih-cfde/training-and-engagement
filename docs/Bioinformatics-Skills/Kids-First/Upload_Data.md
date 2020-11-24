@@ -45,7 +45,7 @@ To perform the actual software upgrade of the listed packages use the `upgrade` 
     sudo apt upgrade
     ```
 
-This will list the pacakges that will be upgraded and ask for permission to continue. Choose `Y` to proceed. 
+This will list the packages that will be upgraded and ask for permission to continue. Choose `Y` to proceed. 
 Alternatively, the two commands can be combined into one command using `&&`:
 
 === "AWS Instance Code"
