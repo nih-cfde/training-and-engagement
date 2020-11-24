@@ -30,12 +30,28 @@ In this tutorial, we expand on using the Cavatica's Command Line Uploader to mov
 
 ## Step 1: Update Instance
 
-Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance. `LTS 20.04` is frozen at `version 20.04`, and so you always needs to be updated the app installer before you start:
+Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance. `LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available. 
 
 === "AWS Instance Code"
 
     ```
     sudo apt update
+    ```
+To perform the actual software upgrade of the listed packages use the `upgrade` option:
+
+=== "AWS Instance Code"
+
+    ```
+    sudo apt upgrade
+    ```
+
+This will list the pacakges that will be upgraded and ask for permission to continue. Choose `Y` to proceed. 
+Alternatively, the two commands can be combined into one command using `&&`:
+
+=== "AWS Instance Code"
+
+    ```
+    sudo apt update && sudo apt upgrade
     ```
 
 ## Step 2: Download example data
