@@ -287,7 +287,7 @@ Now the program can be called from any directory on your instance using the name
     ```
     
 !!! note "PATH"
-    Adding the program to the $PATH variable will only last the length of the session.
+    Adding the program to the $PATH variable will only last the length of the session. 
            
 ### Find your Cavatica Authentication Token and Username
 
@@ -295,7 +295,7 @@ The Authentication Token is a personalized code in Cavatica that allows other pr
 
 Copy the Authentication token. You will replace `a???????????????????????????????` in the code block below with your own token.
 
-Next, find and remember your username at the top right of your Cavatica account page. Replace `username` in the code block below with your personal username.
+Next, find and remember your username visible at the top right corner of your Cavatica account page. Replace `username` in the code block below with your personal username.
 
 
 ### Choose a Cavatica Project
