@@ -79,7 +79,21 @@ Cavatica Command Line Uploader needs `java version "1.8.0_20"`. Ubuntu Server 20
     cd
     sudo apt install -y openjdk-8-jre-headless
     ```
-The command `cd` takes you to the home directory.
+The command `cd` takes you to the home directory. You can check to see if the installation of java was successful.
+
+=== "AWS Instance Code"
+
+    ```
+    java -version
+    ```
+
+=== "Expected Output"
+
+    ```
+    openjdk version "1.8.0_275"
+    OpenJDK Runtime Environment (build 1.8.0_275-8u275-b01-0ubuntu1~20.04-b01)
+    OpenJDK 64-Bit Server VM (build 25.275-b01, mixed mode)
+    ```
 
 Next, download the Cavatica Uploader by running this code:
 
