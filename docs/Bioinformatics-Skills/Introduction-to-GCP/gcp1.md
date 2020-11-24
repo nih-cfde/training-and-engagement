@@ -17,7 +17,7 @@ In this tutorial, we will show you how to set up an individual account.
 
 ## Step 1: Sign in to GCP
 
-- Click on "Sign in" on the top right corner and sign in with a Google account at: [https://cloud.google.com/](https://cloud.google.com/). 
+- Click on "Sign in" on the top right corner and sign in with a Google account at: [https://cloud.google.com/](https://cloud.google.com/) with the Chrome web browser.
 
 ![](../../images/gcp_images/gcp_login.png "GCP sign in button")
 

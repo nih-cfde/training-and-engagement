@@ -31,7 +31,7 @@ Est. Time | Lesson name | Description
 
 === "Prerequisites"
 
-    - Technology: Users must be comfortable with using a terminal window.
+    - Technology: Users must be comfortable with using a terminal window. Please use the Chrome web browser for setting up and connecting to a GCP virtual machine.
 
     - Financial: First time GCP users require a valid credit card to set up a GCP billing account. New users can sign up for a free 3-month $300 trial during billing account set up.
 
