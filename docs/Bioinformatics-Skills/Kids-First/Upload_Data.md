@@ -63,11 +63,11 @@ Next, make a directory called "fastq" using the command mkdir, and then download
     ```
     mkdir fastq
     cd fastq
-    curl -LO https://osf.io/5daup/download ERR458493.fastq.gz
-    curl -LO https://osf.io/8rvh5/download ERR458494.fastq.gz
+    curl -L https://osf.io/5daup/download -o ERR458493.fastq.gz
+    curl -L https://osf.io/8rvh5/download -o ERR458494.fastq.gz
     ```
 
-[Curl](https://curl.se/) is an open source software that transfers data. The -L flag redirects the user to the right URL if the server reports that the requested page has been moved. The -O flag names the local file the same as its remote counterpart. These example files are from Schurch et al, 2016 yeast RNAseq study. The exact nature of the files does not matter for this tutorial. Any file type may be used instead of the fastq.
+[Curl](https://curl.se/) is an open source software that transfers data. The -L flag redirects the user to the right URL if the server reports that the requested page has been moved. The `-o` or the `--output` flag saves the data into a local file. These example files are from [Schurch et al, 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878611/) yeast RNAseq study. The exact nature of the files does not matter for this tutorial. Any file type may be used instead of the fastq.
 
 ## Step 3: Install Java and Download Command Line Uploader
 
