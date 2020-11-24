@@ -293,7 +293,7 @@ Now the program can be called from any directory on your instance using the name
 
 ### Step 5a: Find your Cavatica Authentication Token and Username
 
-The Authentication Token is a personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token on you Cavatica account under the "Developer" tab.
+The Authentication Token is a 32 character length personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token on you Cavatica account under the "Developer" tab.
 
 Copy the Authentication token. You will replace `a???????????????????????????????` in the code block below with your own token.
 
