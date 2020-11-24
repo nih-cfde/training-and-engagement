@@ -18,6 +18,11 @@ body {
 }
 
 
+.md-header a:hover, a:active {
+    background-color: #0355ab;
+    color: #ffffff;
+}
+
 @media only screen and (max-width: 76.1875em) {
 
     html .md-nav--primary .md-nav__title--site {
@@ -114,9 +119,9 @@ body {
   overflow: auto;
   background-color: #0355ab !important;
   color: white;
-  display: block;
+  /*display: block;
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 0px;*/
   transition:background 250ms
 }
 

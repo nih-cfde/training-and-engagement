@@ -12,7 +12,7 @@ theme:
     - navigation.tabs
     - navigation.instant
   favicon: images/CFDE-logo-white-outline.png
-  logo: images/CFDE-logo-white-outline.png
+  logo: images/CFDE-logo.png
   custom_dir: custom
   docs_dir: docs
 
