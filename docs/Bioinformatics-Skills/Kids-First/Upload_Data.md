@@ -191,7 +191,7 @@ Check if the Uploader works by running this code:
     Complete documentation is available at:
     http://docs.sevenbridges.com/docs/upload-via-the-command-line
     ```
-You can add the program to the instance's PATH variable to avoid using the full path for exceution.
+You can add the program to the instance's PATH variable to avoid using the full path for execution.
 
 === "AWS Instance Code"
 
@@ -218,7 +218,7 @@ Now the program can be called from any directory on your instance using the name
 === "Expected Output"
 
     ```
-    ubuntu@ip-172-31-26-145:~$ ~/cavatica-uploader/bin/cavatica-uploader.sh -h
+    ubuntu@ip-172-31-26-145:~$ cavatica-uploader.sh -h
     Upload files to Cavatica
     usage: cavatica-uploader.sh [-h] [-l] [-p id] [-t token] [-x url] file ...
     -a,--automation                 Start automation from manifest file.
