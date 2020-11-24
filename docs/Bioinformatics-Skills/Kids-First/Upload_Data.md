@@ -77,7 +77,7 @@ Cavatica Command Line Uploader needs `java version "1.8.0_20"`. Ubuntu Server 20
 
     ```
     cd
-    sudo apt install openjdk-8-jre-headless
+    sudo apt install -y openjdk-8-jre-headless
     ```
 The command `cd` takes you to the home directory.
 
