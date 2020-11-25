@@ -19,10 +19,10 @@ Timeline for release 2020-2021
 | 1         | 15   | August    | 2020 | 2020.08     |
 | 2         | 15   | October   | 2020 | 2020.10     |
 | 3         | 15   | December  | 2020 | 2020.12     |
-| 4         | 15   | March     | 2021 | 2021.03     |
-| 5         | 15   | June      | 2021 | 2021.06     |
-| 6         | 15   | September | 2021 | 2021.09     |
-| 7         | 15   | December  | 2021 | 2021.12     |
+| 4         | 28   | February  | 2021 | 2021.02     |
+| 5         | 31   | May       | 2021 | 2021.05     |
+| 6         | 31   | August    | 2021 | 2021.08     |
+| 7         | 30   | November  | 2021 | 2021.11     |
 
 
 Our current release dates are set to coincide with NIH deliverable dates.
