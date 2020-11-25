@@ -1,59 +1,199 @@
-# Uploading and downloading files
+# Testing analysis in a GCP VM
 
-4. Set up gcloud authorization so you can move files to/from your instance.
+You now have a custom configured VM! Let's test our new GCP virtual machine with a protein sequence BLAST search. This is abbreviated from the full [command-line Blast tutorial commands](../Command-Line-BLAST/BLAST1.md) tutorial, which ran the BLAST search on the Amazon AWS cloud platform.
 
-- `gcloud init`
-- type "2"
-- click the link that appears on the terminal. A new web browser page will open, log in with your GCP google account
-- copy/paste the verification code back to the terminal
-- enter the number that corresponds to your project
-- you can configure a default Compute Region and Zone or not
-
-
-
-5. This is how to move files to instance.
-
-- for example, this command downloads the book demo to instance (there are a lot of files, you can cancel the download with Ctrl+z).
+## Step 1: Install BLAST
 ```
-# -r is a recursive flag to download all files in the v1 directory
-# -m parallel multi-threaded/multi-processing copy, use when copying many large files
-gsutil -m cp -r gs://genomics-in-the-cloud/v1/* ~/book/
+sudo apt-get update && sudo apt-get -y install python ncbi-blast+
 ```
 
-
-**We need data to work with - follow these steps to upload files to a Google storage bucket, either to analyze on a custom VM on the GCP interface or in Terra.**
-
-*This might be useful for users bringing their own data (e.g., broader use of Terra/GCP besides CFDE purposes) or loading test data.*
-
-1. If you want to move local (on laptop) data to the cloud, you need a local installation of `gsutil`. Instructions for installing on a Mac: https://cloud.google.com/storage/docs/gsutil_install
-
-FYI: To upload or download data with the command line, users need to install `gsutil`. After installation, users need to initiate `gcloud` with `gcloud init`, however this command will not work unless users choose to put gcloud in their system’s PATH. Otherwise, the `gcloud` installation lives in the directory `/bin/gcloud` where google-cloud-sdk was installed. After running the gcloud init command, users need to log in to their GCP account and authorize access. According to the instructions, the next step is to run `gsutil` commands, however I get an error message: “ServiceException: 401 Anonymous caller does not have `storage.objects.get` access to the Google Cloud Storage object.” Again, the problem is that I didn’t set `gcloud` in my PATH, so I need to run `./google-cloud-sdk/bin/gsutil cp` to move files. Now it works!
-
-2. Either create a new storage bucket or
+- Check version:
 ```
-# create google bucket.
-gsutil mb gs://my-bucket
-
-# create bucket alias
-export BUCKET="gs://my-bucket"
-
-# copy local files to the bucket, can use -m for multi-thread and -r for recursive copying from a directory
-gsutil cp [files] $BUCKET
+blastp -version
 ```
 
-3. Use a storage bucket already associated with a Terra workspace
+## Step 2: Set up file permissions and VM home directory
 ```
-# if you want to access these files on Terra
-# create a Terra workspace, copy the bucket name that is
-# auto-assigned to the workspace
-# for example, i have a workspace with this bucket name
-export mybucket="gs://fc-a2cdb170-5198-4a53-a631-86d22564d199"
-gsutil cp test_moving_this.txt $mybucket
-
-# if you didn't set the PATH to find gcloud, the command will look like this
-./google-cloud-sdk/bin/gsutil cp test_moving_this.txt $mybucket
+sudo chmod a+rwxt /mnt
+cd /mnt
 ```
 
-After the files are in the bucket, they are accessible on Terra! Check the Data tab > Files page. You should see your files! To use the files in an analysis on Terra, you will then need to format the sample table section.
+## Step 3: Upload data
 
-Globus can also be used to access files on Google Drive or Google Storage; have to set up the end points to point to Google - read more here: https://docs.globus.org/how-to/access-google-storage/
+![](../../images/gcp_images/gcp_blastfiles.png "List of uploaded files")
+
+```
+curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
+curl -o zebrafish.1.protein.faa.gz -L https://osf.io/68mgf/download
+```
+
+- uncompress files
+```
+gunzip *.faa.gz
+```
+
+## Step 4: Blast search
+
+- Make smaller data subset
+```
+head -n 11 mouse.1.protein.faa > mm-first.faa
+```
+
+- Make database to search query sequences against
+```
+makeblastdb -in zebrafish.1.protein.faa -dbtype prot
+```
+
+- Run blast protein search and save output
+```
+blastp -query mm-first.faa -db zebrafish.1.protein.faa -out mm-first.x.zebrafish.txt -outfmt 6
+```
+
+- Look at output results:
+
+=== "Input"
+    ```
+    less mm-first.x.zebrafish.txt
+    ```
+
+=== "Expected Output"
+
+    Output file looks like:
+    ```
+    YP_220550.1     NP_059331.1     69.010  313     97      0       4       316     10      322     1.24e-150       426
+    YP_220551.1     NP_059332.1     44.509  346     188     3       1       344     1       344     8.62e-92        279
+    YP_220551.1     NP_059341.1     24.540  163     112     3       112     263     231     393     5.15e-06        49.7
+    YP_220551.1     NP_059340.1     26.804  97      65      2       98      188     200     296     0.10    35.8
+    ```
+
+    Type ++q++ to go back to the terminal
+
+## Step 5: Configure Google toolkit
+
+The Google Cloud SDK toolkit provides tools to securely access the GCP platform. The GCP VM already has the toolkit installed, but it needs to be configured and linked to your Google account. We will be using the `gcloud` and `gsutil` tools in this tutorial. More information about this process is available in the GCP support documentation on [gcloud configuration and authorization steps](https://cloud.google.com/sdk/docs/initializing#:~:text=%20gcloud%20init%20performs%20the%20following%20setup%20steps%3A,active%20account%20from%20the%20step%20above%2C...%20More%20).
+
+In the VM terminal, enter:
+```
+gcloud init --console-only
+```
+
+- "Choose the account you would like to use to perform operations for
+this configuration:": enter ++2++ to "Log in with a new account"
+- "Do you want to continue (Y/n)?": enter ++y++
+- Click on link under "Go to the following link in your browser:". A new browser tab will open. Log in with the same Google account used to sign in to the GCP console.
+- After sign in, a new page will open with a verification code. Copy this code and paste into the terminal after "Enter verification code:"
+- "Pick cloud project to use:": enter the number that corresponds to the option that lists your project ID
+- "Do you want to configure a default Compute Region and Zone? (Y/n)?": enter ++n++
+
+The `gcloud` configuration should now be complete. Run the following command to check:
+
+```
+gcloud config configurations list  
+```
+
+The output should list your GCP Google account email and project ID.
+
+## Step 6: Create Google Storage bucket
+
+Files are stored in buckets in the Google Storage service. Buckets can be managed from the graphical user interface (GUI) section of the GCP console and on the command line. We will create a bucket and move files on command line and then check them on the GUI. To ensure secure transfer of data to/from the cloud, we will use the `gsutil` tool.
+
+- Make bucket by using the `gsutil mb` command. Google bucket paths always begin with "gs://". You must enter a unique name for your bucket.
+```
+gsutil mb gs://<your bucket name>
+```
+
+- Bucket names, particularly auto-generated names, can get very long and complicated. To make it easier to type, we can create an alias for the bucket.
+```
+export BUCKET="gs://<your bucket name>""
+```
+
+## Step 7: Copy file to bucket
+
+- We will copy the blast output file to the bucket so it can be downloaded to your computer.
+
+=== "Input"
+
+    ```
+    gsutil cp mm-first.x.zebrafish.txt $BUCKET
+    ```
+
+=== "Expected Output"
+
+    ```
+    Copying file://mm-first.x.zebrafish.txt [Content-Type=text/plain]...
+    / [1 files][  268.0 B/  268.0 B]
+    Operation completed over 1 objects/268.0 B.
+    ```
+
+- Now go to "Google Storage" and click "Browser". You should see your bucket listed. Click on bucket name.
+
+![](../../images/gcp_images/gcp_storage1.png "Google Storage tab")
+
+- You should see the file we copied over. Check the box in the file row to download the file to your computer or delete the file. There is a "Download" button above the able to download multiple files, or the download arrow icon at the end of the file row to download individual files. You can also select files to "Delete" from the storage bucket.
+
+![](../../images/gcp_images/gcp_storage2.png "Download file")
+
+## Step 8: Upload files
+
+Finally, you can upload files to the bucket to use in the VM. Click on "Upload Files", choose file(s) to upload and click "Open". You should now see them in the bucket file list. For this example, we uploaded an empty text file called "testfile.txt".
+
+![](../../images/gcp_images/gcp_storage3.png "Upload files")
+
+Back in the VM terminal, use the `gsutil cp` command again to copy the file to the VM home directory.
+
+=== "Input"
+
+    ```
+    # for 1 file
+    gsutil cp $BUCKET/<file name> <location to copy file to>
+
+    # for multiple files in a folder
+    # the -r is a flag that tells gsutil to copy all files in a folder (recursive)
+    gsutil cp -r $BUCKET/<folder name>/* <location to copy files to>
+    ```
+
+    For this example:
+    ```
+    gsutil cp $BUCKET/testfile.txt ./
+    ```
+
+=== "Expected Output"
+
+    ```
+    Copying gs://my-bucket-blastresults/testfile.txt...
+    / [1 files][    4.0 B/    4.0 B]
+    Operation completed over 1 objects/4.0 B.
+    ```
+
+    Our VM terminal now has the test file! Check by typing `ls -lht`
+
+    ```
+    total 134M
+    -rw-rw-r-- 1 mcwlim mcwlim  840 Nov 24 22:08 mm-first.faa
+    -rw-rw-r-- 1 mcwlim mcwlim  268 Nov 24 22:12 mm-first.x.zebrafish.txt
+    -rw-rw-r-- 1 mcwlim mcwlim  49M Nov 24 22:05 mouse.1.protein.faa
+    -rw-rw-r-- 1 mcwlim mcwlim    4 Nov 24 23:17 testfile.txt
+    -rw-rw-r-- 1 mcwlim mcwlim  41M Nov 24 22:05 zebrafish.1.protein.faa
+    -rw-rw-r-- 1 mcwlim mcwlim 6.8M Nov 24 22:08 zebrafish.1.protein.faa.phr
+    -rw-rw-r-- 1 mcwlim mcwlim 415K Nov 24 22:08 zebrafish.1.protein.faa.pin
+    -rw-rw-r-- 1 mcwlim mcwlim  37M Nov 24 22:08 zebrafish.1.protein.faa.psq
+    ```
+
+## Step 9: Exit VM
+
+To exit the VM, type "exit". Type "exit" again if a message says there are unfinished jobs, but you know nothing is running and you are done working in the shell. This brings you back to the Google Cloud Shell terminal. Type "exit" one more time to completely close the shell panel. Note that closing the VM does not stop the instance!
+
+## Step 10: Stop or delete the instance
+
+When you're finished using the virtual machine, be sure to stop or delete it, otherwise it will continue to incur costs.
+
+There are two options (click on the three vertical dots):
+
+- You can "Stop" the instance. This will pause the instance, so it's not running, but it will still incur storage costs. This is a good option if you want to come back to this instance (click "Start") without having to reconfigure and download files every time.
+
+- If you're completely done with the instance, you can "Delete" it. This will delete all files though, so [download](./gcp3.md) any files you want to keep!
+
+![](../../images/gcp_images/gcp_vmstop.png "Stop or delete VM")
+
+
+## want something here about checking billing...?
