@@ -1,4 +1,4 @@
-.md-header {
+/*.md-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -13,6 +13,7 @@
   transition:color 250ms, background-color 250ms
 
 }
+*/
 
 @media only screen and (max-width: 76.1875em) {
 

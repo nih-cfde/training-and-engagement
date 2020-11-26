@@ -1,13 +1,5 @@
-/*:root {
-  --md-primary-fg-color:        #336699;
-  --md-primary-fg-color--light: #264d73;
-  --md-primary-fg-color--dark:  #538cc6;
-  --md-primary-bg-color: hsla(0, 0%, 100%, 1);
-  --md-primary-bg-color--light:  hsla(0, 0%, 100%, 0.7);
-  /*--md-primary-bg-color: hsla(0, 0%, 100%, 1);
-  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
-}
-*/
+
+
 body {
     font-family: “Open Sans”, Arial, Helvetica, sans-serif;
 }
@@ -20,8 +12,8 @@ body {
   left: 0;
   z-index: 2;
   height: 2.5rem;
-  color: #336699 ;
-  background-color: #ffffff;
+  color: #336699 !important ;
+  background-color: #ffffff !important;
   font-weight: 600;
   box-shadow: 0 0 .2rem rgba(0, 0, 0, 0), 0 .2rem .4rem rgba(0, 0, 0, 0);
   transition:color 250ms, background-color 250ms
