@@ -6,29 +6,29 @@
   left: 0;
   z-index: 2;
   height: 2.4rem;
-  color: #ffffff;
-  background-color:  #0355ab;
+  color: #336699;
+  background-color: #ffffff;
+  font-weight: 600;
   box-shadow: 0 0 .2rem rgba(0, 0, 0, 0), 0 .2rem .4rem rgba(0, 0, 0, 0);
   transition:color 250ms, background-color 250ms
-  font-weight: 600;
 
 }
 
 @media only screen and (max-width: 76.1875em) {
 
     html .md-nav--primary .md-nav__title--site {
-        background-color: #0355ab !important;
+        background-color: #336699 !important;
         border-bottom: 1px solid #1b2532 !important;
         color: #ffffff;
 
     }
 
     .md-nav__source {
-        background-color: #0355ab !important;
+        background-color: #336699 !important;
     }
 
     html .md-nav--primary .md-nav__title {
-        background-color: #0355ab !important;
+        background-color: #336699 !important;
         border-bottom: 1px solid #1b2532 !important;
         color: #ffffff;
     }
@@ -50,7 +50,7 @@
 .md-typeset .tx-switch button > code {
     display: block;
     color: #ffffff;
-    background-color:#0355ab;
+    background-color:#336699;
 }
 
 .md-typeset .tx-columns {
@@ -88,11 +88,11 @@
 
 .tx-container {
     padding-top: 1rem;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 0'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") repeat bottom, linear-gradient(to bottom, #0355ab, #33cccc 99%)
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 0'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") repeat bottom, linear-gradient(to bottom, #336699, #33cccc 99%)
 
 
     [data-md-color-scheme=slate] .tx-container {
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 0'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(232, 15%, 21%, 1)' /></svg>") repeat bottom, linear-gradient(to bottom, #0355ab, #33cccc 99%)
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 0'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(232, 15%, 21%, 1)' /></svg>") repeat bottom, linear-gradient(to bottom, #336699, #33cccc 99%)
   }
 
 }
@@ -111,7 +111,7 @@
     padding:10px 10px 10px 20px;
     background: #C3E1E6;
     font-size: 22px;
-    color: #0355ab;
+    color:#336699;
   }
 
 .data_header p {
@@ -166,7 +166,7 @@
 
 .tx-hero h1 {
     margin-bottom: 1rem;
-    color: #0355ab;
+    color: #336699;
     font-size:45px;
     font-weight:900
 }
@@ -219,7 +219,6 @@
 
 }
 
-
 @media screen and (min-width: 76.25em) {
     .tx-hero__image {
         transform:translateX(6rem)
@@ -265,7 +264,7 @@ body {
   position: relative;
   width: 700px;
   height: 350px;
-  max-width: 90vw;
+  max-width: 100vw;
   margin: auto;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -307,31 +306,31 @@ body {
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"] {
-  background-color: #0355ab;
+  background-color: #336699;
 }
 
 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
-  background-color: #0355ab;
+  background-color: #336699;
 }
 
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background-color: #0355ab;
+  background-color: #336699;
 }
 
 #btn-4:checked ~ .slider-controls label[for="btn-4"] {
-  background-color: #0355ab;
+  background-color: #336699;
 }
 
 #btn-5:checked ~ .slider-controls label[for="btn-5"] {
-  background-color: #0355ab;
+  background-color: #336699;
 }
 
 #btn-6:checked ~ .slider-controls label[for="btn-6"] {
-  background-color: #0355ab;
+  background-color: #336699;
 }
 
 #btn-7:checked ~ .slider-controls label[for="btn-7"] {
-  background-color: #0355ab;
+  background-color: #336699;
 }
 
 /* SLIDES */
@@ -367,8 +366,9 @@ body {
 
 .slide-title {
   margin-bottom: 20px;
-  font-size: 21px;
-  color: #0355ab;
+  font-size: 22px;
+  color: #336699;
+
 }
 
 .slide-text {
@@ -382,14 +382,14 @@ body {
 .slide-link {
   display: inline-block;
   padding: 10px 20px;
-  color: #0355ab;
+  color: #336699;
   border-radius: 5px;
   text-decoration: none;
   background-color: #ffffff;
 }
 
-a:hover, a:active {
-    background-color: #0355ab;
+.slide-link:hover, .active {
+    background-color: #336699;
     color: #ffffff;
 }
 

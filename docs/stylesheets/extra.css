@@ -1,7 +1,17 @@
-
+/*:root {
+  --md-primary-fg-color:        #336699;
+  --md-primary-fg-color--light: #264d73;
+  --md-primary-fg-color--dark:  #538cc6;
+  --md-primary-bg-color: hsla(0, 0%, 100%, 1);
+  --md-primary-bg-color--light:  hsla(0, 0%, 100%, 0.7);
+  /*--md-primary-bg-color: hsla(0, 0%, 100%, 1);
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+}
+*/
 body {
     font-family: “Open Sans”, Arial, Helvetica, sans-serif;
 }
+
 .md-header {
   position: -webkit-sticky;
   position: sticky;
@@ -9,35 +19,37 @@ body {
   right: 0;
   left: 0;
   z-index: 2;
-  height: 2.4rem;
-  color: #0355ab ;
-  background-color:  #ffffff;
+  height: 2.5rem;
+  color: #336699 ;
+  background-color: #ffffff;
+  font-weight: 600;
   box-shadow: 0 0 .2rem rgba(0, 0, 0, 0), 0 .2rem .4rem rgba(0, 0, 0, 0);
   transition:color 250ms, background-color 250ms
-  font-weight: 600;
+
 }
 
 
 .md-header a:hover, a:active {
-    background-color: #0355ab;
-    color: #ffffff;
+    background-color: transparent;
+    color: #4080bf;
 }
+
 
 @media only screen and (max-width: 76.1875em) {
 
     html .md-nav--primary .md-nav__title--site {
-        background-color: #0355ab !important;
+        background-color: #336699 !important;
         border-bottom: 1px solid #1b2532 !important;
         color: #ffffff;
 
     }
 
     .md-nav__source {
-        background-color: #0355ab !important;
+        background-color: #336699 !important;
     }
 
     html .md-nav--primary .md-nav__title {
-        background-color:  #0355ab !important;
+        background-color:  #336699 !important;
         border-bottom: 1px solid #1b2532 !important;
         color: #ffffff;
     }
@@ -117,7 +129,7 @@ body {
 .md-tabs {
   width: 100%;
   overflow: auto;
-  background-color: #0355ab !important;
+  background-color: #336699 !important;
   color: white;
   /*display: block;
   padding-top: 0px;
@@ -135,7 +147,9 @@ body {
 
 .md-typeset table:not([class]) th {
     min-width: 11.5rem;
-    background-color: #6c6c6c !important;
+    background-color: #C3E1E6 !important;
+    color: black;
+    /*background-color: #6c6c6c !important;*/
     font-size: medium;
 }
 
@@ -156,24 +170,25 @@ body {
 /* .md-footer-meta */
 
 .md-footer-nav {
-    background-color: hsla(211, 97%, 34%) !important;
+    background-color: hsl(210,50%,40%) !important;
 }
 
 .md-footer-meta {
-    background-color: hsla(211, 97%, 34%, 0.6)!important;
-    border-top: 1px solid hsla(211, 97%, 34%, 0.6) !important;
+    background-color: #264d73!important;
+    border-top: 1px solid #204060 !important;
     padding: 0.05rem;
 }
 
 
 /* mouse over link */
-a:hover {
+/*a:hover {
   color: #fff9ad;
 }
 
-/* selected link */
+/* selected link
 a:active {
   color: #3094a4;
 }
+*/
 
 .tooltip_templates { display: none; }

@@ -7,7 +7,9 @@ site_description: >-
 theme:
   name: material
   palette:
-    primary: indigo
+    #scheme: preference
+    primary: white
+   #accent: white
   features:
     - navigation.tabs
     - navigation.instant
@@ -46,7 +48,7 @@ extra:
   hypothesis: true
   social:
     - icon: fontawesome/solid/envelope
-      link: mailto:CFDE-HelpDesk%20<support@cfde.atlassian.net>
+      link: mailto:CFDE-HelpDesk%20<training@cfde.atlassian.net>
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/CfdeNih
     - icon: fontawesome/brands/github
