@@ -51,7 +51,7 @@
 .md-typeset .tx-switch button > code {
     display: block;
     color: #ffffff;
-    background-color:#336699;
+    background-color: #336699;
 }
 
 .md-typeset .tx-columns {
@@ -191,7 +191,7 @@
     .tx-hero__content {
         width: 25rem;
         margin-top: 3rem;
-        padding-bottom:5vw;
+        padding-bottom: 5vw;
         margin: 0 0.8rem;
     }
 
@@ -248,7 +248,7 @@ body {
   font-family: Roboto, sans-serif;
   width: 100%;
   height: 100%;
-  background:#fff;
+  background: #fff;
   /* Standard syntax (must be last) */
   margin: auto;
   position: absolute;
