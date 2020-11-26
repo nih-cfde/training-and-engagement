@@ -1,5 +1,4 @@
 
-
 body {
     font-family: “Open Sans”, Arial, Helvetica, sans-serif;
 }
@@ -159,6 +158,11 @@ body {
     width: 40px
 }
 
+.md-nav--primary .md-nav__title[for=__drawer] {
+    position: relative;
+    color: var(--md-primary-fg-color);
+    background-color:var(--md-primary-fg-color)
+}
 /* .md-footer-meta */
 
 .md-footer-nav {
@@ -166,7 +170,7 @@ body {
 }
 
 .md-footer-meta {
-    background-color: #264d73!important;
+    background-color: #204060 !important;
     border-top: 1px solid #204060 !important;
     padding: 0.05rem;
 }
