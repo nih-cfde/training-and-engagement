@@ -23,7 +23,10 @@ sudo apt-get update && sudo apt-get -y install python ncbi-blast+
     ```
 
 
-## Step 2: Set up file permissions and VM home directory
+## Step 2: Set up file permissions and temporary directory
+
+`/mnt` is a temporary file system that is large enough to run data analysis in, but is deleted when the VM is shut down.
+
 ```
 sudo chmod a+rwxt /mnt
 cd /mnt
