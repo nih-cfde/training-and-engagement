@@ -119,7 +119,7 @@ The output should list your GCP Google account email and project ID.
 
 Files are stored in buckets in the Google Storage service. Buckets can be managed from the graphical user interface (GUI) section of the GCP console and on the command line. We will create a bucket and move files on command line and then check them on the GUI. To ensure secure transfer of data to/from the cloud, we will use the `gsutil` tool.
 
-- Make a bucket by using the `gsutil mb` command. Google bucket paths always begin with "gs://". You must enter a unique name for your bucket.
+- Make a bucket by using the `gsutil mb` command. Google bucket paths always begin with "gs://". You must enter a unique name for your bucket (do not use spaces in the name).
 
 ```
 gsutil mb gs://<your bucket name>
@@ -149,7 +149,7 @@ export BUCKET="gs://<your bucket name>""
     Operation completed over 1 objects/268.0 B.
     ```
 
-- Now go to the navigation menu, scroll down to "Google Storage", and click "Browser". You should see your bucket listed ("my-bucket-blastresults" in this example). Click on the bucket name.
+- Now go to the navigation menu, scroll down to "Storage", and click "Browser". You should see your bucket listed ("my-bucket-blastresults" in this example). Click on the bucket name.
 
 ![](./gcp_images/gcp_storage1.png "Google Storage tab")
 
