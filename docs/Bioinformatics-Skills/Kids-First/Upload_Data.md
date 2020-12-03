@@ -323,7 +323,7 @@ The `-t` flag tells AWS to look for an Authentication token. Remember to replace
 
 ### Step 5c: Moving Files
 
-Finally, you can transfer files by running the following code. Remember to replace "project-name" with the name of your project and "username" with you cavatica login name.
+Finally, you can transfer files by running the following code. Remember to replace "project-name" with the name of your project and "username" with your cavatica login name.
 
 === "AWS Instance Code"
     ```
@@ -348,4 +348,34 @@ You're all done! Log in to Cavatica and look for your files in the the "Files" t
 
 ## Step 6: Edit Metadata
 
-- In the "Files" tab of your Sim
+!!! Important
+    The name of the example project we are using in this section of the tutorial is called "sim_fastq". Your project name will be different. To practice, we recommend following along using the practice yeast fastq files ("ERR458493.fastq.gz" and "ERR458494.fastq.gz") that you previously pushed to the "project-name" project.
+
+- Click into your desired Project and then click on the "Files" tab.
+
+![](images/Files_Tab.png "Files Tab")
+
+- You will see all the files in the project listed here.
+
+- Select the files whose metadata you wish to edit by checking the box next to the file name.
+
+![](images/Select_Samples.png "Select the Files")
+
+- Click the "Edit Metadata" button
+![](images/Edit_Metadata_Button.png "Edit Metadata Button")
+
+
+- You should see a pop-up window on the right side of the screen
+![](images/Popup_Window.png "Popup Window to Edit Metadata")
+
+
+- Fill in or edit all the metadata terms you wish to use for your analysis and click "Save"
+
+- Your new metadata terms should now be displayed on your screen!
+
+!!! note "Don't see your metadata column of interest?"
+
+    - Click on the table icon on the right hand side of the page
+    - Check all the column names you wish to add to the metadata display.
+
+    ![](images/Columns_Selection.png "Selecting Columns for Display")
