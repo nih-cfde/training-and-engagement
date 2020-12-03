@@ -25,6 +25,7 @@ All tutorials are written with Markdown syntax. Each page should have a title (`
 Markdown syntax allows up to [6 levels of hierarchy](https://www.markdownguide.org/basic-syntax/#headings), however, if you need headings beyond level 3, this is a good indication that the tutorial page could benefit from being broken down into separate pages. Please try to only use level 2 (`##`) and 3 (`###`) headings.
 
 ## Markdown tables
+
 Tables columns are defined with `|` and rows with `-`. Markdown cell widths are set to be the same for each column when rendered by Mkdocs. The syntax looks like this:
 
 ```
@@ -51,10 +52,10 @@ Use | Example
 --- | ---
 Buttons to click | "Launch", "Download"
 Text on webpages | look for the "Actions" column
-File names | A text file called "download-links.txt"*
+File names | A text file called "download-links.txt" **&ast;**
 Folder names | create a folder called "KF_Data"
 
-*If you refer to this specific file many times, you can put the file name in quotations for the first mention. The "Snakefile" in the Snakemake tutorial is an example where we state that the file is called "Snakefile" but thereafter simply refer to it as Snakefile.
+&ast;If you refer to this specific file many times, you can put the file name in quotations for the first mention. The "Snakefile" in the Snakemake tutorial is an example where we state that the file is called "Snakefile" but thereafter simply refer to it as Snakefile.
 
 ### In-line code formatting with single backticks
 
@@ -64,12 +65,12 @@ Command names | `nano`
 Package names | `plink`
 Optional commands | `git branch -d`
 Conda environment names | `base`
-File names and paths | `./docs/images/`*
+File names and paths | `./docs/images/` **&ast;**
 File extensions | `.fastq.gz`
 Ports | `:3000`
 Github branches | `stable`
 
-*Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
+&ast;Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
 
 ### Quotes
 
@@ -200,13 +201,14 @@ Use hyperlinks to link images, other Markdown files, or websites. Provide short 
 
 Type | Syntax
 --- | ---
-images | `![](relative/path/to/docs/images/imagefile "short description of image")`*
+images | `![](relative/path/to/docs/images/imagefile "short description of image")` **&ast;**
 tutorial references | `[text about the reference](relative/path/to/docs/Resources/referencefile)`
 other pages in the Github repo | `[text about the page](relative/path/to/page/in/Github/repo/filename)`
 URLs with title | `[text about the website](URL)`
 URL link itself | `<URL>`
 
-*By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
+&ast;By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
+
 
 Note that the image link format below results in a broken image link on Mkdocs, even though it renders on Github Markdown:
 

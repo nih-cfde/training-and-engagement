@@ -31,7 +31,7 @@ options to access the "Collection" view of the CFDE data browser.
 By using the "Collection" link under the "Or browse by feature" section listed
 under "Explore our Repository" or by selecting "Collection" under the "Browse" option in the top left navigation bar.
 
-![CFDE portal Collection](../../../images/CFDE-portal-collection.png "CFDE portal Collection")   
+![CFDE portal Collection](../images/CFDE-portal-collection.png "CFDE portal Collection")   
 
 The default page shows a total of 2,990 records.
 
@@ -42,7 +42,7 @@ Use the "Search all columns" box to identify datasets using **IPSC** (induced pl
 !!! note "Case-insensitive"
     The search is case-insensitive. One will obtain the same results for "IPSC" or "ipsc" or any combination of the two.
 
-![Search for IPSC datasets](../../../images/Neurodegeneration-ipsc-filter.png "Search for IPSC datasets")   
+![Search for IPSC datasets](../images/Neurodegeneration-ipsc-filter.png "Search for IPSC datasets")   
 
 This results in 19 records.
 
@@ -51,7 +51,7 @@ This results in 19 records.
 Use the "Part of Collection" filter listed under the Refine Search panel to select the desired datasets ["ID" values : ST000499, ST000554, LDG-1296, LDG-1297, LDG-1298, LDG-1393, LDG-1394,
 LDG-1338, LDG-1339].
 
-![IPSC final datasets](../../../images/Neurodegeneration-part-of-collection-ipsc.png "IPSC final datasets")   
+![IPSC final datasets](../images/Neurodegeneration-part-of-collection-ipsc.png "IPSC final datasets")   
 
 This results in 9 matching records from Metabolomics and Library of Integrated Network-Based Cellular Signatures (LINCS). The subset cohort is exported to a `csv` file using the "Export" option.
 
@@ -64,7 +64,7 @@ The associated datasets use either IPSC or neural stem cell in their experimenta
 
 Use "Clear all filters" to remove the previous selection and type **stem cell neu** keyword in the "Search all columns" box. Use the "Part of Collection" filter listed under the Refine Search panel to select the desired datasets ["ID" values : ST000688, ST000768].
 
-![Stem Cell final datasets](../../../images/Neurodegeneration-stem-cell.png "Stem Cell final datasets")
+![Stem Cell final datasets](../images/Neurodegeneration-stem-cell.png "Stem Cell final datasets")
 
 !!! note "Duplicated studies"
     The two LINCS datasets (LDG-1338, LDG-1393) in the subset are not selected as they are already included in the previous filtered list.
@@ -75,6 +75,6 @@ This results in two records and are exported to a second `csv` file using the "E
 
 The two CFDE portal exported `csv` files are combined into a single `csv` file in the user's local machine to obtain the final dataset. The exported `csv` file has twelve columns.
 
-![CFDE portal exported file](../../../images/CFDE-portal-movement-disorder-export.png "CFDE portal exported file")   
+![CFDE portal exported file](../images/CFDE-portal-movement-disorder-export.png "CFDE portal exported file")   
 
 The relevant individual study details are in the `id`, `name` and `description` columns. The `persistant_id` column lists the permanent URL which can be used to access each of the studies in [Metabolomics](https://www.metabolomicsworkbench.org) and [LINCS](http://lincsportal.ccs.miami.edu/datasets/) data portals respectively.

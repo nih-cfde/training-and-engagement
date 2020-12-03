@@ -48,7 +48,7 @@ In this order:
 
 *Title*
 
-Titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`
+Titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with MkDocs`
 
 *Brief description*
 
@@ -131,7 +131,7 @@ They are formatted with a tabbed box:
 
 *Title (optional)*
 
-For tutorials that start new pages after their landing page, the title will refer to the primary content of each page, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`.
+For tutorials that start new pages after their landing page, the title will refer to the primary content of each page, e.g., `How to launch an AWS instance`, `How to create a website with MkDocs`.
 
 *"Introduction" (optional)*
 
@@ -209,3 +209,4 @@ Check out the next pages for guidelines on the following:
 - [binder set-up](./5PangeoBinderGuide.md) so users can follow along without worrying about computer set up or software installations
 
 - set up [practice Github repository](./6PracticeGithubRepos.md)
+
