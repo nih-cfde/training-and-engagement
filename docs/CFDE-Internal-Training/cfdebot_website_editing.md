@@ -68,7 +68,7 @@ The website created by the `published-documentation` repo pulls some docs that a
 Follow the general steps above, with the following additional steps:
 
 - Push your changes to the `preview` branch first to check the rendered website
-- If the changes look as you expected, make a PR of your branch to `dev` and tag the admin team, who will check the changes and approve. Approved changes will periodically be promoted to the `stable` branch to be rendered on the public website.
+- If the changes look as you expected, make a PR of your branch to `dev` and tag the admin team (@ACharbonneau and @marisalim), who will check the changes and approve. Approved changes will periodically be promoted to the `stable` branch to be rendered on the public website.
 
 ### B) **To edit documents that are in the sub-module repos**
 
@@ -104,4 +104,4 @@ If the website build checks all pass, the bot will then automatically merge:
 
 #### Step 5: Publishing your changes
 
-The bot will also automatically create branches (`update-<repo>-docs`) if it detects changes in either of the sub-module repos. If the preview looks as you expected, approve this matching PR. After approved, the admin team will merge changes and they will be viewable on the public version of the website!
+The bot will also automatically create branches (`update-<repo>-docs`) if it detects changes in either of the sub-module repos. If the preview looks as you expected, approve this matching PR. The bot will automatically tag an admin to review and merge changes that will then be viewable on the public version of the website!
