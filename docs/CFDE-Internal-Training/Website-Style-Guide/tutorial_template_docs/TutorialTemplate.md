@@ -7,7 +7,7 @@ Note, overview/landing pages should have the yaml file header, e.g.,:
 ```
 ---
 layout: page
-title: AWS overview
+title: <tutorial name> overview
 ---
 ```
 This sets the title of the previous and upcoming pages on the Mkdocs footer bar.
