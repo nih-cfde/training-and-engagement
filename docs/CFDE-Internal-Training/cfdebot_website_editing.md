@@ -29,9 +29,11 @@ In this tutorial, we lay out the general steps for the single stage PR process.
 
 ### Step 2: Create a new branch
 
+Say you want to edit a CFDE website that merges changes from the `stable` branch.
+
 If working from Github, type a new branch name (e.g., `my_branch`) in the `Branch:stable` dropdown button and hit ++enter++. The new branch should be created with the `stable` branch as its base.
 
-![](../images/github-branch-stable.png "create new github branch")
+![](./images-cfdebot/github-branch-stable.png "create new github branch")
 
 ### Step 3: Make edits
 
