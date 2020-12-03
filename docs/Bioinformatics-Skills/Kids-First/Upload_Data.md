@@ -1,15 +1,13 @@
-# Upload Data to Cavatica
+# Upload Data to Cavatica and Edit Metadata
 
-There are several ways in which users can upload data from their local computers or academic clusters to Cavatica. Cavatica provides many [tutorials](https://docs.cavatica.org/docs/upload-your-data-to-cavatica) on how to do so.
+There are several ways in which users can upload data from their local computers or academic clusters to Cavatica. Cavatica provides many [tutorials](https://docs.cavatica.org/docs/upload-your-data-to-cavatica) on how to do so for intermediate level users of the interface.
 
-In this tutorial, we expand on using the Cavatica's Command Line Uploader to move fastq files from your AWS Instance on to Cavatica via the command line interface.
+This tutorial is a beginner friendly version for using Cavatica's Command Line Uploader to move fastq files from your AWS Instance on to Cavatica via the command line interface.
 
 
 !!! note "Learning Objectives"
 
-    - Learn to upload files to Cavatica
-
-    - Learn to edit metadata of files on Cavatica
+    - Learn how to upload files to Cavatica
 
 === "Est. Time"
 
@@ -30,7 +28,7 @@ In this tutorial, we expand on using the Cavatica's Command Line Uploader to mov
 
 ## Step 1: Update Instance
 
-Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance. `LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available. 
+Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance. `LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available.
 
 === "AWS Instance Code"
 
@@ -102,7 +100,7 @@ Next, download the Cavatica Uploader by running this code:
     ```
     curl -LO https://cavatica.sbgenomics.com/downloads/cli/cavatica-uploader.tgz
     ```
-The -O flag names the local file the same as its remote counterpart. 
+The -O flag names the local file the same as its remote counterpart.
 Now uncompress the Cavatica Uploader by running:
 
 === "AWS Instance Code"
@@ -110,6 +108,8 @@ Now uncompress the Cavatica Uploader by running:
     ```
     tar zxvf cavatica-uploader.tgz -C ~
     ```
+Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename.
+
 
 ## Step 4: Test the Command Line Uploader
 
@@ -120,14 +120,14 @@ Check if the Uploader works by running this code:
     ```
     ~/cavatica-uploader/bin/cavatica-uploader.sh -h
     ```
-    
+
 === "Expected Output"
 
     ```
     ubuntu@ip-172-31-26-145:~$ ~/cavatica-uploader/bin/cavatica-uploader.sh -h
     Upload files to Cavatica
     usage: cavatica-uploader.sh [-h] [-l] [-p id] [-t token] [-x url] file ...
-    -a,--automation                 Start automation from manifest file.
+    -a,--automation              Start automation from manifest file.
                                  This option must be used together with
                                  --manifest-file.
     --dry-run                    Dry run the upload (manifest) and/or
@@ -148,7 +148,7 @@ Check if the Uploader works by running this code:
                                  and exit.
                                  This option must be used together with
                                  --project.
-    -mf,--manifest-file <arg>       Specify manifest tabular file to set
+    -mf,--manifest-file <arg>    Specify manifest tabular file to set
                                  metadata.
                                  This option must be used together with
                                  --project.
@@ -157,9 +157,9 @@ Check if the Uploader works by running this code:
                                  argument to this option.
                                  This option must be used together with
                                  --manifest-file.
-    -p,--project <arg>              Specify the ID of the project to upload
+    -p,--project <arg>           Specify the ID of the project to upload
                                  files to.
-    -pf,--preserve-folders          Should the folder structure for specified
+    -pf,--preserve-folders       Should the folder structure for specified
                                  input folders be preserved while
                                  uploading recursively.
                                  By default, files encountered in the
@@ -173,14 +173,14 @@ Check if the Uploader works by running this code:
                                  If omitted, the uploader will resume an
                                  upload when the local file matches in
                                  name and size.
-    -t,--token <arg>                Specify an authorization token.
+    -t,--token <arg>             Specify an authorization token.
     --tag <arg>                  Apply tag <arg> to all the files in this
                                  upload.
                                  This option may appear multiple times.
-    -u,--username <arg>             Specify username.
+    -u,--username <arg>          Specify username.
                                  If omitted and not using the -t option,
                                  user will be prompted for a username.
-    -x,--proxy <arg>                Specify a proxy server through which the
+    -x,--proxy <arg>             Specify a proxy server through which the
                                  uploader should connect.
                                  The URL to the proxy server in the form
                                  proto://[user:pass]@host[:port].
@@ -267,14 +267,14 @@ Now the program can be called from any directory on your instance using the name
                                  If omitted, the uploader will resume an
                                  upload when the local file matches in
                                  name and size.
-    -t,--token <arg>                Specify an authorization token.
+    -t,--token <arg>             Specify an authorization token.
     --tag <arg>                  Apply tag <arg> to all the files in this
                                  upload.
                                  This option may appear multiple times.
-    -u,--username <arg>             Specify username.
+    -u,--username <arg>          Specify username.
                                  If omitted and not using the -t option,
                                  user will be prompted for a username.
-    -x,--proxy <arg>                Specify a proxy server through which the
+    -x,--proxy <arg>             Specify a proxy server through which the
                                  uploader should connect.
                                  The URL to the proxy server in the form
                                  proto://[user:pass]@host[:port].
@@ -285,9 +285,9 @@ Now the program can be called from any directory on your instance using the name
     Complete documentation is available at:
     http://docs.sevenbridges.com/docs/upload-via-the-command-line
     ```
-    
+
 !!! note "PATH"
-    Adding the program to the $PATH variable will only last the length of the session. 
+    Adding the program to the $PATH variable will only last the length of the session.
 
 ## Step 5: Move Files
 
@@ -344,3 +344,8 @@ Finally, you can transfer files by running the following code. Remember to repla
 By running this code, you are moving files from your AWS instance to the "project-name" project within Cavatica. The `*` wildcard copies all the files with extension ".fastq.gz". The `-p` flag tells AWS which Cavatica project to put the files into. If you wish, you could use the `-f` flag to create a subfolder inside the project (not shown here).
 
 You're all done! Log in to Cavatica and look for your files in the the "Files" tab in your project.
+
+
+## Step 6: Edit Metadata
+
+- In the "Files" tab of your Sim
