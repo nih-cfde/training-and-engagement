@@ -351,23 +351,23 @@ You're all done! Log in to Cavatica and look for your files in the the "Files" t
 !!! Important
     The name of the example project we are using in this section of the tutorial is called "sim_fastq". Your project name will be different. To practice, we recommend following along using the practice yeast fastq files ("ERR458493.fastq.gz" and "ERR458494.fastq.gz") that you previously pushed to the "project-name" project.
 
-- Click into your desired Project and then click on the "Files" tab.
+- First, click into your desired Project and then select the "Files" tab.
 
 ![](images/Files_Tab.png "Files Tab")
 
-- You will see all the files in the project listed here.
+- You should see all your files listed here.
 
-- Select the files whose metadata you wish to edit by checking the box next to the file name.
+- Next, select the files whose metadata you wish to edit by checking the box next to the file name.
 
 ![](images/Select_Samples.png "Select the Files")
 
 - Click the "Edit Metadata" button
+
 ![](images/Edit_Metadata_Button.png "Edit Metadata Button")
 
-
 - You should see a pop-up window on the right side of the screen
-![](images/Popup_Window.png "Popup Window to Edit Metadata")
 
+![](images/Popup_Window.png "Popup Window to Edit Metadata")
 
 - Fill in or edit all the metadata terms you wish to use for your analysis and click "Save"
 
