@@ -54,7 +54,7 @@ Titles should be short and include the goal of the tutorial, e.g., `How to launc
 
 A brief description of what the tutorial is about (may be expanded in the Introduction section detailed below)
 
-*Table of contents (for **multi-page** tutorials)*
+*Table of contents (for MULTI-page tutorials)*
 
 A Markdown formatted table for each page of the tutorial. The table columns should be named as follows:
 
@@ -209,4 +209,3 @@ Check out the next pages for guidelines on the following:
 - [binder set-up](./5PangeoBinderGuide.md) so users can follow along without worrying about computer set up or software installations
 
 - set up [practice Github repository](./6PracticeGithubRepos.md)
-
