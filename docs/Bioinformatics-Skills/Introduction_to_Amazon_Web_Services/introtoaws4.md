@@ -16,7 +16,7 @@
 
     ![mobaxterm1](../../intro-to-aws-images/mobaxterm_1.PNG "start new session")
 
-    ![Remote Host](../../intro-toaws-imagesimages/mobaxterm_2.PNG "select SSH session type")
+    ![Remote Host](../../intro-to-aws-imagesimages/mobaxterm_2.PNG "select SSH session type")
 
     ## Step 3: Set up session settings
 
