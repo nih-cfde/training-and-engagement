@@ -4,8 +4,7 @@
 
 ## Why use simulated data?
 
-There are a myriad of bioinformatics tools currently available to users. Before use, every tool must be tested for general usability and suitability for a given task. Simulated data can be ideal for the purposes of testing bioinformatics tools because the user can model the data set based on their specified parameters. With simulated data, the user knows the final answer, and so they know when the tool doesn't work. For example, when using fastq data that was simulated from a "normal" human reference genome (with no mutation parameters specified), the final answer should be the absence of any detectable variants. If a variant calling pipeline detects variants using this simulated data set, the pipeline doesn't work correctly. Simulated data sets are also great for use in the classroom, especially when protected (human) data can't be distributed.
-
+With so many bioinformatics tools currently available to users, simulated datasets are ideal for quickly generating toy datasets based on real data to test new tools for general usability and user task suitability. For example, a researcher could test a variant calling pipeline on data simulated from the human genome. If the data simulation did not introduce new mutations relative to the original human genome used for simulation, variants should not be detected. Simulated datasets are also useful for teaching, since they can be readily shared unlike protected (human) data.
 
 !!! note "Learning Objectives"
 
@@ -46,28 +45,28 @@ There are a myriad of bioinformatics tools currently available to users. Before 
 
 ## Selecting the right AWS instance to run InSilicoSeq
 
-To run [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq), you will need to launch a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance as described in [the AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md) with a **few modifications**:
+In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) on a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance. Instructions on how to launch an AWS instance and access it are described in [our AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md). Please follow those instructions with a **few modifications**:
 
- ### Step 1)
- You must select the the `t2.xlarge` instance (instead of the default t2.micro instance selection described in the tutorial):
+### Step 1:
+ You must select the the `t2.xlarge` instance (instead of the default `t2.micro` instance selection described in the tutorial):
 
 ![](../images/Simulated_Data_t2xlarge.png "t2 xlarge instance")
 
 !!! Warning
-    t2.xlarge machine is not part of AWS's free tier. Running this instance costs money to all users, including those who have free tier access. Check the estimated cost section at the top of this page.
+    `t2.xlarge` machine is not part of AWS's free tier. Running this instance costs money to all users, including those who have free tier access. Check the estimated cost section at the top of this page.
 
- ### Step 2)
- After choosing t2.xlarge, click on the "4.Add Storage" tab on the instance launch page and then changing the number on the "Size (GB)" tab to read "16", as shown in the image below:
+### Step 2:
+ After choosing `t2.xlarge`, click on the "4.Add Storage" tab on the instance launch page and then changing the number on the "Size (GB)" tab to read "16", as shown in the image below:
 
 ![](../images/Simulated_Data_t2xlarge_storage.png "Add storage to t2 xlarge instance")
 
   You need to add more storage because, while the output fastq files themselves are small (<20MB), temporary files generated during the simulation take up a lot of space.
 
 
- ### Step 3)
+### Step 3:
  Click "Review and launch"
 
- ### Step 4)
+### Step 4:
  Then go back to the [AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md) and follow instructions on how to access the instance via the MacOS terminal window
 
 ## Installing InSilicoSeq
@@ -85,6 +84,7 @@ InSilicoSeq can be installed using Python's package manager `pip3`. However, `AW
     sudo apt update
     sudo apt install python3-pip
     ```
+
 === "Expected Output"
 
     ```
@@ -103,6 +103,7 @@ Now you can install InSilicoSeq:
     ```
     pip3 install InSilicoSeq
     ```
+
 === "Expected Output"
 
     ```
@@ -161,11 +162,13 @@ Now your Ubuntu machine should be able to find InSilicoSeq. You can check to see
     ```
     iss --version
     ```
+
 === "Expected output"
 
     ```
     iss version 1.5.1
     ```
+
 If you see the version number printed on the screen, you are good to go!
 
 ## Download the human reference genome
@@ -233,11 +236,19 @@ Finally, run the code to make your simulated fastq file.
     `--output` specifies the name of the output files. You're calling it my_sim, but you can change it to whatever suits your needs.
 
 
-If your run is successful, you will see two ".fastq" files, "my_sim_R1.fastq" and "my_sim_R2.fastq", and an abundance file called "my_sim_abundance.txt". The abundance file is more meaningful in the context of simulating metagenomic data. It is a tab-delimited file containing the abundance of each genome supplied to the command. The 5 M reads generated per simulation are split between the R1 and R2 files.
+!!! Important
+    The simulation step takes ~30 minutes to complete. Please do not close the terminal window until the simulation run is complete. Closing the terminal before the simulation is complete will interrupt the run and you will have to start over.
+
+
+ If your run is successful, you will see two ".fastq" files, "my_sim_R1.fastq" and "my_sim_R2.fastq", and an abundance file called "my_sim_abundance.txt". The abundance file is more meaningful in the context of simulating metagenomic data. It is a tab-delimited file containing the abundance of each genome supplied to the command. The 5 M reads generated per simulation are split between the R1 and R2 files.
 
 ## Looping InSilicoSeq
 
-If you want to repeat the simulation multiple times, modify the following code block by changing the `n` to an integer corresponding to the number of time you wish to run the simulation. Your output files will be named 1_my_sim_R1 and 1_my_sim_R2, 2_my_sim_R1 and 2_my_sim_R2, ..., n_my_sim_R1 and n_my_sim_R2.
+If you want to repeat the simulation multiple times, modify the following code block by changing the `n` to an integer corresponding to the number of time you wish to run the simulation. Your output files will be named
+  - 1_my_sim_R1 and 1_my_sim_R2
+  - 2_my_sim_R1 and 2_my_sim_R2
+  - ...
+  - n_my_sim_R1 and n_my_sim_R2.
 
 === "AWS Instance Code"
 
@@ -248,7 +259,7 @@ If you want to repeat the simulation multiple times, modify the following code b
     ```
 
 !!! Warning
-    Depending on how many times you run the simulation and/or how many reads you simulate, the code may take a really long time to complete! You can start out by running a small set of reads (2-3) to test the code before scaling up.
+    Depending on how many times you run the simulation and/or how many reads you simulate, the code may take a really long time to complete! You can start out by running a small set of reads (--n_reads 1M) to test the code before scaling up.
 
 
 ## Quality control
@@ -324,14 +335,21 @@ Here is an image of the top of an example FastQC report.
 
 ### Interpretation
 
-**Watch this [YouTube video](https://www.youtube.com/watch?v=bz93ReOv87Y) on how to interpret FastQC results**:
+**This [YouTube video](https://www.youtube.com/watch?v=bz93ReOv87Y) made by the Babraham Bioinformatics Institute (the developers of FastQC) on how to interpret FastQC results has more information on interpreting FastQC results**:
 
 [![FastQC video tutorial](http://img.youtube.com/vi/bz93ReOv87Y/0.jpg)](https://www.youtube.com/watch?v=bz93ReOv87Y "FastQC Interpretation")
 
-All simulated reads are 126 bp long :)
+From the FastQC report, we see that the overall read quality scores are good and read length is 126bp. These simulated reads are now ready to be used for analysis!
+
 
 !!! note "AWS Instance Termination"
 
     - To avoid unnecessary charges, remember to [terminate your AWS instance](Introduction_to_Amazon_Web_Services/introtoaws4.md) once you are done using it.
 
-    - It is important to remember that terminating the instance causes all the data in that instance to be lost forever. If you wish to keep the fastq files, please remember to transfer them to your local machine or analysis platform. Check out our [tutorial on transferring files from AWS to Cavatica](Kids-First/Upload_Data.md).
+    - It is important to remember that terminating the instance causes all the data in that instance to be lost forever. If you wish to keep the fastq files, please remember to transfer them to your local machine or analysis platform. You can modify the download code from the "Transfer to Local Computer" section above to download the fastq files like so:
+
+    ```
+    scp -i ~/Desktop/amazon.pem ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/fastq/\*.zip ~/Desktop/fastqc/.
+    ```
+
+    You can also check out our [tutorial on transferring files from AWS to Cavatica](Kids-First/Upload_Data.md).
