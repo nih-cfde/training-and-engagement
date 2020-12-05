@@ -4,7 +4,7 @@
 
 Who is our target audience?
 
-- clinicians, biomedical data scientists 
+- clinicians, biomedical data scientists
 
 - NIH Common Fund staff
 
@@ -18,7 +18,7 @@ For a thorough guide to tutorial style best practices, please read [DigitalOcean
 
 Tutorials should consist primarily of original content. If lesson material is adapted from other sources, please attribute work appropriately (e.g., "This material was adapted from ANGUS (link to source material)."). If you want to include original video or animation content from other sources, check that:
 
-1) the material has a license that allows reuse, 
+1) the material has a license that allows reuse,
 
 2) if there is a license, the material is properly referenced in the tutorial,
 
@@ -48,7 +48,7 @@ In this order:
 
 *Title*
 
-Titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`
+Titles should be short and include the goal of the tutorial, e.g., `How to launch an AWS instance`, `How to create a website with MkDocs`
 
 *Brief description*
 
@@ -81,8 +81,8 @@ They are formatted with a `note` admonition box:
 For **1-page** tutorials, include the "Est. Time" as a tabbed box rather than a table and put it AFTER the "Learning Objectives" so that the time, prereqs, and tutorial resources are grouped together (see Conda installation tutorial for an example):
 
 ```
-=== "Est. Time" 
-    
+=== "Est. Time"
+
     10 mins
 ```
 
@@ -116,13 +116,13 @@ They are formatted with a tabbed box:
 
 - "Set Up" (optional)
 
-- Tutorial steps 
+- Tutorial steps
 
 - Conclusion (optional)
 
 *Title (optional)*
 
-For tutorials that start new pages after their landing page, the title will refer to the primary content of each page, e.g., `How to launch an AWS instance`, `How to create a website with Mkdocs`.
+For tutorials that start new pages after their landing page, the title will refer to the primary content of each page, e.g., `How to launch an AWS instance`, `How to create a website with MkDocs`.
 
 *"Introduction" (optional)*
 
@@ -138,7 +138,7 @@ If more set up material is needed beyond the prerequisites on the landing page, 
 
 *Steps*
 
-Tutorial steps should be written as `Step n: Action`, e.g., `Step 1: Downloading reference file`. 
+Tutorial steps should be written as `Step n: Action`, e.g., `Step 1: Downloading reference file`.
 
 Include links to accompanying files for download, like scripts or input files for data downloads
 
@@ -168,7 +168,7 @@ Use the admonition `note` format:
 
 ```
 !!! note "Key Points"
-    
+
     - point1
     - point2
 ```
@@ -177,18 +177,18 @@ Use the admonition `note` format:
 
 - save markdown files in `./docs/`
 
-- save images in `./docs/images/` as .jpeg or .png files
+- create a local `images` folder within the tutorial directory and save images in `./images/` as .jpeg or .png files
 
 - there are several ways to save files that accompany tutorials:
 
     - save reference material in `./docs/Cheat Sheets/` (e.g., code syntax cheat sheets)
-    
+
     - for example data files that users should access with `wget` or `curl`, upload files to the [CFDE Training Data Files osf project](https://osf.io/c8txv/#show_login). Login to the osf project is restricted to CFDE members. Create a new folder and upload your file(s).
-    
+
     - for small files that users should download from the website (e.g., template script files), format the file name as a hyperlink in the tutorial. If the file has a file extension, a download option is available when users click the link.
-    
+
     - for scripts/example scripts associated with a specific tutorial, save files in the tutorial folder.
-    
+
     - save binder files in a new Github repo (binders are made for entire repos, and we do not want a binder of the entire training-and-engagement repo!)
 
 ## Additional/optional user-friendly components
@@ -202,5 +202,3 @@ Check out the next pages for guidelines on the following:
 - binder set-up so users can follow along without worrying about computer set up or software installations
 
 - set up practice Github repository
-
- 
