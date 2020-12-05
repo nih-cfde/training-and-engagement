@@ -8,7 +8,7 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
 Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the "My Account" menu option "AWS Management Console". Log in with your username & password.
 
-![AWS Management Console](../../images_introtoaws/aws_1.PNG "AWS my account button")
+![AWS Management Console](../../intro-to-aws-images/aws_1.PNG "AWS my account button")
 
 !!! Note
 
@@ -22,7 +22,7 @@ Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the
 
 For this tutorial, select the AWS region that is closest to your current geographic location. The AWS region of your remote machine is displayed on the top right of this page. Click on it and choose the location that best describes the region you are currently located.
 
-![AWS Dashboard](../../images_images_introtoaws/aws_2.PNG "AWS amazon machine selection")
+![AWS Dashboard](../../intro-to-aws-images/aws_2.PNG "AWS amazon machine selection")
 
 !!! note "AWS Region"
 
@@ -30,11 +30,11 @@ For this tutorial, select the AWS region that is closest to your current geograp
 
 Click on "Services" (upper left):
 
-![AWS Services](../../images_introtoaws/aws_3.png "AWS Services button")
+![AWS Services](../../intro-to-aws-images/aws_3.png "AWS Services button")
 
 Click on "EC2":
 
-![EC2](../../images_introtoaws/aws_4.png "AWS EC2 button")
+![EC2](../../intro-to-aws-images/aws_4.png "AWS EC2 button")
 
 !!! Note
 
@@ -42,11 +42,11 @@ Click on "EC2":
 
 Click on "Launch Instance":
 
-![Launch Instance](../../images_introtoaws/aws_5.png "AWS launch button")
+![Launch Instance](../../intro-to-aws-images/aws_5.png "AWS launch button")
 
 Select "AWS Marketplace" on the left hand side tab:
 
-![AWS Marketplace](../../images_introtoaws/aws_6.png "AWS marketplace button")
+![AWS Marketplace](../../intro-to-aws-images/aws_6.png "AWS marketplace button")
 
 ### Step 3: Choose an Amazon Machine Image (AMI)
 
@@ -54,11 +54,11 @@ An Amazon Machine Image is a special type of virtual appliance that is used to c
 
 Type `Ubuntu 20.04 Pro LTS` in the search bar. Click "Select":
 
-![AMI](../../images_introtoaws/aws_7.png "AWS Ubuntu AMI")
+![AMI](../../intro-to-aws-images/aws_7.png "AWS Ubuntu AMI")
 
 Click "Continue":
 
-![Ubuntu Pro](../../images_introaws/aws_9.PNG "Ubuntu Pro information")
+![Ubuntu Pro](../../intro-to-aws-images/aws_9.PNG "Ubuntu Pro information")
 
 ### Step 4: Choose an instance type
 
@@ -66,7 +66,7 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 
 Select the row with `t2.micro`, the free tier eligible option:
 
-![t2.micro](../../images_introtoaws/aws_8.png "t2 micro instance type")
+![t2.micro](../../intro-to-aws-images/aws_8.png "t2 micro instance type")
 
 !!! Note
 
@@ -98,11 +98,13 @@ There are several optional set up configurations. You can either click "Review a
 
 After configuration settings are complete, click "Review and Launch" and "Launch". If you are launching an AWS instance for the first time, you will need to generate a key pair.
 
+![launch instance](../../intro-to-aws-images/aws_launch.png "launch the instance")
+
 Choose the "Create a new key pair" option from the drop down menu. Under key pair name, type "amazon" and click "save". The default location for saving files on a Mac is the "Downloads" folder -- that's where your key pair can be found. Next time you launch an instance, you can reuse the key pair you just generated.
 
 If you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, we are calling the key pair "amazon.pem".
 
-![mobaxterm](../../images_introtoaws/aws_10.png "key pair set up")
+![pem key](../../intro-to-aws-images/aws_10.png "key pair set up")
 
 !!! Note "Why do I need a key pair?"
 
@@ -110,11 +112,11 @@ If you have a previously generated key pair, you can reuse it to launch an insta
 
 Then select your key pair, check the acknowledgement box, and click "Launch Instance". Now you should see:
 
-![SSH](../../images_introtoaws/aws_11.png "Instance ID link")
+![SSH](../../intro-to-aws-images/aws_11.png "Instance ID link")
 
 Click on this first hyperlink, in the image above, "i-038c58bfbe9612c57". Your hyperlink may be different.
 
-![Remote Host](../../images_introtoaws/aws_12.PNG "AWS instance running page")
+![Remote Host](../../intro-to-aws-images/aws_12.PNG "AWS instance running page")
 
 This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't qualify for the Free Tier. On this page, there is a "Public DNS" address, with the format `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. You'll need this address to connect to your AWS computer.
 
