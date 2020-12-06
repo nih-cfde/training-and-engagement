@@ -66,7 +66,7 @@ The `-i` flag tells `wget` to look for a list of URLs from a file.
 
 ### Terminal vidlet: wget to download data
 
-<script id="asciicast-355576" src="https://asciinema.org/a/355576.js" async></script>
+<script id="asciicast-Z8T6lt0UHjHXw5YNA7dzyUDF2" src="https://asciinema.org/a/Z8T6lt0UHjHXw5YNA7dzyUDF2.js" async></script>
 
 ## Step 3: Clean up file names
 
@@ -95,4 +95,4 @@ Check your folder - you have now successfully downloaded KF files to your local 
 
 ### Terminal vidlet: clean up file names
 
-<script id="asciicast-355593" src="https://asciinema.org/a/355593.js" async></script>
+<script id="asciicast-eYJihFaM7c4TlTRavNAy3IkOO" src="https://asciinema.org/a/eYJihFaM7c4TlTRavNAy3IkOO.js" async></script>
