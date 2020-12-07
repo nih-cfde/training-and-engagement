@@ -94,7 +94,7 @@ Screencasts have a `.cast` extension and are typically in the order of tens of K
      ...
      ```
 
-4. You can edit timestamps to speed or slow things down, crop the video, and edit the words, capitalization, spacing, etc. that appear on the screencast.
+4. You can edit the words, capitalization, spacing, etc. that appear on the screencast. It is best to avoid edits to timestamps as that can be manipulated using the speed option of the player. 
 
 5. Save your changes and view those changes as you go by replaying on your terminal using this command:
 
