@@ -35,3 +35,65 @@ Screencasts have a `.cast` extension and are typically in the order of tens of K
      - customize the player width and length with `cols` and `rows`
      - add text overlay using `poster`
      - text apperance with `theme` and `font-size`
+
+## How to edit asciinema screencasts
+
+1. Download the screencast from your asciinema account (".cast" file)
+
+2. Open in text editor (e.g. atom)
+
+3. The file looks like this (each line has one typed character in the screencast):
+
+     ```
+     {"version": 2, "width": 75, "height": 18, "timestamp": 1598395763, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+     [0.01083, "o", "\u001b[?1034hbash-3.2$ "]
+     [1.548746, "o", "\u001b[H\u001b[2Jbash-3.2$ "]
+     [3.362292, "o", "#"]
+     [3.849687, "o", " "]
+     [4.105164, "o", "F"]
+     [4.25718, "o", "i"]
+     [4.328995, "o", "r"]
+     [4.434286, "o", "s"]
+     [4.61828, "o", "t"]
+     [4.790068, "o", " "]
+     [5.031393, "o", "l"]
+     [5.125048, "o", "e"]
+     [5.22469, "o", "t"]
+     [5.396713, "o", "'"]
+     [5.556953, "o", "s"]
+     [5.755022, "o", " "]
+     [5.932595, "o", "c"]
+     [6.061395, "o", "h"]
+     [6.14247, "o", "e"]
+     [6.27824, "o", "c"]
+     [6.402957, "o", "k"]
+     [6.54971, "o", " "]
+     [6.671492, "o", "t"]
+     [6.794996, "o", "o"]
+     [6.880366, "o", " "]
+     [7.037239, "o", "m"]
+     [7.132153, "o", "a"]
+     [7.254111, "o", "k"]
+     [7.377614, "o", "e"]
+     [7.490531, "o", " "]
+     [7.607784, "o", "s"]
+     [7.762003, "o", "u"]
+     [7.863834, "o", "r"]
+     [7.926838, "o", "e"]
+     ```
+
+4. You can edit timestamps to speed or slow things down, crop the video, and edit the words, capitalization, spacing, etc. that appear on the screencast.
+
+5. Save your changes and view those changes as you go by replaying on your terminal using this command:
+
+     ```
+     asciinema play /path/to/screencast/2_screencast.cast
+     ```
+
+6. When you are ready to upload to your asciinema profile:
+
+     ```
+     asciinema upload /path/to/screencast/2_screencast.cast
+     ```
+
+7. All done!
