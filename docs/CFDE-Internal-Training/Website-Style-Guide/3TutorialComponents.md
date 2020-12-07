@@ -54,7 +54,7 @@ Titles should be short and include the goal of the tutorial, e.g., `How to launc
 
 A brief description of what the tutorial is about (may be expanded in the Introduction section detailed below)
 
-*Table of contents (for **multi-page** tutorials)*
+*Table of contents (for MULTI-page tutorials)*
 
 A Markdown formatted table for each page of the tutorial. The table columns should be named as follows:
 
@@ -84,6 +84,15 @@ For **1-page** tutorials, include the "Est. Time" as a tabbed box rather than a 
 === "Est. Time"
 
     10 mins
+```
+
+Where applicable (e.g., cloud computing tutorials), include an "Est. Cost" section as a tabbed box:
+
+```
+=== "Est. Cost"
+
+    < $1.00 to run through entire tutorial.
+
 ```
 
 *"Prerequisites"*
@@ -175,30 +184,28 @@ Use the admonition `note` format:
 
 ### Saving files
 
-- save markdown files in `./docs/`
+- save markdown files in `./docs/` in the appropriate tutorial folder ("Bioinformatics-Skills", "CFDE-Internal-Training", "Web-Development")
 
-- create a local `images` folder within the tutorial directory and save images in `./images/` as .jpeg or .png files
+- save images as .jpeg or .png files. Images should be saved in a subfolder within the relevant tutorial folder. For example, the Snakemake tutorial is located in `./docs/Bioinformatics-Skills/Snakemake` and the images used in the tutorial are located in `./docs/Bioinformatics-Skills/Snakemake/images-snakemake`.
 
 - there are several ways to save files that accompany tutorials:
 
-    - save reference material in `./docs/Cheat Sheets/` (e.g., code syntax cheat sheets)
+    - save reference material in `./docs/Cheat-Sheets/` (e.g., general code syntax cheat sheets)
 
     - for example data files that users should access with `wget` or `curl`, upload files to the [CFDE Training Data Files osf project](https://osf.io/c8txv/#show_login). Login to the osf project is restricted to CFDE members. Create a new folder and upload your file(s).
 
-    - for small files that users should download from the website (e.g., template script files), format the file name as a hyperlink in the tutorial. If the file has a file extension, a download option is available when users click the link.
+    - for small files that users should download from the website (e.g., template script files), format the file name as a hyperlink in the tutorial. Give the file a file extension (e.g., "testfiles.txt"), so a download option is available when users click the link.
 
     - for scripts/example scripts associated with a specific tutorial, save files in the tutorial folder.
 
-    - save binder files in a new Github repo (binders are made for entire repos, and we do not want a binder of the entire training-and-engagement repo!)
+    - save binder files in a new Github repo (binders are made from entire repos, and we do not want a binder of the entire training-and-engagement repo!).
 
 ## Additional/optional user-friendly components
 
 Check out the next pages for guidelines on the following:
 
-- walk-through vidlets
+- walk-through [vidlets and screencasts](./4RecordingStyleGuide.md)
 
-- walk-through screencasts
+- [binder set-up](./5PangeoBinderGuide.md) so users can follow along without worrying about computer set up or software installations
 
-- binder set-up so users can follow along without worrying about computer set up or software installations
-
-- set up practice Github repository
+- set up [practice Github repository](./6PracticeGithubRepos.md)
