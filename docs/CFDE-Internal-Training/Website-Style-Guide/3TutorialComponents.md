@@ -198,6 +198,8 @@ Use the admonition `note` format:
 
     - for scripts/example scripts associated with a specific tutorial, save files in the tutorial folder.
 
+    - for vidlets, see the [recording style guide](./4RecordingStyleGuide.md)
+
     - save binder files in a new Github repo (binders are made from entire repos, and we do not want a binder of the entire training-and-engagement repo!).
 
 ## Additional/optional user-friendly components
