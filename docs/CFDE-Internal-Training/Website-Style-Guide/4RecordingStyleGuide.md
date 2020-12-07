@@ -90,7 +90,7 @@ Screencasts have a `.cast` extension and are typically in the order of tens of K
      asciinema play /path/to/screencast/2_screencast.cast
      ```
 
-6. When you are ready to upload to your asciinema profile:
+6. When you are ready to upload to your asciinema player profile, enter this command:
 
      ```
      asciinema upload /path/to/screencast/2_screencast.cast
