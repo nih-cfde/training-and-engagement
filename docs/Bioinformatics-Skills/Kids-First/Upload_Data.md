@@ -8,6 +8,7 @@ This tutorial is a beginner friendly version for using Cavatica's Command Line U
 !!! note "Learning Objectives"
 
     - Learn how to upload files to Cavatica
+    - Learn to edit metadata of files on Cavatica
 
 === "Est. Time"
 
