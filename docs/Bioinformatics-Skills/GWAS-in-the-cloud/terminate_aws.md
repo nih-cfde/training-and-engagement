@@ -16,7 +16,7 @@ When you are done with all the analyses, be sure to terminate the AWS instance. 
 
  "Actions" --> "Instance State" --> "Terminate"
 
-![](../../images/GWAS_General_Terminate_AWS.png "Terminate instance")
+![](./images-gwas/GWAS_General_Terminate_AWS.png "Terminate instance")
 
 
 !!! note "Key Points"

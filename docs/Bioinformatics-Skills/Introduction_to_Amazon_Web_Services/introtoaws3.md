@@ -22,7 +22,7 @@ Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the
 
 For this tutorial, select the AWS region that is closest to your current geographic location. The AWS region of your remote machine is displayed on the top right of this page. Click on it and choose the location that best describes the region you are currently located.
 
-![AWS Dashboard](./images-aws-aws/aws_2.png "AWS amazon machine selection")
+![AWS Dashboard](./images-aws/aws_2.png "AWS amazon machine selection")
 
 !!! note "AWS Region"
 
