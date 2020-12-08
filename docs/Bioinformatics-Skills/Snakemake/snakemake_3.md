@@ -67,7 +67,7 @@ Try: Run the `download_data` rule twice.
 
     You will notice the following message after the second run of `download_data`:
 
-    ![snakemake nothing to be done message](../../images/snakemake_nothingtobedone.jpeg "snakemake nothing to be done message")
+    ![snakemake nothing to be done message](./images-snakemake/snakemake_nothingtobedone.jpeg "snakemake nothing to be done message")
 
 Delete the file: `rm SRR2584857_1.fastq.gz`. Now run the rule again.
 
@@ -113,7 +113,7 @@ In this case, if we were to run the `uncompress_genome` rule at the terminal, it
 
     As expected, two rules are executed in the specified order: first the `download_genome` followed by `uncompress_genome` rule.
 
-    ![snakemake runs two steps in order](../../images/snakemake_twosteps.jpeg "snakemake runs two steps in order")
+    ![snakemake runs two steps in order](./images-snakemake/snakemake_twosteps.jpeg "snakemake runs two steps in order")
 
 !!! note "Key Points"
 
