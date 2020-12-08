@@ -64,11 +64,11 @@ The information you will need lives on the [AWS page that lists your active inst
 
 * On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
 
-![](../../images/GWAS_General_publicDNS.png "Connect to instance button")
+![](./images-gwas/GWAS_General_publicDNS.png "Connect to instance button")
 
 * A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
 
-![](../../images/GWAS_General_aws_connect_your_instance.png "ssh command")
+![](./images-gwas/GWAS_General_aws_connect_your_instance.png "ssh command")
 
 * In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click ++enter++. It should look something like this:
 
@@ -92,7 +92,7 @@ The information you will need lives on the [AWS page that lists your active inst
 
 * If everything works ok, the output on your terminal window should look like this:
 
-![](../../images/GWAS_General_AWS_Connected.png "instance terminal")
+![](./images-gwas/GWAS_General_AWS_Connected.png "instance terminal")
 
 !!! Note
     My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting "Inspector". I've chosen the "Pro" theme.
