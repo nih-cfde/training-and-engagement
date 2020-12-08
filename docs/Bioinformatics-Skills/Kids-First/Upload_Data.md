@@ -8,6 +8,7 @@ This tutorial is a beginner friendly version for using Cavatica's Command Line U
 !!! note "Learning Objectives"
 
     - Learn how to upload files to Cavatica
+    - Learn to edit metadata of files on Cavatica
 
 === "Est. Time"
 
@@ -293,7 +294,7 @@ Now the program can be called from any directory on your instance using the name
 
 ### Step 5a: Find your Cavatica Authentication Token and Username
 
-The Authentication Token is a 32 character length personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token on you Cavatica account under the "Developer" tab.
+The Authentication Token is a 32 character length personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token in your Cavatica account under the "Developer" tab.
 
 Copy the Authentication token. You will replace `a???????????????????????????????` in the code block below with your own token.
 
@@ -305,7 +306,7 @@ Next, find and remember your username visible at the top right corner of your Ca
 You can either create a new project or choose an existing project.
 
 #### New project
-Create a new Cavatica project by clicking on the "Projects" tab on the Cavatica homepage and selecting the " + Create a project" option. You can name your new project whatever you like.  Remember your project name and replace "project-name" with the name of your project in the code block below.
+Create a new Cavatica project by clicking on the "Projects" tab on the Cavatica homepage and selecting the " + Create a project" option. You can name your new project whatever you like.  Use your project name to replace "project-name" in the code block below.
 
 
 #### Existing project
@@ -319,11 +320,11 @@ Alternatively, you may choose to select an existing project. To get a list of al
 The `-t` flag tells AWS to look for an Authentication token. Remember to replace `a???????????????????????????????` with your own Authentication token.
 
 !!! Important
-    If you have `_`s in your project name, replace them with `-` in the uploader code.
+    If you have underscores `_` in your project name, replace them with `-` in the uploader code.
 
 ### Step 5c: Moving Files
 
-Finally, you can transfer files by running the following code. Remember to replace "project-name" with the name of your project and "username" with your cavatica login name.
+Finally, you can transfer files by running the following code. Remember to replace "project-name" with the name of your project and "username" with your Cavatica login name.
 
 === "AWS Instance Code"
     ```
@@ -361,21 +362,21 @@ You're all done! Log in to Cavatica and look for your files in the the "Files" t
 
 ![](images/Select_Samples.png "Select the Files")
 
-- Click the "Edit Metadata" button
+- Click the "Edit Metadata" button.
 
 ![](images/Edit_Metadata_Button.png "Edit Metadata Button")
 
-- You should see a pop-up window on the right side of the screen
+- You should see a pop-up window on the right side of the screen:
 
 ![](images/Popup_Window.png "Popup Window to Edit Metadata")
 
-- Fill in or edit all the metadata terms you wish to use for your analysis and click "Save"
+- Fill in or edit all the metadata terms you wish to use for your analysis and click "Save".
 
 - Your new metadata terms should now be displayed on your screen!
 
 !!! note "Don't see your metadata column of interest?"
 
-    - Click on the table icon on the right hand side of the page
+    - Click on the table icon on the right hand side of the page.
     - Check all the column names you wish to add to the metadata display.
 
     ![](images/Columns_Selection.png "Selecting Columns for Display")

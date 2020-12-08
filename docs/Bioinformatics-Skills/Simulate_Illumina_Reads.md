@@ -1,6 +1,6 @@
 # Simulating Illumina Reads
 
-[InSilicoSeq](https://insilicoseq.readthedocs.io/en/latest/) is a software that simulates Illumina reads from genomes, and was especially built to simulate reads from metagenomes. InSilicoSeq is written in Python, is fairly well-documented and easily installed via Python’s package manager `pip(3)`.
+[InSilicoSeq](https://insilicoseq.readthedocs.io/en/latest/) is software that simulates Illumina reads from genomes, and was especially built to simulate reads from metagenomes. InSilicoSeq is written in Python, is fairly well-documented, and easily installed via Python’s package manager `pip(3)`.
 
 ## Why use simulated data?
 
@@ -56,7 +56,7 @@ In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilico
     `t2.xlarge` machine is not part of AWS's free tier. Running this instance costs money to all users, including those who have free tier access. Check the estimated cost section at the top of this page.
 
 ### Step 2: Add Storage
- After choosing `t2.xlarge`, click on the "4.Add Storage" tab on the instance launch page and then changing the number on the "Size (GB)" tab to read "16", as shown in the image below:
+ After choosing `t2.xlarge`, click on the "4. Add Storage" tab on the instance launch page and then change the "Size (GB)" tab to read "16", as shown in the image below:
 
 ![](../images/Simulated_Data_t2xlarge_storage.png "Add storage to t2 xlarge instance")
 
@@ -64,10 +64,10 @@ In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilico
 
 
 ### Step 3: Review and Launch
- Click "Review and launch"
+ Click "Review and launch".
 
 ### Step 4: Access the Instance
- Then go back to the [AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md) and follow instructions on how to access the instance via the MacOS terminal window
+ Then go back to the [AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md) and follow instructions on how to access the instance via the MacOS terminal window.
 
 ## Installing InSilicoSeq
 
@@ -173,7 +173,7 @@ If you see the version number printed on the screen, you are good to go!
 
 ## Download the human reference genome
 
-InSilicoSeq simulates reads based on one or more input reference genomes. You will use the human reference genome GRCh38.
+InSilicoSeq simulates reads based on one or more input reference genomes. We will use the human reference genome GRCh38.
 
 First, make a directory called "reference_genome" using the command `mkdir`. Then download the compressed (".gz" extension) human reference genome inside the new folder and unzip the ".fna" file.
 
@@ -227,7 +227,7 @@ Finally, run the code to make your simulated fastq file.
 
 !!! note "What are all these flags?"
 
-    `--model` lets you input an error model file. The default is None. You're using hiseq for a pre-computed error model suitable for simulating data generated from a HiSeq sequencing run. Other available options are NovaSeq and MiSeq. If you do not wish to use a model, use –mode basic. The name of the built-in models is case insensitive.
+    `--model` lets you input an error model file. The default is None. You're using hiseq for a pre-computed error model suitable for simulating data generated from a HiSeq sequencing run. Other available options are NovaSeq and MiSeq. If you do not wish to use a model, use –mode basic. The names of the built-in models are case insensitive.
 
     `--n_reads` specifies the number of reads to be simulated. The default is 1 million (1M).
 
@@ -240,11 +240,11 @@ Finally, run the code to make your simulated fastq file.
     The simulation step takes ~30 minutes to complete. Please do not close the terminal window until the simulation run is complete. Closing the terminal before the simulation is complete will interrupt the run and you will have to start over.
 
 
- If your run is successful, you will see two ".fastq" files, "my_sim_R1.fastq" and "my_sim_R2.fastq", and an abundance file called "my_sim_abundance.txt". The abundance file is more meaningful in the context of simulating metagenomic data. It is a tab-delimited file containing the abundance of each genome supplied to the command. The 5 M reads generated per simulation are split between the R1 and R2 files.
+If your run is successful, you will see two ".fastq" files: "my_sim_R1.fastq" and "my_sim_R2.fastq", and an abundance file called "my_sim_abundance.txt". The abundance file is more meaningful in the context of simulating metagenomic data. It is a tab-delimited file containing the abundance of each genome supplied to the command. The 5 M reads generated per simulation are split between the R1 and R2 files.
 
 ## Looping InSilicoSeq
 
-If you want to repeat the simulation multiple times, modify the following code block by changing the `n` to an integer corresponding to the number of time you wish to run the simulation. Your output files will be named
+If you want to repeat the simulation multiple times, modify the following code block by changing the `n` to an integer corresponding to the number of times you wish to run the simulation. Your output files will be named
   - 1_my_sim_R1 and 1_my_sim_R2
   - 2_my_sim_R1 and 2_my_sim_R2
   - ...
