@@ -45,6 +45,12 @@ With so many bioinformatics tools currently available to users, simulated datase
 
 ## Selecting the right AWS instance to run InSilicoSeq
 
+!!! Warning
+
+    - To avoid unnecessary charges, remember to [terminate your AWS instance](Introduction_to_Amazon_Web_Services/introtoaws4.md) once you are done using it.
+
+    - Before terminating your instance, make sure to transfer all the files you need to your local computer or storage volume.
+
 In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) on a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance. Instructions on how to launch an AWS instance and access it are described in [our AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md). Please follow those instructions with a **few modifications**:
 
 ### Step 1: Select Instance
@@ -285,9 +291,9 @@ Now run FastQC on your fastq files:
 === "AWS Instance Code"
 
     ```
-    cd fastq
     fastqc *.fastq
     ```
+
 You are using the `*` wildcard to help specify all of the .fastq files here.
 
 
@@ -346,7 +352,7 @@ From the FastQC report, we see that the overall read quality scores are good and
 
     - To avoid unnecessary charges, remember to [terminate your AWS instance](Introduction_to_Amazon_Web_Services/introtoaws4.md) once you are done using it.
 
-    - It is important to remember that terminating the instance causes all the data in that instance to be lost forever. If you wish to keep the fastq files, please remember to transfer them to your local machine or analysis platform. You can modify the download code from the "Transfer to Local Computer" section above to download the fastq files like so:
+    - It is important to remember that terminating the instance causes all the data in that instance to be lost forever. If you wish to keep the fastq files, please remember to transfer them to your local machine or analysis platform. To transfer simulated fastq files from AWS to your local machine, paste the following code in your **local** terminal (not AWS instance terminal).
 
     ```
     scp -i ~/Desktop/amazon.pem ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/fastq/\*.zip ~/Desktop/fastqc/.

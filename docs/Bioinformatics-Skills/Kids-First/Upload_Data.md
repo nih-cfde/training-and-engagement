@@ -109,7 +109,7 @@ Now uncompress the Cavatica Uploader by running:
     ```
     tar zxvf cavatica-uploader.tgz -C ~
     ```
-Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename.
+The [tar](https://careerkarma.com/blog/tar-command/) (like gzip and zip) command is used to compress and uncompress a collection of files. It is the most widely used command to create compressed files that are easy to move. Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename. By default, this command will extract the contents of ".tar.gz" into your working directory. You can override this behavior using the `-C` flag at the end of the command. The `-C` flag allows you to specify a directory into which the contents of the tar file should be moved. In our case, we are using the `~` sign as a short form for the "home" directory.
 
 
 ## Step 4: Test the Command Line Uploader
