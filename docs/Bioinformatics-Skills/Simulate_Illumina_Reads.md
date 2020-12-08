@@ -47,7 +47,7 @@ With so many bioinformatics tools currently available to users, simulated datase
 
 In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) on a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance. Instructions on how to launch an AWS instance and access it are described in [our AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md). Please follow those instructions with a **few modifications**:
 
-### Step 1:
+### Step 1: Select Instance
  You must select the the `t2.xlarge` instance (instead of the default `t2.micro` instance selection described in the tutorial):
 
 ![](../images/Simulated_Data_t2xlarge.png "t2 xlarge instance")
@@ -55,7 +55,7 @@ In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilico
 !!! Warning
     `t2.xlarge` machine is not part of AWS's free tier. Running this instance costs money to all users, including those who have free tier access. Check the estimated cost section at the top of this page.
 
-### Step 2:
+### Step 2: Add Storage
  After choosing `t2.xlarge`, click on the "4.Add Storage" tab on the instance launch page and then changing the number on the "Size (GB)" tab to read "16", as shown in the image below:
 
 ![](../images/Simulated_Data_t2xlarge_storage.png "Add storage to t2 xlarge instance")
@@ -63,10 +63,10 @@ In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilico
   You need to add more storage because, while the output fastq files themselves are small (<20MB), temporary files generated during the simulation take up a lot of space.
 
 
-### Step 3:
+### Step 3: Review and Launch
  Click "Review and launch"
 
-### Step 4:
+### Step 4: Access the Instance
  Then go back to the [AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md) and follow instructions on how to access the instance via the MacOS terminal window
 
 ## Installing InSilicoSeq
