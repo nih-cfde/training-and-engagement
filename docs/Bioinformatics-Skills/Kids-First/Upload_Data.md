@@ -380,3 +380,6 @@ You're all done! Log in to Cavatica and look for your files in the the "Files" t
     - Check all the column names you wish to add to the metadata display.
 
     ![](images/Columns_Selection.png "Selecting Columns for Display")
+
+
+An alternative method to edit metadata terms can be found in the Cavatica documentation page under the tab: [Modify metadata using the visual interface](https://docs.cavatica.org/docs/modify-metadata-using-the-visual-interface). Detailed instructions coming soon.
