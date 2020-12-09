@@ -3,7 +3,7 @@ layout: page
 title: Data Download via Cavatica
 ---
 
-Download KF data from the Cavatica portal
+Download KF Data from the Cavatica Portal
 ================================================
 
 The easiest way to download a large number of KF files is through [Cavatica](https://cavatica.sbgenomics.com/).
