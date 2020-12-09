@@ -5,10 +5,14 @@ title: CFDE Training Release
 
 Latest Release
 =================
+<<<<<<< HEAD
 
 **Updated October 15, 2020**
+=======
+Updated October 15, 2020
+>>>>>>> 0e77e16c19fbb8d09508e30b825d06a89eff08c4
 
-## New Tutorials
+<span style="font-size:24px;">New Tutorials
 
 - [CFDE Portal Tutorial](../Bioinformatics-Skills/CFDE-Portal/index.md)
 - [Command Line BLAST](../Bioinformatics-Skills/Command-Line-BLAST/BLAST1.md)
@@ -16,7 +20,7 @@ Latest Release
 - [Identifying MIME Types](../CFDE-Internal-Training/MIME-type/index.md)
 - [Enabling User Choices with Javascript](../Web-Development/javascript_chooser.md)
 
-## Updates and Fixes
+<span style="font-size:24px;">Updates and Fixes
 
 - [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md) - PR steps updated
 - [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md) - Additional explanation and context to code, workflow streamlining with edits to key access pair, data download, and instance recovery

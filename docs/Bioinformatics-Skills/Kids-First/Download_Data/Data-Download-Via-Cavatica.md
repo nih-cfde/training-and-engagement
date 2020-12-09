@@ -22,7 +22,7 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
 
 * Select all files by checking the box next to "Name". A tiny pop-up window tells you how many files you have selected.
 
-![](../../../images/Data_Download_selecting_files_cavatica.png "Check boxes to select files")
+![](../images-kf/Data_Download_selecting_files_cavatica.png "Check boxes to select files")
 
 * Click on the **drop down arrow** *next to* the "Download" button (shown in the figure below)
 
@@ -32,12 +32,12 @@ The easiest way to download a large number of KF files is through [Cavatica](htt
     Clicking on the "Download" button instead of the arrow next to it will result in the download of individual files (one at a time). While this works for a small number of file, it is unfeasible for a large number of files. If you selected 50 files, 50 pop-up windows will appears for manual download of individual files. If this happens on accident, you can close one pop-up window at a time.
 
 
-![](../../../images/Data_Download_Cavatica_Download_Links.png "Click Download arrow for download links")
+![](../images-kf/Data_Download_Cavatica_Download_Links.png "Click Download arrow for download links")
 
 
 * A pop-up window will appear after a few seconds.
 
-![](../../../images/Data_Download_Cavatica_Download_Links_2.png "Download links window")
+![](../images-kf/Data_Download_Cavatica_Download_Links_2.png "Download links window")
 
 
 * Click "Download link" and save the text file in the "KF_Data" folder on the "Desktop" of your local machine.
@@ -66,7 +66,8 @@ The `-i` flag tells `wget` to look for a list of URLs from a file.
 
 ### Terminal vidlet: wget to download data
 
-<script id="asciicast-Z8T6lt0UHjHXw5YNA7dzyUDF2" src="https://asciinema.org/a/Z8T6lt0UHjHXw5YNA7dzyUDF2.js" async></script>
+<asciinema-player src="vidlets/1_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mUsing wget to Download Data"></asciinema-player>
+
 
 ## Step 3: Clean up file names
 
@@ -95,4 +96,4 @@ Check your folder - you have now successfully downloaded KF files to your local 
 
 ### Terminal vidlet: clean up file names
 
-<script id="asciicast-eYJihFaM7c4TlTRavNAy3IkOO" src="https://asciinema.org/a/eYJihFaM7c4TlTRavNAy3IkOO.js" async></script>
+<asciinema-player src="vidlets/2_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mClean Up File Names"></asciinema-player>

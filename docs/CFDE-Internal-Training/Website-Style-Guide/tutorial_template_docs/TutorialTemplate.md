@@ -7,10 +7,10 @@ Note, overview/landing pages should have the yaml file header, e.g.,:
 ```
 ---
 layout: page
-title: AWS overview
+title: <tutorial name> overview
 ---
 ```
-This sets the title of the previous and upcoming pages on the Mkdocs footer bar. 
+This sets the title of the previous and upcoming pages on the Mkdocs footer bar.
 Main tutorial pages can start with the `#` header style.
 
 
@@ -28,23 +28,27 @@ y mins | [Page title](path/to/page) | Shorter tutorials may have only one entry
 !!! note "Learning Objectives"
 
     The objective(s) of this tutorial are to:
-    
+
     - objective 1
-    
+
     - objective 2
-    
-For **1-page** tutorials only, add a tabbed box for the "Est. Time" (it should be grouped with the prereqs and tutorial resources tabs):
+
+For **1-page** tutorials only, add a tabbed box for the "Est. Time" (it should be grouped with the prereqs and tutorial resources tabs, and as necessary, the estimated cost tab):
 
 === "Est. Time"
 
     x mins
 
+=== "Est. Cost"
+
+    $1.00
+
 === "Prerequisites"
-    
+
     - Operating system(s)
     - Required installations
     - Setup steps needed to complete the tutorial
-   
+
 === "Tutorial Resources"
 
     - list out resources with bullet points and include a hyperlink to the resource (e.g., vidlets, screencasts, example files, cheat sheets)
@@ -73,7 +77,6 @@ If applicable, briefly sum up the tutorial key points as a bullet point list (it
 Use the admonition format:
 
 !!! note "Key Points"
-    
+
     - point1
     - point2
-

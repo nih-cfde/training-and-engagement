@@ -117,7 +117,7 @@ Let's try running a Snakemake rule:
 
     Oops, this will fail! Why?
 
-    ![snakemake map reads rule error](../../images/snakemake_rule_error_msg.jpeg "snakemake map reads rule error")
+    ![snakemake map reads rule error](./images-snakemake/snakemake_rule_error_msg.jpeg "snakemake map reads rule error")
 
     As the error message in red states, the rule failed because we don't have any of the input files required to run this rule yet! For the mapping rule to work, we need the raw read (`.fastq.gz`) file and reference genome (`.fa.gz`) that should be indexed.
 
@@ -139,7 +139,7 @@ Snakemake runs the shell command listed under the `download_data` rule. In this 
 
     It worked!
 
-    ![snakemake downloaded data](../../images/snakemake_downloaddata.jpeg "snakemake downloaded data")
+    ![snakemake downloaded data](./images-snakemake/snakemake_downloaddata.jpeg "snakemake downloaded data")
 
 Check the working directory. There should now be a `.fastq.gz` file:
 
