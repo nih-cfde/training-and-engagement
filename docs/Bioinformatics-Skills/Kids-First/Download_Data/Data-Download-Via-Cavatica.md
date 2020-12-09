@@ -66,7 +66,7 @@ The `-i` flag tells `wget` to look for a list of URLs from a file.
 
 ### Terminal vidlet: wget to download data
 
-<asciinema-player src="vidlets/1_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mUsing wget to Download Data"></asciinema-player>
+<asciinema-player src="./vidlets/1_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mUsing wget to Download Data"></asciinema-player>
 
 
 ## Step 3: Clean up file names
@@ -96,4 +96,4 @@ Check your folder - you have now successfully downloaded KF files to your local 
 
 ### Terminal vidlet: clean up file names
 
-<asciinema-player src="vidlets/2_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mClean Up File Names"></asciinema-player>
+<asciinema-player src="./vidlets/2_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mClean Up File Names"></asciinema-player>
