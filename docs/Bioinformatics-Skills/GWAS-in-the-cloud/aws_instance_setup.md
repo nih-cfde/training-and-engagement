@@ -16,7 +16,7 @@ Let's set up a Free Tier AWS Ubuntu instance!
     AWS periodically updates its user experience. We strive to keep our tutorials up to date with AWS's constantly changing user interface. However, these updates may take some time to become incorporated into our tutorial. **Please watch this space for updates**.
 
     To follow along, please ensure that the "New EC2 User Experience" toggle located on the [EC2 instances list](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) page is set to "off".
-    ![](../../images/GWAS_General_AWS_Updates.png "AWS New EC2 Experience switch")
+    ![](./images-gwas/GWAS_General_AWS_Updates.png "AWS New EC2 Experience switch")
 
 ## Step 1: Create AWS account
 
@@ -37,18 +37,18 @@ Let's set up a Free Tier AWS Ubuntu instance!
 
 * Next, click on the "Launch a virtual machine" option as shown in the image:
 
-![](../../images/GWAS_General_Launch.png "Launch virtual machine")
+![](./images-gwas/GWAS_General_Launch.png "Launch virtual machine")
 
 ### Step 2A: Select the right geographical region
 
 * For this tutorial, it is important to select the "Ohio" amazon machine image. The geographical region of your remote machine is displayed on the top right of this page (shown in image below)."
 
-![](../../images/GWAS_General_aws_ohio.png "Machine location Ohio")
+![](./images-gwas/GWAS_General_aws_ohio.png "Machine location Ohio")
 
 
 
 * If it does not say "Ohio", click on the drop down arrow and select: `US East (Ohio)`.
-![](../../images/GWAS_General_aws_ohio_selection.png "Machine location dropdown menu")
+![](./images-gwas/GWAS_General_aws_ohio_selection.png "Machine location dropdown menu")
 
 ### Step 2B: Select the right Ubuntu image
 
@@ -57,18 +57,18 @@ Let's set up a Free Tier AWS Ubuntu instance!
 !!! Important
     Please specifically select the Ubuntu Pro 20.04 LTS (HVM). Choosing a different machine will result in error messages during various installation steps.
 
-![](../../images/GWAS_General_Ubuntu.png "Ubuntu machine")
+![](./images-gwas/GWAS_General_Ubuntu.png "Ubuntu machine")
 
 ### Step 2C: Review and launch
 
 * Make sure the free tier version is selected. Shown here:
 
-![](../../images/GWAS_General_AWS_Free_Tier.png "t2micro instance type")
+![](./images-gwas/GWAS_General_AWS_Free_Tier.png "t2micro instance type")
 
 
 Then click "Review and launch" --> "Launch". You should see a pop-up window like this:
 
-![](../../images/GWAS_General_KeyPair.png "AWS key pair")
+![](./images-gwas/GWAS_General_KeyPair.png "AWS key pair")
 
 * Key pair for AWS:
 
@@ -77,11 +77,11 @@ Then click "Review and launch" --> "Launch". You should see a pop-up window like
 
 * Then check the acknowledgement box and click "Launch Instance". You should see this:
 
-![](../../images/GWAS_General_launching.png "Launch status page")
+![](./images-gwas/GWAS_General_launching.png "Launch status page")
 
 * Click on this first hyperlink: `i-038c58bfbe9612c57`. Your page should look like this:
 
-![](../../images/GWAS_General_aws_instances_list.png "Instance dashboard")
+![](./images-gwas/GWAS_General_aws_instances_list.png "Instance dashboard")
 
 
 * This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't quality for Free Tier.

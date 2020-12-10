@@ -47,11 +47,11 @@ For this tutorial, you can also use open access files from the [Kids First Data 
 
 Download the [KF_File_ID.csv](./mime_supplementary_files/KF_File_ID.csv). Login to [Kids First Data Portal](https://kidsfirstdrc.org), select `File Repository` and `File Filters`. Scroll all the way down to `Search by File ID` field and click on `upload your list of ids`.
 
-![Search by File ID](../../images/KFDRC_search_by_file_ID.png "Search by File ID")
+![Search by File ID](./images/KFDRC_search_by_file_ID.png "Search by File ID")
 
 One can either copy paste the File IDs in the box or upload the KF_File_ID.csv. To obtain a local copy, select `View Results` and for each individual file click on download button under the `Actions` column.
 
-![File ID upload](../../images/KFDRC_file_ID_upload.png "File ID upload")
+![File ID upload](./images/KFDRC_file_ID_upload.png "File ID upload")
 
 The directory structure of `KF_data` with all the files should include:
 

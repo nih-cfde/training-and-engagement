@@ -20,14 +20,14 @@ to this link:
 This should take you to the Kids First Portal website. Please click on
 the "Join now" indicated with the purple arrow below:
 
-![KFDRC Portal Welcome Page](../../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
+![KFDRC Portal Welcome Page](../images-kf/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
 
 ### Step 3: Choose your login system
 
 You should see three options for creating a new account: Google,
 Facebook, or with an ORCID:
 
-![KFDRC Portal Account Page](../../../images/KidsFirstPortal_2.png "KFDRC Portal Account Page")
+![KFDRC Portal Account Page](../images-kf/KidsFirstPortal_2.png "KFDRC Portal Account Page")
 
 Select the platform you wish to use for your sign up.
 
@@ -43,7 +43,7 @@ If you decide to link KF to your Google or Facebook account, click on the corres
 Clicking on "Log in with ORCID" will take you to a login
 page:
 
-![ORCID Login Page](../../../images/KidsFirstPortal_3.png "ORCID Login Page")
+![ORCID Login Page](../images-kf/KidsFirstPortal_3.png "ORCID Login Page")
 
 Depending on your role, your ORCID may be personal, or tied to an
 institution. If you don't already have an ORCID, you can also register
