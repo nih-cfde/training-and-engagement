@@ -29,7 +29,7 @@ This tutorial is a beginner friendly version for using Cavatica's Command Line U
 
 ## Step 1: Update Instance
 
-Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance. `LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available.
+Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance (`t2.micro`). `LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available.
 
 === "AWS Instance Code"
 
@@ -70,7 +70,7 @@ Next, make a directory called "fastq" using the command mkdir, and then download
 
 ## Step 3: Install Java and Download Command Line Uploader
 
-Cavatica Command Line Uploader needs `java version "1.8.0_20"`. Ubuntu Server 20.04 LTS (HVM) does not come with java pre-installed. You will need to install it with this command:
+The Cavatica Command Line Uploader needs `java version "1.8.0_20"`. Ubuntu Server 20.04 LTS (HVM) does not come with java pre-installed. You will need to install it with this command:
 
 === "AWS Instance Code"
 
@@ -101,7 +101,7 @@ Next, download the Cavatica Uploader by running this code:
     ```
     curl -LO https://cavatica.sbgenomics.com/downloads/cli/cavatica-uploader.tgz
     ```
-The -O flag names the local file the same as its remote counterpart.
+The `-O` flag names the local file the same as its remote counterpart.
 Now uncompress the Cavatica Uploader by running:
 
 === "AWS Instance Code"
@@ -288,7 +288,7 @@ Now the program can be called from any directory on your instance using the name
     ```
 
 !!! note "PATH"
-    Adding the program to the $PATH variable will only last the length of the session.
+    Adding the program to the $PATH variable will only last the length of the AWS session.
 
 ## Step 5: Move Files
 
