@@ -25,7 +25,7 @@ The `training-and-engagement` repo has a 2-stage PR and review stage. Changes ar
 
 In this tutorial, we lay out the general steps for the single stage PR process.
 
-### Step 1: Go to website's GitHub repository.
+### Step 1: Go to website's GitHub repository
 
 ### Step 2: Create a new branch
 
@@ -91,9 +91,9 @@ Reminder: you must be onboarded to the CFDE to edit these repositories:
 - `the-fair-cookbook` repo: [https://github.com/nih-cfde/the-fair-cookbook](https://github.com/nih-cfde/the-fair-cookbook)
 - `specifications-and-documentation` repo: [https://github.com/nih-cfde/specifications-and-documentation](https://github.com/nih-cfde/specifications-and-documentation)
 
-#### Step 2: Make changes *directly* on the `master` branch.
+#### Step 2: Make changes *directly* on the `master` branch
 
-#### Step 3: Check progress from the cfde-bot.
+#### Step 3: Check progress from the cfde-bot
 
 The bot will automatically create preview branches (`update-<repo>-preview`) if it detects changes in either of the sub-module repos.
 
