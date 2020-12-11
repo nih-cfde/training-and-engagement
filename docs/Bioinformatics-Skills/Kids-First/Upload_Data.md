@@ -27,9 +27,16 @@ This tutorial is a beginner friendly version for using Cavatica's Command Line U
     - Basic command line
 
 
+Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance (`t2.micro`).
+
+!!! Warning
+
+    To avoid unnecessary charges, remember to [terminate your AWS instance](../Introduction_to_Amazon_Web_Services/introtoaws4.md) once you are done using it.
+
 ## Step 1: Update Instance
 
-Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance (`t2.micro`). `LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available.
+`LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available.
+
 
 === "AWS Instance Code"
 
@@ -109,7 +116,7 @@ Now uncompress the Cavatica Uploader by running:
     ```
     tar zxvf cavatica-uploader.tgz -C ~
     ```
-The [tar](https://careerkarma.com/blog/tar-command/) (like gzip and zip) command is used to compress and uncompress a collection of files. It is the most widely used command to create compressed files that are easy to move. Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename. By default, this command will extract the contents of ".tar.gz" into your working directory. You can override this behavior using the `-C` flag at the end of the command. The `-C` flag allows you to specify a directory into which the contents of the tar file should be moved. In our case, we are using the `~` sign as a short form for the "home" directory.
+The [tar](https://careerkarma.com/blog/tar-command/) (like gzip and zip) command is used to compress and uncompress a collection of files. It is the most widely used command to create compressed files that are easy to move. Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename. By default, this command will extract the contents of ".tgz" into your working directory. You can override this behavior using the `-C` flag at the end of the command. The `-C` flag allows you to specify a directory into which the contents of the tar file should be moved. In our case, we are using the `~` sign as a short form for the "home" directory.
 
 
 ## Step 4: Test the Command Line Uploader
