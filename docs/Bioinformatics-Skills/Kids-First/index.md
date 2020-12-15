@@ -6,10 +6,10 @@ title: KF Portal Overview
 **Kids First (KF) Lessons**
 
 The [NIH Common Fund-supported Gabriella Miller Kids First Data Resource
-Center](https://kidsfirstdrc.org/) enables researchers, clinicians, and
+Center](https://kidsfirstdrc.org/) (KFDRC) enables researchers, clinicians, and
 patients to work together to accelerate research and promote new
 discoveries for children affected with cancer and structural birth
-defects. Data from over 11,000 samples, including DNA and RNA, is
+defects. Data from over 16,000 individuals, including DNA and RNA sequence data, is
 available to empower your research today. Data collected from more than
 30,000 samples are expected to be available in the next few years.
 
