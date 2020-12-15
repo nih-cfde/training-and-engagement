@@ -19,7 +19,7 @@ statement:
 
 ![Query 3 'AND](../images-kf/KidsFirstPortal_35.png "Query 3 'AND'")
 
-To learn more about this participant, let's look at a more detailed
+To learn more about these participants, let's look at a more detailed
 view of their public metadata by clicking on the "Table View" link:
 
 ![Change to Table View](../images-kf/KidsFirstPortal_34.png "Change to Table View")
@@ -34,7 +34,7 @@ Clinical and Biospecimens data for that Participant. Click on the Clinical tab.
 
 ![Clinical Tab](../images-kf/KidsFirstPortal_36.png "Clinical Tab")
 
-We can see the multiple biospecimens collected over time from this participant explaining their
-occurrence in both the queries.
+We can see that multiple biospecimens were collected over time from this participant
+explaining their occurrence in both the queries.
 
 ![Multiple Biospecimens Collections](../images-kf/KidsFirstPortal_38.png "Multiple Biospecimens Collections")
