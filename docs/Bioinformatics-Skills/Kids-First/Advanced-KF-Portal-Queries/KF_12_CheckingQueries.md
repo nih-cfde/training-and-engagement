@@ -10,11 +10,11 @@ Note that our query has an unexpected result:
 
 ![Query 3](../images-kf/KidsFirstPortal_32.png "Query 3")
 
-We had 222 participants in query one, and 124 participants in query two,
-but only 345 in our combined query. One of the participants must be in
+We had 435 participants in query one, and 280 participants in query two,
+but only 701 in our combined query. Remaining fourteen participants must be in
 both queries!
 
-To see which participant it is, edit query 3 to be an "AND"
+To see which participants occur in both the queries, edit query 3 to be an "AND"
 statement:
 
 ![Query 3 'AND](../images-kf/KidsFirstPortal_35.png "Query 3 'AND'")
@@ -24,12 +24,17 @@ view of their public metadata by clicking on the "Table View" link:
 
 ![Change to Table View](../images-kf/KidsFirstPortal_34.png "Change to Table View")
 
-In this new view, we can see that there is a "+4" icon in
-her "Age at Diagnoses"
+In this new view, we can see the individual participant information which shows multiple files
+associated with some. Click the first Participant ID to explore:
 
 ![Table View](../images-kf/KidsFirstPortal_37.png "Table View")
 
-Clicking on the "+4" icon in her "Age at
-Diagnoses", we see that she was diagnosed multiple times:
+Clicking on a Participant ID takes you to a summary page that lists all the associated
+Clinical and Biospecimens data for that Participant. Click on the Clinical tab.
 
-![Multiple Diagnoses](../images-kf/KidsFirstPortal_36.png "Multiple Diagnoses")
+![Clinical Tab](../images-kf/KidsFirstPortal_36.png "Clinical Tab")
+
+We can see the multiple biospecimens collected over time from this participant explaining their
+occurrence in both the queries.
+
+![Multiple Biospecimens Collections](../images-kf/KidsFirstPortal_38.png "Multiple Biospecimens Collections")
