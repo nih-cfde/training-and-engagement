@@ -14,9 +14,9 @@
 
     ## Step 2: Start a new session
 
-    ![mobaxterm1](../../images/mobaxterm_1.PNG "start new session")
+    ![mobaxterm1](./images-aws/mobaxterm_1.png "start new session")
 
-    ![Remote Host](../../images/mobaxterm_2.PNG "select SSH session type")
+    ![Remote Host](./images-aws/mobaxterm_2.png "select SSH session type")
 
     ## Step 3: Set up session settings
 
@@ -24,23 +24,23 @@
 
     Enter the public DNS address from the [AWS instance](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId) page in the "Remote host" box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. Enter `ubuntu` for "Specify username".
 
-    ![Hostname](../../images/mobaxterm_3.PNG "remote host ec2 address")
+    ![Hostname](./images-aws/mobaxterm_3.png "remote host ec2 address")
 
     Under "Advanced SSH settings", check the box by "Use private key" and search for the path to your "amazon.pem" key pair file/
 
-    ![Private Key](../../images/mobaxterm_3_2.PNG "use private key file path")
+    ![Private Key](./images-aws/mobaxterm_3_2.png "use private key file path")
 
     Click "OK" to complete session set up.
 
     If you see this screen and `ubuntu@ip-###-##-#-##:~$` as the command prompt, your AWS instance computer is ready for use!
 
-    ![Ubuntu Terminal](../../images/mobaxterm_4.PNG "ubuntu command prompt")
+    ![Ubuntu Terminal](./images-aws/mobaxterm_4.png "ubuntu command prompt")
 
     You can now use the AWS instance to run command line programs and run analyses. With MobaXterm, you can transfer files between your local computer and the remote instance by dragging and dropping files between MobaXterm's "SCP" tab (located on the left-hand side of the MobaXterm window) and your local computer's file explorer.
 
-    ![SCP Tab](../../images/Mobaxterm_transfer1.PNG "SCP tab")
+    ![SCP Tab](./images-aws/Mobaxterm_transfer1.png "SCP tab")
 
-    ![Transfer File](../../images/Mobaxterm_transfer2.PNG "transfer file windows")
+    ![Transfer File](./images-aws/Mobaxterm_transfer2.png "transfer file windows")
 
     ## Step 4: Terminating the Instance
 
@@ -58,7 +58,7 @@
     - Click "Instance State"
     - Select "Terminate"
 
-    ![Terminate](../../images/Terminate.png "terminate instance button")
+    ![Terminate](./images-aws/Terminate.png "terminate instance button")
 
 
 === "Mac OS"
@@ -143,4 +143,4 @@
     - Click "Instance State"
     - Select "Terminate"
 
-    ![Terminate](../../images/Terminate.png "terminate instance button")
+    ![Terminate](./images-aws/Terminate.png "terminate instance button")
