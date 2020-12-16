@@ -10,8 +10,8 @@ Note that our query has an unexpected result:
 
 ![Query 3](../images-kf/KidsFirstPortal_32.png "Query 3")
 
-We had 435 participants in query one, and 280 participants in query two,
-but only 701 in our combined query. The remaining fourteen participants must be in
+We had 435 participants in the 1st query, and 280 participants in the 2nd query,
+but only 701 in our combined query. This discrepancy suggests that the remaining fourteen participants must satisfy
 both queries!
 
 To see which participants occur in both the queries, edit query 3 to be an "AND"
