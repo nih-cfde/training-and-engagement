@@ -11,10 +11,10 @@ Note that our query has an unexpected result:
 ![Query 3](../images-kf/KidsFirstPortal_32.png "Query 3")
 
 We had 435 participants in the 1st query, and 280 participants in the 2nd query. This adds up to a total of 715 participants. However, we only see
-701 in our combined query. This discrepancy suggests that the remaining fourteen participants must satisfy
+701 in our combined query. This discrepancy suggests that the remaining 14 participants must satisfy
 both queries and are therefore excluded from the combined query due to the "OR" filter.
 
-To see which participants occur in both the queries, edit query 3 to be an "AND"
+To see which participants occur in both the queries, edit the 3rd query to be an "AND"
 statement:
 
 ![Query 3 AND](../images-kf/KidsFirstPortal_35.png "Query 3 'AND'")
