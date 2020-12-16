@@ -29,7 +29,7 @@ In this new view, we can see the individual participant information, which shows
 ![Table View](../images-kf/KidsFirstPortal_37.png "Table View")
 
 Clicking on a Participant ID takes you to a summary page that lists all the associated
-Clinical and Biospecimens data for that Participant. Click on the Clinical tab.
+clinical and biospecimens data for that Participant. Click on the "Clinical" tab.
 
 ![Clinical Tab](../images-kf/KidsFirstPortal_36.png "Clinical Tab")
 
