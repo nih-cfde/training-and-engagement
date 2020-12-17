@@ -1,7 +1,7 @@
-# training
+# CFDE Training Resources
 
-A repository for CFDE training materials
+This repository builds the public training materials for the CFDE: https://training.nih-cfde.org
 
-The docs folder is rendered into https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/ by ReadTheDocs.
+The training websites hosts tutorials and resources to learn how to perform bioinformatic analyses and access data. The website also contains CFDE internal resources that includes the website style guide.
 
-Amanda Charbonneau and Titus Brown have admin access to the readthedocs project: https://readthedocs.com/projects/cfde-training-and-engagement/
+We welcome suggestions for improvements as well as tutorial topics. Submit all suggestions via CFDE HelpDesk: support@cfde.atlassian.net

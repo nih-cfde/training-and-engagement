@@ -12,7 +12,7 @@ understanding of the basic interface.
 
 === "Exercise"
 
-    Build a query to only include data from non-Hispanic or Latino patients from Pediatric Brain Tumor Atlas: CBTTC
+    Build a query to only include data from non-Hispanic or Latino patients from the Pediatric Brain Tumor Atlas: CBTTC study
     who were between 0 and 5 years old when they were diagnosed.
 
 

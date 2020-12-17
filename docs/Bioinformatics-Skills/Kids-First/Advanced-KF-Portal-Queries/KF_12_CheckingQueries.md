@@ -10,27 +10,26 @@ Note that our query has an unexpected result:
 
 ![Query 3](../images-kf/KidsFirstPortal_32.png "Query 3")
 
-We had 435 participants in query one, and 280 participants in query two,
-but only 701 in our combined query. Remaining fourteen participants must be in
-both queries!
+We had 435 participants in the 1st query, and 280 participants in the 2nd query. This adds up to a total of 715 participants. However, we only see
+701 in our combined query. This discrepancy suggests that the remaining 14 participants must satisfy
+both queries and are therefore excluded from the combined query due to the "OR" filter.
 
-To see which participants occur in both the queries, edit query 3 to be an "AND"
+To see which participants occur in both the queries, edit the 3rd query to be an "AND"
 statement:
 
-![Query 3 'AND](../images-kf/KidsFirstPortal_35.png "Query 3 'AND'")
+![Query 3 AND](../images-kf/KidsFirstPortal_35.png "Query 3 'AND'")
 
 To learn more about these participants, let's look at a more detailed
 view of their public metadata by clicking on the "Table View" link:
 
 ![Change to Table View](../images-kf/KidsFirstPortal_34.png "Change to Table View")
 
-In this new view, we can see the individual participant information which shows multiple files
-associated with some. Click the first Participant ID to explore:
+In this new view, we can see the individual participant information, which shows multiple files for some participants. Click the first Participant ID to explore:
 
 ![Table View](../images-kf/KidsFirstPortal_37.png "Table View")
 
 Clicking on a Participant ID takes you to a summary page that lists all the associated
-Clinical and Biospecimens data for that Participant. Click on the Clinical tab.
+clinical and biospecimens data for that Participant. Click on the "Clinical" tab.
 
 ![Clinical Tab](../images-kf/KidsFirstPortal_36.png "Clinical Tab")
 
@@ -38,3 +37,5 @@ We can see that multiple biospecimens were collected over time from this partici
 explaining their occurrence in both the queries.
 
 ![Multiple Biospecimens Collections](../images-kf/KidsFirstPortal_38.png "Multiple Biospecimens Collections")
+
+Now that we've learned how to create data subsets on the portal, in the next sections, we'll show you how to work with Kids First data in Cavatica.
