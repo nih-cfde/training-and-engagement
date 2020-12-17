@@ -2,7 +2,7 @@
 
 ## Step 1: Download data
 
-First, we need some data!  For this tutorial, we're using mouse and zebrafish RefSeq protein data sets from NCBI. We'll put them in our home directory:
+First, we need some data!  For this tutorial, we're using mouse and zebrafish RefSeq protein data sets from NCBI. We'll put them in a temporary file system that's large enough to run data analysis in:
 ```
 sudo chmod a+rwxt /mnt
 cd /mnt
