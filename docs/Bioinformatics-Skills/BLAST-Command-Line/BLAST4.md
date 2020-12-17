@@ -1,8 +1,9 @@
-# How to run a BLAST search
+# How to Run a BLAST Search
+
 
 ## Step 1: Download data
 
-First, we need some data!  For this tutorial, we're using mouse and zebrafish RefSeq protein data sets from NCBI. We'll put them in a temporary file system that's large enough to run data analysis in:
+First, we need some data!  For this tutorial, we're using mouse and zebrafish RefSeq protein data sets from NCBI. We'll put them in our home directory:
 ```
 sudo chmod a+rwxt /mnt
 cd /mnt
