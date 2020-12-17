@@ -1,5 +1,6 @@
 # How to Run a BLAST Search
 
+
 ## Step 1: Download data
 
 First, we need some data!  For this tutorial, we're using mouse and zebrafish RefSeq protein data sets from NCBI. We'll put them in our home directory:

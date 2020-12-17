@@ -8,6 +8,8 @@ This tutorial is a beginner friendly version for using Cavatica's Command Line U
 !!! note "Learning Objectives"
 
     - Learn how to upload files to Cavatica
+    - Learn to edit metadata of files on Cavatica
+    
 
 === "Est. Time"
 
@@ -26,9 +28,16 @@ This tutorial is a beginner friendly version for using Cavatica's Command Line U
     - Basic command line
 
 
+Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance (`t2.micro`).
+
+!!! Warning
+
+    To avoid unnecessary charges, remember to [terminate your AWS instance](../Introduction_to_Amazon_Web_Services/introtoaws4.md) once you are done using it.
+
 ## Step 1: Update Instance
 
-Visit the [AWS tutorial webpage](../Introduction_to_Amazon_Web_Services/introtoaws2.md) to launch a 64 bit `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type` instance. `LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available.
+`LTS 20.04` is frozen at `version 20.04`, and thus it may be preferable to update the packages and dependencies to their latest version. Prior to the local instance upgrade, you can obtain the information on packages that have updates available.
+
 
 === "AWS Instance Code"
 
@@ -69,7 +78,7 @@ Next, make a directory called "fastq" using the command mkdir, and then download
 
 ## Step 3: Install Java and Download Command Line Uploader
 
-Cavatica Command Line Uploader needs `java version "1.8.0_20"`. Ubuntu Server 20.04 LTS (HVM) does not come with java pre-installed. You will need to install it with this command:
+The Cavatica Command Line Uploader needs `java version "1.8.0_20"`. Ubuntu Server 20.04 LTS (HVM) does not come with java pre-installed. You will need to install it with this command:
 
 === "AWS Instance Code"
 
@@ -100,7 +109,9 @@ Next, download the Cavatica Uploader by running this code:
     ```
     curl -LO https://cavatica.sbgenomics.com/downloads/cli/cavatica-uploader.tgz
     ```
-The -O flag names the local file the same as its remote counterpart.
+
+The `-O` flag names the local file the same as its remote counterpart.
+
 Now uncompress the Cavatica Uploader by running:
 
 === "AWS Instance Code"
@@ -108,7 +119,8 @@ Now uncompress the Cavatica Uploader by running:
     ```
     tar zxvf cavatica-uploader.tgz -C ~
     ```
-Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename.
+    
+The [tar](https://careerkarma.com/blog/tar-command/) (like gzip and zip) command is used to compress and uncompress a collection of files. It is the most widely used command to create compressed files that are easy to move. Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename. By default, this command will extract the contents of ".tgz" into your working directory. You can override this behavior using the `-C` flag at the end of the command. The `-C` flag allows you to specify a directory into which the contents of the tar file should be moved. In our case, we are using the `~` sign as a short form for the "home" directory.
 
 
 ## Step 4: Test the Command Line Uploader
@@ -287,13 +299,15 @@ Now the program can be called from any directory on your instance using the name
     ```
 
 !!! note "PATH"
-    Adding the program to the $PATH variable will only last the length of the session.
+
+    Adding the program to the $PATH variable will only last the length of the AWS session.
 
 ## Step 5: Move Files
 
 ### Step 5a: Find your Cavatica Authentication Token and Username
 
-The Authentication Token is a 32 character length personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token on you Cavatica account under the "Developer" tab.
+
+The Authentication Token is a 32 character length personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token in your Cavatica account under the "Developer" tab.
 
 Copy the Authentication token. You will replace `a???????????????????????????????` in the code block below with your own token.
 
@@ -305,7 +319,8 @@ Next, find and remember your username visible at the top right corner of your Ca
 You can either create a new project or choose an existing project.
 
 #### New project
-Create a new Cavatica project by clicking on the "Projects" tab on the Cavatica homepage and selecting the " + Create a project" option. You can name your new project whatever you like.  Remember your project name and replace "project-name" with the name of your project in the code block below.
+
+Create a new Cavatica project by clicking on the "Projects" tab on the Cavatica homepage and selecting the " + Create a project" option. You can name your new project whatever you like.  Use your project name to replace "project-name" in the code block below.
 
 
 #### Existing project
@@ -319,11 +334,12 @@ Alternatively, you may choose to select an existing project. To get a list of al
 The `-t` flag tells AWS to look for an Authentication token. Remember to replace `a???????????????????????????????` with your own Authentication token.
 
 !!! Important
-    If you have `_`s in your project name, replace them with `-` in the uploader code.
+
+    If you have underscores `_` in your project name, replace them with `-` in the uploader code.
 
 ### Step 5c: Moving Files
 
-Finally, you can transfer files by running the following code. Remember to replace "project-name" with the name of your project and "username" with your cavatica login name.
+Finally, you can transfer files by running the following code. Remember to replace "project-name" with the name of your project and "username" with your Cavatica login name.
 
 === "AWS Instance Code"
     ```
@@ -361,21 +377,26 @@ You're all done! Log in to Cavatica and look for your files in the the "Files" t
 
 ![](images/Select_Samples.png "Select the Files")
 
-- Click the "Edit Metadata" button
+
+- Click the "Edit Metadata" button.
 
 ![](images/Edit_Metadata_Button.png "Edit Metadata Button")
 
-- You should see a pop-up window on the right side of the screen
+- You should see a pop-up window on the right side of the screen:
 
 ![](images/Popup_Window.png "Popup Window to Edit Metadata")
 
-- Fill in or edit all the metadata terms you wish to use for your analysis and click "Save"
+- Fill in or edit all the metadata terms you wish to use for your analysis and click "Save".
 
 - Your new metadata terms should now be displayed on your screen!
 
 !!! note "Don't see your metadata column of interest?"
 
-    - Click on the table icon on the right hand side of the page
+
+    - Click on the table icon on the right hand side of the page.
     - Check all the column names you wish to add to the metadata display.
 
     ![](images/Columns_Selection.png "Selecting Columns for Display")
+
+
+An alternative method to edit metadata terms can be found in the Cavatica documentation page under the tab: [Modify metadata using the visual interface](https://docs.cavatica.org/docs/modify-metadata-using-the-visual-interface). Detailed instructions coming soon.

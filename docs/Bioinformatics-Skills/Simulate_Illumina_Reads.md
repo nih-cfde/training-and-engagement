@@ -1,6 +1,7 @@
 # Simulating Illumina Reads
 
-[InSilicoSeq](https://insilicoseq.readthedocs.io/en/latest/) is a software that simulates Illumina reads from genomes, and was especially built to simulate reads from metagenomes. InSilicoSeq is written in Python, is fairly well-documented and easily installed via Python’s package manager `pip(3)`.
+
+[InSilicoSeq](https://insilicoseq.readthedocs.io/en/latest/) is software that simulates Illumina reads from genomes, and was especially built to simulate reads from metagenomes. InSilicoSeq is written in Python, is fairly well-documented, and easily installed via Python’s package manager `pip(3)`.
 
 ## Why use simulated data?
 
@@ -45,29 +46,39 @@ With so many bioinformatics tools currently available to users, simulated datase
 
 ## Selecting the right AWS instance to run InSilicoSeq
 
+
+!!! Warning
+
+    - To avoid unnecessary charges, remember to [terminate your AWS instance](Introduction_to_Amazon_Web_Services/introtoaws4.md) once you are done using it.
+
+    - Before terminating your instance, make sure to transfer all the files you need to your local computer or storage volume.
+
 In this tutorial you will run [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) on a 64 bit Ubuntu Server 20.04 LTS (HVM), SSD Volume Type instance. Instructions on how to launch an AWS instance and access it are described in [our AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md). Please follow those instructions with a **few modifications**:
 
-### Step 1:
- You must select the the `t2.xlarge` instance (instead of the default `t2.micro` instance selection described in the tutorial):
+### Step 1: Select Instance
+
+You must select the the `t2.xlarge` instance (instead of the default `t2.micro` instance selection described in the tutorial):
 
 ![](../images/Simulated_Data_t2xlarge.png "t2 xlarge instance")
 
 !!! Warning
     `t2.xlarge` machine is not part of AWS's free tier. Running this instance costs money to all users, including those who have free tier access. Check the estimated cost section at the top of this page.
 
-### Step 2:
- After choosing `t2.xlarge`, click on the "4.Add Storage" tab on the instance launch page and then changing the number on the "Size (GB)" tab to read "16", as shown in the image below:
+
+### Step 2: Add Storage
+ After choosing `t2.xlarge`, click on the "4. Add Storage" tab on the instance launch page and then change the "Size (GB)" tab to read "16", as shown in the image below:
 
 ![](../images/Simulated_Data_t2xlarge_storage.png "Add storage to t2 xlarge instance")
 
   You need to add more storage because, while the output fastq files themselves are small (<20MB), temporary files generated during the simulation take up a lot of space.
 
 
-### Step 3:
- Click "Review and launch"
 
-### Step 4:
- Then go back to the [AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md) and follow instructions on how to access the instance via the MacOS terminal window
+### Step 3: Review and Launch
+ Click "Review and launch".
+
+### Step 4: Access the Instance
+ Then go back to the [AWS tutorial](Introduction_to_Amazon_Web_Services/introtoaws3.md) and follow instructions on how to access the instance via the MacOS terminal window.
 
 ## Installing InSilicoSeq
 
@@ -173,7 +184,8 @@ If you see the version number printed on the screen, you are good to go!
 
 ## Download the human reference genome
 
-InSilicoSeq simulates reads based on one or more input reference genomes. You will use the human reference genome GRCh38.
+
+InSilicoSeq simulates reads based on one or more input reference genomes. We will use the human reference genome GRCh38.
 
 First, make a directory called "reference_genome" using the command `mkdir`. Then download the compressed (".gz" extension) human reference genome inside the new folder and unzip the ".fna" file.
 
@@ -227,7 +239,8 @@ Finally, run the code to make your simulated fastq file.
 
 !!! note "What are all these flags?"
 
-    `--model` lets you input an error model file. The default is None. You're using hiseq for a pre-computed error model suitable for simulating data generated from a HiSeq sequencing run. Other available options are NovaSeq and MiSeq. If you do not wish to use a model, use –mode basic. The name of the built-in models is case insensitive.
+
+    `--model` lets you input an error model file. The default is None. You're using hiseq for a pre-computed error model suitable for simulating data generated from a HiSeq sequencing run. Other available options are NovaSeq and MiSeq. If you do not wish to use a model, use –mode basic. The names of the built-in models are case insensitive.
 
     `--n_reads` specifies the number of reads to be simulated. The default is 1 million (1M).
 
@@ -240,12 +253,13 @@ Finally, run the code to make your simulated fastq file.
     The simulation step takes ~30 minutes to complete. Please do not close the terminal window until the simulation run is complete. Closing the terminal before the simulation is complete will interrupt the run and you will have to start over.
 
 
- If your run is successful, you will see two ".fastq" files, "my_sim_R1.fastq" and "my_sim_R2.fastq", and an abundance file called "my_sim_abundance.txt". The abundance file is more meaningful in the context of simulating metagenomic data. It is a tab-delimited file containing the abundance of each genome supplied to the command. The 5 M reads generated per simulation are split between the R1 and R2 files.
+If your run is successful, you will see two ".fastq" files: "my_sim_R1.fastq" and "my_sim_R2.fastq", and an abundance file called "my_sim_abundance.txt". The abundance file is more meaningful in the context of simulating metagenomic data. It is a tab-delimited file containing the abundance of each genome supplied to the command. The 5 M reads generated per simulation are split between the R1 and R2 files.
 
 ## Looping InSilicoSeq
 
-If you want to repeat the simulation multiple times, modify the following code block by changing the `n` to an integer corresponding to the number of time you wish to run the simulation. Your output files will be named
-  - 1_my_sim_R1 and 1_my_sim_R2
+If you want to repeat the simulation multiple times, modify the following code block by changing the `n` to an integer corresponding to the number of times you wish to run the simulation. Your output files will be named
+
+- 1_my_sim_R1 and 1_my_sim_R2
   - 2_my_sim_R1 and 2_my_sim_R2
   - ...
   - n_my_sim_R1 and n_my_sim_R2.
@@ -285,9 +299,9 @@ Now run FastQC on your fastq files:
 === "AWS Instance Code"
 
     ```
-    cd fastq
     fastqc *.fastq
     ```
+
 You are using the `*` wildcard to help specify all of the .fastq files here.
 
 
@@ -346,7 +360,8 @@ From the FastQC report, we see that the overall read quality scores are good and
 
     - To avoid unnecessary charges, remember to [terminate your AWS instance](Introduction_to_Amazon_Web_Services/introtoaws4.md) once you are done using it.
 
-    - It is important to remember that terminating the instance causes all the data in that instance to be lost forever. If you wish to keep the fastq files, please remember to transfer them to your local machine or analysis platform. You can modify the download code from the "Transfer to Local Computer" section above to download the fastq files like so:
+
+    - It is important to remember that terminating the instance causes all the data in that instance to be lost forever. If you wish to keep the fastq files, please remember to transfer them to your local machine or analysis platform. To transfer simulated fastq files from AWS to your local machine, paste the following code in your **local** terminal (not AWS instance terminal).
 
     ```
     scp -i ~/Desktop/amazon.pem ubuntu@ec2-??-???-???-??.us-east-2.compute.amazonaws.com:/home/ubuntu/fastq/\*.zip ~/Desktop/fastqc/.

@@ -5,12 +5,9 @@ title: CFDE Training Release
 
 Latest Release
 =================
-<<<<<<< HEAD
+
 
 **Updated October 15, 2020**
-=======
-Updated October 15, 2020
->>>>>>> 0e77e16c19fbb8d09508e30b825d06a89eff08c4
 
 <span style="font-size:24px;">New Tutorials
 
