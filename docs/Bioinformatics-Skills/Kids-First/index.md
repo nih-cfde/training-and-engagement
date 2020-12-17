@@ -16,8 +16,8 @@ available to empower your research today. Data collected from more than
 Our aim is to teach researchers basic concepts, skills, and tools for
 working with data so that they can get more done in less time, and with
 less pain. **The goal of this training module is to enable clinician
-researchers to use the data portal to build cohorts, and to move that
-data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/))**.
+researchers to use the data portal to build cohorts, and to move that data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/))**.
+
 
 Setting up your KF Portal Permissions:
 
@@ -55,6 +55,7 @@ Est. Time | Lesson name | Description
 10 mins | [Data Download Options](Download_Data/index.md) | Options for downloading data to your local computer
 10 mins | [Data Download via KF Portal](Download_Data/Data-Download-Via-KF-Portal.md) | Local download from the KF portal
 20 mins | [Data Download via Cavatica](Download_Data/Data-Download-Via-Cavatica.md) | Local download from Cavatica
+30 mins | [Data Upload to Cavatica](Upload_Data.md) | Using the Command Line Uploader tool to move files from AWS to Cavatica
 
 !!! note "Learning Objectives"
 
