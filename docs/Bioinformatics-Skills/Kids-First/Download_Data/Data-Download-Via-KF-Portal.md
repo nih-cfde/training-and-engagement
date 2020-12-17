@@ -3,7 +3,7 @@ layout: page
 title: Data Download via KF Portal
 ---
 
-Download KF data from the KF portal
+Download KF Data from the KF Portal
 ================================================
 
 The easiest way to download a small number of files (one by one) onto your local machine is via the Kids First (KF) Portal interface.

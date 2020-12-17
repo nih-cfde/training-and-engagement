@@ -1,4 +1,5 @@
-# BLAST search tutorial walk-through
+# BLAST Search Tutorial Walk-through
+
 
 In this video, we launch an AWS instance, connect to the instance with [MobaXterm on a WindowsOS](../Introduction_to_Amazon_Web_Services/introtoaws3.md), and run through the BLAST tutorial. 
 

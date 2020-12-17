@@ -3,7 +3,7 @@ layout: page
 title: Data Download via Cavatica
 ---
 
-Download KF data from the Cavatica portal
+Download KF Data from the Cavatica Portal
 ================================================
 
 The easiest way to download a large number of KF files is through [Cavatica](https://cavatica.sbgenomics.com/).
@@ -66,7 +66,8 @@ The `-i` flag tells `wget` to look for a list of URLs from a file.
 
 ### Terminal vidlet: wget to download data
 
-<script id="asciicast-355576" src="https://asciinema.org/a/355576.js" async></script>
+<asciinema-player src="../vidlets/1_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mUsing wget to Download Data"></asciinema-player>
+
 
 ## Step 3: Clean up file names
 
@@ -95,4 +96,4 @@ Check your folder - you have now successfully downloaded KF files to your local 
 
 ### Terminal vidlet: clean up file names
 
-<script id="asciicast-355593" src="https://asciinema.org/a/355593.js" async></script>
+<asciinema-player src="../vidlets/2_screencast.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mClean Up File Names"></asciinema-player>

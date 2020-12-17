@@ -1,4 +1,5 @@
-# How to run a BLAST search
+# How to Run a BLAST Search
+
 
 ## Step 1: Download data
 

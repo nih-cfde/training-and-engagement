@@ -9,6 +9,7 @@ This tutorial is a beginner friendly version for using Cavatica's Command Line U
 
     - Learn how to upload files to Cavatica
     - Learn to edit metadata of files on Cavatica
+    
 
 === "Est. Time"
 
@@ -108,7 +109,9 @@ Next, download the Cavatica Uploader by running this code:
     ```
     curl -LO https://cavatica.sbgenomics.com/downloads/cli/cavatica-uploader.tgz
     ```
+
 The `-O` flag names the local file the same as its remote counterpart.
+
 Now uncompress the Cavatica Uploader by running:
 
 === "AWS Instance Code"
@@ -116,6 +119,7 @@ Now uncompress the Cavatica Uploader by running:
     ```
     tar zxvf cavatica-uploader.tgz -C ~
     ```
+    
 The [tar](https://careerkarma.com/blog/tar-command/) (like gzip and zip) command is used to compress and uncompress a collection of files. It is the most widely used command to create compressed files that are easy to move. Here the z flag unz̲ips the file, x ex̲tracts files from the archive, v prints the filenames v̲erbosely and f means the following argument is a f̱ilename. By default, this command will extract the contents of ".tgz" into your working directory. You can override this behavior using the `-C` flag at the end of the command. The `-C` flag allows you to specify a directory into which the contents of the tar file should be moved. In our case, we are using the `~` sign as a short form for the "home" directory.
 
 
@@ -295,11 +299,13 @@ Now the program can be called from any directory on your instance using the name
     ```
 
 !!! note "PATH"
+
     Adding the program to the $PATH variable will only last the length of the AWS session.
 
 ## Step 5: Move Files
 
 ### Step 5a: Find your Cavatica Authentication Token and Username
+
 
 The Authentication Token is a 32 character length personalized code in Cavatica that allows other programs to get access to your Cavatica account. You can [find the Cavatica Authentication](Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md) token in your Cavatica account under the "Developer" tab.
 
@@ -313,6 +319,7 @@ Next, find and remember your username visible at the top right corner of your Ca
 You can either create a new project or choose an existing project.
 
 #### New project
+
 Create a new Cavatica project by clicking on the "Projects" tab on the Cavatica homepage and selecting the " + Create a project" option. You can name your new project whatever you like.  Use your project name to replace "project-name" in the code block below.
 
 
@@ -327,6 +334,7 @@ Alternatively, you may choose to select an existing project. To get a list of al
 The `-t` flag tells AWS to look for an Authentication token. Remember to replace `a???????????????????????????????` with your own Authentication token.
 
 !!! Important
+
     If you have underscores `_` in your project name, replace them with `-` in the uploader code.
 
 ### Step 5c: Moving Files
@@ -369,6 +377,7 @@ You're all done! Log in to Cavatica and look for your files in the the "Files" t
 
 ![](images/Select_Samples.png "Select the Files")
 
+
 - Click the "Edit Metadata" button.
 
 ![](images/Edit_Metadata_Button.png "Edit Metadata Button")
@@ -382,6 +391,7 @@ You're all done! Log in to Cavatica and look for your files in the the "Files" t
 - Your new metadata terms should now be displayed on your screen!
 
 !!! note "Don't see your metadata column of interest?"
+
 
     - Click on the table icon on the right hand side of the page.
     - Check all the column names you wish to add to the metadata display.
