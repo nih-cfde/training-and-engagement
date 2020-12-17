@@ -4,7 +4,7 @@ title: Data Download Options
 ---
 
 
-Download KF data to local machine
+Download KF Data to Local Machine
 ===================================
 
 !!! FAQ
