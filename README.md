@@ -1,7 +1,5 @@
 # training
 
-A trivial change
-
 A repository for CFDE training materials
 
 The docs folder is rendered into https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/ by ReadTheDocs.
