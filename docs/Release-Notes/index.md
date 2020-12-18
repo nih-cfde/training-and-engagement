@@ -10,7 +10,7 @@ Latest Release
 
 ## New Tutorials
 
-- [Simulating Illumina Reads](../Bioinformatics-Skills/Simulate_Illumina_Reads.md)
+- [Simulate Illumina Reads](../Bioinformatics-Skills/Simulate_Illumina_Reads.md)
 - [Uploading Data to Cavatica](../Bioinformatics-Skills/Kids-First/Upload_Data.md)
 
 ## Website Features
