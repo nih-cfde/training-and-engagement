@@ -6,20 +6,21 @@ title: CFDE Training Release
 Latest Release
 =================
 
+**Updated December 18, 2020**
 
-**Updated October 15, 2020**
+## New Tutorials
 
-<span style="font-size:24px;">New Tutorials
+- [Simulate Illumina Reads](../Bioinformatics-Skills/Simulate_Illumina_Reads.md)
+- [Uploading Data to Cavatica](../Bioinformatics-Skills/Kids-First/Upload_Data.md)
 
-- [CFDE Portal Tutorial](../Bioinformatics-Skills/CFDE-Portal/index.md)
-- [Command Line BLAST](../Bioinformatics-Skills/Command-Line-BLAST/BLAST1.md)
-- [Introduction to Amazon Web Services (AWS)](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1.md)
-- [Identifying MIME Types](../CFDE-Internal-Training/MIME-type/index.md)
-- [Enabling User Choices with Javascript](../Web-Development/javascript_chooser.md)
+## Website Features
 
-<span style="font-size:24px;">Updates and Fixes
+- Home page: Re-design of home page and addition of carousel feature
+- Website usage data: Matomo analytics script added to the training site 
 
-- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md) - PR steps updated
-- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md) - Additional explanation and context to code, workflow streamlining with edits to key access pair, data download, and instance recovery
-- [Set up Conda Computing Environment](../Bioinformatics-Skills/install_conda_tutorial.md) - Additional context for conda installation
-- [Snakemake Workflow Management](../Bioinformatics-Skills/Snakemake/index.md) - Code block formatting edits for Snakemake rules
+## Updates and Fixes
+
+- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md): PR steps updated
+- [Updates to Kids First Portal tutorials](../Bioinformatics-Skills/Kids-First/index.md):  Screenshots and text updated to match new versions seen on Kids First Website
+- [Edits to Kids First Data Download terminal screencasts](../Bioinformatics-Skills/Kids-First/Download_Data/Data-Download-Via-Cavatica.md): Speeds up the screencasts, fixes typos, and removes some redundancy
+
