@@ -11,8 +11,8 @@ Why so much setup?
 ------------------
 
 There are many rules and regulations about who can
-use human derived medical data, and for what purposes. Even
-"open" human data has controls and simply indicates that that there are fewer barriers to seeing it. Data curators like
+use human-derived medical data, and for what purposes. Even
+"open" human data has controls and simply indicates that there are fewer barriers to seeing it. Data curators like
 the Kids First DRC are obligated to enforce access controls and data use
 rules to the best of their ability, and that requires end users like us
 to have accounts that are tied to verified identities (e.g. ORCID or Google, eRA Commons).

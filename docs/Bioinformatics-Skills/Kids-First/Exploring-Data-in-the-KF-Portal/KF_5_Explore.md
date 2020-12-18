@@ -13,11 +13,11 @@ What data is here?
 ------------------
 
 The data at the Kids First DRC is from children with childhood cancer
-and structural birth defects or their family members. As of early 2020,
+and structural birth defects or their family members. As of the end of 2020,
 the Kids First DRC maintains Whole Genome Sequences (WGS) and/or RNAseq
-data for over 12,000 individuals. However, Kids First doesn't only host
-data about DNA and RNA. Using the portal you can access a wide range of
-data types including Histology Images, Pathology Reports, Radiology
+data for over 13,000 individuals. However, data available on the Kids First Portal
+is not restricted to information about DNA and RNA. Using the portal you can access a
+wide range of data types including Histology Images, Pathology Reports, Radiology
 Images, Radiology Reports, Operation Reports, Annotated Somatic
 Mutations, Gene Fusions, Gene Expression, Somatic Copy Number
 Variations, and Isoform Expression.
@@ -28,7 +28,7 @@ If you aren't still logged in to the Kids First Portal, navigate to
 <https://portal.kidsfirstdrc.org/> and use the credentials you set up
 previously in this lesson to log in.
 
- When you first log in, you will see
+When you first log in, you will see
 this screen:
 
 ![Kids First Dashboard](../images-kf/KidsFirstPortal_11.png "Kids First Dashboard")
@@ -49,8 +49,13 @@ Exploring the Data
 
 It is important to get a sense of what data exists before we start
 filtering down and designing an experiment. This page gives us a set of
-six interactive plots that display the overall data. You can impose
+seven interactive plots that display the overall data. You can impose
 filters on the data in two different ways:
 
 -   By using the filter buttons
 -   By clicking a graph component of any plot
+
+!!! Note
+
+    Application of the filters via the graph of any plot allows for choice of one value. If you'd like to select values spanning multiple bars in a plot,
+    use the filter buttons at the top of the page.
