@@ -9,7 +9,7 @@ This is a tutorial on how to edit MkDocs websites from Github repos that use the
 
 === "Est. Time"
 
-    ~20 mins (depending on the website, it make take longer for all the bot's checks to complete)
+    ~20 mins (depending on the website, it may take longer for all the bot's checks to complete)
 
 === "Prerequisites"
 
