@@ -1,4 +1,4 @@
-# Simulating Illumina Reads
+# Simulate Illumina Reads
 
 
 [InSilicoSeq](https://insilicoseq.readthedocs.io/en/latest/) is software that simulates Illumina reads from genomes, and was especially built to simulate reads from metagenomes. InSilicoSeq is written in Python, is fairly well-documented, and easily installed via Python’s package manager `pip(3)`.

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  <a href="mailto:CFDE-HelpDesk%20<support@cfde.atlassian.net">
+    <strong>For suggestions and questions, contact us! </strong>
+    <span class="twemoji email">
+      {% include ".icons/fontawesome/solid/envelope.svg" %}
+    </span>
+  </a>
+  <a href="https://twitter.com/CfdeNih">
+    <span class="twemoji twitter">
+      {% include ".icons/fontawesome/brands/twitter.svg" %}
+    </span>
+  </a>
+  <a href="https://github.com/nih-cfde/training-and-engagement/tree/stable">
+    <span class="twemoji github">
+      {% include ".icons/fontawesome/brands/github.svg" %}
+    </span>
+  </a>
+{% endblock %}
+
+{% block footer %}
+{% import "partials/language.html" as lang with context %}
+ <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        Copyright &copy; CC-BY <br />
+        Developed by
+        <a href="https://www.nih-cfde.org" target="_blank" rel="noopener">CFDE</a>
+      </div>
+    </div>
+  </div>
+ </footer>
+{% endblock %}

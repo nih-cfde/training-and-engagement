@@ -2,25 +2,45 @@
 body {
     font-family: “Open Sans”, Arial, Helvetica, sans-serif;
 }
+
 .md-header {
-    background-color: #ffffff !important;
-    border-bottom: 1px solid #1b2532 !important;
-    font-family: “Montserrat”, Arial, Helvetica, sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  height: 2.5rem;
+  color: #336699 !important ;
+  background-color: #ffffff !important;
+  font-weight: 600;
+  box-shadow: 0 0 .2rem rgba(0, 0, 0, 0), 0 .2rem .4rem rgba(0, 0, 0, 0);
+  transition:color 250ms, background-color 250ms
+
 }
+
+
+.md-header a:hover, a:active {
+    background-color: transparent;
+    color: #4080bf;
+}
+
 
 @media only screen and (max-width: 76.1875em) {
 
     html .md-nav--primary .md-nav__title--site {
-        background-color: #232f3e !important;
+        background-color: #336699 !important;
         border-bottom: 1px solid #1b2532 !important;
+        color: #ffffff;
+
     }
 
     .md-nav__source {
-        background-color: #0355ab !important;
+        background-color: #336699 !important;
     }
 
     html .md-nav--primary .md-nav__title {
-        background-color: #232f3e !important;
+        background-color:  #336699 !important;
         border-bottom: 1px solid #1b2532 !important;
         color: #ffffff;
     }
@@ -98,8 +118,14 @@ body {
 /* Second Navigation */
 
 .md-tabs {
-    background-color: #0355ab !important;
-    color: white
+  width: 100%;
+  overflow: auto;
+  background-color: #336699 !important;
+  color: white;
+  /*display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;*/
+  transition:background 250ms
 }
 
 .md-tabs__item {
@@ -112,7 +138,9 @@ body {
 
 .md-typeset table:not([class]) th {
     min-width: 11.5rem;
-    background-color: #6c6c6c !important;
+    background-color: #C3E1E6 !important;
+    color: black;
+    /*background-color: #6c6c6c !important;*/
     font-size: medium;
 }
 
@@ -130,27 +158,34 @@ body {
     width: 40px
 }
 
-/* Footer */
+.md-nav--primary .md-nav__title[for=__drawer] {
+    position: relative;
+    color: var(--md-primary-fg-color);
+    background-color:var(--md-primary-fg-color)
+}
+/* .md-footer-meta */
 
 .md-footer-nav {
-    background-color: #0355ab !important;
+    background-color: hsl(210,50%,40%) !important;
 }
 
 .md-footer-meta {
-    background-color: #0355ab !important;
-    border-top: 1px solid #0355ab !important;
+    background-color: #204060 !important;
+    border-top: 1px solid #204060 !important;
+    padding: 0.05rem;
 }
 
 
 /* mouse over link */
-a:hover {
+/*a:hover {
   color: #fff9ad;
 }
 
-/* selected link */
+/* selected link
 a:active {
-  color: #3094a4 ;
+  color: #3094a4;
 }
+*/
 
 .tooltip_templates { display: none; }
 
