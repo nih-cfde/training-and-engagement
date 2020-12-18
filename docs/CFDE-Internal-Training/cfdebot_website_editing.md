@@ -21,7 +21,7 @@ For the CFDE, the key websites we maintain are built from the following Github r
 
 The `welcome-to-cfde` and `use-case-library-build` CFDE websites currently have a single PR and review stage to merge changes to the public-facing website. These public-facing websites are rendered from the `stable` or `latest` branch, respectively. The `published-documentation` website involves more layers of PR review - please see [details below](#published-docs).
 
-The `training-and-engagement` repo has a 2-stage PR and review stage. Changes are initially pushed to a development branch `dev` and then merged to `stable` for new releases of the public-facing website. Consequently, the steps of the PR process are slightly different compared to the other CFDE websites. The details are available in the website repo's style guide and release plan.
+The `training-and-engagement` repo has a 2-stage PR and review process. Changes are initially pushed to a development branch `dev` and then merged to `stable` for new releases of the public-facing website. Consequently, the steps of the PR process are slightly different compared to the other CFDE websites. The details are available in the website repo's style guide and release plan.
 
 In this tutorial, we lay out the general steps for the single stage PR process.
 
@@ -69,7 +69,7 @@ The website created by the `published-documentation` repo pulls some docs that a
 
 Follow the general steps above, with the following additional steps:
 
-- Push your changes to the `preview` branch first to check the rendered website
+- Push your changes to the `preview` branch first to check the rendered website.
 - If the changes look as you expected, make a PR of your branch to `dev` and tag the admin team (@ACharbonneau and @marisalim), who will check the changes and approve. Approved changes will periodically be promoted to the `stable` branch to be rendered on the public website.
 
 ### B) **To edit documents that are in the sub-module repos**
