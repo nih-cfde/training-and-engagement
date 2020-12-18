@@ -94,7 +94,7 @@ Screencasts have a `.cast` extension and are typically in the order of tens of K
      ...
      ```
 
-4. You can edit the words, capitalization, spacing, etc. that appear on the screencast. It is best to avoid edits to timestamps as that can be manipulated using the speed option of the player. 
+4. You can edit the words, capitalization, spacing, etc. that appear on the screencast. It is best to avoid edits to timestamps as that can be manipulated using the speed option of the player.
 
 5. Save your changes and view those changes as you go by replaying on your terminal using this command:
 
@@ -105,10 +105,14 @@ Screencasts have a `.cast` extension and are typically in the order of tens of K
 ### Saving screencasts
 
 - for a given tutorial, save the ".cast" file(s) in a subfolder of the tutorial folder
-- to embed the screencast into a tutorial, use the syntax below:
+- to embed the screencast into a tutorial:
+
+     - change the `src` path tell the asciinema-player where to locate the ".cast" file. The relative path needs to start with `../`; `./` does not work.
+
+     - change the `poster` screencast title
+
+For example, if your screencast is located in `./docs/Bioinformatics-Skills/Kids-First/vidlets/example.cast`, the markdown page you're embedding the screencast in is located in `./docs/Bioinformatics-Skills/Kids-First/example.md`, and the title is "My screencast", the syntax would be:
 
 ```
-<asciinema-player src="<path/to/.cast file>" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37m<add screencast title here>"></asciinema-player>
+<asciinema-player src="../vidlets/example.cast" speed="2" theme="tango" font-size="medium" cols="60" rows="15" poster="data:text/plain,\x1b[1;37mMy screencast"></asciinema-player>
 ```
-
-Change the `src` path to the ".cast" file path and the `poster` screencast title (if the title is "My screencast", it would look like `poster="data:text/plain,\x1b[1;37mMy screencast">`).
