@@ -12,7 +12,7 @@ To use the filter buttons, click on one, choose from the options in that button,
 
 === "Exercise"
 
-    Use the "Clinical" button to filter the data to include only samples where the patient was between 0 and 5 years old when they were diagnosed.
+    Use the "Clinical" button to filter the data to include only samples where the participants were between 0 and 5 years old when they were diagnosed.
 
 === "Answer"
 

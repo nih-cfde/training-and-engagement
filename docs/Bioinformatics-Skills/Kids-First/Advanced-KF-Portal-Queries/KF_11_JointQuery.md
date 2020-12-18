@@ -45,13 +45,13 @@ chose, you should now have two queries that are identical:
 
 In query 2, edit the "Age at Diagnosis" to be 15-20 years of age.
 
-By clicking on each query, you should see that the title for the Cohort
-Results and the plots change to match the query you have highlighted (in green):
+By clicking on each query, you should see that the title for the cohort
+results ("Query #") and the plots change to match the query you have highlighted (in green):
 
-Results for **query 1 ONLY**:
+- Results for **1st query ONLY**:
 ![Query 1](../images-kf/KidsFirstPortal_29.png "Query 1")
 
-Results for **query 2 ONLY**:
+- Results for **2nd query ONLY**:
 ![Query 1](../images-kf/KidsFirstPortal_30.png "Query 1")
 
 ### Step 3: Combine the Queries
@@ -65,7 +65,7 @@ then click the "or" above the left side of the queries:
 
 ### Step 4: View Combined Query
 
-We now have a new `Query #3` that includes individuals from
+We now have a new "Query #3" that includes individuals from
 either of our two original queries:
 
 ![Combined Queries](../images-kf/KidsFirstPortal_33.png "Combined Queries")

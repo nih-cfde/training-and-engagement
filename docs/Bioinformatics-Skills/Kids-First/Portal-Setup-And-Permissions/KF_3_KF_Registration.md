@@ -3,7 +3,7 @@
 ### Step 1: Go to the portal website
 
 First, we'll set up our accounts at the Kids First DRC Portal by going
-to this link:
+to the portal link:
 
 [https://portal.kidsfirstdrc.org/](https://portal.kidsfirstdrc.org/)
 
@@ -33,7 +33,7 @@ Select the platform you wish to use for your sign up.
 
 #### Connect with Google or Facebook
 
-If you decide to link KF to your Google or Facebook account, click on the corresponding icon. A pop-up window will appear and you will be asked to provide your user information and password. Enter the information and click "Next". If log in is successful, the pop-up window will disappear and you will be routed back to the KF portal dashboard.
+The preferred method is to login with a Google account. Click the corresponding icon to link KF to either your Google or Facebook account. A pop-up window will appear and you will be asked to provide your user information and password. Enter the information and click "Next". You'll then be asked to enter basic user information and accept the Terms and Conditions for using data on the portal. If log in is successful, the pop-up window will disappear and you will be routed back to the KF portal dashboard.
 
 #### Connect your ORCID
 
