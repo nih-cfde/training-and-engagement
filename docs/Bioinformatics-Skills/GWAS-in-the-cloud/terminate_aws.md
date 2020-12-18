@@ -16,7 +16,7 @@ When you are done with all the analyses, be sure to terminate the AWS instance. 
 
  "Actions" --> "Instance State" --> "Terminate"
 
-![](../../images/GWAS_General_Terminate_AWS.png)
+![](./images-gwas/GWAS_General_Terminate_AWS.png "Terminate instance")
 
 
 !!! note "Key Points"
@@ -29,7 +29,7 @@ When you are done with all the analyses, be sure to terminate the AWS instance. 
 
     - Move data into the AWS computer
 
-    - Download and install all the software necessary for GWAS 
+    - Download and install all the software necessary for GWAS
 
     - Run some basic GWAS analyses
 

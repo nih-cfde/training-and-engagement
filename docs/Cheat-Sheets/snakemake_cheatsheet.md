@@ -1,6 +1,6 @@
 # Snakemake Command Cheat Sheet
 
-Snakemake | description
+Snakemake | Description
 --- | ---
 `snakemake -h` | help page with all Snakemake flags
 `snakemake -n <rule name>` | a dry run of the rule commands without actually running them, good for testing
