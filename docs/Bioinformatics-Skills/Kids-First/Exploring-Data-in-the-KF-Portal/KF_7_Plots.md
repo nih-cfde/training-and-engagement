@@ -33,7 +33,7 @@ selection in a plot, that filter is added to your query box above.
 !!! Exercise
 
     Click a bar in the "Studies" plot to include only samples
-    from the Kids First Neuroblastoma data set.
+    from the Pediatric Brain Tumor Atlas: CBTTC data set.
 
 
 If you applied this filter successfully, you should see something like
@@ -44,5 +44,5 @@ the following:
 
 !!! Note
 
-    We ran this query in early 2020. If you are doing this tutorial later,
+    We ran this query at the end of 2020. If you are doing this tutorial later,
     you may see more participants.
