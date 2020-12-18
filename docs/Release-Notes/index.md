@@ -22,5 +22,5 @@ Latest Release
 
 - [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md): PR steps updated
 - [Updates to Kids First Portal tutorials](../Bioinformatics-Skills/Kids-First/index.md):  Screenshots and text updated to match new versions seen on Kids First Website
-- [Edits to Kids First Data Download terminal screencasts](../Bioinformatics-Skills/Kids-First/Data-Download-Via-Cavatica.md): Speeds up the screencasts, fixes typos, and removes some redundancy
+- [Edits to Kids First Data Download terminal screencasts](../Bioinformatics-Skills/Kids-First/Download_Data/Data-Download-Via-Cavatica.md): Speeds up the screencasts, fixes typos, and removes some redundancy
 
