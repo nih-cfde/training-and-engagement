@@ -19,7 +19,7 @@ The CFDE-CC’s training component is run by Dr. Titus Brown and Dr. Amanda Char
 
 #### In-person training vs online training
 
-Our initial plan was to run a series of in-person workshops during 2020. However, our plan has pivoted to an online strategy because of the COVID-19 pandemic still sweeping the world. In particular, we expect there to be no in-person meetings for the foreseeable future. While we believe we can leverage online training effectively, setting up the system has required a great deal of experimentation with formats, technologies, and teaching styles. As of late 2020, we have started running pilot workshops to test our training materials in an online setting, and will continue to to host larger and more workshops as we refine our lessons and teaching strategies.
+Our initial plan was to run a series of in-person workshops during 2020. However, our plan has pivoted to an online strategy because of the COVID-19 pandemic still sweeping the world. In particular, we expect there to be no in-person meetings for the foreseeable future. While we believe we can leverage online training effectively, setting up the system has required a great deal of experimentation with formats, technologies, and teaching styles. As of late 2020, we have started running pilot workshops to test our training materials in an online setting, and will continue to host larger and more workshops as we refine our lessons and teaching strategies.
 
 Online training is very different from in-person training. In our experience, in-person training offers a natural focus for many and can support an extended (~4-6 hrs/day) engagement with materials. Moreover, technology problems on the learner’s side can often be fixed by in-person helpers who have direct access to the learner’s computer.  Finally, the intensity of in-person workshops combines well with the higher cost of travel: in the past we have successfully run many in-person workshops, lasting between 2 days and 2 weeks, where either the instructors or the students travel significant distances to attend the workshop.
 
@@ -31,13 +31,13 @@ In exchange for these downsides, online training offers some opportunities. By u
 
 We have transitioned out initial materials for in-person workshops to lessons that can be delivered online. For many lessons, we accomplished this by breaking lessons up into 5-10 minute video chunks, or “vidlets”, that showcase concepts and technical activities. These chunks can be viewed in “flipped classroom” or offline mode, and will be interspersed with opportunities for virtual attendees to seek technical help, explore their own interests, and ask questions in an individual or group setting. In some lessons, we opted for an entirely written approach, with a number of interactive text elements and screen shots. All training materials used for workshops are available online (https://training.nih-cfde.org/en/latest/) as written step-by-step tutorials, providing learners multiple ways to approach the material.
 
-In contrast with in-person materials that amount to something like instructor notes, both ways of presenting the material, videos and screenshots, are laborious. A ~1 hour in-person lesson might take 2-3 days to develop and write out. That same lesson as an online walkthrough will likely take a week or more as the lesson will likely require dozens of formatted screenshots, and all of the interactive questions and assessments also need to be coded in. Vidlets also require a great deal of time consuming editing.
+In contrast with in-person materials that amount to something like instructor notes, both ways of presenting the material, videos and screenshots, are laborious. A ~1 hour in-person lesson might take 2-3 days to develop and write out. That same lesson as an online walkthrough will likely take a week or more as the lesson will likely require dozens of formatted screenshots, and all of the interactive questions and assessments also need to be coded in. Vidlets also require a great deal of time-consuming planning and editing.
 
 These materials also require much more upkeep than in-person lessons. With in-person materials, changes to the Kids First interface, for example, would only matter if they changed the functionality of the portal, and lesson content for new features could generally be developed and added to a lesson without overhauling the materials. However, even minor color and placement changes to the Kids First interface can render our materials useless. Vidlets need to be completely re-recorded with nearly every update, and the screenshots from walkthroughs generally all need to be re-taken. For 2021, we are evaluating the pros and cons of each of these methods, as well as continually exploring new ways to deliver online content more efficiently.
 
-After our initial materials revamp, we have started to work on offering online 'in person' lessons. We deliver each lesson within the training team, and then expand to groups outside our team. Each delivery is a walkthrough of an entire lesson with users and will result in an iteration to change the materials to reflect discussion during the walkthrough. After 2-3 iterations are delivered to beta users and CF program members, we will set up a formal registration system and encourage adventurous biomedical scientists to attend sessions.
+After our initial materials revamp, we have started to work on offering online 'in person' lessons via Zoom. We deliver each lesson within the training team, and then expand to groups outside our team. Each delivery is a walkthrough of an entire lesson with users and will result in an iteration to change the materials to reflect discussion during the walkthrough. After 2-3 iterations are delivered to beta users and CF program members, we will set up a formal registration system and encourage adventurous biomedical scientists to attend sessions.
 
-As of late 2020, we have two lessons developed, we are beginning to offer them to a larger audience as pilot workshops. Here too, we are experimenting with the exact approach we will use. Online learning, especially for people with slow internet connections or limited screen size, can be extremely difficult. We expect to combine Zoom teleconferences, live streaming, and helpdesk sessions via our CFDE training helpdesk, but will continue to assess how well these are working for our learners and update accordingly. We are conducting assessments and evaluating our overall approach, as well as next steps for specific lesson development with each session.
+As of late 2020, we have tested two lessons, offered to a larger audience as pilot workshops. Here too, we are experimenting with the exact approach we will use. Online learning, especially for people with slow internet connections or limited screen size, can be extremely difficult. We expect to combine Zoom teleconferences, live streaming, and helpdesk sessions via our CFDE training helpdesk, but will continue to assess how well these are working for our learners and update accordingly. We are conducting assessments and evaluating our overall approach, as well as next steps for specific lesson development with each session.
 
 This lesson development approach is slow and cautious, and provides plenty of opportunity to improve the materials in response to lived experience of both instructors and learners. During the lesson development and delivery period, we will work closely with each partner DCC to make sure our lessons align with their best practices, as well as convey any technical challenges with user experience back to the DCCs in order to identify potential improvements in DCC portals. We expect to be able to develop 2-3 new lessons per website release, as well as updating existing content. Our [training website release plan](https://github.com/nih-cfde/training-and-engagement/blob/stable/docs/TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md) provides a timeline for posting new tutorials. In addition to release timelines, the release plan describes the different stages between releases, the internal CFDE training material review process along with format and tags for the release documentation both for the public facing website and the GitHub repo.
 
@@ -57,7 +57,7 @@ In addition to developing DCC-specific training material, we will also test and 
 
 #### Tutorial development:
 
-We have begun a Whole Genome Sequencing (WGS) and RNAseq tutorial using data from Kids First and have worked with Kids First and Cavatica (the Kids First data analysis platform) to improve their interface so that it can be used for training. We have added multiple lessons on setup and use of the Kids First data portal, linking to Cavatica analysis platform as well as uploading data to Cavatica. With Kids First, we have conducted two pilot trainings, and plan to both re-offer these, and expand our trainings for 2021.
+We have begun a Whole Genome Sequencing (WGS) and RNAseq tutorial using data from Kids First and have worked with Kids First and Cavatica (the Kids First data analysis platform) to improve their interface so that it can be used for training. We have added multiple lessons on setup and use of the Kids First data portal, linking to Cavatica analysis platform, as well as uploading data to Cavatica. With Kids First, we have conducted two pilot trainings, and plan to both re-offer these and expand our trainings for 2021.
 
 As part of GTEx's 2021 workplan, we will be developing specific workshop materials, testing the materials, helping to host the workshops, and compiling workshop assessments for GTEx. One workshop will be aimed at using their gene expression datasets to conduct analysis and the second workshop will focus on java tutorials for visualization. We plan to develop and make public RNAseq tutorials for the Kids First/Cavatica platform as well as the GTEx/ANViL/Terra platform.
 
@@ -67,7 +67,7 @@ The exact timelines for these lessons, and others, will depend on the schedules 
 
 + Persistent, user-led walkthrough documents
 + Accompanying short videos of difficult sections
-+ Materials are graduate level, research scientist- focused
++ Materials are graduate level, research scientist-focused
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
 + Lessons align with DCC best practices
 + Assessment
@@ -83,7 +83,7 @@ The exact timelines for these lessons, and others, will depend on the schedules 
 + Videos are accessible
 	+ Include written transcripts
 	+ Include closed-captioning
-+ Materials are graduate level, research scientist- focused
++ Materials are graduate level, research scientist-focused
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
 + Lessons align with DCC best practices
 + Assessment
@@ -92,7 +92,7 @@ The exact timelines for these lessons, and others, will depend on the schedules 
   (currently provided through google forms);
 	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the
   training videos (currently provided through google forms).
-	+ Conduct Remote interviews with learners both before and after training
+	+ Conduct remote interviews with learners both before and after training
     	+ Secure any approvals for human data collection
     	+ Collect contact information from learners
 
@@ -144,7 +144,7 @@ almost all of the CF programs. We already have in-person training material for t
   (currently provided through google forms);
 	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the
   training videos (currently provided through google forms).
-	+ Conduct Remote interviews with learners both before and after training
+	+ Conduct remote interviews with learners both before and after training
     	+ Secure any approvals for human data collection
     	+ Collect contact information from learners
 
@@ -202,7 +202,7 @@ We have created two lessons to demonstrate how to extract a manifest containing 
   (currently provided through google forms);
 	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the
   training videos (currently provided through google forms).
-	+ Conduct Remote interviews with learners both before and after training
+	+ Conduct remote interviews with learners both before and after training
     	+ Secure any approvals for human data collection
     	+ Collect contact information from learners
 
@@ -210,13 +210,13 @@ We have created two lessons to demonstrate how to extract a manifest containing 
 
 In tandem with the specific workshops above, we will engage with biomedical scientists who are interested in reusing CF data. We will include members of the CF communities, biomedical scientists who attend our training sessions, and biomedical scientists recruited via social media for targeted discussions as well as to build an online forum. Discussions will be used to inform future use case development for data analysis and integration, as well as for continuing training engagement. GTEx in particular is in close contact with their end user community, and has suggested that their user base would be available for kickstarting this engagement.
 
-Although Common Fund Programs have many high level goals in common, they each have distinct user bases, specific mandates, and areas of expertise. As such, many of the people who work at these programs know little or nothing about the other programs. As one goal of the CFDE is to foster cross DCC collaboration on scientific projects, we are working to engage these programs with each other, and to help them find common goals and shared interests. 
+Although Common Fund Programs have many high level goals in common, they each have distinct user bases, specific mandates, and areas of expertise. As such, many of the people who work at these programs know little or nothing about the other programs. As one goal of the CFDE is to foster cross DCC collaboration on scientific projects, we are working to engage these programs with each other, and to help them find common goals and shared interests.
 
 #### Community development:
 
 Starting in September 2020, we began hosting weekly Cross Pollination events with DCCs to introduce the CFDE portal, discuss data harmonization, and allow conversation between Common Fund programs. These cross-pollination events are continuing on a monthly basis from December 2020 through 2021, with most talks being done by DCCs.
 
-In addition to Cross Pollination events, we have also created a framework for DCCs to create interest based working groups. These working groups will allow member DCCs to guide important CFDE decisions such as what terms should be included in the CFDE portal, and how to harmonize them across groups. To facilitate broad consensus building, we have also created a Request For Comments (RFC) system that allows any working group to write a short description of a standard technology or tool that they would like to be used broadly within the CFDE, so it can be distributed for consideration to all members. 
+In addition to Cross Pollination events, we have also created a framework for DCCs to create interest based working groups. These working groups will allow member DCCs to guide important CFDE decisions such as what terms should be included in the CFDE portal, and how to harmonize them across groups. To facilitate broad consensus building, we have also created a Request For Comments (RFC) system that allows any working group to write a short description of a standard technology or tool that they would like to be used broadly within the CFDE, so it can be distributed for consideration to all members.
 
 
 #### Community Requirements:
