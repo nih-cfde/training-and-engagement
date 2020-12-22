@@ -90,7 +90,6 @@ The exact timelines for these lessons, and others, will depend on the schedules 
 + Materials are graduate level, research scientist-focused
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
 + Lessons align with DCC best practices
-
 + Assessment
 	+ Elicited user feedback in the webpage interface
 	+ Analysis of web analytics to determine user engagement 
