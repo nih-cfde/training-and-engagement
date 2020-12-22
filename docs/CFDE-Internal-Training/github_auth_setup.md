@@ -1,14 +1,14 @@
 # Setting up Github Authentication
 
 
-By mid-2021, Github will complete its transition to requiring a personal authentication token (PAT) key instead of a password to connect to Github remotely (e.g., using `git` on your local computer to work on remote branches).
+By mid-2021, Github will complete its [transition](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) to requiring a personal access token (PAT) key instead of a password to connect to Github remotely (e.g., using `git` on your local computer to work on remote branches).
 
 In this tutorial, we will show you how to enable two-factor authentication (optional) and generate a PAT.
 
 !!! note "Learning Objectives"
 
     - learn how to set up two-factor authentication
-    - learn how to set up a personal authentication token
+    - learn how to set up a personal access token
 
 === "Est. Time"
 
@@ -73,7 +73,7 @@ Click on "Generate new token". Give it a name in the "Note" text box. For the sc
 
 The token will look like a string of letters and numbers. **Keep this page open - we will need to use the PAT key instead of our password to login at the command line.**
 
-![](./images-github-auth/5-personal-auth-token.png "new token")
+![](./images-github-auth/5-personal-access-token.png "new token")
 
 !!! warning
 
