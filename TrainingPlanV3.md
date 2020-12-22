@@ -9,7 +9,7 @@ This Common Fund Data Ecosystem Coordination Center (CFDE-CC) training plan lays
 
 The goals of the CFDE training effort are threefold. First, we want to work with specific CFDE Data Coordinating Centers (DCCs) to develop and run DCC-specific and targeted cross-DCC-data set training programs to help their users make improved use of their data. Second, we want to provide broad-based training on data analysis in the cloud, to help the entire CFDE user base shift into a more sustainable long term approach. And third, we expect that broad and deep engagement with a wide range of users will help us identify new use cases for data reuse that can be brought back to the CF DCCs and the CFDE. **Collectively, our training program will train users in basic bioinformatics and cloud computing, help the DCCs lower their support burden, improve user experience, and identify new use cases for data reuse and data integration within and across DCCs.**
 
-In this training plan, we have no specific plans to interface with training efforts outside the Common Fund. However, we are aware of a number of training efforts with similar goals, including Broad’s Terra training program and ANViL’s training focus. Our approaches to sharing materials and running training are designed to allow these other training efforts to make use of our materials, and the underlying technologies and approaches we are using (see below) are entirely compatible.
+In this training plan, we have no specific plans to interface with training efforts outside the Common Fund. However, we are aware of a number of training efforts with similar goals, including Broad’s Terra training program and ANViL’s training focus. The underlying technologies and approaches we are using in our trainings and materials (see below) are entirely compatible with these programs and are designed to allow access and re-use across efforts and teams.
 
 All training materials produced by the CFDE-CC will be made available through the central nih-cfde.org web site, under CC0 or CC-BY licenses, which will allow them to be used and remixed by any other stakeholders without limitations. Assessment and iteration on the materials will be carried out by the CFDE-CC’s training team during the pilot period, which we expect to be the first 1-2 months of development for any given lesson; we will engage with external assessment and evaluation as our efforts expand.
 
@@ -23,7 +23,7 @@ Our initial plan was to run a series of in-person workshops during 2020. However
 
 Online training is very different from in-person training. In our experience, in-person training offers a natural focus for many and can support an extended (~4-6 hrs/day) engagement with materials. Moreover, technology problems on the learner’s side can often be fixed by in-person helpers who have direct access to the learner’s computer.  Finally, the intensity of in-person workshops combines well with the higher cost of travel: in the past we have successfully run many in-person workshops, lasting between 2 days and 2 weeks, where either the instructors or the students travel significant distances to attend the workshop.
 
-Online training requires different affordances. Learner attention span in the absence of interpersonal interaction is much shorter. Remote debugging is possible but much less effective than in-person debugging. And both instructors and learners must manage more technology, including teleconferencing software and chat, often on the same screen size as before. These challenges, among others, have limited the effectiveness of online training efforts, including MOOCs (Massive Open Online Course); several studies of MOOCs have shown that most learners drop out quickly, and that their main benefits have been to those who already have experience with the material.
+Online training requires different affordances. Learner attention span in the absence of interpersonal interaction is much shorter. Remote debugging is possible but much less effective than in-person debugging. And both instructors and learners must manage more technology, including teleconferencing software and chat, often on the same screen size as before. These challenges, among others, have limited the effectiveness of online training efforts, including MOOCs (Massive Open Online Course); several studies of MOOCs have shown that most learners drop out quickly, and that benefits gained have mostly been to those who already had experience with the material.
 
 In exchange for these downsides, online training offers some opportunities. By using asynchronous delivery of material, different schedules can be accommodated among the learners, and there is much more time for offline experimentation and challenge experiments. Moreover, online training can offer somewhat more scalability and can potentially be offered more cheaply, since it involves no travel or local facilities.
 
@@ -31,7 +31,7 @@ In exchange for these downsides, online training offers some opportunities. By u
 
 We have transitioned out initial materials for in-person workshops to lessons that can be delivered online. For many lessons, we accomplished this by breaking lessons up into 5-10 minute video chunks, or “vidlets”, that showcase concepts and technical activities. These chunks can be viewed in “flipped classroom” or offline mode, and will be interspersed with opportunities for virtual attendees to seek technical help, explore their own interests, and ask questions in an individual or group setting. In some lessons, we opted for an entirely written approach, with a number of interactive text elements and screen shots. All training materials used for workshops are available online (https://training.nih-cfde.org/en/latest/) as written step-by-step tutorials, providing learners multiple ways to approach the material.
 
-In contrast with in-person materials that amount to something like instructor notes, both ways of presenting the material, videos and screenshots, are laborious. A ~1 hour in-person lesson might take 2-3 days to develop and write out. That same lesson as an online walkthrough will likely take a week or more as the lesson will likely require dozens of formatted screenshots, and all of the interactive questions and assessments also need to be coded in. Vidlets also require a great deal of time-consuming planning and editing.
+In contrast to in-person materials, which require instructor notes but rely in large part on the presenter, both videos and screenshots, are laborious. A ~1 hour in-person lesson might take 2-3 days to develop and write out while the same lesson as an online walkthrough will likely take a week or more. An online lesson will likely require dozens of formatted screenshots as well as more detailed explanations and teaching tips to help users advance through the lesson. Vidlets may reduce the need for detailed documentation, but require a great deal of time-consuming planning and editing.
 
 These materials also require much more upkeep than in-person lessons. With in-person materials, changes to the Kids First interface, for example, would only matter if they changed the functionality of the portal, and lesson content for new features could generally be developed and added to a lesson without overhauling the materials. However, even minor color and placement changes to the Kids First interface can render our materials useless. Vidlets need to be completely re-recorded with nearly every update, and the screenshots from walkthroughs generally all need to be re-taken. For 2021, we are evaluating the pros and cons of each of these methods, as well as continually exploring new ways to deliver online content more efficiently.
 
@@ -70,15 +70,19 @@ The exact timelines for these lessons, and others, will depend on the schedules 
 + Materials are graduate level, research scientist-focused
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
 + Lessons align with DCC best practices
-+ Assessment
++ Self-Guided Materials Assessment
+	+ Elicited user feedback in the webpage interface
+	+ Analysis of web analytics to determine user engagement 
++ Instructor Guided Materials Assessment
 	+ Materials contain breaks for checking understanding/formative assessment
 	+ Pre-training surveys on prior knowledge on data sets and techniques, specific learning goals, and self-confidence;
 	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the training materials.
 	+ Conduct remote interviews with learners both before and after training
-    	+ Secure any approvals for human data collection
-    	+ Collect contact information from learners
+	+ Secure any approvals for human data collection
+	+ Collect contact information from learners
 
 #### Vidlet Requirements:
+
 + Persistent video lessons
 + Videos are accessible
 	+ Include written transcripts
@@ -86,15 +90,10 @@ The exact timelines for these lessons, and others, will depend on the schedules 
 + Materials are graduate level, research scientist-focused
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
 + Lessons align with DCC best practices
+
 + Assessment
-	+ Materials contain breaks for checking understanding/formative assessment
-	+ Pre-training surveys on prior knowledge on data sets and techniques, specific learning goals, and self-confidence
-  (currently provided through google forms);
-	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the
-  training videos (currently provided through google forms).
-	+ Conduct remote interviews with learners both before and after training
-    	+ Secure any approvals for human data collection
-    	+ Collect contact information from learners
+	+ Elicited user feedback in the webpage interface
+	+ Analysis of web analytics to determine user engagement 
 
 #### 2. Develop general purpose bioinformatics training materials for the cloud
 
@@ -119,18 +118,22 @@ almost all of the CF programs. We already have in-person training material for t
 
 + Persistent, user-led walkthrough documents
 + Accompanying short videos of difficult sections
-+ Materials are graduate level, research scientist- focused
++ Materials are graduate level, research scientist-focused
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
-+ Lessons align with community best practices
-+ Assessment
++ Lessons align with DCC best practices
++ Self-Guided Materials Assessment
+	+ Elicited user feedback in the webpage interface
+	+ Analysis of web analytics to determine user engagement 
++ Instructor Guided Materials Assessment
 	+ Materials contain breaks for checking understanding/formative assessment
 	+ Pre-training surveys on prior knowledge on data sets and techniques, specific learning goals, and self-confidence;
 	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the training materials.
 	+ Conduct remote interviews with learners both before and after training
-    	+ Secure any approvals for human data collection
-    	+ Collect contact information from learners
+	+ Secure any approvals for human data collection
+	+ Collect contact information from learners
 
 #### Vidlet Requirements:
+
 + Persistent video lessons
 + Videos are accessible
 	+ Include written transcripts
@@ -139,15 +142,9 @@ almost all of the CF programs. We already have in-person training material for t
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
 + Lessons align with community best practices
 + Assessment
-	+ Materials contain breaks for checking understanding/formative assessment
-	+ Pre-training surveys on prior knowledge on data sets and techniques, specific learning goals, and self-confidence
-  (currently provided through google forms);
-	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the
-  training videos (currently provided through google forms).
-	+ Conduct remote interviews with learners both before and after training
-    	+ Secure any approvals for human data collection
-    	+ Collect contact information from learners
-
+	+ Elicited user feedback in the webpage interface
+	+ Analysis of web analytics to determine user engagement 
+	
 #### 3. Develop CFDE internal training material
 
 As the CFDE community grows, there will be in increased need for training materials to guide members on how to work within the Ecosystem. These resources will cover a broad array of topics that relate to the CFDE project management infrastructure including: GitHub, ZenHub, Google, groups.io, Slack, and onboarding. We also need to offer tutorials that guide new members on how to update and improve the Ecosystem such as how to make changes in CFDE owned web-sites, how to create and join working groups, and tutorials on interacting with the CFDE search portal as a DCC collaborator and uploading new data to the CFDE portal.
@@ -177,16 +174,19 @@ We have created two lessons to demonstrate how to extract a manifest containing 
 
 + Persistent, user-led walkthrough documents
 + Accompanying short videos of difficult sections
-+ Materials are graduate level, research scientist- focused
++ Materials are graduate level, research scientist-focused
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
-+ Lessons align with CFDE best practices
-+ Assessment
++ Lessons align with DCC best practices
++ Self-Guided Materials Assessment
+	+ Elicited user feedback in the webpage interface
+	+ Analysis of web analytics to determine user engagement 
++ Instructor Guided Materials Assessment
 	+ Materials contain breaks for checking understanding/formative assessment
 	+ Pre-training surveys on prior knowledge on data sets and techniques, specific learning goals, and self-confidence;
 	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the training materials.
 	+ Conduct remote interviews with learners both before and after training
-    	+ Secure any approvals for human data collection
-    	+ Collect contact information from learners
+	+ Secure any approvals for human data collection
+	+ Collect contact information from learners
 
 #### Vidlet Requirements:
 + Persistent video lessons
@@ -197,14 +197,9 @@ We have created two lessons to demonstrate how to extract a manifest containing 
 + Materials available at https://training.nih-cfde.org web site, under CC0 or CC-BY licenses
 + Lessons align with CFDE best practices
 + Assessment
-	+ Materials contain breaks for checking understanding/formative assessment
-	+ Pre-training surveys on prior knowledge on data sets and techniques, specific learning goals, and self-confidence
-  (currently provided through google forms);
-	+ Post-training surveys on improved knowledge, learning goals, tutorial format and content, and use case gaps in the
-  training videos (currently provided through google forms).
-	+ Conduct remote interviews with learners both before and after training
-    	+ Secure any approvals for human data collection
-    	+ Collect contact information from learners
+	+ Elicited user feedback in the webpage interface
+	+ Analysis of web analytics to determine user engagement 
+
 
 #### 5. Engage CFDE members and other researchers for training and use case development
 
@@ -218,7 +213,6 @@ Starting in September 2020, we began hosting weekly Cross Pollination events wit
 
 In addition to Cross Pollination events, we have also created a framework for DCCs to create interest based working groups. These working groups will allow member DCCs to guide important CFDE decisions such as what terms should be included in the CFDE portal, and how to harmonize them across groups. To facilitate broad consensus building, we have also created a Request For Comments (RFC) system that allows any working group to write a short description of a standard technology or tool that they would like to be used broadly within the CFDE, so it can be distributed for consideration to all members.
 
-
 #### Community Requirements:
 + Online community space for learner engagement
 	+ Formal registration system
@@ -229,13 +223,11 @@ In addition to Cross Pollination events, we have also created a framework for DC
 + Promotion of online community
 
 #### Cross pollination Requirements:
-
 + Open to all Common Fund programs
 + Formal registration system
 + Code of Conduct
 + Promotion of materials
 + Promotion of online community
-
 
 #### 6. Develop an overarching assessment program
 
