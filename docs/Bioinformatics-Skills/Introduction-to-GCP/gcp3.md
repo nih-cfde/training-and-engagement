@@ -220,7 +220,3 @@ There are two options (click on the three vertical dots):
 - If you're completely done with the instance, you can "Delete" it. This will delete all files though, so [download](#files-to-bucket) any files you want to keep!
 
 ![](./gcp_images/gcp_vmstop.png "Stop or delete VM")
-
-
-## TO DO: want something here about checking billing...?
-- but if you're on the free trial, nothing will show up (not even compute usage) until you run out of the trial period...

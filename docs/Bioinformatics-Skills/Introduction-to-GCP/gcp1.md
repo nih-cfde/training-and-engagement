@@ -39,9 +39,15 @@ On this page, check the box next to your billing account - below it is called "M
 
 Now that the billing account is set up, you can use GCP resources!
 
+!!! important
+
+    Keep track of GCP service charges from the billing account section of the GCP console (e.g., invoice information can be found in the "Transactions" section). For more information and tutorials on monitoring expenses, see [GCP documentation](https://cloud.google.com/billing/docs).
+
+    Tracking the exact and estimated costs on GCP can be challenging. See [this blog post](https://medium.com/@lukwam/reconcile-your-monthly-gcp-invoice-with-bigquery-billing-export-b36ae0c961e) for an explanation of monitoring computing costs.
+
 ## Centralized billing account
 
-Alternatively, a centralized billing account to share with a team can be set up using a G Suite organization and a Google Billing Account linked to an organization host's credit card. The Google documentation provides a [quick start guide](https://cloud.google.com/resource-manager/docs/quickstart-organizations) to set this up.
+Alternatively, a centralized billing account can be set up to share with a team using a G Suite organization and a Google Billing Account linked to an organization host's credit card. The Google documentation provides a [quick start guide](https://cloud.google.com/resource-manager/docs/quickstart-organizations) to set this up.
 
 In brief, if a hypothetical user, Jon, decided to start working with the GCP, he and his administrator, Janice, would use the following workflow:
 

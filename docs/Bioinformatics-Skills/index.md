@@ -24,4 +24,3 @@ Bioinformatics Analysis:
 - [Command Line BLAST](Command-Line-BLAST/BLAST1.md)
 - [GWAS in the Cloud](GWAS-in-the-cloud/index.md)
 - [Snakemake Workflow Management](Snakemake/index.md)
-- [Custom workflows in Terra](Custom-Terra-workflows/index.md)

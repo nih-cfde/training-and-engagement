@@ -5,13 +5,9 @@ title: GCP Overview
 
 **An introduction to the Google Cloud Platform**
 
-The Google Cloud Platform is..
+The Google Cloud Platform (GCP) provides a number of services such as cloud-based computation and storage. All services are available through the platform's console page, which also monitors account billing and user permissions/roles. GCP cloud computing resources are useful for conducting large-scale genomic analyses that would otherwise take too long or crash local computers.
 
-- what is GCP, what is an instance (aka an instance of a VM = virtual machine)
--> organize this one like AWS format
-
-- we'll set up a GCP billing account and show you how to use two GCP services: Google Compute Engine and Google Storage buckets
-
+In this tutorial, we'll set up a GCP billing account and demonstrate how to use two GCP services: Google Compute Engine and Google Storage buckets.
 
 Est. Time | Lesson name | Description
 --- | --- | ---
@@ -32,6 +28,6 @@ Est. Time | Lesson name | Description
 
 === "Prerequisites"
 
-    - Technology: Users must be comfortable with using a terminal window. Please use the Chrome web browser for setting up and connecting to a GCP virtual machine.
+    - Technology: Users must be comfortable with using a terminal window (GCP shell provided in the interface). Please use the **Chrome web browser** for setting up and connecting to a GCP virtual machine. Some GCP features do not work on other web browsers.
 
-    - Financial: First time GCP users require a valid credit card to set up a GCP billing account. New users can sign up for a free 3-month $300 trial during billing account set up.
+    - Financial: First time GCP users require a valid credit card to set up a GCP billing account. New users are eligible for a free 3-month $300 trial during billing account set up.
