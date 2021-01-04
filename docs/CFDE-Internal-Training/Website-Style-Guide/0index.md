@@ -18,7 +18,7 @@ Time | Section | About
 
 === "Resources"
 
-    - [Tutorial template markdown doc](./tutorial_template_docs/TutorialTemplate.md)
+    - [Get started with new tutorials using the tutorial template markdown doc](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/CFDE-Internal-Training/Website-Style-Guide/tutorial_template_docs/TutorialTemplate.md)
     - [Powerpoint slide template](https://drive.google.com/drive/u/0/folders/14dOaf7-G4k7rCw5mL2Q5jdRWXrO0Y5i-)
 
 
