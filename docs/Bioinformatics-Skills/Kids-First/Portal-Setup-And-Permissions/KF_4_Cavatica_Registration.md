@@ -26,7 +26,7 @@ ID or a user name and password. Since we don't yet have accounts, we
 need to register, by clicking "New to Cavatica? Create an
 account" indicated with the purple arrow below:
 
-![Cavatica Login Page](../../../images/Cavatica_1.png "Cavatica Login Page")
+![Cavatica Login Page](../images-kf/Cavatica_1.png "Cavatica Login Page")
 
 ### Step 4: Choose your login system
 
@@ -39,7 +39,7 @@ by setting up a user name and password.
     and password" and then fill out the form and click
     "Register".
 
-![Cavatica Login Page](../../../images/Cavatica_2.png "Cavatica Login Page")
+![Cavatica Login Page](../images-kf/Cavatica_2.png "Cavatica Login Page")
 
 !!! Important
 
@@ -55,7 +55,7 @@ by setting up a user name and password.
 Once your registration is complete, you should get a prompt to go check
 your email:
 
-![Cavatica Registration Prompt](../../../images/Cavatica_3.png "Cavatica Registration Prompt")
+![Cavatica Registration Prompt](../images-kf/Cavatica_3.png "Cavatica Registration Prompt")
 
 You will need to follow the link in that email to complete your
 registration.

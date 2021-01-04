@@ -114,6 +114,7 @@ This takes a few minutes (you'll see the message "Solving environment"). Conda w
 More options to customize the environment are documented under the help page for this command: `conda create -h`.
 
 If you want to create an environment from a text file called "environment.yml" that specifies the environment's requirements, the command would look like this:
+
 `conda env create -n <new conda env name> -f environment.yml`. The `-f` flag specifies the ".yml" file that contains software requirements.
 
 ### Step 7: Activate conda environment

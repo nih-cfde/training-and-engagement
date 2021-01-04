@@ -1,8 +1,7 @@
 nav:
-  - index.md
-  - Bioinformatics-Skills
-  - Cheat-Sheets
-  - Web-Development
-  - CFDE-Internal-Training
-  - Release-Notes
-
+- index.md
+- Bioinformatics-Skills
+- Cheat-Sheets
+- Web-Development
+- CFDE-Internal-Training
+- Release-Notes

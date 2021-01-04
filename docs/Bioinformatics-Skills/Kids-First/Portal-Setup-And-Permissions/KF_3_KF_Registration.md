@@ -3,7 +3,7 @@
 ### Step 1: Go to the portal website
 
 First, we'll set up our accounts at the Kids First DRC Portal by going
-to this link:
+to the portal link:
 
 [https://portal.kidsfirstdrc.org/](https://portal.kidsfirstdrc.org/)
 
@@ -20,20 +20,20 @@ to this link:
 This should take you to the Kids First Portal website. Please click on
 the "Join now" indicated with the purple arrow below:
 
-![KFDRC Portal Welcome Page](../../../images/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
+![KFDRC Portal Welcome Page](../images-kf/KidsFirstPortal_1.png "KFDRC Portal Welcome Page")
 
 ### Step 3: Choose your login system
 
 You should see three options for creating a new account: Google,
 Facebook, or with an ORCID:
 
-![KFDRC Portal Account Page](../../../images/KidsFirstPortal_2.png "KFDRC Portal Account Page")
+![KFDRC Portal Account Page](../images-kf/KidsFirstPortal_2.png "KFDRC Portal Account Page")
 
 Select the platform you wish to use for your sign up.
 
 #### Connect with Google or Facebook
 
-If you decide to link KF to your Google or Facebook account, click on the corresponding icon. A pop-up window will appear and you will be asked to provide your user information and password. Enter the information and click "Next". If log in is successful, the pop-up window will disappear and you will be routed back to the KF portal dashboard.
+The preferred method is to login with a Google account. Click the corresponding icon to link KF to either your Google or Facebook account. A pop-up window will appear and you will be asked to provide your user information and password. Enter the information and click "Next". You'll then be asked to enter basic user information and accept the Terms and Conditions for using data on the portal. If log in is successful, the pop-up window will disappear and you will be routed back to the KF portal dashboard.
 
 #### Connect your ORCID
 
@@ -43,7 +43,7 @@ If you decide to link KF to your Google or Facebook account, click on the corres
 Clicking on "Log in with ORCID" will take you to a login
 page:
 
-![ORCID Login Page](../../../images/KidsFirstPortal_3.png "ORCID Login Page")
+![ORCID Login Page](../images-kf/KidsFirstPortal_3.png "ORCID Login Page")
 
 Depending on your role, your ORCID may be personal, or tied to an
 institution. If you don't already have an ORCID, you can also register

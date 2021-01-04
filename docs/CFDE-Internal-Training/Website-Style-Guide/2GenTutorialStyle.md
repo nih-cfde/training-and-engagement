@@ -25,7 +25,8 @@ All tutorials are written with Markdown syntax. Each page should have a title (`
 Markdown syntax allows up to [6 levels of hierarchy](https://www.markdownguide.org/basic-syntax/#headings), however, if you need headings beyond level 3, this is a good indication that the tutorial page could benefit from being broken down into separate pages. Please try to only use level 2 (`##`) and 3 (`###`) headings.
 
 ## Markdown tables
-Tables columns are defined with | and rows with -. Markdown cell widths are set to be the same for each column when rendered by Mkdocs. The syntax looks like this:
+
+Tables columns are defined with `|` and rows with `-`. Markdown cell widths are set to be the same for each column when rendered by Mkdocs. The syntax looks like this:
 
 ```
 col1 | col2 | col 3
@@ -51,10 +52,10 @@ Use | Example
 --- | ---
 Buttons to click | "Launch", "Download"
 Text on webpages | look for the "Actions" column
-File names | A text file called "download-links.txt"*
+File names | A text file called "download-links.txt" **&ast;**
 Folder names | create a folder called "KF_Data"
 
-*If you refer to this specific file many times, you can put the file name in quotations for the first mention. The "Snakefile" in the Snakemake tutorial is an example where we state that the file is called "Snakefile" but thereafter simply refer to it as Snakefile.
+&ast;If you refer to this specific file many times, you can put the file name in quotations for the first mention. The "Snakefile" in the Snakemake tutorial is an example where we state that the file is called "Snakefile" but thereafter simply refer to it as Snakefile.
 
 ### In-line code formatting with single backticks
 
@@ -64,12 +65,12 @@ Command names | `nano`
 Package names | `plink`
 Optional commands | `git branch -d`
 Conda environment names | `base`
-File names and paths | `./docs/images/`*
+File names and paths | `./docs/images/` **&ast;**
 File extensions | `.fastq.gz`
 Ports | `:3000`
 Github branches | `stable`
 
-*Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
+&ast;Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
 
 ### Quotes
 
@@ -192,7 +193,7 @@ We are also using this tabbed format for "Prerequisites" and "Tutorial Resources
 Syntax for keyboard keys will follow the [Keys PyMdown extension format](https://facelessuser.github.io/pymdown-extensions/extensions/keys/). It is built around the `+` symbol. A single of combination of keys is surrounded by `++` while each key is separated by a single `+`.
 List of all available key syntax are listed on the official Keys extension page.
 
-Example syntax for `CTRL+C` would be ++ctrl+c++ which will render as keyboard keys in the site. 
+Example syntax for `CTRL+C` would be ++ctrl+c++ which will render as keyboard keys in the site.
 
 ### Hyperlink syntax
 
@@ -200,17 +201,21 @@ Use hyperlinks to link images, other Markdown files, or websites. Provide short 
 
 Type | Syntax
 --- | ---
-images | `![short description of image](relative/path/to/docs/images/imagefile "short description of image")`*
+images | `![](relative/path/to/docs/images/imagefile "short description of image")` **&ast;**
 tutorial references | `[text about the reference](relative/path/to/docs/Resources/referencefile)`
 other pages in the Github repo | `[text about the page](relative/path/to/page/in/Github/repo/filename)`
 URLs with title | `[text about the website](URL)`
 URL link itself | `<URL>`
 
-*By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
+&ast;By including a short description of the image in the quotations marks, [screen readers can provide information about the image without needing to see the image](https://blog.jwf.io/2019/06/markdown-accessible-images/). This is one way to make images accessible to the blind or vision-impaired.
 
-Note that this image link format - `<img src="path/to/img" title="short description of image" width="200" height="300">` - results in a broken image file on Mkdocs, even though it renders on Markdown.
+
+Note that the image link format below results in a broken image link on Mkdocs, even though it renders on Github Markdown:
+
+`<img src="path/to/img" title="short description of image" width="200" height="300">`
 
 The `htmlproofer` plugin checks for broken page and URL links when a pull request (PR) is submitted to the Github repo. The results are shown in the `Checks` tab of the PR page. Under `Build documentation on PR` and under `build-and-deploy`, expand the `Build site` section to view any error messages. Common issues:
+
 - `WARNING`: for links on pages that are broken, file paths that don't exist anymore because of file name changes
 - `404 error`: page does not exist. This might be because it is a brand new file or the file was changed and neither are on the `latest` branch of the Github repo. You don't need to worry about this - it'll be solved when PR changes are merged.
 
