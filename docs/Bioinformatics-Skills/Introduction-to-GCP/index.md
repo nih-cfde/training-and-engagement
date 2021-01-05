@@ -26,6 +26,10 @@ Est. Time | Lesson name | Description
 
     - learn how to terminate an instance
 
+=== "Est. Cost"
+
+    < $1.00 to run both examples
+
 === "Prerequisites"
 
     - Technology: Users must be comfortable with using a terminal window (GCP shell provided in the interface). Please use the **Chrome web browser** for setting up and connecting to a GCP virtual machine. Some GCP features do not work on other web browsers.
