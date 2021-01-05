@@ -13,14 +13,14 @@ Est. Time | Lesson name | Description
 --- | --- | ---
 15 mins  | [Setting up a GCP account](./gcp1.md) | How to set up a GCP billing account?
 30 mins  | [Setting up a GCP instance](./gcp2.md) | How to start a GCP instance?
-30 mins  | [Testing analysis in a GCP VM](./gcp3.md) | How to work with data in a GCP VM?
-
+30 mins  | [Example 1: BLAST analysis](./gcp3.md) | How to do a BLAST search on GCP?
+30 mins  | [Example 2: Download SRA data](./gcp4.md) | How to download SRA data on GCP?
 
 !!! note "Learning Objectives"
 
     - introduce researchers to cloud computing resources and how to use them
 
-    - learn how to connect to an instance (virtual server) on the Google Cloud Platform and do a simple protein BLAST search
+    - learn how to connect to an instance (virtual server) on the Google Cloud Platform to do a simple protein BLAST search and download SRA data.
 
     - learn how to transfer files to or from the instance using Google Storage buckets
 

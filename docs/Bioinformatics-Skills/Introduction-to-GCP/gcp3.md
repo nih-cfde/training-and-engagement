@@ -1,4 +1,4 @@
-# Testing analysis in a GCP VM
+# Example 1: BLAST analysis
 
 You now have a custom configured VM! Let's test our new GCP virtual machine with a protein sequence BLAST search. This is a shortened version from the full [command-line BLAST tutorial](../Command-Line-BLAST/BLAST1.md), which ran the BLAST search on the Amazon AWS cloud platform.
 

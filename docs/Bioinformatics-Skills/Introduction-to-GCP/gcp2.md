@@ -82,17 +82,35 @@ The GCP console provides a free Google Cloud Shell. This shell environment is us
 
 Click on the "Activate Cloud Shell" icon. A new panel will open on the bottom half of your screen. The first time you start the shell, you'll need to agree to the Google Cloud terms of service and privacy policy. After starting the shell, it may take a few minutes to connect. Go to the Google support [documentation](https://cloud.google.com/shell/docs/using-cloud-shell) for more information.
 
-The Google Cloud Shell command prompt format will show: `<username@cloudshell:~ (<project id>)$`.
+The Google Cloud Shell command prompt format will show: `<username>@cloudshell:~ (<project id>)$`.
 
 ### c. Connect to VM
 
-Use the `gcloud compute` command to connect to your virtual machine (`gcloud` is a tool from the Google Cloud SDK toolkit). You'll need your project ID, zone, and instance name. In the example command below, the project ID is `"my-first-project-296523"`, the zone is `us-west1-b`, and the instance name is `test-vm`. Replace these values to run the command for your virtual machine:
+Use the `gcloud compute` command to connect to your virtual machine (`gcloud` is a tool from the Google Cloud SDK toolkit). You'll need your project ID, zone, and instance name. In the example command below, the project ID is `"my-first-project-296523"`, the zone is `us-west1-b`, and the instance name is `test-vm`. The `ssh` flag indicates we are accessing the VM with ssh, which we'll set up below. Replace these values to run the command for your virtual machine:
 
 ```
 gcloud compute --project "my-first-project-296523" ssh --zone us-west1-b test-vm
 ```
 
-### d. Set up SSH keys
+### d. Authorise Cloud Shell
+
+The first time you open the shell to access a VM, you will need to authorise the cloud shell. Click on "Authorise":
+
+![](./gcp_images/gcp_authorise_shell.png "authorise cloud shell")
+
+Then set up authorization:
+
+- in the shell, enter:
+
+  ```
+  gcloud auth login
+  ```
+
+![](./gcp_images/gcp_authorise_shell2.png "enter verification code")
+
+- click on the Google link. A new browser tab will open. Log in to the Google account you used to set up the GCP console. Click "Allow" to allow Google Cloud SDK to access your Google account. As a reminder, the SDK toolkit provides a number of important tools like `gcloud` that are used for accessing GCP services. The next page will provide a verification code. Copy/paste the code back in the shell next to "Enter verification code:".
+
+### e. Set up SSH keys
 
 Next, set up SSH public/private keys. This step provides an extra layer of security to protect access to your instance.
 
@@ -102,4 +120,4 @@ Follow the prompts in the terminal:
 - "Enter passphrase (empty for no passphrase)": you can create a passphrase or it can be left empty, type ++enter++ to move on
 - "Enter same passphrase again": type passphrase if you created one, type ++enter++ to move on
 
-When this process is complete, your command prompt in the terminal should switch to `<user name>@<VM name>:~$"`. You're now in the VM space!
+When this process is complete, your command prompt in the terminal should switch to `<user name>@<VM name>:~$"`. You're now in the VM space! Check out the [next lesson](./gcp3.md) to run an example analysis using the VM we just configured.
