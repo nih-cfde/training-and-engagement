@@ -46,6 +46,7 @@ Est. Time | Lesson name | Description
 10 mins | [Ands & Ors](Advanced-KF-Portal-Queries/KF_10_AndOr.md) | Use conditional statements to filter
 10 mins | [Joint Queries](Advanced-KF-Portal-Queries/KF_11_JointQuery.md) | Link multiple filters as joint queries
 10 mins | [Checking Queries](Advanced-KF-Portal-Queries/KF_12_CheckingQueries.md) | Interpret query results
+10 mins | [Saving Queries](Advanced-KF-Portal-Queries/KF_13_SavingQueries.md) | Save participant sets or search term combinations
 
 Importing and downloading KF Data:
 
