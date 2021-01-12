@@ -109,11 +109,20 @@ this configuration": enter ++2++ to "Log in with a new account"
 
 The `gcloud` configuration should now be complete. Run the following command to check:
 
-```
-gcloud config configurations list  
-```
+=== "Input"
 
-The output should list your GCP Google account email and project ID.
+    ```
+    gcloud config configurations list  
+    ```
+
+=== "Expected Output"
+
+    The output should list your GCP Google account email and project ID.
+
+    ```
+    NAME     IS_ACTIVE  ACCOUNT          PROJECT            COMPUTE_DEFAULT_ZONE  COMPUTE_DEFAULT_REGION
+    default  True       <your account email>  <your project name>
+    ```
 
 ## Step 6: Create Google Storage bucket
 
@@ -121,15 +130,51 @@ Files are stored in buckets in the Google Storage service. Buckets can be manage
 
 - Make a bucket by using the `gsutil mb` command. Google bucket paths always begin with "gs://". You must enter a unique name for your bucket (do not use spaces in the name).
 
-```
-gsutil mb gs://<your bucket name>
-```
+=== "Input"
+
+    Usage:
+    ```
+    gsutil mb gs://<your bucket name>
+    ```
+
+    Example:
+    ```
+    gsutil mb gs://forblast
+    ```
+
+=== "Expected Output"
+
+    ```
+    Creating gs://forblast/...
+    ```
 
 - Bucket names, particularly auto-generated names, can get very long and complicated. To make it easier to type, we can create an alias for the bucket.
 
-```
-export BUCKET="gs://<your bucket name>""
-```
+=== "Input"
+
+    Usage:
+    ```
+    export BUCKET="gs://<your bucket name>"
+    ```
+
+    Example:
+    ```
+    export BUCKET="gs://forblast"
+    ```
+
+=== "Expected Output"
+
+    There should be no output if alias assignment is successful. To check that the alias works, enter:
+
+    ```
+    echo $BUCKET
+    ```
+
+    The output for our example is:
+
+    ```
+    gs://forblast
+    ```
 
 ## Step 7: Copy file to bucket <a name="files-to-bucket"></a>
 

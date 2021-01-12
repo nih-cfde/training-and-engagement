@@ -12,7 +12,7 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ![](./gcp_images/gcp_project2.png "Create Project button")
 
-- The new project is now listed in the table, along with a project ID. You'll need the project ID later to connect to a VM instance.
+- The new project is now listed in the table, along with a project ID. *You'll need the project ID later to connect to a VM instance.*
 
 ![](./gcp_images/gcp_projectid.png "Project ID")
 
@@ -28,13 +28,13 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ![](./gcp_images/gcp_vmconfig1.png "VM configuration name and region")
 
-Names must be in lowercase letters or numbers. Use hyphens "-" instead of spaces. You'll need the VM name to connect to it.
+Names must be in lowercase letters or numbers. Use hyphens "-" instead of spaces. *You'll need the VM name to connect to it.*
 
 ### b. Choose a Region
 
 Several regions are available from the dropdown menu. In general, select the region closest to your physical geographic region.
 
-It is less important which zone you choose, and the interface automatically selects a zone based on the region you select. You'll need the zone name to connect to the VM. In this example, we selected the "us-west1 (Oregon)" region.
+It is less important which zone you choose, and the interface automatically selects a zone based on the region you select. *You'll need the zone name to connect to the VM.* In this example, we selected the "us-west1 (Oregon)" region.
 
 !!! note "Machine regions"
 
@@ -70,6 +70,38 @@ Check the box by "Allow HTTP traffic" under the Firewall configuration, which op
 
 When you're done configuring the VM, click "Create".
 
+The VM can be refreshed, start/resumed, stopped, suspended, reset, or deleted using the icons at the top of the page:
+
+![](./gcp_images/gcp_vm_runoptions.png "VM controls")
+
+=== "Refresh"
+
+    Refresh the instance. If your connection times out, there should be a "Reconnect" button in the Google Cloud Shell, otherwise you can try refreshing.
+
+=== "Reset"
+
+    "[Reset](https://cloud.google.com/compute/docs/instances/instance-life-cycle#resetting_an_instance) performs a hard reset on the instance, which wipes the memory contents of the machine and resets the virtual machine to its initial state."
+
+=== "Suspend"
+
+    [Suspending](https://cloud.google.com/compute/docs/instances/instance-life-cycle#suspending_an_instance) "the instance will preserve its running state, similar to closing a laptop. You'll be billed for storage of the suspended VM state and any persistent disks it uses."
+
+=== "Stop"
+
+    [Stopping](https://cloud.google.com/compute/docs/instances/instance-life-cycle#stopping_an_instance) the instance is similar to suspending it, but Google doesn't charge you for VM resources while it's stopped.
+
+=== "Start/Resume"
+
+    Start/resume a suspended or stopped instance to open it again.
+
+=== "Delete"
+
+    When you are completely finished working with the VM it can be deleted. This will remove all VM configurations and work you did in the VM.
+
+!!! tip
+
+    If you need to pause during this tutorial and want to save your VM instance and any work you did in the instance (e.g., files downloaded), **stop** the VM. You'll be able to start/resume the instance when you come back and all your work should still be there.
+
 ## Step 3: Connect to your VM
 
 ![](./gcp_images/gcp_vmGCS.png "VM connect with Google Cloud Shell")
@@ -86,11 +118,20 @@ The Google Cloud Shell command prompt format will show: `<username>@cloudshell:~
 
 ### c. Connect to VM
 
-Use the `gcloud compute` command to connect to your virtual machine (`gcloud` is a tool from the Google Cloud SDK toolkit). You'll need your project ID, zone, and instance name. In the example command below, the project ID is `"my-first-project-296523"`, the zone is `us-west1-b`, and the instance name is `test-vm`. The `ssh` flag indicates we are accessing the VM with ssh, which we'll set up below. Replace these values to run the command for your virtual machine:
+Use the `gcloud compute` command to connect to your virtual machine (`gcloud` is a tool from the Google Cloud SDK toolkit). You'll need your project ID, zone, and instance name. In the example command below, the project ID is `"my-first-project-296523"`, the zone is `us-west1-b`, and the instance name is `test-vm`. The `ssh` flag indicates we are accessing the VM with ssh, which we'll set up below. **Replace these values** to run the command for your virtual machine:
 
-```
-gcloud compute --project "my-first-project-296523" ssh --zone us-west1-b test-vm
-```
+=== "Input"
+
+    Usage:
+    ```
+    gcloud compute --project "<your project ID>" ssh --zone <your zone> <your VM name>
+    ```
+
+    Example:
+
+    ```
+    gcloud compute --project "my-first-project-296523" ssh --zone us-west1-b test-vm
+    ```
 
 ### d. Authorise Cloud Shell
 
