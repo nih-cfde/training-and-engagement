@@ -1,6 +1,6 @@
 # Example 1: BLAST analysis
 
-You now have a custom configured VM! Let's test our new GCP virtual machine with a protein sequence BLAST search. This is a shortened version from the full [command-line BLAST tutorial](../Command-Line-BLAST/BLAST1.md), which ran the BLAST search on the Amazon AWS cloud platform.
+You now have a custom configured VM! Let's test our new GCP virtual machine with a protein sequence BLAST search. This is a shortened version from the full [command-line BLAST tutorial](../Command-Line-BLAST/BLAST1.md), which ran the BLAST search on the Amazon AWS cloud platform. Check out the full tutorial for more details about the specific BLAST commands.
 
 ## Step 1: Install BLAST
 ```
@@ -92,7 +92,7 @@ blastp -query mm-first.faa -db zebrafish.1.protein.faa -out mm-first.x.zebrafish
 
 ## Step 5: Configure Google toolkit
 
-To save output files or download local files from your computer to the VM environment, we will use the Google Cloud SDK toolkit, which provides tools to securely access the GCP platform. The GCP VM already has the toolkit installed, but it needs to be configured and linked to your Google account. We will be using the `gcloud` and `gsutil` tools in this tutorial. More information about this process is available in the GCP support documentation on [gcloud configuration and authorization steps](https://cloud.google.com/sdk/docs/initializing#:~:text=%20gcloud%20init%20performs%20the%20following%20setup%20steps%3A,active%20account%20from%20the%20step%20above%2C...%20More%20).
+To save output files or download local files from your computer to the VM environment, we will use the Google Cloud Software Development Kit (SDK), which provides tools to securely access the GCP platform. The GCP VM already has the toolkit installed, but it needs to be configured and linked to your Google account. We will be using the `gcloud` and `gsutil` tools in this tutorial. More information about this process is available in the GCP support documentation on [gcloud configuration and authorization steps](https://cloud.google.com/sdk/docs/initializing#:~:text=%20gcloud%20init%20performs%20the%20following%20setup%20steps%3A,active%20account%20from%20the%20step%20above%2C...%20More%20).
 
 In the VM terminal, enter:
 ```
@@ -126,7 +126,9 @@ The `gcloud` configuration should now be complete. Run the following command to 
 
 ## Step 6: Create Google Storage bucket
 
-Files are stored in buckets in the Google Storage service. Buckets can be managed from the graphical user interface (GUI) section of the GCP console and on the command line. We will create a bucket and move files on command line and then check them on the GUI. To ensure secure transfer of data to/from the cloud, we will use the `gsutil` tool.
+The GCP uses Google Storage buckets as file repositories. We can copy files from the VM to the bucket so they can be downloaded to a local computer, or we can upload local files to the bucket that can be copied to the VM environment. We will practice both use cases in this tutorial.
+
+Buckets can be managed from the graphical user interface (GUI) section of the GCP console or on the command line. We will create a bucket and move files on command line and then check them on the GUI. To ensure secure transfer of data to/from the cloud, we will use the `gsutil` tool.
 
 - Make a bucket by using the `gsutil mb` command. Google bucket paths always begin with "gs://". You must enter a unique name for your bucket (do not use spaces in the name).
 

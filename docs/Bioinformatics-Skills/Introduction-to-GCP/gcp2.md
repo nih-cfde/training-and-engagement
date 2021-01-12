@@ -8,7 +8,7 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ![](./gcp_images/gcp_project1.png "Manage resources tab")
 
-- Click on "Create Project", enter a unique project name ("My First Project" in the example below), and click "Create".
+- Click on "Create Project", enter a unique project name ("My First Project" in the example below), and click "Create". The "Location" entry can be left as "No organization" (if a centralized billing account is set up, there would be options to set an "Organization" and "Location" with the G Suite organization name.)
 
 ![](./gcp_images/gcp_project2.png "Create Project button")
 
@@ -22,13 +22,13 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ![](./gcp_images/gcp_vm.png "VM instances")
 
-- Click "Create". There are several configuration steps to set up:
-
-### a. Name your VM
+- Click the "Create" button in the middle of the page. There are several configuration steps to set up:
 
 ![](./gcp_images/gcp_vmconfig1.png "VM configuration name and region")
 
-Names must be in lowercase letters or numbers. Use hyphens "-" instead of spaces. *You'll need the VM name to connect to it.*
+### a. Name your VM
+
+Type your VM name in the text box. Names must be in lowercase letters or numbers. Use hyphens "-" instead of spaces. *You'll need the VM name to connect to it.*
 
 ### b. Choose a Region
 
@@ -68,7 +68,7 @@ Check the box by "Allow HTTP traffic" under the Firewall configuration, which op
 
 ### f. Complete configuration
 
-When you're done configuring the VM, click "Create".
+When you're done configuring the VM, click "Create". It may take a few seconds to complete; there will be a green check mark next to the VM name.
 
 The VM can be refreshed, start/resumed, stopped, suspended, reset, or deleted using the icons at the top of the page:
 
@@ -106,6 +106,8 @@ The VM can be refreshed, start/resumed, stopped, suspended, reset, or deleted us
     ![](./gcp_images/gcp_reconnect.png "Reconnect instance")
 
 ## Step 3: Connect to your VM
+
+For the next steps, refer to this screenshot:
 
 ![](./gcp_images/gcp_vmGCS.png "VM connect with Google Cloud Shell")
 
