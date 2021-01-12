@@ -76,7 +76,7 @@ The VM can be refreshed, start/resumed, stopped, suspended, reset, or deleted us
 
 === "Refresh"
 
-    Refresh the instance. If your connection times out, there should be a "Reconnect" button in the Google Cloud Shell, otherwise you can try refreshing.
+    Refresh the instance.
 
 === "Reset"
 
@@ -100,7 +100,10 @@ The VM can be refreshed, start/resumed, stopped, suspended, reset, or deleted us
 
 !!! tip
 
-    If you need to pause during this tutorial and want to save your VM instance and any work you did in the instance (e.g., files downloaded), **stop** the VM. You'll be able to start/resume the instance when you come back and all your work should still be there.
+    - If you need to pause during this tutorial and want to save your VM instance and any work you did in the instance (e.g., files downloaded), **stop** the VM. You'll be able to start/resume the instance when you come back and all your work should still be there.
+    - If your connection times out, click the "Reconnect" button in the Google Cloud Shell.
+
+    ![](./gcp_images/gcp_reconnect.png "Reconnect instance")
 
 ## Step 3: Connect to your VM
 
