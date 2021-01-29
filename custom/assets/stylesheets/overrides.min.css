@@ -121,7 +121,7 @@
   }
 
 .content__bottom {
-    align-items: flex-start;
+    align-items: stretch;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
