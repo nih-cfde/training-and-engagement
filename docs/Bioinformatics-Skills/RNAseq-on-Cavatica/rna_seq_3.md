@@ -10,7 +10,7 @@ The [Gabriella Miller Kids First Pediatric Data Portal (KF portal)](https://kids
 
 !!! tip "Kids First Data Portal"
 
-    Check our lessons on Kids First to learn more about the [different Data Portal features](../Kids-First/Exploring-Data-in-the-KF-Portal) and [building simple to complex queries](../Kids-First/Advanced-KF-Portal-Queries).
+    Check our lessons on Kids First to learn more about the [different Data Portal features](../Kids-First/Exploring-Data-in-the-KF-Portal/KF_5_Explore.md) and [building simple to complex queries](../Kids-First/Advanced-KF-Portal-Queries/KF_9_AdvancedQuery.md).
 
 There are data with different access levels hosted on the KF portal including open (processed files, reports, plots etc) and controlled (raw sequencing files, histological images etc). For this tutorial, we will use **open access pre-processed files** generated using [Kallisto (v0.43.1)](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1), which uses pseudoalignments to quantify transcript abundance from raw data.
 
