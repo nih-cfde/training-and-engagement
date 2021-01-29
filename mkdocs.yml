@@ -13,7 +13,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
-    - navigation.sections
+    #- navigation.sections
   favicon: images/CFDE-logo-white-outline.png
   logo: images/CFDE-logo.png
   custom_dir: custom
