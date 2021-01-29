@@ -49,8 +49,8 @@ It is an output file with name {Analysis title}.out.csv in CSV format. This is g
 
 ![DESeq2 results table](../rna-seq-images/rna-seq-7-1.png "DESeq2 results table")
 
-Column-title| Description|
-| ---|--------|
+Column Header | Description |
+| :--- | :-------- |
 | baseMean | mean of normalized counts for all samples|
 | log2FoldChange | log-ratio of a gene's expression values in two different conditions|
 | lfcSE | standard error |
