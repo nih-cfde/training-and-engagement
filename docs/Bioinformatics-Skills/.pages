@@ -8,3 +8,4 @@ nav:
   - GWAS in the Cloud: GWAS-in-the-cloud
   - Snakemake Workflow Management: Snakemake
   - Simulate_Illumina_Reads.md
+  - RNAseq-on-Cavatica

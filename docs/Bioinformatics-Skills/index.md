@@ -6,7 +6,7 @@ title: Overview
 Bioinformatics Skills
 =======================
 
-Tutorials in this section provide lessons for finding data sets, setting up compute environments for analysis, and running hands-on bioinformatics analyses. 
+Tutorials in this section provide lessons for finding data sets, setting up compute environments for analysis, and running hands-on bioinformatics analyses.
 
 Common Fund Data - Finding Datasets for Analysis:
 
@@ -24,4 +24,4 @@ Bioinformatics Analysis:
 - [GWAS in the Cloud](GWAS-in-the-cloud/index.md)
 - [Snakemake Workflow Management](Snakemake/index.md)
 - [Simulate Illumina Reads](Simulate_Illumina_Reads.md)
-
+- [RNAseq on Cavatica](RNAseq-on-Cavatica/rna_seq_1.md)
