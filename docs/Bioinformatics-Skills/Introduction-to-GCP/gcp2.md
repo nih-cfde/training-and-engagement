@@ -4,11 +4,11 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ## Step 1: Create a project
 
-- Click on the three vertical lines to open the navigation menu and scroll down to "IAM & Admin", select the "Manage Resources" page.
+- Click on the three vertical lines to open the navigation menu and scroll down to <span class="highlight_txt">IAM & Admin</span>, select the <span class="highlight_txt">Manage Resources</span> page.
 
 ![](./gcp_images/gcp_project1.png "Manage resources tab")
 
-- Click on "Create Project", enter a unique project name ("My First Project" in the example below), and click "Create". The "Location" entry can be left as "No organization" (if a centralized billing account is set up, there would be options to set an "Organization" and "Location" with the G Suite organization name.)
+- Click on <span class="highlight_txt">Create Project</span>, enter a unique project name ("My First Project" in the example below), and click <span class="highlight_txt">Create</span>. The "Location" entry can be left as "No organization" (if a centralized billing account is set up, there would be options to set an "Organization" and "Location" with the G Suite organization name.)
 
 ![](./gcp_images/gcp_project2.png "Create Project button")
 
@@ -18,11 +18,11 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ## Step 2: Configure custom VM
 
-- On the navigation menu, scroll down to "Compute Engine" and select "VM instances". It may take a few minutes to load.
+- On the navigation menu, scroll down to <span class="highlight_txt">Compute Engine</span> and select <span class="highlight_txt">VM instances</span>. It may take a few minutes to load.
 
 ![](./gcp_images/gcp_vm.png "VM instances")
 
-- Click the "Create" button in the middle of the page. There are several configuration steps to set up:
+- Click the <span class="highlight_txt">Create</span> button in the middle of the page. There are several configuration steps to set up:
 
 ![](./gcp_images/gcp_vmconfig1.png "VM configuration name and region")
 
@@ -54,7 +54,7 @@ For this tutorial, select Series "E2" and Machine type `e2-micro`. This machine 
 
 ![](./gcp_images/gcp_vmconfig3.png "VM configuration boot disk")
 
-Click on "Change". The default operating system is Debian, change it to "Ubuntu" and select version "Ubuntu 20.04 LTS". For this tutorial, we'll leave the [persistent disk storage](https://cloud.google.com/persistent-disk) as the default 10Gb. Depending on the tasks you will use the VM for, you may need to increase the storage amount.
+Click on <span class="highlight_txt">Change</span>. The default operating system is Debian, change it to "Ubuntu" and select version "Ubuntu 20.04 LTS". For this tutorial, we'll leave the [persistent disk storage](https://cloud.google.com/persistent-disk) as the default 10Gb. Depending on the tasks you will use the VM for, you may need to increase the storage amount.
 
 !!! note "Persistent disk storage"
 
@@ -64,11 +64,11 @@ Click on "Change". The default operating system is Debian, change it to "Ubuntu"
 
 ![](./gcp_images/gcp_vmconfig4.png "VM configure firewall")
 
-Check the box by "Allow HTTP traffic" under the Firewall configuration, which opens port 80 (HTTP) and allows you to access the virtual machine. If this box is not checked, you will get an error message when trying to connect to the VM ("Insufficient Permission: Request had insufficient authentication scopes.").
+Check the box by "Allow HTTP traffic" under the Firewall configuration, which opens port 80 (HTTP) and allows you to access the virtual machine. If this box is not checked, you may get an error message when trying to connect to the VM ("Insufficient Permission: Request had insufficient authentication scopes.").
 
 ### f. Complete configuration
 
-When you're done configuring the VM, click "Create". It may take a few seconds to complete; there will be a green check mark next to the VM name.
+When you're done configuring the VM, click <span class="highlight_txt">Create</span>. It may take a few seconds to complete; there will be a green check mark next to the VM name.
 
 The VM can be refreshed, start/resumed, stopped, suspended, reset, or deleted using the icons at the top of the page:
 
@@ -117,7 +117,7 @@ For the next steps, refer to this screenshot:
 
 The GCP console provides a free Google Cloud Shell. This shell environment is useful for small tasks that do **not** require a lot of CPU or memory (as most bioinformatic analyses do). For example, it is a good place to learn how to use the Google shell environment without incurring cost or to access Google Cloud services (e.g., a Google Storage bucket or GCP virtual machine).
 
-Click on the "Activate Cloud Shell" icon. A new panel will open on the bottom half of your screen. The first time you start the shell, you'll need to agree to the Google Cloud terms of service and privacy policy. After starting the shell, it may take a few minutes to connect. Go to the Google support [documentation](https://cloud.google.com/shell/docs/using-cloud-shell) for more information.
+Click on the <span class="highlight_txt">Activate Cloud Shell</span> icon. A new panel will open on the bottom half of your screen. The first time you start the shell, you'll need to agree to the Google Cloud terms of service and privacy policy. After starting the shell, it may take a few minutes to connect. Go to the Google support [documentation](https://cloud.google.com/shell/docs/using-cloud-shell) for more information.
 
 The Google Cloud Shell command prompt format will show: `<username>@cloudshell:~ (<project id>)$`.
 
@@ -140,7 +140,7 @@ Use the `gcloud compute` command to connect to your virtual machine (`gcloud` is
 
 ### d. Authorise Cloud Shell
 
-The first time you open the shell to access a VM, you will need to authorise the cloud shell. Click on "Authorise":
+The first time you open the shell to access a VM, you will need to authorise the cloud shell. Click on <span class="highlight_txt">Authorise</span>:
 
 ![](./gcp_images/gcp_authorise_shell.png "authorise cloud shell")
 
@@ -154,7 +154,7 @@ Then set up authorization:
 
 ![](./gcp_images/gcp_authorise_shell2.png "enter verification code")
 
-- click on the Google link. A new browser tab will open. Log in to the Google account you used to set up the GCP console. Click "Allow" to allow Google Cloud SDK to access your Google account. As a reminder, the SDK toolkit provides a number of important tools like `gcloud` that are used for accessing GCP services. The next page will provide a verification code. Copy/paste the code back in the shell next to "Enter verification code:".
+- click on the Google link. A new browser tab will open. Log in to the Google account you used to set up the GCP console. Click <span class="highlight_txt">Allow</span> to allow Google Cloud SDK to access your Google account. As a reminder, the SDK toolkit provides a number of important tools like `gcloud` that are used for accessing GCP services. The next page will provide a verification code. Copy/paste the code back in the shell next to "Enter verification code:".
 
 ### e. Set up SSH keys
 

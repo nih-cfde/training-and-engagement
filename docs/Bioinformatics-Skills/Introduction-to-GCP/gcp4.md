@@ -7,10 +7,9 @@ In this example, we'll configure a new VM and learn how to download fastq files 
 As in the [previous section](./gcp2.md), create a new project and create a VM. This time, for the VM configurations:
 
 - be sure to choose a Region that begins with "us-" because the NCBI SRA data is located in the United States (any is fine, i.e., `us-west1 (Oregon)`)
-- do not check either box for the Firewall configuration.
+- for this example, do not check either box for the Firewall configuration.
 
 Connect to the VM with the Google Cloud Shell (authorise shell and set up SSH keys if necessary).
-
 
 ## Step 2: Install SRA toolkit
 

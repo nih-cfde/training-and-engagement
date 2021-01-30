@@ -196,17 +196,17 @@ Buckets can be managed from the graphical user interface (GUI) section of the GC
     Operation completed over 1 objects/268.0 B.
     ```
 
-- Now go to the navigation menu, scroll down to "Storage", and click "Browser". You should see your bucket listed ("my-bucket-blastresults" in this example). Click on the bucket name.
+- Now go to the navigation menu, scroll down to <span class="highlight_txt">Storage</span>, and click <span class="highlight_txt">Browser</span>. You should see your bucket listed ("my-bucket-blastresults" in this example). Click on the bucket name.
 
 ![](./gcp_images/gcp_storage1.png "Google Storage tab")
 
-- You should see the file we copied over. Check the box in the file row to download the file to your computer or delete the file. There is a "Download" button above the table to download multiple files, or the download arrow icon at the end of the file row to download individual files. You can also select files to "Delete" from the storage bucket.
+- You should see the file we copied over. Check the box in the file row to download the file to your computer or delete the file. There is a <span class="highlight_txt">Download</span> button above the table to download multiple files, or the download arrow icon at the end of the file row to download individual files. You can also select files to <span class="highlight_txt">Delete</span> from the storage bucket.
 
 ![](./gcp_images/gcp_storage2.png "Download file")
 
 ## Step 8: Upload files
 
-Finally, you can upload files to the bucket to use in the VM. Click on "Upload Files", choose file(s) to upload from your computer and click "Open". You should now see them in the bucket file list. For this example, we uploaded an empty text file called "testfile.txt".
+Finally, you can upload files to the bucket to use in the VM. Click on <span class="highlight_txt">Upload Files</span>, choose file(s) to upload from your computer and click <span class="highlight_txt">Open</span>. You should now see them in the bucket file list. To demonstrate, we uploaded an empty text file called "testfile.txt".
 
 ![](./gcp_images/gcp_storage3.png "Upload files")
 
