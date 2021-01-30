@@ -29,15 +29,15 @@ In this tutorial, we will show you how to enable two-factor authentication (opti
 
 ### Step 1: Go to Github account settings
 
-- Click on "Settings" from the top-right dropdown menu on your Github profile picture.
+- Click on <span class="highlight_txt">Settings</span> from the top-right dropdown menu on your Github profile picture.
 
-- Click on ["Account security"](https://github.com/settings/security).
+- Click on <span class="highlight_txt">Account security</span> to go to the [security page](https://github.com/settings/security).
 
 ### Step 2: Set up two-factor authentication
 
 While this step is optional, it is a good security measure to protect your account.
 
-Click "Enable two-factor authentication".
+Click <span class="highlight_txt">Enable two-factor authentication</span>.
 
 ![](./images-github-auth/1-two-factor-auth.png "enable two factor auth button")
 
@@ -47,27 +47,27 @@ There are two options for receiving the two-factor authentication code.
 
 ![](./images-github-auth/2-two-factor-auth-phone-set-up.png "set up phone")
 
-The recommended method is to receive the code from a phone app, such as Authy, 1Password, or LastPass Authenticator. The Duo Security app also works. For this option, click "Set up using an app".
+The recommended method is to receive the code from a phone app, such as Authy, 1Password, or LastPass Authenticator. The Duo Security app also works. For this option, click <span class="highlight_txt">Set up using an app</span>.
 
 The second option is to receive the code via text message to your phone. This option is only available in certain countries. For detailed steps on this method, see the Github [documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages).
 
 ### Step 4: Save recovery codes
 
-The next page will show a series of recovery codes; you will need these codes to regain access to your account if it is ever lost. Download, print, or copy these codes to a safe place, then click "Next".
+The next page will show a series of recovery codes; you will need these codes to regain access to your account if it is ever lost. Download, print, or copy these codes to a safe place, then click <span class="highlight_txt">Next</span>.
 
 ![](./images-github-auth/3-save-recovery-codes.png "save recovery codes")
 
 ### Step 5: Enable two-factor authentication
 
-If you chose to set up two-factor authentication with a phone app, open the app and scan the QR code. Enter the six-digit code from the app on Github in the text box below the QR code. After you click "Enable", the two-factor authentication set up is complete!
+If you chose to set up two-factor authentication with a phone app, open the app and scan the QR code. Enter the six-digit code from the app on Github in the text box below the QR code. After you click <span class="highlight_txt">Enable</span>, the two-factor authentication set up is complete!
 
 You can test by logging out of Github and logging back in - the phone app should send you a six-digit code to enter as part of login.
 
 ### Step 6: Generate a PAT
 
-On the left panel of personal settings, go to "Developer settings". This will take you to a new page, on the left panel, click on "Personal access tokens".
+On the left panel of personal settings, go to <span class="highlight_txt">Developer settings</span>. This will take you to a new page, on the left panel, click on <span class="highlight_txt">Personal access tokens</span>.
 
-Click on "Generate new token". Give it a name in the "Note" text box. For the scopes, check the box next to "repo". Then scroll down and click "Generate token".
+Click on <span class="highlight_txt">Generate new token</span>. Give it a name in the <span class="highlight_txt">Note</span> text box. For the scopes, check the box next to <span class="highlight_txt">repo</span>. Then scroll down and click <span class="highlight_txt">Generate token</span>.
 
 ![](./images-github-auth/4-generate-pat.png "Generate new token")
 
