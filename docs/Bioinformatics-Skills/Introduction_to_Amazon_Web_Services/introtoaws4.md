@@ -1,5 +1,35 @@
 # Connect to your Instance
 
+=== "Web Browser Instructions"
+
+    This is an OS-agnostic way of connecting to your AWS instance. The advantage of using this method is that Windows users do not need to worry about downloading an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/). The main disadvantage is that you cannot download files from the instance to your local machine via this web terminal interface.
+
+    ## Step 1) Find your launched instance
+    Go to the page that lists all your instances: https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId
+
+    ## Step 2) Select the instance
+    Check the box next to your running instance.
+
+    ![](images-aws/connect_1.png)
+
+    ## Step 3) Connect
+    Click on the "Connect" button on the top of the screen
+
+    ![](images-aws/connect_2.png)
+
+    ## Step 4) EC2 Instance Connect tab
+    On this page, make sure the "EC2 Instance Connect" tab is selected (orange highlight), then click the "Connect" button located at the bottom of the page. Do not change the default username. It should read "ubuntu"
+
+    ![](images-aws/connect_3.png)
+
+    ## Step 5) Web browser terminal tab
+    A terminal window will open up in a new tab
+
+    ![](images-aws/connect_4.png)
+
+    Congratulations! You have successfully connected to your remote computer. You can download files onto your instance and install software programs via this web browser terminal.
+
+
 === "Windows Instruction"
 
     Ok, so you've created a running computer. How do you get to it?
@@ -41,24 +71,6 @@
     ![SCP Tab](./images-aws/Mobaxterm_transfer1.png "SCP tab")
 
     ![Transfer File](./images-aws/Mobaxterm_transfer2.png "transfer file windows")
-
-    ## Step 4: Terminating the Instance
-
-    Once you have completed your tasks and are sure you do not need the instance any longer, you may terminate the instance by returning to [AWS Management Console](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId).
-
-    !!! Warning
-
-            If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it. Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
-
-    - Click on "Services"
-    - Click "EC2"
-    - Click "Instance" on the left hand side bar menu and it should bring you to the list of running instances on your account.
-    - Click on the instance you would like to terminate
-    - Click "Actions"
-    - Click "Instance State"
-    - Select "Terminate"
-
-    ![Terminate](./images-aws/Terminate.png "terminate instance button")
 
 
 === "Mac OS"
@@ -124,23 +136,3 @@
     !!! note
 
             You need to make sure that the user "user" has the permission to write in the target directory. In this example, if ~/path/to/file was created by you, it should be fine.
-
-
-    ## Step 4: Terminating the Instance
-
-    Once you have completed your tasks and are sure you do not need the instance any longer, you may terminate the instance by returning to [AWS Management Console](https://us-west-1.console.aws.amazon.com/console/home?region=us-west-1).
-
-
-    !!! warning
-
-            If you simply close the MobaXterm terminal, the instance will continue to run and incur cost; it has not been terminated. You must go the instance on the AWS webpage to terminate it. Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
-
-    - Click on "Services"
-    - Click "EC2"
-    - Click "Instance" on the left hand side bar menu and it should bring you to the list of running instances on your account.
-    - Click on the instance you would like to terminate
-    - Click "Actions"
-    - Click "Instance State"
-    - Select "Terminate"
-
-    ![Terminate](./images-aws/Terminate.png "terminate instance button")

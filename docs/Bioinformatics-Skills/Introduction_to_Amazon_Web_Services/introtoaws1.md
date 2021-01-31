@@ -13,9 +13,9 @@ Est. time | Lesson name | Description
 
 !!! note "Learning Objectives"
 
-    - introduce researchers to cloud computing resources and how to use them
-    
-    - learn how to terminate an instance
+    - Introduce researchers to cloud computing resources and how to use them
+
+    - Learn how to terminate an instance
 
 === "Prerequisites"
 
