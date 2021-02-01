@@ -64,11 +64,11 @@ The information you will need lives on the [AWS page that lists your active inst
 
 * On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
 
-![](../../images/GWAS_General_publicDNS.png)
+![](./images-gwas/GWAS_General_publicDNS.png "Connect to instance button")
 
 * A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
 
-![](../../images/GWAS_General_aws_connect_your_instance.png)
+![](./images-gwas/GWAS_General_aws_connect_your_instance.png "ssh command")
 
 * In your terminal, make sure you are still in the `~/Desktop/GWAS` folder (in which your "amazon.pem" lives). Paste the entire command and click ++enter++. It should look something like this:
 
@@ -92,7 +92,7 @@ The information you will need lives on the [AWS page that lists your active inst
 
 * If everything works ok, the output on your terminal window should look like this:
 
-![](../../images/GWAS_General_AWS_Connected.png)
+![](./images-gwas/GWAS_General_AWS_Connected.png "instance terminal")
 
 !!! Note
     My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting "Inspector". I've chosen the "Pro" theme.
@@ -180,6 +180,7 @@ You need lots of other helper utilities to run today's pipeline so now is a good
     ```
     sudo apt-get install autoconf autogen g++ gcc make automake pkg-config zlib1g-dev curl gdebi-core -y ghostscript-x
     ```
+    
 !!! Important
     Installing helper utilities is VERY important. All sorts of errors in installations/plotting happen if it's not run! For example, you will install "vcftools" in later parts of this tutorial which absolutely needs "autoconf", "autogen", and "make" to be preinstalled. zlib is a library implementing the deflate compression method found in gzip and PKZIP. gdebi lets you install local deb packages resolving and installing its dependencies. And to run plotting functions in R, you will need Ghostscript, an interpreter of the PDF format.
 

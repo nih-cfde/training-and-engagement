@@ -1,15 +1,23 @@
 site_name: Common Fund Data Ecosystem Training
+site_description: >-
+  We are working to make Common Fund data more accessible to researchers and clinicians like you! </br></br>Choose from our growing list of tutorials and resources to learn how to perform bioinformatic analyses and access data
+
+
 
 theme:
   name: material
   palette:
+    #scheme: preference
     primary: white
+   #accent: white
   features:
     - navigation.tabs
     - navigation.instant
+  favicon: images/CFDE-logo-white-outline.png
   logo: images/CFDE-logo.png
-  custom_dir: docs/templates
-docs_dir: docs
+  custom_dir: custom
+  docs_dir: docs
+
 
 plugins:
   - search: # necessary for search to work
@@ -24,11 +32,9 @@ markdown_extensions:
 - pymdownx.superfences
 - pymdownx.tabbed
 - pymdownx.emoji
-
 - pymdownx.tabbed
 - pymdownx.extra
 - pymdownx.superfences
-
 - pymdownx.extra
 - pymdownx.highlight
 - pymdownx.keys
@@ -42,7 +48,7 @@ extra:
   hypothesis: true
   social:
     - icon: fontawesome/solid/envelope
-      link: mailto:CFDE-Coordination%20<coordination@CFDE.groups.io>
+      link: mailto:CFDE-HelpDesk%20<training@cfde.atlassian.net>
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/CfdeNih
     - icon: fontawesome/brands/github
@@ -50,6 +56,7 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/asciinema-player.css
+  - stylesheets/overrides.min.css
 extra_javascript:
   - javascripts/medium-zoom.min.js
   - javascripts/extra.js

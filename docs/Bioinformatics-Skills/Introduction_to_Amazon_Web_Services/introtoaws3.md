@@ -8,41 +8,45 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
 Go to [Amazon Web Services](https://aws.amazon.com) in a web browser. Select the "My Account" menu option "AWS Management Console". Log in with your username & password.
 
-![AWS Management Console](../../images/aws_1.PNG "AWS my account button")
+![AWS Management Console](./images-aws/aws_1.png "AWS my account button")
 
 !!! Note
 
           If you need to create an account, please follow the [AWS instructions for creating an account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 
 !!! Warning
-    
+
     If you are creating a new account, it could take up to 24 hours to be activated. You'll need a credit card to set up the account.
 
 ### Step 2: Choose virtual machine
 
-For this tutorial, it is important to select the "US West (N. California)" amazon machine image. The geographical region of your remote machine is displayed on the top right of this page:
+For this tutorial, select the AWS region that is closest to your current geographic location. The AWS region of your remote machine is displayed on the top right of this page. Click on it and choose the location that best describes the region you are currently located.
 
-![AWS Dashboard](../../images/aws_2.PNG "AWS amazon machine selection")
+![AWS Dashboard](./images-aws/aws_2.png "AWS amazon machine selection")
+
+!!! note "AWS Region"
+
+    The default region is automatically displayed in the AWS Dashboard. The [choice of region](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-region.html) has implications on fees, speed, and performance.
 
 Click on "Services" (upper left):
 
-![AWS Services](../../images/aws_3.png "AWS Services button")
+![AWS Services](./images-aws/aws_3.png "AWS Services button")
 
 Click on "EC2":
 
-![EC2](../../images/aws_4.png "AWS EC2 button")
+![EC2](./images-aws/aws_4.png "AWS EC2 button")
 
 !!! Note
-         
-         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilised the most. 
+
+         Amazon Elastic Cloud Computing features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilized the most.
 
 Click on "Launch Instance":
 
-![Launch Instance](../../images/aws_5.png "AWS launch button")
+![Launch Instance](./images-aws/aws_5.png "AWS launch button")
 
 Select "AWS Marketplace" on the left hand side tab:
 
-![AWS Marketplace](../../images/aws_6.png "AWS marketplace button")
+![AWS Marketplace](./images-aws/aws_6.png "AWS marketplace button")
 
 ### Step 3: Choose an Amazon Machine Image (AMI)
 
@@ -50,11 +54,11 @@ An Amazon Machine Image is a special type of virtual appliance that is used to c
 
 Type `Ubuntu 20.04 Pro LTS` in the search bar. Click "Select":
 
-![AMI](../../images/aws_7.png "AWS Ubuntu AMI")
+![AMI](./images-aws/aws_7.png "AWS Ubuntu AMI")
 
 Click "Continue":
 
-![Ubuntu Pro](../../images/aws_9.PNG "Ubuntu Pro information")
+![Ubuntu Pro](./images-aws/aws_9.PNG "Ubuntu Pro information")
 
 ### Step 4: Choose an instance type
 
@@ -62,13 +66,13 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 
 Select the row with `t2.micro`, the free tier eligible option:
 
-![t2.micro](../../images/aws_8.png "t2 micro instance type")
+![t2.micro](./images-aws/aws_8.png "t2 micro instance type")
 
 !!! Note
-    
+
     The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use (limited) services without being charged. Limits could be based on how much storage you have access to and/or how many hours of compute you can perform in a one month.
 
-### Step 5: Set up optional configurations
+### Step 5: Optional Configurations
 
 There are several optional set up configurations. You can either click "Review and Launch" now to start the instance we've configured thus far in the tutorial without these additional configurations or as necessary, click on the following tabs to continue configuring. Start the first option by clicking "Next: Configure Instance Details" on the AWS page.
 
@@ -92,13 +96,15 @@ There are several optional set up configurations. You can either click "Review a
 
 ### Step 6: Review and Launch instance
 
-After configuration settings are complete, click "Review and Launch" and "Launch". If you are launching an AWS instance for the first time, you will need to generate a key pair. 
+After configuration settings are complete, click "Review and Launch" and "Launch". If you are launching an AWS instance for the first time, you will need to generate a key pair.
+
+![launch instance](./images-aws/aws_launch.png "launch the instance")
 
 Choose the "Create a new key pair" option from the drop down menu. Under key pair name, type "amazon" and click "save". The default location for saving files on a Mac is the "Downloads" folder -- that's where your key pair can be found. Next time you launch an instance, you can reuse the key pair you just generated.
 
-If you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, we are calling the key pair "amazon.pem". 
+If you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, we are calling the key pair "amazon.pem".
 
-![mobaxterm](../../images/aws_10.png "key pair set up")
+![pem key](./images-aws/aws_10.png "key pair set up")
 
 !!! Note "Why do I need a key pair?"
 
@@ -106,24 +112,18 @@ If you have a previously generated key pair, you can reuse it to launch an insta
 
 Then select your key pair, check the acknowledgement box, and click "Launch Instance". Now you should see:
 
-![SSH](../../images/aws_11.png "Instance ID link")
+![SSH](./images-aws/aws_11.png "Instance ID link")
 
 Click on this first hyperlink, in the image above, "i-038c58bfbe9612c57". Your hyperlink may be different.
 
-![Remote Host](../../images/aws_12.PNG "AWS instance running page")
+![Remote Host](./images-aws/aws_12.PNG "AWS instance running page")
 
 This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't qualify for the Free Tier. On this page, there is a "Public DNS" address, with the format `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. You'll need this address to connect to your AWS computer.
 
-You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS computer, so do not close the page yet. 
+
+You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS computer, so do not close the page yet.
 
 If you happen to close the webpage on accident, [click on this link](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId)
 
 Continue on to the next lesson to learn how to connect to your AWS computer!
-
-
-
-
-
-
-
 

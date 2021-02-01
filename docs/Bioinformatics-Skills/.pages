@@ -1,12 +1,10 @@
 nav:
   - index.md
+  - Kids First Tutorials: Kids-First
+  - CFDE Portal Tutorials: CFDE-Portal
   - install_conda_tutorial.md
   - Introduction_to_Amazon_Web_Services
   - Command-Line-BLAST
   - GWAS in the Cloud: GWAS-in-the-cloud
   - Snakemake Workflow Management: Snakemake
-  - Kids First Tutorials: Kids-First
-  - CFDE Portal Tutorials: CFDE-Portal
-
- 
-
+  - Simulate_Illumina_Reads.md
