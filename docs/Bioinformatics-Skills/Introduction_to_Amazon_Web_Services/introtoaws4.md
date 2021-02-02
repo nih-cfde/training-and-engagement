@@ -10,28 +10,31 @@ hide:
     This is an OS-agnostic way of connecting to your AWS instance. The advantage of using this method is that Windows users do not need to worry about downloading an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/). The main disadvantage is that you cannot download files from the instance to your local machine via this web terminal interface.
 
     ## Step 1: Find your launched instance
-    Go to the page that lists all your instances: https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId
+    * Go to the page that lists all your instances: https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId
 
     ## Step 2: Select the instance
 
-    Check the box next to your running instance.
+    * Check the box next to your running instance.
 
     ![](images-aws/connect_1.png)
 
     ## Step 3: Connect
 
-    Click on the <span class="highlight_txt">Connect</span> button on the top of the screen
+    * Click on the <span class="highlight_txt">Connect</span> button on the top of the screen.
 
     ![](images-aws/connect_2.png)
 
     ## Step 4: EC2 instance connect tab
-    On this page, make sure the **EC2 Instance Connect** tab is selected (orange highlight), then click the<span class="highlight_txt">Connect</span> button located at the bottom of the page. Do not change the default username. It should read **ubuntu**.
+
+    * On this page, make sure the **EC2 Instance Connect** tab is selected (orange highlight).
+    * Click the<span class="highlight_txt">Connect</span> button located at the bottom of the page.
+    * Do not change the default username. It should read **ubuntu**.
 
     ![](images-aws/connect_3.png)
 
     ## Step 5: Web browser terminal tab
 
-    A terminal window will open up in a new tab
+    * A terminal window will open up in a new tab.
 
     ![](images-aws/connect_4.png)
 
@@ -56,8 +59,9 @@ hide:
 
     ## Step 2: Start a new session
 
-    Click on <span class="highlight_txt">Session</span> located in top left hand corner and choose <span class="highlight_txt">SSH</span>
-    and click <span class="highlight_txt">OK</span>.
+    * Click on <span class="highlight_txt">Session</span> located in top left hand corner
+    * Choose <span class="highlight_txt">SSH</span>
+    * Click <span class="highlight_txt">OK</span>.
 
     ![mobaxterm1](./images-aws/mobaxterm_1.png "start new session")
 
@@ -65,15 +69,16 @@ hide:
 
     ## Step 3: Set up ssh settings
 
-    Enter the public DNS address from the [AWS instance](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId) page in the **Remote host** box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`. Enter **ubuntu** for **Specify username**.
+    * Enter the public DNS address from the [AWS instance](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId) page in the **Remote host** box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`.
+    * Enter **ubuntu** for **Specify username**.
 
     ![Hostname](./images-aws/mobaxterm_3.png "remote host ec2 address")
 
-    Under **Advanced SSH settings**, check the box by **Use private key** and search for the path to your **amazon.pem** key pair file.
+    * Under **Advanced SSH settings**, check the box by **Use private key** and search for the path to your **amazon.pem** key pair file.
 
     ![Private Key](./images-aws/mobaxterm_3_2.png "use private key file path")
 
-    Click <span class="highlight_txt">OK</span> to complete session set up.
+    * Click <span class="highlight_txt">OK</span> to complete session set up.
 
     If you see this screen and `ubuntu@ip-###-##-#-##:~$` as the command prompt, your AWS instance computer is ready for use!
 
@@ -81,7 +86,7 @@ hide:
 
     ## Step 4: Transferring files
 
-    With MobaXterm, you can transfer files between your local computer and the remote instance by dragging and dropping files between MobaXterm's "SCP" tab (located on the left-hand side of the MobaXterm window) and your local computer's file explorer.
+    With MobaXterm, you can transfer files between your local computer and the remote instance by dragging and dropping files between MobaXterm's **SCP** tab (located on the left-hand side of the MobaXterm window) and your local computer's file explorer.
 
     ![SCP Tab](./images-aws/Mobaxterm_transfer1.png "SCP tab")
 
@@ -100,14 +105,15 @@ hide:
 
     ## Step 2: Login to remote instance
 
-    Start Terminal and change the permissions on the `.pem` file for security purposes. Your private key must not be publicly visible. Run the following command so that only the owner i.e. you can read the file.
+    * Start Terminal and change the permissions on the `.pem` file for security purposes. Your private key must not be publicly visible. 
+    * Run the following command so that only the owner i.e. you can read the file.
 
     ```
     chmod 400 ~/Desktop/amazon.pem
 
     ```
 
-    Connect to remote instance:
+    * Connect to remote instance:
 
     ```
     ssh -i ~/Desktop/amazon.pem ubuntu@ ec2-???-???-???-???.compute-1.amazonaws.com
