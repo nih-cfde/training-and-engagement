@@ -95,23 +95,41 @@ There are several optional set up configurations.
 
 === "Configure Instance"
 
-    Configure the instance to suit your requirements. You can launch multiple instances from the same AMI, request Spot instances to take advantage of the lower pricing, assign an access management role to the instance, and more.
+    [Configure the instance to suit your requirements](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Configure_Instance.html). You can
+
+    * change number of instances to launch
+    * select the subnet to use
+    * modify the STOP and Terminate behavior
+    * control if you would like the instance to update with any patches when in use.
+    * request Spot instances
 
     !!! info "Spot Instance"
 
-    A [Spot Instance](https://aws.amazon.com/ec2/spot/?cards.sort-by=item.additionalFields.startDateTime&cards.sort-order=asc) is an unused EC2 instance that is available for less than the On-Demand price. Because Spot Instances enable you to request unused EC2 instances at steep discounts, you can lower your Amazon EC2 costs significantly.
+        A [Spot Instance](https://aws.amazon.com/ec2/spot/?cards.sort-by=item.additionalFields.startDateTime&cards.sort-order=asc) is an unused EC2 instance that is available for less than the On-Demand price. Because Spot Instances enable you to request unused EC2 instances at steep discounts, you can lower your Amazon EC2 costs significantly.
 
 === "Add Storage"
 
-    Your instance will be launched with the following storage device settings. You can attach additional EBS volumes and instance store volumes to your instance, or edit the settings of the root volume. You can also attach additional EBS volumes after launching an instance, but not instance store volumes. Learn more about storage options in Amazon EC2.
+    * Your instance comes with a in built storage called **instance store** and is useful for temporary data storage. The default root volume on a `t2.micro` is 8 GB.
+    * For data you might want to retain longer or use across multiple instances or encrypt it is best to use the [**Amazon Elastic Block Store volumes (Amazon EBS)**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html).
+    * Attaching EBS volumes to an instance are similar to using external hard drives connected to a computer.
+    * Click on <span class="highlight_txt">Add New Volume</span> for additional storage.
+
+    !!! info "Free Storage"
+
+        You can get upto 30 GB of EBS general purpose (SSD) or Magnetic storage when using Free tier instances.
 
 === "Add Tags"
 
-    A tag consists of a case-sensitive key-value pair. For example, you could define a tag with key = Name and value = Webserver. A copy of a tag can be applied to volumes, instances or both. Tags will be applied to all instances and volumes. Learn more about tagging your Amazon EC2 resources.
+    * Tags are useful to categorize your AWS resources: instances and volumes.
+    * A tag consists of a case-sensitive key-value pair. Some examples: GTEx-RNAseq, General-GWAS, KF-GWAS.
+    * [Learn more about tagging your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html).
 
 === "Configure Security Group"
 
-    A security group is a set of firewall rules that control the traffic for your instance. On this page you can add rules to allow specific traffic to reach your instance. You can create a new security group or select from an existing one.
+    * Similar to setting up a firewall through which we would modify connection of external world and the EC2 instance.
+    * Blocks/allow connections based on port number and IP.
+    * You can create a new security group or select from an existing one.
+    * [Learn more about Security groups for EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html).   
 
 ## Step 6: Review and launch instance
 
