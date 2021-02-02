@@ -61,7 +61,7 @@ Type `Ubuntu 20.04` in the search bar. Choose `Ubuntu 20.04 LTS - Focal` by clic
 
 Click <span class="highlight_txt">Continue</span>
 
-![Ubuntu Pro](./images-aws/aws_9.png "Ubuntu Pro information")
+![Ubuntu Pro](./images-aws/aws_9.PNG "Ubuntu Pro information")
 
 ### Step 4: Choose an instance type
 
@@ -123,7 +123,7 @@ You will be directed to the **Launch Status** page where the green colored box o
 
 The instance console page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't qualify for the Free Tier. Obtain the **Public DNS** address with the format `ec2-XX-XX-X-XXX.us-yyyy-y.compute-1.amazon.aws.com` located under the <span class="highlight_txt">Details</span> tab.
 
-![Remote Host](./images-aws/aws_12.png "AWS instance running page")
+![Remote Host](./images-aws/aws_12.PNG "AWS instance running page")
 
 You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS instance, so do not close the page yet.
 
