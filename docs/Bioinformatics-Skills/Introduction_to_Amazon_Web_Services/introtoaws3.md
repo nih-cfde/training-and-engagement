@@ -109,7 +109,7 @@ Choose the <span class="highlight_txt">Create a new key pair</span> option from 
 
 If you have a previously generated key pair, you can reuse it to launch an instance using <span class="highlight_txt">Choose an existing key pair</span> option.
 
-Check the acknowledgement box, and click <span class="highlight_txt">Launch Instance</span>.
+Check the acknowledgement box, and click <span class="highlight_txt">Launch Instances</span>.
 
 ![pem key](./images-aws/aws_10.png "key pair set up")
 
