@@ -3,7 +3,7 @@ layout: page
 title: Setting up an AWS instance
 ---
 
-To start, we will learn how to set-up Ubuntu 20.04 Pro LTS open source software operating system. Ubuntu 20.04 Pro LTS is one of the programs offered in the Amazon Free Tier as well as one of the most popular open source operating systems.
+In this lesson, we will learn to set-up an instance with Ubuntu, an open source software operating system and part of the Amazon Free Tier program.
 
 Follow along with these steps and/or watch our [walk-through tutorial](./introtoaws2.md) to get started!
 
@@ -40,7 +40,7 @@ Click on <span class="highlight_txt">EC2</span>:
 
 !!! Note "Amazon EC2"
 
-         Amazon Elastic Cloud Computing (Amazon EC2) features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch Ubuntu 20.04 Pro LTS. LTS releases are the ‘enterprise grade’ releases of Ubuntu and are utilized the most.
+         Amazon Elastic Cloud Computing (Amazon EC2) features virtual computing environments called instances. These instances can vary in configurations of CPU, memory, storage, networking capacity. For the purposes of future tutorials, we will launch `Ubuntu 20.04 Pro LTS` which is an enterprise grade releases of Ubuntu.
 
 Click on <span class="highlight_txt">Launch Instance</span>:
 
@@ -55,19 +55,24 @@ Select <span class="highlight_txt">AWS Marketplace</span> on the left hand side 
 
 ![AWS Marketplace](./images-aws/aws_6.png "AWS marketplace button")
 
-Type `Ubuntu 20.04` in the search bar. Choose `Ubuntu 20.04 LTS - Focal` by clicking <span class="highlight_txt">Select</span>:
+Type `Ubuntu Pro` in the search bar. Choose `Ubuntu Pro 20.04 LTS` by clicking <span class="highlight_txt">Select</span>:
 
 ![AMI](./images-aws/aws_7.png "AWS Ubuntu AMI")
 
-Click <span class="highlight_txt">Continue</span>
+!!! info "Ubuntu 20.04 AMI"
 
-![Ubuntu Pro](./images-aws/aws_9.PNG "Ubuntu Pro information")
+     `Ubuntu 20.04` was released in 2020 and is the latest version. This is a **Long Term Support (LTS)** release which means it will be equipped with software updates and security fixes. Since it is a `Pro` version the support will last for ten years until 2030.   
+
+
+Click <span class="highlight_txt">Continue</span> on the popup window:
+
+![Ubuntu Focal](./images-aws/aws_9.png "Ubuntu Focal information")
 
 ### Step 4: Choose an instance type
 
 Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instances are virtual servers that can run applications. They have varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications. [Learn more about instance types and how they can meet your computing needs](https://aws.amazon.com/ec2/instance-types/).
 
-Select the row with `t2.micro` which is free tier eligible:
+For this tutorial we will select the row with `t2.micro` which is free tier eligible:
 
 ![t2.micro](./images-aws/aws_8.png "t2 micro instance type")
 
@@ -105,7 +110,7 @@ The last tab in setup is **Review** which summarizes all the selected configurat
 
 ![launch instance](./images-aws/aws_launch.png "launch the instance")
 
-Choose the <span class="highlight_txt">Create a new key pair</span> option from the drop down menu. You can type any name under **Key pair name**. In this tutorial we are naming it `amazon.pem`. Click <span class="highlight_txt">Download Key Pair</span> to obtain the `.pem` file to your local machine. The default location for saving files on a Mac is the Downloads folder -- that's where your key pair can be found. Next time you launch an instance, you can reuse the key pair you just generated.
+Choose the <span class="highlight_txt">Create a new key pair</span> option from the drop down menu. You can type any name under **Key pair name**. In this tutorial we are naming it `amazon.pem`. Click <span class="highlight_txt">Download Key Pair</span> to obtain the `.pem` file to your local machine. You can access the `.pem` file from the `Downloads` folder which is typically the default location for saving files. Next time you launch an instance, you can reuse the key pair you just generated.
 
 If you have a previously generated key pair, you can reuse it to launch an instance using <span class="highlight_txt">Choose an existing key pair</span> option.
 

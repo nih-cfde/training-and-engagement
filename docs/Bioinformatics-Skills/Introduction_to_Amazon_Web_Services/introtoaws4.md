@@ -92,7 +92,7 @@ hide:
 
     Ok, so you've created a running computer. How do you get to it?
 
-    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId), click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
+    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId), click on the instance, and find the **Public DNS** under the <span class="highlight_txt">Details</span> tab. This is the public name of your computer on the internet.
 
     ## Step 1: Locate private key
 
