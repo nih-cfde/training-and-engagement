@@ -9,11 +9,11 @@ Once you have completed your tasks and are sure you do not need the instance any
 
         Terminating an instance will erase all the work you have done on the instance! Be sure to download files from the remote instance to your local computer or other storage space before terminating the instance.
 
-- Click on<span class="highlight_txt">Services</span>
+- Click on <span class="highlight_txt">Services</span>
 - Click <span class="highlight_txt">EC2</span>
 - Click <span class="highlight_txt">Instance</span> on the Instances tab of the left side bar menu and it should bring you to the list of running instances on your account.
 - Select the instance you would like to terminate
-- Click<span class="highlight_txt">Instance state</span>
-- Select<span class="highlight_txt">Terminate instance</span>
+- Click <span class="highlight_txt">Instance state</span>
+- Select <span class="highlight_txt">Terminate instance</span>
 
 ![Terminate](./images-aws/Terminate.png "terminate instance button")
