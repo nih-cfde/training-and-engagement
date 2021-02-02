@@ -102,7 +102,7 @@ The bot will automatically create preview branches (`update-<repo>-preview`) if 
 If the website build checks all pass, the bot will then automatically merge:
 
 - `update-fair-preview` into `cookbookpreview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/cookbookpreview/](https://cfde-published-documentation.readthedocs-hosted.com/en/cookbookpreview/)
-- `update-c2m2-preview` into `specspreview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/C2M2/](https://cfde-published-documentation.readthedocs-hosted.com/en/C2M2/)
+- `update-c2m2-preview` into `specspreview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/c2m2/](https://cfde-published-documentation.readthedocs-hosted.com/en/c2m2/)
 
 #### Step 5: Publishing your changes
 
