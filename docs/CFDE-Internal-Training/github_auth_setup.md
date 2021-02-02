@@ -120,7 +120,7 @@ From the terminal, check whether the `credential.helper` is set on your `git` co
     credential.helper=osxkeychain
     ```
 
-In this example, we will delete the saved password from `osxkeychain`, so that it can be updated with the PAT key. If the commands are successful, there should be no output in the terminal. Type ++enter++ after each of the commands below at the terminal. After entering `protocol=https` you need to press ++enter++ **twice**.
+In this example, we will delete the saved password from `osxkeychain`, so that it can be updated with the PAT key. Type ++enter++ after each of the commands below at the terminal. After entering `protocol=https` you need to press ++enter++ **twice**. If the commands are successful, there should be no output in the terminal. 
 
 ```
 git credential-osxkeychain erase
