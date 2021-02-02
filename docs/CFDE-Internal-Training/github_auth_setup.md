@@ -65,9 +65,27 @@ You can test by logging out of Github and logging back in - the phone app should
 
 ### Step 6: Generate a PAT
 
-On the left panel of personal settings, go to <span class="highlight_txt">Developer settings</span>. This will take you to a new page, on the left panel, click on <span class="highlight_txt">Personal access tokens</span>.
+Navigate to <span class="highlight_txt">Developer settings</span> located on the left panel of Account settings. This will take you to a new page, on the left panel, click on <span class="highlight_txt">Personal access tokens</span>.
 
-Click on <span class="highlight_txt">Generate new token</span>. Give it a name in the <span class="highlight_txt">Note</span> text box. For the scopes, check the box next to <span class="highlight_txt">repo</span>. Then scroll down and click <span class="highlight_txt">Generate token</span>.
+Click on <span class="highlight_txt">Generate new token</span>. Give it a name in the **Note** text box.
+Scopes enable setting permissions for user access to the various functionality of a repo. To set the scope for your user account, check the box next to **repo** and select all the tasks pertaining to a private repo that apply. Then scroll down and click <span class="highlight_txt">Generate token</span>.
+
+!!! info "Update Scope"
+
+    You can run into OAuth error with tasks if the original PAT doesn't include the correct scope. For example:
+
+    ```
+    refusing to allow a Personal Access Token to create or update workflow `....` without workflow scope
+    ```
+
+    To update the scopes associated with your PAT, you can do so by:
+
+    - generating a new PAT key with the updated repo scopes
+    - delete the GitHub credentials in keychain (on MacOS) or in Git Credential manager (on Windows)
+    - delete and update the git credentials (Step 7)
+
+    Alternatively, you can use the [**Git Credential Manager Core**](https://github.com/microsoft/Git-Credential-Manager-Core) which is a cross platform git credential helper which will request the correct scopes.
+
 
 ![](./images-github-auth/4-generate-pat.png "Generate new token")
 
@@ -102,7 +120,7 @@ From the terminal, check whether the `credential.helper` is set on your `git` co
     credential.helper=osxkeychain
     ```
 
-In this example, we will delete the saved password from `osxkeychain`, so that it can be updated with the PAT key. Type ++enter++ after each of the commands below at the terminal. If the commands are successful, there should be no output in the terminal.
+In this example, we will delete the saved password from `osxkeychain`, so that it can be updated with the PAT key. If the commands are successful, there should be no output in the terminal. Type ++enter++ after each of the commands below at the terminal. After entering `protocol=https` you need to press ++enter++ **twice**.
 
 ```
 git credential-osxkeychain erase
