@@ -72,7 +72,7 @@ Select the row with `t2.micro`, the free tier eligible option:
 
     The Free Tier Eligible tag lets us know that this particular operating system is covered by the Free Tier program where you use (limited) services without being charged. Limits could be based on how much storage you have access to and/or how many hours of compute you can perform in a one month.
 
-### Step 5: Optional Configurations
+### Step 5: Optional configurations
 
 There are several optional set up configurations. You can either click "Review and Launch" now to start the instance we've configured thus far in the tutorial without these additional configurations or as necessary, click on the following tabs to continue configuring. Start the first option by clicking "Next: Configure Instance Details" on the AWS page.
 
@@ -94,7 +94,7 @@ There are several optional set up configurations. You can either click "Review a
 
     A security group is a set of firewall rules that control the traffic for your instance. On this page you can add rules to allow specific traffic to reach your instance. You can create a new security group or select from an existing one.
 
-### Step 6: Review and Launch instance
+### Step 6: Review and launch instance
 
 After configuration settings are complete, click "Review and Launch" and "Launch". If you are launching an AWS instance for the first time, you will need to generate a key pair.
 
