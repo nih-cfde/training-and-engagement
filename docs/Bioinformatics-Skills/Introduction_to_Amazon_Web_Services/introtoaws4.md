@@ -10,7 +10,7 @@ hide:
     This is an OS-agnostic way of connecting to your AWS instance. The advantage of using this method is that Windows users do not need to worry about downloading an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/). The main disadvantage is that you cannot download files from the instance to your local machine via this web terminal interface.
 
     ## Step 1: Find your launched instance
-    * Go to the page that lists all your instances: https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId
+    * Go to the page that lists all your instances: <https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances>
 
     ## Step 2: Select the instance
 
