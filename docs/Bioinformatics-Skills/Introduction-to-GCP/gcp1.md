@@ -76,6 +76,7 @@ Now that the billing account is set up, you can use GCP resources!
 
     Tracking the exact and estimated costs on GCP can be challenging. See [this blog post](https://medium.com/@lukwam/reconcile-your-monthly-gcp-invoice-with-bigquery-billing-export-b36ae0c961e) for an explanation of monitoring computing costs.
 
+    Use the [Google Cloud pricing calculator](https://cloud.google.com/products/calculator/#id=) to estimate the cost of GCP compute resources.
 
 ## Centralized billing account
 
