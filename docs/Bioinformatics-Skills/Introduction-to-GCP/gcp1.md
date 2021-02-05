@@ -20,7 +20,7 @@ In this tutorial, you will learn how to create your own Google Cloud Platform (G
 
 ## Step 2: Create a GCP billing account <a name="create-billing"></a>
 
-- Click on <span class="highlight_txt">Activate</span> to start setting up the billing account.
+- Click on <span class="highlight_txt">ACTIVATE</span> to start setting up the billing account.
 
 ![](./gcp_images/gcp_activatefreetrial.png "GCP activate free trial button")
 
@@ -42,7 +42,7 @@ When you sign up for the GCP free trial, you should get an account confirmation 
 
 ![](./gcp_images/gcp_billingtab.png "GCP billing tab")
 
-- Select <span class="highlight_txt">Manage billing account</span>.
+- Select <span class="highlight_txt">MANAGE BILLING ACCOUNTS</span>.
 
 ![](./gcp_images/gcp_billingsetup.png "GCP billing setup")
 
@@ -52,7 +52,7 @@ When you sign up for the GCP free trial, you should get an account confirmation 
 
 a) Check the box next to your billing account to show member information on right-hand panel.
 
-b) You can add members by clicking on <span class="highlight_txt">Add member</span>.
+b) You can add members by clicking on <span class="highlight_txt">ADD MEMBER</span>.
 
 c) By default, as the owner of the billing account, you are designated the **Billing Account Administrator** role. [Read more about the different member and role options on the GCP](https://cloud.google.com/billing/docs/how-to/billing-access).
 
