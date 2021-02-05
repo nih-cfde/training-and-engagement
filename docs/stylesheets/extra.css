@@ -195,3 +195,8 @@ a:active {
     color: #00AB6C;
 }
 
+.highlight_txt {
+  color: #9f0bde;
+  background-color: #ededed;
+  padding: .25em;
+}
