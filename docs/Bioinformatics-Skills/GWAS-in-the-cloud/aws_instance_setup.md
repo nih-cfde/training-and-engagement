@@ -79,6 +79,6 @@ Then click "Review and launch" --> "Launch". You should see a pop-up window like
 ![](./images-gwas/GWAS_General_aws_instances_list.png "Instance dashboard")
 
 
-* This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't qualify for Free Tier.
+* This page shows you a list of all your active instances. You can launch multiple instances. Just remember that every instance costs money if you don't qualify for Free Tier.
 
 You have now successfully launched your AWS instance! You will need some information from this amazon webpage to access your AWS computer, so do not close the page yet. If you happen to close the webpage on accident, click on this link: <https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId>
