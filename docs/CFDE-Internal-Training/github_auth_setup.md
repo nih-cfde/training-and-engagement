@@ -31,17 +31,19 @@ In this tutorial, we will show you how to enable two-factor authentication (opti
 
 - Click on <span class="highlight_txt">Settings</span> from the top-right dropdown menu on your Github profile picture.
 
-- Click on <span class="highlight_txt">Account security</span> to go to the [security page](https://github.com/settings/security).
-
-### Step 2: Set up two-factor authentication
+### Step 2a: Set up two-factor authentication
 
 While this step is optional, it is a good security measure to protect your account.
 
-Click <span class="highlight_txt">Enable two-factor authentication</span>.
+- Click on <span class="highlight_txt">Account security</span>. On this [page](https://github.com/settings/security), scroll past the change password section to the two-factor authentication section.
+
+![](./images-github-auth/0-account-security.png "account security tab")
+
+- Click <span class="highlight_txt">Enable two-factor authentication</span>.
 
 ![](./images-github-auth/1-two-factor-auth.png "enable two factor auth button")
 
-### Step 3: Choose how to receive codes
+### Step 2b: Choose how to receive codes
 
 There are two options for receiving the two-factor authentication code.
 
@@ -51,32 +53,37 @@ The recommended method is to receive the code from a phone app, such as Authy, 1
 
 The second option is to receive the code via text message to your phone. This option is only available in certain countries. For detailed steps on this method, see the Github [documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages).
 
-### Step 4: Save recovery codes
+### Step 2c: Save recovery codes
 
 The next page will show a series of recovery codes; you will need these codes to regain access to your account if it is ever lost. Download, print, or copy these codes to a safe place, then click <span class="highlight_txt">Next</span>.
 
 ![](./images-github-auth/3-save-recovery-codes.png "save recovery codes")
 
-### Step 5: Enable two-factor authentication
+### Step 2d: Enable two-factor authentication
 
 If you chose to set up two-factor authentication with a phone app, open the app and scan the QR code. Enter the six-digit code from the app on Github in the text box below the QR code. After you click <span class="highlight_txt">Enable</span>, the two-factor authentication set up is complete!
 
 You can test by logging out of Github and logging back in - the phone app should send you a six-digit code to enter as part of login.
 
-### Step 6: Generate a PAT
+### Step 3a: Generate a PAT
 
-Navigate to <span class="highlight_txt">Developer settings</span> located on the left panel of Account settings. This will take you to a new page, on the left panel, click on <span class="highlight_txt">Personal access tokens</span>.
+Navigate to <span class="highlight_txt">Developer settings</span> located on the left panel of Account settings.
 
-Click on <span class="highlight_txt">Generate new token</span>. Give it a name in the **Note** text box.
-Scopes enable setting permissions for user access to the various functionality of a repo. To set the scope for your user account, check the box next to **repo** and select all the tasks pertaining to a private repo that apply. Then scroll down and click <span class="highlight_txt">Generate token</span>.
+![](./images-github-auth/0-developer-settings.png "developer settings tab")
+
+This will take you to a new page, on the left panel, click on <span class="highlight_txt">Personal access tokens</span>.
+
+Click on <span class="highlight_txt">Generate new token</span>. Give it a name in the **Note** text box - this can be a nickname to help you remember what the token is for/when it was created.
+
+Scopes enable setting permissions for user access to the various functionality of a repo. To set the scope for your user account, check the box next to **repo** and select all the tasks pertaining to a private repo that apply.
+
+![](./images-github-auth/4-generate-pat.png "Generate new token")
 
 !!! info "Update Scope"
 
-    You can run into OAuth error with tasks if the original PAT doesn't include the correct scope. For example:
+    You can run into OAuth error with tasks if the original PAT doesn't include the correct scope - for example, you may want to include **workflow** in your scope to edit workflow files remotely:
 
-    ```
-    refusing to allow a Personal Access Token to create or update workflow `....` without workflow scope
-    ```
+    > refusing to allow a Personal Access Token to create or update workflow `....` without workflow scope
 
     To update the scopes associated with your PAT, you can do so by:
 
@@ -86,18 +93,17 @@ Scopes enable setting permissions for user access to the various functionality o
 
     Alternatively, you can use the [**Git Credential Manager Core**](https://github.com/microsoft/Git-Credential-Manager-Core) which is a cross platform git credential helper which will request the correct scopes.
 
-
-![](./images-github-auth/4-generate-pat.png "Generate new token")
-
-The token will look like a string of letters and numbers. **Keep this page open - we will need to use the PAT key instead of our password to login at the command line.**
-
-![](./images-github-auth/5-personal-access-token.png "new token")
+Then scroll down and click <span class="highlight_txt">Generate token</span>.
 
 !!! warning
 
     Be sure to save the token somewhere safe (e.g., password manager). After you leave this page, the token will no longer be viewable.
 
-### Step 7: Update keychain with PAT
+The token will look like a string of letters and numbers and appear in the green box just below the warning to make a copy of the token in the blue box. **Keep this page open - we will need to use the PAT key instead of our password to login at the command line.**
+
+![](./images-github-auth/5-personal-access-token.png "new token")
+
+### Step 3b: Update keychain with PAT
 
 If you have saved your Github password with a password manager (e.g., `osxkeychain` on MacOS) to work on Github repositories remotely, it needs to be updated to the PAT we generated.
 
@@ -120,7 +126,7 @@ From the terminal, check whether the `credential.helper` is set on your `git` co
     credential.helper=osxkeychain
     ```
 
-In this example, we will delete the saved password from `osxkeychain`, so that it can be updated with the PAT key. Type ++enter++ after each of the commands below at the terminal. After entering `protocol=https` you need to press ++enter++ **twice**. If the commands are successful, there should be no output in the terminal. 
+In this example, we will delete the saved password from `osxkeychain`, so that it can be updated with the PAT key. Type ++enter++ after each of the commands below at the terminal. After entering `protocol=https` you need to press ++enter++ **twice**. If the commands are successful, there should be no output in the terminal.
 
 ```
 git credential-osxkeychain erase
