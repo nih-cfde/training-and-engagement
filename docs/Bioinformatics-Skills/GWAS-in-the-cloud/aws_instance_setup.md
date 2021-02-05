@@ -15,34 +15,34 @@ Let's set up a Free Tier AWS Ubuntu instance!
 
 ## Step 1: Create AWS account
 
-* Go to <http://aws.amazon.com/> and click on the "create an AWS account" button located on the top right. If you have an existing AWS account, click the "Sign in to an existing AWS account" option below the "continue" option on the sign-up page and log in to your account as a root user.
+* Go to <http://aws.amazon.com/> and click on the <span class="highlight_txt">create an AWS account</span> button located on the top right. If you have an existing AWS account, click the <span class="highlight_txt">Sign in to an existing AWS account</span> option below the <span class="highlight_txt">continue</span> option on the sign-up page. Log in to your account as a root user.
 
 !!! note "New Account"
 
-    * To create a new account, fill in your email, (create a) password and choose a name for your AWS account. Click "Continue".
+    * To create a new account, fill in your email, (create a) password and choose a name for your AWS account. Click <span class="highlight_txt">Continue</span>.
 
     * On the next page, fill in your name, phone number and address. Check the AWS customer agreement box.
 
-    * Once you click "Create Account and Continue", you will be redirected to a payment info page. Fill in your credit card info. Account approval/creation requires two factor authentication and may take a few mins (to hour or days). When you receive the code, enter it and click "Verify Code"
+    * Once you click <span class="highlight_txt">Create Account and Continue</span>, you will be redirected to a payment info page. Fill in your credit card info. Account approval/creation requires two factor authentication and may take a few mins (to hour or days). When you receive the code, enter it and click <span class="highlight_txt">Verify Code</span>
 
     * You can now log in and launch an instance!
 
 
 ## Step 2: Configure and launch the virtual machine
 
-* Next, click on the "Launch a virtual machine" option as shown in the image:
+* Next, click on the <span class="highlight_txt">Launch a virtual machine</span> option as shown in the image:
 
 ![](./images-gwas/GWAS_General_Launch.png "Launch virtual machine")
 
 ### Step 2A: Select the right geographical region
 
-* For this tutorial, it is important to select the "Ohio" amazon machine image. The geographical region of your remote machine is displayed on the top right of this page (shown in image below)."
+* For this tutorial, it is important to select the <span class="highlight_txt">Ohio</span> amazon machine image. The geographical region of your remote machine is displayed on the top right of this page (shown in image below)."
 
 ![](./images-gwas/GWAS_General_aws_ohio.png "Machine location Ohio")
 
 
 
-* If it does not say "Ohio", click on the drop down arrow and select: `US East (Ohio)`.
+* If it does not say "Ohio", click on the drop down arrow and select: <span class="highlight_txt">US East (Ohio)</span>.
 ![](./images-gwas/GWAS_General_aws_ohio_selection.png "Machine location dropdown menu")
 
 ### Step 2B: Select the right Ubuntu image
@@ -61,16 +61,16 @@ Let's set up a Free Tier AWS Ubuntu instance!
 ![](./images-gwas/GWAS_General_AWS_Free_Tier.png "t2micro instance type")
 
 
-Then click "Review and launch" --> "Launch". You should see a pop-up window like this:
+Then click <span class="highlight_txt">Review and launch</span> --> <span class="highlight_txt">Launch</span>. You should see a pop-up window like this:
 
 ![](./images-gwas/GWAS_General_KeyPair.png "AWS key pair")
 
 * Key pair for AWS:
 
-    - If this is your first time using AWS or creating a key pair: Choose the "Create a new key pair" option from the drop down menu. Under key pair name, type "amazon" and click "save". The default location for saving files on a Mac is the "Downloads" folder -- that's where your key pair can be found. **Next time you launch an instance, you can reuse the key pair you just generated.**
+    - If this is your first time using AWS or creating a key pair: Choose the <span class="highlight_txt">Create a new key pair</span> option from the drop down menu. Under key pair name, type "amazon" and click <span class="highlight_txt">save</span>. The default location for saving files on a Mac is the "Downloads" folder -- that's where your key pair can be found. **Next time you launch an instance, you can reuse the key pair you just generated.**
     - If you have a previously generated key pair, you can reuse it to launch an instance. For this tutorial, it may be helpful to rename the key pair "amazon.pem".
 
-* Then check the acknowledgement box and click "Launch Instance". You should see this:
+* Then check the acknowledgement box and click <span class="highlight_txt">Launch Instance</span> . You should see this:
 
 ![](./images-gwas/GWAS_General_launching.png "Launch status page")
 

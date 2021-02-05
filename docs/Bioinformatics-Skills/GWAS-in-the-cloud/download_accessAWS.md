@@ -62,7 +62,7 @@ OK, so you've created a [running computer on the cloud](aws_instance_setup.md). 
 
 The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:).
 
-* On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
+* On this webpage, select your instance of interest and click <span class="highlight_txt">Connect</span> on the top of the page.
 
 ![](./images-gwas/GWAS_General_publicDNS.png "Connect to instance button")
 
@@ -95,7 +95,7 @@ The information you will need lives on the [AWS page that lists your active inst
 ![](./images-gwas/GWAS_General_AWS_Connected.png "instance terminal")
 
 !!! Note
-    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting "Inspector". I've chosen the "Pro" theme.
+    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting <span class="highlight_txt">Inspector</span>. I've chosen the <span class="highlight_txt">Pro</span> theme.
 
 * You have now successfully logged in as user "ubuntu" to the machine "ec2-18-216-20-166.us-east-2.compute.amazonaws.com" using the "amazon.pem" authentication key.
 
