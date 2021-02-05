@@ -13,9 +13,6 @@ Let's set up a Free Tier AWS Ubuntu instance!
 !!! Important
     AWS periodically updates its user experience. We strive to keep our tutorials up to date with AWS's constantly changing user interface. However, these updates may take some time to become incorporated into our tutorial. **Please watch this space for updates**.
 
-    To follow along, please ensure that the "New EC2 User Experience" toggle located on the [EC2 instances list](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId) page is set to "off".
-    ![](./images-gwas/GWAS_General_AWS_Updates.png "AWS New EC2 Experience switch")
-
 ## Step 1: Create AWS account
 
 * Go to <http://aws.amazon.com/> and click on the "create an AWS account" button located on the top right. If you have an existing AWS account, click the "Sign in to an existing AWS account" option below the "continue" option on the sign-up page and log in to your account as a root user.
@@ -82,6 +79,6 @@ Then click "Review and launch" --> "Launch". You should see a pop-up window like
 ![](./images-gwas/GWAS_General_aws_instances_list.png "Instance dashboard")
 
 
-* This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't quality for Free Tier.
+* This page shows you a list of all your active instances. Users may launch as many instances as they wish. Just remember that every instance costs money if you don't qualify for Free Tier.
 
 You have now successfully launched your AWS instance! You will need some information from this amazon webpage to access your AWS computer, so do not close the page yet. If you happen to close the webpage on accident, click on this link: <https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceId>
