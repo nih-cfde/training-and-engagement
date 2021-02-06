@@ -95,13 +95,13 @@ There are several optional set up configurations.
 
 === "Configure Instance"
 
-    [Configure the instance to suit your requirements](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Configure_Instance.html). You can
+    [Configure the instance to suit your requirements](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Configure_Instance.html). You can:
 
     * change number of instances to launch
     * select the subnet to use
-    * modify the STOP and Terminate behavior
-    * control if you would like the instance to update with any patches when in use.
-    * request Spot instances
+    * modify Stop or Terminate behaviors
+    * control if you would like the instance to update with any patches when in use
+    * request Spot Instances
 
     !!! info "Spot Instance"
 
