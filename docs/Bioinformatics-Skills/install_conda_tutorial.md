@@ -94,10 +94,8 @@ Check the version of your new conda installation:
 Conda uses channels to look for available software installations. These are some good channels to set up:
 
 ```
+conda config --add channels defaults
 conda config --add channels bioconda
-```
-
-```
 conda config --add channels conda-forge
 ```
 
@@ -109,7 +107,7 @@ There is always a `(base)` conda environment. You can then create new environmen
 conda create -n <name of env>
 ```
 
-This takes a few minutes (you'll see the message "Solving environment"). Conda will then ask you to confirm the location of the new environment. Type `y`.
+This takes a few minutes (you'll see the message "Solving environment"). Conda will then ask you to confirm the location of the new environment. Type ++y++.
 
 More options to customize the environment are documented under the help page for this command: `conda create -h`.
 
@@ -143,7 +141,7 @@ The basic command for installing packages is:
 conda install -y <software name>
 ```
 
-It will ask if you want to install dependencies. Type `y`. This command will show a list of the software installed in this environment:
+It will ask if you want to install dependencies. Type ++y++. This command will show a list of the software installed in this environment:
 
 ```
 conda list -n <conda env name>
