@@ -2,6 +2,10 @@
 
 In this tutorial, you will learn how to create your own Google Cloud Platform (GCP) billing account using your Google account and personal credit card.
 
+!!! important "Chrome Web-browser"
+
+    Please use the [**Chrome web browser**](https://www.google.com/chrome/) for setting up and connecting to a GCP virtual machine. Some GCP features do not work on other web browsers.
+
 ## Step 1: Sign in to GCP
 
 - Open a Chrome web browser and go to [https://cloud.google.com/](https://cloud.google.com/)
@@ -16,34 +20,55 @@ In this tutorial, you will learn how to create your own Google Cloud Platform (G
 
 ## Step 2: Create a GCP billing account <a name="create-billing"></a>
 
-For new users, Google offers a free 3-month $300 trial account. While you still have to enter a valid credit card to set up the billing account, you will not be charged during the trial period, nor will you be automatically charged when it completes unless you turn on automatic billing.
-
-- Click on <span class="highlight_txt">Activate</span> to start setting up the billing account.
+- Click on <span class="highlight_txt">ACTIVATE</span> to start setting up the billing account.
 
 ![](./gcp_images/gcp_activatefreetrial.png "GCP activate free trial button")
 
-- This is a 2-step process. On the first page, you must agree to the Terms of Service, then click <span class="highlight_txt">Continue</span>. On the second page, you'll create your payments profile. Enter your address and billing information, then click <span class="highlight_txt">Start free trial</span>. A message will confirm that you set up the free trial - click <span class="highlight_txt">Got it</span>.
+This is a 2-step process:
 
+- On the first page, you must agree to the Terms of Service, then click <span class="highlight_txt">Continue</span>.
+
+- On the second page, you'll create your payments profile. Choose either business or individual account type, enter your address and billing information, then click <span class="highlight_txt">Start free trial</span>. For this tutorial, we are using an individual account type.
+
+- A message will confirm that you set up the free trial - click <span class="highlight_txt">Got it</span>.
+
+!!! info "Free Credits"
+
+    For new users, Google offers a free 3-month $300 trial account. While you still have to enter a valid credit card to set up the billing account, you will not be charged during the trial period, nor will you be automatically charged when the trial ends unless you turn on automatic billing.
 
 ## Step 3: Check billing account information
 
-- Your billing account is now set up! When you sign up for the GCP free trial, you should get an account confirmation email to the email address you used to sign in. To check the billing account, click on the three vertical lines to open the navigation menu and scroll down to <span class="highlight_txt">Billing</span>.
+When you sign up for the GCP free trial, you should get an account confirmation email to the email address you used to sign in.
+
+- To check the billing account, click on the three horizontal lines to open the navigation menu and scroll down to <span class="highlight_txt">Billing</span>.
 
 ![](./gcp_images/gcp_billingtab.png "GCP billing tab")
 
-On this page, select <span class="highlight_txt">Manage billing account</span>.
+- Select <span class="highlight_txt">MANAGE BILLING ACCOUNTS</span>
+
+![](./gcp_images/gcp_billingsetup.png "GCP billing setup")
+
+- Explore the **Billing** page
 
 ![](./gcp_images/gcp_billingaccountmember.png "GCP billing account information")
 
-a) That should take you to a new page where you can check the box next to your billing account - in the screenshot below, it is called "My Billing Account".
+a) Check the box next to your billing account to show member information on right-hand panel.
 
-b) The right-hand panel will show information about the members and their roles for your billing account. You can add members by clicking on <span class="highlight_txt">Add member</span>.
+b) You can add members by clicking on <span class="highlight_txt">ADD MEMBER</span>.
 
-c) There are many member and role options on the GCP. For example, there are several options for billing account member roles - read more from the [Google Cloud support documentation](https://cloud.google.com/billing/docs/how-to/billing-access). By default, as the owner of the billing account, you are designated the "Billing Account Administrator" role.
+c) By default, as the owner of the billing account, you are designated the **Billing Account Administrator** role. [Read more about the different member and role options on the GCP](https://cloud.google.com/billing/docs/how-to/billing-access).
 
-!!! note
+!!! note "Member Roles"
 
     You can add members with roles such as "Billing Account User" if, for example, you want others to have access to your GCP billing account, like team members or other platforms that use the Google cloud, such as the [Terra platform](https://app.terra.bio/).
+
+- Optional: you can rename your billing account by clicking on the current name, which takes you to a billing overview page.
+
+![](./gcp_images/gcp_billingoverview.png "GCP billing overview")
+
+- Click <span class="highlight_txt">Account management</span> tab on the left panel and subsequently click on the pencil icon to bring up a popup window to enter the new name.
+
+![](./gcp_images/gcp_billinrename.png "GCP billing account rename")
 
 Now that the billing account is set up, you can use GCP resources!
 

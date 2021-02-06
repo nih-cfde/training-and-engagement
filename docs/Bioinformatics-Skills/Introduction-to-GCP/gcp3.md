@@ -2,7 +2,10 @@
 
 You now have a custom configured VM! Let's test our new GCP virtual machine with a protein sequence BLAST search. This is a shortened version from the full [command-line BLAST tutorial](../Command-Line-BLAST/BLAST1.md), which ran the BLAST search on the Amazon AWS cloud platform. Check out the full tutorial for more details about the specific BLAST commands.
 
+Run the following steps from the Google Cloud Shell terminal.
+
 ## Step 1: Install BLAST
+
 ```
 sudo apt-get update && sudo apt-get -y install python ncbi-blast+
 ```
@@ -206,7 +209,7 @@ Buckets can be managed from the graphical user interface (GUI) section of the GC
 
 ## Step 8: Upload files
 
-Finally, you can upload files to the bucket to use in the VM. Click on <span class="highlight_txt">Upload Files</span>, choose file(s) to upload from your computer and click <span class="highlight_txt">Open</span>. You should now see them in the bucket file list. To demonstrate, we uploaded an empty text file called "testfile.txt".
+Finally, you can upload files to the bucket to use in the VM. Click on <span class="highlight_txt">Upload Files</span>, choose file(s) to upload from your computer and click <span class="highlight_txt">Open</span>. You should now see them in the bucket file list. To demonstrate, left-click on this link - ["testfile.txt"](./testfile.txt) - and save the text file to your computer. Then upload it to the bucket:
 
 ![](./gcp_images/gcp_storage3.png "Upload files")
 
