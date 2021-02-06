@@ -101,7 +101,7 @@ hide:
 
     ## Step 1: Locate private key
 
-    Find the private key file; it is the `.pem` file you downloaded when starting up the EC2 instance. We called it **amazon.pem**. It should be in your Downloads folder. In this lesson, we move it to the desktop and use that to refer in the path.
+    Find the private key file; it is the `.pem` file you downloaded when starting up the EC2 instance. We called it **amazon.pem**. It should be in your Downloads folder. In this lesson, we move it to the desktop for ease of access and compatibility with our lesson commands. 
 
     ## Step 2: Login to remote instance
 
