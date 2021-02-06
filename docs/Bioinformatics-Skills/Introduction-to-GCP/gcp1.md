@@ -4,7 +4,7 @@ In this tutorial, you will learn how to create your own Google Cloud Platform (G
 
 !!! important "Chrome Web-browser"
 
-    Ensure to run the tutorial on [Google Chrome](https://www.google.com/chrome/) web browser since some functions may otherwise not work.
+    Please use the [**Chrome web browser**](https://www.google.com/chrome/) for setting up and connecting to a GCP virtual machine. Some GCP features do not work on other web browsers.
 
 ## Step 1: Sign in to GCP
 
@@ -24,15 +24,17 @@ In this tutorial, you will learn how to create your own Google Cloud Platform (G
 
 ![](./gcp_images/gcp_activatefreetrial.png "GCP activate free trial button")
 
-- This is a 2-step process. On the first page, you must agree to the Terms of Service, then click <span class="highlight_txt">Continue</span>.
+This is a 2-step process:
 
-- On the second page, you'll create your payments profile. Choose either business or individual account type, enter your address and billing information, then click <span class="highlight_txt">Start free trial</span>.
+- On the first page, you must agree to the Terms of Service, then click <span class="highlight_txt">Continue</span>.
+
+- On the second page, you'll create your payments profile. Choose either business or individual account type, enter your address and billing information, then click <span class="highlight_txt">Start free trial</span>. For this tutorial, we are using an individual account type.
 
 - A message will confirm that you set up the free trial - click <span class="highlight_txt">Got it</span>.
 
 !!! info "Free Credits"
 
-    For new users, Google offers a free 3-month $300 trial account. While you still have to enter a valid credit card to set up the billing account, you will not be charged during the trial period, nor will you be automatically charged when it completes unless you turn on automatic billing.
+    For new users, Google offers a free 3-month $300 trial account. While you still have to enter a valid credit card to set up the billing account, you will not be charged during the trial period, nor will you be automatically charged when the trial ends unless you turn on automatic billing.
 
 ## Step 3: Check billing account information
 
@@ -42,7 +44,7 @@ When you sign up for the GCP free trial, you should get an account confirmation 
 
 ![](./gcp_images/gcp_billingtab.png "GCP billing tab")
 
-- Select <span class="highlight_txt">MANAGE BILLING ACCOUNTS</span>.
+- Select <span class="highlight_txt">MANAGE BILLING ACCOUNTS</span>
 
 ![](./gcp_images/gcp_billingsetup.png "GCP billing setup")
 
@@ -60,11 +62,11 @@ c) By default, as the owner of the billing account, you are designated the **Bil
 
     You can add members with roles such as "Billing Account User" if, for example, you want others to have access to your GCP billing account, like team members or other platforms that use the Google cloud, such as the [Terra platform](https://app.terra.bio/).
 
-- You can rename your billing account by clicking on the name which takes you to a overview page.
+- Optional: you can rename your billing account by clicking on the current name, which takes you to a billing overview page.
 
 ![](./gcp_images/gcp_billingoverview.png "GCP billing overview")
 
-- Click <span class="highlight_txt">Account management</span> tab on the right panel and subsequently click on the pencil icon to bring up a popup window to enter the new name.
+- Click <span class="highlight_txt">Account management</span> tab on the left panel and subsequently click on the pencil icon to bring up a popup window to enter the new name.
 
 ![](./gcp_images/gcp_billinrename.png "GCP billing account rename")
 

@@ -26,9 +26,9 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
          The "Location" entry can be left as "No organization". If a centralized billing account is set up, there would be options to set an "Organization" and "Location" with the G Suite organization name.)
 
-- The new project is now listed in the table, along with a project ID. Reload the page if the project ID is not immediately visible. **You'll need the project ID later to connect to a VM instance.**
+- The new project is now listed in the table, along with an auto-generated project ID.
 
-![](./gcp_images/gcp_projectid.png "Project ID")
+<!-- ![](./gcp_images/gcp_projectid.png "Project ID") -->
 
 !!! info " Project Quota"
 
@@ -40,7 +40,7 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ![](./gcp_images/gcp_vm.png "VM instances")
 
-- Click <span class="highlight_txt">Enable billing</span>. In the popup window select <span class="highlight_txt">SET ACCOUNT</span>.
+- The first time you create a VM, you'll need to click <span class="highlight_txt">Enable billing</span>. In the popup window select <span class="highlight_txt">SET ACCOUNT</span>.
 
 ![](./gcp_images/gcp_billingenable.png "Enable billing")
 
@@ -48,26 +48,30 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ![](./gcp_images/gcp_createvm.png "Create VM")
 
+!!! tip
+
+    If the create VM step is taking more than 5 minutes, try refreshing the web browser page.
+
 We will go over the different instance configuration options next:
 
 ![](./gcp_images/gcp_vmconfig1.png "VM configuration name and region")
 
 ### a. Name your VM
 
-* Type your VM name in the text box.
-* Names must be in lowercase letters or numbers.
-* Use hyphens `-` instead of spaces.
-* **You'll need the VM name to connect to it**.
+- Type your VM name in the text box.
+- Names must be in lowercase letters or numbers.
+- Use hyphens `-` instead of spaces.
+- **You'll need the VM name to connect to it**.
 
 ### b. Choose a Region
 
-* Select one of many regions available from the dropdown menu.
-* Preferable to select the region closest to your physical geographic region.
-* Zone is auto selected based on choice of region.
-* **You'll need the zone name to connect to the VM**.
-* In this tutorial, we selected the "us-west1 (Oregon)" region.
+- Select a region from the dropdown menu. In this tutorial, we selected the "us-west1 (Oregon)" region.
+- Zone is auto-selected based on choice of region.
+- **You'll need the zone name to connect to the VM**.
 
 !!! note "Machine regions"
+
+    It's often best to select the region closest to your physical geographic region, but region choice depends on other factors. For example, if you are downloading data that is stored at a data center in a different region from yours, it may be more expensive to move data between regions. In this case, you'd want to select the same region as the data center. Read more about [regions and zones](https://cloud.google.com/compute/docs/regions-zones?_ga=2.51208687.-79235869.1601574422).
 
     This tool can help to choose the region closest to you (<http://www.gcping.com>). You may need to refresh several times.
 
@@ -75,10 +79,10 @@ We will go over the different instance configuration options next:
 
 ![](./gcp_images/gcp_vmconfig2.png "VM configuration machine type")
 
-* For this tutorial, select Series **E2** and Machine type **`e2-micro`**.
-* This machine type is recommended for day-to-day low cost computing.
-* The estimated monthly cost for each machine type is shown on the top right side panel.
-* Depending on the tasks you will use the VM for, you may need to choose a machine with more CPUs and memory.
+- For this tutorial, select Series **E2** and Machine type **`e2-micro`**.
+- This machine type is recommended for day-to-day low cost computing.
+- The estimated monthly cost for each machine type is shown on the top right side panel.
+- Depending on the tasks you will use the VM for, you may need to choose a machine with more CPUs and memory.
 
 !!! note "Machine types"
 
@@ -88,11 +92,11 @@ We will go over the different instance configuration options next:
 
 ![](./gcp_images/gcp_vmconfig3.png "VM configuration boot disk")
 
-* Click on <span class="highlight_txt">Change</span>.
-* The default operating system is Debian, change it to **Ubuntu**.
-* Select version **Ubuntu 20.04 LTS**.
-* For this tutorial, we'll leave the [persistent disk storage](https://cloud.google.com/persistent-disk) as the default 10Gb.
-* You can increase the storage amount based on task requirements.
+- Click on <span class="highlight_txt">Change</span>.
+- The default operating system is Debian, change it to **Ubuntu**.
+- Select version **Ubuntu 20.04 LTS**.
+- For this tutorial, we'll leave the [persistent disk storage](https://cloud.google.com/persistent-disk) as the default 10Gb. You can increase the storage amount based on task requirements.
+- Click <span class="highlight_txt">Select</span>
 
 ![](./gcp_images/gcp_bootdisk.png "Boot disk")
 
@@ -104,21 +108,21 @@ We will go over the different instance configuration options next:
 
 ![](./gcp_images/gcp_vmconfig4.png "VM configure firewall")
 
-* Check the box by **Allow HTTP traffic** which opens port 80 (HTTP) and allows you to access the virtual machine.
+- Check the box by **Allow HTTP traffic** which opens port 80 (HTTP) and allows you to access the virtual machine.
 
 !!! important
 
     If the Firewall settings are not enabled, you may get an error message when trying to connect to the VM:
      `Insufficient Permission: Request had insufficient authentication scopes`
 
-* Click <span class="highlight_txt">Create</span> to initiate the VM. This step may take a few seconds to complete.
+- Click <span class="highlight_txt">Create</span> to initiate the VM. This step may take a few seconds to complete.
 
 ### f. VM states
 
 ![](./gcp_images/gcp_vm_runoptions2.png "VM controls")
 
-* Successful VM creation will be indicated by a green check mark next to the VM name.
-* The icons on the VM instances bar allow for control of VM states.
+- Successful VM creation will be indicated by a green check mark next to the VM name.
+- The icons on the VM instances bar allow for control of VM states:
 
 === "Refresh"
 
@@ -146,11 +150,7 @@ We will go over the different instance configuration options next:
 
 !!! tip
 
-    - If you need to pause during this tutorial and want to save your VM instance and any work you did in the instance (e.g., files downloaded), <span class="highlight_txt">Stop</span> the VM. You'll be able to <span class="highlight_txt">Start/Resume</span> to start from your last session.
-
-    - If using the Google Cloud Shell, click <span class="highlight_txt">Reconnect</span> in popup banner which appears on connection timeout.
-
-    ![](./gcp_images/gcp_reconnect.png "Reconnect instance")
+    If you need to pause during this tutorial and want to save your VM instance and any work you did in the instance (e.g., files downloaded), click on the <span class="highlight_txt">Stop</span> icon to stop the VM. You'll be able to <span class="highlight_txt">Start/Resume</span> to start from your last session.
 
 ## Step 3: Connect to your VM
 
@@ -174,7 +174,7 @@ We will go over the different instance configuration options next:
 
 ### c. Connect to VM
 
-- Use the `gcloud compute` command to connect to your virtual machine. (`gcloud` is a tool from the Google Cloud SDK toolkit).
+- Use the `gcloud compute` command to connect to your virtual machine (`gcloud` is a tool from the Google Cloud SDK toolkit). If you get an error, you may need to [configure `gcloud`](#config_gcloud).
 - You will need your **project ID, zone, and instance name**.
 - In the example command below, the project ID is `fleet-space-303706`, the zone is `us-west1-b`, and the instance name is `test-vm`.
 - The `ssh` flag indicates we are accessing the VM with [Secure Shell](https://www.ssh.com/ssh/) protocol, which we'll set up below.
@@ -214,7 +214,14 @@ Follow the prompts in the terminal:
 - After the VM is added as a known host you will be prompted to enter the paraphrase if one was set: "Enter passphrase for key"
 - On successful login, your command prompt in the terminal should switch to </br>**`<user name>@<VM name>:~$`**. You're now in the VM space!
 
-### f. Configure Google Cloud SDK (Optional)
+!!! tip
+
+    If the Google Cloud Shell times out, a popup banner will appear where you can click <span class="highlight_txt">Reconnect</span>.
+
+    ![](./gcp_images/gcp_reconnect.png "Reconnect instance")
+
+
+### f. Configure Google Cloud SDK (Optional) <a name='config_gcloud'></a>
 
 To connect to the GCP VM from the command line of your local machine, you need to setup [Google Cloud Software Development Kit (SDK)](https://cloud.google.com/sdk). The Cloud SDK provides a number of important tools like `gcloud` that are used for accessing GCP services.
 
