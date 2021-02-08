@@ -3,7 +3,7 @@ layout: page
 title: An Introduction to RNAseq
 ---
 
-RNAseq uses the capability of next generation sequencing techniques to explore and/or quantify expression. Information about the genes stored in DNA is used to encode proteins which are the functional products necessary for cell function. Although all cells contain the same DNA, the gene expression varies widely across cell types and cell states. Different biological conditions/disorders as well as mutations can influence the on/off state of genes as well as how much certain genes are turned on or off.
+RNAseq uses the capability of next generation sequencing techniques to explore and/or quantify expression. The information stored in the DNA is organized into genes which are used to encode proteins, the functional products necessary for cell function. Although all cells contain the same DNA, the gene expression varies widely across cell types and cell states. Different biological conditions/disorders as well as mutations can influence the on/off state of genes as well as how much certain genes are turned on or off.
 
 !!! info "DNA to Protein"
 
@@ -15,8 +15,8 @@ A typical RNA-seq workflow is highlighted in the schematic diagram below. The or
 
 ![RNAseq workflow](../rna-seq-images/rna-seq-workflow.jpeg "RNAseq workflow")
 
-The first steps involves extraction, purification and quality checks of RNA from the biological samples, followed by library preparation to convert the RNA to cDNA (cloned DNA) fragments which are then sequenced.
-The generated raw reads are quality checked and aligned against either a reference genome/transcriptome (if available) or used for *de novo* assembly. The expression abundance estimates are generated and if done at transcript level, the values are summarized for gene-level analysis. The expression count data is used for statistical modeling and testing to identify DE genes which can be examined further via visualization and downstream functional analysis.
+The first steps involves extraction, purification and quality checks of RNA from the biological samples, followed by library preparation to convert the RNA to cDNA (complimentary DNA) fragments which are then sequenced.
+The generated raw reads are quality checked and aligned against either a reference genome/transcriptome (if available) or used for *de novo* assembly. The expression abundance estimates are generated and if done at transcript level, the values are summarized for gene-level analysis. The expression count data is used for statistical modeling and testing to identify differentially expressed  genes which can be examined further via visualization and downstream functional analysis.
 
 !!! info "RNAseq Resources"
 
