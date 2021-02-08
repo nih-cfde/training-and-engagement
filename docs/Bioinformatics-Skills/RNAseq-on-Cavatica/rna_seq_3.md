@@ -16,11 +16,13 @@ There are data with different access levels hosted on the KF portal including op
 
 !!! info "KFDRC RNA-Seq workflow"
 
-    [Kids First RNA-seq pipeline](https://github.com/kids-first/kf-rnaseq-workflow) uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files as input and generates multiple outputs including the Kallisto transcript quantification files. The KFDRC makes all the output files of this pipeline available on the portal as open access data since it is computationally taxing to run this workflow on multiple files.
+    [Kids First RNA-seq pipeline](https://github.com/kids-first/kf-rnaseq-workflow) uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files (controlled access) as input and generates multiple outputs including the Kallisto transcript quantification files. All the output files of this pipeline are available on the portal as open access data. In addition to the restricted data access issue, it is computationally taxing to run this workflow on multiple files.
 
 ## Step 1: Filter for open access data
 
-Login to the KF portal and select the <span class="highlight_txt">File Repository</span> tab and select the <span class="highlight_txt">Browse All</span> option for the Filter.
+* Login to the KF portal
+* Select the <span class="highlight_txt">File Repository</span> tab
+* Select the <span class="highlight_txt">Browse All</span> option for the Filter.
 
 ![File Repository](../rna-seq-images/1_KFDRC.png "File Repository")
 
@@ -28,7 +30,9 @@ Login to the KF portal and select the <span class="highlight_txt">File Repositor
 
     At the time of the tutorial (Jan 2021), the portal contained a total of 88,728 files. Since new datasets are constantly uploaded to the KF portal, the query numbers may change when run in the future.
 
-Select the <span class="highlight_txt">Access</span> filter listed under <span class="highlight_txt">FILE</span> field and select open value and click <span class="highlight_txt">View Results</span> to update selection. This results in 18,162 files.
+* Select the <span class="highlight_txt">Access</span> filter listed under <span class="highlight_txt">FILE</span> field
+* Select <span class="highlight_txt">Open</span> value
+* Click <span class="highlight_txt">View Results</span> to update selection. This results in 18,162 files.
 
 ![Open access filter](../rna-seq-images/2_KFDRC.png "Open access filter")
 
@@ -71,9 +75,11 @@ This results in 98 files.
 
 !!! important "Important"
 
-    It is crucial to ensure the Cavatica integrations are enabled to allow for file transfers. Find more details in our [Push to Cavatica lesson](../Kids-First/KF_7_PushToCavatica.md).
+    It is crucial to ensure the Cavatica integrations are enabled to allow for file transfers. Find more details in our [Push to Cavatica lesson](../Kids-First/KF_7_PushToCavatica.md). You **do not** have to have the Data Repository Integrations set up to continue with this lesson.
 
-Click on the <span class="highlight_txt">ANALYZE IN CAVATICA</span>. Select <span class="highlight_txt">CREATE A PROJECT</span> option and provide appropriate name for your folder. In this tutorial, `cancer-dge` was chosen as the project name. Use the <span class="highlight_txt">SAVE</span> option to create the project.
+* Click on the <span class="highlight_txt">ANALYZE IN CAVATICA</span>.
+* Select <span class="highlight_txt">CREATE A PROJECT</span> option and provide appropriate name for your folder. In this tutorial, `cancer-dge` was chosen as the project name.
+* Use the <span class="highlight_txt">SAVE</span> option to create the project.
 
 ![Create project on Cavatica](../rna-seq-images/6_KFDRC.png "Create project on Cavatica")
 
@@ -85,6 +91,14 @@ Successful copying of the files to the project folder will result in a pop up bo
 
 ![Successful copy to Cavatica](../rna-seq-images/8_KFDRC.png "Successful copy to Cavatica")
 
+!!! info "Query link"
+
+    The KF portal enables sharing of the query with the unique filter combinations using the share option.
+
+    ![Sharing query](../rna-seq-images/9_KFDRC.png "Sharing query")
+
+    We are providing the query as a short URL. Login to your KF account and [click on the query link](https://p.kfdrc.org/s/6ic) to obtain the selected cohort.  
+
 In our next lesson, we will explore the newly created project folder and files on Cavatica platform!
 
 ## Media resources
@@ -92,11 +106,3 @@ In our next lesson, we will explore the newly created project folder and files o
 A video walkthrough of the cancer cohort selection on Kids First portal:
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_1568tbw7&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=79&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_mx53rd98" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
-
-!!! info "Query link"
-
-    The KF portal enables sharing of the query with the unique filter combinations using the share option.
-
-    ![Sharing query](../rna-seq-images/9_KFDRC.png "Sharing query")
-
-    We are providing the [query as a short URL](https://p.kfdrc.org/s/6ic). Login to your KF account and click on the query link to obtain the selected cohort.  
