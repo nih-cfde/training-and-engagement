@@ -24,6 +24,10 @@ Cavatica offers DESeq2 as a stand alone public app which is a [Common Workflow L
 
 ## Step 1: Search & copy DESeq2 app
 
+!!! tip "Vidlets"
+
+    We recommend watching the vidlets first before utilizing the step wise written instructions to follow along.
+     
 The first step is to obtain a copy of the DESeq2 app in the project folder.
 
   * Click the <span class="highlight_txt">Apps</span> tab which is currently empty and click <span class="highlight_txt">Add Apps</span> button which opens the list of Public Apps.
