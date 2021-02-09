@@ -8,7 +8,6 @@ We need a new VM for this example; you can use the same project. Follow the step
 
 - choose a Region that begins with "us-" because the NCBI SRA data is located in the United States (any is fine, i.e., `us-west1 (Oregon)`)
 - select an **`e2-medium`** instance. We need a machine with a bit more memory than the `e2-micro` we used in the previous example.
-- for this example, do *not* check either box for the Firewall configuration.
 
 [Connect](./gcp2.md) to the VM with the Google Cloud Shell (authorise shell and set up SSH keys if necessary).
 
