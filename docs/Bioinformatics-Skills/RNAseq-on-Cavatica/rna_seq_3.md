@@ -6,13 +6,13 @@ title: Selecting Kids First Cancer Cohort
 Selecting Kids First Cancer Cohort
 ====================================
 
-The [Gabriella Miller Kids First Pediatric Data Portal (KF portal)](https://kidsfirstdrc.org) hosts datasets at the intersection of childhood development and cancer from over 16,000 samples with constant addition of new data.
+The [Gabriella Miller Kids First Pediatric Data Portal (KF portal)](https://kidsfirstdrc.org) hosts datasets at the intersection of childhood development and cancer from over 16,000 samples with the constant addition of new data.
 
 !!! tip "Kids First Data Portal"
 
-    Check our lessons on Kids First to learn more about the [different Data Portal features](../Kids-First/Exploring-Data-in-the-KF-Portal/KF_5_Explore.md) and [building simple to complex queries](../Kids-First/Advanced-KF-Portal-Queries/KF_9_AdvancedQuery.md).
+    Check out our lessons on Kids First to learn more about the [different Data Portal features](../Kids-First/Exploring-Data-in-the-KF-Portal/KF_5_Explore.md) and [building simple to complex queries](../Kids-First/Advanced-KF-Portal-Queries/KF_9_AdvancedQuery.md).
 
-There are data with different access levels hosted on the KF portal including open (processed files, reports, plots etc) and controlled (raw sequencing files, histological images etc). For this tutorial, we will use **open access pre-processed files** generated using [Kallisto (v0.43.1)](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1), which uses pseudoalignments to quantify transcript abundance from raw data.
+There are data with different access levels hosted on the KF portal including open (processed files, reports, plots, etc) and controlled (raw sequencing files, histological images, etc). For this tutorial, we will use **open access pre-processed files** generated using [Kallisto (v0.43.1)](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1), which uses pseudoalignments to quantify transcript abundance from raw data.
 
 !!! info "KFDRC RNA-Seq workflow"
 
@@ -50,7 +50,7 @@ This results in 1,477 files.
 
 ## Step 3: Select cancer type
 
-Switch to <span class="highlight_txt">Clinical Filter</span> tab and apply:
+Switch to the <span class="highlight_txt">Clinical Filter</span> tab and apply:
 
 * **Diagnosis (Source Text)** --> Medulloblastoma and Ependymoma.
 
@@ -62,7 +62,7 @@ This filters the number of files to 235.
 
 To reduce possible sources of variation from sex and race, we subset further to include data from only white male patients.
 
-Under <span class="highlight_txt">Clinical Filters</span> tab select:
+Under the <span class="highlight_txt">Clinical Filters</span> tab select:
 
 * **Gender** --> Male
 * **Race** --> White
@@ -77,17 +77,17 @@ This results in 98 files.
 
     It is crucial to ensure the Cavatica integrations are enabled to allow for file transfers. Find more details in our [Push to Cavatica lesson](../Kids-First/KF_7_PushToCavatica.md). You **do not** have to have the Data Repository Integrations set up to continue with this lesson.
 
-* Click on the <span class="highlight_txt">ANALYZE IN CAVATICA</span>.
-* Select <span class="highlight_txt">CREATE A PROJECT</span> option and provide appropriate name for your folder. In this tutorial, `cancer-dge` was chosen as the project name.
+* Click on the <span class="highlight_txt">ANALYZE IN CAVATICA</span> button.
+* Select the <span class="highlight_txt">CREATE A PROJECT</span> option and provide an appropriate name for your folder. In this tutorial, `cancer-dge` was chosen as the project name.
 * Use the <span class="highlight_txt">SAVE</span> option to create the project.
 
 ![Create project on Cavatica](../rna-seq-images/6_KFDRC.png "Create project on Cavatica")
 
-Following the project creation, the option will update to enable copy of the selected files to Cavatica.
+Following project creation, the option will update to enable copying of the selected files to Cavatica.
 
 ![Copy files to Cavatica](../rna-seq-images/7_KFDRC.png "Copy files to Cavatica")
 
-Successful copying of the files to the project folder will result in a pop up box summarizing the details along with a link to view the project folder on Cavatica.
+Successful copying of the files to the project folder will result in a pop-up box summarizing the details along with a link to view the project folder on Cavatica.
 
 ![Successful copy to Cavatica](../rna-seq-images/8_KFDRC.png "Successful copy to Cavatica")
 
@@ -99,7 +99,7 @@ Successful copying of the files to the project folder will result in a pop up bo
 
     We are providing the query as a short URL. Login to your KF account and [click on the query link](https://p.kfdrc.org/s/6ic) to obtain the selected cohort.  
 
-In our next lesson, we will explore the newly created project folder and files on Cavatica platform!
+In our next lesson, we will explore the newly created project folder and files on the Cavatica platform!
 
 ## Media resources
 
