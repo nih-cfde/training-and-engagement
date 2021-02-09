@@ -2,13 +2,6 @@
 layout: page
 title: Setup DESeq2 Public App
 ---
-<style>
-.highlight_txt {
-  color: #9f0bde;
-  background-color: #ededed;
-  padding: .25em;
-}
-</style>
 
 [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is a Bioconductor package used to perform DGE analysis by fitting [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/) to the count data. It requires counts table as input along with a phenotype file describing the experimental groups.
 
@@ -34,21 +27,27 @@ Cavatica offers DESeq2 as a stand alone public app which is a [Common Workflow L
 The first step is to obtain a copy of the DESeq2 app in the project folder.
 
   * Click the <span class="highlight_txt">Apps</span> tab which is currently empty and click <span class="highlight_txt">Add Apps</span> button which opens the list of Public Apps.
-  * You can find the <span class="highlight_txt">DESeq2</span> app by typing any one of these keywords including "Differential Expression", "DGE", "DESeq", "RNASeq" in search bar.
-  * In the <span class="highlight_txt">DESeq2</span> app box select the <span class="highlight_txt">Other versions</span> drop down box and click on the version 1.18.1. This open the app in a new tab where you can click on the `...` on the right hand corner and click <span class="highlight_txt">Copy</span>.
-  * Navigate to your project Dashboard using <span class="highlight_txt">Projects</span> drop down menu and view the app under the <span class="highlight_txt">Apps</span> tab.
+  * You can find the <span class="highlight_txt">DESeq2</span> app by typing "DESEQ" in the search bar.
+  * In the <span class="highlight_txt">DESeq2</span> app box select the <span class="highlight_txt">Other versions</span> drop down box and click on the version 1.18.1.
+  * This opens the app in a new tab where you can click on the **`...`** on the right hand corner and click <span class="highlight_txt">Copy</span>.
+  * Select the project folder `cancer-dge` and click <span class="highlight_txt">Copy</span>.
+  * Navigate to your project Dashboard using <span class="highlight_txt">Projects</span> drop down menu and view the app under the <span class="highlight_txt">Apps</span> tab. You can also click the project link in the popup box that appears on top of the page.
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_r4t7no30&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=51&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_cr6jqtun" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 
-## Step 2: Edit DESeq2 app
+## Step 2: Edit DESeq2 app (Optional)
+
+!!! important "DESeq2 App Version"
+
+    The IgnoreTxVersion bug was fixed in **Revision 17** of the DESeq2 1.18.1 app and will be the default selection when you copy the app. Follow the steps in this section if using older Revision versions of DESeq2 1.18.1 app.
 
 The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectified by editing the app using the tool editor.
 
 * To do so, click on <span class="highlight_txt">DESeq2</span> in the <span class="highlight_txt">Apps</span> tab. This opens the app page.
-* Click the <span class="highlight_txt">Edit</span> button on right hand upper corner which prompts a popup box with a warning message about losing update notifications for the original app. Click <span class="highlight_txt">Proceed anyway</span>.
+* Click the <span class="highlight_txt">Edit</span> button on right hand upper corner which prompts a popup box with a warning message about losing update notifications for the original app. Click <span class="highlight_txt">Proceed to editing</span>.
 * In the DESeq2's tool editor, find the <span class="highlight_txt">IgnoreTxVersion</span> input port and click on it.
-* In the Value transform field of the port, enter the following code and click <span class="highlight_txt">Save</span>.
+* In the Value transform field of the port, click on **`</>`**, enter the following code and click <span class="highlight_txt">Save</span>.
 
     ```
     {
@@ -69,12 +68,15 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
 
 ## Step 3: Obtain reference gene annotation
 
-A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1) files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html) another Bioconductor package, is utilized to obtain the gene level summary.  
+A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1) files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html), another Bioconductor package, is utilized to obtain the gene level summary.  
 
-* Edit the metadata columns to show Reference genome under <span class="highlight_txt">Files</span> tab. All the files used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
+* You can edit the metadata columns to show Reference genome under <span class="highlight_txt">Files</span> tab. All the files used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
 * Click on <span class="highlight_txt">Data</span> drop down menu and click on <span class="highlight_txt">Public Reference Files</span>.
-* This takes you to a new page for <span class="highlight_txt">Public Files</span>. Click on <span class="highlight_txt">Type: All</span> button to bring a drop down list and select **GTF**.
-* From the results, select the ENSEMBL Release 84 version of the Human gene annotation in GTF format. Click on <span class="highlight_txt">Copy</span> and select the project folder with the cancer files. Select <span class="highlight_txt">Copy</span> in the popup window.
+* This takes you to a new page for <span class="highlight_txt">Public Files</span>.
+* Click on <span class="highlight_txt">Type: All</span> button to bring a drop down list and select **GTF**.
+* From the results, select the ENSEMBL Release 84 version of the Human gene annotation in GTF format - "Homo_sapiens.GRCh38.84.gtf".
+* Click on <span class="highlight_txt">Copy</span> and select the project folder with the cancer files.
+* Select <span class="highlight_txt">Copy</span> in the popup window.
 * A notification menu will highlight the successful copy of the file and clicking on the project folder name will take you to the <span class="highlight_txt">Files</span> tab in folder.
 * Check for the reference file using the <span class="highlight_txt">Type: All</span> button and select **GTF**.
 
