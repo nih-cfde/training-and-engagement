@@ -133,7 +133,9 @@ The GCP uses Google Storage buckets as file repositories. We can copy files from
 
 Buckets can be managed from the graphical user interface (GUI) section of the GCP console or on the command line. We will create a bucket and move files on command line and then check them on the GUI. To ensure secure transfer of data to/from the cloud, we will use the `gsutil` tool.
 
-- Make a bucket by using the `gsutil mb` command. Google bucket paths always begin with "gs://". You must enter a unique name for your bucket (do not use spaces in the name).
+- Make a bucket by using the `gsutil mb` command. Google bucket paths always begin with "gs://". You must enter a unique name for your bucket (do not use spaces in the name). Follow along with the video and written steps below.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_49bxj1zd&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_l41h6f9o" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 === "Input"
 
@@ -209,7 +211,11 @@ Buckets can be managed from the graphical user interface (GUI) section of the GC
 
 ## Step 8: Upload files
 
-Finally, you can upload files to the bucket to use in the VM. Click on <span class="highlight_txt">Upload Files</span>, choose file(s) to upload from your computer and click <span class="highlight_txt">Open</span>. You should now see them in the bucket file list. To demonstrate, left-click on this link - ["testfile.txt"](./testfile.txt) - and save the text file to your computer. Then upload it to the bucket:
+Finally, you can upload files to the bucket to use in the VM. Follow along with the video and written steps below.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_vez8n4f8&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_52qen2ez" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+Click on <span class="highlight_txt">Upload Files</span>, choose file(s) to upload from your computer and click <span class="highlight_txt">Open</span> or drag and drop a file (shown in video). You should now see them in the bucket file list. To demonstrate, right-click or ++ctrl++ click on this link - ["testfile.txt"](./testfile.txt) - and save the text file to your computer. Then upload it to the bucket:
 
 ![](./gcp_images/gcp_storage3.png "Upload files")
 
@@ -238,7 +244,7 @@ Back in the VM terminal, use the `gsutil cp` command again to copy the file to t
 === "Expected Output"
 
     ```
-    Copying gs://my-bucket-blastresults/testfile.txt...
+    Copying gs://forblast/testfile.txt...
     / [1 files][    4.0 B/    4.0 B]
     Operation completed over 1 objects/4.0 B.
     ```
