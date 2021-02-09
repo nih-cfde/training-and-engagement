@@ -47,7 +47,7 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
 * To do so, click on <span class="highlight_txt">DESeq2</span> in the <span class="highlight_txt">Apps</span> tab. This opens the app page.
 * Click the <span class="highlight_txt">Edit</span> button on right hand upper corner which prompts a popup box with a warning message about losing update notifications for the original app. Click <span class="highlight_txt">Proceed to editing</span>.
 * In the DESeq2's tool editor, find the <span class="highlight_txt">IgnoreTxVersion</span> input port and click on it.
-* In the Value transform field of the port, click on **`</>`**, enter the following code and click <span class="highlight_txt">Save</span>.
+* In the Value transform field of the port, click on **&lt;/&gt;**, enter the following code and click <span class="highlight_txt">Save</span>.
 
     ```
     {
