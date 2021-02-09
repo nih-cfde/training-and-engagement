@@ -65,7 +65,7 @@ If you chose to set up two-factor authentication with a phone app, open the app 
 
 You can test by logging out of Github and logging back in - the phone app should send you a six-digit code to enter as part of login.
 
-### Step 3a: Generate a PAT
+### Step 3a: Generate a PAT <a name="generatePAT"></a>
 
 Navigate to <span class="highlight_txt">Developer settings</span> located on the left panel of Account settings.
 
@@ -89,7 +89,7 @@ Scopes enable setting permissions for user access to the various functionality o
 
     - generating a new PAT key with the updated repo scopes
     - delete the GitHub credentials in keychain (on MacOS) or in Git Credential manager (on Windows)
-    - delete and update the git credentials (Step 7)
+    - delete and update the git credentials ([Step 3b](#updatekeychain))
 
     Alternatively, you can use the [**Git Credential Manager Core**](https://github.com/microsoft/Git-Credential-Manager-Core) which is a cross platform git credential helper which will request the correct scopes.
 
@@ -103,9 +103,9 @@ The token will look like a string of letters and numbers and appear in the green
 
 ![](./images-github-auth/5-personal-access-token.png "new token")
 
-### Step 3b: Update keychain with PAT
+### Step 3b: Update keychain with PAT <a name="updatekeychain"></a>
 
-If you have saved your Github password with a password manager (e.g., `osxkeychain` on MacOS) to work on Github repositories remotely, it needs to be updated to the PAT we generated.
+If you have saved your Github password with a password manager (e.g., `osxkeychain` on MacOS) to work on Github repositories remotely, it needs to be updated to the PAT we generated. If your Github password is not managed by a password manager, continue to [Step 3c](#enterPAT).
 
 !!! note
 
@@ -134,7 +134,9 @@ host=github.com
 protocol=https
 ```
 
-The next time you `git push` changes from your local computer to a remote Github repository, enter your user name and the PAT key from Step 6 as the password.
+### Step 3c: Enter PAT as password <a name="enterPAT"></a>
+
+The next time you `git push` changes from your local computer to a remote Github repository, enter your user name and the PAT key from [Step 3a](#generatePAT) as the password.
 
 !!! tip
 
