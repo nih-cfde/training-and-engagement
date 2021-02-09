@@ -148,7 +148,16 @@ Take a look at the file!
 
 ## Step 5: Exit VM
 
-To exit the VM, type "exit". Type "exit" again if a message says there are unfinished jobs, but you know nothing is running and you are done working in the shell. This brings you back to the Google Cloud Shell terminal. Type "exit" one more time to completely close the shell panel. Note that closing the VM does not stop the instance!
+To exit the VM:
+
+- type "exit" to logout
+- type "exit" to close the VM connection
+
+This brings you back to the Google Cloud Shell terminal. Type "exit" one more time to completely close the shell panel.
+
+!!! tip
+
+    Closing the VM does not stop the instance!
 
 ## Step 6: Stop or delete the instance
 

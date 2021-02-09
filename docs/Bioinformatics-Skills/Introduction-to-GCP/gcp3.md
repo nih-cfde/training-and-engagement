@@ -217,6 +217,7 @@ Back in the VM terminal, use the `gsutil cp` command again to copy the file to t
 
 === "Input"
 
+    Usage:
     ```
     # for 1 file
     gsutil cp $BUCKET/<file name> <location to copy file to>
@@ -227,8 +228,9 @@ Back in the VM terminal, use the `gsutil cp` command again to copy the file to t
     gsutil cp -r $BUCKET/<folder name>/* <location to copy files to>
     ```
 
-    For this example, we copy the "testfile.txt" file from the Google bucket to the current directory location we're in at the terminal, which is represented by "./":
+    Example:
 
+    - We copy the "testfile.txt" file from the Google bucket to the current directory location we're in at the terminal, which is represented by "./".
     ```
     gsutil cp $BUCKET/testfile.txt ./
     ```
@@ -257,7 +259,12 @@ Back in the VM terminal, use the `gsutil cp` command again to copy the file to t
 
 ## Step 9: Exit VM
 
-To exit the VM, type "exit". Type "exit" again if a message says there are unfinished jobs, but you know nothing is running and you are done working in the shell. This brings you back to the Google Cloud Shell terminal. Type "exit" one more time to completely close the shell panel.
+To exit the VM:
+
+- type "exit" to logout
+- type "exit" to close the VM connection
+
+This brings you back to the Google Cloud Shell terminal. Type "exit" one more time to completely close the shell panel.
 
 !!! tip
 

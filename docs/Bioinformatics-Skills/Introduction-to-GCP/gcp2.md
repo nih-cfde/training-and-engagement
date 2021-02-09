@@ -22,17 +22,15 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
 ![](./gcp_images/gcp_createproject.png "Create Project")
 
-!!! note "Location"
-
-         The "Location" entry can be left as "No organization". If a centralized billing account is set up, there would be options to set an "Organization" and "Location" with the G Suite organization name.)
-
-- The new project is now listed in the table, along with an auto-generated project ID.
-
-<!-- ![](./gcp_images/gcp_projectid.png "Project ID") -->
-
-!!! info " Project Quota"
+!!! info
 
     There is a quota for number of projects allowed per billing account. For the free trial account it is set to 12 but can be increased by submitting a request. [Learn more about project quota](https://support.google.com/cloud/answer/6330231).
+
+    The "Location" entry can be left as "No organization". If a centralized billing account is set up, there would be options to set an "Organization" and "Location" with the G Suite organization name.)
+
+- The new project is now listed in the table, along with an auto-generated project ID. Check the box next to the project name to select it.
+
+![](./gcp_images/gcp_projectid.png "Project ID")
 
 ## Step 2: Configure custom VM
 
@@ -52,7 +50,10 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 
     If the create VM step is taking more than 5 minutes, try refreshing the web browser page.
 
-We will go over the different instance configuration options next:
+
+Follow along with the video or written steps below to set up instance configuration options:
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_w0jxtw70&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_zftwi3ob" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ![](./gcp_images/gcp_vmconfig1.png "VM configuration name and region")
 
@@ -104,20 +105,9 @@ We will go over the different instance configuration options next:
 
     This type of block storage allows more flexibility for computing - for example, it can be resized or accessed even after a GCP VM instance is in use or deleted. Here's a quick GCP [youtube video](https://www.youtube.com/watch?v=zovhVfou-DI&vl=en) that highlights Google's persistent disk storage features.
 
-### e. Firewall setting
-
-![](./gcp_images/gcp_vmconfig4.png "VM configure firewall")
-
-- Check the box by **Allow HTTP traffic** which opens port 80 (HTTP) and allows you to access the virtual machine.
-
-!!! important
-
-    If the Firewall settings are not enabled, you may get an error message when trying to connect to the VM:
-     `Insufficient Permission: Request had insufficient authentication scopes`
-
 - Click <span class="highlight_txt">Create</span> to initiate the VM. This step may take a few seconds to complete.
 
-### f. VM states
+### e. VM states
 
 ![](./gcp_images/gcp_vm_runoptions2.png "VM controls")
 
@@ -176,6 +166,9 @@ We will go over the different instance configuration options next:
 
 - Use the `gcloud compute` command to connect to your virtual machine (`gcloud` is a tool from the Google Cloud SDK toolkit). If you get an error, you may need to [configure `gcloud`](#config_gcloud).
 - You will need your **project ID, zone, and instance name**.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_7ro67u8e&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_1z7jzx8c" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
 - In the example command below, the project ID is `fleet-space-303706`, the zone is `us-west1-b`, and the instance name is `test-vm`.
 - The `ssh` flag indicates we are accessing the VM with [Secure Shell](https://www.ssh.com/ssh/) protocol, which we'll set up below.
 - Remember to **replace these values** to run the command for your virtual machine:
@@ -193,6 +186,25 @@ We will go over the different instance configuration options next:
     gcloud compute --project "fleet-space-303706" ssh --zone us-west1-b test-vm
     ```
 
+#### Configure Google Cloud SDK <a name='config_gcloud'></a>
+
+To connect to the GCP VM from the command line of the Google Cloud Shell or your local machine, you need to setup [Google Cloud Software Development Kit (SDK)](https://cloud.google.com/sdk). The Cloud SDK provides a number of important tools like `gcloud` that are used for accessing GCP services.
+
+[Follow the instructions](https://cloud.google.com/sdk/docs/quickstart) to download the appropriate SDK based on your Operating System. Then set up authorization:
+
+- In the terminal/command line, enter:
+
+```
+gcloud auth login
+```
+
+![](./gcp_images/gcp_authorise_shell2.png "enter verification code")
+
+- Click on the Google link. A new browser tab will open.
+- Log in to the Google account you used to set up the GCP console.
+- Click <span class="highlight_txt">Allow</span> to allow Google Cloud SDK to access your Google account.
+- The next page will provide a verification code. Copy/paste the code back in the terminal next to "Enter verification code:".
+
 ### d. Authorize Cloud Shell
 
 - The first time you open the shell to access a VM, you will need to authorize the cloud shell.
@@ -202,7 +214,7 @@ We will go over the different instance configuration options next:
 
 ### e. Set up SSH keys
 
-Next, set up SSH public/private keys. This step provides an extra layer of security to protect access to your instance.
+Next, set up SSH public/private keys (first time only). This step provides an extra layer of security to protect access to your instance.
 
 ![](./gcp_images/gcp_shell2.png "Setup ssh")
 
@@ -219,25 +231,5 @@ Follow the prompts in the terminal:
     If the Google Cloud Shell times out, a popup banner will appear where you can click <span class="highlight_txt">Reconnect</span>.
 
     ![](./gcp_images/gcp_reconnect.png "Reconnect instance")
-
-
-### f. Configure Google Cloud SDK (Optional) <a name='config_gcloud'></a>
-
-To connect to the GCP VM from the command line of your local machine, you need to setup [Google Cloud Software Development Kit (SDK)](https://cloud.google.com/sdk). The Cloud SDK provides a number of important tools like `gcloud` that are used for accessing GCP services.
-
-[Follow the instructions](https://cloud.google.com/sdk/docs/quickstart) to download the appropriate SDK based on your Operating System. Then set up authorization:
-
-- In the terminal/command line, enter:
-
-  ```
-  gcloud auth login
-  ```
-
-![](./gcp_images/gcp_authorise_shell2.png "enter verification code")
-
-- Click on the Google link. A new browser tab will open.
-- Log in to the Google account you used to set up the GCP console.
-- Click <span class="highlight_txt">Allow</span> to allow Google Cloud SDK to access your Google account.
-- The next page will provide a verification code. Copy/paste the code back in the terminal next to "Enter verification code:".
 
 Continue to the [next lesson](./gcp3.md) to run an example analysis using the VM we just configured!

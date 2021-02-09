@@ -1,4 +1,24 @@
-## Step 4: Configure SRA toolkit
+# Extra configuration steps
+
+This is a holding space for configuration steps that have been needed at some point, but are no longer requirements in set up/examples.
+
+1. The BLAST example used to require a VM with Firewall settings, but does not seem to anymore. SRA toolkit does not use Firewall settings. To streamline the VM set up steps, took Firewall config out.
+2. SRA toolkit - `wget` download of SRA toolkit requires manual config. The config step is broken as of Feb 2021. Switched to using conda install steps that do not require config.
+
+## 1. Firewall config
+### e. Firewall setting
+
+![](./gcp_images/gcp_vmconfig4.png "VM configure firewall")
+
+- Check the box by **Allow HTTP traffic** which opens port 80 (HTTP) and allows you to access the virtual machine.
+
+!!! important
+
+    If the Firewall settings are not enabled, you may get an error message when trying to connect to the VM:
+     `Insufficient Permission: Request had insufficient authentication scopes`
+
+
+## 2. Configure SRA toolkit
 
 There are three configuration steps. The configuration instructions are detailed on the [SRA Github page](https://github.com/ncbi/sra-tools/wiki/03.-Quick-Toolkit-Configuration).
 
