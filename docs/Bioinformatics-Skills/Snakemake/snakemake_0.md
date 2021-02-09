@@ -10,6 +10,6 @@ Workflow systems help you automate and manage the inputs, outputs, and commands 
 
 [Snakemake](https://snakemake.readthedocs.io/en/stable/) is a Python-based workflow system ([see 2012 publication](https://academic.oup.com/bioinformatics/article/28/19/2520/290322)). The name "Snakemake" comes from the fact that it's written in (and can be extended by) the Python programming language.
 
-Snakemake works by looking at a file, called a "Snakefile", that contains rules for creating output files. Generally, each rule is defined as a step in the workflow. Snakemake uses the rules and command line options to figure how the rules relate to each other so it can manage the workflow steps.
+Snakemake works by looking at a file, called a "Snakefile", that contains rules for creating output files. Generally, each rule is defined as a step in the workflow. Snakemake uses the rules and command line options to figure out how the rules relate to each other so it can manage the workflow steps.
 
 Let's get started!
