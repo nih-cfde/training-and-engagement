@@ -121,7 +121,7 @@
   }
 
 .content__bottom {
-    align-items: flex-start;
+    align-items: stretch;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
@@ -135,8 +135,19 @@
     margin-bottom: 20px;
     margin-right: 10px;
     width: 100%;
+
   }
 
+.data_content_left {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  height: 400px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  float: center
+}
 
 @media (min-width:768px) {
     .content__bottom {
@@ -149,6 +160,7 @@
       /*flex: 1 0 280px;*/
       /*flex: 2 2;*/
       margin-right: 20px;
+
     }
 
     .right {
