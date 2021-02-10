@@ -11,12 +11,7 @@ change-template: '- $TITLE (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 include-labels:
    - Training-Release
-   - Oct-2020
-   - Dec-2020
-   - Mar-2021
-   - Jun-2021
-   - Sept-2021
-   - Dec-2021
+   
 
 template: |
   ## Updated
