@@ -78,7 +78,7 @@ Follow along with the video and written steps below to set up instance configura
 
 ![](./gcp_images/gcp_vmconfig2.png "VM configuration machine type")
 
-- For this tutorial, select Series **E2** and Machine type **`e2-micro`**.
+- For this tutorial, select Series **`E2`** and Machine type **`e2-micro`**.
 - This machine type is recommended for day-to-day low cost computing.
 - The estimated monthly cost for each machine type is shown on the top right side panel.
 - Depending on the tasks you will use the VM for, you may need to choose a machine with more CPUs and memory.
@@ -123,6 +123,8 @@ Follow along with the video and written steps below to set up instance configura
 === "Suspend"
 
     [Suspending](https://cloud.google.com/compute/docs/instances/instance-life-cycle#suspending_an_instance) "the instance will preserve its running state, similar to closing a laptop. You'll be billed for storage of the suspended VM state and any persistent disks it uses."
+
+    Note that `E2` VMs currently do not support the "Suspend" operation. Use "Stop" state instead.
 
 === "Stop"
 
