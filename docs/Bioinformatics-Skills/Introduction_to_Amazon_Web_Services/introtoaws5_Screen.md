@@ -122,7 +122,7 @@ Please note that you wow have three running screens:
 
  To detach a screen session and return to your original SSH terminal, type ++ctrl+a+d++. You will be taken back to the terminal window with the `echo` command:
 
-![] images-aws/.png
+![](./images-aws/original_ssh_terminal.png)
 
 To list your current screen sessions type:
 
