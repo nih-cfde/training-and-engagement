@@ -110,7 +110,7 @@ Let's run yet another command on the blank terminal:
 
 A ping test is a method of checking if the computer is connected to a network. It is used to ensure that a host computer which your computer tries to access is operating. It is run for troubleshooting to know connectivity as well as response time.
 
-Please note that you wow have three running screens:
+Please note that you now have three running screens:
  Screen 1) The original ssh terminal you saw at login. You typed the echo command in it.
  Screen 2) A screen that's running the `top` command.
  Screen 3) A screen that's running the `ping google.com` command.
