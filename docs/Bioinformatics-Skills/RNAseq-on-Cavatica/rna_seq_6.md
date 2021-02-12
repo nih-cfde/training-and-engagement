@@ -47,7 +47,7 @@ The unit for  **age_at_diagnosis** is in days with wide spread of values across 
     If you do choose your version of names for the newly created columns remember to substitute those names in the appropriate input fileds for DESeq2 app in the following lesson.
 
 
-## Step 3: Upload phenotype file to Cavatica
+## Step 3: Upload phenotype file to Cavatica  
 
 * Save and export the modified metadata file in CSV format to your local computer.
 
