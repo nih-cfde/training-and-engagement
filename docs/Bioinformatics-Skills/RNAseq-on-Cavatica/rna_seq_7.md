@@ -16,15 +16,15 @@ title: Analysis with DESeq2 Public App
 
 ## Step 2: Update app settings & execute
 
-* Provide a **Analysis title**. **Cancer_DGE** was used as the title in this lesson.
+* Provide an **Analysis title**. **Cancer_DGE** was used as the title in this lesson.
 * **Control variables** represent potential confounders in the data that need to be controlled in the test for differential expression. You can add more than one variable as values for this field by using the `+` button. In this tutorial, **tumor_location** and **diagnosis_age_range** are two metadata variables which contribute to additional biological variability in the expression levels of the genes.
 * Input the column name from the uploaded phenotype file for **Covariate of interest** which captures the experimental groups we are interested in pairwise comparison. In this tutorial, **histology** designates the two different pediatric cancers that we wish to compare.
-* The default value for **FDR cutoff** is set at 0.1. FDR, or false discovery rate is set at **0.05** which means that the proportion of false positives we expect amongst the differentially expressed genes is 5%.
-* **Factor level - reference** represents the denominator for the log2 fold change (LFC) i.e what condition/group do we compare against.  **Ependymoma** cancer type was picked to be the reference factor. Changing the order of the reference or test factor level results in reversal of direction of log fold change.
-* **Factor level - test** represents the numerator for the LFC. **Medulloblastoma** was the value for this field.
-* Value for the **Quantification tool** is one of the six quantification methods used to calculate transcript abundance from a drop down menu. The expression data were generated using **kallisto** and is selected.
-* **IgnoreTxVersion** is a function in `tximport` package designed to ignore transcript version number. It is a boolean value and is set to **True**.
-* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. Although, using LFC shrinkage does not impact the total number of genes that are identified as being significantly differentially expressed, it is useful for downstream assessment of results. It is a boolean value and is set to **True**.
+* The default value for **FDR cutoff** is set at 0.1. Set the FDR, or false discovery rate to **0.05**, which means that the proportion of false positives we expect amongst the differentially expressed genes is 5%.
+* **Factor level - reference** represents the denominator for the log2 fold change (LFC) i.e what condition/group do we compare against.  Enter **"Ependymoma"** as the reference factor. Changing the order of the reference or test factor level results in reversal of direction of log fold change.
+* **Factor level - test** represents the numerator for the LFC. Enter **"Medulloblastoma"** as the test factor.
+* Select the **Quantification tool** used to calculate transcript abundance from the drop down menu. The expression data for our data were generated using **kallisto**.
+* **IgnoreTxVersion** is a function in `tximport` package designed to ignore transcript version number. Set it to **True**.
+* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. Although, using LFC shrinkage does not impact the total number of genes that are identified as being significantly differentially expressed, it is useful for downstream assessment of results. Set it to **True**.
 * Click <span class="highlight_txt">Run</span> on the right hand corner to initiate the analysis
 
 !!! note "Default Settings"

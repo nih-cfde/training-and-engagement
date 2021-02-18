@@ -53,12 +53,6 @@ The editor is associated with a directory structure to help you navigate the wor
 * **output-files** can be used as the directory to save all the outputs from your analysis. If not specified, the files are saved to workspace
 * **project-files** is the directory containing all the input files from the current project. Since it is a read only file system, no changes can be made to these files via the editor interface.
 
-You can access the scripts for this lesson in [Step 3](#R-code). To upload the script file, <a name="Upload-file"></a>
-
- * Click on the <span class="highlight_txt">Upload</span> option in the Files/Packages/Plots/Help/Viewer pane.
- * Click <span class="highlight_txt">Choose File</span> to select the file from your local computer.
- * Once uploaded, click on the script file name to open it in the script editor pane (top left hand corner).
-
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_uennaoay&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=33&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_77fny8c6" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ### Session outputs
@@ -78,12 +72,17 @@ The Data Cruncher comes with set of libraries that are pre-installed. These vary
  (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R) </br>
  (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R).
 
-You can review the steps to [**upload**](#Upload-file) the R script to the **workspace** directory.
-The version of the script that will be run manually contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.   
+The latter version of the script that will be run manually contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.
+
+Upload the script file to the **workspace** directory:
+
+  * Click on the <span class="highlight_txt">Upload</span> option in the Files/Packages/Plots/Help/Viewer pane.
+  * Click <span class="highlight_txt">Choose File</span> to select the file from your local computer.
+  * Once uploaded, click on the script file name to open it in the script editor pane (top left hand corner).
 
 !!! important "Phenotype File Name"
 
-      For the scripts to run error free ensure that the name of the phenotype CSV file is [**phenotype_filtered.csv**](./rna_seq_6.md#step-3-upload-phenotype-file-to-cavatica). Update the scripts to a different name if applicable before execution.
+      For the scripts to run error-free ensure that the name of the phenotype CSV file is [**"phenotype_filtered.csv"**](./rna_seq_6.md#step-3-upload-phenotype-file-to-cavatica). Otherwise, update the scripts if your CSV file has a different name before execution.
 
 ### Step 3a: Execute using `Source`
 

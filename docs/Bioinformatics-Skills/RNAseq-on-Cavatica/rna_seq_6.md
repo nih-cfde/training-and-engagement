@@ -14,7 +14,7 @@ The DESeq2 app requires **Phenotype data** input file in CSV format with the Sam
 
 ![Default column order](../rna-seq-images/rna-seq-6-1.png "Default column order")
 
-* Rearrange the order by using cut/insert to make the **sample_id** to the first column.
+* Rearrange the order by using cut/insert to move the **sample_id** to the first column.
 
 ![Reorder column order](../rna-seq-images/rna-seq-6-2.png "Reorder column order")
 
@@ -22,7 +22,7 @@ The DESeq2 app requires **Phenotype data** input file in CSV format with the Sam
 
 The unit for  **age_at_diagnosis** is in days with wide spread of values across the experimental groups and hence needs to be included in the design as a covariate. It is more meaningful to convert the continuous values of this variable into small number of defined bins or in this case age ranges. Here, we split the ages into five year bins capped at twenty years of age.
 
-* Create a new column **age_at_diagnosis_yrs** and enter the formula. This column lists age_at_diagnosis in years rounding at three decimal places.
+* Create a new column **age_at_diagnosis_yrs** and enter the formula. This column lists **age_at_diagnosis** in years rounding at three decimal places.
 
 ```
 =ROUND(N2/365,3)
@@ -32,9 +32,9 @@ The unit for  **age_at_diagnosis** is in days with wide spread of values across 
 
 * Sort the newly created column from largest to smallest value.
       * one entry corresponding to biospecimen (BS_BA6AZWB3) is collected from a patient at 36.5 yrs of age, who is considered an adult.
-      * since we are studying the difference between pediatric cancers types, delete this entry from table leaving with 49 rows.
+      * since we are studying the difference between pediatric cancers types, delete this entry from table leaving 49 rows.
 
-* Next, create as a new column **diagnosis_age_range** and enter the formula. This column convert the age at diagnosis in years to intervals spanning five years.
+* Next, create a new column **diagnosis_age_range** and enter the formula. This column converts the age at diagnosis in years to intervals spanning five years.
 
 ```
 =LOOKUP(Z2,{0,5,10,15},{"0-5","5-10","10-15","15-20"})
@@ -44,7 +44,7 @@ The unit for  **age_at_diagnosis** is in days with wide spread of values across 
 
 !!! note "Column Names"
 
-    If you do choose your version of names for the newly created columns remember to substitute those names in the appropriate input fileds for DESeq2 app in the following lesson.
+    If you choose your own version of column names for the newly created columns, remember to substitute those names in the appropriate input files for the DESeq2 app in the following lesson.
 
 
 ## Step 3: Upload phenotype file to Cavatica  

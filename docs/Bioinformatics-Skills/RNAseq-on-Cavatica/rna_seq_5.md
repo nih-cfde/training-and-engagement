@@ -27,7 +27,7 @@ Cavatica offers DESeq2 as a stand alone public app which is a [Common Workflow L
 !!! tip "Vidlets"
 
     We recommend watching the vidlets first before utilizing the step wise written instructions to follow along.
-     
+
 The first step is to obtain a copy of the DESeq2 app in the project folder.
 
   * Click the <span class="highlight_txt">Apps</span> tab which is currently empty and click <span class="highlight_txt">Add Apps</span> button which opens the list of Public Apps.
@@ -78,7 +78,7 @@ A reference gene annotation file in GTF format is required by DESeq2 app to summ
 * Click on <span class="highlight_txt">Data</span> drop down menu and click on <span class="highlight_txt">Public Reference Files</span>.
 * This takes you to a new page for <span class="highlight_txt">Public Files</span>.
 * Click on <span class="highlight_txt">Type: All</span> button to bring a drop down list and select **GTF**.
-* From the results, select the ENSEMBL Release 84 version of the Human gene annotation in GTF format - **Homo_sapiens.GRCh38.84.gtf**.
+* From the results, select the ENSEMBL Release 84 version of the Human gene annotation in GTF format - **"Homo_sapiens.GRCh38.84.gtf"**.
 * Click on <span class="highlight_txt">Copy</span> and select the project folder with the cancer files.
 * Select <span class="highlight_txt">Copy</span> in the popup window.
 * A notification menu will highlight the successful copy of the file and clicking on the project folder name will take you to the <span class="highlight_txt">Files</span> tab in folder.
