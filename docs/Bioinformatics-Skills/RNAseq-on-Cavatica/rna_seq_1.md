@@ -20,13 +20,13 @@ You will learn two different approaches for DGE analysis using open access human
 
 | Est. Time| Lesson Name | Description|
 | ---|--------|--------|
-| 10 mins |[An Introduction to RNA-Seq](./rna-seq_2.md)| Background about RNAseq
-| 20 mins |[Selecting Kids First Cancer Cohort](./rna-seq_3.md)| Select Kids First open access cancer RNAseq files and push to Cavatica  |
-| 20 mins |[Cavatica - View, Filter, Tag and Download](./rna-seq_4.md) | Filter imported data, tag and download relevant metadata from Cavatica |
-| 20 mins |[Setup DESeq2 Public App](./rna-seq_5.md)| Setting up the workflow app based on DESeq2 on Cavatica |
-| 15 mins |[Phenotype File and Upload to Cavatica](./rna-seq_6.md) | Reformat metadata file and upload it to Cavatica |
-| 50 mins |[Analysis with DESeq2 Public App](./rna-seq_7.md) | Run the DESeq2 app with appropriate inputs and computational settings |
-| 60 mins |[Analysis using Data Cruncher](./rna-seq_8.md) | Analysis on an instance with RStudio computational environment |
+| 10 mins |[An Introduction to RNA-Seq](./rna_seq_2.md)| Background about RNAseq
+| 20 mins |[Selecting Kids First Cancer Cohort](./rna_seq_3.md)| Select Kids First open access cancer RNAseq files and push to Cavatica  |
+| 20 mins |[Cavatica - View, Filter, Tag and Download](./rna_seq_4.md) | Filter imported data, tag and download relevant metadata from Cavatica |
+| 20 mins |[Setup DESeq2 Public App](./rna_seq_5.md)| Setting up the workflow app based on DESeq2 on Cavatica |
+| 15 mins |[Phenotype File and Upload to Cavatica](./rna_seq_6.md) | Reformat metadata file and upload it to Cavatica |
+| 50 mins |[Analysis with DESeq2 Public App](./rna_seq_7.md) | Run the DESeq2 app with appropriate inputs and computational settings |
+| 60 mins |[Analysis using Data Cruncher](./rna_seq_8.md) | Analysis on an instance with RStudio computational environment |
 
 !!! note "Learning Objectives"
     * learn to build virtual cohorts on KF portal
