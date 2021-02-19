@@ -46,7 +46,8 @@ Each of these columns have multiple values. To filter the data using values with
 
 ![Apply additional filters](../rna-seq-images/14_Cavatica.png "Apply additional filters")
 
-* First, we filter to only include surviving patients using the <span class="highlight_txt">Vital status</span> metadata.
+* First, we filter to only include surviving patients using the <span class="highlight_txt">Vital status</span> metadata. Click on <span class="highlight_txt">+</span> and
+choose <span class="highlight_txt">Vital status</span>, then select <span class="highlight_txt">Alive</span> from the sub-menu.
 
 ![Vital status filter](../rna-seq-images/15_Cavatica.png "Vital status filter")
 
