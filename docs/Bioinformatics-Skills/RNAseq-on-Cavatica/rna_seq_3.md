@@ -20,7 +20,7 @@ There are data with different access levels hosted on the KF portal including op
 
 ## Step 1: Filter for open access data
 
-* Login to the KF portal
+* Login to the [KF portal](https://kidsfirstdrc.org/)
 * Select the <span class="highlight_txt">File Repository</span> tab
 * Select the <span class="highlight_txt">Browse All</span> option for the Filter.
 
