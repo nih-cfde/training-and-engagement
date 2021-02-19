@@ -74,11 +74,11 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
 
 A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1) files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html), another Bioconductor package, is utilized to obtain the gene level summary.  
 
-* You can edit the metadata columns to show Reference genome under <span class="highlight_txt">Files</span> tab. All the files used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
+* You can edit the metadata columns to show Reference genome under <span class="highlight_txt">Files</span> tab. Click on the <span class="highlight_txt">Edit table columns</span> and the right and select <span class="highlight_txt">Reference genome</span> to show that all the files used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
 * Click on <span class="highlight_txt">Data</span> drop down menu and click on <span class="highlight_txt">Public Reference Files</span>.
 * This takes you to a new page for <span class="highlight_txt">Public Files</span>.
 * Click on <span class="highlight_txt">Type: All</span> button to bring a drop down list and select **GTF**.
-* From the results, select the ENSEMBL Release 84 version of the Human gene annotation in GTF format - **"Homo_sapiens.GRCh38.84.gtf"**.
+* From the results, select **"Homo_sapiens.GRCh38.84.gtf"** which is the ENSEMBL Release 84 version of the Human gene annotation in GTF format.
 * Click on <span class="highlight_txt">Copy</span> and select the project folder with the cancer files.
 * Select <span class="highlight_txt">Copy</span> in the popup window.
 * A notification menu will highlight the successful copy of the file and clicking on the project folder name will take you to the <span class="highlight_txt">Files</span> tab in folder.
