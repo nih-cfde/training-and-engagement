@@ -6,11 +6,11 @@ title: RNAseq Tutorial Overview
 Differential Gene Expression Analysis on Cavatica Cloud Platform
 ====================================================================
 
-**RNA sequencing (RNAseq)** is a high throughput technique that provides qualitative and quantitative information about RNA biology including transcriptome-wide expression quantification, discovery of novel genes and gene isoforms and differential expression.
+**RNA sequencing (RNAseq)** is a high throughput technique that provides qualitative and quantitative information about RNA biology including transcriptome-wide expression quantification, discovery of novel genes and gene isoforms, and differential expression.
 
-The goal of this tutorial is to enable you to </br>
+The goal of this tutorial is to enable you to: </br>
 
-1. create virtual cancer cohorts using the NIH Common Fund-supported Gabriella Miller Kids First Data portal (KF Portal) </br>
+1. create virtual cancer cohorts using the NIH Common Fund-supported Gabriella Miller Kids First Data portal (KF Portal). </br>
 2. analyze the differential gene expression (DGE) on Cavatica, an integrated cloud based platform.
 
 You will learn two different approaches for DGE analysis using open access human cancer data on Cavatica: **(a)** using a public workflow app
@@ -30,10 +30,10 @@ You will learn two different approaches for DGE analysis using open access human
 
 !!! note "Learning Objectives"
     * learn to build virtual cohorts on KF portal
-    * learn to navigate project folder, and perform file operations on Cavatica
+    * learn to navigate project folder and perform file operations on Cavatica
     * learn to upload and download data from Cavatica
-    * learn to search, copy and edit public workflow apps on Cavatica
-    * learn to perform DGE analysis using DESeq2 app
+    * learn to search, copy, and edit public workflow apps on Cavatica
+    * learn to perform differential gene expression (DGE) analysis using DESeq2 app
     * learn to setup analysis environment and execute code for DGE analysis
 
 === "Prerequisites"
