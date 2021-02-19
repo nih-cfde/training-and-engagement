@@ -3,23 +3,23 @@ layout: page
 title: Setup DESeq2 Public App
 ---
 
-[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is a Bioconductor package used to perform DGE analysis by fitting [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/) to the count data. It requires counts table as input along with a phenotype file describing the experimental groups.
+[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is a Bioconductor package used to perform DGE analysis by fitting the [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/) to the count data. It requires a counts table as input along with a phenotype file describing the experimental groups.
 
-DESeq2 performs multiple steps including
+DESeq2 performs multiple steps including:
 
-* estimating size factors which accounts for difference in library depth
+* estimating size factors to account for differences in library depth
 * estimating gene-wise dispersions to generate accurate estimates of within-group variation
 * shrinkage of dispersion estimates which reduces false positives in the DGE analysis
-* perform hypothesis testing using [Wald test](https://www.statisticshowto.com/wald-test/) or [Likelihood Ratio test](https://www.statisticshowto.com/likelihood-ratio-tests/)
+* hypothesis testing using the [Wald test](https://www.statisticshowto.com/wald-test/) or [Likelihood Ratio test](https://www.statisticshowto.com/likelihood-ratio-tests/)
 
-DESeq2 automatically removes outlier genes from analysis using [Cook's distance](https://www.statisticshowto.com/cooks-distance/) and filters genes with low counts which helps improve detection power by making the multiple testing adjustment of the p-values less severe. Refer to the [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) for detailed explanation, helpful suggestions and examples.
+DESeq2 automatically removes outlier genes from analysis using [Cook's distance](https://www.statisticshowto.com/cooks-distance/) and filters genes with low counts which helps improve detection power by making the multiple testing adjustment of the p-values less severe. Refer to the [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) for a more detailed explanation, helpful suggestions, and examples.
 
-Cavatica offers DESeq2 as a stand alone public app which is a [Common Workflow Language (CWL)](https://www.commonwl.org) wrapper around a script with functions from the DESeq2 package. In this lesson we learn to copy, edit and setup the DESeq2 app in the project folder with cancer data files.
+Cavatica offers DESeq2 as a stand alone public app which consists of a [Common Workflow Language (CWL)](https://www.commonwl.org) wrapper around a script with functions from the DESeq2 package. In this lesson we learn to copy, edit, and setup the DESeq2 app in the project folder with cancer data files.
 
 !!! info "Terminology"
 
-    * Count data - represents the number of sequence reads that originated from a particular gene.
-    * Dispersion - it is a measure of spread or variability in the data. DESeq2 dispersion estimates are inversely related to the mean and directly related to variance.
+    * Count data - represents the number of sequence reads that originated from a particular gene
+    * Dispersion - a measure of spread or variability in the data. DESeq2 dispersion estimates are inversely related to the mean and directly related to variance
     * LFC - log2 fold change
 
 ## Step 1: Search & copy DESeq2 app
@@ -30,11 +30,11 @@ Cavatica offers DESeq2 as a stand alone public app which is a [Common Workflow L
 
 The first step is to obtain a copy of the DESeq2 app in the project folder.
 
-  * Click the <span class="highlight_txt">Apps</span> tab which is currently empty and click <span class="highlight_txt">Add Apps</span> button which opens the list of Public Apps.
+  * Click the <span class="highlight_txt">Apps</span> tab which is currently empty and click <span class="highlight_txt">Add App</span> button which opens the list of Public Apps.
   * You can find the <span class="highlight_txt">DESeq2</span> app by typing "DESEQ" in the search bar.
   * In the <span class="highlight_txt">DESeq2</span> app box select the <span class="highlight_txt">Other versions</span> drop down box and click on the version 1.18.1.
   * This opens the app in a new tab where you can click on the **`...`** on the right hand corner and click <span class="highlight_txt">Copy</span>.
-  * Select the project folder `cancer-dge` and click <span class="highlight_txt">Copy</span>.
+  * Select the project folder `cancer-dge` (or the project name you have chosen) and click <span class="highlight_txt">Copy</span>.
   * Navigate to your project Dashboard using <span class="highlight_txt">Projects</span> drop down menu and view the app under the <span class="highlight_txt">Apps</span> tab. You can also click the project link in the popup box that appears on top of the page.
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_r4t7no30&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=51&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_cr6jqtun" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
