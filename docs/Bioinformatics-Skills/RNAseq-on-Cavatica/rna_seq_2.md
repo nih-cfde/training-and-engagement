@@ -26,18 +26,18 @@ The generated raw reads are quality checked and aligned against either a referen
 
 In this tutorial, we will evaluate the difference between [pediatric **Medulloblastoma** vs **Ependymoma**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2719002/).
 
-Medulloblastoma is
+Medulloblastoma
 
-* a common malignant childhood brain tumor
+* is a common malignant childhood brain tumor
 * typically occurs in the 4th ventricle region of the brain
-* five different histological types
-* subtype impacts the prognosis and response to therapy
+* has five different histological types
+* subtypes impact the prognosis and response to therapy
 
-Ependymoma is
+Ependymoma
 
-* a broad group of tumors
-* often arising from lining of the ventricles in the brain
-* can also occur in the central canal in spinal cord
+* is a broad group of tumors
+* often arises from lining of the ventricles in the brain
+* can also occur in the central canal in the spinal cord
 * anatomical distribution impacts prognosis
 
 We will use the [Kids First Data Portal (KF Portal)](https://kidsfirstdrc.org) to build a virtual cohort containing the two pediatric cancers and select pre-processed transcript abundance files. We will then proceed with analysis on [Cavatica](https://cavatica.sbgenomics.com), the integrated cloud based platform
