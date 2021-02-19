@@ -40,4 +40,4 @@ Ependymoma
 * can also occur in the central canal in the spinal cord
 * anatomical distribution impacts prognosis
 
-We will use the [Kids First Data Portal (KF Portal)](https://kidsfirstdrc.org) to build a virtual cohort containing the two pediatric cancers and select pre-processed transcript abundance files. We will then proceed with analysis on [Cavatica](https://cavatica.sbgenomics.com), the integrated cloud based platform
+We will use the [Kids First Data Portal (KF Portal)](https://kidsfirstdrc.org) to build a virtual cohort containing the two pediatric cancers and select pre-processed transcript abundance files. We will then proceed with analysis on [Cavatica](https://cavatica.sbgenomics.com), the integrated cloud based platform.
