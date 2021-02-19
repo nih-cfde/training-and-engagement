@@ -42,7 +42,7 @@ Here we have selected:
 
     The default unit for any age metadata field is recorded in days and is reflected in the large numeric values for Age at diagnosis column.
 
-Each of these columns have multiple values. To filter the data using values within multiple metadata columns, use the <span class="highlight_txt">+</span> sign to add a filter.
+Each of these columns have multiple values. To filter the data using values within multiple metadata columns, use the <span class="highlight_txt">+</span> sign to add a filter. If you cannot see the <span class="highlight_txt">+</span> button, refresh your browser, as your session may have timed out. 
 
 ![Apply additional filters](../rna-seq-images/14_Cavatica.png "Apply additional filters")
 
@@ -61,7 +61,7 @@ choose <span class="highlight_txt">Vital status</span>, then select <span class=
 
 The tumor_location metadata column has some values that include multiple anatomically distinct locations separated by a **`;`**. This could indicate the observation of spread of tumor to multiple locations during first occurrence.
 
-* We filter using the <span class="highlight_txt">tumor_location</span> metadata, choosing only values without the **`;`**. Enter <span class="highlight_txt">;</span> in the filter box to find and then select a total of eleven distinct values for tumor_location.
+* We filter using the <span class="highlight_txt">tumor_location</span> metadata, choosing only values without the **`;`**. Select the eleven distinct values for tumor_location (not including those with **`;`**, **`Not Reported `** , and **`Other locations NOS `**. You can see the complete list in the screen capture below.
 
 ![tumor_location filter](../rna-seq-images/18_Cavatica.png "tumor_location filter")
 
