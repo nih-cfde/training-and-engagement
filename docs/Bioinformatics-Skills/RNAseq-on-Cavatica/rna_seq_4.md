@@ -76,7 +76,7 @@ To enable quick access to the filtered data without having to re-run all the met
 
 ![All filtered files](../rna-seq-images/19_Cavatica.png "All filtered files")
 
-* Type the name of the tag and click <span class="highlight_txt">Add new tag</span>.
+* Type the name of the tag and click <span class="highlight_txt">Add new tag</span>. We have named ours 'DGE-Filter-Data'.
 
 ![Add new tag](../rna-seq-images/20_Cavatica.png "Add new tag")
 
