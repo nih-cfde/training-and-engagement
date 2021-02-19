@@ -26,7 +26,7 @@ You will learn two different approaches for DGE analysis using open access human
 | 20 mins |[Setup DESeq2 Public App](./rna_seq_5.md)| Setting up the workflow app based on DESeq2 on Cavatica |
 | 15 mins |[Phenotype File and Upload to Cavatica](./rna_seq_6.md) | Reformat metadata file and upload it to Cavatica |
 | 50 mins |[Analysis with DESeq2 Public App](./rna_seq_7.md) | Run the DESeq2 app with appropriate inputs and computational settings |
-| 60 mins |[Analysis using Data Cruncher](./rna_seq_8.md) | Analysis on an instance with RStudio computational environment |
+| 60 mins |[Analysis using Data Cruncher](./rna_seq_8.md) | Analysis on an instance in the RStudio environment |
 
 !!! note "Learning Objectives"
     * learn to build virtual cohorts on KF portal
