@@ -51,17 +51,17 @@ choose <span class="highlight_txt">Vital status</span>, then select <span class=
 
 ![Vital status filter](../rna-seq-images/15_Cavatica.png "Vital status filter")
 
-* Since the patients could have presented with multiple cancers over diagnostic timeline, the <span class="highlight_txt">histology</span> metadata has other values in addition to the cancer types of interest (Medulloblastoma & Ependymoma) and are selected.
+* Since the patients could have presented with multiple cancers over diagnostic timeline, the <span class="highlight_txt">histology</span> metadata has other values in addition to the cancer types of interest (Medulloblastoma & Ependymoma) and are selected. Click <span class="highlight_txt">+</span> again this time choosing <span class="highlight_txt">histology</span> and selecting both <span class="highlight_txt">Medulloblastoma & Ependymoma</span>.
 
 ![histology filter](../rna-seq-images/16_Cavatica.png "histology filter")
 
-* To ensure comparison of cancer from the first presentation in the patient, we eliminate recurrent or progressive subtypes using the <span class="highlight_txt">histology_type</span> filter.
+* To ensure comparison of cancer from the first presentation in the patient, we eliminate recurrent or progressive subtypes using the <span class="highlight_txt">histology_type</span> filter following the same steps as previously. 
 
 ![histology_type filter](../rna-seq-images/17_Cavatica.png "histology_type filter")
 
 The tumor_location metadata column has some values that include multiple anatomically distinct locations separated by a **`;`**. This could indicate the observation of spread of tumor to multiple locations during first occurrence.
 
-* We filter using the <span class="highlight_txt">tumor_location</span> metadata, choosing only values without the **`;`**. A total of eleven distinct values for tumor_location are selected.
+* We filter using the <span class="highlight_txt">tumor_location</span> metadata, choosing only values without the **`;`**. Enter <span class="highlight_txt">;</span> in the filter box to find and then select a total of eleven distinct values for tumor_location.
 
 ![tumor_location filter](../rna-seq-images/18_Cavatica.png "tumor_location filter")
 
