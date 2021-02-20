@@ -36,7 +36,7 @@ The saved participants set are useful if you want to add this particular list of
 
 To add the saved participants list to a query in the Explore Data page:
 
-- First clear all existing filters by clicking :fontawesome-solid-trash-alt: and subsequently click <span class="highlight_txt">DELETE</span>.
+- First clear all existing filters by clicking :fontawesome-solid-trash-alt: and subsequently click <span class="highlight_txt">DELETE</span>
 - Select <span class="highlight_txt">My sets</span>, use the dropdown menu to select the saved set ("age0to5")
 - Click <span class="highlight_txt">Add to query</span>
 
