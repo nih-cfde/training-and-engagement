@@ -21,3 +21,4 @@ Common Fund Programs
 GitHub:
 
    - [Working with Protected Branches](ProtectedBranch_HowTo.md)
+   - [Setting up Github authentication](github_auth_setup.md)
