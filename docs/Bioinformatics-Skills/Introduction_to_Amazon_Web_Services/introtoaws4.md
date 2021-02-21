@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-=== "Web Browser Instructions"
+=== "Web Browser"
 
     This is an OS-agnostic way of connecting to your AWS instance. The advantage of using this method is that Windows users do not need to worry about downloading an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/). The main disadvantage is that you cannot download files from the instance to your local machine via this web terminal interface.
 
@@ -45,7 +45,7 @@ hide:
     Congratulations! You have successfully connected to your remote computer. You can download files onto your instance and install software programs via this web browser terminal.    
 
 
-=== "Windows Instructions"
+=== "Windows :fontawesome-brands-windows:"
 
     Ok, so you've created a running computer. How do you get to it?
 
@@ -93,7 +93,7 @@ hide:
     ![Transfer File](./images-aws/Mobaxterm_transfer2.png "transfer file windows")
 
 
-=== "macOS Instructions"
+=== "macOS :fontawesome-brands-apple:"
 
     Ok, so you've created a running computer. How do you get to it?
 
@@ -101,11 +101,11 @@ hide:
 
     ## Step 1: Locate private key
 
-    Find the private key file; it is the `.pem` file you downloaded when starting up the EC2 instance. We called it **amazon.pem**. It should be in your Downloads folder. In this lesson, we move it to the desktop for ease of access and compatibility with our lesson commands. 
+    Find the private key file; it is the `.pem` file you downloaded when starting up the EC2 instance. We called it **amazon.pem**. It should be in your Downloads folder. In this lesson, we move it to the desktop for ease of access and compatibility with our lesson commands.
 
     ## Step 2: Login to remote instance
 
-    * Start Terminal and change the permissions on the `.pem` file for security purposes. Your private key must not be publicly visible. 
+    * Start Terminal and change the permissions on the `.pem` file for security purposes. Your private key must not be publicly visible.
     * Run the following command so that only the owner i.e. you can read the file.
 
     ```
