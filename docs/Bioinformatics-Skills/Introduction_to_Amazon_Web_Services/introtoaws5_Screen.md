@@ -217,6 +217,7 @@ Command | Description
 `screen -d <name>` | Detach a running session
 ++ctrl+a+d++ | Detaches a screen session without killing the processes running in it
 ++ctrl+a++ then ++ctrl+d++| Detach and logout (quick exit)
+screen -S <screen#/name> -X quit | Delete a screen while in detached state
 
 #### Help
 Command | Description
