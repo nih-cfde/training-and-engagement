@@ -4,6 +4,7 @@ Screen or GNU Screen is a terminal multiplexer. You can start a terminal session
 
 ## Video Walkthrough
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_lkmj4ful&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_w9g5trvw" width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
 ## Installing the Screen
 
 To install screen, run the following command:
@@ -35,6 +36,9 @@ To help yourself tell the different terminal screen apart, type this command on 
     ```
     echo "this is the original terminal window"
     ```
+
+!!! Warning
+    Do not clear the screen. We want to make sure the "this is the original terminal window" text lingers when we toggle back to this window later.
 
 
 Then type the command `screen` into the same AWS instance to start a new screen session.
@@ -128,6 +132,8 @@ To list your current screen sessions type:
 	   2683.pts-0.ip-172-31-7-6	(02/09/21 19:41:19)	(Detached)
      1 Socket in /run/screen/S-ubuntu.
     ```
+!!! Note
+    Typing `ls` on the original terminal shows you only one screen ID because you have one screen (i.e. browser window) with two screen tabs. You can open another screen window by typing `screen` into the original terminal.
 
 You can use the screen id to reconnect to your screen. Like this:
 
@@ -137,6 +143,16 @@ You can use the screen id to reconnect to your screen. Like this:
     ```
 You should see Screen 2 that you previously created. Once again you can toggle between screen 2 and screen 3 by typing ++ctrl+a+p++
 
+!!! Note
+    Think of the first screen command entered into your original terminal as opening a new browser window.
+
+    - After starting a screen, you can open multiple tabs within the same window using ++ctrl+a+c++.
+
+    - You can now toggle between the multiple screens (tabs) using ++ctrl+a+p++. You can have commands running in each tab.
+
+    - Detaching the screen allows you to go back to the original window/panel.
+
+    - If you start another screen from the original terminal window, it would be like opening another browser window instead of adding a tab to an existing window.
 
 ## Quitting screens
 
@@ -154,6 +170,15 @@ If no other screen sessions are open, you will fall back to the original SSH ter
 !!! Warning
     Typing `exit` into a screen permanently closes that screen session and all the analyses that are conducted in it
 
+    You may need to type `exit` twice to get the "screen is terminating" message. But be sure not to exit too many times or you exit the entire terminal!
+
+    ```
+    exit
+    There are stopped jobs.
+
+    exit
+    [screen is terminating]
+    ```
 
 
 ## Screen Cheat Sheet
@@ -188,6 +213,3 @@ Command | Description
 ++ctrl+a+c++ | Create new window
 ++ctrl+a+n++ or ++ctrl+a++ <space> | Change to next window in list
 ++ctrl+a+p++ or ++ctrl+a++ <backspace> | Change to previous window in list
-
-video tutorial link
-https://video.ucdavis.edu/media/AWS_Ubuntu_Screen_v2/1_lkmj4ful/166161802
