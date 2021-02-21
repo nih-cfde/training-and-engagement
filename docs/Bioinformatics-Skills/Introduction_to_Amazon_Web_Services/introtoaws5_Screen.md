@@ -141,6 +141,11 @@ You can use the screen id to reconnect to your screen. Like this:
     ```
     screen -r 2683.pts-0.ip-172-31-7-6
     ```
+    or
+    ```
+    screen -r 2683
+    ```
+    
 You should see Screen 2 that you previously created. Once again you can toggle between screen 2 and screen 3 by typing ++ctrl+a+p++
 
 !!! Note
@@ -168,9 +173,9 @@ To end a screen session, toggle into the session and type:
 If no other screen sessions are open, you will fall back to the original SSH terminal (screen 1). If another screen session is open, you will enter that screen session. You can type `exit` until all screen sessions are closed.
 
 !!! Warning
-    Typing `exit` into a screen permanently closes that screen session and all the analyses that are conducted in it
+    - Typing `exit` into a screen permanently closes that screen session and all the analyses that are conducted in it.
 
-    You may need to type `exit` twice to get the "screen is terminating" message. But be sure not to exit too many times or you exit the entire terminal!
+    - You may need to type `exit` twice to get the "screen is terminating" message. But be sure to check!
 
     ```
     exit
@@ -179,7 +184,7 @@ If no other screen sessions are open, you will fall back to the original SSH ter
     exit
     [screen is terminating]
     ```
-
+    Typing `exit` too many times will exit the entire terminal!
 
 ## Screen Cheat Sheet
 
@@ -188,7 +193,8 @@ If no other screen sessions are open, you will fall back to the original SSH ter
 ++ctrl+a+c++ | Creates a new screen session so that you can use more than one screen session at once
 ++ctrl+a+n++ | Switches to the next screen session if you have more than one running screen
 ++ctrl+a+p++ | Switches to the previous screen session if you have more than one running screen
-++ctrl+a+d++ | Detaches a screen session without killing the processes running in it
+++ctrl+a+d++ or ++ctrl+a++ then ++ctrl+d++ | Detaches a screen session without killing the processes running in it
+++ctrl+a++ then ++ctrl+a++ | Switches between screens
 `exit`| Kills a screen session permanently
 
 #### Getting in
@@ -196,7 +202,7 @@ Command | Description
 --------|---------
 `screen -S <name>` | Start a new screen session with session name
 `screen -ls` | List running sessions/screens
-`screen -x` | Attach to a running session
+`screen -r` | Attach to a running session
 `screen -r <name>` |Attach to a running session with a name
 
 #### Getting Out
@@ -209,7 +215,7 @@ Command | Description
 #### Help
 Command | Description
 --------|---------
-++ctrl+a++ | See help
+screen -h | See help
 ++ctrl+a+c++ | Create new window
 ++ctrl+a+n++ or ++ctrl+a++ <space> | Change to next window in list
 ++ctrl+a+p++ or ++ctrl+a++ <backspace> | Change to previous window in list
