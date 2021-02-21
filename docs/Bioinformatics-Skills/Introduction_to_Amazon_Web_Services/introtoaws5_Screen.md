@@ -74,6 +74,12 @@ Then type the command `screen` into the same AWS instance to start a new screen 
     ```
 Press Space (twice) or Return to get to the command prompt. You are now on a new screen
 
+!!! Note
+    If you plan to work with multiple screens, it might be best to give each screen a unique name in order to tell them apart easily. You can name your screen by typing into your original terminal window:
+    ```
+    screen -S <name>
+    ```
+
 ## Using screen
 
 Let's run a program in the new screen window to test it out.
@@ -145,7 +151,7 @@ You can use the screen id to reconnect to your screen. Like this:
     ```
     screen -r 2683
     ```
-    
+
 You should see Screen 2 that you previously created. Once again you can toggle between screen 2 and screen 3 by typing ++ctrl+a+p++
 
 !!! Note
