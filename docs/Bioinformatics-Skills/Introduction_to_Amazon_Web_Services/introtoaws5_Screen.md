@@ -1,6 +1,6 @@
 # The Screen Command
 
-Screen or GNU Screen is a terminal multiplexer. You can start a terminal session and then open multiple screens inside that session. Processes running in Screen will continue to run when their window is not visible, even if you get disconnected. The goal of this tutorial is for users to learn how to run and switch between multiple screen sessions
+Screen or GNU Screen is a terminal multiplexer. You can start a terminal session and then open multiple screens inside that session. Processes running in Screen will continue to run when their window is not visible, even if you get disconnected. The goal of this tutorial is for users to learn how to run and switch between multiple screen sessions. Check out the [screen cheat sheet](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.md) for some quick help.
 
 ## Video Walkthrough
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_lkmj4ful&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_w9g5trvw" width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
@@ -191,3 +191,5 @@ If no other screen sessions are open, you will fall back to the original SSH ter
     [screen is terminating]
     ```
     Typing `exit` too many times will exit the entire terminal!
+
+Don't forget to check out our [screen cheat sheet](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.md) if you need a quick reference to screen commands.
