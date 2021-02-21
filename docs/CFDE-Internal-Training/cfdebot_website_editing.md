@@ -70,11 +70,11 @@ The website created by the `published-documentation` repo pulls some docs that a
 Follow the general steps above, with the following additional steps:
 
 - Push your changes to the `preview` branch first to check the rendered website.
-- If the changes look as you expected, make a PR of your branch to `dev` and tag the admin team (@ACharbonneau and @marisalim), who will check the changes and approve. Approved changes will periodically be promoted to the `stable` branch to be rendered on the public website.
+- If the changes look as you expected, make a PR of your branch to `dev` and tag the admin team (@ACharbonneau or @marisalim), who will check the changes and approve. Approved changes will periodically be promoted to the `stable` branch to be rendered on the public website.
 
 ### B) **To edit documents that are in the sub-module repos**
 
-The cfde-bot's process for checking changes to the sub-module repos (`the-fair-cookbook` and `specifications-and-documentation`) is slightly different:
+The cfde-bot's process for checking changes to the sub-module repos (`the-fair-cookbook` and `c2m2`) is slightly different:
 
 - The `published-documentation` cfde-bot checks hourly for changes to the sub-module repo's `master` branch. Thus, changes should be made directly in these repositories.
 
@@ -89,7 +89,7 @@ The cfde-bot's process for checking changes to the sub-module repos (`the-fair-c
 Reminder: you must be onboarded to the CFDE to edit these repositories:
 
 - `the-fair-cookbook` repo: [https://github.com/nih-cfde/the-fair-cookbook](https://github.com/nih-cfde/the-fair-cookbook)
-- `specifications-and-documentation` repo: [https://github.com/nih-cfde/specifications-and-documentation](https://github.com/nih-cfde/specifications-and-documentation)
+- `c2m2` repo: [https://github.com/nih-cfde/c2m2](https://github.com/nih-cfde/c2m2)
 
 #### Step 2: Make changes *directly* on the `master` branch
 
@@ -102,7 +102,7 @@ The bot will automatically create preview branches (`update-<repo>-preview`) if 
 If the website build checks all pass, the bot will then automatically merge:
 
 - `update-fair-preview` into `cookbookpreview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/cookbookpreview/](https://cfde-published-documentation.readthedocs-hosted.com/en/cookbookpreview/)
-- `update-specsdocs-preview` into `specspreview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/specspreview/](https://cfde-published-documentation.readthedocs-hosted.com/en/specspreview/)
+- `update-c2m2-preview` into `c2m2preview`, and will build a preview site for you to browse at: [https://cfde-published-documentation.readthedocs-hosted.com/en/c2m2preview/](https://cfde-published-documentation.readthedocs-hosted.com/en/c2m2preview/)
 
 #### Step 5: Publishing your changes
 
