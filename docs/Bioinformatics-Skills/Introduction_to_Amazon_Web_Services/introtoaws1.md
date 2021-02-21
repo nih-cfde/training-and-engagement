@@ -9,6 +9,7 @@ Amazon Web Services (AWS) is a subsidiary of Amazon that provides on-demand clou
 Est. time | Lesson name | Description
 --- | --- | ---
 30 mins | [Setting up an AWS instance](./introtoaws3.md) | How to start and configure an AWS instance?
+<<<<<<< HEAD
 15 mins | [Connect to an instance](./introtoaws4.md) | How to begin working on your AWS instance?
 20 mins | [The Screen Command](./introtoaws5_Screen.md) | How to run multiple screens and switch between screens
 
@@ -19,6 +20,16 @@ Est. time | Lesson name | Description
     - learn to connect to the cloud computer
     - learn to run multiple screen sessions and switch between them
     - learn how to terminate an instance
+=======
+10 mins | [Connect to an instance](./introtoaws4.md) | How to begin working on your AWS instance?
+5 mins | [Terminate an instance](./introtoaws5.md)  | How do you terminate an AWS instance ?
+
+!!! note "Learning Objectives"
+
+    - Introduce researchers to cloud computing resources and how to use them
+
+    - Learn how to terminate an instance
+>>>>>>> 8f18431502805a40f348774a9ffd38275a4f23f7
 
 === "Prerequisites"
 
