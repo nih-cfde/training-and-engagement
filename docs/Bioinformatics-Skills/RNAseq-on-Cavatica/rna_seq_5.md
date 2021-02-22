@@ -30,11 +30,11 @@ Cavatica offers DESeq2 as a stand alone public app which consists of a [Common W
 
 The first step is to obtain a copy of the DESeq2 app in the project folder.
 
-  * Click the <span class="highlight_txt">Apps</span> tab which is currently empty and click <span class="highlight_txt">Add App</span> button which opens the list of Public Apps.
+  * Click the <span class="highlight_txt">Apps</span> tab which is currently empty and click <span class="highlight_txt">:fontawesome-solid-plus: Add App</span> button which opens the list of Public Apps.
   * You can find the <span class="highlight_txt">DESeq2</span> app by typing "DESEQ" in the search bar.
   * In the <span class="highlight_txt">DESeq2</span> app box select the <span class="highlight_txt">Other versions</span> drop down box and click on the version 1.18.1.
-  * This opens the app in a new tab where you can click on the **`...`** on the right hand corner and click <span class="highlight_txt">Copy</span>.
-  * Select the project folder `cancer-dge` (or the project name you have chosen) and click <span class="highlight_txt">Copy</span>.
+  * This opens the app in a new tab where you can click on the <span class="highlight_txt">:fontawesome-solid-ellipsis-h:</span> on the right hand corner and click <span class="highlight_txt">Copy</span>.
+  * Select the project folder **`cancer-dge`** (or the project name you have chosen) and click <span class="highlight_txt">Copy</span>.
   * Navigate to your project Dashboard using <span class="highlight_txt">Projects</span> drop down menu and view the app under the <span class="highlight_txt">Apps</span> tab. You can also click the project link in the popup box that appears on top of the page.
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_r4t7no30&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=51&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_cr6jqtun" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
@@ -64,7 +64,7 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
     }
     ```
 
-* Click the save icon on the top right hand corner to add a revision note.
+* Click <span class="highlight_txt">:fontawesome-regular-save:</span> icon on the top right hand corner to add a revision note.
 * On the app page, the revision history is updated to read <span class="highlight_txt">Revision 1</span>.
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_8j60ve26&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=70&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_x2wd8enj" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
@@ -74,11 +74,11 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
 
 A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1) files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html), another Bioconductor package, is utilized to obtain the gene level summary.  
 
-* You can edit the metadata columns to show Reference genome under <span class="highlight_txt">Files</span> tab. Click on the <span class="highlight_txt">Edit table columns</span> and the right and select <span class="highlight_txt">Reference genome</span> to show that all the files used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
+* Navigate to the <span class="highlight_txt">Files</span> tab and edit the metadata columns to show Reference genome column. To do do, click on the <span class="highlight_txt">:fontawesome-solid-columns:</span> icon and select <span class="highlight_txt">Reference genome</span>. All files in this dataset used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
 * Click on <span class="highlight_txt">Data</span> drop down menu and click on <span class="highlight_txt">Public Reference Files</span>.
 * This takes you to a new page for <span class="highlight_txt">Public Files</span>.
 * Click on <span class="highlight_txt">Type: All</span> button to bring a drop down list and select **GTF**.
-* From the results, select **"Homo_sapiens.GRCh38.84.gtf"** which is the ENSEMBL Release 84 version of the Human gene annotation in GTF format.
+* From the results, select **Homo_sapiens.GRCh38.84.gtf** which is the ENSEMBL Release 84 version of the Human gene annotation in GTF format.
 * Click on <span class="highlight_txt">Copy</span> and select the project folder with the cancer files.
 * Select <span class="highlight_txt">Copy</span> in the popup window.
 * A notification menu will highlight the successful copy of the file and clicking on the project folder name will take you to the <span class="highlight_txt">Files</span> tab in folder.
