@@ -87,7 +87,7 @@ Following project creation, the option will update to enable copying of the sele
 
 ![Copy files to Cavatica](../rna-seq-images/7_KFDRC.png "Copy files to Cavatica")
 
-Successful copying of the files to the project folder will result in a pop-up box summarizing the details along with a link to view the project folder on Cavatica. If the pop-up box disappears before you have a chance to click on the project link, you can [login to Cavatica](https://cavatica.sbgenomics.com){:target="_blank"} and follow the steps to [View files in Cavatica](./rna_seq_4.md#step-1-view-files-in-cavatica).
+Successful copying of the files to the project folder will result in a pop-up box summarizing the details along with a link to view the project folder on Cavatica. If the pop-up box disappears before you have a chance to click on the project link, you can [login to Cavatica](https://cavatica.sbgenomics.com){:target="_blank"} and follow the steps to [view files in Cavatica](./rna_seq_4.md#step-1-view-files-in-cavatica).
 
 ![Successful copy to Cavatica](../rna-seq-images/8_KFDRC.png "Successful copy to Cavatica")
 
@@ -97,7 +97,7 @@ Successful copying of the files to the project folder will result in a pop-up bo
 
     ![Sharing query](../rna-seq-images/9_KFDRC.png "Sharing query")
 
-    [You can learn more about the different options to save/share queries in the KF portal from our lesson](../Kids-First/Advanced-KF-Portal-Queries/KF_13_SavingQueries.md).
+    [You can learn more about the different options to save/share queries in the KF portal from our lesson](../Kids-First/Advanced-KF-Portal-Queries/KF_13_SavingQueries.md){:target="_blank"}.
 
 In our next lesson, we will explore the newly created project folder and files on the Cavatica platform!
 
