@@ -57,7 +57,7 @@ The unit for  **age_at_diagnosis** is in days with wide spread of values across 
 
     * Avoid having empty rows in your exported CSV. This may cause the DESeq2 app to error. To avoid this, select all the rows and columns with values and select File -> Save as option. You can also check the number of rows in the file on Cavatica after uploading to ensure you have 49 rows and 27 columns.
 
-* Access the <span class="highlight_txt">Files</span> tab in your project folder on Cavatica and click the <span class="highlight_txt">Add files</span>.
+* Access the <span class="highlight_txt">Files</span> tab in your project folder on Cavatica and click the <span class="highlight_txt">:fontawesome-solid-plus: Add files</span>.
 
 ![Add files](../rna-seq-images/rna-seq-6-5.png "Add files")
 
@@ -69,7 +69,7 @@ The unit for  **age_at_diagnosis** is in days with wide spread of values across 
 
 ![Start upload](../rna-seq-images/rna-seq-6-7.png "Start upload")
 
-* Successful upload results in a popup box and Status updated to {==UPLOADED==}. Click on the <span class="highlight_txt">x</span> on the top right hand corner.
+* Successful upload results in a popup box and Status updated to {==UPLOADED==}. Click on the <span class="highlight_txt">:fontawesome-solid-times:</span> on the top right hand corner.
 
 ![Successful upload](../rna-seq-images/rna-seq-6-8.png "Successful  upload")
 
