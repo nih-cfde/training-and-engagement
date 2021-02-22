@@ -6,7 +6,7 @@ title: Overview
 Cheat Sheets
 ==============
 
-The cheat sheets below are a quick reference to commonly used commands in bash, conda, and Snakemake.
+Quick reference guides to commonly used command-line commands:
 
 - [Bash and nano Commands](./bash_cheatsheet.md)
 - [Conda Commands](./conda_cheatsheet.md)
