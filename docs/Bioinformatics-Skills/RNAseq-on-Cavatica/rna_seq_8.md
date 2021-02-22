@@ -53,11 +53,12 @@ The editor is associated with a directory structure to help you navigate the wor
 * **output-files** can be used as the directory to save all the outputs from your analysis. If not specified, the files are saved to workspace
 * **project-files** is the directory containing all the input files from the current project. Since it is a read only file system, no changes can be made to these files via the editor interface.
 
+<a name="upload"></a>
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_uennaoay&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=33&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_77fny8c6" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ### Session outputs
 
-The generated output and environment files from an active session are saved when the analysis is stopped by clicking <span class="highlight_txt">Stop</span> located on the right hand top corner. You can access the session files via the <span class="highlight_txt">Files</span> tab in your project folder.
+The generated output and environment files from an active session are saved when the analysis is stopped by clicking <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> located on the right hand top corner. You can access the session files via the <span class="highlight_txt">Files</span> tab in your project folder.
 
 The Data Cruncher comes with set of libraries that are pre-installed. These vary depending on the environment you chose during setup. We chose the default environment for RStudio `SB Bioinformatics - R 4.0` which is loaded with [set of CRAN and Bioconductor libraries](https://docs.sevenbridges.com/docs/about-libraries-in-a-data-cruncher-analysis).
 
@@ -74,7 +75,7 @@ The Data Cruncher comes with set of libraries that are pre-installed. These vary
 
 The latter version of the script that will be run manually contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.
 
-Upload the script file to the **workspace** directory:
+Upload the script file to the **workspace** directory. View the upload steps in the [vidlet](#upload). Briefly:
 
   * Click on the <span class="highlight_txt">Upload</span> option in the Files/Packages/Plots/Help/Viewer pane.
   * Click <span class="highlight_txt">Choose File</span> to select the file from your local computer.
@@ -82,7 +83,7 @@ Upload the script file to the **workspace** directory:
 
 !!! important "Phenotype File Name"
 
-      For the scripts to run error-free ensure that the name of the phenotype CSV file is [**"phenotype_filtered.csv"**](./rna_seq_6.md#step-3-upload-phenotype-file-to-cavatica). Otherwise, update the scripts if your CSV file has a different name before execution.
+      For the scripts to run error-free ensure that the name of the phenotype CSV file is [**"phenotype_filtered.csv"**](./rna_seq_6.md#step-3-upload-phenotype-file-to-cavatica). Otherwise, update the R script file if your CSV file has a different name before execution.
 
 ### Step 3a: Execute using `Source`
 
@@ -94,7 +95,7 @@ Once completed, you will get a popup window asking to try to open the html repor
 
 ![Popup window](../rna-seq-images/rna-seq-8-2.png "Popup window")
 
-Alternatively, you can click <span class="highlight_txt">Cancel</span> in the popup window and subsequently click <span class="highlight_txt">Stop</span> to view the files in your project folder.
+Alternatively, you can click <span class="highlight_txt">Cancel</span> in the popup window and subsequently click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> to view the files in your project folder.
 
 ![Stop analysis](../rna-seq-images/rna-seq-8-3.png "Stop analysis")
 
@@ -113,18 +114,18 @@ This version include the Bioconductor package [`pcaExplorer`](https://bmcbioinfo
 
 
 
-After having run the entire script, click <span class="highlight_txt">Stop</span> to view the files in your project folder.
+After having run the entire script, click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> to view the files in your project folder.
 
 !!! bug "Login Timeout"
 
-    It is possible to be logged out of Cavatica despite having an active RStudio session. You will be unable to stop the analysis from within the editor using <span class="highlight_txt">Stop</span> if that occurs.
+    It is possible to be logged out of Cavatica despite having an active RStudio session. You will be unable to stop the analysis from within the editor using <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> if that occurs.
 
      * Login to Cavatica in a new tab or window.
      * Navigate to the data cruncher session via either the <span class="highlight_txt">Interactive Analysis</span> tab or using the `ANALYSES` pane in your project home page.
 
      ![Data Cruncher quick access](../rna-seq-images/rna-seq-8-5.png "Data Cruncher quick access"){: width=70%}
 
-    * Click <span class="highlight_txt">Stop</span> on the session page.
+    * Click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> on the session page.
 
 ## Step 4: View output files
 
