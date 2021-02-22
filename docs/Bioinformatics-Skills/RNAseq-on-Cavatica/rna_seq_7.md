@@ -6,9 +6,9 @@ title: Analysis with DESeq2 Public App
 ## Step 1: Select inputs
 
 * Access the DESeq2 app under <span class="highlight_txt">Apps</span>.
-* Click <span class="highlight_txt">Run</span> to open the app task page.
-* Under Inputs, click the <span class="highlight_txt">Select files</span> icon next to each of data type.
-      * For Expression data, use <span class="highlight_txt">Type</span> option to choose **TSV.GZ** files and subset using <span class="highlight_txt">Tags</span> to select **DGE-Filter-Data**. Select all using the box on the left corner of the table and click <span class="highlight_txt">Save selection</span>.
+* Click <span class="highlight_txt">:fontawesome-solid-play: Run</span> to open the app task page.
+* Under Inputs, click the <span class="highlight_txt">:fontawesome-solid-folder-open: Select files</span> icon next to each of data type.
+      * For Expression data, use <span class="highlight_txt">Type</span> option to choose **TSV.GZ** files and subset using </br><span class="highlight_txt">:fontawesome-solid-tags:Tags</span> to select **DGE-Filter-Data**. Select all using the box on the left corner of the table and click <span class="highlight_txt">Save selection</span>.
       * For Gene annotation, the files list is updated to show the **GTF** file. Choose the file and click <span class="highlight_txt">Save selection</span>.
       * For Phenotype data, the file list is updated to show the **CSV** file. Choose the file and click <span class="highlight_txt">Save selection</span>.
 
@@ -17,15 +17,15 @@ title: Analysis with DESeq2 Public App
 ## Step 2: Update app settings & execute
 
 * Provide an **Analysis title**. **Cancer_DGE** was used as the title in this lesson.
-* **Control variables** represent potential confounders in the data that need to be controlled in the test for differential expression. You can add more than one variable as values for this field by using the `+` button. In this tutorial, **tumor_location** and **diagnosis_age_range** are two metadata variables which contribute to additional biological variability in the expression levels of the genes.
+* **Control variables** represent potential confounders in the data that need to be controlled in the test for differential expression. You can add more than one variable as values for this field by using the <span class="highlight_txt">:fontawesome-solid-plus:</span> button. In this tutorial, **tumor_location** and **diagnosis_age_range** are two metadata variables which contribute to additional biological variability in the expression levels of the genes.
 * Input the column name from the uploaded phenotype file for **Covariate of interest** which captures the experimental groups we are interested in pairwise comparison. In this tutorial, **histology** designates the two different pediatric cancers that we wish to compare.
 * The default value for **FDR cutoff** is set at 0.1. Set the FDR, or false discovery rate to **0.05**, which means that the proportion of false positives we expect amongst the differentially expressed genes is 5%.
 * **Factor level - reference** represents the denominator for the log2 fold change (LFC) i.e what condition/group do we compare against.  Enter **"Ependymoma"** as the reference factor. Changing the order of the reference or test factor level results in reversal of direction of log fold change.
 * **Factor level - test** represents the numerator for the LFC. Enter **"Medulloblastoma"** as the test factor.
 * Select the **Quantification tool** used to calculate transcript abundance from the drop down menu. The expression data for our data were generated using **kallisto**.
 * **IgnoreTxVersion** is a function in `tximport` package designed to ignore transcript version number. Set it to **True**.
-* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. Although, using LFC shrinkage does not impact the total number of genes that are identified as being significantly differentially expressed, it is useful for downstream assessment of results. Set it to **True**.
-* Click <span class="highlight_txt">Run</span> on the right hand corner to initiate the analysis
+* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. Although, using LFC shrinkage does not impact the total number of genes that are identified as being significantly differentially expressed, it is useful for downstream assessment of results. Set the **log2 fold change shrinkage** to **True**.
+* Click <span class="highlight_txt">:fontawesome-solid-play: Run</span> on the right hand corner to initiate the analysis
 
 !!! note "Default Settings"
 
@@ -95,7 +95,7 @@ You can easily tag these files and download them to your local computer. The fil
 * Navigate to <span class="highlight_txt">Files</span> tab.
 * Use the <span class="highlight_txt">Type</span> drop down menu to select B64HTML, CSV, RDATA and TXT.
 * Select all files with the {Analysis title} in the name.
-* Click on <span class="highlight_txt">Tags</span>, add a new tag and click <span class="highlight_txt">Apply</span>. Here **DESeq2-Output** was used as tag name.
-* Click <span class="highlight_txt">Download</span> to obtain a local copy of the files. The files will be downloaded to your computer's default location for e.g. Downloads on MacOS.  
+* Click on <span class="highlight_txt">:fontawesome-solid-tags:Tags</span>, add a new tag and click <span class="highlight_txt">Apply</span>. Here **DESeq2-Output** was used as tag name.
+* Click <span class="highlight_txt">:fontawesome-solid-download: Download</span> to obtain a local copy of the files. The files will be downloaded to your computer's default location for e.g. Downloads on MacOS.  
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_04q3igxn&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_ggyo77y6" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
