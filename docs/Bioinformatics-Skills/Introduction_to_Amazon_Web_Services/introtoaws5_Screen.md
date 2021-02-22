@@ -1,6 +1,8 @@
 # The Screen Command
 
-Screen or GNU Screen is a terminal multiplexer. You can start a terminal session and then open multiple screens inside that session. Processes running in Screen will continue to run when their window is not visible, even if you get disconnected. The goal of this tutorial is for users to learn how to run and switch between multiple screen sessions. Check out the [screen cheat sheet](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.md) for some quick help.
+Screen or GNU Screen is a terminal multiplexer. You can start a terminal session and then open multiple screens inside that session. Processes running in Screen will continue to run when their window is not visible, even if your session gets disconnected/times out.
+
+The goal of this tutorial is to learn how to run and switch between multiple screen sessions. Check out the [screen cheat sheet](../../Cheat-Sheets/screen_cheatsheet.md) for commonly used commands.
 
 ## Video Walkthrough
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_lkmj4ful&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_w9g5trvw" width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
@@ -29,7 +31,7 @@ The first line of code updates your instance to all latest software configuratio
 
 ## Running Screen
 
-To help yourself tell the different terminal screen apart, type this command on the original terminal window (before you try out screen):
+To help tell the different terminal screens apart, type this command on the original terminal window (before you try out `screen`):
 
 === "AWS Instance Code"
 
@@ -40,8 +42,10 @@ To help yourself tell the different terminal screen apart, type this command on 
 !!! Warning
     Do not clear the screen. We want to make sure the "this is the original terminal window" text lingers when we toggle back to this window later.
 
+    This message may not be visible in the AWS browser terminal.
 
-Then type the command `screen` into the same AWS instance to start a new screen session.
+
+Then, type the following into the same AWS instance to start a new screen session.
 
 === "AWS Instance Code"
     ```
@@ -72,17 +76,17 @@ Then type the command `screen` into the same AWS instance to start a new screen 
 
                   [Press Space for next page; Return to end.]
     ```
-Press Space (twice) or Return to get to the command prompt. You are now on a new screen
+Press ++space++ (twice) or ++return++ to get to the command prompt. You are now on a new screen!
 
 !!! Note
-    If you plan to work with multiple screens, it might be best to give each screen a unique name in order to tell them apart easily. You can name your screen by typing into your original terminal window:
+    If you plan to work with multiple screens, it helps to give each screen a unique name to tell them apart. You can name your screen by adding the `-S` flag and a name:
     ```
     screen -S <name>
     ```
 
 ## Using screen
 
-Let's run a program in the new screen window to test it out.
+Let's run a program in the new screen window to test it out:
 
 === "AWS Instance Code"
     ```
@@ -90,9 +94,9 @@ Let's run a program in the new screen window to test it out.
     ```
 The `top` command is used to show the Linux processes. It provides a dynamic real-time view of the running system. Usually, this command shows the summary information of the system and the list of processes or threads which are currently managed by the Linux Kernel.
 
-While the top command is still running, create another screen by clicking ++ctrl+a+c++. You should see a new blank terminal.
+While the top command is still running, create a screen tab by clicking ++ctrl+a+c++. You should see a new blank terminal.
 
-Let's run yet another command on the blank terminal:
+Let's run a command in this blank terminal:
 
 === "AWS Instance Code"
     ```
@@ -110,14 +114,27 @@ Let's run yet another command on the blank terminal:
 
 A ping test is a method of checking if the computer is connected to a network. It is used to ensure that a host computer which your computer tries to access is operating. It is run for troubleshooting to know connectivity as well as response time.
 
-Please note that you now have three running screens:
- Screen 1) The original ssh terminal you saw at login. You typed the echo command in it.
- Screen 2) A screen that's running the `top` command.
- Screen 3) A screen that's running the `ping google.com` command.
+Now, we have three running "screens":
 
-### Switching between screens
+- Screen 1) The original ssh terminal you saw at login. You typed the `echo` command in it.
+- Screen 2) A screen that's running the `top` command.
+- Screen 3) A screen that's running the `ping google.com` command.
 
- To switch between the two new screens, i.e. screen 2 and screen 3, type ++ctrl+a+p++. You cannot toggle to the original terminal screen (i.e. screen 1) with this shortcut.
+!!! tip
+
+    Think of the first screen command entered into your original terminal like opening a new browser window (i.e., our screen 2).
+
+    - After starting a screen, you can open multiple tabs within the same window using ++ctrl+a+c++ (i.e., our screen 3).
+
+    - You can toggle between the multiple tabs using ++ctrl+a+p++. You can have commands running in each tab.
+
+    - Detaching the screen allows you to go back to the original window/panel.
+
+    - If you start another screen from the original terminal window, it would be like opening another browser window, instead of adding a tab to an existing window.
+
+### Switching between tabs
+
+ To switch between the two new tabs, i.e., our screen 2 and screen 3, type ++ctrl+a+p++. You cannot toggle to the original terminal screen (i.e. screen 1) with this shortcut.
 
 ### Detaching screens
 
@@ -131,6 +148,7 @@ To list your current screen sessions type:
     ```
     screen -ls
     ```
+
 === "Expected Output"
     ```
     ubuntu@ip-172-31-7-6:~$ screen -ls
@@ -138,12 +156,14 @@ To list your current screen sessions type:
 	   2683.pts-0.ip-172-31-7-6	(02/09/21 19:41:19)	(Detached)
      1 Socket in /run/screen/S-ubuntu.
     ```
-!!! Note
-    Typing `ls` on the original terminal shows you only one screen ID because you have one screen (i.e. browser window) with two screen tabs. You can open another screen window by typing `screen` into the original terminal.
 
-You can use the screen id to reconnect to your screen. Like this:
+!!! Note
+    Typing `screen -ls` on the original terminal shows you only one screen ID because you have **one screen (i.e. browser window) with two tabs**. You can open another screen window by typing `screen` into the original terminal.
+
+From the output of `screen -ls` above, we use the screen id to reconnect to the screen:
 
 === "AWS Instance Code"
+
     ```
     screen -r 2683.pts-0.ip-172-31-7-6
     ```
@@ -152,18 +172,7 @@ You can use the screen id to reconnect to your screen. Like this:
     screen -r 2683
     ```
 
-You should see Screen 2 that you previously created. Once again you can toggle between screen 2 and screen 3 by typing ++ctrl+a+p++
-
-!!! Note
-    Think of the first screen command entered into your original terminal as opening a new browser window.
-
-    - After starting a screen, you can open multiple tabs within the same window using ++ctrl+a+c++.
-
-    - You can now toggle between the multiple screens (tabs) using ++ctrl+a+p++. You can have commands running in each tab.
-
-    - Detaching the screen allows you to go back to the original window/panel.
-
-    - If you start another screen from the original terminal window, it would be like opening another browser window instead of adding a tab to an existing window.
+You should see screen 2 that you previously created. Once again you can toggle between screen 2 and screen 3 tabs by typing ++ctrl+a+p++
 
 ## Quitting screens
 
@@ -192,4 +201,4 @@ If no other screen sessions are open, you will fall back to the original SSH ter
     ```
     Typing `exit` too many times will exit the entire terminal!
 
-Don't forget to check out our [screen cheat sheet](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.md) if you need a quick reference to screen commands.
+Don't forget to check out our [screen cheat sheet](../../Cheat-Sheets/screen_cheatsheet.md) if you need a quick reference to screen commands.
