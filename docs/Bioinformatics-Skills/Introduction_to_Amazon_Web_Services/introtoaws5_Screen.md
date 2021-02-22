@@ -1,4 +1,4 @@
-# The Screen Command
+# Using the Screen Command
 
 Screen or GNU Screen is a terminal multiplexer. You can start a terminal session and then open multiple screens inside that session. Processes running in Screen will continue to run when their window is not visible, even if your session gets disconnected/times out.
 

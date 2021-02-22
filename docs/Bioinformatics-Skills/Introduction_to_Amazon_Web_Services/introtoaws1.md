@@ -10,7 +10,7 @@ Est. time | Lesson name | Description
 --- | --- | ---
 30 mins | [Setting up an AWS instance](./introtoaws3.md) | How to start and configure an AWS instance?
 15 mins | [Connecting to an instance](./introtoaws4.md) | How to begin working on your AWS instance?
-20 mins | [The Screen Command](./introtoaws5_Screen.md) | How to run multiple screens and switch between screens?
+20 mins | [Using the Screen Command](./introtoaws5_Screen.md) | How to run multiple screens and switch between tabs?
 10 mins | [Terminating an instance](./introtoaws5.md) | How to stop or terminate your AWS instance?
 
 !!! note "Learning Objectives"
