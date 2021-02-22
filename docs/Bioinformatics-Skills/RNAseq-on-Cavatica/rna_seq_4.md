@@ -6,7 +6,7 @@ title: Cavatica - View, Filter, Tag and Download
 To view the project folder on Cavatica, you can click the link from the pop box in KF portal after successful copy of files which will open the Cavatica login page.
 Alternatively, you can [login to Cavatica](https://cavatica.sbgenomics.com){:target="_blank"} in a new tab.
 
-## Step 1: View files in Cavatica
+## Step 1: View files in Cavatica <a name="view-files"></a>
 
 * Select the newly created project folder under the <span class="highlight_txt">Projects</span> tab.
 * The Dashboard of the project folder has three panels: Description, Members and Analyses.
