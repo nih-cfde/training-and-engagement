@@ -32,7 +32,9 @@ markdown_extensions:
 - pymdownx.details
 - pymdownx.superfences
 - pymdownx.tabbed
-- pymdownx.emoji
+- pymdownx.emoji:
+     emoji_index: !!python/name:materialx.emoji.twemoji
+     emoji_generator: !!python/name:materialx.emoji.to_svg
 - pymdownx.tabbed
 - pymdownx.extra
 - pymdownx.superfences
@@ -40,6 +42,7 @@ markdown_extensions:
 - pymdownx.highlight
 - pymdownx.keys
 - pymdownx.inlinehilite
+
 
 - codehilite:
     guess_lang: false
