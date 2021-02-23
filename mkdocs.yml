@@ -28,9 +28,7 @@ plugins:
   #- htmlproofer
 
 markdown_extensions:
-- attr_list
 - admonition
-- pymdownx.critic
 - def_list
 - pymdownx.details
 - pymdownx.superfences
