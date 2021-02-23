@@ -51,11 +51,11 @@ choose <span class="highlight_txt">Vital status</span>, then select <span class=
 
 ![Vital status filter](../rna-seq-images/15_Cavatica.png "Vital status filter")
 
-* Since the patients could have presented with multiple cancers over diagnostic timeline, the <span class="highlight_txt">histology</span> metadata has other values in addition to the cancer types of interest. Click <span class="highlight_txt">:fontawesome-solid-plus:</span> again this time choosing <span class="highlight_txt">histology</span> and selecting both **Medulloblastoma** & **Ependymoma**.
+* Since the patients could have presented with multiple cancers over diagnostic timeline, the <span class="highlight_txt">histology</span> metadata has other values in addition to the cancer types of interest. Click <span class="highlight_txt">:fontawesome-solid-plus:</span> again this time choosing <span class="highlight_txt">histology</span> and selecting both <span class="highlight_txt">Mudolloblastoma</span> & <span class="highlight_txt">Ependymoma</span>.
 
 ![histology filter](../rna-seq-images/16_Cavatica.png "histology filter")
 
-* To ensure comparison of cancer from the first presentation in the patient, we eliminate recurrent or progressive subtypes using the <span class="highlight_txt">histology_type</span> filter following the same steps as previously.
+* To ensure comparison of cancer from the first presentation in the patient, we eliminate recurrent or progressive subtypes using the <span class="highlight_txt">histology_type</span> filter following the same steps as previously. This time select only <span class="highlight_txt">Initial CNS Tumor</span>.
 
 ![histology_type filter](../rna-seq-images/17_Cavatica.png "histology_type filter")
 
