@@ -69,9 +69,10 @@ The Data Cruncher comes with a set of libraries that are pre-installed. These va
 
 ## Step 3: Run analysis script <a name="R-code"></a>
 
- You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option: </br>
- (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R) </br>
- (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R).
+You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option: </br>
+ 
+ (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R) Go to **Step 3a** after this step.</br>
+ (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R). Go to **Step 3b** after this step.
 
 The (b) version of the script is run manually  and contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.
 
@@ -85,7 +86,7 @@ Upload the script file to the **workspace** directory. View the upload steps in 
 
       For the scripts to run error-free ensure that the name of the phenotype CSV file is [**"phenotype_filtered.csv"**](./rna_seq_6.md#step-3-upload-phenotype-file-to-cavatica). Otherwise, update the R script file if your CSV file has a different name before execution.
 
-### Step 3a: Execute using `Source`
+### Step 3a: Execute using `Source` version
 
 To get started click on the down arrow next to <span class="highlight_txt">Source</span> and click <span class="highlight_txt">Source with Echo</span>. This will print the comments as the code is executed.
 
@@ -102,7 +103,7 @@ Alternatively, you can click <span class="highlight_txt">Cancel</span> in the po
 For costs and time comparison between the two approaches, we use the automated version with the option to view the output files in the project folder which took 25 minutes to run and cost $0.2. You are now ready to view your output. Go to **Step 4**. 
 
 
-### Step 3b: Execute using `Run`
+### Step 3b: Execute using `Run` version
 
 You can also execute the code by selecting chunks or line by line and clicking the <span class="highlight_txt">Run</span> option or using ++ctrl+enter++ keys. This allows you greater flexibility to explore and understand the data. The first step is installing the packages necessary for DGE analysis and this takes approximately 17 minutes.
 
