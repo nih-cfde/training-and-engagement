@@ -67,7 +67,7 @@ Under the <span class="highlight_txt">Clinical Filters</span> tab select:
 * **Gender** --> Male
 * **Race** --> White
 
-This results in 98 files.
+This results in 99 files.
 
 ![Subset by Clinical Filters](../rna-seq-images/5_KFDRC.png "Subset by Clinical Filters")
 
@@ -93,7 +93,7 @@ Successful copying of the files to the project folder will result in a pop-up bo
 
 !!! info "Query link"
 
-    The KF portal enables sharing of the query with the unique filter combinations including as a short URL. Login to your KF account and [click on the query link](https://p.kfdrc.org/s/6ic) to obtain the selected cohort.
+    The KF portal enables sharing of the query with the unique filter combinations including as a short URL. Login to your KF account and [click on the query link](https://p.kfdrc.org/s/6ic){:target="_blank"} to obtain the selected cohort.
 
     ![Sharing query](../rna-seq-images/9_KFDRC.png "Sharing query")
 
