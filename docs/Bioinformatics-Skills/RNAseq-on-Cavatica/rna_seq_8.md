@@ -3,7 +3,7 @@ layout: page
 title: Analysis using Data Cruncher
 ---
 
-So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will setup an interactive analysis on an instance running RStudio computational environment. We will run DGE workflow using an analysis script, generate reports and plots.
+So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script, and generate reports and plots.
 
 !!! note "DGE Tools"
 
@@ -17,7 +17,7 @@ So far we have explored running DGE analysis using a public app based on DESeq2.
 * Click on the <span class="highlight_txt">Create your first analysis</span> which appears the first time your are setting up.
 * In the popup box, select <span class="highlight_txt">RStudio</span> for Environment. Provide an analysis name in the box. Here, **Cancer_DGE** was used to title the analysis. Click <span class="highlight_txt">Next</span> when done.
 * In the `Compute requirements` tab, we will use the default instance type (c5.2xlarge, $0.49/hr). We increase the `Suspend time`, which is the period of inactivity after which the instance is stopped automatically and the analysis is saved, from 30 to 60 minutes.
-* Click <span class="highlight_txt">Start the analysis</span>. This prompts the initializing of the analysis which involves set up of the instance and  preparing analysis environment.
+* Click <span class="highlight_txt">Start the analysis</span>. This prompts the initialization of the analysis which involves set up of the instance and preparation of the analysis environment.
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_4hc4cd8i&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=44&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_6ih50uzu" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
@@ -50,7 +50,7 @@ The editor is associated with a directory structure to help you navigate the wor
     The `project-files` directory which contains all the input files is a read only file system while you have read-write permissions for the `workspace` and `output-files` directories.
 
 * **workspace** is the default working directory for the analysis. You can use the RStudio <span class="highlight_txt">Upload</span> option to get files from your local computer to the workspace.
-* **output-files** can be used as the directory to save all the outputs from your analysis. If not specified, the files are saved to workspace
+* **output-files** can be used as the directory to save all the outputs from your analysis. If not specified, the files are saved to workspace.
 * **project-files** is the directory containing all the input files from the current project. Since it is a read only file system, no changes can be made to these files via the editor interface.
 
 <a name="upload"></a>
@@ -60,20 +60,20 @@ The editor is associated with a directory structure to help you navigate the wor
 
 The generated output and environment files from an active session are saved when the analysis is stopped by clicking <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> located on the right hand top corner. You can access the session files via the <span class="highlight_txt">Files</span> tab in your project folder.
 
-The Data Cruncher comes with set of libraries that are pre-installed. These vary depending on the environment you chose during setup. We chose the default environment for RStudio `SB Bioinformatics - R 4.0` which is loaded with [set of CRAN and Bioconductor libraries](https://docs.sevenbridges.com/docs/about-libraries-in-a-data-cruncher-analysis).
+The Data Cruncher comes with a set of libraries that are pre-installed. These vary depending on the environment you chose during setup. We chose the default environment for RStudio `SB Bioinformatics - R 4.0` which is loaded with [set of CRAN and Bioconductor libraries](https://docs.sevenbridges.com/docs/about-libraries-in-a-data-cruncher-analysis).
 
 !!! important "Installing additional libraries"
 
-    Although the output files, the environment and history of the session are saved upon stopping the analysis editor, any installed libraries are only good for the session and must be re-installed for every restart of the instance.
+    Although the output files, the environment, and history of the session are saved upon stopping the analysis editor, any installed libraries are only good for the session and must be re-installed for every restart of the instance.
 
 
 ## Step 3: Run analysis script <a name="R-code"></a>
 
- We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio: </br>
+ You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option: </br>
  (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R) </br>
  (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R).
 
-The latter version of the script that will be run manually contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.
+The (b) version of the script is run manually  and contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.
 
 Upload the script file to the **workspace** directory. View the upload steps in the [vidlet](#upload). Briefly:
 
@@ -91,7 +91,7 @@ To get started click on the down arrow next to <span class="highlight_txt">Sourc
 
 ![Source with Echo](../rna-seq-images/rna-seq-8-1.png "Source with Echo")
 
-Once completed, you will get a popup window asking to try to open the html report. Click </br><span class="highlight_txt">Try Again</span> to open a new tab for the report.
+This process will take about 15-20 minutes. Once completed, you will get a popup window asking to try to open the html report. Click </br><span class="highlight_txt">Try Again</span> to open a new tab for the report.
 
 ![Popup window](../rna-seq-images/rna-seq-8-2.png "Popup window")
 
@@ -99,7 +99,7 @@ Alternatively, you can click <span class="highlight_txt">Cancel</span> in the po
 
 ![Stop analysis](../rna-seq-images/rna-seq-8-3.png "Stop analysis")
 
-For costs and time comparison between the two approaches, we use the automated version with the option to view the output files in the project folder which took 25 minutes to run and cost $0.2.
+For costs and time comparison between the two approaches, we use the automated version with the option to view the output files in the project folder which took 25 minutes to run and cost $0.2. You are now ready to view your output. Go to **Step 4**. 
 
 
 ### Step 3b: Execute using `Run`
