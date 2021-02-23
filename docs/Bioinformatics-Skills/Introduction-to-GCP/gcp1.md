@@ -28,13 +28,13 @@ This is a 2-step process:
 
 - On the first page, you must agree to the Terms of Service, then click <span class="highlight_txt">Continue</span>.
 
-- On the second page, you'll create your payments profile. Choose either business or individual account type, enter your address and billing information, then click <span class="highlight_txt">Start free trial</span>. For this tutorial, we are using an individual account type.
+- On the second page, you'll create your payments profile. For this tutorial, we selected the individual account type (versus business account) and entered address and billing information. Be sure to click <span class="highlight_txt">Start free trial</span>.
 
 - A message will confirm that you set up the free trial - click <span class="highlight_txt">Got it</span>.
 
 !!! info "Free Credits"
 
-    For new users, Google offers a free 3-month $300 trial account. While you still have to enter a valid credit card to set up the billing account, you will not be charged during the trial period, nor will you be automatically charged when the trial ends unless you turn on automatic billing.
+    For new users, Google offers a free 3-month $300 trial account. While you still have to enter a valid credit card to set up the billing account, you will not be charged during the trial period, nor will you be automatically charged when the trial ends, unless you turn on automatic billing.
 
 ## Step 3: Check billing account information
 
@@ -56,29 +56,23 @@ a) Check the box next to your billing account to show member information on righ
 
 b) You can add members by clicking on <span class="highlight_txt">ADD MEMBER</span>.
 
-c) By default, as the owner of the billing account, you are designated the **Billing Account Administrator** role. [Read more about the different member and role options on the GCP](https://cloud.google.com/billing/docs/how-to/billing-access).
-
 !!! note "Member Roles"
 
-    You can add members with roles such as "Billing Account User" if, for example, you want others to have access to your GCP billing account, like team members or other platforms that use the Google cloud, such as the [Terra platform](https://app.terra.bio/).
+    You can add members with roles such as "Billing Account User" if, for example, you want others to have access to your GCP billing account. This role is good for sharing your account with team/lab members or other platforms that use the Google cloud, such as the [Terra platform](https://app.terra.bio/).
 
-- Optional: you can rename your billing account by clicking on the current name, which takes you to a billing overview page.
-
-![](./gcp_images/gcp_billingoverview.png "GCP billing overview")
-
-- Click <span class="highlight_txt">Account management</span> tab on the left panel and subsequently click on the pencil icon to bring up a popup window to enter the new name.
-
-![](./gcp_images/gcp_billinrename.png "GCP billing account rename")
+c) By default, as the owner of the billing account, you are designated the **Billing Account Administrator** role. [Read more about the different member and role options on the GCP](https://cloud.google.com/billing/docs/how-to/billing-access).
 
 Now that the billing account is set up, you can use GCP resources!
 
-!!! important
+!!! note "Optional: Rename billing account"
 
-    Keep track of GCP service charges from the billing account section of the GCP console (e.g., invoice information can be found in the <span class="highlight_txt">Transactions</span> section). For more information and tutorials on monitoring expenses, see [GCP documentation](https://cloud.google.com/billing/docs).
+    - Click on the current billing account name to navigate to the billing overview page:
 
-    Tracking the exact and estimated costs on GCP can be challenging. See [this blog post](https://medium.com/@lukwam/reconcile-your-monthly-gcp-invoice-with-bigquery-billing-export-b36ae0c961e) for an explanation of monitoring computing costs.
+    ![](./gcp_images/gcp_billingoverview.png "GCP billing overview")
 
-    Use the [Google Cloud pricing calculator](https://cloud.google.com/products/calculator/#id=) to estimate the cost of GCP compute resources.
+    - Click <span class="highlight_txt">Account management</span> tab on the left panel and subsequently click on the pencil icon. Enter the new name in the pop up window:
+
+    ![](./gcp_images/gcp_billinrename.png "GCP billing account rename")
 
 ## Centralized billing account
 
@@ -89,3 +83,11 @@ In brief, if a hypothetical user, Jon, decided to start working with the GCP, he
 - Jon would create an Organization in G Suite and add Janice as a User to the organization.
 - As the administrator, Janice has access to the credit card information, so she must set up the organization's Google billing account. Janice would log in to the GCP console using her G Suite organization Google account to set up the billing account and link a credit card in the same way mentioned [above](#create-billing).
 - Janice must add Jon to the billing account as a member with the role "Billing Account Administrator" to give him the ability to edit and use the billing account.
+
+## Monitoring billing account
+
+Keep track of GCP service charges from the billing account section of the GCP console (e.g., invoice information can be found in the <span class="highlight_txt">Transactions</span> section). For more information and tutorials on monitoring expenses, see [GCP documentation](https://cloud.google.com/billing/docs).
+
+Tracking the exact and estimated costs on GCP can be challenging. See [this blog post by Lukas Karlsson](https://medium.com/@lukwam/reconcile-your-monthly-gcp-invoice-with-bigquery-billing-export-b36ae0c961e) for an explanation of monitoring computing costs. The [Google Cloud pricing calculator](https://cloud.google.com/products/calculator/#id=) is also a helpful tool to estimate the cost of GCP compute resources.
+
+Next, let's spin up a GCP virtual machine!

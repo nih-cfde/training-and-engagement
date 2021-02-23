@@ -13,6 +13,7 @@ In this section, we'll create a project, configure a GCP virtual machine (VM) in
 !!! tip "Pin Tabs"
 
     The navigation menu allows you to pin any tab which will appear on the top under Home. Hover over any navigation menu item and click on the pin icon next to it.
+
 - Click on <span class="highlight_txt">CREATE PROJECT</span>
 
 ![](./gcp_images/gcp_project2.png "Create Project button")
