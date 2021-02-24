@@ -1,10 +1,12 @@
 ---
 layout: page
 title: RNAseq Tutorial Overview
+hide:
+  - toc
 ---
 
 Differential Gene Expression Analysis on Cavatica Cloud Platform
-====================================================================
+============================================
 
 **RNA sequencing (RNAseq)** is a high throughput technique that provides qualitative and quantitative information about RNA biology including transcriptome-wide expression quantification, discovery of novel genes and gene isoforms, and differential expression.
 

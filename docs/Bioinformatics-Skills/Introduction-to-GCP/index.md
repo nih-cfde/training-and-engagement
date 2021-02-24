@@ -1,9 +1,12 @@
 ---
 layout: page
 title: GCP Overview
+hide:
+  - toc
 ---
 
-**An introduction to the Google Cloud Platform**
+An Introduction to the Google Cloud Platform
+============================================
 
 The Google Cloud Platform (GCP) provides a number of services such as cloud-based computation and storage. All services are available through the platform's console page, which also monitors account billing and user permissions/roles. GCP cloud computing resources are useful for conducting large-scale genomic analyses that would otherwise take too long or crash local computers.
 

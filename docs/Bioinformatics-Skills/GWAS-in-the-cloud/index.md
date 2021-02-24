@@ -1,10 +1,12 @@
 ---
 layout: page
 title: GWAS Tutorial Overview
+hide:
+  - toc
 ---
 
 How to do GWAS in the cloud using Amazon Web Services
-=====================================================
+============================================
 
 **Genome-wide association studies (GWAS)** offer a way to rapidly scan entire genomes and find genetic variation associated with a particular disease condition.
 
