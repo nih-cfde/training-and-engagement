@@ -18,8 +18,8 @@ Latest Release
 
 <span style="font-size:24px;">Updates and Fixes
 
-- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md): Updated AWS screenshots to new user experience interface
-- [Introduction to Amazon Web Services](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1.md): Updated AWS tutorial based on workshop feedback
+- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md): updated AWS screenshots to new user experience interface
+- [Introduction to Amazon Web Services](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1.md): updated AWS tutorial based on workshop feedback
 - [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md): updated Github repo names
 - [CFDE Portal Use Cases](../Bioinformatics-Skills/CFDE-Portal/index.md): lesson landing page added back
 
