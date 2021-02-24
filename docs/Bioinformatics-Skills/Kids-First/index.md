@@ -3,7 +3,8 @@ layout: page
 title: KF Portal Overview
 ---
 
-**Kids First (KF) Lessons**
+Kids First (KF) Lessons
+=======================
 
 The [NIH Common Fund-supported Gabriella Miller Kids First Data Resource
 Center](https://kidsfirstdrc.org/) (KFDRC) enables researchers, clinicians, and
