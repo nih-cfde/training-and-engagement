@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Snakemake Overview
+hide:
+  - toc
 ---
 
-**An introduction to Snakemake for workflow management**
+An Introduction to Snakemake for Workflow Management
+=======================================================
 
 Workflow management systems help to automate analyses and make them easier to maintain, reproduce, and share with others. In this tutorial, we will walk through the basic steps for creating a [variant calling](https://www.ebi.ac.uk/training-beta/online/courses/human-genetic-variation-introduction/variant-identification-and-analysis/) workflow with the Snakemake workflow management system.
 
