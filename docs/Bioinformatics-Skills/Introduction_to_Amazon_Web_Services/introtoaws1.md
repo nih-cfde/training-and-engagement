@@ -1,8 +1,11 @@
 ---
 layout: page
+hide:
+  - toc
 ---
 
-# Introduction to Amazon Web Services
+Introduction to Amazon Web Services
+====================================
 
 Amazon Web Services (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies and governments, on a metered pay-as-you-go basis. Subscribers can pay for a single virtual AWS computer, a dedicated physical computer, or clusters of either. AWS cloud computing resources are useful for conducting large-scale genomic analyses that would otherwise take too long or crash local computers.
 
