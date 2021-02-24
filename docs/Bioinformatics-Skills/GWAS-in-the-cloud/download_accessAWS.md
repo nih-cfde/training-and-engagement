@@ -62,11 +62,11 @@ OK, so you've created a [running computer on the cloud](aws_instance_setup.md). 
 
 The information you will need lives on the [AWS page that lists your active instances](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:).
 
-* On this webpage, select your instance of interest and click the "Connect" button on the top of the page.
+* On this webpage, select your instance of interest and click <span class="highlight_txt">Connect</span> on the top of the page.
 
 ![](./images-gwas/GWAS_General_publicDNS.png "Connect to instance button")
 
-* A pop up window will appear. Copy the line of code under "Example:", starting with the `ssh` command.
+* On the new page, select the SSH tab (as shown in the image) and copy the line of code under "Example:", starting with the `ssh` command.
 
 ![](./images-gwas/GWAS_General_aws_connect_your_instance.png "ssh command")
 
@@ -95,7 +95,7 @@ The information you will need lives on the [AWS page that lists your active inst
 ![](./images-gwas/GWAS_General_AWS_Connected.png "instance terminal")
 
 !!! Note
-    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting "Inspector". I've chosen the "Pro" theme.
+    My terminal window is black, but yours may not be! Users can [customize their terminal](https://www.maketecheasier.com/customize-mac-terminal/) by right clicking on the terminal window and selecting <span class="highlight_txt">Inspector</span>. I've chosen the <span class="highlight_txt">Pro</span> theme.
 
 * You have now successfully logged in as user "ubuntu" to the machine "ec2-18-216-20-166.us-east-2.compute.amazonaws.com" using the "amazon.pem" authentication key.
 
@@ -180,7 +180,7 @@ You need lots of other helper utilities to run today's pipeline so now is a good
     ```
     sudo apt-get install autoconf autogen g++ gcc make automake pkg-config zlib1g-dev curl gdebi-core -y ghostscript-x
     ```
-    
+
 !!! Important
     Installing helper utilities is VERY important. All sorts of errors in installations/plotting happen if it's not run! For example, you will install "vcftools" in later parts of this tutorial which absolutely needs "autoconf", "autogen", and "make" to be preinstalled. zlib is a library implementing the deflate compression method found in gzip and PKZIP. gdebi lets you install local deb packages resolving and installing its dependencies. And to run plotting functions in R, you will need Ghostscript, an interpreter of the PDF format.
 
