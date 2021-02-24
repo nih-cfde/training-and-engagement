@@ -1,6 +1,8 @@
 ---
 layout: page
 title: RNAseq Tutorial Overview
+hide:
+  - toc
 ---
 
 **Differential Gene Expression Analysis on Cavatica Cloud Platform**
