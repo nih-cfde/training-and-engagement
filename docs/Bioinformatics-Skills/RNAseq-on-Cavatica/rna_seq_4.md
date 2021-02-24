@@ -14,7 +14,7 @@ Alternatively, you can [login to Cavatica](https://cavatica.sbgenomics.com){:tar
 
 ![Files tab in project homepage](../rna-seq-images/10_Cavatica.png "Files tab in project homepage")
 
-* Click on the <span class="highlight_txt">Type: All</span> filter for a drop down box which lists the type and number of files: 98 compressed tsv files.
+* Click on the <span class="highlight_txt">Type: All</span> filter for a drop down box which lists the type and number of files: 99 compressed tsv files.
 
 ![Total files in project folder](../rna-seq-images/11_Cavatica.png "Total files in project folder")
 
@@ -47,21 +47,21 @@ Each of these columns have multiple values. To filter the data using values with
 ![Apply additional filters](../rna-seq-images/14_Cavatica.png "Apply additional filters")
 
 * First, we filter to only include surviving patients. Click on <span class="highlight_txt">:fontawesome-solid-plus:</span> and
-choose <span class="highlight_txt">Vital status</span>, then select <span class="highlight_txt">Alive</span> from the sub-menu.
+choose <span class="highlight_txt">Vital status</span>, then select **Alive** from the sub-menu.
 
 ![Vital status filter](../rna-seq-images/15_Cavatica.png "Vital status filter")
 
-* Since the patients could have presented with multiple cancers over diagnostic timeline, the <span class="highlight_txt">histology</span> metadata has other values in addition to the cancer types of interest. Click <span class="highlight_txt">:fontawesome-solid-plus:</span> again this time choosing <span class="highlight_txt">histology</span> and selecting both <span class="highlight_txt">Mudolloblastoma</span> & <span class="highlight_txt">Ependymoma</span>.
+* Since the patients could have presented with multiple cancers over diagnostic timeline, the <span class="highlight_txt">histology</span> metadata has other values in addition to the cancer types of interest. Click <span class="highlight_txt">:fontawesome-solid-plus:</span> again this time choosing <span class="highlight_txt">histology</span> and selecting both **Medulloblastoma** & **Ependymoma**.
 
 ![histology filter](../rna-seq-images/16_Cavatica.png "histology filter")
 
-* To ensure comparison of cancer from the first presentation in the patient, we eliminate recurrent or progressive subtypes using the <span class="highlight_txt">histology_type</span> filter following the same steps as previously. This time select only <span class="highlight_txt">Initial CNS Tumor</span>.
+* To ensure comparison of cancer from the first presentation in the patient, we eliminate recurrent or progressive subtypes using the <span class="highlight_txt">histology_type</span> filter following the same steps as previously. This time select only **Initial CNS Tumor**.
 
 ![histology_type filter](../rna-seq-images/17_Cavatica.png "histology_type filter")
 
 The tumor_location metadata column has some values that include multiple anatomically distinct locations separated by a **`;`**. This could indicate the observation of spread of tumor to multiple locations during first occurrence.
 
-* We filter using the <span class="highlight_txt">tumor_location</span> metadata, choosing only values without the **`;`**. Select the eleven distinct values for tumor_location (not including those with **`;`**, **`Not Reported `** , and **`Other locations NOS `**). You can see the complete list in the screen capture below.
+* We filter using the <span class="highlight_txt">tumor_location</span> metadata, choosing only values **without** the **`;`**. Select the eleven distinct values for tumor_location (not including those with **`;`**, **`Not Reported `** , and **`Other locations NOS `**). You can see the complete list in the screen capture below.
 
 ![tumor_location filter](../rna-seq-images/18_Cavatica.png "tumor_location filter")
 
@@ -72,7 +72,7 @@ This results in total of 50 files from our initial 98 copied files.
 To enable quick access to the filtered data without having to re-run all the metadata filters, we can create tags for the filtered data.
 
 
-* Select all the files and click on <span class="highlight_txt">:fontawesome-solid-tags:Tags</span> tab.  
+* Select all the files by clicking on <span class="highlight_txt">:material-square-rounded-outline:</span> in the column header and click on <span class="highlight_txt">:fontawesome-solid-tags:Tags</span> tab.  
 
 ![All filtered files](../rna-seq-images/19_Cavatica.png "All filtered files")
 

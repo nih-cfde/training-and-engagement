@@ -30,7 +30,9 @@ plugins:
 markdown_extensions:
 - admonition
 #- def_list
+- pymdownx.critic
 - pymdownx.details
+- pymdownx.highlight
 - pymdownx.superfences
 - pymdownx.tabbed
 - pymdownx.emoji:

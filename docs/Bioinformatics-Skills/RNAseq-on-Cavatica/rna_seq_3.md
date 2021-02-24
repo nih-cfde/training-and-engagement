@@ -40,9 +40,9 @@ There are data with different access levels hosted on the KF portal including op
 
 Select the <span class="highlight_txt">File Filters</span> tab and apply the following filters:
 
-* **Experimental Strategy** --> "RNA-Seq"
-* **Data Type** --> "Gene expression"
-* **File Format** --> "tsv"
+* **Experimental Strategy** --> RNA-Seq
+* **Data Type** --> Gene expression
+* **File Format** --> tsv
 
 This results in 1,477 files.
 
@@ -64,8 +64,8 @@ To reduce possible sources of variation from sex and race, we subset further to 
 
 Under the <span class="highlight_txt">Clinical Filters</span> tab select:
 
-* **Gender** --> "Male"
-* **Race** --> "White"
+* **Gender** --> Male
+* **Race** --> White
 
 This results in 99 files.
 
@@ -78,7 +78,7 @@ This results in 99 files.
     It is crucial to ensure the Cavatica integrations are enabled to allow for file transfers. Find more details in our [Push to Cavatica lesson](../Kids-First/KF_7_PushToCavatica.md). You **do not** have to have the Data Repository Integrations set up to continue with this lesson.
 
 * Click on the <span class="highlight_txt">ANALYZE IN CAVATICA</span> button.
-* Select the <span class="highlight_txt">CREATE A PROJECT</span> option and provide an appropriate name for your folder. In this tutorial, `cancer-dge` was chosen as the project name.
+* Select the <span class="highlight_txt">CREATE A PROJECT</span> option and provide an appropriate name for your folder. In this tutorial, **`cancer-dge`** was chosen as the project name.
 * Use the <span class="highlight_txt">SAVE</span> option to create the project.
 
 ![Create project on Cavatica](../rna-seq-images/6_KFDRC.png "Create project on Cavatica")

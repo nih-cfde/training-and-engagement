@@ -81,13 +81,13 @@ Upload the script file to the **workspace** directory. View the upload steps in 
   * Click on the <span class="highlight_txt">Upload</span> option in the Files/Packages/Plots/Help/Viewer pane.
   * Click <span class="highlight_txt">Choose File</span> to select the file from your local computer.
   * Once uploaded, click on the script file name to open it in the script editor pane (top left hand corner).
-  * To execute go to **Step 3a** if you chose the (a) version or **Step 3b** if you chose (b).
+  * To execute go to **[Step 3a](#step3a)** if you chose the (a) version or **[Step 3b](#step3b)** if you chose (b).
 
 !!! important "Phenotype File Name"
 
       For the scripts to run error-free ensure that the name of the phenotype CSV file is [**"phenotype_filtered.csv"**](./rna_seq_6.md#step-3-upload-phenotype-file-to-cavatica). Otherwise, update the R script file if your CSV file has a different name before execution.
 
-### Step 3a: Execute using `Source` version
+### Step 3a: Execute using `Source` version <a name="step3a"></a>
 
 To get started, click on the down arrow next to <span class="highlight_txt">Source</span> and click <span class="highlight_txt">Source with Echo</span>. This will print the comments as the code is executed.
 
@@ -101,10 +101,10 @@ Alternatively, you can click <span class="highlight_txt">Cancel</span> in the po
 
 ![Stop analysis](../rna-seq-images/rna-seq-8-3.png "Stop analysis")
 
-For costs and time comparison between the two approaches, we use the automated version with the option to view the output files in the project folder which took 25 minutes to run and cost $0.2. You are now ready to view your output. Go to **Step 4**.
+For costs and time comparison between the two approaches, we use the automated version with the option to view the output files in the project folder which took 25 minutes to run and cost $0.2. You are now ready to view your output. Go to **[Step 4](#step4)**.
 
 
-### Step 3b: Execute using `Run` version
+### Step 3b: Execute using `Run` version <a name="step3b"></a>
 
 You can also execute the code by selecting a line or multiple lines of code and clicking the <span class="highlight_txt">Run</span> option or using ++ctrl+enter++ keys. This allows you greater flexibility to explore and understand the outputs of each line of code.
 
@@ -131,7 +131,7 @@ When you are finished running the R script, click <span class="highlight_txt">:f
 
     * Click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> on the session page.
 
-## Step 4: View output files
+## Step 4: View output files <a name="step4"></a>
 
 All the session files and the generated outputs are saved after the analysis is stopped and are accessible on the session page.
 
