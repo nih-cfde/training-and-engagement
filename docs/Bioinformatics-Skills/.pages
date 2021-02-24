@@ -4,7 +4,9 @@ nav:
   - CFDE Portal Tutorials: CFDE-Portal
   - install_conda_tutorial.md
   - Introduction_to_Amazon_Web_Services
+  - Introduction-to-GCP
   - Command-Line-BLAST
   - GWAS in the Cloud: GWAS-in-the-cloud
   - Snakemake Workflow Management: Snakemake
   - Simulate_Illumina_Reads.md
+  - RNAseq-on-Cavatica

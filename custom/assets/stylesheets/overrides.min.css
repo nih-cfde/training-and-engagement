@@ -65,8 +65,13 @@
     break-inside:avoid
 }
 
+.md-announce {
+  background-color: #204060
+}
+
 .md-announce a, .md-announce a:focus, .md-announce a:hover {
-    color:currentColor;
+    color: currentColor;
+
 }
 
 .md-announce strong {
@@ -75,7 +80,7 @@
 
 .md-announce .email {
     margin-left: .6em;
-    color:#C3E1E6
+    color:#ffffff
 }
 .md-announce .twitter {
     margin-left: .6em;
@@ -94,7 +99,9 @@
 
     [data-md-color-scheme=slate] .tx-container {
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 0'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(232, 15%, 21%, 1)' /></svg>") repeat bottom, linear-gradient(to bottom, #336699, #33cccc 99%)
+
   }
+
 
 }
 
@@ -121,7 +128,7 @@
   }
 
 .content__bottom {
-    align-items: flex-start;
+    align-items: stretch;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
@@ -137,6 +144,16 @@
     width: 100%;
   }
 
+.data_content_left {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    float: center
+  }
 
 @media (min-width:768px) {
     .content__bottom {
@@ -199,8 +216,8 @@
     .tx-hero__image {
         margin-top: 1rem;
         order: 1;
-        max-width: 32rem;
-        transform:translateX(6rem)
+        max-width: 25rem;
+        /*transform:translateX(1rem)*/
 
     }
 
@@ -223,12 +240,13 @@
 
 @media screen and (min-width: 76.25em) {
     .tx-hero__image {
-        transform:translateX(6rem)
+        transform:translateX(1rem)
     }
 }
 
 html {
   box-sizing: inherit;
+
 
 }
 
@@ -264,8 +282,8 @@ body {
 
 .slider {
   position: relative;
-  width: 700px;
-  height: 350px;
+  width: 50vw;
+  height: 80%;
   max-width: 100vw;
   margin: auto;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
@@ -288,7 +306,7 @@ body {
 }
 
 .slider input[type="radio"] {
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -351,7 +369,7 @@ body {
 
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   height: 100%;
 
@@ -363,7 +381,10 @@ body {
 
 
 .slide-content {
-  width: 350px;
+  width: 30vw;
+  padding-left: 20px;
+  padding-right: 15px;
+
 }
 
 .slide-title {
@@ -396,9 +417,9 @@ body {
 }
 
 .slide-image img {
+  max-height: 80%;
   max-width: 100%;
-  max-height: 100%;
-  padding-right:10%;
+
 }
 
 /* Slide animations */
@@ -433,6 +454,11 @@ body {
 }
 
 #btn-7:checked ~ .slides .slide:nth-child(7) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-8:checked ~ .slides .slide:nth-child(8) {
   transform: translatex(0);
   opacity: 1;
 }
@@ -482,6 +508,14 @@ body {
   animation-timing-function: linear;
 
 }
+
+#btn-8:not(:checked) ~ .slides .slide:nth-child(8) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+
+}
+
 
 
 @keyframes swap-out {

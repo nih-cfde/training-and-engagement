@@ -12,9 +12,8 @@ When you are done with all the analyses, be sure to terminate the AWS instance. 
     Upon termination, you will lose all installations and data. Be sure to download all useful data before you terminate the instance!
 
 
- Log in to AWS and navigate to the instances page. Then select the instance and click
+ Log in to AWS and navigate to the instances page. Then select the instance and click on <span class="highlight_txt">Instance State</span> and <span class="highlight_txt">Terminate instance</span>. Then click <span class="highlight_txt">Terminate</span>
 
- "Actions" --> "Instance State" --> "Terminate"
 
 ![](./images-gwas/GWAS_General_Terminate_AWS.png "Terminate instance")
 
