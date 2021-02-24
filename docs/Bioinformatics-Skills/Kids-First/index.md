@@ -1,9 +1,12 @@
 ---
 layout: page
 title: KF Portal Overview
+hide:
+  - toc
 ---
 
-**Kids First (KF) Lessons**
+Kids First & Cavatica Lessons
+===================================
 
 The [NIH Common Fund-supported Gabriella Miller Kids First Data Resource
 Center](https://kidsfirstdrc.org/) (KFDRC) enables researchers, clinicians, and
@@ -46,17 +49,17 @@ Est. Time | Lesson name | Description
 10 mins | [Ands & Ors](Advanced-KF-Portal-Queries/KF_10_AndOr.md) | Use conditional statements to filter
 10 mins | [Joint Queries](Advanced-KF-Portal-Queries/KF_11_JointQuery.md) | Link multiple filters as joint queries
 10 mins | [Checking Queries](Advanced-KF-Portal-Queries/KF_12_CheckingQueries.md) | Interpret query results
-10 mins | [Saving Queries](Advanced-KF-Portal-Queries/KF_13_SavingQueries.md) | Save participant sets or search term combinations
+10 mins | [Saving Queries](Advanced-KF-Portal-Queries/KF_13_SavingQueries.md) | Save participant sets or search term </br>combinations
 
 Importing and downloading KF Data:
 
 Est. Time | Lesson name | Description
 --- | --- | ---
 10 mins | [Push to Cavatica](KF_7_PushToCavatica.md) | Move KF data to Cavatica
-10 mins | [Data Download Options](Download_Data/index.md) | Options for downloading data to your local computer
+10 mins | [Data Download Options](Download_Data/index.md) | Options for downloading data to your </br>local computer
 10 mins | [Data Download via KF Portal](Download_Data/Data-Download-Via-KF-Portal.md) | Local download from the KF portal
 20 mins | [Data Download via Cavatica](Download_Data/Data-Download-Via-Cavatica.md) | Local download from Cavatica
-30 mins | [Data Upload to Cavatica](Upload_Data.md) | Using the Command Line Uploader tool to move files from AWS to Cavatica
+30 mins | [Data Upload to Cavatica](Upload_Data.md) | Using the Command Line Uploader tool </br>to move files from AWS to Cavatica
 
 !!! note "Learning Objectives"
 

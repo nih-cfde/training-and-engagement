@@ -1,9 +1,12 @@
 ---
 layout: page
 title: BLAST Overview
+hide:
+  - toc
 ---
 
-# Running Command-Line BLAST
+Running Command-Line BLAST
+=============================
 
 BLAST is the **B**asic **L**ocal **A**lignment **S**earch large sequence databases; It starts by finding small matches between the two sequences and extending those matches.  For in-depth information on how BLAST works and the different BLAST functionality, check out the [resources page](https://blast.ncbi.nlm.nih.gov/Blast.cgi).
 
