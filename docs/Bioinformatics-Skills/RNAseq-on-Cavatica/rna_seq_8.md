@@ -71,16 +71,17 @@ The Data Cruncher comes with a set of libraries that are pre-installed. These va
 
 You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option: </br>
  
- (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R) Go to **Step 3a** after this step.</br>
- (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R). Go to **Step 3b** after this step.
+ (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R)</br>
+ (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R). 
 
-The (b) version of the script is run manually  and contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.
+The (b) version of the script is run manually and contains some additional packages and lines of code to allow for interactive exploration of the data prior to analysis. The DGE analysis and all the generated output are otherwise identical between the two versions.
 
 Upload the script file to the **workspace** directory. View the upload steps in the [vidlet](#upload). Briefly:
 
   * Click on the <span class="highlight_txt">Upload</span> option in the Files/Packages/Plots/Help/Viewer pane.
   * Click <span class="highlight_txt">Choose File</span> to select the file from your local computer.
   * Once uploaded, click on the script file name to open it in the script editor pane (top left hand corner).
+  * To execute go to **Step 3a** if you chose the (a) version or **Step 3b** if you chose (b).
 
 !!! important "Phenotype File Name"
 
@@ -143,7 +144,7 @@ The tag for the session changes from {==RUNNING==} to {==SAVED==}. Similar to th
 
 !!! info "Output Differences"
 
-        Although the DGE results are the same between the two analysis approaches, there are some differences between the two `html` reports since they are not the exact code. The MA plots generated using Data Cruncher use blue to signify significant genes and the counts plot use points instead of bars.
+        Although the DGE results are the same between the two analysis approaches, there are some differences between the two `html` reports since they are not the exact same code. The MA plots generated using Data Cruncher use blue to signify significant genes and the counts plot uses points instead of bars.
 
 All the files are clickable for preview on Cavatica. You can either download individual files by clicking on the file name or follow the steps to [tag and download the files listed in the Analysis with DESeq2 Public App](./rna_seq_7.md#step-4-tag-download-analysis-outputs) lesson.
 
@@ -157,6 +158,6 @@ This concludes the RNAseq on Cavatica tutorial. We hope that you found the tutor
     * Data to analysis in one step using [Cavatica](cavatica.sbgenomics.com), the cloud based analysis platform integrated into Kids First Portal.
     * You can filter, view, and download data from Cavatica.
     * Upload data to Cavatica from multiple sources including your local machine.
-    * You can search, copy and modify a public app on Cavatica.
+    * You can search, copy, and modify a public app on Cavatica.
     * Setup and successful run of the DESeq2 app by choosing appropriate inputs.
     * Setup a virtual computational environment running RStudio and analyze by executing code from a script.
