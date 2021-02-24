@@ -13,8 +13,7 @@ The goal of this tutorial is to enable you to: </br>
 1. create virtual cancer cohorts using the NIH Common Fund-supported Gabriella Miller Kids First Data portal (KF Portal). </br>
 2. analyze the differential gene expression (DGE) on Cavatica, an integrated cloud based platform.
 
-You will learn two different approaches for DGE analysis using open access human cancer data on Cavatica: **(a)** using a public workflow app
-**(b)** running code from an analysis script on an instance with RStudio computational environment.
+You will learn two different approaches for DGE analysis using open access human cancer data on Cavatica: **(a)** using a public workflow app and **(b)** running code from an analysis script on an instance with RStudio computational environment.
 
 **Table of contents**
 

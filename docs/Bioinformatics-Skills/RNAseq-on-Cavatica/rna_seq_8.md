@@ -69,7 +69,7 @@ The Data Cruncher comes with a set of libraries that are pre-installed. These va
 
 ## Step 3: Run analysis script <a name="R-code"></a>
 
-You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option: </br>
+You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option and save the file: </br>
 
  (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R)</br>
  (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R).
@@ -89,11 +89,11 @@ Upload the script file to the **workspace** directory. View the upload steps in 
 
 ### Step 3a: Execute using `Source` version
 
-To get started click on the down arrow next to <span class="highlight_txt">Source</span> and click <span class="highlight_txt">Source with Echo</span>. This will print the comments as the code is executed.
+To get started, click on the down arrow next to <span class="highlight_txt">Source</span> and click <span class="highlight_txt">Source with Echo</span>. This will print the comments as the code is executed.
 
 ![Source with Echo](../rna-seq-images/rna-seq-8-1.png "Source with Echo")
 
-This process will take about 15-20 minutes. Once completed, you will get a popup window asking to try to open the html report. Click </br><span class="highlight_txt">Try Again</span> to open a new tab for the report.
+This process will take about 15-20 minutes. Once completed, you will get a popup window asking to try to open the html report. Click <span class="highlight_txt">Try Again</span> to open a new tab for the report.
 
 ![Popup window](../rna-seq-images/rna-seq-8-2.png "Popup window")
 
@@ -106,17 +106,19 @@ For costs and time comparison between the two approaches, we use the automated v
 
 ### Step 3b: Execute using `Run` version
 
-You can also execute the code by selecting chunks or line by line and clicking the <span class="highlight_txt">Run</span> option or using ++ctrl+enter++ keys. This allows you greater flexibility to explore and understand the data. The first step is installing the packages necessary for DGE analysis and this takes approximately 17 minutes. Highlight the package install section as shown in the image below and click <span class="highlight_txt">Run</span>.
+You can also execute the code by selecting a line or multiple lines of code and clicking the <span class="highlight_txt">Run</span> option or using ++ctrl+enter++ keys. This allows you greater flexibility to explore and understand the outputs of each line of code.
+
+The first step is installing the packages necessary for DGE analysis and this takes approximately 17 minutes. Highlight the package install section as shown in the image below and click <span class="highlight_txt">Run</span>.
 
 ![Use Run](../rna-seq-images/rna-seq-8-4.png "Use Run")
 
-This version includes the Bioconductor package [`pcaExplorer`](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2879-1), which provides interactive visualization of RNAseq datasets based on [Principal Components Analysis](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22). Watch the video below to learn how to use `pcaExplorer` for the filtered cancer dataset.
+This version includes the Bioconductor package [`pcaExplorer`](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2879-1), which provides interactive visualization of RNAseq datasets based on [Principal Components Analysis](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
+
+After running **lines 1-99** of the R script, you should see an interactive output from the `pcaExplorer()` command. Watch the video below to learn how to use `pcaExplorer` for the filtered cancer dataset.
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_1z57clip&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=104&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_tywvb439" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-
-
-After running the entire script, click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> to view the files in your project folder.
+When you are finished running the R script, click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> to view the output files in your Cavatica project folder.
 
 !!! bug "Login Timeout"
 
@@ -131,7 +133,7 @@ After running the entire script, click <span class="highlight_txt">:fontawesome-
 
 ## Step 4: View output files
 
-All the session files and the generated outputs are saved after the analysis is stopped and are accessible to you on the session page.
+All the session files and the generated outputs are saved after the analysis is stopped and are accessible on the session page.
 
 ![Output Files](../rna-seq-images/rna-seq-8-6.png "Output Files")
 
