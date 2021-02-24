@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Connect to your Instance
+title: Connecting to your Instance
 hide:
   - toc
 ---
