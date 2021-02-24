@@ -14,9 +14,9 @@ The [Gabriella Miller Kids First Pediatric Data Portal (KF portal)](https://kids
 
 There are data with different access levels hosted on the KF portal including open (processed files, reports, plots, etc) and controlled (raw sequencing files, histological images, etc). For this tutorial, we will use **open access pre-processed files** generated using [Kallisto (v0.43.1)](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1), which uses pseudoalignments to quantify transcript abundance from raw data.
 
-!!! info "KFDRC RNA-Seq workflow"
+!!! info "KFDRC RNAseq workflow"
 
-    [Kids First RNA-seq pipeline](https://github.com/kids-first/kf-rnaseq-workflow) uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files (controlled access) as input and generates multiple outputs including the Kallisto transcript quantification files. All the output files of this pipeline are available on the portal as open access data. In addition to the restricted data access issue, it is computationally taxing to run this workflow on multiple files.
+    [Kids First RNAseq pipeline](https://github.com/kids-first/kf-rnaseq-workflow) uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files (controlled access) as input and generates multiple outputs including the Kallisto transcript quantification files. All the output files of this pipeline are available on the portal as open access data. In addition to the restricted data access issue, it is computationally taxing to run this workflow on multiple files.
 
 ## Step 1: Filter for open access data
 
@@ -36,13 +36,13 @@ There are data with different access levels hosted on the KF portal including op
 
 ![Open access filter](../rna-seq-images/2_KFDRC.png "Open access filter")
 
-## Step 2: Apply File Filters to obtain RNA-Seq files
+## Step 2: Apply File Filters to obtain RNAseq files
 
 Select the <span class="highlight_txt">File Filters</span> tab and apply the following filters:
 
-* **Experimental Strategy** --> RNA-Seq
-* **Data Type** --> Gene expression
-* **File Format** --> tsv
+* **Experimental Strategy** --> "RNA-Seq"
+* **Data Type** --> "Gene expression"
+* **File Format** --> "tsv"
 
 This results in 1,477 files.
 
@@ -64,8 +64,8 @@ To reduce possible sources of variation from sex and race, we subset further to 
 
 Under the <span class="highlight_txt">Clinical Filters</span> tab select:
 
-* **Gender** --> Male
-* **Race** --> White
+* **Gender** --> "Male"
+* **Race** --> "White"
 
 This results in 99 files.
 

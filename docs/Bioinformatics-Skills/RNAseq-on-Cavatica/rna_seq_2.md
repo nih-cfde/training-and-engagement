@@ -11,7 +11,7 @@ RNAseq uses the capability of next generation sequencing techniques to explore a
 
 RNAseq data can be used to study the transcriptome which is defined as a collection of all the transcript readouts from a cell. The transcriptome data can be utilized for many types of analyses. In this lesson we will focus on one such application: **Differential Gene Expression (DGE)** analysis in order to determine which genes are expressed at different levels between the conditions/groups of interest. The identified genes offer biological insight into the processes and pathways affected by the chosen experimental conditions.
 
-A typical RNA-seq workflow is highlighted in the schematic diagram below. The orange boxes highlight the steps you will do in this tutorial!
+A typical RNAseq workflow is highlighted in the schematic diagram below. The orange boxes highlight the steps you will do in this tutorial!
 
 ![RNAseq workflow](../rna-seq-images/rna-seq-workflow.jpeg "RNAseq workflow")
 

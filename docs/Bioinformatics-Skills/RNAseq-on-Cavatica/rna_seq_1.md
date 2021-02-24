@@ -20,7 +20,7 @@ You will learn two different approaches for DGE analysis using open access human
 
 | Est. Time| Lesson Name | Description|
 | ---|--------|--------|
-| 10 mins |[An Introduction to RNA-Seq](./rna_seq_2.md)| Background about RNAseq
+| 10 mins |[An Introduction to RNAseq](./rna_seq_2.md)| Background about RNAseq
 | 20 mins |[Selecting Kids First Cancer Cohort](./rna_seq_3.md)| Select Kids First open access cancer RNAseq files and push to Cavatica  |
 | 20 mins |[Cavatica - View, Filter, Tag and Download](./rna_seq_4.md) | Filter imported data, tag and download relevant metadata from Cavatica |
 | 20 mins |[Setup DESeq2 Public App](./rna_seq_5.md)| Setting up the workflow app based on DESeq2 on Cavatica |
