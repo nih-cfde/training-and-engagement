@@ -9,10 +9,11 @@ theme:
   palette:
     #scheme: preference
     primary: white
-   #accent: white
+    #accent: teal
   features:
     - navigation.tabs
     - navigation.instant
+    #- navigation.sections
   favicon: images/CFDE-logo-white-outline.png
   logo: images/CFDE-logo.png
   custom_dir: custom
@@ -28,8 +29,10 @@ plugins:
 
 markdown_extensions:
 - admonition
-- def_list
+#- def_list
+- pymdownx.critic
 - pymdownx.details
+- pymdownx.highlight
 - pymdownx.superfences
 - pymdownx.tabbed
 - pymdownx.emoji:
