@@ -1,4 +1,12 @@
-# Contributing to the nih-cfde Training and Engagement website
+---
+layout: page
+title: Website Style Guide
+hide:
+  - toc
+---
+
+Contributing to the nih-cfde Training and Engagement website
+===============================================================
 
 This is a style guide for content on the CFDE [training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/).
 
@@ -14,11 +22,11 @@ Time | Section | About
 
 === "Prerequisites"
 
-    To contribute to the CFDE's website, you must be onboarded to the CFDE. Contact us for help if you're interested in contributing training materials!
+    To contribute to the CFDE's website, you must be onboarded to the CFDE. Contact us at <training@cfde.atlassian.net> for help if you're interested in contributing training materials!
 
 === "Resources"
 
-    - [Tutorial template markdown doc](./tutorial_template_docs/TutorialTemplate.md)
+    - [Get started with new tutorials using the tutorial template markdown doc](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/CFDE-Internal-Training/Website-Style-Guide/tutorial_template_docs/TutorialTemplate.md)
     - [Powerpoint slide template](https://drive.google.com/drive/u/0/folders/14dOaf7-G4k7rCw5mL2Q5jdRWXrO0Y5i-)
 
 

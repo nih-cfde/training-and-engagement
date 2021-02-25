@@ -3,7 +3,7 @@ layout: page
 title: Overview
 ---
 
-Note, overview/landing pages should have the yaml file header, e.g.,:
+Note, overview/landing pages should start with the yaml file header, e.g.,:
 ```
 ---
 layout: page

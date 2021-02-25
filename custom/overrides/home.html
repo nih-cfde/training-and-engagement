@@ -1,4 +1,5 @@
 {% extends "overrides/main.html" %}
+
 {% block tabs %}
   {{ super() }}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/overrides.min.css' | url }}">
@@ -26,74 +27,84 @@
             </div>
             <ul class="slides">
               <li class="slide">
-                <div class="slide-content">
-                  <h2 class="slide-title">New at CFDE Training</h2>
-                  <p class="slide-text">Explore our latest tutorial additions and </br>discover lessons across a broad spectrum </br>of technical topics.</p>
-                  <a href="./Release-Notes/" class="slide-link">Learn More</a>
-                </div>
                 <p class="slide-image">
                   <img src="{{ 'assets/homepg-images/1.png' | url }}" alt="stuff" width="320" height="240">
                 </p>
+                <div class="slide-content">
+                  <h2 class="slide-title">New at CFDE Training</h2>
+                  <p class="slide-text">Explore our latest tutorial additions and discover lessons across a broad spectrum of technical topics.</p>
+                  <a href="./Release-Notes/" class="slide-link">Learn More</a>
+                </div>
               </li>
               <li class="slide">
-                <div class="slide-content">
-                  <h2 class="slide-title">GWAS in the Cloud</h2>
-                  <p class="slide-text">Analyse genetic variants to obtain </br>correlations to phenotypes and visualize </br>using a Manhattan plot.</p>
-                  <a href="./Bioinformatics-Skills/GWAS-in-the-cloud/" class="slide-link">Get Started</a>
-                </div>
                 <p class="slide-image">
                   <img src="{{ 'assets/homepg-images/2.png' | url }}" alt="stuff" width="320" height="240">
                 </p>
+                <div class="slide-content">
+                  <h2 class="slide-title">GWAS in the Cloud</h2>
+                  <p class="slide-text">Analyse genetic variants to obtain correlations to phenotypes and visualize using a Manhattan plot.</p>
+                  <a href="./Bioinformatics-Skills/GWAS-in-the-cloud/" class="slide-link">Get Started</a>
+                </div>
               </li>
               <li class="slide">
+                <p class="slide-image">
+                  <img src="{{ 'assets/homepg-images/8.png' | url }}" alt="stuff" width="320" height="240">
+                </p>
                 <div class="slide-content">
-                  <h2 class="slide-title">Amazon Web Services</h2>
-                  <p class="slide-text">Learn to connect, setup and conduct </br>analysis using Amazon's cloud </br>computing services.</p>
-                  <a href="./Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1" class="slide-link">Get Started</a>
+                  <h2 class="slide-title">RNAseq on Cavatica</h2>
+                  <p class="slide-text">Learn to perform differential gene expression analysis using Kids First cancer cohorts on Cavatica.</p>
+                  <a href="./Bioinformatics-Skills/RNAseq-on-Cavatica/rna_seq_1/" class="slide-link">Get Started</a>
                 </div>
+              </li>
+              <li class="slide">
                 <p class="slide-image">
                   <img src="{{ 'assets/homepg-images/3.png' | url }}" alt="stuff" width="320" height="240">
                 </p>
+                <div class="slide-content">
+                  <h2 class="slide-title">Amazon Web Services</h2>
+                  <p class="slide-text">Learn to connect, setup and conduct analysis using Amazon's cloud computing services.</p>
+                  <a href="./Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1" class="slide-link">Get Started</a>
+                </div>
               </li>
               <li class="slide">
+                <p class="slide-image">
+                  <img src="{{ 'assets/homepg-images/9.png' | url }}" alt="stuff" width="320" height="240">
+                </p>
                 <div class="slide-content">
-                  <h2 class="slide-title">Snakemake Workflows</h2>
-                  <p class="slide-text">Learn to create reproducible and </br>scalable data analyses using the </br>snakemake workflow management </br>system.</p>
-                  <a href="./Bioinformatics-Skills/Snakemake/" class="slide-link">Get started</a>
+                  <h2 class="slide-title">Google Cloud Platform</h2>
+                  <p class="slide-text">Learn to setup, download NCBI's SRA datasets and conduct analysis using Google's cloud computing services.</p>
+                  <a href="./Bioinformatics-Skills/Introduction-to-GCP/" class="slide-link">Get Started</a>
                 </div>
+              </li>
+              <li class="slide">
                 <p class="slide-image">
                   <img src="{{ 'assets/homepg-images/4.png' | url }}" alt="stuff" width="320" height="240">
                 </p>
+                <div class="slide-content">
+                  <h2 class="slide-title">Snakemake Workflows</h2>
+                  <p class="slide-text">Learn to create reproducible and scalable data analyses using the snakemake workflow management system.</p>
+                  <a href="./Bioinformatics-Skills/Snakemake/" class="slide-link">Get started</a>
+                </div>
               </li>
               <li class="slide">
-                <div class="slide-content">
-                  <h2 class="slide-title">CFDE Data Portal</h2>
-                  <p class="slide-text">Discover multiple datasets across all </br>Common Fund programs and generate </br>data manifests all in one single search.</p>
-                  <a href="./Bioinformatics-Skills/CFDE-Portal/" class="slide-link">Get started</a>
-                </div>
                 <p class="slide-image">
                   <img src="{{ 'assets/homepg-images/5.png' | url }}" alt="stuff" width="320" height="240">
                 </p>
+                <div class="slide-content">
+                  <h2 class="slide-title">CFDE Data Portal</h2>
+                  <p class="slide-text">Discover multiple datasets across all Common Fund programs and generate data manifests all in one single search.</p>
+                  <a href="./Bioinformatics-Skills/CFDE-Portal/" class="slide-link">Get started</a>
+                </div>
               </li>
               <li class="slide">
-                <div class="slide-content">
-                  <h2 class="slide-title">Analysis with Cavatica</h2>
-                  <p class="slide-text">Learn to transfer data subsets </br>between the Kids First portal and </br>Cavatica.</p>
-                  <a href="./Bioinformatics-Skills/Kids-First/KF_7_PushToCavatica/" class="slide-link">Get Started</a>
-                </div>
-                <p class="slide-image">
-                  <img src="{{ 'assets/homepg-images/6.png' | url }}" alt="stuff" width="320" height="240">
-                </p>
-              </li>
-              <li class="slide">
-                <div class="slide-content">
-                  <h2 class="slide-title">CFDE Internal Resources</h2>
-                  <p class="slide-text">Find lessons on navigating GitHub, </br>contributing to our websites and </br>identifying MIME type.</p>
-                  <a href="./CFDE-Internal-Training/" class="slide-link">Get Started</a>
-                </div>
                 <p class="slide-image">
                   <img src="{{ 'assets/homepg-images/7.png' | url }}" alt="stuff" width="320" height="240">
                 </p>
+                <div class="slide-content">
+                  <h2 class="slide-title">CFDE Internal Resources</h2>
+                  <p class="slide-text">Find lessons on navigating GitHub, contributing to our websites and identifying MIME type.</p>
+                  <a href="./CFDE-Internal-Training/" class="slide-link">Get Started</a>
+                </div>
               </li>
             </ul>
           </div>
@@ -106,16 +117,25 @@
       <div class="content__bottom">
         <div class="content__col left">
           <div class="data_header">
-            <p>Past Workshops</p>
+            <p>Workshops</p>
           </div>
-          <div class="data_content">
-            <div style="padding-top: 5px; padding-left: 15px; padding-right: 10px; float: center ">
-              <p><div style="font-size:20px">Introduction to the Kids First Data Resource Portal</div><i>Dec 17,&nbsp;2020 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/><br/>Walk-through of the Kids First Portal to search, filter and visualize data followed by discussion session for next steps to use Kids First data in one's own research.<br/> Workshop Resources:&nbsp; <a href="./Bioinformatics-Skills/Kids-First/Portal-Setup-And-Permissions/KF_3_KF_Registration/" target="_blank" rel="noopener" style="color:#336699;">Setup</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Kids-First/Exploring-Data-in-the-KF-Portal/KF_5_Explore/" target="_blank" rel="noopener" style="color:#336699;">Explore</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Kids-First/Advanced-KF-Portal-Queries/KF_9_AdvancedQuery/" target="_blank" rel="noopener" style="color:#336699;">Queries</a></p>
-            </div>
-            <div style="padding-left: 15px; padding-right: 10px; padding-bottom: 5px; float: center ">
-              <p><div style="font-size:20px">Introduction to Amazon Web Services / Elastic Cloud Computing</div><i>Dec 1,&nbsp;2020 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/><br/>A hands on workshop to introduce cloud computing concepts, create a virtual machine, and run a small job via Amazon Web Services (AWS).<br/> Workshop Resources:&nbsp; <a href="./Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1" target="_blank" rel="noopener" style="color:#336699;">AWS</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Command-Line-BLAST/BLAST1" target="_blank" rel="noopener" style="color:#336699;">BLAST</a></p>
-            </div>
-          </div>
+           <div class="data_content_left">
+             <div>
+              <p><div style="font-size:22px; font-style: italic">Check out our events calendar for <a href="https://www.nih-cfde.org/events/" target="_blank" rel="noopener" style="color:#336699;">upcoming workshops !</a></div></p>
+             </div>
+             <div>
+              <p><div style="font-size:19px">Introduction to Amazon Web Services / Elastic Cloud Computing</div><i>Feb 25,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/><br/>A hands-on workshop to introduce cloud computing concepts, create a virtual machine, and run a small job via Amazon Web Services (AWS).<br/> Workshop Resources:&nbsp; <a href="./Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1" target="_blank" rel="noopener" style="color:#336699;">AWS</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Command-Line-BLAST/BLAST1" target="_blank" rel="noopener" style="color:#336699;">BLAST</a></p>
+             </div>
+             <div>
+              <p><div style="font-size:19px">Introduction to Amazon Web Services / Elastic Cloud Computing</div><i>Jan 29,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/><br/>A hands-on workshop to introduce cloud computing concepts, create a virtual machine, and run a small job via Amazon Web Services (AWS).<br/> Workshop Resources:&nbsp; <a href="./Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1" target="_blank" rel="noopener" style="color:#336699;">AWS</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Command-Line-BLAST/BLAST1" target="_blank" rel="noopener" style="color:#336699;">BLAST</a></p>
+             </div>
+             <div>
+              <p><div style="font-size:19px">Introduction to the Kids First Data Resource Portal</div><i>Dec 17,&nbsp;2020 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/><br/>Walk-through of the Kids First Portal to search, filter and visualize data followed by discussion session for next steps to use Kids First data in one's own research.<br/> Workshop Resources:&nbsp; <a href="./Bioinformatics-Skills/Kids-First/Portal-Setup-And-Permissions/KF_3_KF_Registration/" target="_blank" rel="noopener" style="color:#336699;">Setup</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Kids-First/Exploring-Data-in-the-KF-Portal/KF_5_Explore/" target="_blank" rel="noopener" style="color:#336699;">Explore</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Kids-First/Advanced-KF-Portal-Queries/KF_9_AdvancedQuery/" target="_blank" rel="noopener" style="color:#336699;">Queries</a></p>
+             </div>
+             <div>
+              <p><div style="font-size:19px">Introduction to Amazon Web Services / Elastic Cloud Computing</div><i>Dec 1,&nbsp;2020 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/><br/>A hands-on workshop to introduce cloud computing concepts, create a virtual machine, and run a small job via Amazon Web Services (AWS).<br/> Workshop Resources:&nbsp; <a href="./Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1" target="_blank" rel="noopener" style="color:#336699;">AWS</a> &nbsp;&bull;&nbsp; <a href="./Bioinformatics-Skills/Command-Line-BLAST/BLAST1" target="_blank" rel="noopener" style="color:#336699;">BLAST</a></p>
+             </div>
+           </div>
         </div>
         <div class="content__col middle">
           <div class="data_header">

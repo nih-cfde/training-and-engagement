@@ -1,9 +1,12 @@
 ---
 layout: page
 title: MIME type Overview
+hide:
+  - toc
 ---
 
-**An introduction to MIME types for file formats**
+An Introduction to MIME types for File Formats
+=================================================
 
 A MIME type or media type is a form of identification for file formats and contents transmitted over the internet. It is useful to specify the data identification label of a file to allow software to properly interpret and render the data. This is especially important for Common Fund (CF) programs who may undertake data transfers over the internet and thus, have to ensure the data integrity along with data formats for a successful transfer. In this tutorial, we will describe how to determine MIME type for single and multiple files, and create custom MIME types specific to the file format.
 

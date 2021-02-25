@@ -3,4 +3,5 @@ nav:
   - Website-Style-Guide
   - cfdebot_website_editing.md
   - Identifying MIME Types: MIME-type
-  - ProtectedBranch_HowTo.md 
+  - ProtectedBranch_HowTo.md
+  - github_auth_setup.md
