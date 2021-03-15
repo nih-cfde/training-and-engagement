@@ -1,25 +1,28 @@
 ---
 layout: page
-title: December 2020 Release
+title: February 2021 Release
 ---
 
 Latest Release
 =================
 
-**Updated December 18, 2020**
+**Updated February 24, 2021**
 
 <span style="font-size:24px;">New Tutorials
 
-
-- [Simulate Illumina Reads](../Bioinformatics-Skills/Simulate_Illumina_Reads.md)
-- [Uploading Data to Cavatica](../Bioinformatics-Skills/Kids-First/Upload_Data.md)
+- [RNAseq on Cavatica](../Bioinformatics-Skills/RNAseq-on-Cavatica/rna_seq_1.md)
+- [Using the Screen Command on AWS](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.md)
+- [Introduction to Google Cloud Platform](../Bioinformatics-Skills/Introduction-to-GCP/index.md)
+- [Saving Queries on the Kids First Data Resource Portal](../Bioinformatics-Skills/Kids-First/Advanced-KF-Portal-Queries/KF_13_SavingQueries.md)
+- [Setting Up Github Authentication](../CFDE-Internal-Training/github_auth_setup.md)
 
 <span style="font-size:24px;">Updates and Fixes
 
-- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md): PR steps updated
-- [Updates to Kids First Portal tutorials](../Bioinformatics-Skills/Kids-First/index.md):  Screenshots and text updated to match new versions seen on Kids First Website
-- [Edits to Kids First Data Download terminal screencasts](../Bioinformatics-Skills/Kids-First/Download_Data/Data-Download-Via-Cavatica.md): Speeds up the screencasts, fixes typos, and removes some redundancy
+- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md): updated AWS screenshots to new user experience interface
+- [Introduction to Amazon Web Services](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1.md): updated AWS tutorial based on workshop feedback
+- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md): updated Github repo names
+- [CFDE Portal Use Cases](../Bioinformatics-Skills/CFDE-Portal/index.md): lesson landing page added back
 
 <span style="font-size:24px;">Website Features
 
-- Home page: Re-design of home page and addition of carousel feature
+- Home page: added upcoming workshop events link, updated home page formatting
