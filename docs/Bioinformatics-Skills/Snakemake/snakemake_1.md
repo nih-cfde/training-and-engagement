@@ -33,7 +33,7 @@ There are two ways to follow this tutorial:
 
 ## Set up computing environment
 
-We will use conda to create an computer software for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../install_conda_tutorial.md).
+We will use conda to create an computer software for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../Introduction-to-Conda/install_conda_tutorial.md).
 
 !!! Tip
 

@@ -2,7 +2,7 @@ nav:
   - index.md
   - Kids First Tutorials: Kids-First
   - CFDE Portal Tutorials: CFDE-Portal
-  - install_conda_tutorial.md
+  - Introduction-to-Conda
   - Introduction_to_Amazon_Web_Services
   - Introduction-to-GCP
   - Command-Line-BLAST

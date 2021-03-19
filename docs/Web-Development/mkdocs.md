@@ -70,7 +70,7 @@ MkDocs can be installed via a package manager or manually using `pip` the Python
 
 === "conda install"
 
-    We can also utilize conda package management system to install MkDocs. If you do not have conda installed, you can follow installation steps for [MacOS](../Bioinformatics-Skills/install_conda_tutorial.md),[Windows](https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html) or [Linux](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) operating systems.
+    We can also utilize conda package management system to install MkDocs. If you do not have conda installed, you can follow installation steps for [MacOS](../Bioinformatics-Skills/Introduction-to-Conda/install_conda_tutorial.md),[Windows](https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html) or [Linux](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) operating systems.
 
     Create a new conda environment called `mkdocs` that runs the latest version of python 3:
 

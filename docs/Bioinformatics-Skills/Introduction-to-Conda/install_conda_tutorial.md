@@ -1,26 +1,8 @@
 # Set up Conda Computing Environment
 
-Conda makes software installation and compute environment management easier by making sure that all the software you are using for a particular project works together. Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda. From the conda website:
+Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda. From the conda website:
 
 > "Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the conda install command to install 720+ additional conda packages from the Anaconda repository."
-
-!!! note "Learning Objectives"
-
-    - Install Miniconda
-    - Set up a conda environment
-
-=== "Est. Time"
-
-    20 mins to install and set up
-
-=== "Prerequisites"
-
-    This tutorial is written specifically for installing the MacOS version of Miniconda.
-
-=== "Tutorial Resources"
-
-    Please refer to the [conda command cheat sheet](../Cheat-Sheets/conda_cheatsheet.md) for commonly used conda commands!
-
 
 ### Step 1: Download the installer
 We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).

@@ -15,7 +15,7 @@ Common Fund Data - Finding Datasets for Analysis:
 
 Software and Compute Set up for Analysis:
 
-- [Set up Conda Computing Environment](install_conda_tutorial.md)
+- [Introduction to Conda](Introduction-to-Conda/index.md)
 - [Introduction to Amazon Web Services](Introduction_to_Amazon_Web_Services/introtoaws1.md)
 - [Introduction to Google Cloud Platform](Introduction-to-GCP/index.md)
 
