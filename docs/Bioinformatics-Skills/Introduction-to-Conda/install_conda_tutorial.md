@@ -1,8 +1,31 @@
 # Set up Conda Computing Environment
 
+Whether you're installing conda on your own computer, a cloud instance, or high performance computer server, you'll need to consider the following:
+
+1. Conda installer: Miniconda vs Anaconda
+    - Both are free versions with Miniconda being the light weight version
+3. OS: Windows, MacOS, Linux
+4. Bit-count: 32 vs 64-bit
+    - macOS is 64-bit only
+6. Python version for root environment (2.x vs 3.x)
+    - version 3.x is the default option since it is newer
+    - choose 2.7 version if you have mostly 2.7 code or use packages that do not have a 3.x version (but keep in mind that python 2.x sunsetted - https://www.python.org/doc/sunset-python-2/)
+
+
+![](https://i.imgur.com/DuVrjaB.jpg)
+
+- [Anaconda](https://www.anaconda.com/products/individual)
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
 Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda. From the conda website:
 
 > "Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the conda install command to install 720+ additional conda packages from the Anaconda repository."
+
+
+
+
+
+
 
 ### Step 1: Download the installer
 We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).
@@ -16,6 +39,9 @@ Go to the directory where you saved the installer file (e.g., "Downloads/"). Ope
 ```
 cd Downloads
 ```
+
+
+Let’s check our installation to make sure it went smoothly. We can do this by verifying the digital fingerprint or ‘hash’ of the files we just installed using the `shasum` command:
 
 === "Input"
 
@@ -71,72 +97,6 @@ Check the version of your new conda installation:
     conda 4.8.3
     ```
 
-### Step 5: Configure conda
-
-Conda uses channels to look for available software installations. These are some good channels to set up:
-
-```
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-```
-
-### Step 6: Set up conda environment
-
-There is always a `(base)` conda environment. You can then create new environments with different software set ups with the basic command:
-
-```
-conda create -n <name of env>
-```
-
-This takes a few minutes (you'll see the message "Solving environment"). Conda will then ask you to confirm the location of the new environment. Type ++y++.
-
-More options to customize the environment are documented under the help page for this command: `conda create -h`.
-
-If you want to create an environment from a text file called "environment.yml" that specifies the environment's requirements, the command would look like this:
-
-`conda env create -n <new conda env name> -f environment.yml`. The `-f` flag specifies the ".yml" file that contains software requirements.
-
-### Step 7: Activate conda environment
-
-```
-conda activate <conda env name>
-```
-
-Now, your command prompt starts with `(<conda env name>)`. If you named your new environment "potato" it would look like this:
-
-```
-(potato) $
-```
-
-### Step 8: Take a look around your new conda environment!
-This command shows you information about the conda environment you activated:
-
-```
-conda info
-```
-
-### Step 9: Install packages
-The basic command for installing packages is:
-
-```
-conda install -y <software name>
-```
-
-It will ask if you want to install dependencies. Type ++y++. This command will show a list of the software installed in this environment:
-
-```
-conda list -n <conda env name>
-```
-
-### Step 10: Leave conda environment
-
-```
-conda deactivate
-```
-
-You'll now be back in the `(base)` environment.
-
 !!! note "Key Points"
 
-    Now you should have a working conda installation that you can use to create custom conda environments!
+    Now you should have a working conda installation that you can use to create custom conda environments on your computer!

@@ -32,4 +32,4 @@ Est. Time | Lesson name | Description
 
 === "Tutorial Resources"
 
-    Please refer to the [conda command cheat sheet](../../Cheat-Sheets/conda_cheatsheet.md) for commonly used conda commands!
+    Please refer to [our conda command cheat sheet](../../Cheat-Sheets/conda_cheatsheet.md) and the [official conda cheat sheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html) for commonly used conda commands!
