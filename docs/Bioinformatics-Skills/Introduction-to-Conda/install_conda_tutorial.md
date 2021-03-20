@@ -1,31 +1,24 @@
-# Set up Conda Computing Environment
+# Set up Conda on your computer
+
+## Installation considerations
 
 Whether you're installing conda on your own computer, a cloud instance, or high performance computer server, you'll need to consider the following:
 
-1. Conda installer: Miniconda vs Anaconda
+1. Conda installer: [Miniconda](https://docs.conda.io/en/latest/miniconda.html) vs [Anaconda](https://www.anaconda.com/products/individual)
     - Both are free versions with Miniconda being the light weight version
+
+    ![](./conda-imgs/mini-ana-conda.png "miniconda vs anaconda")
+
 3. OS: Windows, MacOS, Linux
 4. Bit-count: 32 vs 64-bit
     - macOS is 64-bit only
 6. Python version for root environment (2.x vs 3.x)
     - version 3.x is the default option since it is newer
-    - choose 2.7 version if you have mostly 2.7 code or use packages that do not have a 3.x version (but keep in mind that python 2.x sunsetted - https://www.python.org/doc/sunset-python-2/)
-
-
-![](https://i.imgur.com/DuVrjaB.jpg)
-
-- [Anaconda](https://www.anaconda.com/products/individual)
-- [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+    - choose 2.7 version if you have mostly 2.7 code or use packages that do not have a 3.x version (but keep in mind that python 2.x [sunsetted](https://www.python.org/doc/sunset-python-2/))
 
 Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda. From the conda website:
 
 > "Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the conda install command to install 720+ additional conda packages from the Anaconda repository."
-
-
-
-
-
-
 
 ### Step 1: Download the installer
 We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).

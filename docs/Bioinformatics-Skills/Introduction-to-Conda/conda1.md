@@ -1,12 +1,13 @@
 # Why Conda?
 
-![](https://i.imgur.com/2R6UDu3.jpg)
 
 - OS-agnostic tool for package and environment management (meaning it works for Windows, Mac, and Linux!)
 - clean software installation along with dependencies
 - searches for compatible software versions
 - many packages available - python, R, etc.
 - user has admin permissions, good for use on HPC where you'd otherwise need to request software installations
+
+![](./conda-imgs/conda-envs.png "conda environments")
 
 
 ### What is an Environment?

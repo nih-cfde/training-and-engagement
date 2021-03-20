@@ -5,12 +5,12 @@
 - Open the binder by clicking this button: [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio)
 
 
+!!! info
+
+    For this lesson, we are using 3 of the Rstudio panels: Source panel to run conda commands, Terminal panel to execute code, and File panel to view input/output files.
+
 Conda is already installed in the binder. We'll talk more about [setting conda up](./install_conda_tutorial.md) on your local system later in the lesson!
 
-
-
-
-Set up Rstudio panels!
 
 !!! warning
 
@@ -23,11 +23,12 @@ Set up Rstudio panels!
 
 ### Initialize conda
 
-:keyboard: Copy/paste commands into the terminal OR run the commands from the `workshop_commands.sh` file in the binder.
+:keyboard: Copy/paste commands into the terminal OR run the commands from the "workshop_commands.sh" file in the binder (in File Rstudio panel).
 
 Installer sets up two things: Conda and the root environment. The root environment contains the selected python version and some basic packages.
 
-![](https://i.imgur.com/NM4wtre.png)
+![](./conda-imgs/conda-init.png 'conda installer')
+
 Image credit: [Gergely Szerovay](https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/)
 
 Setup the conda installer and initialize the settings:
@@ -61,22 +62,23 @@ conda list # get list of packages in base environment
 
 Channels exist in a hierarchial order. By default:
 
+Channel priority > package version > package build number
+
+![](./conda-imgs/conda-channel.png 'conda channels')
+
+Image credit: [Gergely Szerovay](https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/)
+
 !!! info
-    Channel priority > package version > package build number
 
-    ![](https://i.imgur.com/GE8nY0a.png)
-    Image credit: [Gergely Szerovay](https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/)
+    Commonly used channels:
 
-    Conda channels --
-
+    - In absence of other channels, conda [searches the `defaults` repository](https://docs.anaconda.com/anaconda/user-guide/tasks/using-repositories/) which consists of ten official repositories
     - `conda-forge` and `bioconda` are channels that contain community contributed software
     - `Bioconda` specializes in bioinformatics software (*supports only 64-bit Linux and Mac OS*)
-        - package list: https://anaconda.org/bioconda/repo
+        - [package list](https://anaconda.org/bioconda/repo)
     - `conda-forge` contains many dependency packages
-        - package list: https://anaconda.org/conda-forge/repo
-    - In absence of other channels, conda [searches the default repository](https://docs.anaconda.com/anaconda/user-guide/tasks/using-repositories/) which consists of ten official repositories.
+        - [package list](https://anaconda.org/conda-forge/repo)
     - You can even install R packages with conda!
-
 
 We will update the channel list order and add `bioconda` since we are using bioinformatic tools today. **The order of the channels matters!**
 
@@ -93,7 +95,7 @@ conda config --add channels bioconda
 conda config --get channels
 ```
 
-Lastly, add the `conda-forge` channel to move it to top of the list, following [Bioconda's recommended channel order](https://bioconda.github.io/user/install.html#set-up-channels):
+Lastly, add the `conda-forge` channel to move it to top of the list, following [Bioconda's recommended channel order](https://bioconda.github.io/user/install.html#set-up-channels). This is because many packages on bioconda rely on dependencies that are available on conda-forge, so we want conda to search for those dependencies before trying to install any bioinformatics software.
 
 ```
 conda config --add channels conda-forge
@@ -112,7 +114,7 @@ With this configuration, conda will search for packages in this order: 1) `conda
 
 ### Install Software
 
-We will install FastQC which is a software tool that provides a simple way to run quality control checks on raw sequencing data.
+We will install [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) which is a software tool that provides a simple way to run quality control checks on raw sequencing data.
 
 
 Search for software (fastqc):
@@ -121,7 +123,7 @@ Search for software (fastqc):
 conda search fastqc
 ```
 
-Create conda environment and install fastqc. This takes a few minutes (you'll see the message "Solving environment").
+Create conda environment and install FastQC. This takes a few minutes (you'll see the message "Solving environment").
 
 ```
 conda create -y --name fqc fastqc
@@ -130,15 +132,13 @@ conda create -y --name fqc fastqc
 
 More options to customize the environment are documented under the help page for this command: `conda create -h`.
 
-
-
 Activate environment:
 
 ```
 conda activate fqc
 ```
 
-This command shows you information about the conda environment you activated:
+This command shows you information about the activated conda environment:
 
 ```
 conda info
@@ -157,9 +157,7 @@ fastqc --version
     conda deactivate
     ```
 
-
-
-High-throughput sequencing data quality control steps often involve fastqc and trimmomatic. Trimmomatic is useful for read trimming (i.e., adapters). There are multiple ways we could create a conda environment that contains both software programs:
+High-throughput sequencing data quality control steps often involve FastQC and [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic). Trimmomatic is useful for read trimming (i.e., adapters). There are multiple ways we could create a conda environment that contains both software programs:
 
 #### Method 1: install software in existing environment
 
@@ -181,7 +179,7 @@ The default is to install the most current version, but sometimes your workflow 
 
 #### Method 2: install both software during environment creation
 
-When you switch conda environments, conda changes the PATH (and other environment variables) so it searches for software packages in different places.
+When you switch conda environments, conda changes the PATH (and other environment variables) so it searches for software packages in different folders.
 
 Let's check the PATH for method 1:
 ```
@@ -193,14 +191,16 @@ You should see that the first element in the PATH changes each time you switch e
 conda deactivate
 conda create -y --name fqc_trim fastqc trimmomatic=0.36
 conda activate fqc_trim
-conda list # check installed software
-echo $PATH # path for method 2
+# check installed software
+conda list
+# path for method 2
+echo $PATH
 ```
 
 The following methods use an external file to specify the packages to install:
 
 #### Method 3: specify software to install with a YAML file
-Often, it's easier to create environments and install software using a YAML file (YAML is a file format) that specifies all the software to be installed. For our example, we are using a file called `test.yml`. Let's start back in the `(base)` environment.
+Often, it's easier to create environments and install software using a YAML file that specifies all the software to be installed. For our example, we are using a file called `test.yml`. Let's start back in the `(base)` environment.
 
 ```
 conda deactivate
@@ -208,7 +208,8 @@ conda deactivate
 
 The `test.yml` file contains the following in YAML format:
 
-```yaml
+=== "YAML"
+```
 name: qc_yaml #this specifies environment name
 channels:
     - conda-forge
@@ -225,6 +226,10 @@ conda env create -f test.yml #since environment name specified in yml file, we d
 conda activate qc_yaml
 conda list  # check installed software
 ```
+
+!!! info
+
+    [YAML](https://en.wikipedia.org/wiki/YAML) is a file format that is easy for both computers and humans to read. YAML file extensions are `.yml` and these files can be generated in any text editor.
 
 #### Method 4: Install exact environment
 
@@ -244,25 +249,27 @@ Two options -
 conda install --file=packages.txt
 ```
 
+OR
+
 2) set up a new environment with the exact package list:
 ```
 conda env create --name qc_file --file packages.txt
 ```
 
-
-
 ### Managing Environments
 
 At this point, we have several conda environments! To see a list, there are 2 commands (they do the same thing!):
-```bash
+```
 conda env list
 ```
 
-or
+OR
 
-```bash
+```
 conda info --envs
 ```
+
+Note that the current environment you're in is marked with an asterisk `*`.
 
 !!! warning
 
@@ -270,9 +277,9 @@ conda info --envs
 
     For this reason, in practice, people often manage software for their workflows with multiple conda environments.
 
+### Running FastQC in a conda environment
 
-
-### Running FastQC in the fqc Environment
+Let's run a small analysis with FastQC in the `fqc` environment we created above.
 
 If not already done, activate one of the environments we created, e.g.,:
 
@@ -311,21 +318,73 @@ curl -L https://osf.io/5daup/download -o ERR458493.fastq.gz
 ```
 
 Check out the data:
-```
-gunzip -c ERR458493.fastq.gz | wc -l
-```
 
+=== "Input"
+
+    The `gunzip -c` command allows us to see the unzipped version of the file without actually unzipping it (you can verify this by checking the file extension after running this command!). The `|` is called a pipe and it takes the output of the `gunzip -c` command and hands it to the `wc` word count command. The `-l` flag tells `wc` we want to count the number of lines in the file.
+
+    ```
+    gunzip -c ERR458493.fastq.gz | wc -l
+    ```
+
+=== "Expected Output"
+
+    There should be 4,375,828 lines in the file.
 
 What does the fastq file look like?
-```
-gunzip -c ERR458493.fastq.gz | head
-```
+
+=== "Input"
+
+    Here again, we use the `gunzip -c` and pipe the output to the `head` command to show the first 10 lines of the file:
+
+    ```
+    gunzip -c ERR458493.fastq.gz | head
+    ```
+
+=== "Expected Output"
+
+    The beginning of the fastq format sequence file should look like this, where the 1st line is the sequence read ID (starts with `@`), the 2nd line is the DNA sequence, the 3rd is sequence separator `+`, and the 4th is the Phred quality score associated with each base pair in ASCII format.
+
+    ```
+    @ERR458493.1 DHKW5DQ1:219:D0PT7ACXX:1:1101:1724:2080/1
+    CGCAAGACAAGGCCCAAACGAGAGATTGAGCCCAATCGGCAGTGTAGTGAA
+    +
+    B@@FFFFFHHHGHJJJJJJIJJGIGIIIGI9DGGIIIEIGIIFHHGGHJIB
+    @ERR458493.2 DHKW5DQ1:219:D0PT7ACXX:1:1101:2179:2231/1
+    ACTAATCATCAACAAAACAATGCAATTCAAGACCATCGTCGCTGCCTTCGC
+    +
+    B@=DDFFFHHHHHJJJJIJJJJJJIJJJJJJJJJJJJJJJJJJJJIJJJJI
+    @ERR458493.3 DHKW5DQ1:219:D0PT7ACXX:1:1101:2428:2116/1
+    CTCAAAACGCCTACTTGAAGGCTTCTGGTGCTTTCACCGGTGAAAACTCCG
+    ```
 
 Run FastQC!
-```
-fastqc ERR458493.fastq.gz
-```
 
+=== "Input"
+
+    ```
+    fastqc ERR458493.fastq.gz
+    ```
+
+=== "Expected Output"
+
+    On the terminal screen, FastQC prints analysis progress:
+    ```
+    Started analysis of ERR458493.fastq.gz
+    Approx 5% complete for ERR458493.fastq.gz
+    Approx 10% complete for ERR458493.fastq.gz
+    Approx 15% complete for ERR458493.fastq.gz
+    Approx 20% complete for ERR458493.fastq.gz
+    Approx 25% complete for ERR458493.fastq.gz
+    Approx 30% complete for ERR458493.fastq.gz
+    Approx 35% complete for ERR458493.fastq.gz
+    ...
+    Analysis complete for ERR458493.fastq.gz
+    ```
+
+    The final output file is called "ERR458493_fastqc.html".
+
+    You can click on the `.html` file in the File panel to open it in a web browser. This is the quality check report for our yeast sequence file.
 
 ## Let's practice!
 
@@ -482,4 +541,4 @@ conda remove <software name>
     Be sure to save any work/notes you took in the binder to your computer. Any new files/changes are not available when the binder session is closed!
 
     For example, select a file, click "More", click "Export":
-    ![](https://i.imgur.com/js8eX0l.png)
+    ![](./conda-imgs/binder-save-files.png "save binder files")

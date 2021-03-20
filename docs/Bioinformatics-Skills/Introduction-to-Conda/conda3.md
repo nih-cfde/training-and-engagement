@@ -11,9 +11,7 @@ For example, it's a lot easier to replicate a software environment from a public
 
 **Why**: to share your cool software with the world!
 
-The gist is that you write a recipe that has all the specs about your software that is submitted to a channel, e.g., conda-forge or bioconda. Once correctly formatted and tested (with continuous integration automation) so it works on different operating systems, it's added to the channel and the world can use and install your software with conda!
-
-- https://python-packaging-tutorial.readthedocs.io/en/latest/conda.html
+The gist is that you write a [recipe](https://python-packaging-tutorial.readthedocs.io/en/latest/conda.html) that has all the specs about your software that is submitted to a channel, e.g., conda-forge or bioconda. Once correctly formatted and tested (with continuous integration automation) so it works on different operating systems, it's added to the channel and the world can use and install your software with conda!
 
 
 ## Running parts of analysis workflows in their own environment
@@ -42,22 +40,22 @@ rule fastqc_raw:
 
 Examples:
 
-- the Rstudio binder we're using today was created with https://binder.pangeo.io/
+- the Rstudio binder we're using today was created with <https://binder.pangeo.io/>
 
-- [metENP binder](https://github.com/metabolomicsworkbench/MetENP): tool for metabolite enrichment analysis and their associated enriched pathways
+- [Metabolomics Workbench metENP binder](https://github.com/metabolomicsworkbench/MetENP): tool for metabolite enrichment analysis and their associated enriched pathways
 
 
-## Wrapping up
+!!! note "Key Points"
 
-There are many actions you can perform with conda environments. Today we have mentioned these!
+    There are many actions you can perform with conda environments. Today we have mentioned these!
 
-- init
-- config
-- search
-- create
-- activate/deactivate
-- list
-- remove
-- update
-- revert
-- export
+    - init
+    - config
+    - search
+    - create
+    - activate/deactivate
+    - list
+    - remove
+    - update
+    - revert
+    - export
