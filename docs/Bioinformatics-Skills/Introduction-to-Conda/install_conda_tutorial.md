@@ -90,7 +90,7 @@ Check the version of your new conda installation:
 
 === "Expected Output"
 
-    If you got a conda version, then you are ready for the next step!
+    If you got a conda version, then you are ready to use conda!
 
     ```
     conda 4.8.3

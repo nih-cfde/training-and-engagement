@@ -1,5 +1,7 @@
 # Let's practice!
 
+## Exercise 1
+
 === "Exercise 1"
 
     - **First**, install the `blast` software with version 2.9.0 using conda.
@@ -89,7 +91,7 @@
 
     Note that if you `conda deactivate`, you can still access the input/intermediate/output files from the BLAST analysis. They are not "stuck" inside the conda environment!
 
----
+## Exercise 2
 
 === "Exercise 2"
 
