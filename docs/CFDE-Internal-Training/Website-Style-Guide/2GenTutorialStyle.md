@@ -50,7 +50,6 @@ Use Markdown formatting to differenciate blocks of text, code, quotes, and hyper
 
 Use | Example
 --- | ---
-Buttons to click | "Launch", "Download"
 Text on webpages | look for the "Actions" column
 File names | A text file called "download-links.txt" **&ast;**
 Folder names | create a folder called "KF_Data"
@@ -71,6 +70,28 @@ Ports | `:3000`
 Github branches | `stable`
 
 &ast;Use the backticks for folders and file names in relative or absolute paths. Use " " for the folder or file name itself
+
+### Buttons to Click
+
+When lessons ask users to click a button, please use the highlight text syntax.
+
+The text color is set to purple website-wide. Use this syntax in markdown files, where the highlighted text here is "File Repository":
+```
+<span class="highlight_txt">File Repository</span>
+```
+and it will render as:
+
+<span class="highlight_txt">File Repository</span>
+
+The text highlighting colors are specified in the "extra.css" file with this block:
+
+```
+.highlight_txt {
+  color: #9f0bde;
+  background-color: #ededed;
+  padding: .25em;
+}
+```
 
 ### Quotes
 
@@ -224,6 +245,16 @@ The `htmlproofer` plugin checks for broken page and URL links when a pull reques
 There are several [built-in admonition styles, and it is possible to add custom titles and styles](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#types). Below is the syntax for commonly used built-in styles to highlight important information:
 
 ```
+!!! info
+
+    Important information
+```
+
+!!! info
+
+    Important information
+
+```
 !!! tip
 
     Lesson tips/shortcuts/alternatives
@@ -286,3 +317,16 @@ Customize admonition titles by specifying the admonition title in quotes. For ex
     Lesson key points/take home messages
 
 Admonition blocks do not render on Github. More examples are shown on the [supported types page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types).
+
+### Emojis
+
+Use this syntax in markdown docs to render emojis `:fontawesome-regular-trash-alt:` which renders as :fontawesome-regular-trash-alt:
+
+Specified in mkdocs.yml by:
+```
+- pymdownx.emoji:
+     emoji_index: !!python/name:materialx.emoji.twemoji
+     emoji_generator: !!python/name:materialx.emoji.to_svg
+```
+
+Here is a gallery of available [fontawesome](https://fontawesome.com/icons?d=gallery&p=2&m=free) icons.
