@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-An Introduction to Conda
+An Introduction to conda
 ============================================
 
 Conda is a very helpful tool for easily installing, managing, and reproducing software environments used in computational workflows, such as high-throughput sequence data processing or downstream data visualization workflows to name a few!
@@ -14,9 +14,10 @@ At the end of the lesson, we'll also briefly discuss other useful applications o
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-10 mins | [Introduction](./conda1.md) | What is Conda?
+10 mins | [Introduction](./conda1.md) | What is conda?
 1 hr | [Using conda environments](./conda2.md) | How to use conda to install software with isolated environments?
-5 mins | [What else can we use conda for?](./conda3.md) | Other applications for conda
+30 mins | [Conda exercises](./conda3.md) | Practice creating conda environments
+5 mins | [What else can we use conda for?](./conda4.md) | Other applications for conda
 20 mins | [Setting up conda on your computer](install_conda_tutorial.md) | Considerations for installing conda
 
 !!! note "Learning Objectives"

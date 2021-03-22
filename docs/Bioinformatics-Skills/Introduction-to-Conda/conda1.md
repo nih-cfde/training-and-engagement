@@ -1,4 +1,4 @@
-# Why use Conda?
+# What is conda?
 
 Imagine you want to try 3 different analysis workflows - one for a genome-wide association study (GWAS), and 2 different variant calling workflows. Unfortunately, these workflows require similar software but different versions. One option is to run each workflow on a separate computer, but then you'd need 3 computers and that's not very practical!
 

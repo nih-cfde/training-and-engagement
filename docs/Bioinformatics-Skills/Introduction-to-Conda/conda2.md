@@ -4,9 +4,9 @@ Let's get started with conda!
 
 To follow along with this lesson, we are using a [binder](https://binder.pangeo.io/) with an Rstudio interface. Binders use collections of files from Github repositories with instructions on software installation to create small computing environments. They are used for teaching and demonstrating software functionality or analysis workflows.
 
-Open the binder for this lesson by clicking this button: [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio)
+Open the binder in a new tab for this lesson by ++ctrl++ clicking this button: [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio)
 
-It should open in a new web browser tab.
+It may take 3-4 minutes for the binder to load!
 
 !!! info
 
@@ -14,7 +14,7 @@ It should open in a new web browser tab.
 
 We are using 3 of the Rstudio panels for this lesson: Source panel to run conda commands, Terminal panel to execute code, and File panel to view input/output files. You can rearrange the panels to help with viewing:
 
-
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_id1ezdq9&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_tndww4gg" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 !!! warning
 
@@ -28,13 +28,15 @@ Conda is already installed in the binder so the next step is to set it up. We'll
 
 ### Initialize conda
 
-Copy/paste commands into the terminal OR run the commands from the "workshop_commands.sh" file in the binder (in File Rstudio panel).
+To follow along, copy/paste commands into the terminal OR run the commands from the "workshop_commands.sh" file in the binder (in File Rstudio panel). Either click <span class="highlight_txt">Run</span> or type ++cmd+enter++ on Macs and ++ctrl+enter++ on Windows computers.
 
-Installer sets up two things: Conda and the root environment. The root environment contains the selected python version and some basic packages.
+The conda installer sets up two things: Conda and the base environment (also called "root"). The base environment contains a version of python (specified during installation) and some basic packages. As illustrated below, you can then create additional environments with their own software installations, including other versions of the same software (i.e., python 3 in base environment and python 2.7 in a separate environment).
 
 ![](./conda-imgs/conda-init.png 'conda installer')
 
 Image credit: [Gergely Szerovay](https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/)
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_yzxi4s59&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_ucohpz4x" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 Setup the conda installer and initialize the settings:
 
@@ -49,23 +51,25 @@ echo "PS1='\w $ '" >> .bashrc
 
 Re-start terminal for the changes to take effect (type `exit` and then open a new terminal).
 
-
-
-
-There is always a `(base)` conda environment.
-
-
+We are currently in the `(base)` conda environment.
 
 ### Conda channels: Searching for software
 
-The channels are places that conda looks for packages. The default channels after conda installation is set to Anaconda Inc's channels (Conda's Developer).
+The channels are places where conda looks for packages. The default channel after conda installation is set to Anaconda Inc's channels (Conda's Developer).
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_j2mmgrkh&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_5max8sqt" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ```
 conda config --show channels
 conda list # get list of packages in base environment
 ```
 
-Channels exist in a hierarchial order. By default:
+!!! note
+
+    You might notice that our installation of conda on the binder already had the `defaults` and `conda-forge` channels. This is due to the binder's set up. But in practice on your own system, it's important to add the channels as shown in this lesson.
+
+
+Channels exist in a hierarchical order. By default, conda searches for packages based on:
 
 Channel priority > package version > package build number
 
@@ -77,15 +81,15 @@ Image credit: [Gergely Szerovay](https://www.freecodecamp.org/news/why-you-need-
 
     Commonly used channels:
 
-    - In absence of other channels, conda [searches the `defaults` repository](https://docs.anaconda.com/anaconda/user-guide/tasks/using-repositories/) which consists of ten official repositories
-    - `conda-forge` and `bioconda` are channels that contain community contributed software
+    - In the absence of other channels, conda [searches the `defaults` repository](https://docs.anaconda.com/anaconda/user-guide/tasks/using-repositories/)
+    - `conda-forge` and `bioconda` are channels that contain community-contributed software
     - `Bioconda` specializes in bioinformatics software (*supports only 64-bit Linux and Mac OS*)
         - [package list](https://anaconda.org/bioconda/repo)
     - `conda-forge` contains many dependency packages
         - [package list](https://anaconda.org/conda-forge/repo)
     - You can even install R packages with conda!
 
-We will update the channel list order and add `bioconda` since we are using bioinformatic tools today. **The order of the channels matters!**
+We will update the channel list order and add `bioconda` since we are using bioinformatics tools today. **The order of the channels matters!**
 
 First, add the `defaults` channel:
 
@@ -100,14 +104,14 @@ conda config --add channels bioconda
 conda config --get channels
 ```
 
-Lastly, add the `conda-forge` channel to move it to top of the list, following [Bioconda's recommended channel order](https://bioconda.github.io/user/install.html#set-up-channels). This is because many packages on bioconda rely on dependencies that are available on conda-forge, so we want conda to search for those dependencies before trying to install any bioinformatics software.
+Lastly, add the `conda-forge` channel to move it to top of the list, following [Bioconda's recommended channel order](https://bioconda.github.io/user/install.html#set-up-channels). This is because many packages on `bioconda` rely on dependencies that are available on `conda-forge`, so we want conda to search for those dependencies before trying to install any bioinformatics software.
 
 ```
 conda config --add channels conda-forge
 conda config --get channels
 ```
 
-With this configuration, conda will search for packages in this order: 1) `conda-forge`, 2) `bioconda`, and 3) `defaults`
+With this configuration, conda will search for packages first in `conda-forge`, then `bioconda`, and then `defaults`.
 
 !!! info
 
@@ -117,27 +121,67 @@ With this configuration, conda will search for packages in this order: 1) `conda
     conda config --prepend channels bioconda
     ```
 
-### Install Software
+### Install Software and Create Environments
 
-We will install [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) which is a software tool that provides a simple way to run quality control checks on raw sequencing data.
-
+For our demo, we need to install [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), a commonly used software tool that provides quality control reports for raw sequencing data.
 
 Search for software (fastqc):
 
-```
-conda search fastqc
-```
+=== "Input"
+
+    ```
+    conda search fastqc
+    ```
+
+=== "Expected Output"
+
+    It may take a few seconds for the software list to display. The table shows all the versions and builds of fastqc available for installation with conda. They are all stored in the bioconda channel.
+
+    ```
+    Loading channels: done
+    # Name                       Version           Build  Channel
+    fastqc                        0.10.1               0  bioconda
+    fastqc                        0.10.1               1  bioconda
+    fastqc                        0.11.2               1  bioconda
+    fastqc                        0.11.2      pl5.22.0_0  bioconda
+    fastqc                        0.11.3               0  bioconda
+    fastqc                        0.11.3               1  bioconda
+    fastqc                        0.11.4               0  bioconda
+    fastqc                        0.11.4               1  bioconda
+    fastqc                        0.11.4               2  bioconda
+    fastqc                        0.11.5               1  bioconda
+    fastqc                        0.11.5               4  bioconda
+    fastqc                        0.11.5      pl5.22.0_2  bioconda
+    fastqc                        0.11.5      pl5.22.0_3  bioconda
+    fastqc                        0.11.6               2  bioconda
+    fastqc                        0.11.6      pl5.22.0_0  bioconda
+    fastqc                        0.11.6      pl5.22.0_1  bioconda
+    fastqc                        0.11.7               4  bioconda
+    fastqc                        0.11.7               5  bioconda
+    fastqc                        0.11.7               6  bioconda
+    fastqc                        0.11.7      pl5.22.0_0  bioconda
+    fastqc                        0.11.7      pl5.22.0_2  bioconda
+    fastqc                        0.11.8               0  bioconda
+    fastqc                        0.11.8               1  bioconda
+    fastqc                        0.11.8               2  bioconda
+    fastqc                        0.11.9               0  bioconda
+    ```
+
+Now, let's create a conda environment with fastqc installed in it.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_d3lxef1n&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_zf41375u" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 Create conda environment and install FastQC. This takes a few minutes (you'll see the message "Solving environment").
+
+The `-y` flag tells conda not to ask you for confirmation about downloading software. The `--name` (or `-n`) flag specifies the environment's name. The last element of the command, `fastqc`, specifies the software package to install.
 
 ```
 conda create -y --name fqc fastqc
 ```
 
-
 More options to customize the environment are documented under the help page for this command: `conda create -h`.
 
-Activate environment:
+The software you installed will only be available to use after you activate the environment:
 
 ```
 conda activate fqc
@@ -149,7 +193,7 @@ This command shows you information about the activated conda environment:
 conda info
 ```
 
-Check fastqc version:
+One way to make sure the software works is to check the version:
 
 ```
 fastqc --version
@@ -172,25 +216,36 @@ conda install -y trimmomatic=0.36
 conda list # check installed software
 ```
 
-We can specify the exact software version :point_up_2:
-The default is to install the most current version, but sometimes your workflow may depend on a different version.
+We can specify the exact software version with `=` and a version number. The default is to install the latest version, but sometimes your workflow may depend on an older version.
 
 !!! info
 
     Software can also be installed by specifying the channel with `-c` flag i.e.:
     ```
-    conda install -c conda-forge -c bioconda sourmash
+    conda install -c conda-forge -c bioconda trimmomatic=0.36
+    ```
+
+When you switch conda environments, conda changes the file path (and other environment variables) to searches for software packages in different folders.
+
+Let's check the PATH for method 1:
+
+=== "Input"
+
+    ```
+    echo $PATH
+    ```
+
+=== "Expected Output"
+
+    You should see that the first element (`/srv/conda/envs/fqc/bin:`) in the file path changes each time you switch environments!
+
+    ```
+    /srv/conda/envs/fqc/bin:/srv/conda/condabin:/srv/conda/envs/notebook/bin:/srv/conda/condabin:/home/jovyan/.local/bin:/home/jovyan/.local/bin:/srv/conda/envs/notebook/bin:/srv/conda/bin:/srv/npm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     ```
 
 #### Method 2: install both software during environment creation
 
-When you switch conda environments, conda changes the PATH (and other environment variables) so it searches for software packages in different folders.
-
-Let's check the PATH for method 1:
-```
-echo $PATH
-```
-You should see that the first element in the PATH changes each time you switch environments!
+For this method, we list `trimmomatic=0.36` after `fastqc` to create an environment with both installed, all with 1 command. Like above, remember to activate the environment and then you can check the list of packages to verify installation and check the PATH to verify that conda switched to the `fqc_trim` directory.
 
 ```
 conda deactivate
@@ -205,7 +260,12 @@ echo $PATH
 The following methods use an external file to specify the packages to install:
 
 #### Method 3: specify software to install with a YAML file
-Often, it's easier to create environments and install software using a YAML file that specifies all the software to be installed. For our example, we are using a file called `test.yml`. Let's start back in the `(base)` environment.
+Often, it's easier to create environments and install software using a YAML file that specifies all the software to be installed. For our example, we are using a file called `test.yml`.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_stc3zu6d&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_6n7tlxwg" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+
+Let's start back in the `(base)` environment.
 
 ```
 conda deactivate
@@ -225,20 +285,25 @@ dependencies:
     - trimmomatic=0.36
 ```
 
-Create the environment - note the difference in conda syntax:
-```
-conda env create -f test.yml #since environment name specified in yml file, we do not need to use -n flag here
-conda activate qc_yaml
-conda list  # check installed software
-```
-
 !!! info
 
-    [YAML](https://en.wikipedia.org/wiki/YAML) is a file format that is easy for both computers and humans to read. YAML file extensions are `.yml` and these files can be generated in any text editor.
+    [YAML](https://en.wikipedia.org/wiki/YAML) is a file format that is easy for both computers and humans to read. The YAML file extension is `.yml` and these files can be generated in any text editor.
+
+    For conda, the `name:` is optional (it can also be specified in the `conda env create` command), but it must have a list of `channels:` and a list of `dependencies:`. Notice that the channels are list with highest to lowest priority.
+
+Create the environment - note the difference in conda syntax. This method uses the `conda env create` command instead of `conda create`. The `-f` (or `--file`) flag specifies the file with the channels and software to set up.
+
+```
+# since environment name specified in yml file, we do not need to use -n flag here
+conda env create -f test.yml
+conda activate qc_yaml
+# check installed software
+conda list  
+```
 
 #### Method 4: Install exact environment
 
-For this approach, we export a list of the exact software package versions installed in a given environment and use it to set up new environments. This set up method won't install the latest version of a given program, for example, but it will replicate the exact environment set up you exported from.
+For this approach, we export a list of the exact software package versions installed in a given environment and use it to set up new environments. This set up method won't necessarily install the latest version of a given program, but it will replicate the exact environment set up you exported from.
 
 ```
 conda activate fqc
@@ -257,34 +322,37 @@ conda install --file=packages.txt
 OR
 
 2) set up a new environment with the exact package list:
+
 ```
-conda env create --name qc_file --file packages.txt
+conda env create --name qc_file -f packages.txt
 ```
 
 ### Managing Environments
 
-At this point, we have several conda environments! To see a list, there are 2 commands (they do the same thing!):
+At this point, we have several conda environments! To see a list:
 ```
 conda env list
 ```
 
-OR
+The current environment you're in is marked with an asterisk `*`.
 
-```
-conda info --envs
-```
+!!! note
 
-Note that the current environment you're in is marked with an asterisk `*`.
+    There are a few redundant commands in conda. For example, this command does exactly the same thing as the one above:
 
-!!! warning
+    ```
+    conda info --envs
+    ```
 
-    Generally, you want to avoid installing too many software packages in one environment. It takes longer for conda to resolve compatible software versions for an environment the more software you install.
+Generally, you want to avoid installing too many software packages in one environment. The more software you install, the longer it takes for conda to resolve compatible software versions for an environment (it'll take longer and longer at the "Solving environment" stage).
 
-    For this reason, in practice, people often manage software for their workflows with multiple conda environments.
+For this reason, and in practice, people often manage software for their workflows with multiple conda environments.
 
 ### Running FastQC in a conda environment
 
 Let's run a small analysis with FastQC in the `fqc` environment we created above.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_v9ijwu6g&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_672rs9xp" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 If not already done, activate one of the environments we created, e.g.,:
 
@@ -292,7 +360,7 @@ If not already done, activate one of the environments we created, e.g.,:
 conda activate fqc
 ```
 
-Let's make sure the software was installed correctly:
+Let's make sure the software was installed correctly by looking at the help documentation:
 
 === "Input"
 
@@ -390,160 +458,3 @@ Run FastQC!
     The final output file is called "ERR458493_fastqc.html".
 
     You can click on the `.html` file in the File panel to open it in a web browser. This is the quality check report for our yeast sequence file.
-
-## Let's practice!
-
-=== "Exercise 1"
-
-    - **First**, install the `blast` software with version 2.9.0 using conda.
-
-    - **Second**, try this example BLAST analysis in the conda environment. In this example, we are comparing the sequence similarity of a mouse protein sequence to a reference zebra fish sequence - as you might imagine, they are not that similar!
-    But for today, this exercise will demonstrate running a quick analysis in a conda environment and bonus points if you find out how similar/dissimilar they are! (More details on BLAST and what each step is for [here](../Command-Line-BLAST/BLAST4.md)). Run each line of code below in the terminal:
-
-        - Make a directory for the exercise files:
-        ```
-        mkdir exercise1
-        cd exercise1
-        ```
-
-        - Download with `curl` command and unzip data files:
-        ```
-        curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
-        curl -o zebrafish.1.protein.faa.gz -L https://osf.io/68mgf/download
-        gunzip *.faa.gz
-        ```
-
-        - Subset the data for a test run:
-        ```
-        head -n 11 mouse.1.protein.faa > mm-first.faa
-        ```
-
-        - Format zebra fish sequence as the blast database to search against:
-        ```
-        makeblastdb -in zebrafish.1.protein.faa -dbtype prot
-        ```
-
-        - Run a protein blast search with `blastp`!
-        ```
-        blastp -query mm-first.faa -db zebrafish.1.protein.faa -out myoutput.txt -outfmt 6
-        ```
-
-    What does the output (`myoutput.txt`) look like?
-
-=== "Hint"
-
-    :bulb: You can use one of these approaches to install `blast`:
-
-    - install the software in an existing env using `conda install -y <name of the software>`
-
-    - create a new env using `conda create -y --name <name of env> <software to install>`
-
-=== "Answer"
-
-    There are many ways to solve this - here is one approach!
-
-    Input:
-    ```
-    # search for blast versions
-    conda search blast
-    # create an environment and install blast version 2.9.0
-    conda create -y -n exercise1 blast=2.9.0
-    # activate environment
-    conda activate exercise1
-
-    # make a folder for exercise 1 files
-    mkdir exercise1
-    # go to the exercise1 folder
-    cd exercise1
-
-    # download input sequence files
-    curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
-    curl -o zebrafish.1.protein.faa.gz -L https://osf.io/68mgf/download
-    # unzip the gzip files
-    gunzip *.faa.gz
-
-    # make a small example subset of the query sequence file
-    head -n 11 mouse.1.protein.faa > mm-first.faa
-    # format the reference database
-    makeblastdb -in zebrafish.1.protein.faa -dbtype prot
-    # run a protein BLAST search
-    blastp -query mm-first.faa -db zebrafish.1.protein.faa -out myoutput.txt -outfmt 6
-    ```
-
-    Output looks like this:
-    ```
-    YP_220550.1	NP_059331.1	69.010	313	97	0	4	316	10	322	1.24e-150	426
-    YP_220551.1	NP_059332.1	44.509	346	188	3	1	344	1	344	8.62e-92	279
-    YP_220551.1	NP_059341.1	24.540	163	112	3	112	263	231	393	5.15e-06	49.7
-    YP_220551.1	NP_059340.1	26.804	97	65	2	98	188	200	296	0.10	35.8
-    ```
-
-    The 3rd column has the percent of matching amino acids between the query mouse protein sequence file and the zebra fish reference database. Not surprisingly, :mouse: and :fish: are not very similar! For this particular mouse sequence, it's only 69.01% similar to the zebra fish reference.
-
-    Note that if you `conda deactivate`, you can still access the input/intermediate/output files from the BLAST analysis. They are not 'stuck' inside the conda environment!
-
----
-
-=== "Exercise 2"
-
-    Conda allows you to revert to a previous version of your software using the `--revision` flag:
-
-    Usage:
-    ```
-    # list all revisions
-    conda list --revisions
-
-    # revert to previous state
-    conda install --revision <number>
-
-    # for example:
-    conda install --revision 1
-    ```
-
-    Earlier, we installed an older version of trimmomatic (0.36). Try updating it to the most recent version and then revert back to the old version.
-
-=== "Hint"
-
-    :bulb: You can do this exercise in any of the conda environments we created earlier with trimmomatic. You can update software with `conda update <software name>`
-
-=== "Answer"
-
-    There are many ways to solve this - here is one approach!
-
-    ```
-    # activate fqc environment
-    conda activate fqc
-    # check version of trimmomatic
-    conda list
-    # update to latest version, should be 0.39 or higher
-    conda update trimmomatic
-    # look at revision list
-    conda list --revisions
-    # install the revision to revert to, here we want to revert to (rev 1) which had 0.36
-    conda install --revision 1
-    # now it's back to 0.36!
-    conda list
-    ```
-
-    Note that conda told us that it was upgrading to 0.39 and downgrading to 0.36 - useful outputs!
-
-
-
-### Tidying up
-
-To remove old conda environments:
-```
-conda env remove --name <conda env name>
-```
-
-To remove software:
-```
-conda remove <software name>
-```
-
-!!! warning
-
-    Be sure to save any work/notes you took in the binder to your computer. Any new files/changes are not available when the binder session is closed!
-
-    For example, select a file, click "More", click "Export":
-    ![](./conda-imgs/binder-save-files.png "save binder files")

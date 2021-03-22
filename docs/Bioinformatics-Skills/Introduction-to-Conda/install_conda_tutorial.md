@@ -2,21 +2,21 @@
 
 ## Installation considerations
 
-Whether you're installing conda on your own computer, a cloud instance, or high performance computer server, you'll need to consider the following:
+Whether you're installing conda on your own computer, a cloud instance, or high performance computer (HPC) server, you'll need to consider the following:
 
 1. Conda installer: [Miniconda](https://docs.conda.io/en/latest/miniconda.html) vs [Anaconda](https://www.anaconda.com/products/individual)
     - Both are free versions with Miniconda being the light weight version
 
     ![](./conda-imgs/mini-ana-conda.png "miniconda vs anaconda")
 
-3. OS: Windows, MacOS, Linux
+3. Operating system: Windows, MacOS, Linux
 4. Bit-count: 32 vs 64-bit
-    - macOS is 64-bit only
+    - MacOS is 64-bit only
 6. Python version for root environment (2.x vs 3.x)
-    - version 3.x is the default option since it is newer
-    - choose 2.7 version if you have mostly 2.7 code or use packages that do not have a 3.x version (but keep in mind that python 2.x [sunsetted](https://www.python.org/doc/sunset-python-2/))
+    - version 3.x is the default option (we recommend this!)
+    - choose 2.7 version if you have mostly 2.7 code or use packages that do not have a 3.x version (but keep in mind that python 2.x [is no longer being maintained](https://www.python.org/doc/sunset-python-2/))
 
-Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda. From the conda website:
+Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda for MacOS. From the conda website:
 
 > "Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the conda install command to install 720+ additional conda packages from the Anaconda repository."
 
@@ -24,6 +24,12 @@ Conda can be installed via Miniconda (a smaller more efficient package) or Anaco
 We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
 Select the [installer](https://docs.conda.io/en/latest/miniconda.html) for: "Miniconda3 MacOSX 64-bit bash". We are using the 64-bit version for working with Python 3.x.
+
+!!! note "Linux and Windows"
+
+    The process we are showing is very similar for installing the [Linux version](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
+
+    For Windows computers, you can follow [instructions](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html) from conda and use the Anaconda Prompt terminal interface, which comes in the installation, to run commands.
 
 ### Step 2: Verify your installer hashes
 
@@ -92,4 +98,4 @@ Check the version of your new conda installation:
 
 !!! note "Key Points"
 
-    Now you should have a working conda installation that you can use to create custom conda environments on your computer!
+    Now you should have a working conda installation that you can use to create custom conda environments on your computer, cloud instance, or space on an HPC server!
