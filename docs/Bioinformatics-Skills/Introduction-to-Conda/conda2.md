@@ -1,29 +1,34 @@
-# Let's get started!
+# Using conda environments
 
+Let's get started with conda!
 
-- :computer: Open a web browser - e.g., Firefox, Chrome, or Safari.
-- Open the binder by clicking this button: [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio)
+To follow along with this lesson, we are using a [binder](https://binder.pangeo.io/) with an Rstudio interface. Binders use collections of files from Github repositories with instructions on software installation to create small computing environments. They are used for teaching and demonstrating software functionality or analysis workflows.
 
+Open the binder for this lesson by clicking this button: [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio)
+
+It should open in a new web browser tab.
 
 !!! info
 
-    For this lesson, we are using 3 of the Rstudio panels: Source panel to run conda commands, Terminal panel to execute code, and File panel to view input/output files.
+    For this lesson, we are using Rstudio to teach you conda because it consolidates showing the conda commands, terminal, and file system all on 1 screen. In practice, you can use conda through a command-line terminal interface without Rstudio.
 
-Conda is already installed in the binder. We'll talk more about [setting conda up](./install_conda_tutorial.md) on your local system later in the lesson!
+We are using 3 of the Rstudio panels for this lesson: Source panel to run conda commands, Terminal panel to execute code, and File panel to view input/output files. You can rearrange the panels to help with viewing:
+
 
 
 !!! warning
 
     What happens if I get a 502, 503, or 504 error from the binder?
 
-    Try clicking on the launch button again. The binder or internet connection may have timed out.
+    Try clicking on the launch button again to re-launch. The binder or internet connection may have timed out.
 
 
+Conda is already installed in the binder so the next step is to set it up. We'll talk more about [setting conda up](./install_conda_tutorial.md) on your local system later in the lesson!
 
 
 ### Initialize conda
 
-:keyboard: Copy/paste commands into the terminal OR run the commands from the "workshop_commands.sh" file in the binder (in File Rstudio panel).
+Copy/paste commands into the terminal OR run the commands from the "workshop_commands.sh" file in the binder (in File Rstudio panel).
 
 Installer sets up two things: Conda and the root environment. The root environment contains the selected python version and some basic packages.
 

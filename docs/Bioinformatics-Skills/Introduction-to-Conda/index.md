@@ -8,15 +8,16 @@ hide:
 An Introduction to Conda
 ============================================
 
-Conda makes software installation and compute environment management easier by making sure that all the software you are using for a particular project works together.
+Conda is a very helpful tool for easily installing, managing, and reproducing software environments used in computational workflows, such as high-throughput sequence data processing or downstream data visualization workflows to name a few!
+
+At the end of the lesson, we'll also briefly discuss other useful applications of conda and setting up conda on your own system.
 
 Est. Time | Lesson name | Description
 --- | --- | ---
 10 mins | [Introduction](./conda1.md) | What is Conda?
-1 hr | [Using conda environments](./conda2.md) |
-5 mins | [What else can we use conda for?](./conda3.md) |
+1 hr | [Using conda environments](./conda2.md) | How to use conda to install software with isolated environments?
+5 mins | [What else can we use conda for?](./conda3.md) | Other applications for conda
 20 mins | [Setting up conda on your computer](install_conda_tutorial.md) | Considerations for installing conda
-
 
 !!! note "Learning Objectives"
 
@@ -28,7 +29,9 @@ Est. Time | Lesson name | Description
 
 === "Prerequisites"
 
-    This installation tutorial is written specifically for installing the MacOS version of Miniconda. However, the rest of the lessons use a binder which will work on Windows, Mac, and Linux operating systems.
+    The conda lesson uses a standardized binder environment, which will work on Windows, Mac, and Linux operating systems, and Firefox, Safari, and Chrome web browsers.
+
+    The installation tutorial is currently written specifically for installing the MacOS version of Miniconda.
 
 === "Tutorial Resources"
 
