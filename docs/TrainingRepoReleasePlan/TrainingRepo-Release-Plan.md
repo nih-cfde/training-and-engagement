@@ -213,6 +213,8 @@ Release format for the public website:
 
 ## Step-by-step
 
+Details for each of these components are described above. These are the basic steps for generating the training website's release notes!
+
 ### Part 1 - Add new release notes to website
 
 - make a new branch from `dev`
@@ -230,5 +232,5 @@ Release format for the public website:
 - go to the **draft** release notes from [Github Releases page](https://github.com/nih-cfde/training-and-engagement/releases) and click "Edit draft"
 - For the `Tag version`, enter the release `YYYY.MM` format and then specify the branch to tag. Switch the tag branch from `dev` to `stable`:
 ![Screenshot_2021-02-24 nih-cfde training-and-engagement](https://user-images.githubusercontent.com/5659802/109085507-ac35c180-76be-11eb-857d-d127347de79f.png)
-- add date in the "Updated" release notes title (i.e., "February 24, 2021")
+- add date in the "Updated on" release notes title (i.e., "Updated on February 24, 2021")
 - click "Publish"!
