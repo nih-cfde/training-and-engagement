@@ -210,3 +210,25 @@ Release format for the public website:
  > Updates and Fixes
  >
  > This section will highlight any code or link fixes to existing tutorials in addition to any clarification notes and explanation that was added.
+
+## Step-by-step
+
+### Part 1 - Add new release notes to website
+
+- make a new branch from `dev`
+- copy contents of `index.md` in [Release notes directory](../Release-Notes/index.md) to a new markdown doc named with release `Month-Year.md`
+- copy **draft** release notes from [Github Releases page](https://github.com/nih-cfde/training-and-engagement/releases) to the `index.md` file and edit
+    - remember to edit yaml title, page title with current release month/year
+    - add links to the website pages using relative file paths
+    - edit the `.pages` file in reverse chronological order so most recent release files on top
+- create a PR to `dev`, merge after approved
+
+### Part 2 - PR of `dev` to `stable`
+- merge after approved
+
+### Part 3 - Edit release notes for Github repo
+- go to the **draft** release notes from [Github Releases page](https://github.com/nih-cfde/training-and-engagement/releases) and click "Edit draft"
+- For the `Tag version`, enter the release `YYYY.MM` format and then specify the branch to tag. Switch the tag branch from `dev` to `stable`:
+![Screenshot_2021-02-24 nih-cfde training-and-engagement](https://user-images.githubusercontent.com/5659802/109085507-ac35c180-76be-11eb-857d-d127347de79f.png)
+- add date in the "Updated" release notes title (i.e., "February 24, 2021")
+- click "Publish"!
