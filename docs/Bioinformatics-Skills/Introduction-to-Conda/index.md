@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-An Introduction to conda
+An Introduction to Conda
 ============================================
 
 Conda is a very helpful tool for easily installing, managing, and reproducing software environments used in computational workflows, such as high-throughput sequence data processing or downstream data visualization workflows to name a few!
