@@ -2,7 +2,7 @@
 
 Let's get started with conda!
 
-To follow along with this lesson, we are using a [binder](https://binder.pangeo.io/) with an Rstudio interface. Binders use collections of files from Github repositories with instructions on software installation to create small computing environments. They are used for teaching and demonstrating software functionality or analysis workflows.
+To follow along with this lesson, we are using a [binder](https://binder.pangeo.io/) with an Rstudio interface. Binders use collections of files from Github repositories with instructions on software installation to create small (and free!) computing environments. They are used for teaching and demonstrating software functionality or analysis workflows.
 
 Open the binder in a new tab for this lesson by ++ctrl++ clicking this button: [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio)
 
