@@ -26,3 +26,4 @@ Bioinformatics Analysis:
 - [Snakemake Workflow Management](Snakemake/index.md)
 - [Simulate Illumina Reads](Simulate_Illumina_Reads.md)
 - [RNAseq on Cavatica](RNAseq-on-Cavatica/rna_seq_1.md)
+- [Analysis on the Terra platform](Introduction-to-Terra/index.md)

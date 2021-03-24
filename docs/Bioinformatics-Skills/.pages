@@ -10,3 +10,4 @@ nav:
   - Snakemake Workflow Management: Snakemake
   - Simulate_Illumina_Reads.md
   - RNAseq-on-Cavatica
+  - Introduction-to-Terra
