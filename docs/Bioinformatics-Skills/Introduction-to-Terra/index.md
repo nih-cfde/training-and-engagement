@@ -10,8 +10,7 @@ An Introduction to Terra
 
 Terra is a cloud-based platform developed by the Broad Institute for bioinformatic analysis that aims to allow researchers with non-expert computing skills to conduct large-scale bioinformatic analysis on the Google Cloud Platform.
 
-By giving users both graphical and command line interface options, Terra lowers the barrier to entry for introducing users to cloud computing. The Terra workspaces organize documentation, data/metadata, workflows, analysis notebooks, and outputs in one place; all of which are important components for reproducible research and collaboration.
-
+Terra gives users both graphical and command line interface options, and also organizes documentation, data/metadata, workflows, analysis, and outputs all in one place. These shareable workspaces are important components for reproducible and collaborative research.
 
 Est. Time | Lesson name | Description
 --- | --- | ---
@@ -20,19 +19,19 @@ Est. Time | Lesson name | Description
 30 mins  | [Navigating Terra workspaces](./2terra.md) | Intro to the Terra interface
 30 mins  | [Cloud costs](./3terra.md) | How much does it cost to run an analysis?
 1 hr | [Running existing workflows](./4terra.md) | How to run a workflow?
-<!-- 1 hour  | [Custom workflow on Terra](./4terra.md) | Building your own workflows -->
+30 mins | [Custom workflow on Terra](./5terra.md) | Demo for building your own workflows
 
 !!! note "Learning Objectives"
 
     The objectives of this tutorial are to:
 
-    - set up Terra account
+    - set up a Terra account
 
     - learn about the Terra platform interface
 
     - learn how to use existing workflows on Terra
 
-    <!-- - learn how to upload a workflow to use on Terra -->
+    - learn how to upload a workflow to use on Terra
 
 === "Est. Cost"
 
@@ -46,14 +45,11 @@ Est. Time | Lesson name | Description
 
     - Google Cloud Platform (GCP) billing account (+ valid credit card). Please see our lesson for [setting up GCP accounts](../Introduction-to-GCP/index.md)
 
-    <!-- For building *custom* workflows on Terra, you'll also need:
+    For building *custom* workflows on Terra, you'll also need:
 
-    - local terminal environment to test code - Mac and Linux terminal. Alternatively, all of this could be tested on a GCP instance (just incurs cost to run VMs, but if you are starting small it will not cost too much)
-    - Dockerhub account
-    - familiarity with shell command-line, docker, and Workflow Description Language computer programming -->
-
-
-
+    - Either a local terminal environment (i.e., Mac terminal) or GCP instance to test workflow code. The GCP instance will cost money however, so we recommend starting with small workflows.
+    - Dockerhub account (Dockstore is another option, but we will demonstrate with Dockerhub in this lesson)
+    - Familiarity with shell command-line, docker, and Workflow Description Language computer programming are all needed to build custom workflows. The learning curve is steep, but there are also many resources available to get you started! We'll share a few in the lesson.
 
 === "Tutorial Resources"
 
