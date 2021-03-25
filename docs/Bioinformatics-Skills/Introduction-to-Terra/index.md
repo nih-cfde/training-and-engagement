@@ -5,35 +5,22 @@ hide:
   - toc
 ---
 
-**An Introduction to Terra**
+An Introduction to Terra
+=========================
 
-- what is Terra - cloud platform for data analysis
-    - scale up
-    - hosts existing datasets you might want to use
-    - secure (even for human data) for sharing data/workflows/workspaces with collaborators
-    - long-term persistence of data/workflow availability to other researchers
+Terra is a cloud-based platform developed by the Broad Institute for bioinformatic analysis that aims to allow researchers with non-expert computing skills to conduct large-scale bioinformatic analysis on the Google Cloud Platform.
 
-- what are the components of a workflow in Terra
-    - a computer (GCP instance). For more about a GCP instance, see our [tutorial](../Introduction-to-GCP/index.md) on setting up a GCP instance.
-    - software environment (docker)
-    - a workflow of steps to do (WDL)
-    - data (upload data to Terra workspace)
-
-
-
-!!! bug "to figure out"
-
-    how do we want ppl to follow this tutorial?
-
-    do they create dockerfiles/WDLs that they actually upload to clouds? or just demonstrate how that happens?
+By giving users both graphical and command line interface options, Terra lowers the barrier to entry for introducing users to cloud computing. The Terra workspaces organize documentation, data/metadata, workflows, analysis notebooks, and outputs in one place; all of which are important components for reproducible research and collaboration.
 
 
 Est. Time | Lesson name | Description
 --- | --- | ---
-30 mins  | [Setting up a Terra account](./1terra.md) |
-30 mins  | [Navigating Terra workspaces](./2terra.md) |
-30 mins  | [Running existing workflows](./3terra.md) |
-1 hour  | [Custom workflow on Terra](./4terra.md) |
+5 mins | [Introduction](0terra.md) | Why use Terra?
+30 mins  | [Setting up a Terra account](./1terra.md) | Connecting GCP and Terra accounts
+30 mins  | [Navigating Terra workspaces](./2terra.md) | Intro to the Terra interface
+30 mins  | [Cloud costs](./3terra.md) | How much does it cost to run an analysis?
+1 hr | [Running existing workflows](./4terra.md) | How to run a workflow?
+<!-- 1 hour  | [Custom workflow on Terra](./4terra.md) | Building your own workflows -->
 
 !!! note "Learning Objectives"
 
@@ -45,25 +32,25 @@ Est. Time | Lesson name | Description
 
     - learn how to use existing workflows on Terra
 
-    - learn how to upload a workflow to use on Terra
+    <!-- - learn how to upload a workflow to use on Terra -->
 
 === "Est. Cost"
 
     Testing and running workflows will incur some cost, but Google Cloud Platform gives new users a $300 free trial for 3 months.
 
-    *Not sure how much it costs to test on GCP and/or how much actual run costs on Terra but it seems to be low*
+    *reassess after deciding on demo analysis*
 
 === "Prerequisites"
 
     For using Terra and its *existing* workflows:
 
-    - GCP billing account (+ valid credit card). Please see our lesson for [setting up GCP accounts](../Introduction-to-GCP/index.md)
+    - Google Cloud Platform (GCP) billing account (+ valid credit card). Please see our lesson for [setting up GCP accounts](../Introduction-to-GCP/index.md)
 
-    For building *custom* workflows on Terra, you'll also need:
+    <!-- For building *custom* workflows on Terra, you'll also need:
 
     - local terminal environment to test code - Mac and Linux terminal. Alternatively, all of this could be tested on a GCP instance (just incurs cost to run VMs, but if you are starting small it will not cost too much)
     - Dockerhub account
-    - familiarity with shell command-line, docker, and Workflow Description Language computer programming
+    - familiarity with shell command-line, docker, and Workflow Description Language computer programming -->
 
 
 

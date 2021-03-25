@@ -35,17 +35,17 @@ Click <span class="highlight_txt">CREATE WORKSPACE</span>. It may take a few sec
 
 ## Basics of Terra workspaces
 
-The Terra workspace is an organized repository with the following tabs:
-
-- `Dashboard`: documenting analyses
-- `Data`: uploading new or accessing existing datasets
-- `Notebooks`: building Jupyter notebooks
-- `Workflows`: running workflows
-- `Job History`: checking workflow job status
-
-When your workspace opens, you should see the Dashboard! Your <billing project/workspace name> is shown at the top of the page. In the screenshot below, we used a billing project called "cfde-terra-demo" and a workspace called "demo-23feb21":
+When your workspace opens, you should see the Dashboard! Your `<billing project/workspace name>` is shown at the top of the page. In the screenshot below, we used a billing project called "cfde-terra-demo" and a workspace called "demo-23feb21":
 
 ![](./terra-imgs/terra-workspace4.png "new workspace")
+
+The Terra workspace is an organized repository with the following tabs:
+
+- `Dashboard`: document analysis information
+- `Data`: upload new data or import existing datasets already on Terra
+- `Notebooks`: build Jupyter notebooks
+- `Workflows`: run workflows
+- `Job History`: check workflow job status
 
 ### Workspace Information
 
@@ -124,5 +124,3 @@ It's good to clean up old workspaces. It helps to keep track of active workspace
 - A pop up window will open checking to make sure you do want to delete the workspace. If this is true, type "Delete Workspace" and click <span class="highlight_txt">DELETE WORKSPACE</span>
 
 ![](./terra-imgs/terra-workspace-delete2.png "delete workspace")
-
-In the next lesson, we'll run an existing workflow on Terra.
