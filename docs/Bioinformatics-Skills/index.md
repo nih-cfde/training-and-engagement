@@ -18,6 +18,8 @@ Software and Compute Set up for Analysis:
 - [Set up Conda Computing Environment](install_conda_tutorial.md)
 - [Introduction to Amazon Web Services](Introduction_to_Amazon_Web_Services/introtoaws1.md)
 - [Introduction to Google Cloud Platform](Introduction-to-GCP/index.md)
+- [Analysis on the Terra platform](Introduction-to-Terra/index.md)
+
 
 Bioinformatics Analysis:
 
@@ -26,4 +28,3 @@ Bioinformatics Analysis:
 - [Snakemake Workflow Management](Snakemake/index.md)
 - [Simulate Illumina Reads](Simulate_Illumina_Reads.md)
 - [RNAseq on Cavatica](RNAseq-on-Cavatica/rna_seq_1.md)
-- [Analysis on the Terra platform](Introduction-to-Terra/index.md)
