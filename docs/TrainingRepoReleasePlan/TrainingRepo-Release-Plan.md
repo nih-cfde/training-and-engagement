@@ -42,7 +42,7 @@ A series of checklists will be implemented to ensure error free working tutorial
 
 ### Tutorial Format
 
-Individual tutorials will follow the formatting, organization, and layout details described in the [training website style guide](../CFDE-Internal-Training/Website-Style-Guide/0index.md).
+Individual tutorials will follow the formatting, organization, and layout details described in the [training website style guide](../Website-Style-Guide/0index.md).
 
 ### Tutorial PR Process
 
