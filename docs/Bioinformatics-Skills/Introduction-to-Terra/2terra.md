@@ -124,3 +124,5 @@ It's good to clean up old workspaces. It helps to keep track of active workspace
 - A pop up window will open checking to make sure you do want to delete the workspace. If this is true, type "Delete Workspace" and click <span class="highlight_txt">DELETE WORKSPACE</span>
 
 ![](./terra-imgs/terra-workspace-delete2.png "delete workspace")
+
+We're almost ready to dive into analysis on Terra! In the next section, we'll talk about cloud costs.

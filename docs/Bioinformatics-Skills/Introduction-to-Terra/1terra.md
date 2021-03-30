@@ -67,9 +67,3 @@ Next, use the dropdown menu to select your GCP billing account. If you do not se
     It may take several minutes to complete billing project set up. Do not close the browser window, as this may cause set up to fail.
 
 Once your billing project is created, you can create Terra workspaces or add collaborators. In the next lesson, we'll learn about workspaces.
-
-## Monitoring costs
-
-For more information about Terra billing projects and setting up permissions, see the [support documentation](https://support.terra.bio/hc/en-us/articles/360026182251-How-to-set-up-billing-in-Terra).
-
-The Terra platform is under active development. Currently, the platform itself does not show workflow costs - keep an eye on [this Terra article](https://support.terra.bio/hc/en-us/articles/360037862771-How-much-did-a-workflow-cost-) for updates!
