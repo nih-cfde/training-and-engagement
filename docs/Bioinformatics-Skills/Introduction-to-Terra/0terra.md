@@ -1,9 +1,17 @@
-# Why should I use Terra?
+# How does Terra work?
 
-### use cases:
+In a nutshell, Terra provides you a consolidated, shareable space for storage of data, analysis workflows, and analysis output results. When you submit a workflow job or use interactive coding tools (Jupyter notebooks, Rstudio), Terra does the heavy-lifting of managing your Google Cloud Platform (GCP) virtual machine for the analysis.
+
+The underlying cloud computing services are provided by the Google Cloud (primarily the Compute Engine and Storage Bucket services). For an introduction to the GCP, see our [tutorial](../Introduction-to-GCP/index.md) on setting up a GCP virtual machine.
+
+
+## Why should I use Terra?
+
+### Scenarios
 
 - don't have access (or long-term access) to a local high performance computer (HPC)
-- have HPC access, but takes too long to wait in queue to process data or have very large datasets and want to optimize time/cost
+- have HPC access, but takes too long to wait in queue to process data
+- have very large datasets that you need to process in the same way and want to scale up the process
 - want to use a point & click interface and/or already built data processing workflows (i.e. GATK workflows for variant calling)
 - need a secure place to share data/workflows with collaborators
 
@@ -24,12 +32,6 @@
 
 
 
-
-## How does Terra work?
-
-In a nutshell, Terra provides you a consolidated space for storage of data and analysis workflows. When you submit a workflow job or use interactive coding tools (Jupyter notebooks, Rstudio), Terra does the heavy-lifting of spinning up a Google Cloud Platform (GCP) virtual machine for the analysis. When a job completes, the outputs are saved to the same workspace.
-
-For an introduction to the GCP, see our [tutorial](../Introduction-to-GCP/index.md) on setting up a GCP virtual machine.
 
 
 

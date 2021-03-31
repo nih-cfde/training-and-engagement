@@ -1,4 +1,4 @@
-This is the JSON script for our demo workflow. It should be saved with a ".json" extensions.
+This is the JSON script for our demo workflow. It should be saved with a ".json" extension.
 
 ```
 {
