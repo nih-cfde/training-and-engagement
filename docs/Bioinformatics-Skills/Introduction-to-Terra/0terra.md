@@ -1,19 +1,36 @@
 # Why should I use Terra?
 
+### use cases:
+
+- don't have access (or long-term access) to a local high performance computer (HPC)
+- have HPC access, but takes too long to wait in queue to process data or have very large datasets and want to optimize time/cost
+- want to use a point & click interface and/or already built data processing workflows (i.e. GATK workflows for variant calling)
+- need a secure place to share data/workflows with collaborators
 
 
+### Interface features
 - Interactive web-based GUI & data viz
-- Scale up sample processing
-- Cost optimization of cloud resources
 - Provenance tracking and versioning of workflows, data
-- Apply for access to use controlled-access datasets, which in some cases, are only available via cloud platforms like Terra (e.g., Gene-Tissue Expression (GTEx) project [data](https://anvilproject.org/data?query=consortium%3DGTEx%2B%2528v8%2529)
 - Secure place to share datasets (designed to meet the security standards required for using and storing human data), workflows, and analysis workspaces with collaborators
 - Long-term persistence of data/workflow availability to share with the community (e.g., custom workflows can be uploaded and shared on the platform)
 
+### Cloud and scaling
+- Scale up sample processing
+- Cost optimization of cloud resources
+
+### Data access
+- Apply for access to use controlled-access datasets, which in some cases, are only available via cloud platforms like Terra (e.g., Gene-Tissue Expression (GTEx) project [data](https://anvilproject.org/data?query=consortium%3DGTEx%2B%2528v8%2529)
+- open datasets available on workspaces in Terra making it easier to pull into workflows (no need to upload or worry about multiple copies of data)
+
+
+
+
 ## How does Terra work?
-- compute from a Google Cloud Platform (GCP) instance. For an introduction to the GCP, see our [tutorial](../Introduction-to-GCP/index.md) on setting up GCP instance.
-- a workflow of steps to do (written in the Workflow Description Language (WDL)) that may also run certain steps in specified compute environments (docker containers)
-- data (upload data to Terra workspace)
+
+In a nutshell, Terra provides you a consolidated space for storage of data and analysis workflows. When you submit a workflow job or use interactive coding tools (Jupyter notebooks, Rstudio), Terra does the heavy-lifting of spinning up a Google Cloud Platform (GCP) virtual machine for the analysis. When a job completes, the outputs are saved to the same workspace.
+
+For an introduction to the GCP, see our [tutorial](../Introduction-to-GCP/index.md) on setting up a GCP virtual machine.
+
 
 
 ## Finding help on Terra
