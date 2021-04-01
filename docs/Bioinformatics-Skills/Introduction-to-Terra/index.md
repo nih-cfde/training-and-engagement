@@ -41,7 +41,7 @@ Est. Time | Lesson name | Description
 
 === "Prerequisites"
 
-    For using Terra and its **existing** workflows:
+    For using Terra and its **existing** workflows, you'll need:
 
     - Google Cloud Platform (GCP) billing account (+ valid credit card). Please see our lesson for [setting up GCP accounts](../Introduction-to-GCP/index.md)
 
