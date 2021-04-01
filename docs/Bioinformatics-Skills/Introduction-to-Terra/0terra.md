@@ -1,38 +1,22 @@
 # How does Terra work?
 
-In a nutshell, Terra provides you a consolidated, shareable space for storage of data, analysis workflows, and analysis output results. When you submit a workflow job or use interactive coding tools (Jupyter notebooks, Rstudio), Terra does the heavy-lifting of managing your Google Cloud Platform (GCP) virtual machine for the analysis.
+In a nutshell, Terra provides you a consolidated, shareable space for storage of data, analysis workflows, and analysis outputs. When you submit a workflow job or use interactive coding tools (Jupyter notebooks, Rstudio), Terra does the heavy-lifting of managing a Google Cloud Platform (GCP) virtual machine for your analysis.
 
 The underlying cloud computing services are provided by the Google Cloud (primarily the Compute Engine and Storage Bucket services). For an introduction to the GCP, see our [tutorial](../Introduction-to-GCP/index.md) on setting up a GCP virtual machine.
 
 
-## Why should I use Terra?
+## Why use Terra?
 
-### Scenarios
+Terra may be the cloud platform for you if:
 
-- don't have access (or long-term access) to a local high performance computer (HPC)
-- have HPC access, but takes too long to wait in queue to process data
-- have very large datasets that you need to process in the same way and want to scale up the process
-- want to use a point & click interface and/or already built data processing workflows (i.e. GATK workflows for variant calling)
-- need a secure place to share data/workflows with collaborators
-
-
-### Interface features
-- Interactive web-based GUI & data viz
-- Provenance tracking and versioning of workflows, data
-- Secure place to share datasets (designed to meet the security standards required for using and storing human data), workflows, and analysis workspaces with collaborators
-- Long-term persistence of data/workflow availability to share with the community (e.g., custom workflows can be uploaded and shared on the platform)
-
-### Cloud and scaling
-- Scale up sample processing
-- Cost optimization of cloud resources
-
-### Data access
-- Apply for access to use controlled-access datasets, which in some cases, are only available via cloud platforms like Terra (e.g., Gene-Tissue Expression (GTEx) project [data](https://anvilproject.org/data?query=consortium%3DGTEx%2B%2528v8%2529)
-- open datasets available on workspaces in Terra making it easier to pull into workflows (no need to upload or worry about multiple copies of data)
-
-
-
-
+- You do not have (long-term) access to a high performance computer (HPC)
+- You have HPC access, but there are long queues to start/complete jobs
+- You have large datasets that need to be processed in the same way and you want scale up with cloud services
+- You want to use cloud services but want to use an interactive web-based user interface
+- You want to use or customize existing analysis workflows
+- You need a secure place to share and track versions of data/workflows with collaborators (i.e., human data for biomedical research; Terra was designed to meet the security standards required for using and storing human data)
+- You want to use data that is only available from a Terra workspace (e.g., Gene-Tissue Expression (GTEx) project [controlled-access data](https://anvilproject.org/data?query=consortium%3DGTEx%2B%2528v8%2529))
+- You want to share your datasets or workflows with the research community
 
 
 ## Finding help on Terra

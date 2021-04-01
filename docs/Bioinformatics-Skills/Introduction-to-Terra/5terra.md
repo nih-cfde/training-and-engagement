@@ -9,9 +9,13 @@ To follow along, please watch the vidlets, which show the components of this pro
 - Part 3: Test the workflow before uploading it to Terra
 - Part 4: Run workflow on Terra
 
-!!! note
+!!! important
 
-    It's beyond the scope of this lesson to teach docker and Workflow Description Language (WDL) syntax, however, check out the resources linked throughout the lesson. We hope this demo helps to show the general steps and get you started with your own workflows!
+    It's beyond the scope of this lesson to teach general docker and Workflow Description Language (WDL) syntax, however, check out the resources linked throughout the lesson.
+
+    We hope this demo helps to show the general steps and get you started with your own workflows on Terra!
+
+<!-- undecided whether to expect ppl to be able to follow all WDL testing steps because it is kind of OS dependent; could run it in a GCP VM, but that requires additional set up. i am considering making this entirely a demo, except perhaps the parts directly on Terra.. -->
 
 ## Part 1: Setting up Docker
 
