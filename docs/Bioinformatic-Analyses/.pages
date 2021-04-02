@@ -1,0 +1,6 @@
+nav:
+- index.md
+- Command line BLAST: BLAST-Command-Line
+- Simulate_Illumina_Reads.md
+- GWAS in the Cloud: GWAS-in-the-cloud
+- RNAseq on Cavatica: RNAseq-on-Cavatica

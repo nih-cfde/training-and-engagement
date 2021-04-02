@@ -1,0 +1,5 @@
+nav:
+- index.md
+- Mkdocs: mkdocs.md
+- Jekyll: Jekyll_Tutorial.md
+- Sphinx: Sphinx_Tutorial.md
