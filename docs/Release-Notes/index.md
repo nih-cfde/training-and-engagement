@@ -10,18 +10,18 @@ Latest Release
 
 <span style="font-size:24px;">New Tutorials
 
-- [RNAseq on Cavatica](../Bioinformatics-Skills/RNAseq-on-Cavatica/rna_seq_1.md)
-- [Using the Screen Command on AWS](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.md)
-- [Introduction to Google Cloud Platform](../Bioinformatics-Skills/Introduction-to-GCP/index.md)
-- [Saving Queries on the Kids First Data Resource Portal](../Bioinformatics-Skills/Kids-First/Advanced-KF-Portal-Queries/KF_13_SavingQueries.md)
-- [Setting Up Github Authentication](../CFDE-Internal-Training/github_auth_setup.md)
+- [RNAseq on Cavatica](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1.md)
+- [Using the Screen Command on AWS](../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.md)
+- [Introduction to Google Cloud Platform](../Cloud-Platforms/Introduction-to-GCP/index.md)
+- [Saving Queries on the Kids First Data Resource Portal](../Common-Fund-Tools/Kids-First/Advanced-KF-Portal-Queries/KF_13_SavingQueries.md)
+<!--- [Setting Up Github Authentication](../CFDE-Internal-Training/github_auth_setup.md)-->
 
 <span style="font-size:24px;">Updates and Fixes
 
-- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md): updated AWS screenshots to new user experience interface
-- [Introduction to Amazon Web Services](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1.md): updated AWS tutorial based on workshop feedback
-- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md): updated Github repo names
-- [CFDE Portal Use Cases](../Bioinformatics-Skills/CFDE-Portal/index.md): lesson landing page added back
+- [GWAS in the Cloud](../Bioinformatic-Analyses/GWAS-in-the-cloud/index.md): updated AWS screenshots to new user experience interface
+- [Introduction to Amazon Web Services](../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1.md): updated AWS tutorial based on workshop feedback
+- [CFDE Portal Use Cases](../Common-Fund-Tools/CFDE-Portal/index.md): lesson landing page added back
+<!--- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md): updated Github repo names-->
 
 <span style="font-size:24px;">Website Features
 
