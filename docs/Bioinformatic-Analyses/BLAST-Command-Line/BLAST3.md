@@ -8,7 +8,7 @@ Boot a `t2.micro` instance on AWS and connect your shell prompt.
 
 !!! Tip
 
-	If you need assistance setting up an instance check out the tutorial [Intro to AWS](../Introduction_to_Amazon_Web_Services/introtoaws1.md)!
+	If you need assistance setting up an instance check out the tutorial [Intro to AWS](../../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1.md)!
 
 
 ## Step 2: Install BLAST software using command line
