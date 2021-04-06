@@ -25,6 +25,6 @@ For conda, the equivalent of a classroom and its supplies is a conda environment
 Here are some scenarios where isolated software environments are useful:
 
 - **versioning**: your research/project requires specific versions of software packages
-- **reproducibility**: you want to experiment with new packages or features of existing packages in a separate environment to avoid compromising your current workflow
+- **reproducibility**: you have a working analysis pipeline, but you want to experiment with new packages or features of existing packages without compromising your current workflow
 - **repeatability**: you want to replicate results from a publication or want others to be able to replicate your publication analyses
 - **compatibility**: your collaborator's workflow requires a certain software/tool that is incompatible with your current system (i.e., python 2.7 instead of python 3)
