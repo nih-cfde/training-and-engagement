@@ -91,7 +91,7 @@ Image credit: [Gergely Szerovay](https://www.freecodecamp.org/news/why-you-need-
 
 We will update the channel list order and add `bioconda` since we are using bioinformatics tools today. **The order of the channels matters!**
 
-First, add the `defaults` channel:
+First, add the `defaults` channel with the `conda config --add channels` command. We can check the channel priority order with the `conda config --get channels` command.
 
 ```
 conda config --add channels defaults
@@ -220,9 +220,15 @@ We can specify the exact software version with `=` and a version number. The def
 
 !!! info
 
-    Software can also be installed by specifying the channel with `-c` flag i.e.:
+    Software can also be installed by specifying the channel with `-c` flag:
     ```
     conda install -c conda-forge -c bioconda trimmomatic=0.36
+    ```
+
+    or if needed, by specifying version *and* build (the default is to install the latest version and build): 
+
+    ```
+    conda install trimmomatic=0.32=0
     ```
 
 When you switch conda environments, conda changes the file path (and other environment variables) to searches for software packages in different folders.

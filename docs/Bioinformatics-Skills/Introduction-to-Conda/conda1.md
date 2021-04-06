@@ -2,7 +2,7 @@
 
 Imagine you want to try 3 different analysis workflows - one for a genome-wide association study (GWAS), and 2 different variant calling workflows. Unfortunately, these workflows require similar software but different versions. One option is to run each workflow on a separate computer, but then you'd need 3 computers and that's not very practical!
 
-Alternatively, you could set up 3 virtual environments each with its own set of software installations on 1 computer!
+Alternatively, you could set up 3 virtual environments each with their own set of software installations on 1 computer!
 
 ![](./conda-imgs/conda-envs.png "conda environments")
 
