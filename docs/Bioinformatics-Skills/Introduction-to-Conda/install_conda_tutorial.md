@@ -29,7 +29,7 @@ Select the [installer](https://docs.conda.io/en/latest/miniconda.html) for: "Min
 
     The process we are showing is very similar for installing the [Linux version](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
 
-    For Windows computers, you can follow [instructions](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html) from conda and use the Anaconda Prompt terminal interface, which comes in the installation, to run commands.
+    For Windows computers, take a look at the [instructions](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html) from conda and run commands in the Anaconda Prompt terminal interface, which is downloaded during installation.
 
 ### Step 2: Verify your installer hashes
 
