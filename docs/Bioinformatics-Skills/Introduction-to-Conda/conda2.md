@@ -225,7 +225,7 @@ We can specify the exact software version with `=` and a version number. The def
     conda install -c conda-forge -c bioconda trimmomatic=0.36
     ```
 
-    or if needed, by specifying version *and* build (the default is to install the latest version and build): 
+    or if needed, by specifying version *and* build (the default is to install the latest version and build):
 
     ```
     conda install trimmomatic=0.32=0
@@ -414,11 +414,20 @@ What does the fastq file look like?
 
 === "Input"
 
-    Here again, we use the `gunzip -c` and pipe the output to the `head` command to show the first 10 lines of the file:
+    Here are two ways to look at the sequence read file:
+
+    1\. Use the `gunzip -c` and pipe the output to the `head` command to show the first 10 lines of the file:
 
     ```
     gunzip -c ERR458493.fastq.gz | head
     ```
+
+    2\. Use the `less` command to scroll through the file:
+
+    ```
+    less ERR458493.fastq.gz
+    ```
+
 
 === "Expected Output"
 
@@ -435,7 +444,10 @@ What does the fastq file look like?
     B@=DDFFFHHHHHJJJJIJJJJJJIJJJJJJJJJJJJJJJJJJJJIJJJJI
     @ERR458493.3 DHKW5DQ1:219:D0PT7ACXX:1:1101:2428:2116/1
     CTCAAAACGCCTACTTGAAGGCTTCTGGTGCTTTCACCGGTGAAAACTCCG
+    ...
     ```
+
+    If you used the `less` command, type ++q++ to exit the page.
 
 Run FastQC!
 
