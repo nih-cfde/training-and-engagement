@@ -16,20 +16,22 @@ Whether you're installing conda on your own computer, a cloud instance, or high 
     - version 3.x is the default option (we recommend this!)
     - choose 2.7 version if you have mostly 2.7 code or use packages that do not have a 3.x version (but keep in mind that python 2.x [is no longer being maintained](https://www.python.org/doc/sunset-python-2/))
 
-Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). This tutorial is a walk-through with Miniconda for MacOS. From the conda website:
+Conda can be installed via Miniconda (a smaller more efficient package) or Anaconda (the full installation of conda). From the conda website:
 
 > "Miniconda is a free minimal installer for conda. It is a small, bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a small number of other useful packages, including pip, zlib and a few others. Use the conda install command to install 720+ additional conda packages from the Anaconda repository."
+
+This tutorial is a walk-through with Miniconda for MacOS.
+
+!!! note "Linux and Windows"
+
+    The process below is very similar for installing the [Linux version](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
+
+    For Windows computers, take a look at the [instructions](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html) from conda. You can run conda commands in the Anaconda Prompt terminal interface, which comes with the installation.
 
 ### Step 1: Download the installer
 We are following the Miniconda [installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) specifically for [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
 Select the [installer](https://docs.conda.io/en/latest/miniconda.html) for: "Miniconda3 MacOSX 64-bit bash". We are using the 64-bit version for working with Python 3.x.
-
-!!! note "Linux and Windows"
-
-    The process we are showing is very similar for installing the [Linux version](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
-
-    For Windows computers, take a look at the [instructions](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html) from conda and run commands in the Anaconda Prompt terminal interface, which is downloaded during installation.
 
 ### Step 2: Verify your installer hashes
 
@@ -98,4 +100,5 @@ Check the version of your new conda installation:
 
 !!! note "Key Points"
 
-    Now you should have a working conda installation that you can use to create custom conda environments on your computer, cloud instance, or space on an HPC server!
+    - Now you should have a working conda installation that you can use to create custom conda environments on your computer, cloud instance, or space on an HPC server!
+    - As a reminder, if you are using your local installation of conda on a Windows computer, the `bioconda` channel is not supported. It's possible to add as a channel, but you won't be able to search or install software from it! The `defaults` and `conda-forge` channels are available for Windows.

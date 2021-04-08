@@ -83,7 +83,8 @@ Image credit: [Gergely Szerovay](https://www.freecodecamp.org/news/why-you-need-
 
     - In the absence of other channels, conda [searches the `defaults` repository](https://docs.anaconda.com/anaconda/user-guide/tasks/using-repositories/)
     - `conda-forge` and `bioconda` are channels that contain community-contributed software
-    - `Bioconda` specializes in bioinformatics software (*supports only 64-bit Linux and Mac OS*)
+    - `Bioconda` specializes in bioinformatics software
+        - `Bioconda` *supports only 64-bit Linux and Mac OS*
         - [package list](https://anaconda.org/bioconda/repo)
     - `conda-forge` contains many dependency packages
         - [package list](https://anaconda.org/conda-forge/repo)

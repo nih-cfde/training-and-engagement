@@ -32,7 +32,6 @@ Est. Time | Lesson name | Description
 
     The conda lesson uses a standardized binder environment, which will work on Windows, Mac, and Linux operating systems, and Firefox, Safari, and Chrome web browsers.
 
-    The installation tutorial is currently written specifically for installing the MacOS version of Miniconda.
 
 === "Tutorial Resources"
 
