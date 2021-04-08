@@ -58,7 +58,7 @@ task run_vcftools {
     # the coatColor.log file is going to stderr; do not define as an output - get an error because it can't find the output file name
 
     runtime {
-      docker: 'mlim13/gwas_test:tag0'
+      docker: 'mlim13/demo_gwas:tag0'
     }
 }
 
@@ -148,7 +148,7 @@ task run_R {
     }
 
     runtime {
-      docker: 'mlim13/gwas_test:tag0'
+      docker: 'mlim13/demo_gwas:tag0'
     }
 }
 ```

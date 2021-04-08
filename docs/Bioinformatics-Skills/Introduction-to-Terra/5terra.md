@@ -22,58 +22,65 @@ To follow along, please watch the vidlets, which show the components of this pro
 - what is docker
 - why containers are great for creating software environments to share
 
-<add vidlet here of all the steps below for running docker>
+
+The core steps of building, testing, and sharing the container are shown in the vidlet below:
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_5pvutxvq&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_cww3jbnf" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+
+More information about each step:
+
+=== "1. Install docker"
+
+    - for Mac: https://docs.docker.com/docker-for-mac/install/
 
 
-### Step 1: Install docker
+=== "2. Dockerhub account"
 
-- for Mac: https://docs.docker.com/docker-for-mac/install/
-    - is there a command line installation option?
+    In order to share the docker, we are pushing the image to Dockerhub. There are other options (i.e., Dockstore). For the workflows used in Terra, either of these platforms will work!
 
-### Step 2: Make Dockerhub account
-- need to make an account on Docker hub if you want to push docker there
-- there's also a google storage option
+    Go to <https://hub.docker.com/> to create an account.
 
-- https://hub.docker.com/
+=== "3. Dockerfile"
 
+    We tell docker what we want installed in the container with a file called ["Dockerfile"](./Dockerfile.md). We installed dependency software tools, vcftools, and the R package "qqman". There's an existing docker container for plink (`gelog/plink:latest`), so we use that in the workflow for plink steps.
 
-### Step 3: Write Dockerfile
+    The base computer image of our container is ubuntu 20.04, and the software installation commands are similar to those used in the [GWAS lesson](../GWAS-in-the-cloud/index.md), with some modifications for docker syntax.
 
-- make Dockerfile (it must be called "Dockerfile")
+    - `WORKDIR /usr` specifies the working directory - since dockers are closed containers, it helps to know where commands will be run so you can locate output files.
+    - we use `ENV DEBIAN_FRONTEND noninteractive` because docker doesn't allow interactive installation.
+    - `RUN` precedes all software install commands, and strings of commands are connected by `&&`. The `\` allows commands to be written over multiple lines in the Dockerfile file. After the first `RUN` line, there is an indent for the others in the installation block.
 
+=== "4. Build"
 
+    We built the docker with a specified tag list (`-t`). In this case, the tag list contains the user name (`mlim13`), the docker name (`demo_gwas`), and the version (`tag0`). The last element of the command specifies the location of our "Dockerfile"; since we're in the directory that contains it, we can use the `.` notation.
 
-### Step 4: Build container
+    ```
+    docker build -t mlim13/demo_gwas:tag0 .
+    ```
 
+=== "5. Test"
 
-```
-# usage: docker build -t <user name>/<docker name>:<version number> <file location of Dockerfile>
-docker build -t mlim13/gwas_test:tag0 .
-```
+    We set up an interactive (`-it`) session of our docker container with `docker run`:
 
+    ```
+    docker run -it mlim13/demo_gwas:tag0
+    ```
 
-### Step 5: Run container
+    And ran a test command to make sure the software `vcftools` was installed:
 
-```
-docker run -it mlim13/gwas_test:tag0
-```
+    ```
+    vcftools -h
+    ```
 
-### Step 6: Test container
+=== "6. Share"
 
-- add some test commands to demo how commands are run
+    Pushing to Dockerhub takes a few minutes to complete:
 
+    ```
+    docker push mlim13/demo_gwas:tag0
+    ```
 
-### Step 7: Push container to Dockerhub
-
-```
-# push to dockerhub (username: mlim13, repo: gwas_test, version: tag0)
-docker push mlim13/gwas_test:tag0
-```
-it will be here:
-- https://hub.docker.com/repository/docker/mlim13/gwas_test
-
-<!-- ![](./custom-workflow-images/push_to_dockerhub.png) --> <- make this
-
+    After pushing the container, it is publicly available on [Dockerhub](https://hub.docker.com/repository/docker/mlim13/demo_gwas).
 
 ## Part 2: Write a WDL
 
@@ -98,55 +105,58 @@ To test the workflow on local computer, we need 2 files:
 
 <add vidlet here of all the steps below for running womtool/cromwell>
 
-### Step 1: Install tools
+=== "1. Install tools"
 
-Install Cromwell and WOMtool:
+    Install Cromwell and WOMtool:
 
-```
-wget https://github.com/broadinstitute/cromwell/releases/download/47/cromwell-47.jar
-wget https://github.com/broadinstitute/cromwell/releases/download/47/womtool-47.jar
-```
+    ```
+    wget https://github.com/broadinstitute/cromwell/releases/download/47/cromwell-47.jar
+    wget https://github.com/broadinstitute/cromwell/releases/download/47/womtool-47.jar
+    ```
 
-Also need to have Java installed: https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
-```
-# check installed
-java --version
-```
+    Also need to have Java installed: https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
 
-!!! warning
+    ```
+    # check installed
+    java --version
+    ```
 
-    Need to have docker installed and app open otherwise get docker daemon errors.
+    !!! warning
 
-<alternative is miniwdl, have not tested yet, may add it just as a note for now.>
+        Need to have docker installed and app open otherwise get docker daemon errors.
 
-
-### Step 2: Test script syntax with Womtool
-
-```
-# check WDL
-java -jar womtool-47.jar validate hello.wdl
-
-# womtool will make the basic input json file!
-# but you will need to customize it
-java -jar womtool-47.jar inputs hello.wdl > hello.json
-```
+        <alternative is miniwdl, have not tested yet, may add it just as a note for now.>
 
 
-### Step 3: Run WDL script
+=== "2. Womtool"
+
+    We used Womtool to test the WDL script syntax. Note that the WDL may still fail to run, but Womtool helps to catch syntax errors.
+
+    ```
+    # check WDL
+    java -jar womtool-47.jar validate hello.wdl
+
+    # womtool will make the basic input json file!
+    # but you will need to customize it
+    java -jar womtool-47.jar inputs hello.wdl > hello.json
+    ```
 
 
-```
-# run WDL
-# -i = input file
-java -jar cromwell-47.jar run hello.wdl -i hello.json
-```
+=== "3. Run WDL"
+
+
+    ```
+    # run WDL
+    # -i = input file
+    java -jar cromwell-47.jar run hello.wdl -i hello.json
+    ```
 
 
 
-#### outputs
-- each task gets a call-<task name> directory that has `execution` and `inputs` directories
-   - the outputs, logs, stderr files are in `execution`
-   - when defining the inputs in WDL script, check how the inputs are partitioned in the `inputs` directory. this was the issue for plink commands and the reason i had to define each input file flag for plink.
+    #### outputs
+    - each task gets a call-<task name> directory that has `execution` and `inputs` directories
+      - the outputs, logs, stderr files are in `execution`
+      - when defining the inputs in WDL script, check how the inputs are partitioned in the `inputs` directory. this was the issue for plink commands and the reason i had to define each input file flag for plink.
 
 
 

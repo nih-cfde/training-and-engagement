@@ -51,13 +51,6 @@ The Terra workspace is an organized repository with the following tabs:
 
 The right-side panel of the Dashboard displays useful information about the workspace, including workspace cost per month. This rate is associated with data **storage**, *not* compute. Even if you are not running notebooks or workflows from a given workspace, the workspace continues to accrue storage costs for any associated data, input, or output files stored in the assigned Google Storage bucket. For this reason, it's a good habit to clean up workspaces that are not being used and can be safely deleted (see below for [deleting workspaces](#delete-worksp)).
 
-Currently, Terra does not report workflow costs on the Terra interface. Users should go to the Google Cloud Platform (GCP) console to check billing account charges (see our GCP note on [monitoring billing account](../Introduction-to-GCP/gcp1.md)). The GCP console provides billing breakdowns and monthly invoices.
-
-!!! tip
-
-    However, the GCP does not track individual workflow or workspace costs. GCP charges are reported by Terra billing project.
-
-    As you get started with GCP and Terra, it is best to carefully monitor how costs accrue from running demo or scaled down projects so you can better estimate cost patterns.
 
 ### Storage
 
@@ -65,64 +58,66 @@ A Google Storage bucket is automatically assigned to each workspace (the bucket 
 
 We'll discuss the `Data`, `Workflows`, and `Job History` tabs in more detail in the next lessons. For now, let's keep exploring workspace features.
 
-## What else can you do with a workspace?
+## What else can you do with a workspace? <a name="delete-worksp"></a>
 
-### Edit
+=== "Edit"
 
-You can edit any workspaces linked to your billing project(s) or workspaces that you have been given permission to edit.
+    You can edit any workspaces linked to your billing project(s) or workspaces that you have been given permission to edit.
 
-### Clone
+=== "Clone"
 
-You can make a clone of an existing workshop and edit it. This feature is useful if you want to use a publicly available workspace that has analysis workflows or data you want to use for your own project.
+    You can make a clone of an existing workshop and edit it. This feature is useful if you want to use a publicly available workspace that has analysis workflows or data you want to use for your own project.
 
-For example, Terra maintains a few demo workspaces that you can clone to learn how to use data tables, workflows, and notebooks. Let's clone the workspace for data tables.
+    For example, Terra maintains a few demo workspaces that you can clone to learn how to use data tables, workflows, and notebooks. Let's clone the workspace for data tables.
 
-- In the workspace search bar, type "quickstart"
-- Click on the three dots at the end of the row for "Terra-Data-Tables-Quickstart"
-- Click <span class="highlight_txt">Clone</span>
-![](./terra-imgs/terra-workspace-clone.png "clone workspace")
+    - In the workspace search bar, type "quickstart"
+    - Click on the three dots at the end of the row for "Terra-Data-Tables-Quickstart"
+    - Click <span class="highlight_txt">Clone</span>
+    ![](./terra-imgs/terra-workspace-clone.png "clone workspace")
 
-- Select your Terra billing project from the dropdown menu
-- Optional: edit the workspace name and description
-- Click <span class="highlight_txt">CLONE WORKSPACE</span>
+    - Select your Terra billing project from the dropdown menu
+    - Optional: edit the workspace name and description
+    - Click <span class="highlight_txt">CLONE WORKSPACE</span>
 
-![](./terra-imgs/terra-workspace-clone2.png "enter workspace info")
+    ![](./terra-imgs/terra-workspace-clone2.png "enter workspace info")
 
-The cloned workspace should list your billing project and you as the owner of the workspace, but all the contents in the workspace will start out the same as the original one.
+    The cloned workspace should list your billing project and you as the owner of the workspace, but all the contents in the workspace will start out the same as the original one.
 
-![](./terra-imgs/terra-workspace-clone3.png "cloned workspace")
+    ![](./terra-imgs/terra-workspace-clone3.png "cloned workspace")
 
-!!! tip
+    !!! tip
 
-    You can use this space to add your own notes on the Dashboard, upload files in the Data tab, run notebooks or workflows, and of course, follow the quickstart tutorials and exercises!
+        You can use this space to add your own notes on the Dashboard, upload files in the Data tab, run notebooks or workflows, and of course, follow the quickstart tutorials and exercises!
 
     We recommend trying the Terra quickstart lessons to practice using the Terra interface.
 
-### Share
+=== "Share"
 
-- Similar to the clone steps, on the workspace you want to share, click the three dots and select <span class="highlight_txt">Share</span>
+    - Similar to the clone steps, on the workspace you want to share, click the three dots and select <span class="highlight_txt">Share</span>
 
-![](./terra-imgs/terra-workspace-share1.png "click share")
+    ![](./terra-imgs/terra-workspace-share1.png "click share")
 
-- Add the email address(es) of people you want to add or the name of a group if you've made one and type ++enter++
-- The people you've added will be listed in the pop up box, where you can assign their permissions ("Reader", "writer", or "Owner") and decide whether they can share and/or use the workspace to compute.
+    - Add the email address(es) of people you want to add or the name of a group if you've made one and type ++enter++
+    - The people you've added will be listed in the pop up box, where you can assign their permissions ("Reader", "writer", or "Owner") and decide whether they can share and/or use the workspace to compute.
 
-![](./terra-imgs/terra-workspace-share2.png "add people")
+    ![](./terra-imgs/terra-workspace-share2.png "add people")
 
-### Delete <a name="delete-worksp"></a>
+=== "Delete"
 
-It's good to clean up old workspaces. It helps to keep track of active workspaces and saves you from accruing storage costs on workspaces you do not need.
+    It's good to clean up old workspaces. It helps to keep track of active workspaces and saves you from accruing storage costs on workspaces you do not need.
 
-- Similar to the clone steps, on the workspace you want to delete, click the three dots and select <span class="highlight_txt">Delete</span>
+    - Similar to the clone steps, on the workspace you want to delete, click the three dots and select <span class="highlight_txt">Delete</span>
 
-![](./terra-imgs/terra-workspace-delete.png "click delete")
+    ![](./terra-imgs/terra-workspace-delete.png "click delete")
 
-!!! warning
+    !!! warning
 
-    You cannot retrieve deleted workspaces or their contents!
+        You cannot retrieve deleted workspaces or their contents!
 
-- A pop up window will open checking to make sure you do want to delete the workspace. If this is true, type "Delete Workspace" and click <span class="highlight_txt">DELETE WORKSPACE</span>
+    - A pop up window will open checking to make sure you do want to delete the workspace. If this is true, type "Delete Workspace" and click <span class="highlight_txt">DELETE WORKSPACE</span>
 
-![](./terra-imgs/terra-workspace-delete2.png "delete workspace")
+    ![](./terra-imgs/terra-workspace-delete2.png "delete workspace")
+
+
 
 We're almost ready to dive into analysis on Terra! In the next section, we'll talk about cloud costs.

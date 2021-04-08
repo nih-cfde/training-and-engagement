@@ -8,12 +8,13 @@ The Terra platform is under active development. Currently, the platform itself d
 
     Keep an eye on [this Terra article about workflow cost monitoring](https://support.terra.bio/hc/en-us/articles/360037862771-How-much-did-a-workflow-cost-) for updates!
 
+    The GCP does not track individual workflow or workspace costs. GCP charges are reported by Terra billing project.
+
+    As you get started with GCP and Terra, it is best to carefully monitor how costs accrue from running demo or scaled down projects so you can better estimate cost patterns.
+
 For now, keep track of Terra expenses from the billing account section of the GCP console. Invoice information can be found in the <span class="highlight_txt">Transactions</span> section and expenses can be viewed by *Terra billing project* from the <span class="highlight_txt">Reports</span> section (select a <span class="highlight_txt">Project</span>).
 
 ![](./terra-imgs/gcp-billing-tabs.png "billing tabs")
-
-
-
 
 The three main elements of cloud computing that cost you money on Terra are:
 
