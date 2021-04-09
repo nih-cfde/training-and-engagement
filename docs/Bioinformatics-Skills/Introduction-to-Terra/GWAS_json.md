@@ -3,7 +3,7 @@ This is the JSON script for our demo workflow. It should be saved with a ".json"
 ```
 {
   "GWAS.sample_name": "coatColor",
-  "GWAS.inputvcf": "pruned_coatColor_maf_geno.vcf",
+  "GWAS.inputvcf": "pruned_coatColor_maf_geno.vcf.gz",
   "GWAS.inputpheno": "coatColor.pheno",
   "GWAS.plink_missing_rates.inputminoralleles": "minor_alleles",
   "GWAS.plink_missing_rates.inped": "coatColor.ped",

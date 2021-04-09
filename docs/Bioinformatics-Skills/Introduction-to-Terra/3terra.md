@@ -26,7 +26,7 @@ The three main elements of cloud computing that cost you money on Terra are:
 
 When you run a workflow or do work in a Jupyter notebook or on Rstudio, Terra starts up a Google Cloud Platform (GCP) virtual machine. The price rates depend on the cloud configurations (default or custom) you choose.
 
-For small analyses, costs are quite reasonable. For example, running through two tutorials cost us less than $1.
+For small analyses, costs are quite reasonable. For example, running through two tutorials cost us <$1.
 
 The [Google Cloud pricing calculator](https://cloud.google.com/products/calculator/#id=) is also a helpful tool to estimate the cost of GCP compute resources.
 

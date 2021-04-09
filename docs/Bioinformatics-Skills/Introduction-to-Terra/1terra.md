@@ -48,7 +48,7 @@ Click the dropdown arrow by your name and select <span class="highlight_txt">Bil
 
 ## Step 4: Set up billing project in Terra
 
-Click the <span class="highlight_txt">+</span>. Then enter a unique project name.  
+Click the <span class="highlight_txt">+</span>. Then enter a unique billing project name (the "first-terra-project" in the image below is a placeholder, please do not copy it as it's probably already in use!).
 
 !!! warning
 

@@ -46,7 +46,7 @@ task run_vcftools {
     File inputvcf
 
     command <<<
-      vcftools --vcf ${inputvcf} --plink --out ${sample_name}
+      vcftools --gzvcf ${inputvcf} --plink --out ${sample_name}
       cat ${inputvcf} | awk 'BEGIN{FS="\t";OFS="\t";}/#/{next;}{{if($3==".")$3=$1":"$2;}print $3,$5;}' > minor_alleles
     >>>
 

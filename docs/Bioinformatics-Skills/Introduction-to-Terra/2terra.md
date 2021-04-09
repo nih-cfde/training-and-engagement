@@ -25,7 +25,7 @@ Click on the <span class="highlight_txt">+</span> button to create a new workspa
 For the new workspace, enter:
 
 1. A unique workspace name
-2. Use the dropdown menu to select a Terra billing project (created [previously](./1terra.md))
+2. Use the dropdown menu to select your Terra billing project (created [previously](./1terra.md))
 3. Optional: add a short description for the workspace
 4. Optional: select group(s) to give access to the workspace with [Authorization Domains permissions](https://support.terra.bio/hc/en-us/articles/360026775691-Managing-data-privacy-and-access-with-Authorization-Domains)
 

@@ -7,7 +7,7 @@ In this section, we will demonstrate how we built the workflow used in the last 
 - Part 3: Test the workflow before uploading it to Terra
 - Part 4: Set up workflow on Terra
 
-To follow along, please watch the vidlets! Each vidlet is followed by written information about the steps.
+To see how this process works, watch the vidlets below! Each vidlet is followed by written descriptions about the steps.
 
 !!! important
 
@@ -21,7 +21,7 @@ To follow along, please watch the vidlets! Each vidlet is followed by written in
 - why containers are great for creating software environments to share
 
 
-The core steps of building, testing, and sharing the container are shown in the vidlet below:
+The core steps of building, testing, and sharing the docker container are shown in the vidlet below:
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_t7exj3sj&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_3nzotpfs" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
@@ -29,18 +29,19 @@ More information about each step:
 
 === "1. Install docker"
 
-    - for Mac: https://docs.docker.com/docker-for-mac/install/
-
+    Installation instructions for Mac: <https://docs.docker.com/docker-for-mac/install/>
 
 === "2. Dockerhub account"
 
-    In order to share the docker, we are pushing the image to Dockerhub. There are other options (i.e., Dockstore). For the workflows used in Terra, either of these platforms will work!
+    In order to share the docker, we are pushing the image to Dockerhub. We created an account at <https://hub.docker.com/>.
 
-    Go to <https://hub.docker.com/> to create an account.
+    There are other options (i.e., Dockstore). For the workflows used in Terra, either of these platforms will work!
 
 === "3. Dockerfile"
 
-    We tell docker what we want installed in the container with a file called ["Dockerfile"](./Dockerfile.md). We installed dependency software tools, vcftools, and the R package "qqman". There's an existing docker container for plink (`gelog/plink:latest`), so we use that in the workflow for plink steps.
+    We told docker what we wanted installed in the container using a file called ["Dockerfile"](./Dockerfile.md). Read here for [best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
+
+    We installed dependency software tools, vcftools, and the R package "qqman". There's an existing docker container for plink (`gelog/plink:latest`), so we use that in the workflow for plink steps.
 
     The base computer image of our container is ubuntu 20.04, and the software installation commands are similar to those used in the [GWAS lesson](../GWAS-in-the-cloud/index.md), with some modifications for docker syntax.
 
@@ -108,7 +109,7 @@ To test the workflow on local computer, we need 2 files:
 
 ## Part 3: Testing a WDL workflow
 
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_i6fv2je7&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_t1k9tc56" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_vzjg3it3&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_449aslzx" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 === "1. Install tools"
 
@@ -133,7 +134,7 @@ To test the workflow on local computer, we need 2 files:
 
     - "coatColor.pheno"
 
-    - "pruned_coatColor_maf_geno.vcf"
+    - "pruned_coatColor_maf_geno.vcf.gz"
 
     We added the workflow input files to the directory that contains:
 
@@ -189,9 +190,7 @@ The final output of this particular GWAS workflow is a Manhattan plot ("coatColo
 
 After ensuring the WDL works, we followed these [steps](https://support.terra.bio/hc/en-us/articles/360031366091-Create-edit-and-share-a-new-workflow#h_bc0175df-adb7-422f-b2fe-efab18fd598b) from the Terra documentation to set up our workflow on Terra. There is also a [video lesson](https://www.youtube.com/watch?v=VtKlYqWBW6A&ab_channel=Terra) from Terra about workflows.
 
-
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_tfjyg24q&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_ux8lhum5" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
-
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_4k2vtulg&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_2jjqquzc" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 === "1. Upload workflow"
 
