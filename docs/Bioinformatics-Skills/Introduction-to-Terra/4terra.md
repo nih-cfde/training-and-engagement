@@ -2,7 +2,7 @@
 
 For this demo, we will show you how to run the same workflow as in the [Genome-wide Association Study (GWAS) lesson](../GWAS-in-the-cloud/index.md), but on Terra instead of AWS.
 
-<work in cfde-terra-demo/demo-23feb21 workspace. check cost on this billing project after run GWAS>
+<work in cfde-terra-demo/demo-23feb21 workspace. check cost on this billing project after run GWAS. subtract from $2.58 which was already there from previous work.>
 
 ### Step 1: Download data
 
@@ -63,7 +63,7 @@ We've uploaded data, but we still have to tell Terra how to reference the input 
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_hr10q0lo&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_k8l7mh9q" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-- In <span class="highlight_txt">TABLES</span>, click the <span class="highlight_txt">+</span> to "Import Table Data". Switch to the "TEXT IMPORT" tab and copy/paste the table below (alternatively, upload a tab-delimited file (TSV) with this information). Click <span class="highlight_txt">UPLOAD</span>:
+- In <span class="highlight_txt">TABLES</span>, click the <span class="highlight_txt">+</span> to "Import Table Data". Switch to the <span class="highlight_txt">TEXT IMPORT</span> tab and copy/paste the table below (alternatively, upload a tab-delimited file (TSV) with this information). Click <span class="highlight_txt">UPLOAD</span>:
 
 ```
 entity:sample_id	sample	pheno	vcf
