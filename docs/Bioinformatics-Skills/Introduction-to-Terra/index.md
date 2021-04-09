@@ -17,9 +17,10 @@ Est. Time | Lesson name | Description
 5 mins | [Introduction](0terra.md) | What is Terra and when would I use it?
 30 mins  | [Setting up a Terra account](./1terra.md) | Connecting GCP and Terra accounts
 30 mins  | [Navigating Terra workspaces](./2terra.md) | Intro to the Terra interface
-30 mins  | [Cloud costs](./3terra.md) | How much does it cost to run an analysis?
-45 mins | [Running existing workflows](./4terra.md) | How to run a workflow?
-30 mins | [Custom workflow on Terra](./5terra.md) | Demo for building your own workflows
+45 mins | [Running existing workflows](./3terra.md) | How to run a workflow?
+30 mins | [Custom workflow on Terra](./4terra.md) | Demo for building your own workflows
+30 mins  | [Cloud costs](./5terra.md) | How much does it cost to run an analysis?
+
 
 !!! note "Learning Objectives"
 

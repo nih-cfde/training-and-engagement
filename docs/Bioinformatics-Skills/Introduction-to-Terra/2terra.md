@@ -120,4 +120,4 @@ We'll discuss the `Data`, `Workflows`, and `Job History` tabs in more detail in 
 
 
 
-We're almost ready to dive into analysis on Terra! In the next section, we'll talk about cloud costs.
+In the next lesson, we'll run an existing workflow on Terra.

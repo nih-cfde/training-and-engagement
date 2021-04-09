@@ -2,17 +2,17 @@
 
 !!! important
 
-    Please use **Google Chrome** when you use the Google Cloud Platform console! Some features do not work in other web browsers.
+    Please use **Google Chrome** to access the Google Cloud Platform console! Some features do not work in other web browsers.
 
-## Step 1: Create Google Cloud Platform account
+## Step 1: Create GCP account
 
 Terra uses the Google Cloud Platform (GCP) Compute Engine and Google Storage services to execute analyses and store data. Consequently, billing is managed by the GCP.
 
 To use Terra, you'll need a GCP account and billing account. Please see our lesson for [setting up GCP accounts](../Introduction-to-GCP/index.md).
 
-## Step 2: Link GCP billing account to Terra billing project <a name="link-terra-gcp"></a>
+## Step 2: Link billing account <a name="link-terra-gcp"></a>
 
-We have to give Terra permission to use your billing account.
+We have to give Terra permission to use our GCP billing account.
 
 From the GCP console, navigate to the Account Management page by clicking the three lines and <span class="highlight_txt">Billing</span>:
 ![](./terra-imgs/gcp-billing.png "gcp billing tab")
@@ -46,13 +46,13 @@ Click on the three lines and log in with the same Google account you used to set
 Click the dropdown arrow by your name and select <span class="highlight_txt">Billing</span>:
 ![](./terra-imgs/terra-billing-option.png "terra billing page")
 
-## Step 4: Set up billing project in Terra
+## Step 4: Set up Terra billing project
 
 Click the <span class="highlight_txt">+</span>. Then enter a unique billing project name (the "first-terra-project" in the image below is a placeholder, please do not copy it as it's probably already in use!).
 
 !!! warning
 
-    The names for billing projects must be completely unique, not only for Terra, but for all Google projects. Terra creates a Google Project of the same name on your behalf so it cannot share the same name as any other project. Otherwise, the billing project creation will fail with an error message like this:
+    The names for billing projects must be **completely unique**, not only for Terra, but for **all Google projects**. Terra creates a Google Project of the same name on your behalf so it cannot share the same name as any other project. Otherwise, the billing project creation will fail with an error message like this:
 
     ```
     project demo-for-tutorial2021 creation finished with errors: {"ResourceType":"cloudresourcemanager.v1.project","ResourceErrorCode":"400","ResourceErrorMessage":{"code":400,"message":"field [project_id] has issue [project_id contains prohibited words]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains prohibited words"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}],"statusMessage":"Bad Request","requestPath":"https://cloudresourcemanager.googleapis.com/v1/projects","httpMethod":"POST"}} - code RESOURCE_ERROR
