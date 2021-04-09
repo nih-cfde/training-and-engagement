@@ -1,4 +1,4 @@
-# Setting up GCP account
+# Setting up GCP Account
 
 In this tutorial, you will learn how to create your own Google Cloud Platform (GCP) billing account using your Google account and personal credit card.
 

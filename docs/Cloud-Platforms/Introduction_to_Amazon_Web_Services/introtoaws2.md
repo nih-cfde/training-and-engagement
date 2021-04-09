@@ -1,4 +1,4 @@
-# Setting Up an AWS Instance Video Walk-through
+# Setting up an AWS Instance Video Walk-through
 
 
 === "Windows :fontawesome-brands-windows:"

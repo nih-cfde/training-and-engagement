@@ -1,4 +1,4 @@
-# Setting up a GCP instance
+# Setting up a GCP Instance
 
 In this section, we'll create a project, configure a GCP virtual machine (VM) instance, and connect to the VM.
 

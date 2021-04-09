@@ -1,4 +1,4 @@
-# Example 1: BLAST analysis
+# Example 1: BLAST Analysis
 
 You now have a custom configured VM! Let's test our new GCP virtual machine with a protein sequence BLAST search. This is a shortened version from the full [command-line BLAST tutorial](../../Bioinformatic-Analyses/BLAST-Command-Line/BLAST1.md), which ran the BLAST search on the Amazon AWS cloud platform. Check out the full tutorial for more details about the specific BLAST commands.
 
