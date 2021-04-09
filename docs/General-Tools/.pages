@@ -2,5 +2,5 @@ nav:
 - index.md
 - Snakemake Workflows: Snakemake
 - install_conda_tutorial.md
-- Web-Development
+- Web-Development: Building Websites
 - Cheat-Sheets

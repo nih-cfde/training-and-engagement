@@ -10,5 +10,5 @@ Tutorials in this section provide lessons for setting up compute environments, w
 
 - [Snakemake Workflow Management](Snakemake/index.md)
 - [Set up Conda Computing Environment](install_conda_tutorial.md)
-- [Building websites](Web-Development/index.md)
+- [Building Websites](Web-Development/index.md)
 - [Cheat Sheets](Cheat-Sheets/index.md)
