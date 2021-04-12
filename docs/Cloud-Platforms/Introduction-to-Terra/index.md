@@ -38,7 +38,7 @@ Est. Time | Lesson name | Description
 
     Testing and running workflows will cost money, but the Google Cloud Platform gives new users a $300 free trial for 3 months.
 
-    *reassess after deciding on demo analysis*
+    The workflow exercise costs ~$1 (compute + storage cost).
 
 === "Prerequisites"
 

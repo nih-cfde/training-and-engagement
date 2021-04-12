@@ -2,8 +2,6 @@
 
 For this demo, we will show you how to run the same workflow as in the [Genome-wide Association Study (GWAS) lesson](../../Bioinformatic-Analyses/GWAS-in-the-cloud/index.md), but on Terra instead of AWS.
 
-<work in cfde-terra-demo/demo-23feb21 workspace. check cost on this billing project after run GWAS. subtract from $2.58 which was already there from previous work.>
-
 ### Step 1: Download data
 
 We are using 2 files for this example:
