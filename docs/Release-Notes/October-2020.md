@@ -10,15 +10,15 @@ October 2020 Release
 
 <span style="font-size:24px;">New Tutorials
 
-- [CFDE Portal Tutorial](../Bioinformatics-Skills/CFDE-Portal/index.md)
-- [Command Line BLAST](../Bioinformatics-Skills/Command-Line-BLAST/BLAST1.md)
-- [Introduction to Amazon Web Services (AWS)](../Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1.md)
-- [Identifying MIME Types](../CFDE-Internal-Training/MIME-type/index.md)
-- [Enabling User Choices with Javascript](../Web-Development/javascript_chooser.md)
+- [CFDE Portal Tutorial](../Common-Fund-Tools/CFDE-Portal/index.md)
+- [Command Line BLAST](../Bioinformatic-Analyses/BLAST-Command-Line/BLAST1.md)
+- [Introduction to Amazon Web Services (AWS)](../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1.md)
+- [Enabling User Choices with Javascript](../General-Tools/Web-Development/Javascript-dropdown-box/javascript_chooser.md)
+<!--- [Identifying MIME Types](../CFDE-Internal-Training/MIME-type/index.md) -->
 
 <span style="font-size:24px;">Updates and Fixes
 
-- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md) - PR steps updated
-- [GWAS in the Cloud](../Bioinformatics-Skills/GWAS-in-the-cloud/index.md) - Additional explanation and context to code, workflow streamlining with edits to key access pair, data download, and instance recovery
-- [Set up Conda Computing Environment](../Bioinformatics-Skills/Introduction-to-Conda/install_conda_tutorial.md) - Additional context for conda installation
-- [Snakemake Workflow Management](../Bioinformatics-Skills/Snakemake/index.md) - Code block formatting edits for Snakemake rules
+<!-- - [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md) - PR steps updated -->
+- [GWAS in the Cloud](../Bioinformatic-Analyses/GWAS-in-the-cloud/index.md) - Additional explanation and context to code, workflow streamlining with edits to key access pair, data download, and instance recovery
+- [Set up Conda Computing Environment](../General-Tools/Introduction-to-Conda/install_conda_tutorial.md) - Additional context for conda installation
+- [Snakemake Workflow Management](../General-Tools/Snakemake/index.md) - Code block formatting edits for Snakemake rules
