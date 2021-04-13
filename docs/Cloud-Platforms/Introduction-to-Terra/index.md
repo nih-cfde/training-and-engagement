@@ -46,11 +46,11 @@ Est. Time | Lesson name | Description
 
     - Google Cloud Platform (GCP) billing account (+ valid credit card). Please see our lesson for [setting up GCP accounts](../Introduction-to-GCP/index.md)
 
-    For building **custom** workflows on Terra, you'll *also* need:
+    In this lesson we demonstrate how to build **custom** workflows on Terra. The list of prerequisites below are *not* necessary to *follow along with the demonstration*, but when you're ready to make your own Terra workflows, you'll *also* need:
 
-    - A terminal environment (i.e., Mac terminal or GCP virtual machine) to test workflow code. The GCP virtual machine will cost money however, so we recommend starting with small test workflows.
-    - Dockerhub account (Dockstore is another option, but we will demonstrate with Dockerhub in this lesson)
-    - Familiarity with shell command-line, docker, and Workflow Description Language computer programming are all needed to build custom workflows. The learning curve is steep, but there are also many resources available to get you started! We'll share a few in the lesson.
+    - A terminal environment (i.e., Mac terminal or GCP virtual machine) to test workflow code. The GCP virtual machine will cost money however, so we recommend starting with small test workflows if you choose this option.
+    - Dockerhub or Dockstore account
+    - Familiarity with shell command-line, docker, and Workflow Description Language computer programming are all needed to build custom workflows on Terra. The learning curve is steep, but there are also many excellent resources available to get you started! We'll share a few in the lesson.
 
 === "Tutorial Resources"
 

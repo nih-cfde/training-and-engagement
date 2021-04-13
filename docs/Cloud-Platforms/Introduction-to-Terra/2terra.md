@@ -43,9 +43,10 @@ The Terra workspace is an organized repository with the following tabs:
 
 - `Dashboard`: document analysis information
 - `Data`: upload new data or import existing datasets already on Terra
-- `Notebooks`: build Jupyter notebooks
+- `Notebooks`: build [Jupyter notebooks](https://support.terra.bio/hc/en-us/articles/360027237871-Terra-s-Jupyter-Notebooks-environment-Part-I-Key-components)
 - `Workflows`: run workflows
 - `Job History`: check workflow job status
+- `Cloud Environment`: configure your own cloud set up, and [spin up](https://support.terra.bio/hc/en-us/articles/360058138632-Launching-RStudio-in-Terra-by-using-community-maintained-images) a [Rstudio](https://terra.bio/try-rstudio-in-terra/) session
 
 ### Workspace Information
 

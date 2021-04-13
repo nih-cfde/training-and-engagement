@@ -44,3 +44,7 @@ More information is available about:
 
 - monitoring expenses from the GCP console ([GCP documentation](https://cloud.google.com/billing/docs))
 - Terra billing projects and setting up permissions ([support documentation](https://support.terra.bio/hc/en-us/articles/360026182251-How-to-set-up-billing-in-Terra))
+
+!!! note "Key Points"
+
+    This concludes the introduction to Terra lesson. You should now be able to set up your own Terra account, link it to your GCP account, and use the Terra platform interface with existing workflows!
