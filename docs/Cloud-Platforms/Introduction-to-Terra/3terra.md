@@ -1,5 +1,7 @@
 # Running workflows in Terra
 
+> Lesson in development
+
 For this demo, we will show you how to run the same workflow as in the [Genome-wide Association Study (GWAS) lesson](../../Bioinformatic-Analyses/GWAS-in-the-cloud/index.md), but on Terra instead of AWS.
 
 ### Step 1: Download data

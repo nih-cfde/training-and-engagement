@@ -1,5 +1,7 @@
 # Navigating Terra Workspaces
 
+> Lesson in development
+
 Let's learn the basics of Terra workspaces by creating one!
 
 !!! important

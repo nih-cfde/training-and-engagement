@@ -1,5 +1,7 @@
 # Let's talk about cloud costs
 
+> Lesson in development
+
 ## Monitoring costs
 
 The Terra platform is under active development. Currently, the platform itself does not show workflow costs.

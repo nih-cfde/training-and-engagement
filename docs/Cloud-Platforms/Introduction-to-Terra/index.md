@@ -8,6 +8,8 @@ hide:
 An Introduction to Terra
 =========================
 
+> Lesson in development
+
 Terra is a cloud-based platform developed by the Broad Institute for bioinformatic analysis that aims to allow researchers with any level of computing skills to conduct large-scale bioinformatic analysis on the Google Cloud Platform.
 
 Terra gives users both graphical and command line interface options, and also organizes documentation, data/metadata, workflows, analysis, and outputs all in one place. These shareable workspaces are important components for reproducible and collaborative research.

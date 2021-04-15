@@ -1,5 +1,7 @@
 # Setting up a Terra account
 
+> Lesson in development
+
 !!! important
 
     Please use **Google Chrome** to access the Google Cloud Platform console! Some features do not work in other web browsers.

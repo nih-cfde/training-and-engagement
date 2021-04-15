@@ -1,5 +1,7 @@
 # Example 2: Download SRA Data
 
+> Lesson in development
+
 In this example, we'll configure a new VM and learn how to download fastq files from the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) database.
 
 ## Step 1: Set up VM

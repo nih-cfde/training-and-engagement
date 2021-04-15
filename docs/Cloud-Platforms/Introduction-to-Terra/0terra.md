@@ -1,5 +1,7 @@
 # How does Terra work?
 
+> Lesson in development
+
 In a nutshell, Terra provides you a consolidated, shareable space for data storage, analysis workflows, and analysis outputs. When you submit a workflow job or use interactive coding tools (Jupyter notebooks, Rstudio), Terra does the heavy-lifting of managing the computational resources for your analysis.
 
 The underlying cloud computing services are provided by the Google Cloud Platform (GCP) - primarily the Compute Engine and Storage Bucket services. For an introduction to the GCP, see our [tutorial](../Introduction-to-GCP/index.md) on setting up a GCP virtual machine.
