@@ -33,6 +33,12 @@ We are following the Miniconda [installation instructions](https://conda.io/proj
 
 Select the [installer](https://docs.conda.io/en/latest/miniconda.html) for: "Miniconda3 MacOSX 64-bit bash". We are using the 64-bit version for working with Python 3.x.
 
+Alternatively, you can download from [Anaconda's repository of installers](https://repo.anaconda.com/miniconda/) via command line with the `wget` command:
+
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+```
+
 ### Step 2: Verify your installer hashes
 
 Go to the directory where you saved the installer file (e.g., "Downloads/"). Open up Terminal and navigate to that directory:
@@ -70,7 +76,7 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 
 - Miniconda will now be installed. This takes a few minutes to complete. The progress will be displayed in the Terminal window.
 
-- you will be asked if you wish the installer to initialize Miniconda3 by running conda init. Type `yes`.
+- you will be asked if you wish the installer to initialize Miniconda3 by running `conda init`. Type `yes`.
 
 - for changes to take effect, `exit` and re-open Terminal window.
 
@@ -98,7 +104,15 @@ Check the version of your new conda installation:
     conda 4.8.3
     ```
 
+Remember to configure your [conda channels](./conda2.md):
+
+```
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+```
+
 !!! note "Key Points"
 
-    - Now you should have a working conda installation that you can use to create custom conda environments on your computer, cloud instance, or space on an HPC server!
-    - As a reminder, if you are using your local installation of conda on a Windows computer, the `bioconda` channel is not supported. It's possible to add as a channel, but you won't be able to search or install software from it! The `defaults` and `conda-forge` channels are available for Windows.
+    - Now you have a working conda installation that you can use to create custom conda environments on your computer, cloud instance, or space on an HPC server!
+    - As a reminder, if you are using your local installation of conda on a **Windows** computer, the `bioconda` channel is **not** supported. While it's possible to add as a channel, you won't be able to search or install software from it! The `defaults` and `conda-forge` channels are available for Windows.

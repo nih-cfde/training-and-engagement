@@ -44,7 +44,7 @@ Setup the conda installer and initialize the settings:
 conda init
 ```
 
-We will shorten command prompt to `$`:
+The binder auto-generates a very long command prompt. We will shorten it to `$`:
 ```
 echo "PS1='\w $ '" >> .bashrc
 ```
