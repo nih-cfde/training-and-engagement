@@ -5,10 +5,11 @@ hide:
   - toc
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 An Introduction to Terra
 =========================
 
-> Lesson in development
 
 Terra is a cloud-based platform developed by the Broad Institute for bioinformatic analysis that aims to allow researchers with any level of computing skills to conduct large-scale bioinformatic analysis on the Google Cloud Platform.
 

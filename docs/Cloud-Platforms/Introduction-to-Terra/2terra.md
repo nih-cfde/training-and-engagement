@@ -1,6 +1,6 @@
-# Navigating Terra Workspaces
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
 
-> Lesson in development
+# Navigating Terra Workspaces
 
 Let's learn the basics of Terra workspaces by creating one!
 

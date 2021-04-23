@@ -1,6 +1,6 @@
-# How does Terra work?
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
 
-> Lesson in development
+# How does Terra work?
 
 In a nutshell, Terra provides you a consolidated, shareable space for data storage, analysis workflows, and analysis outputs. When you submit a workflow job or use interactive coding tools (Jupyter notebooks, Rstudio), Terra does the heavy-lifting of managing the computational resources for your analysis.
 

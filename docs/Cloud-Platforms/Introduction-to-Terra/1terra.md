@@ -1,6 +1,8 @@
+
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 # Setting up a Terra account
 
-> Lesson in development
 
 !!! important
 

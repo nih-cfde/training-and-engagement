@@ -1,6 +1,6 @@
-# Let's talk about cloud costs
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
 
-> Lesson in development
+# Let's talk about cloud costs
 
 ## Monitoring costs
 
