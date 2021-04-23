@@ -36,7 +36,7 @@ More information about each step:
 
     In order to share the docker, we are pushing the image to Dockerhub. We created an account at <https://hub.docker.com/>. We need the account username to run docker commands.
 
-    There are other options (i.e., Dockstore). For the workflows used in Terra, either of these platforms will work!
+    There are other options - [Terra suggests](https://support.terra.bio/hc/en-us/community/posts/360077680471/comments/360014958032) using either Dockerhub or the [Google Container Registry](https://support.terra.bio/hc/en-us/articles/360035638032-Publish-a-Docker-container-image-to-Google-Container-Registry-GCR-).
 
 === "3. Dockerfile"
 
