@@ -24,6 +24,14 @@ All tutorials are written with Markdown syntax. Each page should have a title (`
 
 Markdown syntax allows up to [6 levels of hierarchy](https://www.markdownguide.org/basic-syntax/#headings), however, if you need headings beyond level 3, this is a good indication that the tutorial page could benefit from being broken down into separate pages. Please try to only use level 2 (`##`) and 3 (`###`) headings.
 
+## Lesson in Development banners
+
+For website section landing pages use `>` quotes. For lesson landing pages + lesson pages use css banner syntax above the page title in the markdown document:
+
+```
+div class="banner"><span class="banner-text">Lesson in Development</span></div>
+```
+
 ## Markdown tables
 
 Tables columns are defined with `|` and rows with `-`. Markdown cell widths are set to be the same for each column when rendered by Mkdocs. The syntax looks like this:
