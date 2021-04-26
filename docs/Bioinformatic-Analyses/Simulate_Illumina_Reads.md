@@ -1,3 +1,5 @@
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 # Simulate Illumina Reads
 
 

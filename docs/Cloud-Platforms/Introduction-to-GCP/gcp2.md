@@ -1,6 +1,6 @@
-# Setting up a GCP Instance
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
 
-> Lesson in development
+# Setting up a GCP Instance
 
 In this section, we'll create a project, configure a GCP virtual machine (VM) instance, and connect to the VM.
 

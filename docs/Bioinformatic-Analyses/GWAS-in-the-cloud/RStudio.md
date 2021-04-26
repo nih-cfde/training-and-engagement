@@ -3,6 +3,9 @@ layout: page
 title: Install R and RStudio
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+
 Install R and RStudio
 =====================
 

@@ -3,6 +3,8 @@ layout: page
 title: What is GWAS?
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 Introduction
 ===================
 
