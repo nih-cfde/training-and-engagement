@@ -54,7 +54,7 @@ The output of the `download_data` rule is `SRR2584857_1.fastq.gz`. Add this to t
             "wget https://osf.io/4rdza/download -O SRR2584857_1.fastq.gz"
     ```
 
-Try: Run the `download_data` rule twice.
+Try running the `download_data` rule twice. What happens the second time?
 
 
 === "Input"
@@ -71,7 +71,7 @@ Try: Run the `download_data` rule twice.
 
 Delete the file: `rm SRR2584857_1.fastq.gz`. Now run the rule again.
 
-This time the shell command is executed! By explicitly including the `output` file in the rule, Snakemake was smart enough to know that the output file already exists and doesn't need to be re-created.
+This time the shell command is executed! By explicitly including the `output` file in the rule, Snakemake was smart enough to know that the output file already exists and doesn't need to be re-created. This is one of the several ways that Snakemake helps streamline your work: it doesn't repeat work unnecessarily.
 
 ### Step 5: Adding input files
 
@@ -101,7 +101,7 @@ What does this do?
 
 The code chunk informs Snakemake that `uncompress_genome` depends on having the input file `ecoli-rel606.fa.gz` in the current directory, and that `download_genome` produces it. Snakemake will automatically determine the dependencies between rules by matching the file name(s).
 
-In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked!
+In this case, if we were to run the `uncompress_genome` rule at the terminal, it will also execute the `download_genome` rule since the rules are now linked! That is, Snakemake knows that in order to run `uncompress_genome`, it needs the output of `download_genome`! This is another way that Snakemake helps streamline your work: it automatically figures out what is needed to run rules.
 
 === "Input"
 
