@@ -88,7 +88,7 @@ Note that your terminal command prompt should now look like `(snaketest) $` inst
 
 ### Step 4: Test that your environment is ready to go
 
-You should have several software installed in your `snaketest` environment now. Check it out!
+You should have several software packages installed in your `snaketest` environment now. Check it out!
 
 === "Input"
 
