@@ -4,7 +4,7 @@ Let's get started with conda!
 
 To follow along with this lesson, we are using a [binder](https://binder.pangeo.io/) with an Rstudio interface. Binders use collections of files from Github repositories with instructions on software installation to create small (and free!) computing environments. They are used for teaching and demonstrating software functionality or analysis workflows.
 
-Open the binder for this lesson in a **new tab** (i.e., by typing ++ctrl++ and clicking link): [Click me to launch binder!](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio)
+Open the binder for this lesson in a **new tab** (i.e., by typing ++ctrl++ and clicking link): [Click me to launch binder!](https://binder.pangeo.io/v2/gh/nih-cfde/training-rstudio-binder/conda-workshop-march2021?urlpath=rstudio){:target="_blank"}
 
 It may take 3-4 minutes for the binder to load!
 
@@ -71,7 +71,7 @@ conda list # get list of packages in base environment
 
 Channels exist in a hierarchical order. By default, conda searches for packages based on:
 
-Channel priority > package version > package build number
+**Channel priority > package version > package build number**
 
 ![](./conda-imgs/conda-channel.png 'conda channels')
 
