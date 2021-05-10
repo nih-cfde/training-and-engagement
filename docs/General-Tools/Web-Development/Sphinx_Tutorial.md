@@ -25,7 +25,7 @@ Sphinx is python based tool that enables generation of documentation. Originally
 
     - Have [`git`](https://git-scm.com/) installed on your computer
 
-    - This tutorial uses python and conda. These can be configured on your computer by installing Anaconda or Miniconda. Please see our [tutorial](../install_conda_tutorial.md) for help installing and using Miniconda on MacOS.
+    - This tutorial uses python and conda. These can be configured on your computer by installing Anaconda or Miniconda. Please see our [tutorial](../Introduction-to-Conda/install_conda_tutorial.md) for help installing and using Miniconda on MacOS.
 
     - Basic command line skills
 
@@ -42,7 +42,7 @@ Please choose your operating system and follow along.
 
     Based on [the official Sphinx installation guide tutorial](https://www.sphinx-doc.org/en/master/usage/installation.html):
 
-    We will utilize the [conda package management system](../install_conda_tutorial.md) to install Sphinx.
+    We will utilize the [conda package management system](../Introduction-to-Conda/install_conda_tutorial.md) to install Sphinx.
 
     Create a new conda environment called `sphinx` that runs python 3.5 like so:
 
