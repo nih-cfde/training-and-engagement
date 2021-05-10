@@ -6,9 +6,9 @@ There are two ways to follow this tutorial:
 
 **A) Use the pangeo binder.** This is a good option if you don't have access to a Unix/Linux computer.
 
-- Open the binder environment with the "Launch binder" button below in a **new tab**. It will take a few minutes to build:
+- Open the binder environment in a **new tab** (i.e., by typing ++ctrl++ and clicking link). It will take a few minutes to build:
 
-    [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder)
+    [Click me to launch binder!](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder)
 
 - Click on the "Terminal" button to launch it:
 
@@ -33,7 +33,7 @@ There are two ways to follow this tutorial:
 
 ## Set up computing environment
 
-We will use conda to create an computer software for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../install_conda_tutorial.md).
+We will use conda to create an computer software for this tutorial. If you don't have conda installed, please see the [Set up computing environment with conda on MacOS tutorial](../Introduction-to-Conda/install_conda_tutorial.md).
 
 !!! Tip
 

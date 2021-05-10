@@ -18,7 +18,7 @@ October 2020 Release
 
 <span style="font-size:24px;">Updates and Fixes
 
-<!--- [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md) - PR steps updated -->
+<!-- - [Editing MkDocs Websites with cfde-bot](../CFDE-Internal-Training/cfdebot_website_editing.md) - PR steps updated -->
 - [GWAS in the Cloud](../Bioinformatic-Analyses/GWAS-in-the-cloud/index.md) - Additional explanation and context to code, workflow streamlining with edits to key access pair, data download, and instance recovery
-- [Set up Conda Computing Environment](../General-Tools/install_conda_tutorial.md) - Additional context for conda installation
+- [Set up Conda Computing Environment](../General-Tools/Introduction-to-Conda/install_conda_tutorial.md) - Additional context for conda installation
 - [Snakemake Workflow Management](../General-Tools/Snakemake/index.md) - Code block formatting edits for Snakemake rules
