@@ -58,9 +58,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
         shell:
 
             # for single line commands
-
             # command must be enclosed in quotes
-
             "command"
     ```
 
@@ -111,7 +109,7 @@ Let's try running a Snakemake rule:
     snakemake -p map_reads
     ```
 
-    The `-p` means show the command that you're running.
+    The `-p` means show the shell command that snakemake is running for this rule.
 
 === "Expected Output"
 
@@ -179,7 +177,7 @@ snakemake -p index_genome_bwa
 snakemake -p map_reads
 ```
 
-Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any error!**.
+Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any errors, once we ran all of the necessary rules before it!**.
 
 !!! Tip
 

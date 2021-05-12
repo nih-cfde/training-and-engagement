@@ -83,7 +83,7 @@ Take the `uncompress_genome` rule we decorated above:
             "gunzip ecoli-rel606.fa.gz"
     ```            
 
-It can also be written as follows with wildcards `{input}` and `{output}`. Wildcards operate entirely within a single rule, not across rules. This means that we can use different definitions for `{input}` and `{output}` for each rule and they won't conflict.
+It can also be written as follows with template variables `{input}` and `{output}`. Variables operate entirely within a single rule, not across rules. This means that we can use different definitions for `{input}` and `{output}` for each rule and they won't conflict.
 
 === "Snakemake rule"
 
@@ -116,7 +116,7 @@ Multiple inputs files can be separated by commas and written on their own lines.
             """
     ```
     
-Since the Snakefile is written in Python, we can also use Python functions! As an example, we will consolidate the list of reference genome index files into a single line of code. The expansion (`expand`) tells Python that there is a common file name pattern (`ecoli-rel606.fa.`) with different endings (`{ext}`) that are specified using a list (`ext=['sa', 'amb', 'ann', 'pac', 'bwt']`).
+Since the Snakefile is written in Python, we can also use Python functions! As an example, we will consolidate the list of reference genome index files into a single line of code. The expansion (`expand`) tells Python that there is a common file name pattern (`ecoli-rel606.fa.`) with different endings (`{ext}`) that are specified using a list (`ext=['sa', 'amb', 'ann', 'pac', 'bwt']`). This results in `expand()` creating a new list, `ecoli-rel606.fa.sa`, `ecoli-rel606.fa.amb`, and so on.
 
 
 === "Snakemake rule"

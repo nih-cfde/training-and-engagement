@@ -53,15 +53,15 @@ Rename the "Snakefile.py" to "Snakefile". There should be no file extension (we 
 
 ### Step 2: Create new conda environment:
 
-The "environment.yml" file tells conda 1) where to look for the software installations under "channels" and 2) what software to install under "dependencies". You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial:
+The `environment.yml` file tells conda 1) where to look for the software installations under "channels" and 2) what software to install under "dependencies". You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial, as described in `environment.yml`:
 
-channels:
+channels (where the software will be installed from):
 
   - conda-forge
   - bioconda
   - defaults
 
-dependencies:
+dependencies (which software will be installed):
 
   - bwa
   - snakemake-minimal=5.8.1
@@ -84,11 +84,11 @@ conda env create -n snaketest -f ./binder/environment.yml
 conda activate snaketest
 ```
 
-Note that your terminal command prompt should now look like `(snaketest) $` instead of `(base) $`.
+Your terminal command prompt should now look like `(snaketest) $` instead of `(base) $`. This indicates that we can use all of the software installed by conda for this lesson.
 
 ### Step 4: Test that your environment is ready to go
 
-You should have several software installed in your `snaketest` environment now. Check it out!
+You should have several software packages installed in your `snaketest` environment now. Check it out!
 
 === "Input"
 
