@@ -53,6 +53,12 @@ Rename the "Snakefile.py" to "Snakefile". There should be no file extension (we 
 
 ### Step 2: Create new conda environment:
 
+conda is a software installation system that we will not cover in any
+detail today, but it is how we install all of our software for this
+lesson!  Please see our
+[Introduction to Conda](../Introduction-to-Conda/index.md) for more
+information.
+
 The `environment.yml` file tells conda 1) where to look for the software installations under "channels" and 2) what software to install under "dependencies". You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial, as described in `environment.yml`:
 
 channels (where the software will be installed from):
