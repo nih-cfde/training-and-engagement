@@ -58,7 +58,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
         shell:
 
             # for single line commands
-            # command must be enclosed in quotes
+            # command must be enclosed in single quotes - "
             "command"
     ```
 
