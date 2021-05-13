@@ -81,18 +81,19 @@ dependencies (which software will be installed):
   - samtools=1.10
   - bcftools
 
-Create a new environment called `snaketest` from the `(base)` environment:
+If you're using the pangeo binder, the steps below are already done for you;
+if you are on a laptop or other computer, you can install all the
+necessary software by running the following command:
 ```
 conda env create -n snaketest -f environment.yml
 ```
 
-Use this command if you are running the pangeo binder:
-```
-conda env create -n snaketest -f ./binder/environment.yml
-```
+This creates a new environment called `snaketest`, which you can then activate.
+
 
 ### Step 3: Activate conda environment:
 
+To use the software you just installed, execute:
 ```
 conda activate snaketest
 ```
