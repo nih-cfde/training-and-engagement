@@ -51,6 +51,13 @@ We need two files for this tutorial. Click the links and save them in the direct
 
 Rename the "Snakefile.py" to "Snakefile". There should be no file extension (we just added it so you'd be able to download the file!).
 
+If you want to use `wget` to download them to a remote computer, these commands should work on most Linux systems:
+```
+wget https://training.nih-cfde.org/en/latest/General-Tools/Snakemake/snakemake_tutorial_docs/environment.yml
+wget https://training.nih-cfde.org/en/latest/General-Tools/Snakemake/snakemake_tutorial_docs/Snakefile.py
+mv Snakefile.py Snakefile
+```
+
 ### Step 2: Create new conda environment:
 
 conda is a software installation system that we will not cover in any
@@ -123,7 +130,7 @@ conda deactivate
 
 Install `wget`:
 ```
-conda install -c anaconda wget
+conda install -c conda-forge wget
 ```
 
 Test installation:
