@@ -3,7 +3,7 @@
 The remaining rules need inputs and outputs so we can link up all the rules through to the final variant calling step. Parts 2 and 3 of the video tutorials cover the remaining content by adding more detail to the Snakefile and wrapping up with the final workflow rule.
 
 !!! tip
-    
+
     We recommend watching the videos first and referring to the text for additional help!
 
 Part 2: Continue decorating the Snakefile
@@ -39,7 +39,7 @@ In this workflow, the rule `map_reads` is a good example of such a behavior. `bw
         shell:
             "bwa mem -t 4 {input.genome} {input.reads} > {output}"
     ```
-    
+
 Follow along with the video tutorials to fill in the `input` and `output` sections for the remaining rules. For help, refer to the complete [Snakefile](./example_snakefile.md) for this tutorial, but note that there are many ways to concisely enter the input and output files and this is just one version!
 
 ### Step 7: Running lots of rules all at once
@@ -47,7 +47,7 @@ Follow along with the video tutorials to fill in the `input` and `output` sectio
 Once you've fixed the rules `index_genome_bwa` and `map_reads`, you should be able to run everything up to the rule `index_genome_samtools` by running:
 
 ```
-snakemake -p index_genome_samtools
+snakemake -p index_genome_samtools -j 2
 ```
 
 This also serves as a good way to check that you have all the correct input/output information. You'll have files left over if you forgot to put them in output.
@@ -64,7 +64,7 @@ snakemake --delete-all-output index_genome_samtools
 You don't actually need to use the rule names *(this will be important later on!)*. Instead of rule names, you can specify the required output file in Snakemake which will trigger execution of all the upstream linked rules necessary to produce the file. So, the command below will also work to run the rule `map_reads`, and you don't have to remember the rule name (which can be arbitrary).
 
 ```
-snakemake -p SRR2584857.sam
+snakemake -p SRR2584857.sam -j 2
 ```
 
 ### Step 10: Exploring rule decoration shortcuts
@@ -95,7 +95,7 @@ It can also be written as follows with template variables `{input}` and `{output
         shell:
           "gunzip -c {input} > {output}"
     ```
-    
+
 Multiple inputs files can be separated by commas and written on their own lines. The input files can be assigned variable names that are accessed in the `shell:` block with `input.<input file variable>`. The `\` tells the shell that this is one command written over two lines in the file. Also, similar to `map_reads`, the `samtools_mpileup` rule also includes an input file (`.bai`) that is not explicitly stated but required to complete the command.
 
 === "Snakemake rule"
@@ -115,7 +115,7 @@ Multiple inputs files can be separated by commas and written on their own lines.
             bcftools call -mv -Ob -o - > {output}
             """
     ```
-    
+
 Since the Snakefile is written in Python, we can also use Python functions! As an example, we will consolidate the list of reference genome index files into a single line of code. The expansion (`expand`) tells Python that there is a common file name pattern (`ecoli-rel606.fa.`) with different endings (`{ext}`) that are specified using a list (`ext=['sa', 'amb', 'ann', 'pac', 'bwt']`). This results in `expand()` creating a new list, `ecoli-rel606.fa.sa`, `ecoli-rel606.fa.amb`, and so on.
 
 

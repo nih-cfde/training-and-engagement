@@ -60,7 +60,7 @@ Try running the `download_data` rule twice. What happens the second time?
 === "Input"
 
     ```
-    snakemake -p download_data
+    snakemake -p download_data -j 2
     ```
 
 === "Expected Output"
@@ -106,7 +106,7 @@ In this case, if we were to run the `uncompress_genome` rule at the terminal, it
 === "Input"
 
     ```
-    snakemake -p uncompress_genome
+    snakemake -p uncompress_genome -j 2
     ```
 
 === "Expected Output"

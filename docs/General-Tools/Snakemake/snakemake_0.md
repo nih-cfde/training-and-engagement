@@ -4,7 +4,7 @@
 
 Every computational workflow consists of multiple steps, starting with raw data and ending with summary data to plot and calculate statistics.
 
-Workflow systems help you automate and manage the inputs, outputs, and commands for the analysis, thereby making it easier to maintain, reproduce, and share your workflow! Read more about workflow systems in this [toolbox review](https://www.nature.com/articles/d41586-019-02619-z).
+Workflow systems help you automate and manage the inputs, outputs, and commands for the analysis, thereby making it easier to maintain, reproduce, and share your workflow! Read more about workflow systems in this [Nature Toolbox review](https://www.nature.com/articles/d41586-019-02619-z) and in the paper [Streamlining Data-Intensive Biology with Workflow Systems](https://academic.oup.com/gigascience/article/10/1/giaa140/6092773?login=true).
 
 ## What is Snakemake?
 
