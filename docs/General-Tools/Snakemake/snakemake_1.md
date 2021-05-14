@@ -77,7 +77,7 @@ channels (where the software will be installed from):
 dependencies (which software will be installed):
 
   - bwa
-  - snakemake-minimal=5.8.1
+  - snakemake-minimal=6.3.0
   - samtools=1.10
   - bcftools
 
