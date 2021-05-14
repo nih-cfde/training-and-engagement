@@ -58,7 +58,7 @@ Each step in a pipeline is defined by a rule in the Snakefile. The components of
         shell:
 
             # for single line commands
-            # command must be enclosed in quotes
+            # command must be enclosed in single quotes - "
             "command"
     ```
 
@@ -106,10 +106,16 @@ Let's try running a Snakemake rule:
 === "Input"
 
     ```
-    snakemake -p map_reads
+    snakemake -p map_reads -j 2
     ```
 
     The `-p` means show the shell command that snakemake is running for this rule.
+    The `-j` (or `--cores`) is used to specify the number of cores available to run the job; in newer versions of snakemake, this flag must be specified. If you are running a job locally on your computer or for this tutorial, setting the flag to 1 or 2 is sufficient.
+
+!!! info
+
+    In earlier versions of snakemake-minimal, the `-j` flag was not required. The vidlets in this lesson were created prior to the update.
+
 
 === "Expected Output"
 
@@ -130,7 +136,7 @@ Snakemake runs the shell command listed under the `download_data` rule. In this 
 === "Input"
 
     ```
-    snakemake -p download_data
+    snakemake -p download_data -j 2
     ```
 
 === "Expected Output"
@@ -158,23 +164,23 @@ Check the working directory. There should now be a `.fastq.gz` file:
 
 Next run some more rules sequentially – one at a time:
 ```
-snakemake -p download_data
+snakemake -p download_data -j 2
 ```
 
 ```
-snakemake -p download_genome
+snakemake -p download_genome -j 2
 ```
 
 ```
-snakemake -p uncompress_genome
+snakemake -p uncompress_genome -j 2
 ```
 
 ```
-snakemake -p index_genome_bwa
+snakemake -p index_genome_bwa -j 2
 ```
 
 ```
-snakemake -p map_reads
+snakemake -p map_reads -j 2
 ```
 
 Check the working directory again. The directory is populated by many output files including reference genome (`.fa`), genome index (`.fa.sa`, `.fa.amb` etc) and mapped reads (`.sam`) files. **The `map_reads` rule ran without any errors, once we ran all of the necessary rules before it!**.
@@ -187,7 +193,7 @@ Check the working directory again. The directory is populated by many output fil
 
     In this section we explored the basic template of a Snakefile which contains rules with all the necessary commands for variant calling.
 
-    - each rule can be run individually using `snakemake -p <rule_name>`.
+    - each rule can be run individually using `snakemake -p <rule_name> -j 2`.
     - each rule encompasses shell commands, with a bit of “decoration”. You could run them yourself directly in the terminal if you wanted!
     - while the written order of the rules in Snakefile doesn’t matter, the order in which the rules are run on the terminal does matter! More on this in the next section!
     - by default, if you don't specify a rule, Snakemake executes the first rule in the Snakefile (this is actually the only case where the order of rules in the Snakefile matters!)
