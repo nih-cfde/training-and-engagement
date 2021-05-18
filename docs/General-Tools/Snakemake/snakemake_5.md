@@ -5,13 +5,13 @@
 Once you've decorated the entire Snakefile, you should be able to run through the whole workflow using either the rule name:
 
 ```
-snakemake -p make_vcf
+snakemake -p make_vcf -j 2
 ```
 
 or by using the file name:
 
 ```
-snakemake -p variants.vcf
+snakemake -p variants.vcf -j 2
 ```
 
 Recollect that Snakemake will execute the first rule in the Snakefile by default. We can use this feature by creating a default rule called `all` at the top of the Snakefile:
@@ -23,11 +23,11 @@ Recollect that Snakemake will execute the first rule in the Snakefile by default
 
         input: "variants.vcf"
     ```
-    
+
 and run:
 
 ```
-snakemake -p all
+snakemake -p all -j 2
 ```
 
 This rule runs through the entire workflow with a single command! This is much better than running each command one by one!
@@ -74,4 +74,3 @@ Hopefully, you have now:
     - basic decoration comes in the form of `input:` and `output:` which are lists of one or more files, quoted, separated by commas
     - the rules are connected by matching filenames
     - tabs are important syntax feature in Snakemake
-    
