@@ -64,7 +64,7 @@ Folder names | create a folder called "KF_Data"
 
 &ast;If you refer to this specific file many times, you can put the file name in quotations for the first mention. The "Snakefile" in the Snakemake tutorial is an example where we state that the file is called "Snakefile" but thereafter simply refer to it as Snakefile.
 
-### In-line code formatting with single backticks
+### In-line code formatting with single backticks ` (``) `
 
 Use | Example
 --- | ---
