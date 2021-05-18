@@ -1,0 +1,8 @@
+nav:
+  - index.md
+  - Portal Setup: Portal-Setup-And-Permissions
+  - Exploring Data: Exploring-Data-in-the-KF-Portal
+  - Advanced Queries: Advanced-KF-Portal-Queries
+  - KF_7_PushToCavatica.md
+  - Download_Data
+  - Upload Data: Upload_Data.md
