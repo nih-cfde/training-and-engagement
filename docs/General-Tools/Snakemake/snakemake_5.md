@@ -32,6 +32,31 @@ snakemake -p all -j 2
 
 This rule runs through the entire workflow with a single command! This is much better than running each command one by one!
 
+The final snakemake workflow looks like this:
+
+![](./images-snakemake/vc_workflow_dag.png "snakemake workflow diagram")
+
+!!! note
+
+    The diagram above is called a directed acyclic graph (DAG) and it is how snakemake interprets the workflow from the Snakefile. You can read more about the syntax information on the [snakemake documentation](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html#step-4-indexing-read-alignments-and-visualizing-the-dag-of-jobs).
+
+    To generate a DAG file, we need `Graphviz`, a graph visualization software, and `dot` to create directed graphs. We can use conda to create a new environment with the required packages.
+
+    ```
+    # initialize and reset the bash with conda
+    conda init bash
+    source .bashrc
+
+    # create a new environment and install Graphviz
+    conda create -y -n graphs graphviz
+
+    # activate conda environment
+    conda activate graphs
+
+    # create dag png file
+    snakemake --dag variants.vcf | dot -Tpng > vc_workflow_dag.png
+    ```
+
 ### Step 12: Looking at VCF files
 
 Finally, let's look at the output!
