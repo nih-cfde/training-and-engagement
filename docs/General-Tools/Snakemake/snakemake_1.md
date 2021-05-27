@@ -51,44 +51,58 @@ We need two files for this tutorial. Click the links and save them in the direct
 
 Rename the "Snakefile.py" to "Snakefile". There should be no file extension (we just added it so you'd be able to download the file!).
 
+If you want to use `wget` to download them to a remote computer, these commands should work on most Linux systems:
+```
+wget https://training.nih-cfde.org/en/latest/General-Tools/Snakemake/snakemake_tutorial_docs/environment.yml
+wget https://training.nih-cfde.org/en/latest/General-Tools/Snakemake/snakemake_tutorial_docs/Snakefile.py
+mv Snakefile.py Snakefile
+```
+
 ### Step 2: Create new conda environment:
 
-The "environment.yml" file tells conda 1) where to look for the software installations under "channels" and 2) what software to install under "dependencies". You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial:
+conda is a software installation system that we will not cover in any
+detail today, but it is how we install all of our software for this
+lesson!  Please see our
+[Introduction to Conda](../Introduction-to-Conda/index.md) for more
+information.
 
-channels:
+The `environment.yml` file tells conda 1) where to look for the software installations under "channels" and 2) what software to install under "dependencies". You can also specify specific software versions, otherwise conda will download the most up-to-date version. Here are the specifications we'll use for this tutorial, as described in `environment.yml`:
+
+channels (where the software will be installed from):
 
   - conda-forge
   - bioconda
   - defaults
 
-dependencies:
+dependencies (which software will be installed):
 
   - bwa
-  - snakemake-minimal=5.8.1
+  - snakemake-minimal=6.3.0
   - samtools=1.10
   - bcftools
 
-Create a new environment called `snaketest` from the `(base)` environment:
+If you're using the pangeo binder, the steps below are already done for you;
+if you are on a laptop or other computer, you can install all the
+necessary software by running the following command:
 ```
 conda env create -n snaketest -f environment.yml
 ```
 
-Use this command if you are running the pangeo binder:
-```
-conda env create -n snaketest -f ./binder/environment.yml
-```
+This creates a new environment called `snaketest`, which you can then activate.
+
 
 ### Step 3: Activate conda environment:
 
+To use the software you just installed, execute:
 ```
 conda activate snaketest
 ```
 
-Note that your terminal command prompt should now look like `(snaketest) $` instead of `(base) $`.
+Your terminal command prompt should now look like `(snaketest) $` instead of `(base) $`. This indicates that we can use all of the software installed by conda for this lesson.
 
 ### Step 4: Test that your environment is ready to go
 
-You should have several software installed in your `snaketest` environment now. Check it out!
+You should have several software packages installed in your `snaketest` environment now. Check it out!
 
 === "Input"
 
@@ -117,7 +131,7 @@ conda deactivate
 
 Install `wget`:
 ```
-conda install -c anaconda wget
+conda install -c conda-forge wget
 ```
 
 Test installation:
