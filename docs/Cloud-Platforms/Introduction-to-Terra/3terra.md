@@ -61,18 +61,17 @@ It may take a few seconds for the vcf file to upload.
 
 ### Step 3: Set up data table
 
-We've uploaded data, but we still have to tell Terra how to reference the input files. This will make it easier to select inputs when we set up the workflow.
+We've uploaded data, but we still have to tell Terra how to reference the input files. This will make it possible to select inputs when we set up the workflow.
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_hr10q0lo&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_k8l7mh9q" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-- In <span class="highlight_txt">TABLES</span>, click the <span class="highlight_txt">+</span> to "Import Table Data". Switch to the <span class="highlight_txt">TEXT IMPORT</span> tab and copy/paste the table below (alternatively, upload a tab-delimited file (TSV) with this information). Click <span class="highlight_txt">UPLOAD</span>:
+There are 2 ways to enter sample information into the data tables:
 
-```
-entity:sample_id	sample	pheno	vcf
-coatColor	coatColor	coatColor.pheno	pruned_coatColor_maf_geno.vcf.gz
-```
+1. Upload a TSV file. **We recommend for this lesson that you download [this sample TSV file](./terra_sample_tsv.tsv) and then upload it to the "Import Table Data" box.** In <span class="highlight_txt">TABLES</span>, click the <span class="highlight_txt">+</span> to "Import Table Data". Click the <span class="highlight_txt">Drag or Click to select a .tsv file</span>. Click <span class="highlight_txt">UPLOAD</span>.
 
-- Then edit the file names with the pencil icon so they include the google bucket path, otherwise it's just a string of the file name with no location information (you'll know it's correct when the file name has a hyperlink and opens the download window). The bucket path is available from the <span class="highlight_txt">Files</span> tab by clicking on the uploaded file name. Copy the part that looks like: "gs://fc-a2cdb170-5198-4a53-a631-86d22564d199/coatColor.pheno" (the exact `gs://` will be unique to your workspace).
+2. As shown in the vidlet above, you can also copy/paste a tab-delimited table. However, please note that the tab delimiters are important and Terra will give a syntax error if it cannot parse the tabs. In <span class="highlight_txt">TABLES</span>, click the <span class="highlight_txt">+</span> to "Import Table Data". Switch to the <span class="highlight_txt">TEXT IMPORT</span> tab and copy/paste the table below. Click <span class="highlight_txt">UPLOAD</span>.
+
+For either approach, you must edit the file names with the pencil icon so they include the google bucket path, otherwise it's just a string of the file name with no location information (you'll know it's correct when the file name has a hyperlink and opens the download window). The bucket path is available from the <span class="highlight_txt">Files</span> tab by clicking on the uploaded file name. Copy the part that looks like: "gs://fc-a2cdb170-5198-4a53-a631-86d22564d199/coatColor.pheno" (**the exact `gs://` will be unique to your workspace**).
 
 ### Step 4: Run the workflow!
 
