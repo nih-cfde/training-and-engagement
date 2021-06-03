@@ -24,7 +24,7 @@ Then click <span class="highlight_txt">Download</span> and save to your computer
 
 ### Step 2: Import data to workspace
 
-Open the workspace created [previously](./2terra.md). The demo data files (".pheno" and ".vcf.gz") are small enough to manually upload to our Terra workspace.
+Open the workspace created [in the previous section](./2terra.md) ([home page for all workspaces](https://app.terra.bio/#workspaces). The demo data files (".pheno" and ".vcf.gz") are small enough to manually upload to our Terra workspace.
 
 Go to the <span class="highlight_txt">DATA</span> tab, click <span class="highlight_txt">Files</span>, and then click the <span class="highlight_txt">+</span> sign to add 1 file at a time to the workspace.
 

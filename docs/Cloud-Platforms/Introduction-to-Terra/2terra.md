@@ -2,7 +2,7 @@
 
 # Navigating Terra Workspaces
 
-Let's learn the basics of Terra workspaces by creating one!
+Let's learn the basics of [Terra workspaces](https://app.terra.bio/#workspaces) by creating one!
 
 !!! important
     Remember that you need the following before you can use Terra workspaces:
@@ -69,11 +69,12 @@ We'll discuss the `Data`, `Workflows`, and `Job History` tabs in more detail in 
 
 === "Clone"
 
-    You can make a clone of an existing workshop and edit it. This feature is useful if you want to use a publicly available workspace that has analysis workflows or data you want to use for your own project.
+    You can make a clone of an existing workspace and edit it. This feature is useful if you want to use a publicly available workspace that has analysis workflows or data you want to use for your own project.
 
     For example, Terra maintains a few demo workspaces that you can clone to learn how to use data tables, workflows, and notebooks. Let's clone the workspace for data tables.
 
     - In the workspace search bar, type "quickstart"
+    - Select <span class="highlight_txt">FEATURED</span>
     - Click on the three dots at the end of the row for "Terra-Data-Tables-Quickstart"
     - Click <span class="highlight_txt">Clone</span>
     ![](./terra-imgs/terra-workspace-clone.png "clone workspace")
