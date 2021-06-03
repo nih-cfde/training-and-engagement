@@ -52,7 +52,7 @@ Click the dropdown arrow by your name and select <span class="highlight_txt">Bil
 
 ## Step 4: Set up Terra billing project
 
-Click the <span class="highlight_txt">+</span>. Then enter a unique billing project name (the "first-terra-project" in the image below is a placeholder, please do not copy it as it's probably already in use!).
+Click the <span class="highlight_txt">+ CREATE</span>. Then enter a unique billing project name (the "first-terra-project" in the image below is a placeholder, please **do not copy it as it's probably already in use!**).
 
 !!! warning
 
@@ -68,6 +68,8 @@ Next, use the dropdown menu to select your GCP billing account. If you do not se
 
 !!! warning
 
-    It may take several minutes to complete billing project set up. Do not close the browser window, as this may cause set up to fail.
+    It may take **several minutes** to complete billing project set up. Do **not** close the browser window, as this may cause set up to fail.
+
+    At this time, there is not an easy way to delete old/failed billing projects. Check for progress at Terra from [this help ticket](https://support.terra.bio/hc/en-us/community/posts/360061399912-Allowing-users-to-delete-Terra-billing-projects).
 
 Once your billing project is created, you can create Terra workspaces or add collaborators. In the next lesson, we'll learn about workspaces.
