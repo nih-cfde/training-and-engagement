@@ -80,6 +80,6 @@ We welcome suggestions for improvements as well as tutorial topics. Submit all s
 ## Contributing
 Hello, and thank you for wanting to contribute to the CFDE Training website!
 
-By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](add link here). If you are OK with this condition, then we welcome both you and your contribution!
+By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](./license.md). If you are OK with this condition, then we welcome both you and your contribution!
 
 If you have any questions about contributing, please open an issue and we will lend a hand ASAP.
