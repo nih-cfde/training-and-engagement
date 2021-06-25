@@ -10,7 +10,6 @@ This section lists tutorials for working in GitHub, the preferred project manage
 
 CFDE-Coordination Center:
 
-   - [Website Style Guide](./Website-Style-Guide/0index.md)
    - [Editing MkDocs Websites with cfde-bot](cfdebot_website_editing.md)
 
 
