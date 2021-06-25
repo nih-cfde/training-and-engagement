@@ -3,6 +3,11 @@ layout: page
 title: Setup DESeq2 Public App
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+Setup DESeq2 Public App
+=======================
+
 [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is a Bioconductor package used to perform DGE analysis by fitting the [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/) to the count data. It requires a counts table as input along with a phenotype file describing the experimental groups.
 
 DESeq2 performs multiple steps including:
@@ -86,4 +91,4 @@ A reference gene annotation file in GTF format is required by DESeq2 app to summ
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_pxn0zxoc&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=48&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_l7cbi5kv" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
-In our next lesson, we will learn to edit our previously downloaded phenotype file and upload it to Cavatica! 
+In our next lesson, we will learn to edit our previously downloaded phenotype file and upload it to Cavatica!
