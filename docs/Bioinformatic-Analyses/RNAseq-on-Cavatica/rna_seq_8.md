@@ -3,6 +3,11 @@ layout: page
 title: Analysis using Data Cruncher
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+Analysis using Data Cruncher
+==========================
+
 So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script, and generate reports and plots.
 
 !!! note "DGE Tools"

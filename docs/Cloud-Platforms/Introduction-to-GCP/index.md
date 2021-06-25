@@ -5,6 +5,8 @@ hide:
   - toc
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 An Introduction to the Google Cloud Platform
 ============================================
 

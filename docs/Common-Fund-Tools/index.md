@@ -7,9 +7,11 @@ Common Fund Tools
 
 Tutorials in this section provide lessons for finding data sets across the NIH Common Fund.
 
-- [CFDE Portal Tutorials](CFDE-Portal/index.md)
 - [Kids First Tutorials](Kids-First/index.md)
 
+> Lessons in Development:
+
+> - [CFDE Portal Tutorials](CFDE-Portal/index.md)
 
 You may also be interested in this lesson, which uses Common Fund program data:
 

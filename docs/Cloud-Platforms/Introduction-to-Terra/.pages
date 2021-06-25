@@ -1,0 +1,8 @@
+nav:
+- index.md
+- How does Terra work: 0terra.md
+- Setting up a Terra account: 1terra.md
+- Navigating Terra Workspaces: 2terra.md
+- Running workflows in Terra: 3terra.md
+- Custom Workflows: 4terra.md
+- Let's talk about cloud costs: 5terra.md

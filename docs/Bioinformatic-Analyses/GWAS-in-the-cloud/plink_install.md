@@ -1,3 +1,6 @@
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+
 # Install PLINK
 
 [PLINK](http://zzz.bwh.harvard.edu/plink/index.shtml) is a free, open-source whole-genome association analysis toolset. The software is designed flexibly to perform a wide range of basic, large-scale genetic analyses including GWAS.

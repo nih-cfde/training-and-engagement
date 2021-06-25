@@ -3,6 +3,8 @@ layout: page
 title: Blood Datasets from CF Program Portals
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 # Blood Datasets from CF Program Portals
 
 [Using the `csv` manifest details we just exported from the CFDE portal](./blood-cancer-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [GTEx](https://gtexportal.org/home/) and [KF](https://kidsfirstdrc.org/) respectively. In this use case, the selected cohort from the CFDE Portal represents genomic and transcriptomic data from blood of healthy individuals (GTEx) and individuals with acute myeloid leukemia (KF).
