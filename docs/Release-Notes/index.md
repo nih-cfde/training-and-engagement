@@ -10,12 +10,13 @@ Latest Release
 
 <span style="font-size:24px;">New Tutorials
 
-- [Intro to Terra](../Cloud-Platforms/Introduction-to-Terra/0terra.md)
-- [Introduction to Conda](../General-Tools/Introduction-to-Conda/conda1.md)
+- [Intro to Terra](../Cloud-Platforms/Introduction-to-Terra/index.md)
+- [Introduction to Conda](../General-Tools/Introduction-to-Conda/index.md)
 
 <span style="font-size:24px;">Updates and Fixes
 
 - [Snakemake](../General-Tools/Snakemake/index.md): Updated code for samtools import and added notes on generating workflow DAG
+- Updated past workshops list and notes links
 
 <span style="font-size:24px;">Website Features
 
