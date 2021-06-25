@@ -1,20 +1,37 @@
 ---
 layout: page
 title: Overview
+hide:
+   - toc
 ---
 
-Note, overview/landing pages should start with the yaml file header, e.g.,:
-```
----
-layout: page
-title: <tutorial name> overview
----
-```
-This sets the title of the previous and upcoming pages on the Mkdocs footer bar.
-Main tutorial pages can start with the `#` header style.
+YAML header:
 
+    Overview/landing pages must start with the yaml file header, e.g.,:
 
-# Add Title Here
+    ```
+    ---
+    layout: page
+    title: <tutorial name> overview
+    hide:
+       - toc
+    ---
+    ```
+    This sets the title of the previous and upcoming pages on the Mkdocs footer bar.
+
+    To ensure the contents occupy the full width of the page use:
+
+    ```
+    hide:
+      - toc
+    ```
+
+    in the yaml format on top of the page.
+
+Landing page title
+==================
+
+- Use the `===` under the titles for landing page.
 
 Add a brief description of what the tutorial is about. If tutorial material was built from other sources, mention that here.
 
@@ -54,7 +71,7 @@ For **1-page** tutorials only, add a tabbed box for the "Est. Time" (it should b
     - list out resources with bullet points and include a hyperlink to the resource (e.g., vidlets, screencasts, example files, cheat sheets)
 
 
-**For longer tutorials that are split over multiple pages, start the next sections on a NEW page.**
+**For longer tutorials that are split over multiple pages, start the next sections on a NEW page. Use the `#` header style on new pages.**
 
 ### Introduction (optional)
 
