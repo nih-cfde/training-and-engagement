@@ -10,7 +10,7 @@ Latest Release
 
 <span style="font-size:24px;">New Tutorials
 
-- [Intro to Terra](../Cloud-Platforms/Introduction-to-Terra/index.md)
+- [Introduction to Terra](../Cloud-Platforms/Introduction-to-Terra/index.md)
 - [Introduction to Conda](../General-Tools/Introduction-to-Conda/index.md)
 
 <span style="font-size:24px;">Updates and Fixes
