@@ -3,6 +3,11 @@ layout: page
 title: An Introduction to RNAseq
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+An Introduction to RNAseq
+=========================
+
 RNAseq uses the capability of next generation sequencing techniques to explore and/or quantify expression. The information stored in the DNA is organized into genes which are used to encode proteins, the functional products necessary for cell function. Although all cells contain the same DNA, the gene expression varies widely across cell types and cell states. Different biological conditions/disorders, as well as mutations, can influence the on/off state of genes as well as how much certain genes are turned on or off.
 
 !!! info "DNA to Protein"

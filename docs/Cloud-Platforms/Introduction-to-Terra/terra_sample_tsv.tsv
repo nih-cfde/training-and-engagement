@@ -1,0 +1,4 @@
+entity:sample_id	sample	pheno	vcf
+coatColor	coatColor	coatColor.pheno	pruned_coatColor_maf_geno.vcf.gz
+			
+			

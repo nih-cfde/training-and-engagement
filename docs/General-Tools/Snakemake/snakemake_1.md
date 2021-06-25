@@ -8,7 +8,7 @@ There are two ways to follow this tutorial:
 
 - Open the binder environment in a **new tab** (i.e., by typing ++ctrl++ and clicking link). It will take a few minutes to build:
 
-    [Click me to launch binder!](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder)
+    [Click me to launch binder!](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/stable-binder){:target="_blank"}
 
 - Click on the "Terminal" button to launch it:
 
@@ -26,6 +26,13 @@ There are two ways to follow this tutorial:
 - To close the binder, go to "File" and click "Shut Down":
 
     ![shut down binder button](./images-snakemake/snakemake_binder_close.png "shut down binder button")
+
+!!! note
+
+    We also have an Rstudio version of the binder environment. The only difference compared to the terminal binder environment is the layout of Rstudio panels. The template Snakefile and software are pre-loaded with the binder.
+
+    [Click me to launch binder!](https://binder.pangeo.io/v2/gh/nih-cfde/training-snakemake-binder/rstudio-binder?urlpath=rstudio){:target="_blank"}
+
 
 **B) Use a Unix or Linux environment (e.g., with a Mac or High Performing Computing environment).**
 

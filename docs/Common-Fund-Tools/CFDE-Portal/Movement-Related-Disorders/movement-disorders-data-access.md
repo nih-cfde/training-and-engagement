@@ -3,6 +3,8 @@ layout: page
 title: Movement Disorders Datasets in CF Program Portals
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 # Movement Disorders Datasets in CF Program Portals
 
 [Using the `csv` manifest details we just exported from the CFDE portal](./movement-disorders-portal-export.md), the associated data files can be accessed from data portals of the individual Common Fund programs, [Metabolomics](https://www.metabolomicsworkbench.org) and [LINCS](http://lincsportal.ccs.miami.edu/datasets/) respectively. In this use case, the selected cohort from the CFDE Portal represents genomic, transcriptomic and metabolomic data from induced pluripotent stem cells and neural stem cells of individuals with ALS, SMA (LINCS), Parkinson's and MS (Metabolomics) along with healthy controls.

@@ -3,6 +3,9 @@ layout: page
 title: Terminate AWS
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+
 Terminate AWS Instance
 =======================
 

@@ -3,6 +3,8 @@ layout: page
 title: Set up an AWS Instance
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
 Setting up an AWS Instance
 ==========================
 

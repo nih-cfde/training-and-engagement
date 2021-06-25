@@ -3,6 +3,11 @@ layout: page
 title: Analysis with DESeq2 Public App
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+Analysis with DESeq2 Public App
+=============================
+
 ## Step 1: Select inputs
 
 * Access the DESeq2 app under <span class="highlight_txt">Apps</span>.
