@@ -16,7 +16,8 @@ Latest Release
 <span style="font-size:24px;">Updates and Fixes
 
 - [Snakemake](../General-Tools/Snakemake/index.md): Updated code for samtools import and added notes on generating workflow DAG
+- Updated past workshops list and notes links
 
 <span style="font-size:24px;">Website Features
 
-- Navbar titles: Reorganized the lessons into new topic based navbar titles
+- Navbar titles: Reorganized the lessons into new, topic-based navbar titles
