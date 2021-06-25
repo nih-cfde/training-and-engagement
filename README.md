@@ -82,4 +82,4 @@ Hello, if you'd like to contribute to the CFDE Training website, read on!
 
 By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](./license.md). If you are OK with this condition, then we welcome both you and your contribution!
 
-If you have any questions about contributing, please open an issue or email the help desk (training@cfde.atlassian.net) and we will lend at the earliest.
+If you have any questions about contributing, please open an issue or email the help desk (training@cfde.atlassian.net) and we will lend a hand at the earliest.
