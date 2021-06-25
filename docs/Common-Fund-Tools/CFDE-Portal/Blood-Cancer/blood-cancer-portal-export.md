@@ -3,6 +3,9 @@ layout: page
 title: Cohort Selection for Blood Cancer
 ---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+
 # Cohort Selection for Blood Cancer
 
 Acute Myeloid Leukemia (AML) is a type of blood cancer. In AML, the affected myeloid cells which are a type of white blood cells, are not functional and build up in the bone marrow leaving reduced capacity for healthy white and red blood cells. While risk factors for developing AML exist, often times the underlying cause remains unknown. Gene mutations and chromosomal abnormality in the leukemia cells occur sporadically. Characterization of the wide spectrum of genetic events involved in AML will aide in better understanding of its etiology and ultimately in development of improved therapy.

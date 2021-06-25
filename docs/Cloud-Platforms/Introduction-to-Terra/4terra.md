@@ -20,7 +20,7 @@ To see how this process works, watch the vidlets below! Each vidlet is followed 
 
 ## Part 1: Setting up Docker
 
-We are using docker containers to define isolated software environments for specific steps of the GWAS workflow. Read more about using [docker](https://support.terra.bio/hc/en-us/articles/360037340472-Docker-container-overview) from Terra's support docs.
+We are using docker containers to create isolated software environments for specific steps of the GWAS workflow. Read more about using [docker](https://support.terra.bio/hc/en-us/articles/360037340472-Docker-container-overview) from Terra's support docs.
 
 The core steps of building, testing, and sharing the docker container are shown in the vidlet below:
 

@@ -78,7 +78,8 @@ For either approach, you must edit the file names with the pencil icon so they i
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_quwi5729&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_gumloey7" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 #### Find workflow
-- Go to the <span class="highlight_txt">WORKFLOWS</span> tab, click the <span class="highlight_txt">+</span>, select the <span class="highlight_txt">Broad Methods Repository</span> (use Terra login information to access)
+- Go to the <span class="highlight_txt">WORKFLOWS</span> tab, click the <span class="highlight_txt">+</span>, select the <span class="highlight_txt">Broad Methods Repository</span>
+- The next page will ask you to sign in with a Google account. Click the <span class="highlight_txt">Sign in with Google</span> button and use your Terra login information to sign in. Accept terms of service.
 - Under <span class="highlight_txt">Public Methods</span>, select <span class="highlight_txt">GWAS-demo</span>
 - Click on <span class="highlight_txt">Export to Workspace</span>, select <span class="highlight_txt">Use Blank Configuration</span>, select your Terra workspace and click <span class="highlight_txt">Export to Workspace</span>
 - Click <span class="highlight_txt">Yes</span> to return to Terra
@@ -96,7 +97,11 @@ sample_name | this.sample_id
 - Specify the outputs by clicking <span class="highlight_txt">Use defaults</span> and <span class="highlight_txt">SAVE</span>
 - Finally, click <span class="highlight_txt">RUN ANALYSIS</span> and <span class="highlight_txt">LAUNCH</span>
 - The job will be added to the queue. Check the job manager to see if job is running.
-- Terra currently does not notify you when a job successfully runs or fails, so check the job manager for status updates. This example workflow takes ~15 minutes to complete.
+
+!!! tip
+
+    This example workflow takes 10-15 minutes to complete. However, the job may sit in the queue for a while before starting (anywhere from a few minutes to a few hours). Since Terra currently does not notify you (i.e., via email) when a job successfully, starts, completes, or fails, be sure to check the job manager for status updates.
+
 
 ### Step 5: Check outputs!
 
