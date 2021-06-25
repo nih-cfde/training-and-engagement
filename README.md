@@ -75,3 +75,11 @@ We welcome suggestions for improvements as well as tutorial topics. Submit all s
 <div>
  <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/A-Hands-On-Introduction-to-AWS:-December-1,-2020" target="_blank" rel="noopener" style="color:#336699;">Introduction to Amazon Web Services/Elastic Cloud Computing</a></div><i>Dec 1,&nbsp;2020 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
 </div>
+
+
+## Contributing
+Hello, and thank you for wanting to contribute to the CFDE Training website!
+
+By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](add link here). If you are OK with this condition, then we welcome both you and your contribution!
+
+If you have any questions about contributing, please open an issue and we will lend a hand ASAP.
