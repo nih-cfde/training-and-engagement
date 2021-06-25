@@ -2,13 +2,16 @@
 
 This repository builds the public training materials for the CFDE: https://training.nih-cfde.org
 
-The training websites hosts tutorials and resources to learn how to perform bioinformatic analyses and access data. The website also contains CFDE internal resources that includes the website style guide.
+The training websites hosts tutorials and resources to learn how to perform bioinformatic analyses and access data. The website also contains CFDE internal resources that includes the [website style guide].
+
+Check out our [wiki pages](https://github.com/nih-cfde/training-and-engagement/wiki) for past workshop notes, mini tutorials on setup and attendee resources for managing screen space.
+
+Find answers to frequently asked questions on popular topics like AWS, Conda, Snakemake, RNA-Seq etc on our [Discussion Board](https://github.com/nih-cfde/training-and-engagement/discussions). If you don't find your particular question listed, we encourage you to post a new discussion and we will ensure to answer it in reasonable timeframe.
 
 We welcome suggestions for improvements as well as tutorial topics. Submit all suggestions via CFDE HelpDesk: training@cfde.atlassian.net
 
 ## Workshops
 
-<p><div style="font-size:22px; font-style: italic">Check out our events calendar for <a href="https://www.nih-cfde.org/events/" target="_blank" rel="noopener" style="color:#336699;">upcoming workshops !</a></div></p>
 <div>
  <p><div style="font-size:22px; font-style: italic">Check out our events calendar for <a href="https://www.nih-cfde.org/events/" target="_blank" rel="noopener" style="color:#336699;">upcoming workshops !</a></div></p>
 </div>
