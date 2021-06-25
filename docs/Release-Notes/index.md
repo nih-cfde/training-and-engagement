@@ -19,4 +19,4 @@ Latest Release
 
 <span style="font-size:24px;">Website Features
 
-- Navbar titles: Reorganized the lessons into new topic based navbar titles
+- Navbar titles: Reorganized the lessons into new, topic-based navbar titles
