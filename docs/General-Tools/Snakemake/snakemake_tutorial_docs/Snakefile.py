@@ -26,7 +26,7 @@ rule index_genome_samtools:
 
 rule samtools_import:
     shell:
-        "samtools import ecoli-rel606.fa.fai SRR2584857.sam SRR2584857.bam"
+        "samtools view -bt ecoli-rel606.fa.fai -o SRR2584857.bam SRR2584857.sam"
 
 rule samtools_sort:
     shell:
