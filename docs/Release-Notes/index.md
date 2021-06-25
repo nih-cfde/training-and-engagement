@@ -15,7 +15,7 @@ Latest Release
 
 <span style="font-size:24px;">Updates and Fixes
 
-- [Snakemake](../General-Tools/Snakemake/index.md): Update code for samtools import and added notes on generating workflow DAG
+- [Snakemake](../General-Tools/Snakemake/index.md): Updated code for samtools import and added notes on generating workflow DAG
 
 <span style="font-size:24px;">Website Features
 
