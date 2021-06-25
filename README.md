@@ -6,7 +6,7 @@ The training websites hosts tutorials and resources to learn how to perform bioi
 
 Check out our [wiki pages](https://github.com/nih-cfde/training-and-engagement/wiki) for past workshop notes, mini tutorials on setup and attendee resources for managing screen space.
 
-Find answers to frequently asked questions on popular topics like AWS, Conda, Snakemake, RNA-Seq etc on our [Discussion Board](https://github.com/nih-cfde/training-and-engagement/discussions). If you don't find your particular question listed, we encourage you to post a new discussion and we will ensure to answer it in reasonable timeframe.
+Find answers to frequently asked questions on popular topics like AWS, Conda, Snakemake, RNA-Seq etc on our [Discussion Board](https://github.com/nih-cfde/training-and-engagement/discussions). If you don't find your particular question listed, we encourage you to post a new discussion and we will ensure to answer it as soon as we can.
 
 We welcome suggestions for improvements as well as tutorial topics. Submit all suggestions via CFDE HelpDesk: training@cfde.atlassian.net
 
