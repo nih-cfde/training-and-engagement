@@ -61,7 +61,11 @@ The channels are places where conda looks for packages. The default channel afte
 
 ```
 conda config --show channels
-conda list # get list of packages in base environment
+
+# get list of packages in base environment
+# shows channel, package version, and build number for each package
+# information for specifying packages (specific versions, builds, or default (latest))
+conda list | less -S 
 ```
 
 !!! note
