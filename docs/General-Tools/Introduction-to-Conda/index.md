@@ -23,10 +23,10 @@ Est. Time | Lesson name | Description
 !!! note "Learning Objectives"
 
     - Learn about conda and how to use it
-    - Learn the basics of software installation, software dependencies, and isolation environments
+    - Learn the basics of software installation, software dependencies, and isolated environments
+    - Set up a conda environment
     - Learn about managing virtual environments
     - Install Miniconda
-    - Set up a conda environment
 
 === "Prerequisites"
 
