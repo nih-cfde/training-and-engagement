@@ -36,4 +36,4 @@ In this tutorial, we will evaluate the difference between [pediatric **Medullobl
 
 **Ependymoma** is a broad group of tumors that often arises from lining of the ventricles in the brain. Ependymomas can also occur in the central canal in the spinal cord, with the anotomical distribution impacting prognosis.
 
-We will use the [Kids First Data Portal (KF Portal)](https://kidsfirstdrc.org) to build a virtual cohort of tumor samples of the two pediatric cancers. We will us the KF Portal to select pre-processed transcript abundance files, which we will then analyze on [Cavatica](https://cavatica.sbgenomics.com), the KF Portal's integrated cloud based platform.
+We will use the [Kids First Data Portal (KF Portal)](https://kidsfirstdrc.org) to build a virtual cohort of tumor samples of the two pediatric cancers. We will use the KF Portal to select pre-processed transcript abundance files, which we will then analyze on [Cavatica](https://cavatica.sbgenomics.com), the KF Portal's integrated cloud based platform.
