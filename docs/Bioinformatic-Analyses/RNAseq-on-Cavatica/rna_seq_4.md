@@ -86,7 +86,7 @@ To enable quick access to the filtered data without having to re-run all the met
 
 !!! tip "Tag Names"
 
-    While you can use any tag name you see fit, we recommend using **DGE-FILTER-DATA**, used in this lesson to match your screen with the lesson screenshots.
+    You can use any tag name you choose. In this lesson and in the screenshots, we use **DGE-FILTER-DATA**.
 
 * Click <span class="highlight_txt">Apply</span>. In case, you wish to remove the tag, use the <span class="highlight_txt">:fontawesome-solid-times:</span> in the tag name to delete.
 
