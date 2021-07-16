@@ -18,7 +18,7 @@ Files on the KF Portal are managed through different access levels. _Open access
 
 !!! info "KFDRC RNAseq Workflow"
 
-    The [Kids First RNAseq Workflow](https://github.com/kids-first/kf-rnaseq-workflow) uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files (controlled access) as input and generates multiple outputs including the Kallisto transcript quantification files. All the output files of this pipeline are available on the KF Portal as open access data. Due to access restrictions and computational intensiveness, this tutorial will not cover this workflow, but users with their own RNAseq data could consider starting here.
+    The [Kids First RNAseq Workflow](https://github.com/kids-first/kf-rnaseq-workflow) uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files (controlled access) as input and generates multiple outputs including the Kallisto transcript quantification files. All the output files of this pipeline are available on the KF Portal as open access data. Due to access restrictions and computational intensity, this tutorial will not cover the Kallisto workflow, but users with their own RNAseq data may consider starting from this point.
 
 ## Step 1: Filter for open access data
 
