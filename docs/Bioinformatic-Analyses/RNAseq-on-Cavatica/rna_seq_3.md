@@ -30,7 +30,7 @@ Files on the KF Portal are managed through different access levels. _Open access
 
 !!! note "Data Summary"
 
-    At the time this tutorial was written (January 2021), the portal contained a total of 88,728 files. Because new datasets are constantly uploaded to the KF Portal, exact numbers within your query may change slighly when run in the future.
+    At the time this tutorial was written (January 2021), the portal contained a total of 88,728 files. Because new datasets are constantly uploaded to the KF Portal, exact numbers within your query may change slightly when run in the future.
 
 * Select the <span class="highlight_txt">Access</span> filter listed under <span class="highlight_txt">FILE</span> field.
 * Select <span class="highlight_txt">Open</span> value.
