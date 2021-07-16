@@ -8,7 +8,7 @@ title: Analysis using Data Cruncher
 Analysis using Data Cruncher
 ==========================
 
-So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script, and generate reports and plots.
+So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script to generate reports and plots.
 
 !!! note "DGE Tools"
 
@@ -56,7 +56,7 @@ The editor is associated with a directory structure to help you navigate the wor
 
 * **workspace** is the default working directory for the analysis. You can use the RStudio <span class="highlight_txt">Upload</span> option to get files from your local computer to the workspace.
 * **output-files** can be used as the directory to save all the outputs from your analysis. If not specified, the files are saved to workspace.
-* **project-files** is the directory containing all the input files from the current project. Since it is a read only file system, no changes can be made to these files via the editor interface.
+* **project-files** is the directory containing all the input files from the current project. Because it is a read only file system, no changes can be made to these files via the editor interface.
 
 <a name="upload"></a>
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_uennaoay&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=33&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_77fny8c6" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
@@ -71,10 +71,9 @@ The Data Cruncher comes with a set of libraries that are pre-installed. These va
 
     Although the output files, the environment, and history of the session are saved upon stopping the analysis editor, any installed libraries are only good for the session and must be re-installed for every restart of the instance.
 
-
 ## Step 3: Run analysis script <a name="R-code"></a>
 
-You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option and save the file: </br>
+You will need to download an analysis script for this step. We have provided you with the option to download two versions of the analysis script based on your choice of execution in RStudio. Click on your preferred option and save the file: </br>
 
  (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R)</br>
  (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R).
@@ -161,8 +160,8 @@ This concludes the RNAseq on Cavatica tutorial. We hope that you found the tutor
 
 !!! note " Key Points"
 
-    * [Kids First Portal](https://kidsfirstdrc.org) is the go to resource for pediatric cancer & structural birth defects datasets.
-    * Data to analysis in one step using [Cavatica](cavatica.sbgenomics.com), the cloud based analysis platform integrated into Kids First Portal.
+    * The [Kids First Portal](https://kidsfirstdrc.org) is the go-to resource for pediatric cancer & structural birth defects datasets.
+    * Examine data and run analyses using [Cavatica](cavatica.sbgenomics.com), the cloud based analysis platform integrated into Kids First Portal.
     * You can filter, view, and download data from Cavatica.
     * Upload data to Cavatica from multiple sources including your local machine.
     * You can search, copy, and modify a public app on Cavatica.

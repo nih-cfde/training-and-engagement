@@ -24,7 +24,7 @@ Cavatica offers DESeq2 as a stand alone public app which consists of a [Common W
 !!! info "Terminology"
 
     * Count data - represents the number of sequence reads that originated from a particular gene
-    * Dispersion - a measure of spread or variability in the data. DESeq2 dispersion estimates are inversely related to the mean and directly related to variance
+    * Dispersion - a measure of spread or variability in the data; DESeq2 dispersion estimates are inversely related to the mean and directly related to variance
     * LFC - log2 fold change
 
 ## Step 1: Search & copy DESeq2 app
@@ -79,7 +79,7 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
 
 A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1) files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html), another Bioconductor package, is utilized to obtain the gene level summary.  
 
-* Navigate to the <span class="highlight_txt">Files</span> tab and edit the metadata columns to show Reference genome column. To do so, click on the <span class="highlight_txt">:fontawesome-solid-columns:</span> icon and select <span class="highlight_txt">Reference genome</span>. All files in this dataset used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
+* Navigate to the <span class="highlight_txt">Files</span> tab and edit the metadata columns to show Reference genome column. To do so, click on the <span class="highlight_txt">:fontawesome-solid-columns:</span> icon and select <span class="highlight_txt">Reference genome</span>. All files in this dataset used the GRCh38 (hg38) _Homo sapiens_ genome assembly released by Genome Reference Consortium.
 * Click on <span class="highlight_txt">Data</span> drop down menu and click on <span class="highlight_txt">Public Reference Files</span>.
 * This takes you to a new page for <span class="highlight_txt">Public Files</span>.
 * Click on <span class="highlight_txt">Type: All</span> button to bring a drop down list and select **GTF**.

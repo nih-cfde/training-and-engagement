@@ -25,12 +25,12 @@ Analysis with DESeq2 Public App
 * **Control variables** represent potential confounders in the data that need to be controlled in the test for differential expression. You can add more than one variable as values for this field by using the <span class="highlight_txt">:fontawesome-solid-plus:</span> button. In this tutorial, **tumor_location** and **diagnosis_age_range** are two metadata variables which contribute to additional biological variability in the expression levels of the genes.
 * Input the column name from the uploaded phenotype file for **Covariate of interest** which captures the experimental groups we are interested in pairwise comparison. In this tutorial, **histology** designates the two different pediatric cancers that we wish to compare.
 * The default value for **FDR cutoff** is set at 0.1. Set the FDR, or false discovery rate to **0.05**, which means that the proportion of false positives we expect amongst the differentially expressed genes is 5%.
-* **Factor level - reference** represents the denominator for the log2 fold change (LFC) i.e what condition/group do we compare against.  Enter **Ependymoma** as the reference factor. Changing the order of the reference or test factor level results in reversal of direction of log fold change.
+* **Factor level - reference** represents the denominator for the log2 fold change (LFC) i.e what condition/group do we compare against. Enter **Ependymoma** as the reference factor. Changing the order of the reference or test factor level results in reversal of direction of log fold change.
 * **Factor level - test** represents the numerator for the LFC. Enter **Medulloblastoma** as the test factor.
 * Select the **Quantification tool** used to calculate transcript abundance from the drop down menu. The expression data for our data were generated using **kallisto**.
 * **IgnoreTxVersion** is a function in `tximport` package designed to ignore transcript version number. Set it to **True**.
 * DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. Although, using LFC shrinkage does not impact the total number of genes that are identified as being significantly differentially expressed, it is useful for downstream assessment of results. Set the **log2 fold change shrinkage** to **True**.
-* Click <span class="highlight_txt">:fontawesome-solid-play: Run</span> on the right hand corner to initiate the analysis
+* Click <span class="highlight_txt">:fontawesome-solid-play: Run</span> on the right hand corner to initiate the analysis.
 
 !!! note "Default Settings"
 
@@ -85,13 +85,13 @@ These results are visualized in a MA plot which shows the mean of the normalized
 
 ### Normalized counts
 
-It is in TXT format with name {Analysis title}.raw_counts.txt. This contains the counts normalized using the estimates sample-specific normalization factors.
+These are in TXT format with name {Analysis title}.raw_counts.txt. It contains the counts normalized using the estimates sample-specific normalization factors.
 
 ![Normalized counts](../rna-seq-images/rna-seq-7-6.png "Normalized counts")
 
 ### RData files
 
-It is a R workspace image with name {Analysis title}.env.RData. This contains all the app-defined objects including vectors, matrices, dataframes, lists and functions from the R working environment.
+This is a R workspace image with name {Analysis title}.env.RData. It contains all the app-defined objects including vectors, matrices, dataframes, lists and functions from the R working environment.
 
 ## Step 4: Tag & download analysis outputs
 
