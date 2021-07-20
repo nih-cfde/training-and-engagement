@@ -18,7 +18,7 @@ RNAseq data can be used to study the **transcriptome**, a collection of all the 
 
 A typical RNAseq workflow is highlighted in the schematic diagram below. The orange boxes highlight the steps you will do in this tutorial!
 
-![RNAseq workflow](../rna-seq-images/rna-seq-workflow.jpeg "RNAseq workflow")
+![RNAseq workflow](./rna-seq-images/rna-seq-workflow.jpeg "RNAseq workflow")
 
 The first steps involve extraction, purification, and quality checks of RNA from the biological samples, followed by library preparation to convert the RNA to cDNA (complimentary DNA) fragments which are then sequenced on a high-throughput sequencer.
 

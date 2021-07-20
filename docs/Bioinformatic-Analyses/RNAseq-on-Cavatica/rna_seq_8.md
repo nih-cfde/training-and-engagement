@@ -95,15 +95,15 @@ Upload the script file to the **workspace** directory. View the upload steps in 
 
 To get started, click on the down arrow next to <span class="highlight_txt">Source</span> and click <span class="highlight_txt">Source with Echo</span>. This will print the comments as the code is executed.
 
-![Source with Echo](../rna-seq-images/rna-seq-8-1.png "Source with Echo")
+![Source with Echo](./rna-seq-images/rna-seq-8-1.png "Source with Echo")
 
 This process will take about 15-20 minutes. Once completed, you will get a popup window asking to try to open the html report. Click <span class="highlight_txt">Try Again</span> to open a new tab for the report.
 
-![Popup window](../rna-seq-images/rna-seq-8-2.png "Popup window")
+![Popup window](./rna-seq-images/rna-seq-8-2.png "Popup window")
 
 Alternatively, you can click <span class="highlight_txt">Cancel</span> in the popup window and subsequently click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> to view the files in your project folder.
 
-![Stop analysis](../rna-seq-images/rna-seq-8-3.png "Stop analysis")
+![Stop analysis](./rna-seq-images/rna-seq-8-3.png "Stop analysis")
 
 For costs and time comparison between the two approaches, we use the automated version with the option to view the output files in the project folder which took 25 minutes to run and cost $0.2. You are now ready to view your output. Go to **[Step 4](#step4)**.
 
@@ -114,7 +114,7 @@ You can also execute the code by selecting a line or multiple lines of code and 
 
 The first step is installing the packages necessary for DGE analysis and this takes approximately 17 minutes. Highlight the package install section as shown in the image below and click <span class="highlight_txt">Run</span>.
 
-![Use Run](../rna-seq-images/rna-seq-8-4.png "Use Run")
+![Use Run](./rna-seq-images/rna-seq-8-4.png "Use Run")
 
 This version includes the Bioconductor package [`pcaExplorer`](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2879-1), which provides interactive visualization of RNAseq datasets based on [Principal Components Analysis](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
 
@@ -131,7 +131,7 @@ When you are finished running the R script, click <span class="highlight_txt">:f
      * Login to Cavatica in a new tab or window.
      * Navigate to the data cruncher session via either the <span class="highlight_txt">Interactive Analysis</span> tab or using the `ANALYSES` pane in your project home page.
 
-     ![Data Cruncher quick access](../rna-seq-images/rna-seq-8-5.png "Data Cruncher quick access"){: width=70%}
+     ![Data Cruncher quick access](./rna-seq-images/rna-seq-8-5.png "Data Cruncher quick access"){: width=70%}
 
     * Click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> on the session page.
 
@@ -139,7 +139,7 @@ When you are finished running the R script, click <span class="highlight_txt">:f
 
 All the session files and the generated outputs are saved after the analysis is stopped and are accessible on the session page.
 
-![Output Files](../rna-seq-images/rna-seq-8-6.png "Output Files")
+![Output Files](./rna-seq-images/rna-seq-8-6.png "Output Files")
 
 The tag for the session changes from {==RUNNING==} to {==SAVED==}. Similar to the DESeq2 app, four output files are generated:
 
@@ -161,7 +161,7 @@ This concludes the RNAseq on Cavatica tutorial. We hope that you found the tutor
 !!! note " Key Points"
 
     * The [Kids First Portal](https://kidsfirstdrc.org) is the go-to resource for pediatric cancer & structural birth defects datasets.
-    * Examine data and run analyses using [Cavatica](cavatica.sbgenomics.com), the cloud based analysis platform integrated into Kids First Portal.
+    * Examine data and run analyses using [Cavatica](cavatica.sbgenomics.com){:target="_blank"}, the cloud based analysis platform integrated into Kids First Portal.
     * You can filter, view, and download data from Cavatica.
     * Upload data to Cavatica from multiple sources including your local machine.
     * You can search, copy, and modify a public app on Cavatica.

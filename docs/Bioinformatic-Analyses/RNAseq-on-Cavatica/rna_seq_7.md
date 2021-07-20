@@ -52,7 +52,7 @@ The generated output are listed under the Outputs section:
 
 It is an output file with name {Analysis title}.out.csv in CSV format. This is generated using the `results()` function in DESeq2 package and contains gene level statistics.
 
-![DESeq2 results table](../rna-seq-images/rna-seq-7-1.png "DESeq2 results table")
+![DESeq2 results table](./rna-seq-images/rna-seq-7-1.png "DESeq2 results table")
 
 Column Header | Description |
 | :--- | :-------- |
@@ -67,27 +67,27 @@ Column Header | Description |
 
 The file with name {Analysis title}.{deseq2_app_version}.summary_report.b64html is a summary report. This report contains information on the inputs, plots from exploratory analysis, details of the DGE analysis along with the R Session info which includes a list of all the packages along with the version number for reproducibility.
 
-![DESeq2 report](../rna-seq-images/rna-seq-7-2.png "DESeq2 report")
+![DESeq2 report](./rna-seq-images/rna-seq-7-2.png "DESeq2 report")
 
 One of the plots under the exploratory analysis section is the principal component analysis (PCA) plot based on the expression values. PCA is a technique used to emphasize variation and highlight patterns in a dataset. To learn more, we encourage you to explore [StatQuest's video on PCA](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
 
 In the dataset used in this analysis, we observe the separation of the data along x-axis (PC1) is greater than separation of data along y-axis (PC2) indicating that the between-group variation is greater than the within-group variation.
 
-![PCA plot](../rna-seq-images/rna-seq-7-3.png "PCA plot")
+![PCA plot](./rna-seq-images/rna-seq-7-3.png "PCA plot")
 
 A summary of the DGE analysis indicates that 10,830 genes are upregulated and 8,591 genes are downregulated in Medulloblastoma when compared to Ependymoma pediatric cancer.
 
-![Analysis summary](../rna-seq-images/rna-seq-7-4.png "Analysis summary")
+![Analysis summary](./rna-seq-images/rna-seq-7-4.png "Analysis summary")
 
 These results are visualized in a MA plot which shows the mean of the normalized counts versus the LFC for all genes tested. The red colored dots represent genes that are significantly differentially expressed between the two cancer types.
 
-![MA plot](../rna-seq-images/rna-seq-7-5.png "MA plot")
+![MA plot](./rna-seq-images/rna-seq-7-5.png "MA plot")
 
 ### Normalized counts
 
 These are in TXT format with name {Analysis title}.raw_counts.txt. It contains the counts normalized using the estimates sample-specific normalization factors.
 
-![Normalized counts](../rna-seq-images/rna-seq-7-6.png "Normalized counts")
+![Normalized counts](./rna-seq-images/rna-seq-7-6.png "Normalized counts")
 
 ### RData files
 

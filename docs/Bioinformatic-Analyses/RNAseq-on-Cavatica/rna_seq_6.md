@@ -17,11 +17,11 @@ The DESeq2 app requires **Phenotype data** input file in CSV format with the Sam
 
 * The default column order of the downloaded metadata manifest had **id** in the first column.
 
-![Default column order](../rna-seq-images/rna-seq-6-1.png "Default column order")
+![Default column order](./rna-seq-images/rna-seq-6-1.png "Default column order")
 
 * Rearrange the order by using cut/insert to move the **sample_id** to the first column.
 
-![Reorder column order](../rna-seq-images/rna-seq-6-2.png "Reorder column order")
+![Reorder column order](./rna-seq-images/rna-seq-6-2.png "Reorder column order")
 
 ## Step 2: Convert age at diagnosis to intervals
 
@@ -33,7 +33,7 @@ The unit for **age_at_diagnosis** is in days with wide spread of values across t
 =ROUND(N2/365,3)
 ```
 
-![Age at diagnosis in years](../rna-seq-images/rna-seq-6-3.png "Age at diagnosis in years")
+![Age at diagnosis in years](./rna-seq-images/rna-seq-6-3.png "Age at diagnosis in years")
 
 * Sort the newly created column from largest to smallest value.
 * The data indicates one biospecimen (BS_BA6AZWB3) was collected from a patient at 36.5 yrs of age, who is considered an adult. Because we are studying the difference between pediatric cancers types, we will remove this entry by deleting it from the table, leaving 49 rows.
@@ -44,7 +44,7 @@ The unit for **age_at_diagnosis** is in days with wide spread of values across t
 =LOOKUP(Z2,{0,5,10,15},{"0-5","5-10","10-15","15-20"})
 ```
 
-![Diagnosis age range](../rna-seq-images/rna-seq-6-4.png "Diagnosis age range")
+![Diagnosis age range](./rna-seq-images/rna-seq-6-4.png "Diagnosis age range")
 
 !!! note "Column Names"
 
@@ -63,26 +63,26 @@ The unit for **age_at_diagnosis** is in days with wide spread of values across t
 
 * Access the <span class="highlight_txt">Files</span> tab in your project folder on Cavatica and click the <span class="highlight_txt">:fontawesome-solid-plus: Add files</span>.
 
-![Add files](../rna-seq-images/rna-seq-6-5.png "Add files")
+![Add files](./rna-seq-images/rna-seq-6-5.png "Add files")
 
 * Select <span class="highlight_txt">Your Computer</span> as source to add files. You can either browse files or Drag & drop files from your local system.
 
-![Choose Your Computer](../rna-seq-images/rna-seq-6-6.png "Choose Your Computer")
+![Choose Your Computer](./rna-seq-images/rna-seq-6-6.png "Choose Your Computer")
 
 * Click on <span class="highlight_txt">Start upload</span> to add the files to Cavatica.
 
-![Start upload](../rna-seq-images/rna-seq-6-7.png "Start upload")
+![Start upload](./rna-seq-images/rna-seq-6-7.png "Start upload")
 
 * Successful upload results in a popup box and Status updated to {==UPLOADED==}. Click on the <span class="highlight_txt">:fontawesome-solid-times:</span> on the top right hand corner.
 
-![Successful upload](../rna-seq-images/rna-seq-6-8.png "Successful  upload")
+![Successful upload](./rna-seq-images/rna-seq-6-8.png "Successful  upload")
 
 * Navigate back to the <span class="highlight_txt">Files</span> tab in your project folder and select <span class="highlight_txt">Type: CSV</span> to confirm the upload.
 
-![Check upload](../rna-seq-images/rna-seq-6-9.png "Check upload")
+![Check upload](./rna-seq-images/rna-seq-6-9.png "Check upload")
 
 * Click on the file name to preview the contents of the phenotype file.
 
-![Preview csv file](../rna-seq-images/rna-seq-6-10.png "Preview csv file")
+![Preview csv file](./rna-seq-images/rna-seq-6-10.png "Preview csv file")
 
 We have completed all the initial setup necessary and are now ready to run the DESeq2 app for DGE analysis. Continue to the next lesson to learn more!
