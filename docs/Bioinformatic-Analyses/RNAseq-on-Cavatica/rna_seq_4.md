@@ -70,7 +70,7 @@ The `tumor_location` metadata column has some values that include multiple anato
 
 ![tumor_location filter](./rna-seq-images/18_Cavatica.png "tumor_location filter")
 
-This results in total of 50 files from our initial 98 copied files.
+This results in total of 50 files from our initial 99 copied files.
 
 ## Step 3: Create tags & download filtered dataset
 
