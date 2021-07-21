@@ -73,6 +73,13 @@ The Data Cruncher comes with a set of libraries that are pre-installed. These va
 
 ## Step 3: Run analysis script <a name="R-code"></a>
 
+!!! important "Network settings"
+
+    To enable download of packages included in the analysis scripts via internet, it is important to ensure the network access is set to On. Click on <span class="highlight_txt">Settings</span> within your project folder and select <span class="highlight_txt">Allow network access</span> box.
+
+     ![Network Access](./rna-seq-images/rna-seq-8-0.png "Network Access")
+
+
 You will need to download an analysis script for this step. We have provided you with the option to download two versions of the analysis script based on your choice of execution in RStudio. Click on your preferred option and save the file: </br>
 
  (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R)</br>
