@@ -123,7 +123,7 @@ The first step is installing the packages necessary for DGE analysis and this ta
 
 ![Use Run](./rna-seq-images/rna-seq-8-4.png "Use Run")
 
-This version includes the Bioconductor package [`pcaExplorer`](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2879-1), which provides interactive visualization of RNAseq datasets based on [Principal Components Analysis](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
+This version includes the Bioconductor package [`pcaExplorer`](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2879-1), which provides interactive visualization of RNA-Seq datasets based on [Principal Components Analysis](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
 
 After running **lines 1-99** of the R script, you should see an interactive output from the `pcaExplorer()` command. Watch the video below to learn how to use `pcaExplorer` for the filtered cancer dataset.
 
@@ -163,7 +163,7 @@ All the files are clickable for preview on Cavatica. You can either download ind
 
 ## Conclusion
 
-This concludes the RNAseq on Cavatica tutorial. We hope that you found the tutorial helpful and will continue to use cloud computing for your analysis!
+This concludes the RNA-Seq on Cavatica tutorial. We hope that you found the tutorial helpful and will continue to use cloud computing for your analysis!
 
 !!! note " Key Points"
 
