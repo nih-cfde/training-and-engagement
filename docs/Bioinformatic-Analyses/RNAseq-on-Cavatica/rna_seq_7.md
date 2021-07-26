@@ -29,7 +29,7 @@ Analysis with DESeq2 Public App
 * **Factor level - test** represents the numerator for the LFC. Enter **Medulloblastoma** as the test factor.
 * Select the **Quantification tool** used to calculate transcript abundance from the drop down menu. The expression data for our data were generated using **kallisto**.
 * **IgnoreTxVersion** is a function in `tximport` package designed to ignore transcript version number. Set it to **True**.
-* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. Although, using LFC shrinkage does not impact the total number of genes that are identified as being significantly differentially expressed, it is useful for downstream assessment of results. Set the **log2 fold change shrinkage** to **True**.
+* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. LFC shrinkage tampers down any non-informative differences in the small count gene while the large fold changes from genes with lots of statistical information are not shrunk. This allows for comparing all estimated LFC across experiments. Set the **log2 fold change shrinkage** to **True**.
 * Click <span class="highlight_txt">:fontawesome-solid-play: Run</span> on the right hand corner to initiate the analysis.
 
 !!! note "Default Settings"
