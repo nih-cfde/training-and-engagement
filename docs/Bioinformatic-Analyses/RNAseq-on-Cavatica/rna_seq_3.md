@@ -12,13 +12,13 @@ The [Gabriella Miller Kids First Pediatric Data Portal (KF Portal)](https://kids
 
 !!! tip "Kids First Data Portal"
 
-    Check out our lessons on Kids First to learn more about the [different Data Portal features](../../Common-Fund-Tools/Kids-First/Exploring-Data-in-the-KF-Portal/KF_5_Explore.md) and [building simple to complex queries](../../Common-Fund-Tools/Kids-First/Advanced-KF-Portal-Queries/KF_9_AdvancedQuery.md).
+    Check out our lessons on Kids First to learn more about the [different Data Portal features](../../Common-Fund-Tools/Kids-First/Exploring-Data-in-the-KF-Portal/KF_5_Explore.md){:target="_blank"} and [building simple to complex queries](../../Common-Fund-Tools/Kids-First/Advanced-KF-Portal-Queries/KF_9_AdvancedQuery.md){:target="_blank"}.
 
-Files on the KF Portal are managed through different access levels. _Open access_ files (including processed files of somatic samples) can be viewed and downloaded by any user. _Controlled access_ files (including raw sequencing files and imaging data) require approvals through dbGaP. For this tutorial, we will use **open access pre-processed files** generated using [Kallisto (v0.43.1)](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1), which uses pseudoalignments to quantify transcript abundance from raw data.
+Files on the KF Portal are managed through different access levels. _Open access_ files (including processed files of somatic samples) can be viewed and downloaded by any user. _Controlled access_ files (including raw sequencing files and imaging data) require approvals through dbGaP. For this tutorial, we will use **open access pre-processed files** generated using [Kallisto (v0.43.1)](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1){:target="_blank"}, which uses pseudoalignments to quantify transcript abundance from raw data.
 
 !!! info "KFDRC RNA-Seq Workflow"
 
-    The [Kids First RNA-Seq Workflow](https://github.com/kids-first/kf-RNA-Seq-workflow) uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files (controlled access) as input and generates multiple outputs including the Kallisto transcript quantification files. All the output files of this pipeline are available on the KF Portal as open access data. Due to access restrictions and computational intensity, this tutorial will not cover the Kallisto workflow, but users with their own RNA-Seq data may consider starting from this point.
+    The [Kids First RNA-Seq Workflow](https://github.com/kids-first/kf-rnaseq-workflow){:target="_blank"} uses multiple tools/packages for expression detection and fusion calls. The workflow requires raw FASTQ files (controlled access) as input and generates multiple outputs including the Kallisto transcript quantification files. All the output files of this pipeline are available on the KF Portal as open access data. Due to access restrictions and computational intensity, this tutorial will not cover the Kallisto workflow, but users with their own RNA-Seq data may consider starting from this point.
 
 ## Step 1: Filter for open access data
 
