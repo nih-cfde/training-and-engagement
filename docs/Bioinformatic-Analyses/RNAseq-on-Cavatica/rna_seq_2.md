@@ -26,7 +26,7 @@ The generated raw reads are quality checked and aligned against either a referen
 
 !!! info "RNA-Seq Resources"
 
-    Learn more about RNA-Seq through this [video tutorial by StatQuest](https://www.youtube.com/watch?v=tlf6wYJrwKY&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=1). You can also follow this [end to end RNA-Seq workflow](https://www.bioconductor.org/packages/devel/workflows/vignettes/RNA-SeqGene/inst/doc/RNA-SeqGene.html) that uses well known [Bioconductor packages](http://bioconductor.org).
+    Learn more about RNA-Seq through this [video tutorial by StatQuest](https://www.youtube.com/watch?v=tlf6wYJrwKY&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=1). You can also follow this [end to end RNA-Seq workflow](https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html) that uses well known [Bioconductor packages](http://bioconductor.org).
 
 <span style="font-size:24px;">Experimental Plan
 
