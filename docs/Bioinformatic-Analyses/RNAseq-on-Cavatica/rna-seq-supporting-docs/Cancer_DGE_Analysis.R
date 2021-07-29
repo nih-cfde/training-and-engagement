@@ -63,8 +63,7 @@ names(files) <- pheno_data$sample_id
 head(files)
 txi_sum <- tximport(files,
                     type="kallisto",
-                    tx2gene=tx2gene,
-                    ignoreTxVersion = TRUE)
+                    tx2gene=tx2gene)
 names(txi_sum)
 head(txi_sum$counts)
 

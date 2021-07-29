@@ -55,8 +55,7 @@ files <- file.path(data_dir, pheno_data$name)
 names(files) <- pheno_data$sample_id
 txi_sum <- tximport(files,
                     type="kallisto",
-                    tx2gene=tx2gene,
-                    ignoreTxVersion = TRUE)
+                    tx2gene=tx2gene)
 
 # DESeq2 import and analysis####
 
