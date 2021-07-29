@@ -28,7 +28,7 @@ Analysis with DESeq2 Public App
 * **Factor level - reference** represents the denominator for the log2 fold change (LFC) i.e what condition/group do we compare against. Enter **Ependymoma** as the reference factor. Changing the order of the reference or test factor level results in reversal of direction of log fold change.
 * **Factor level - test** represents the numerator for the LFC. Enter **Medulloblastoma** as the test factor.
 * Select the **Quantification tool** used to calculate transcript abundance from the drop down menu. The expression data for our data were generated using **kallisto**.
-* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. LFC shrinkage tampers down any non-informative differences in the small count gene while the large fold changes from genes with lots of statistical information are not shrunk. This allows for comparing all estimated LFC across experiments. Set the **log2 fold change shrinkage** to **True**.
+* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. LFC shrinkage is useful for visualization and ranking of genes. Set the **log2 fold change shrinkage** to **True**.
 * Click <span class="highlight_txt">:fontawesome-solid-play: Run</span> on the right hand corner to initiate the analysis.
 
 !!! note "Default Settings"
