@@ -1,0 +1,6 @@
+nav:
+  - index.md
+  - Setting up GCP account: gcp1.md
+  - Setting up a GCP Instance: gcp2.md
+  - Example 1-BLAST Analysis: gcp3.md
+  - Example 2-Download SRA Data: gcp4.md
