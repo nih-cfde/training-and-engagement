@@ -8,7 +8,7 @@ title: Analysis using Data Cruncher
 Analysis using Data Cruncher
 ==========================
 
-So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script, and generate reports and plots.
+So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script to generate reports and plots.
 
 !!! note "DGE Tools"
 
@@ -56,7 +56,7 @@ The editor is associated with a directory structure to help you navigate the wor
 
 * **workspace** is the default working directory for the analysis. You can use the RStudio <span class="highlight_txt">Upload</span> option to get files from your local computer to the workspace.
 * **output-files** can be used as the directory to save all the outputs from your analysis. If not specified, the files are saved to workspace.
-* **project-files** is the directory containing all the input files from the current project. Since it is a read only file system, no changes can be made to these files via the editor interface.
+* **project-files** is the directory containing all the input files from the current project. Because it is a read only file system, no changes can be made to these files via the editor interface.
 
 <a name="upload"></a>
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_uennaoay&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=33&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_77fny8c6" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
@@ -71,10 +71,16 @@ The Data Cruncher comes with a set of libraries that are pre-installed. These va
 
     Although the output files, the environment, and history of the session are saved upon stopping the analysis editor, any installed libraries are only good for the session and must be re-installed for every restart of the instance.
 
-
 ## Step 3: Run analysis script <a name="R-code"></a>
 
-You will need to download an analysis script for this step. We provide you with the option to download two versions of the analysis script based on choice of execution in RStudio. Click on your preferred option and save the file: </br>
+!!! important "Network settings"
+
+    To enable download of packages included in the analysis scripts via internet, it is important to ensure the network access is set to On. Click on <span class="highlight_txt">Settings</span> within your project folder and select <span class="highlight_txt">Allow network access</span> box.
+
+     ![Network Access](./rna-seq-images/rna-seq-8-0.png "Network Access")
+
+
+You will need to download an analysis script for this step. We have provided you with the option to download two versions of the analysis script based on your choice of execution in RStudio. Click on your preferred option and save the file: </br>
 
  (a) [version to execute automatically using `Source`](./rna-seq-supporting-docs/Cancer_DGE_Analysis_Automate.R)</br>
  (b) [version to execute the code in chunks using the `Run` option](./rna-seq-supporting-docs/Cancer_DGE_Analysis.R).
@@ -96,15 +102,15 @@ Upload the script file to the **workspace** directory. View the upload steps in 
 
 To get started, click on the down arrow next to <span class="highlight_txt">Source</span> and click <span class="highlight_txt">Source with Echo</span>. This will print the comments as the code is executed.
 
-![Source with Echo](../rna-seq-images/rna-seq-8-1.png "Source with Echo")
+![Source with Echo](./rna-seq-images/rna-seq-8-1.png "Source with Echo")
 
 This process will take about 15-20 minutes. Once completed, you will get a popup window asking to try to open the html report. Click <span class="highlight_txt">Try Again</span> to open a new tab for the report.
 
-![Popup window](../rna-seq-images/rna-seq-8-2.png "Popup window")
+![Popup window](./rna-seq-images/rna-seq-8-2.png "Popup window")
 
 Alternatively, you can click <span class="highlight_txt">Cancel</span> in the popup window and subsequently click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> to view the files in your project folder.
 
-![Stop analysis](../rna-seq-images/rna-seq-8-3.png "Stop analysis")
+![Stop analysis](./rna-seq-images/rna-seq-8-3.png "Stop analysis")
 
 For costs and time comparison between the two approaches, we use the automated version with the option to view the output files in the project folder which took 25 minutes to run and cost $0.2. You are now ready to view your output. Go to **[Step 4](#step4)**.
 
@@ -115,9 +121,9 @@ You can also execute the code by selecting a line or multiple lines of code and 
 
 The first step is installing the packages necessary for DGE analysis and this takes approximately 17 minutes. Highlight the package install section as shown in the image below and click <span class="highlight_txt">Run</span>.
 
-![Use Run](../rna-seq-images/rna-seq-8-4.png "Use Run")
+![Use Run](./rna-seq-images/rna-seq-8-4.png "Use Run")
 
-This version includes the Bioconductor package [`pcaExplorer`](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2879-1), which provides interactive visualization of RNAseq datasets based on [Principal Components Analysis](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
+This version includes the Bioconductor package [`pcaExplorer`](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2879-1), which provides interactive visualization of RNA-Seq datasets based on [Principal Components Analysis](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
 
 After running **lines 1-99** of the R script, you should see an interactive output from the `pcaExplorer()` command. Watch the video below to learn how to use `pcaExplorer` for the filtered cancer dataset.
 
@@ -132,7 +138,7 @@ When you are finished running the R script, click <span class="highlight_txt">:f
      * Login to Cavatica in a new tab or window.
      * Navigate to the data cruncher session via either the <span class="highlight_txt">Interactive Analysis</span> tab or using the `ANALYSES` pane in your project home page.
 
-     ![Data Cruncher quick access](../rna-seq-images/rna-seq-8-5.png "Data Cruncher quick access"){: width=70%}
+     ![Data Cruncher quick access](./rna-seq-images/rna-seq-8-5.png "Data Cruncher quick access"){: width=70%}
 
     * Click <span class="highlight_txt">:fontawesome-solid-stop: Stop</span> on the session page.
 
@@ -140,7 +146,7 @@ When you are finished running the R script, click <span class="highlight_txt">:f
 
 All the session files and the generated outputs are saved after the analysis is stopped and are accessible on the session page.
 
-![Output Files](../rna-seq-images/rna-seq-8-6.png "Output Files")
+![Output Files](./rna-seq-images/rna-seq-8-6.png "Output Files")
 
 The tag for the session changes from {==RUNNING==} to {==SAVED==}. Similar to the DESeq2 app, four output files are generated:
 
@@ -157,12 +163,12 @@ All the files are clickable for preview on Cavatica. You can either download ind
 
 ## Conclusion
 
-This concludes the RNAseq on Cavatica tutorial. We hope that you found the tutorial helpful and will continue to use cloud computing for your analysis!
+This concludes the RNA-Seq on Cavatica tutorial. We hope that you found the tutorial helpful and will continue to use cloud computing for your analysis!
 
 !!! note " Key Points"
 
-    * [Kids First Portal](https://kidsfirstdrc.org) is the go to resource for pediatric cancer & structural birth defects datasets.
-    * Data to analysis in one step using [Cavatica](cavatica.sbgenomics.com), the cloud based analysis platform integrated into Kids First Portal.
+    * The [Kids First Portal](https://kidsfirstdrc.org) is the go-to resource for pediatric cancer & structural birth defects datasets.
+    * Examine data and run analyses using [Cavatica](cavatica.sbgenomics.com){:target="_blank"}, the cloud based analysis platform integrated into Kids First Portal.
     * You can filter, view, and download data from Cavatica.
     * Upload data to Cavatica from multiple sources including your local machine.
     * You can search, copy, and modify a public app on Cavatica.

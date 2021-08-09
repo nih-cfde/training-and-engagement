@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RNAseq Tutorial Overview
+title: RNA-Seq Tutorial Overview
 hide:
   - toc
 ---
@@ -10,12 +10,12 @@ hide:
 Differential Gene Expression Analysis on Cavatica Cloud Platform
 ============================================
 
-**RNA sequencing (RNAseq)** is a high throughput technique that provides qualitative and quantitative information about RNA biology including transcriptome-wide expression quantification, discovery of novel genes and gene isoforms, and differential expression.
+**RNA sequencing (RNA-Seq)** is a high throughput technique that provides qualitative and quantitative information about RNA biology including transcriptome-wide expression quantification, discovery of novel genes and gene isoforms, and differential expression.
 
 The goal of this tutorial is to enable you to: </br>
 
 1. create virtual cancer cohorts using the NIH Common Fund-supported Gabriella Miller Kids First Data Portal (KF Portal). </br>
-2. analyze the differential gene expression (DGE) on Cavatica, an integrated cloud based platform.
+2. analyze differential gene expression (DGE) on Cavatica, an integrated cloud based platform.
 
 You will learn two different approaches for DGE analysis using open access human cancer data on Cavatica: **(a)** using a public workflow app and **(b)** running code from an analysis script on an instance with RStudio computational environment.
 
@@ -23,8 +23,8 @@ You will learn two different approaches for DGE analysis using open access human
 
 | Est. Time| Lesson Name | Description|
 | ---|--------|--------|
-| 10 mins |[An Introduction to RNAseq](./rna_seq_2.md)| Background about RNAseq
-| 20 mins |[Selecting Kids First Cancer Cohort](./rna_seq_3.md)| Select Kids First open access cancer RNAseq files and push to Cavatica  |
+| 10 mins |[An Introduction to RNA-Seq](./rna_seq_2.md)| Background about RNA-Seq
+| 20 mins |[Selecting Kids First Cancer Cohort](./rna_seq_3.md)| Select Kids First open access cancer RNA-Seq files and push to Cavatica  |
 | 20 mins |[Cavatica - View, Filter, Tag and Download](./rna_seq_4.md) | Filter imported data, tag and download relevant metadata from Cavatica |
 | 20 mins |[Setup DESeq2 Public App](./rna_seq_5.md)| Setting up the workflow app based on DESeq2 on Cavatica |
 | 15 mins |[Phenotype File and Upload to Cavatica](./rna_seq_6.md) | Reformat metadata file and upload it to Cavatica |
@@ -53,12 +53,12 @@ You will learn two different approaches for DGE analysis using open access human
     * Technology: Basic knowledge of R and command line. Familiarity with RStudio is useful.
     * Financial: Pilot funds ($100) are provided to every user on Cavatica with linked KF accounts.
     * Time: Initial account setup may take hours to a day for verification. Setup of eRA Commons ID may take days and is institute dependent.
-=== "Est.Cost"
+=== "Est. Cost"
     - DESeq2 app < $1.00
     - Analysis with R < $1.00      
 === "Tutorial Resources"
     - [Kids First Data Portal](https://kidsfirstdrc.org)
     - [Cavatica Documentation](https://docs.cavatica.org/docs/getting-started)
-    - [Playlist of video tutorials explaining concepts used in RNAseq analysis](https://www.youtube.com/playlist?list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp)
+    - [Playlist of video tutorials explaining concepts used in RNA-Seq analysis](https://www.youtube.com/playlist?list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp)
     - [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#how-do-i-use-vst-or-rlog-data-for-differential-testing)
     - [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)

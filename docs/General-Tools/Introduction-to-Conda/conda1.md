@@ -1,6 +1,6 @@
 # What is conda?
 
-Imagine you want to try 3 different analysis workflows - one for a genome-wide association study (GWAS), and 2 different variant calling workflows. Unfortunately, these workflows require similar software but different versions. One option is to run each workflow on a separate computer, but then you'd need 3 computers and that's not very practical!
+Imagine you want to try 3 different analysis workflows - 1 for a genome-wide association study (GWAS), and 2 different variant calling workflows. Unfortunately, these workflows require similar software but different versions. One option is to run each workflow on a separate computer, but then you'd need 3 computers and that's not very practical!
 
 Alternatively, you could set up 3 virtual environments each with their own set of software installations on 1 computer!
 
@@ -16,7 +16,7 @@ This alternative is possible with the help of software installation managers (i.
 
 ### What is an Environment?
 
-Think of software environments like school classrooms, where the school is your laptop OS. Schools have many classrooms and while they are independent rooms they are still connected by hallways. Students can walk into any room and each room will have its own set of supplies (i.e., desks, chairs, whiteboard, decorations, etc.).
+Think of software environments like school classrooms, where the school is your computer operating system. Schools have many classrooms and while they are independent rooms they are still connected by hallways. Students can walk into any room and each room will have its own set of supplies (i.e., desks, chairs, whiteboard, decorations, etc.).
 
 For conda, the equivalent of a classroom and its supplies is a conda environment on your computer and its set of specifically downloaded software/tools. Input/output files, like students, can easily move between environments and just like a school can have multiple classrooms, conda can manage multiple conda environments. This is what makes it a great tool for maintaining different versions of the same software all on 1 computer!
 
