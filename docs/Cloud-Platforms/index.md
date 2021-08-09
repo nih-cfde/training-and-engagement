@@ -20,4 +20,4 @@ You may also be interested in these lessons, which conduct bioinformatic analyse
 
 - [Command Line BLAST](../Bioinformatic-Analyses/BLAST-Command-Line/BLAST1.md)
 - [GWAS in the Cloud](../Bioinformatic-Analyses/GWAS-in-the-cloud/index.md)
-- [RNAseq on Cavatica](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1.md)
+- [RNA-Seq on Cavatica](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1.md)

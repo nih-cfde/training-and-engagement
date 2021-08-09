@@ -90,7 +90,7 @@ These are in TXT format with name {Analysis title}.raw_counts.txt. It contains t
 
 ### RData files
 
-This is a R workspace image with name {Analysis title}.env.RData. It contains all the app-defined objects including vectors, matrices, dataframes, lists and functions from the R working environment.
+This is an R workspace image with name {Analysis title}.env.RData. It contains all the app-defined objects including vectors, matrices, dataframes, lists, and functions from the R working environment.
 
 ## Step 4: Tag & download analysis outputs
 
