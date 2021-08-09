@@ -47,6 +47,7 @@ markdown_extensions:
 - pymdownx.inlinehilite
 
 
+
 - codehilite:
     guess_lang: false
 - toc:
@@ -60,6 +61,8 @@ extra:
       link: https://twitter.com/CfdeNih
     - icon: fontawesome/brands/github
       link: https://github.com/nih-cfde/training-and-engagement/tree/stable
+    - icon: material/card-account-mail
+      link: mailto:CFDE-Training%20<CFDETraining+subscribe@CFDEpublic.groups.io>
 extra_css:
   - stylesheets/extra.css
   - stylesheets/asciinema-player.css

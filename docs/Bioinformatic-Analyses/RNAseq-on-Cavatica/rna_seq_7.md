@@ -17,7 +17,7 @@ Analysis with DESeq2 Public App
       * For Gene annotation, the files list is updated to show the **GTF** file. Choose the file and click <span class="highlight_txt">Save selection</span>.
       * For Phenotype data, the file list is updated to show the **CSV** file. Choose the file and click <span class="highlight_txt">Save selection</span>.
 
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_rsem8xlq&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=37&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_0hug1wlf" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_83kgekai&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_53alpurp" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ## Step 2: Update app settings & execute
 
@@ -28,15 +28,14 @@ Analysis with DESeq2 Public App
 * **Factor level - reference** represents the denominator for the log2 fold change (LFC) i.e what condition/group do we compare against. Enter **Ependymoma** as the reference factor. Changing the order of the reference or test factor level results in reversal of direction of log fold change.
 * **Factor level - test** represents the numerator for the LFC. Enter **Medulloblastoma** as the test factor.
 * Select the **Quantification tool** used to calculate transcript abundance from the drop down menu. The expression data for our data were generated using **kallisto**.
-* **IgnoreTxVersion** is a function in `tximport` package designed to ignore transcript version number. Set it to **True**.
-* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. Although, using LFC shrinkage does not impact the total number of genes that are identified as being significantly differentially expressed, it is useful for downstream assessment of results. Set the **log2 fold change shrinkage** to **True**.
+* DESeq2 allows for the shrinkage of the LFC which uses information from all genes to generate accurate estimates. LFC shrinkage is useful for visualization and ranking of genes. Set the **log2 fold change shrinkage** to **True**.
 * Click <span class="highlight_txt">:fontawesome-solid-play: Run</span> on the right hand corner to initiate the analysis.
 
 !!! note "Default Settings"
 
     The other fields in the app settings we left at default `No value` setting.   
 
-<<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_rd0hvpks&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_6ac7igi0" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_uppzq4u7&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_2dr4vul3" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 ## Step 3: Explore analysis outputs
 
@@ -52,7 +51,7 @@ The generated output are listed under the Outputs section:
 
 It is an output file with name {Analysis title}.out.csv in CSV format. This is generated using the `results()` function in DESeq2 package and contains gene level statistics.
 
-![DESeq2 results table](../rna-seq-images/rna-seq-7-1.png "DESeq2 results table")
+![DESeq2 results table](./rna-seq-images/rna-seq-7-1.png "DESeq2 results table")
 
 Column Header | Description |
 | :--- | :-------- |
@@ -67,27 +66,27 @@ Column Header | Description |
 
 The file with name {Analysis title}.{deseq2_app_version}.summary_report.b64html is a summary report. This report contains information on the inputs, plots from exploratory analysis, details of the DGE analysis along with the R Session info which includes a list of all the packages along with the version number for reproducibility.
 
-![DESeq2 report](../rna-seq-images/rna-seq-7-2.png "DESeq2 report")
+![DESeq2 report](./rna-seq-images/rna-seq-7-2.png "DESeq2 report")
 
 One of the plots under the exploratory analysis section is the principal component analysis (PCA) plot based on the expression values. PCA is a technique used to emphasize variation and highlight patterns in a dataset. To learn more, we encourage you to explore [StatQuest's video on PCA](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
 
 In the dataset used in this analysis, we observe the separation of the data along x-axis (PC1) is greater than separation of data along y-axis (PC2) indicating that the between-group variation is greater than the within-group variation.
 
-![PCA plot](../rna-seq-images/rna-seq-7-3.png "PCA plot")
+![PCA plot](./rna-seq-images/rna-seq-7-3.png "PCA plot")
 
 A summary of the DGE analysis indicates that 10,830 genes are upregulated and 8,591 genes are downregulated in Medulloblastoma when compared to Ependymoma pediatric cancer.
 
-![Analysis summary](../rna-seq-images/rna-seq-7-4.png "Analysis summary")
+![Analysis summary](./rna-seq-images/rna-seq-7-4.png "Analysis summary")
 
 These results are visualized in a MA plot which shows the mean of the normalized counts versus the LFC for all genes tested. The red colored dots represent genes that are significantly differentially expressed between the two cancer types.
 
-![MA plot](../rna-seq-images/rna-seq-7-5.png "MA plot")
+![MA plot](./rna-seq-images/rna-seq-7-5.png "MA plot")
 
 ### Normalized counts
 
 These are in TXT format with name {Analysis title}.raw_counts.txt. It contains the counts normalized using the estimates sample-specific normalization factors.
 
-![Normalized counts](../rna-seq-images/rna-seq-7-6.png "Normalized counts")
+![Normalized counts](./rna-seq-images/rna-seq-7-6.png "Normalized counts")
 
 ### RData files
 
@@ -100,9 +99,9 @@ You can easily tag these files and download them to your local computer. The fil
 * Navigate to <span class="highlight_txt">Files</span> tab.
 * Use the <span class="highlight_txt">Type</span> drop down menu to select B64HTML, CSV, RDATA and TXT.
 * Select all files with the {Analysis title} in the name.
-* Click on <span class="highlight_txt">:fontawesome-solid-tags:Tags</span>, add a new tag and click <span class="highlight_txt">Apply</span>. Here **DESeq2-Output** was used as tag name.
+* Click on <span class="highlight_txt">:fontawesome-solid-tags:Tags</span>, add a new tag and click <span class="highlight_txt">Apply</span>. Here **DESEQ2-OUTPUT** was used as tag name.
 * Click <span class="highlight_txt">:fontawesome-solid-download: Download</span> to obtain a local copy of the files. The files will be downloaded to your computer's default location for e.g. Downloads on MacOS.  
 
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_04q3igxn&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_ggyo77y6" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_6ywyajcp&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_w9d1hx9d" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 In the next lesson, we will learn the second approach of using a RStudio computational environment to perform DGE analysis!

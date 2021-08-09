@@ -34,7 +34,7 @@ library(knitr)
 ## Using GenomicFeatures pkg to read in the reference GTF files - following steps from DESeq2 app
 
 data_dir <- "/sbgenomics/project-files"
-txdb <- makeTxDbFromGFF(file= file.path(data_dir,"Homo_sapiens.GRCh38.84.gtf"))
+txdb <- makeTxDbFromGFF(file= file.path(data_dir,"gencode.v27.annotation.gtf"))
 k <- keys(txdb, keytype = "TXNAME")
 
 ## HGNC gene name not available in list of filters. Using Ensemble gene name for one to one mapping. 
@@ -63,8 +63,7 @@ names(files) <- pheno_data$sample_id
 head(files)
 txi_sum <- tximport(files,
                     type="kallisto",
-                    tx2gene=tx2gene,
-                    ignoreTxVersion = TRUE)
+                    tx2gene=tx2gene)
 names(txi_sum)
 head(txi_sum$counts)
 
