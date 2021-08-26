@@ -14,7 +14,6 @@ authors:
     orcid: 0000-0002-9404-7162
     affiliation: 1
   - name: Jose Sanchez
-    orcid:
     affiliation: 1
   - name: Jeremy Walter
     orcid: 0000-0001-7074-9760
