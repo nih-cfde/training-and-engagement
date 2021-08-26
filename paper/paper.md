@@ -4,13 +4,13 @@ tags:
   - reproducible research
   - Conda
 authors:
-  - name: Marisa C.W. Lim
+  - name: Marisa C.W. Lim^[co-first author]
     orcid: 0000-0003-2097-8818
     affiliation: 1  
-  - name: Abhijna Parigi
+  - name: Abhijna Parigi^[co-first author]
     orcid: 0000-0002-5861-3737
     affiliation: 1
-  - name: Saranya Canchi
+  - name: Saranya Canchi^[co-first author]
     orcid: 0000-0002-9404-7162
     affiliation: 1
   - name: Jose Sanchez
