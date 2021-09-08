@@ -1,5 +1,5 @@
 ---
-title: 'A virtual training module for introducing the use of Amazon Web Services'
+title: 'A Virtual Training Module for Introducing Amazon Web Services'
 tags:
   - AWS
   - cloud computing
