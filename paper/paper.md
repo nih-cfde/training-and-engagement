@@ -89,7 +89,6 @@ In less than a year, we conducted 7 Intro to AWS workshops, collectively trainin
 
 Pre- and post-workshop survey responses suggest that our workshops are well-paced (Figure 1A) and accomplish the main learning objectives. After attending the workshop, many more participants felt confident in their ability to 1) set up an AWS instance and connect to it (Figure 1B), and 2) install software on an AWS instance (Figure 1C)
 
-![](https://i.imgur.com/mOYg85h.jpg)
 ![Survey results for (A) workshop pacing, (B) Confidence in setting up and connecting to AWS instance and (C) Confidence in installing programs on an AWS instance](./aws_survey_summary.jpg)
 
 The surveys also helped us fine-tune lessons according to popular demand. For example, we added a section on downloading files from an AWS instance to the local machine, after receiving requests for it in the post-survey. Since all versions of our lesson materials are freely available on our [GitHub Wiki](https://github.com/nih-cfde/training-and-engagement/wiki), prospective instructors who wish to reuse these lessons can learn how our materials have evolved over time.
