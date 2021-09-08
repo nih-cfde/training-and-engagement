@@ -108,7 +108,7 @@ Thanks to all the workshop participants for attending and providing valuable sur
 
 # Funding
 
-This work was funded by the NIH Common Fund Data Ecosystem --grant info?--.
+Our training program is funded by the National Institutes of Health (1OT3OD025459-01).
 
 # Author Contributions
 
