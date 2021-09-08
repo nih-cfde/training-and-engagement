@@ -3,6 +3,7 @@ title: 'A virtual training module for introducing the use of Amazon Web Services
 tags:
   - reproducible research
   - AWS
+  - cloud computation
 authors:
   - name: Abhijna Parigi^[co-first author]
     orcid: 0000-0003-2097-8818
