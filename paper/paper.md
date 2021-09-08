@@ -31,9 +31,6 @@ date: 8 September 2021
 bibliography: paper.bib
 ---
 
-
-# AWS Jose Paper
-
 # Summary
 
 We present our lesson material and resources for introducing the use of Amazon Web Services (AWS, https://aws.amazon.com/) for cloud computation. This lesson was developed for the Common Fund Data Ecosystem (CFDE), an NIH initiative that aims to promote data re-use and cloud computing for biomedical research. The lesson materials, technology set-up instructions, and our instructional experiences can serve as a resource for prospective instructors who wish to re-use and remix our materials for teaching AWS and cloud computing.
