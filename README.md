@@ -19,6 +19,15 @@ We welcome suggestions for improvements as well as tutorial topics. Submit all t
  <p><div style="font-size:22px; font-style: italic">Past workshops:</a></div></p>
 </div>
 <div>
+ <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/Introduction-to-R:-October-13,-2021" target="_blank" rel="noopener" style="color:#336699;">Intro to R</a></div><i>Oct 13,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
+</div>
+<div>
+ <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/Introduction-to-R:-October-13,-2021" target="_blank" rel="noopener" style="color:#336699;">A Hands On Introduction to Conda</a></div><i>Oct 6,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
+</div>
+<div>
+ <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/RNA-Seq-in-the-cloud:-June-21-&-23,-2021" target="_blank" rel="noopener" style="color:#336699;">RNA-Seq in the Cloud</a></div><i>Sep 21 & 23,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
+</div>
+<div>
  <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/A-Hands-On-Introduction-to-AWS:-June-30,-2021" target="_blank" rel="noopener" style="color:#336699;">Introduction to Amazon Web Services/Elastic Cloud Computing</a></div><i>June 30,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
 </div>
 <div>
