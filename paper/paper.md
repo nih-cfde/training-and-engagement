@@ -65,7 +65,7 @@ To teach conda remotely, we use a teleconferencing platform and a cloud computin
 
 ## Workshop Experience
 
-We asked participants to fill out short pre- and post-workshop surveys to help instructors prepare, gauge participant learning, and collect feedback for workshop improvements. After four introductory conda workshops using these materials, we have trained 94 participants (1: 20, 2: 17, 3: 17, 4: 40) from a range of career positions (i.e., undergraduate students to faculty) and biology and technology fields. 
+We asked participants to fill out short pre- and post-workshop surveys to help instructors prepare, gauge participant learning, and collect feedback for workshop improvements. After five introductory conda workshops using these materials, we have trained 120 participants (1: 20, 2: 17, 3: 17, 4: 40, 5: 26) from a range of career positions (i.e., undergraduate students to faculty) and biology and technology fields. 
 
 To address the challenge of gauging learning and participation in remote workshops, we employed several successful teaching strategies: checking in with yes/no questions and exercises (responses via chat or Zoom raised hand reaction), using a standardized computing interface with workshop commands script, and providing a help breakout room. With an instructional team of 4-5, we recommend workshop sizes of 20-30 participants, as these strategies are less effective for lower instructor to participant ratios. 
 
