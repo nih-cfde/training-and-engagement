@@ -39,7 +39,7 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
 ![AWS Services](./images-aws/aws_3.png "AWS Services button")
 
-* Click on <span class="highlight_txt">EC2</span>:
+* Click on <span class="highlight_txt">Compute</span> and select <span class="highlight_txt">EC2</span>:
 
 ![EC2](./images-aws/aws_4.png "AWS EC2 button")
 
@@ -47,26 +47,26 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
          [Amazon Elastic Cloud Computing (Amazon EC2)](https://aws.amazon.com/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) features virtual computing environments called instances. They have varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.  
 
-* Click on <span class="highlight_txt">Launch Instance</span>:
+* Select <span class="highlight_txt">EC2 Dashboard</span> and click on <span class="highlight_txt">Launch Instance</span>:
 
 ![Launch Instance](./images-aws/aws_5.png "AWS launch button")
 
 
 ## Step 3: Choose an Amazon Machine Image (AMI)
 
-An Amazon Machine Image provides the template for the root volume of an instance (operating system, application server, and applications). It is akin to the Operating Sytem (OS) on a computer.
+An Amazon Machine Image provides the template for the root volume of an instance (operating system, application server, and applications). It is akin to the Operating System (OS) on a computer.
 
 * Select <span class="highlight_txt">AWS Marketplace</span> on the left hand side tab:
 
 ![AWS Marketplace](./images-aws/aws_6.png "AWS marketplace button")
 
-* Type `Ubuntu Pro` in the search bar. Choose `Ubuntu Pro 20.04 LTS` by clicking <span class="highlight_txt">Select</span>:
+* Type `Ubuntu 20.04` in the search bar. Choose `Ubuntu 20.04 LTS - Focal` by clicking <span class="highlight_txt">Select</span>:
 
 ![AMI](./images-aws/aws_7.png "AWS Ubuntu AMI")
 
 !!! info "Ubuntu 20.04 AMI"
 
-     `Ubuntu 20.04` was released in 2020 and is the latest version. This is a **Long Term Support (LTS)** release which means it will be equipped with software updates and security fixes. Since it is a `Pro` version the support will last for ten years until 2030.   
+     `Ubuntu 20.04` was released in 2020 and is the latest version. This is a **Long Term Support (LTS)** release which means it will be equipped with software updates and security fixes. The support for `Focal` version will last for five years until 2025.   
 
 
 * Click <span class="highlight_txt">Continue</span> on the popup window:
@@ -142,18 +142,21 @@ The last tab in setup is **Review** which summarizes all the selected configurat
 ### Step 6a: Key pair
 If you are launching an AWS instance for the first time, you will need to generate a key pair.
 
-* Choose the <span class="highlight_txt">Create a new key pair</span> option from the drop down menu.
-* Type any name under **Key pair name**. In this tutorial we are naming it `amazon.pem`.
-* Click <span class="highlight_txt">Download Key Pair</span> to obtain the `.pem` file to your local machine. You can access the `.pem` file from the `Downloads` folder which is typically the default location for saving files. Next time you launch an instance, you can reuse the key pair you just generated.
-* If you have a previously generated key pair, you can reuse it to launch an instance using <span class="highlight_txt">Choose an existing key pair</span> option.
+![pem key](./images-aws/aws_10.png "key pair set up")
+
+a. Choose the <span class="highlight_txt">Create a new key pair</span> option from the drop down menu.
+
+   * Type any name under **Key pair name**. In this tutorial we are naming it `amazon.pem`.
+
+   * If you have a previously generated key pair, you can reuse it to launch an instance using <span class="highlight_txt">Choose an existing key pair</span> option.
+
+b. Click <span class="highlight_txt">Download Key Pair</span> to obtain the `.pem` file to your local machine. You can access the `.pem` file from the `Downloads` folder which is typically the default location for saving files. Next time you launch an instance, you can reuse the key pair you just generated.
+
+c. Check the acknowledgement box, and click <span class="highlight_txt">Launch Instances</span>.
 
 !!! warning
 
     Do not select **Proceed without a key pair** option since you will not be able to connect to the instance.
-
-* Check the acknowledgement box, and click <span class="highlight_txt">Launch Instances</span>.
-
-![pem key](./images-aws/aws_10.png "key pair set up")
 
 !!! Note "Why do I need a key pair?"
 
