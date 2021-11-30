@@ -11,11 +11,13 @@ useReviewGroups: true
 reviewGroups:
   groupA:
     - s-canchi
-    - marisalim
-    - abhijna
+    - raynamharris
+    - ACharbonneau
+    - ctb
+
   groupB:
     - jeremywalter
-    - josesanchez1815
+
 
 # A number of reviewers added to the pull request
 # Set 0 to add all the reviewers (default: 0)
