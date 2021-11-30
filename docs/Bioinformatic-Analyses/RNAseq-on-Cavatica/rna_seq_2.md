@@ -12,7 +12,7 @@ RNA-Seq uses the capability of next generation sequencing techniques to explore 
 
 !!! info "DNA to Protein"
 
-    Learn more about the [biological processes involved in conversion of DNA to proteins](https://www.nature.com/scitable/topicpage/translation-dna-to-mrna-to-protein-393/).
+    Learn more about the [biological processes involved in conversion of DNA to proteins](https://www.nature.com/scitable/topicpage/translation-dna-to-mrna-to-protein-393/){:target="_blank"} .
 
 RNA-Seq data can be used to study the **transcriptome**, a collection of all the RNA transcripts from a sample. The transcriptome data can be utilized for many types of analyses. In this lesson we will focus on one such application: **Differential Gene Expression (DGE)** analysis in order to determine which genes are expressed at different levels between the conditions/groups of interest. The identified genes offer biological insight into the processes and pathways affected by the chosen experimental conditions.
 
@@ -26,14 +26,14 @@ The generated raw reads are quality checked and aligned against either a referen
 
 !!! info "RNA-Seq Resources"
 
-    Learn more about RNA-Seq through this [video tutorial by StatQuest](https://www.youtube.com/watch?v=tlf6wYJrwKY&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=1). You can also follow this [end to end RNA-Seq workflow](https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html) that uses well known [Bioconductor packages](http://bioconductor.org).
+    Learn more about RNA-Seq through this [video tutorial by StatQuest](https://www.youtube.com/watch?v=tlf6wYJrwKY&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=1){:target="_blank"}. You can also follow this [end to end RNA-Seq workflow](https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html){:target="_blank"}  that uses well known [Bioconductor packages](http://bioconductor.org){:target="_blank"} .
 
 <span style="font-size:24px;">Experimental Plan
 
-In this tutorial, we will evaluate the difference between [pediatric **Medulloblastoma** vs **Ependymoma**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2719002/).
+In this tutorial, we will evaluate the difference between [pediatric **Medulloblastoma** vs **Ependymoma**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2719002/){:target="_blank"} .
 
 **Medulloblastoma** is a common malignant childhood brain tumor that typically occurs in the 4th ventricle region of the brain. There are five different histological types of medulloblastoma, which impact prognosis and predicted response to therapy.
 
 **Ependymoma** is a broad group of tumors that often arises from lining of the ventricles in the brain. Ependymomas can also occur in the central canal in the spinal cord, with the anotomical distribution impacting prognosis.
 
-We will use the [Kids First Data Portal (KF Portal)](https://kidsfirstdrc.org) to build a virtual cohort of tumor samples of the two pediatric cancers and select pre-processed transcript abundance files, which we will then analyze on [Cavatica](https://cavatica.sbgenomics.com), the KF Portal's integrated cloud based platform.
+We will use the [Kids First Data Portal (KF Portal)](https://kidsfirstdrc.org){:target="_blank"}  to build a virtual cohort of tumor samples of the two pediatric cancers and select pre-processed transcript abundance files, which we will then analyze on [Cavatica](https://cavatica.sbgenomics.com){:target="_blank"} , the KF Portal's integrated cloud based platform.

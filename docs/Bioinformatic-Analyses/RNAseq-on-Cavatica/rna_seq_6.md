@@ -8,7 +8,7 @@ title: Phenotype File and Upload to Cavatica
 Phenotype File and Upload to Cavatica
 ====================================
 
-One of the necessary input files for DGE analysis using DESeq2 is the **phenotype file** which lists the experimental groups and associated metadata for use in our design. You previously [downloaded the metadata manifest for the filtered files from Cavatica](./rna_seq_4.md#step-3-create-tags-download-filtered-dataset). </br></br>
+One of the necessary input files for DGE analysis using DESeq2 is the **phenotype file** which lists the experimental groups and associated metadata for use in our design. You previously [downloaded the metadata manifest for the filtered files from Cavatica](./rna_seq_4.md#step-3-create-tags-download-filtered-dataset){:target="_blank"} . </br></br>
 In this lesson, you will learn to modify the phenotype data and upload it from your local computer back into Cavatica. Microsoft Excel is used in this lesson for data modification but any other equivalent program could be used to accomplish the same tasks.
 
 ## Step 1: Change column order
