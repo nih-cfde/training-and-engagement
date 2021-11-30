@@ -8,7 +8,7 @@ title: Selecting a Kids First Cancer Cohort
 Selecting a Kids First Cancer Cohort
 ====================================
 
-The [Gabriella Miller Kids First Pediatric Data Portal (KF Portal)](https://kidsfirstdrc.org) hosts datasets at the intersection of congenital birth defects and pediatric cancers, with genomic files for more than 16,000 participants.
+The [Gabriella Miller Kids First Pediatric Data Portal (KF Portal)](https://kidsfirstdrc.org){:target="_blank"}  hosts datasets at the intersection of congenital birth defects and pediatric cancers, with genomic files for more than 16,000 participants.
 
 !!! tip "Kids First Data Portal"
 
@@ -22,7 +22,7 @@ Files on the KF Portal are managed through different access levels. _Open access
 
 ## Step 1: Filter for open access data
 
-* Login to the [KF Portal](https://kidsfirstdrc.org/).
+* Login to the [KF Portal](https://kidsfirstdrc.org/){:target="_blank"} .
 * Select the <span class="highlight_txt">File Repository</span> tab.
 * Select the <span class="highlight_txt">Browse All</span> option for the Filter.
 

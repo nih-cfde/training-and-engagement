@@ -43,7 +43,7 @@ Upon successful completion of the task, the label next to the task name is updat
 
 !!! info "Email notification"
 
-    An email is sent from The Seven Bridges Team to the email ID associated with your Cavatica account whenever a task starts and when the task is completed. Learn more about [managing the notifications for your project](https://docs.sevenbridges.com/docs/manage-email-notifications).
+    An email is sent from The Seven Bridges Team to the email ID associated with your Cavatica account whenever a task starts and when the task is completed. Learn more about [managing the notifications for your project](https://docs.sevenbridges.com/docs/manage-email-notifications){:target="_blank"} .
 
 The generated output are listed under the Outputs section:
 
@@ -60,7 +60,7 @@ Column Header | Description |
 | lfcSE | standard error |
 | stat | Wald statistic |
 | pvalue | Wald test p-value |
-| padj   | [Benjamini-Hochberg](https://www.statisticshowto.com/benjamini-hochberg-procedure/) adjusted p-value |
+| padj   | [Benjamini-Hochberg](https://www.statisticshowto.com/benjamini-hochberg-procedure/){:target="_blank"}  adjusted p-value |
 
 ### HTML report
 
@@ -68,7 +68,7 @@ The file with name {Analysis title}.{deseq2_app_version}.summary_report.b64html 
 
 ![DESeq2 report](./rna-seq-images/rna-seq-7-2.png "DESeq2 report")
 
-One of the plots under the exploratory analysis section is the principal component analysis (PCA) plot based on the expression values. PCA is a technique used to emphasize variation and highlight patterns in a dataset. To learn more, we encourage you to explore [StatQuest's video on PCA](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22).
+One of the plots under the exploratory analysis section is the principal component analysis (PCA) plot based on the expression values. PCA is a technique used to emphasize variation and highlight patterns in a dataset. To learn more, we encourage you to explore [StatQuest's video on PCA](https://www.youtube.com/watch?v=_UVHneBUBW0&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp&index=22){:target="_blank"} .
 
 In the dataset used in this analysis, we observe the separation of the data along x-axis (PC1) is greater than separation of data along y-axis (PC2) indicating that the between-group variation is greater than the within-group variation.
 

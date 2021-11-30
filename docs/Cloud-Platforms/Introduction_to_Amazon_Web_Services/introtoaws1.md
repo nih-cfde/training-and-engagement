@@ -28,7 +28,7 @@ Est. time | Lesson name | Description
 
 === "Prerequisites"
 
-    - Technology: Users must be comfortable with finding and opening a terminal window. For Windows OS, please install [MobaXterm](https://mobaxterm.mobatek.net/). You can use this download [link](https://download.mobatek.net/2032020060430358/MobaXterm_Portable_v20.3.zip).
+    - Technology: Users must be comfortable with finding and opening a terminal window. For Windows OS, please install [MobaXterm](https://mobaxterm.mobatek.net/){:target="_blank"}. You can [download the latest version](https://mobaxterm.mobatek.net/download.html){:target="_blank"}.
 
     - Financial: First time AWS users require a valid credit card to set up an AWS account.
 
@@ -38,4 +38,4 @@ Est. time | Lesson name | Description
 
     - [Vidlet: Setting up an AWS instance](./introtoaws2.md)
 
-    - [Screen cheat sheet](../../General-Tools/Cheat-Sheets/screen_cheatsheet.md)
+    - [Screen cheat sheet](../../General-Tools/Cheat-Sheets/screen_cheatsheet.md){:target="_blank"}
