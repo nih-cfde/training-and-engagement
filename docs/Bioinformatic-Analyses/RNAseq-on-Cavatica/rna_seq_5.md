@@ -8,18 +8,18 @@ title: Setup DESeq2 Public App
 Setup DESeq2 Public App
 =======================
 
-[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is a Bioconductor package used to perform DGE analysis by fitting the [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/) to the count data. It requires a counts table as input along with a phenotype file describing the experimental groups.
+[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html){:target="_blank"}  is a Bioconductor package used to perform DGE analysis by fitting the [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/){:target="_blank"}  to the count data. It requires a counts table as input along with a phenotype file describing the experimental groups.
 
 DESeq2 performs multiple steps including:
 
 * estimating size factors to account for differences in library depth
 * estimating gene-wise dispersions to generate accurate estimates of within-group variation
 * shrinkage of dispersion estimates which reduces false positives in the DGE analysis
-* hypothesis testing using the [Wald test](https://www.statisticshowto.com/wald-test/) or [Likelihood Ratio test](https://www.statisticshowto.com/likelihood-ratio-tests/)
+* hypothesis testing using the [Wald test](https://www.statisticshowto.com/wald-test/){:target="_blank"}  or [Likelihood Ratio test](https://www.statisticshowto.com/likelihood-ratio-tests/){:target="_blank"}
 
-DESeq2 automatically removes outlier genes from analysis using [Cook's distance](https://www.statisticshowto.com/cooks-distance/) and filters genes with low counts which helps improve detection power by making the multiple testing adjustment of the p-values less severe. Refer to the [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) for a more detailed explanation, helpful suggestions, and examples.
+DESeq2 automatically removes outlier genes from analysis using [Cook's distance](https://www.statisticshowto.com/cooks-distance/){:target="_blank"}  and filters genes with low counts which helps improve detection power by making the multiple testing adjustment of the p-values less severe. Refer to the [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html){:target="_blank"}  for a more detailed explanation, helpful suggestions, and examples.
 
-Cavatica offers DESeq2 as a stand alone public app which consists of a [Common Workflow Language (CWL)](https://www.commonwl.org) wrapper around a script with functions from the DESeq2 package. In this lesson we learn to copy, edit, and setup the DESeq2 app in the project folder with cancer data files.
+Cavatica offers DESeq2 as a stand alone public app which consists of a [Common Workflow Language (CWL)](https://www.commonwl.org){:target="_blank"}  wrapper around a script with functions from the DESeq2 package. In this lesson we learn to copy, edit, and setup the DESeq2 app in the project folder with cancer data files.
 
 !!! info "Terminology"
 
@@ -77,7 +77,7 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
 
 ## Step 3: Obtain reference gene annotation
 
-A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1) files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html), another Bioconductor package, is utilized to obtain the gene level summary. We will use the same reference version that was used to generate the original transcript abundance files in the [KFDRC RNA-Seq workflow](https://github.com/kids-first/kf-rnaseq-workflow){:target="_blank"}.  
+A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1){:target="_blank"}  files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html){:target="_blank"} , another Bioconductor package, is utilized to obtain the gene level summary. We will use the same reference version that was used to generate the original transcript abundance files in the [KFDRC RNA-Seq workflow](https://github.com/kids-first/kf-rnaseq-workflow){:target="_blank"}.  
 
 * Navigate to the <span class="highlight_txt">Files</span> tab and click on <span class="highlight_txt">:fontawesome-solid-plus: Add files</span> which brings forth a drop down menu.
 * Click on <span class="highlight_txt">Public Files</span> in that list which takes to a new page.
