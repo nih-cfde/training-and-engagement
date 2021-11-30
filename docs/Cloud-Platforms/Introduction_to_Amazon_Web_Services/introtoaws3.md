@@ -9,7 +9,7 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
 ## Step 1: Log in to an AWS account
 
-* Go to [Amazon Web Services](https://aws.amazon.com)
+* Go to [Amazon Web Services](https://aws.amazon.com){:target="_blank"}
 * Click on <span class="highlight_txt">My Account</span>
 * Select  <span class="highlight_txt">AWS Management Console</span> from the drop down menu.
 * Alternatively, click on <span class="highlight_txt">Sign In to the Console</span>.
@@ -19,7 +19,7 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
 !!! info "Account Setup"
 
-          If you need to create an account, please follow the [AWS instructions for creating an account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/). You will need a credit card to set up the account. New accounts could take up to 24 hours to be activated.
+          If you need to create an account, please follow the [AWS instructions for creating an account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/){:target="_blank"}. You will need a credit card to set up the account. New accounts could take up to 24 hours to be activated.
 
 
 ## Step 2: Select region
@@ -31,7 +31,7 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
 !!! note "AWS Region"
 
-    The default region is automatically displayed in the AWS Dashboard. The [choice of region](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-region.html) has implications on fees, speed, and performance.
+    The default region is automatically displayed in the AWS Dashboard. The [choice of region](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-region.html){:target="_blank"} has implications on fees, speed, and performance.
 
 ## Step 3: Choose virtual machine
 
@@ -45,7 +45,7 @@ Follow along with these steps and/or watch our [walk-through tutorial](./introto
 
 !!! Note "Amazon EC2"
 
-         [Amazon Elastic Cloud Computing (Amazon EC2)](https://aws.amazon.com/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) features virtual computing environments called instances. They have varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.  
+         [Amazon Elastic Cloud Computing (Amazon EC2)](https://aws.amazon.com/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc){:target="_blank"} features virtual computing environments called instances. They have varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications.  
 
 * Select <span class="highlight_txt">EC2 Dashboard</span> and click on <span class="highlight_txt">Launch Instance</span>:
 
@@ -75,7 +75,7 @@ An Amazon Machine Image provides the template for the root volume of an instance
 
 ## Step 4: Choose an instance type
 
-Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. You can consider instances to be similar to the hardware that will run your OS and applications. [Learn more about instance types and how they can meet your computing needs](https://aws.amazon.com/ec2/instance-types/).
+Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. You can consider instances to be similar to the hardware that will run your OS and applications. [Learn more about instance types and how they can meet your computing needs](https://aws.amazon.com/ec2/instance-types/){:target="_blank"}.
 
 * For this tutorial we will select the row with `t2.micro` which is free tier eligible:
 
@@ -83,7 +83,7 @@ Amazon EC2 provides a wide selection of instance types optimized to fit differen
 
 !!! Note "Free Tier Eligible"
 
-    The Free tier eligible tag lets us know that this particular operating system is covered by the [Free Tier program](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc) where you use (limited) services without being charged. Limits could be based on how much storage you have access to and/or how many hours of compute you can perform in a one month.
+    The Free tier eligible tag lets us know that this particular operating system is covered by the [Free Tier program](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc){:target="_blank"} where you use (limited) services without being charged. Limits could be based on how much storage you have access to and/or how many hours of compute you can perform in a one month.
 
 * You can proceed to launch the instance with default configurations by clicking on <span class="highlight_txt">Review and Launch</span>.
 
@@ -95,7 +95,7 @@ There are several optional set up configurations.
 
 === "Configure Instance"
 
-    [Configure the instance to suit your requirements](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Configure_Instance.html). You can:
+    [Configure the instance to suit your requirements](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Configure_Instance.html){:target="_blank"}. You can:
 
     * change number of instances to launch
     * select the subnet to use
@@ -105,7 +105,7 @@ There are several optional set up configurations.
 
     !!! info "Spot Instance"
 
-        A [Spot Instance](https://aws.amazon.com/ec2/spot/?cards.sort-by=item.additionalFields.startDateTime&cards.sort-order=asc) is an unused EC2 instance that is available for less than the On-Demand price. Because Spot Instances enable you to request unused EC2 instances at steep discounts, you can lower your Amazon EC2 costs significantly.
+        A [Spot Instance](https://aws.amazon.com/ec2/spot/?cards.sort-by=item.additionalFields.startDateTime&cards.sort-order=asc){:target="_blank"} is an unused EC2 instance that is available for less than the On-Demand price. Because Spot Instances enable you to request unused EC2 instances at steep discounts, you can lower your Amazon EC2 costs significantly.
 
 === "Add Storage"
 
@@ -122,14 +122,14 @@ There are several optional set up configurations.
 
     * Tags are useful to categorize your AWS resources: instances and volumes.
     * A tag consists of a case-sensitive key-value pair. Some examples: GTEx-RNAseq, General-GWAS, KF-GWAS.
-    * [Learn more about tagging your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html).
+    * [Learn more about tagging your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html){:target="_blank"}.
 
 === "Configure Security Group"
 
     * Similar to setting up a firewall through which we would modify connection of external world and the EC2 instance.
     * Blocks/allow connections based on port number and IP.
     * You can create a new security group or select from an existing one.
-    * [Learn more about Security groups for EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html).   
+    * [Learn more about Security groups for EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html){:target="_blank"}.   
 
 ## Step 6: Review and launch instance
 
@@ -181,6 +181,6 @@ The instance console page shows you a list of all your active instances. Users m
 
 You have now successfully launched your AWS instance! You will need the Public DNS address from this amazon webpage to access your AWS instance, so do not close the page yet.
 
-If you happen to close the webpage on accident, [click on this link](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId).
+If you happen to close the webpage on accident, [click on this link](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId){:target="_blank"}.
 
 Continue on to the next lesson to learn how to connect to your AWS instance!

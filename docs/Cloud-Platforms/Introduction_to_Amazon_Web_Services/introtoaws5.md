@@ -1,6 +1,6 @@
 # Terminating an Instance
 
-Once you have completed your tasks and are sure you do not need the instance any longer, you may terminate the instance by returning to [AWS Management Console](https://us-west-1.console.aws.amazon.com/console/home?region=us-west-1).
+Once you have completed your tasks and are sure you do not need the instance any longer, you may terminate the instance by returning to [AWS Management Console](https://us-west-1.console.aws.amazon.com/console/home?region=us-west-1){:target="_blank"}.
 
 
 !!! warning

@@ -7,7 +7,7 @@ hide:
 
 === "Web Browser"
 
-    This is an OS-agnostic way of connecting to your AWS instance. The advantage of using this method is that Windows users do not need to worry about downloading an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/). The main disadvantage is that you cannot download files from the instance to your local machine via this web terminal interface.
+    This is an OS-agnostic way of connecting to your AWS instance. The advantage of using this method is that Windows users do not need to worry about downloading an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/){:target="_blank"}. The main disadvantage is that you cannot download files from the instance to your local machine via this web terminal interface.
 
     ## Step 1: Find your launched instance
     * Go to the page that lists all your instances: <https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances>
@@ -49,13 +49,13 @@ hide:
 
     Ok, so you've created a running computer. How do you get to it?
 
-    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId), click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
+    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId){:target="_blank"}, click on the instance, and find the "Public DNS". This is the public name of your computer on the internet.
 
     ## Step 1: Open MobaXTerm
 
-    [MobaXTerm](https://mobaxterm.mobatek.net/) is a terminal for Windows with an X11 server, a tabbed SSH client and several other network tools for remote computing (VNC, RDP, telnet,rlogin).
+    [MobaXTerm](https://mobaxterm.mobatek.net/){:target="_blank"} is a terminal for Windows with an X11 server, a tabbed SSH client and several other network tools for remote computing (VNC, RDP, telnet,rlogin).
 
-    MobaXterm brings all the essential Unix commands to Windows desktop, in a single portable exe file which works out of the box. You can download the [Home Edition](https://mobaxterm.mobatek.net/download.html) for free.
+    MobaXterm brings all the essential Unix commands to Windows desktop, in a single portable exe file which works out of the box. You can download the [Home Edition](https://mobaxterm.mobatek.net/download.html){:target="_blank"} for free.
 
     ## Step 2: Start a new session
 
@@ -69,7 +69,7 @@ hide:
 
     ## Step 3: Set up ssh settings
 
-    * Enter the public DNS address from the [AWS instance](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId) page in the **Remote host** box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`.
+    * Enter the public DNS address from the [AWS instance](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId){:target="_blank"} page in the **Remote host** box. It will look something like this: `ec2-XXX-YYY-AAA.compute-1.amazon.aws.com`.
     * Enter **ubuntu** for **Specify username**.
 
     ![Hostname](./images-aws/mobaxterm_3.png "remote host ec2 address")
@@ -97,7 +97,7 @@ hide:
 
     Ok, so you've created a running computer. How do you get to it?
 
-    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId), click on the instance, and find the **Public DNS** under the <span class="highlight_txt">Details</span> tab. This is the public name of your computer on the internet.
+    The main thing you'll need is the network name of your new computer. To retrieve this, go to the [AWS instance view](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId){:target="_blank"}, click on the instance, and find the **Public DNS** under the <span class="highlight_txt">Details</span> tab. This is the public name of your computer on the internet.
 
     ## Step 1: Locate private key
 
