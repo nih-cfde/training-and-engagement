@@ -19,6 +19,12 @@ We welcome suggestions for improvements as well as tutorial topics. Submit all t
  <p><div style="font-size:22px; font-style: italic">Past workshops:</a></div></p>
 </div>
 <div>
+ <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/An-Introduction-to-UNIX:-November-17,-2021" target="_blank" rel="noopener" style="color:#336699;">Intro to UNIX</a></div><i>Nov 17,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
+</div>
+<div>
+ <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/A-Hands-On-Introduction-to-AWS:-November-10,-2021" target="_blank" rel="noopener" style="color:#336699;">Intro to AWS</a></div><i>Nov 10,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
+</div>
+<div>
  <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/Introduction-to-R:-October-13,-2021" target="_blank" rel="noopener" style="color:#336699;">Intro to R</a></div><i>Oct 13,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
 </div>
 <div>
