@@ -13,10 +13,10 @@ We welcome suggestions for improvements as well as tutorial topics. Submit all t
 ## Workshops
 
 <div>
- <p><div style="font-size:24px; font-style: italic"><i>Check out our <a href="https://www.nih-cfde.org/events/" target="_blank" rel="noopener" style="color:#336699;">events calendar</a> for upcoming workshops.</i></div></p>
+ <p><div style="font-size:24px; font-style: italic"><i>Check out our <a href="https://www.nih-cfde.org/events/" target="_blank" rel="noopener" style="color:#336699;">events calendar</a> for upcoming workshops!</i></div></p>
 </div>
 <div>
- <p><div style="font-size:24px; font-style: italic">Join our Training Mailing list <a href="mailto:CFDETraining+subscribe@CFDEpublic.groups.io" target="_blank" rel="noopener" style="color:#336699;"></a>for latest information on workshops.</div></p>
+ <p><div style="font-size:24px; font-style: italic">Join our <a href="mailto:CFDETraining+subscribe@CFDEpublic.groups.io" target="_blank" rel="noopener" style="color:#336699;">training mailing list</a> for latest information on workshops.</div></p>
 </div>
 <div>
  <p><div style="font-size:24px; font-style: italic">Past workshops:</a></div></p>
