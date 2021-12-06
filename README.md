@@ -13,10 +13,13 @@ We welcome suggestions for improvements as well as tutorial topics. Submit all t
 ## Workshops
 
 <div>
- <p><div style="font-size:22px; font-style: italic">Check out our <a href="https://www.nih-cfde.org/events/" target="_blank" rel="noopener" style="color:#336699;">events calendar</a> for upcoming workshops.</div></p>
+ <p><div style="font-size:24px; font-style: italic"><i>Check out our <a href="https://www.nih-cfde.org/events/" target="_blank" rel="noopener" style="color:#336699;">events calendar</a> for upcoming workshops.</i></div></p>
 </div>
 <div>
- <p><div style="font-size:22px; font-style: italic">Past workshops:</a></div></p>
+ <p><div style="font-size:24px; font-style: italic">Join our Training Mailing list <a href="mailto:CFDETraining+subscribe@CFDEpublic.groups.io" target="_blank" rel="noopener" style="color:#336699;"></a>for latest information on workshops.</div></p>
+</div>
+<div>
+ <p><div style="font-size:24px; font-style: italic">Past workshops:</a></div></p>
 </div>
 <div>
  <p><div style="font-size:19px"><a href="https://github.com/nih-cfde/training-and-engagement/wiki/An-Introduction-to-UNIX:-November-17,-2021" target="_blank" rel="noopener" style="color:#336699;">Introduction to UNIX Command Line</a></div><i>Novemver 17,&nbsp;2021 &nbsp;&bull;&nbsp; Virtual Workshop</i><br/></p>
