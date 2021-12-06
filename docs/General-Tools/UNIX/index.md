@@ -25,6 +25,6 @@ Lesson name | Description
 --- | ---
 [The shell and terminal](./unix_0.md) | What is UNIX? <br />Why should I use it?
 [Navigating directories](./unix_1.md) | Where am I? <br /> What files are here?
-[Working with files](./unix_2.md) | How do I open files? <br /> How do I rename or copy files?
+[Working with files](./unix_2.md) | How do I open files? <br /> How do I rename or copy files? <br /> Are my files good quality?
 [Building pipelines](./unix_3.md) | How do I combine commands to build workflows?  
 [Wrap up](./unix_4.md) | How do I save my results? <br /> What commands did I type?

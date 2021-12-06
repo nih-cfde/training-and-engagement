@@ -1,7 +1,7 @@
 nav:
 - index.md
-- Cheat-Sheets
-- Conda
-- Snakemake
+- Snakemake Workflows: Snakemake
+- Introduction-to-Conda
+- Building Websites: Web-Development
 - UNIX
-- Web-Development
+- Cheat-Sheets
