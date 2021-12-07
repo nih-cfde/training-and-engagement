@@ -1,23 +1,20 @@
 ---
 layout: page
-title: June 2021 Release
+title: December 2021 Release
 ---
 
 Latest Release
 =================
 
-**Updated June 25, 2021**
-
-<span style="font-size:24px;">New Tutorials
-
-- [Introduction to Terra](../Cloud-Platforms/Introduction-to-Terra/index.md)
-- [Introduction to Conda](../General-Tools/Introduction-to-Conda/index.md)
+**Updated December 7, 2021**
 
 <span style="font-size:24px;">Updates and Fixes
 
-- [Snakemake](../General-Tools/Snakemake/index.md): Updated code for samtools import and added notes on generating workflow DAG
-- Updated past workshops list and notes links
+- [Introduction to Amazon Web Services](../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1.md): Updated to reflect the changes in the AWS user experience interface
+- [Introduction to Conda](../General-Tools/Introduction-to-Conda/index.md): Added --from-history export as an additional option and included new vidlets for prominent steps
+- [RNAseq on Cavatica](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1.md): Updated reference genome and added steps to resolve network settings
 
 <span style="font-size:24px;">Website Features
 
-- Navbar titles: Reorganized the lessons into new, topic-based navbar titles
+- Workshops: Updated the past workshops list
+- Mailing list: Added mailing list email on home page and on footer
