@@ -167,8 +167,8 @@ This concludes the RNA-Seq on Cavatica tutorial. We hope that you found the tuto
 
 !!! note " Key Points"
 
-    * The [Kids First Portal](https://kidsfirstdrc.org) is the go-to resource for pediatric cancer & structural birth defects datasets.
-    * Examine data and run analyses using [Cavatica](cavatica.sbgenomics.com){:target="_blank"}, the cloud based analysis platform integrated into Kids First Portal.
+    * The [Kids First Portal](https://kidsfirstdrc.org){:target="_blank"} is the go-to resource for pediatric cancer & structural birth defects datasets.
+    * Examine data and run analyses using [Cavatica](https://cavatica.sbgenomics.com){:target="_blank"}, the cloud based analysis platform integrated into Kids First Portal.
     * You can filter, view, and download data from Cavatica.
     * Upload data to Cavatica from multiple sources including your local machine.
     * You can search, copy, and modify a public app on Cavatica.

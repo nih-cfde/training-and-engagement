@@ -41,9 +41,9 @@ You will learn two different approaches for DGE analysis using open access human
 
 === "Prerequisites"
     * Setup: Integrated login accounts on Kid's First Data Portal & Cavatica - Follow our lessons on account setup and connecting the two accounts.
-           - [Setup Kids First account](../../Common-Fund-Tools/Kids-First/Portal-Setup-And-Permissions/KF_3_KF_Registration.md)
-           - [Register for Cavatica](../../Common-Fund-Tools/Kids-First/Portal-Setup-And-Permissions/KF_4_Cavatica_Registration.md)
-           - [Connect KF and Cavatica](../../Common-Fund-Tools/Kids-First/Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md)
+           - [Setup Kids First account](../../Common-Fund-Tools/Kids-First/Portal-Setup-And-Permissions/KF_3_KF_Registration.md){:target="_blank"}
+           - [Register for Cavatica](../../Common-Fund-Tools/Kids-First/Portal-Setup-And-Permissions/KF_4_Cavatica_Registration.md){:target="_blank"}
+           - [Connect KF and Cavatica](../../Common-Fund-Tools/Kids-First/Portal-Setup-And-Permissions/KF_5_ConnectingAccounts.md){:target="_blank"}
 
     !!! note "Login Credentials"
 
@@ -57,8 +57,8 @@ You will learn two different approaches for DGE analysis using open access human
     - DESeq2 app < $1.00
     - Analysis with R < $1.00      
 === "Tutorial Resources"
-    - [Kids First Data Portal](https://kidsfirstdrc.org)
-    - [Cavatica Documentation](https://docs.cavatica.org/docs/getting-started)
-    - [Playlist of video tutorials explaining concepts used in RNA-Seq analysis](https://www.youtube.com/playlist?list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp)
-    - [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#how-do-i-use-vst-or-rlog-data-for-differential-testing)
-    - [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)
+    - [Kids First Data Portal](https://kidsfirstdrc.org){:target="_blank"}
+    - [Cavatica Documentation](https://docs.cavatica.org/docs/getting-started){:target="_blank"}
+    - [Playlist of video tutorials explaining concepts used in RNA-Seq analysis](https://www.youtube.com/playlist?list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp){:target="_blank"}
+    - [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#how-do-i-use-vst-or-rlog-data-for-differential-testing){:target="_blank"}
+    - [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html){:target="_blank"}
