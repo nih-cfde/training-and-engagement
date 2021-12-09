@@ -61,4 +61,4 @@ You will learn two different approaches for DGE analysis using open access human
     - [Cavatica Documentation](https://docs.cavatica.org/docs/getting-started){:target="_blank"}
     - [Playlist of video tutorials explaining concepts used in RNA-Seq analysis](https://www.youtube.com/playlist?list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp){:target="_blank"}
     - [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#how-do-i-use-vst-or-rlog-data-for-differential-testing){:target="_blank"}
-    - [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html){:target="_blank"} 
+    - [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html){:target="_blank"}
