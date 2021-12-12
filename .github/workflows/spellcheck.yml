@@ -1,0 +1,16 @@
+name: Spellcheck Action
+on:
+  pull_request:
+    branches: [dev, stable]
+    types: [opened, reopened]
+
+jobs:
+  build:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+    # The checkout step
+    - uses: actions/checkout@v1
+    - uses: rojopolis/spellcheck-github-actions@0.18.0
+      name: Spellcheck
+      
