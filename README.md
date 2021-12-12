@@ -1,5 +1,7 @@
 # CFDE Training Resources
 
+This is a sentnce with a fwe typos in it. This oen also has a typo or too.
+
 The `stable` branch of this repository builds the public training materials for the CFDE at https://training.nih-cfde.org. The `dev` branch contains updates that will be merged as part of the next [release](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md).
 
 The training website hosts tutorials and resources to learn how to perform bioinformatic analyses and access data. The GitHub repository contains CFDE internal resources, including the [website style guide](./docs/Website-Style-Guide/0index.md) and [website release protocol](./docs/TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md).
