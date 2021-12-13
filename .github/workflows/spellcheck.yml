@@ -1,6 +1,6 @@
 name: Spellcheck Action
 on:
-  pull_request:
+  pull_request_target:
     branches: [dev, stable]
     types: [opened, reopened]
 
