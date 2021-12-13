@@ -13,7 +13,9 @@ ignore$
 \.mod$
 \.mp[34]$
 \.png$
+\.jpg$
 \.wav$
 ^\.github/
-\.yml
-\.css
+\.yml$
+\.css$
+
