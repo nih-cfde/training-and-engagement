@@ -15,3 +15,5 @@ ignore$
 \.png$
 \.wav$
 ^\.github/
+\.yml
+\.css
