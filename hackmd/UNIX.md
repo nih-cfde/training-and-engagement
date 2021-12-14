@@ -1,12 +1,16 @@
-# An Introduction to UNIX  
+# An Introduction to UNIX for Cloud Computing - December 8, 2021
 
-**When:**  
+**When:** Wednesday, December 8th from 10:00 am-12:00 pm PDT
 
-**Instructors:** 
+**Instructors:** Dr. Rayna Harris
 
-**Helpers:**   
+**Helpers:**  Dr. Saranya Canchi and Jeremy Walter
 
-**Zoom:**  
+**Zoom:** https://zoom.us/j/7575820324?pwd=d2UyMEhYZGNiV3kyUFpUL1EwQmthQT09
+
+**Slides:** https://osf.io/dw3he/
+
+**Computing environment:** [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio)
 
 **Cheatsheet:** https://training.nih-cfde.org/en/latest/General-Tools/Cheat-Sheets/bash_cheatsheet/
 
@@ -24,6 +28,8 @@ This free 2-hour workshop introduces the UNIX command line. It was designed for 
 * Understand wildcard expression 
 * Combine commands into workflows
 :::
+
+
 
 The lesson materials were adapted from the UC Davis Data Lab's [Intro to Cloud Computing](https://ngs-docs.github.io/2021-august-remote-computing/) workshop, Data Carpentry's [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson, and the Lab for Data Intensive Biology's [Advanced Beginner/Intermediate Shell](https://dib-training.readthedocs.io/en/pub/2016-01-13-adv-beg-shell.html) workshop. Today's workshop is designed to prepare you for taking subsequent cloud computing and bioinformatic workshops. 
 
@@ -45,28 +51,17 @@ While we wait to get started --
 [TOC]
 
 
-
-
-
-
-
-
-
 ---
 
 ## 1. The shell and terminal
 
 The **shell** is a computer program that uses a command line interface (CLI) to give commands made by your keyboard to your operating system. Most people are used to interacting with a graphic user interface (GUI), where you can use a combination of your mouse and keyboard to carry out commands on your computer. 
 
-
 We can use the shell through a **terminal** program. From the terminal. We can open programs, run analyses, create documents, delete files and create folders. 
 
-
-
- 
 For this remote workshop, we will be using a custom created create custom computing environment using [Binder](https://mybinder.org/). Click the **launch binder** button below, wait for it to launch, then open a new terminal window by clicking **Terminal**. 
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ngs-docs/2021-remote-computing-binder/stable?urlpath=rstudio)
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio)
 
 After the server launches and you select terminal, you should see an RStudio environment and the UNIX **prompt** `$`.
 
@@ -76,8 +71,6 @@ React with a :heavy_check_mark: when you have a terminal window open.
 React with a :negative_squared_cross_mark: if you have issues opening a terminal.
 
 
-
-
 :::danger
 #### Getting help
 
@@ -85,13 +78,11 @@ When you open up the terminal in Binder, you may see a line of text or a **promp
 
 :::
 
-
-
 :::success
 #### Key points about the UNIX shell and terminal
 
 * A shell is a program that reads commands and runs programs.
-* We are using a remote terminal provided by myBinder.org  [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ngs-docs/2021-remote-computing-binder/stable?urlpath=rstudio)
+* We are using a remote terminal provided by myBinder.org  [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio)
 :::
 
 
@@ -105,13 +96,10 @@ UNIX commands are like sentences that can be very simple or complex. The simples
 
 We should note that _folders_ are called **directories** at the command line. For all intents and purposes, they can be used interchangeably, but if you'd like more information please read about ["the folder metaphor"](https://en.wikipedia.org/wiki/Directory_%28computing%29#Folder_metaphor).
 
-![](https://i.imgur.com/tS4uw77.png)
-
 
 This Binder comes preloaded with data provided by your instructors.  _If you want to do these exercises locally, on your own computer, you can [download the data here](https://s3-us-west-1.amazonaws.com/dib-training.ucdavis.edu/shell-data.zip)._
 
-For today's lesson, we will focus on three different sets of data. `2cities` contains a compressed text file containing the book A Tale of Two Cities, `SouthParkData` contains a compressed csv file containing all the lines spoken by each character across 14 seasons. This dataset is useful for teaching UNIX commans on medium sized text data. The `data/MiSeq` directory contains FASTQ and FASTA files that are commonly used in next-generation sequencing experiments. These data are useful for teaching commonly used UNIX commands for exploring genome-scale data. 
-
+For today's lesson, we will focus on three different sets of data. `books` contains ebooks such as A Tale of Two Cities and The Wizard of Oz.`southpark` contains a compressed csv file containing all the lines spoken by each character across 14 seasons. `seattle` contains data from the Open Seattle Data Portal, including a csv file with names of pets.  The `MiSeq` directory contains FASTQ and FASTA files that are commonly used in next-generation sequencing experiments. These data are useful for practicing commonly used UNIX commands to explore genome-scale data. 
 
 
 The commands `pwd` and `ls` are two simple commands that can be used to answer the two commonly asked questions "where am I?" and "what files are here?". We will use these frequently through the next sections.
@@ -148,39 +136,10 @@ ls
 We can see the following files:
 
 ```
-2cities		README.md	SouthParkData	binder		data
-```
-
-
-
-To list files in a different directory, you must specify the path. 
-What files are in the `2cities/` sub-directory.
-
-
-```
-ls 2cities/
-```
-
-We can see the following files:
-
-```
-README.md book.txt.gz
+binder  books  images  MiSeq  README.md  seattle  southpark
 ```
 
 If we want more information about the files, such as the date they were created and their file size, we can add "flags" `-l` for long listing format.
-
-```
-ls -l 2cities/
-```
-
-We will see the following:
-
-```
--rw-r--r-- 1 jovyan jovyan 1866609 Aug  4 04:34 All-seasons.csv.gz
--rw-r--r-- 1 jovyan jovyan     252 Aug  4 04:34 License.md
--rw-r--r-- 1 jovyan jovyan     345 Aug  4 04:34 README.md
-```
-
 
 Flags (sometimes called options) allow us to finely control the behavior of the command. But how did we know to add `-l` after ls? The [`ls` manual ](https://man7.org/linux/man-pages/man1/ls.1.html) describes the command and all its options in the details. Like most commands, you can type the command followed `--help` to view the manual in your terminal.
 
@@ -200,23 +159,19 @@ You can use multiple flags or options at the same time to modify the behavior of
 
 :::spoiler
 
-1. The `-h` option makes the file size human readable, but it only noticable if you are printing the file size. 
+1. The `-h` option makes the file size human readable, but it is only noticeable if you are printing the file size. 
 1. If you use both the `-h` option and the `-l` option (with`ls -lh` or `ls -l -h`), this makes the file size ‘human readable’, _i.e._ displaying something like 5.3K instead of 5369.
 1. The -F flag will class the file types by appending an identifier. This works best if there are directories present. 
 :::
-
-
-
-
 
 Now we have seen how to list around our computers and what is located in the directory we are. But some of the beauty of the shell is that we can execute activities in locations that we are not currently in. To do this we can either use an absolute path or a relative path. A **relative path** is the path to another directory from the one you are currently in. 
 
 
 To move from one directory to the other, we use the `cd` command to **change directories**. 
-Let's navigate into the `2cities` using the `cd` command followed by
+Let's navigate into the `books` using the `cd` command followed by
 
 ```
-cd 2cities
+cd books
 ```
 
 Now, we can use the `pwd` and/or `ls` commands to confirm that we did indeed change directories.  
@@ -226,42 +181,87 @@ pwd
 ls
 ```
 
-Here we see two files: `README.md` and `book.txt.gz`.
 
-Because you can change directories using either the relative or absolute path, there multiple ways to successfully move up or down in the directory hierarchy.
+Because you can change directories using either the relative or absolute path, there are multiple ways to successfully move up or down in the directory hierarchy.
 Let's return to our home directory using the `cd` command and a relative path, then print the working directory to confirm.  
 
 
 :::warning
 #### Challenge: Navigating with relative and absolute paths
 
-Starting from `/home/jovyan/2cities`, which of the following commands could Jovyan use to navigate to their **home directory**? 
+Starting from `books`, which of the following commands could Jovyan use to navigate to the `MiSeq` directory? 
 
 
-1. `cd .`
-2. `cd`
-3. `cd /`
-4. `cd home/jovyan`
-5. `cd /home/jovyan`
-6. `cd ../..`
-7. `cd ~`
-8. `cd home`
-9. `cd ~/data/..`
-10. `cd ..`
+1. `cd MiSeq`
+2. `cd ./MiSeq`
+3. `cd ~/MiSeq`
+4. `cd ../MiSeq`
+5. `cd /MiSeq`
+6. `cd ../../Miseq`
+7. `cd /home/jovyan/MiSeq`
+
 
 :::spoiler
 
-1. No: `.` stands for the current directory, which would be `data`.
-2. Yes: `cd` without an argument will take you to the home
-3. No: `/` stands for the root directory.
-4. No: `home` and `jovyan` are not subdirectories of `data`
-5. Yes: this command goes up two the root and into the home directory.
-6. No: this command goes up two levels to `home`, which is not "the home directory" 
-7. Yes: `~` stands for the user's home directory, in this case `/home/jovyan`.
-8. No: this command would navigate into a directory `home` in the current directory if it exists.
-9. Yes: unnecessarily complicated, but correct.
-10. Yes: goes up one level.
+1. No, MiSeq does not exist in the current working directory.
+2. No, MiSeq does not exist in the current working directory.
+3. Yes, MiSeq is in the home directory.
+4. Yes, MiSeq is in the directory one level above.
+5. No, MiSeq is not in the root directory.
+6. No, MiSeq is not in the directory two levels above.
+7. Yes, this is the full path to MiSeq.
 :::
+
+ 
+Let's practice using the cd and ls commands to explore files in different directories.  
+ 
+#### books
+
+What files are in the `books` directory?
+
+```
+ls books
+cd ~/books
+ls 
+```
+
+We can see the following files:
+
+```
+A-tale-of-two-cities.txt	TheWonderfulWizardOfOz.txt.gz
+Alice_in_wonderland.txt		book.txt
+PeterPan.txt			    get_books.sh
+README.md
+```
+
+#### southpark
+
+How large are all the files in the `southparkdata` directory?
+
+```
+cd ~/southpark
+ls -l 
+```
+
+We will see the following:
+
+```
+-rw-r--r-- 1 jovyan jovyan 1866609 Aug  4 04:34 All-seasons.csv.gz
+-rw-r--r-- 1 jovyan jovyan     252 Aug  4 04:34 License.md
+-rw-r--r-- 1 jovyan jovyan     345 Aug  4 04:34 README.md
+```
+
+#### MiSeq
+
+
+How large are all the `.fastq` files?
+
+
+```
+cd ~/MiSeq
+ls *fastq
+```
+
 
 
 
@@ -307,10 +307,10 @@ You can use TAB to do filename completion, so if you type `cat R` and then press
 :::
 
 
-Let's navigate to the `2cities` directory and use the `head` command to view the `README.md` file. 
+Let's navigate to the `books` directory and use the `head` command to view the `README.md` file. 
 
 ```
-cd ~/2cities/
+cd ~/books/
 head README.md
 ```
 
@@ -323,27 +323,27 @@ downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/98)
 
 ```
 
-Let's use the `head` command to read the first 10 opening lines of A Tale of 2 Cities.
 
-```
-head book.txt.gz
-```
-
-What happened? You probably heard a peeping sound and saw a standard output that was not human readable. To read this file, we first need to uncompress it. We will use the `gunzip` command to unzip `.gz` files.
-
-
-```
-gunzip -k book.txt.gz
-ls
-```
-
-Now we can view the file with `head`, `cat`, or `less`. 
+Now we can view the file with `head`, `cat`, or `less` and `tail`. 
 
 ```
 head book.txt
 tail book.txt
 cat book.txt
 less book.txt
+```
+
+
+We can there are a lot more books, and we can look at the first few lines of all the txt files with the *. 
+
+```
+head *.txt
+```
+
+Notice, there is one book that is compressed. We can uncompress it with the command `gunzip`.
+
+```
+gunzip TheWonderfulWizardofOz.txt.gz
 ```
 
 
@@ -385,6 +385,12 @@ mv book-copy.txt book-2cities.txt
 
 ```
 
+Take care when renaming files. It is good practice to keep track of changes in file names and links to the source data. The commands used to get these books are stored in `get_books.sh`.  We will talk about how to execute this script later.
+
+```
+head get_books.sh
+```
+
 
 :::warning
 
@@ -395,18 +401,16 @@ Now you know how to copy and move files, but you may encounter errors if you try
 What happens when you run the following commands?
 
 ```
-mkdir temp2/ temp3/ temp4/
-mkdir -p temp5/temp6/temp7
+1. mkdir data results images/
+2. mkdir -p data/results/images
 ```
 
 
 
-:::spoiler Hint
+:::spoiler Answer
 
-temp2-5 all created in the working directory. temp6 is sub-directory of temp5 and temp7 is sub-directory of temp6. 
-```
-ls -lF *
-```
+1. data, results, and images all created in the working directory. 2. images is a subdirectory of results, which is a subdirectory of data 
+
 :::
 
 ::: warning
@@ -425,13 +429,20 @@ ls *
 :::
 
 ::: warning
-If you created some files or directories that you don't want, you can remove them with the `rm` and `rmdir` commands. How could you remove `temp6`
+If you created some files or directories that you don't want, you can remove them with the `rm` and `rmdir` commands. How could you remove `data/results/`
 
 :::spoiler A solutions
 
 
 ```
-rm -r temp6/temp7/
+rmdir data/results/images
+rmdir data/results
+```
+
+or 
+
+```
+rm -r data/results
 ```
 :::
 
@@ -451,7 +462,7 @@ rm -r temp6/temp7/
 
 
 
-## 5. Finding things with `grep`, `find`, `cut`, `grep`
+## 5. Finding things with `grep`, `find`, `cut`
 
 
 
@@ -463,7 +474,7 @@ To explore this topic in more detail, navigate to the `data/MiSeq/` directory.
 
 
 ```
-cd ~/data/MiSeq
+cd ~/MiSeq
 ls
 ```
 
@@ -493,7 +504,7 @@ We can use the `cat` command to print fastq files to the screen, but thousands o
 
 
 ```
-head -n 8 F3D0_S188_L001_R1_001.fastq
+head -n 4 F3D0_S188_L001_R1_001.fastq
 ```
 
 ```
@@ -510,7 +521,7 @@ TACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGCCTGCCAAGTCAGCGGTAAAATTGC
 `head` prints the first ten lines of a file out onto your screen. Similarly, the `tail` command prints the last 10 lines of a file. 
 
 ```
-tail -8 F3D0_S188_L001_R1_001.fastq
+tail -4 F3D0_S188_L001_R1_001.fastq
 ```
 
 ```
@@ -561,17 +572,15 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 
  
 1. `ls *` 
-1. `ls data/*`
-1. `ls data/MiSeq/F3D*`
-1. `ls data/MiSeq/*fasta`
+1. `ls MiSeq/F3D*`
+1. `ls MiSeq/*fasta`
  
 
 :::spoiler
 
 1. `ls *` lists files in the working directory and 1 level down. 
-1. `ls data/*` lists files in the data directory and 1 level down. 
-1. `ls data/MiSeq/F3D*` lists files in the data/MiSeq directory that start with "F3D".
-1. `ls data/MiSeq/*fasta` lists files in the data/MiSeq directory that end with "fasta".
+1. `ls MiSeq/F3D*` lists files in the data/MiSeq directory that start with "F3D".
+1. `ls MiSeq/*fasta` lists files in the data/MiSeq directory that end with "fasta".
 
 :::
 
@@ -579,7 +588,7 @@ A lot of the time we want to know if a file contains what we expect. A useful th
 
 
 
-The `data/MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
+The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
 
 Let's say you'd like to find the sequence `CATTAG` in your MiSeq files. We can also use the **wildcard** regular expression to search `CATTAG` in all of the fastq files located in our current working directory:
 
@@ -635,7 +644,7 @@ is where input comes from.)
 
 Much of the power of the UNIX command line comes from working with
 stdout output, and if you work with UNIX a lot, you'll see characters
-like the `>` (redirect), `>>` (append), and `|` (pipe)  thrown around. These
+like the `>` (redirect), `>>` (append) , and `|` (pipe) thrown around. These
 are redirection commands that say, respectively, "send stdout to a new
 file", "append stdout to an existing file", and "send stdout from one
 program to another program's stdin."
@@ -786,7 +795,119 @@ commands to use to achieve a particular task. The wedbsite [Explain Shell](https
 
 
 ::: success
-#### Keypoints 
+#### Key points 
 This workshop teaches a dozen commonly used UNIX commands that can be combined to perform power, reproducible bioinformatic workflows. The commands taught `pwd` `ls`  `cd` `cat` `head` `less` `cp` `mv` `rm` `mkdir` `grep` `wc` `cut` `gunzip` and `gzip` (and probably a few others).
 :::
+
+
+
+### Today's Commands
+
+
+```
+clear
+pwd
+PS1="\w $ "
+
+ls
+ls --help
+ls -l books
+ls -l MiSeq
+ls -lh MiSeq
+ls -lh *
+
+cd books
+pwd
+ls
+cd ../Miseq
+pwd
+ls
+ls *fastq
+ls F3*
+
+cd ~books
+
+head README.md
+
+head book.txt
+tail book.txt
+cat book.txt
+less book.txt
+
+head *txt
+
+wc -l *txt
+wc -l *txt | sort
+wc -l *txt | sort -nr
+
+gunzip TheWonderfulWizardofOz.txt
+wc -l *txt | sort -nr
+
+rm book.txt
+mkdir results
+
+wc -l *txt | sort -nr > results/book_lengths.txt
+cat results/book_lengths.txt
+
+grep "Chapter" *txt
+grep -i "Chapter" *txt
+grep "CHAPTER" *txt > results/chapter_titles.txt
+cat results/chapter_titles.txt
+
+grep "The" *txt
+grep "^The" *txt
+grep -w "^The" *txt
+grep -w -A 1 "^The" *txt
+grep -w  "^The" *txt > results/The.txt
+cat results/The.txt
+
+head README.md
+head -4 F3D0_S188_L001_R1_001.fastq
+tail -4 F3D0_S188_L001_R1_001.fastq
+less F3D0_S188_L001_R1_001.fastq
+
+wc README.md
+wc F3D0_S188_L001_R1_001.fastq
+wc -l F3D0_S188_L001_R1_001.fastq	
+wc -l *fastq
+wc -l *R1*fastq
+wc -l *R1*fastq | sort -nr
+
+head -4 F3D0_S188_L001_R1_001.fastq
+grep "^@M" F3D0_S188_L001_R1_001.fastq
+grep "^@M" F3D0_S188_L001_R1_001.fastq | wc -l
+grep "^@M" *R1*.fastq | wc -l
+
+for file in *R1*.fastq
+do
+echo $file
+grep "^@M" $file | wc -l
+done
+
+mkdir results
+
+
+for file in *R1*.fastq
+do
+echo $file >> results/read_count.txt
+grep "^@M" $file | wc -l >> results/read_count.txt
+done
+
+head results/read_count.txt
+
+for file in *R1*.fastq
+do
+echo $file >> results/samples.csv
+grep "^@M" $file | wc -l >> results/count.csv
+paste -d , results/samples.csv results/count.csv > results/read_count.csv
+done
+
+head results/read_count.csv
+
+cd
+history
+history > notes_dec_7.txt
+
+```
+
 
