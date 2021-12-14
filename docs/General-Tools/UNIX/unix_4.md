@@ -5,9 +5,9 @@ standard output, or "stdout". (Some commands also produce a standard error, or "
 
 Much of the power of the UNIX command line comes from working with
 stdout output, and if you work with UNIX a lot, you'll see characters
-like the `|` (pipe), `>` (redirect), `>>` (append)  thrown around. These
+like the `>` (redirect), `>>` (append), and `|` (pipe)  thrown around. These
 are redirection commands that say, respectively, "send stdout to a new
-file", "append stdout to an existing file", and "send stdout from one
+file", "append stdout to an existing file", and "send or pipe the stdout from one
 program to another program's stdin."
 
 If you know you want to save an output file, you can use the redirect symbol `>`. Note, if you want to save a file in a different directory, that directory must exist.
