@@ -8,9 +8,6 @@
 
 **Helpers:**  
 
- - [ ] Please fill out our [pre-workshop survey](https://forms.gle/TNhgV1KYCHgRKr1v6)!
-
-
 ## Description
 
 This 2 hour hands-on tutorial will introduce you to creating a computer "in the cloud" and logging into it, via Amazon Web Services. We'll create a small general-purpose Linux computer, connect to it, and run a small job while discussing the concepts and technologies involved.
@@ -21,8 +18,6 @@ While we wait to get started --
 1. :heavy_check_mark: Have you checked out the [pre-workshop resources page](https://github.com/nih-cfde/training-and-engagement/wiki/Resources-for-Workshop-Attendees)?
 
 2. If you are on a windows computer, make sure you have Mobax term: https://mobaxterm.mobatek.net/
-
-
 
 
 ## Hello!
@@ -446,6 +441,11 @@ screen -r <screen_ID>
 - [x] How to install and run a software program on the instance 
 - [x] How to terminate your instance 
 
+## Upcoming CFDE workshops
+
+Check our [Events page](https://www.nih-cfde.org/events/) for information on upcoming workshops!
+
+You can contact us at training@cfde.atlassian.net with requests for new topics or questions about the workshops.
 
 ### Additional Resources
 
@@ -455,6 +455,16 @@ screen -r <screen_ID>
 
 
 ## FAQs
+
+**A note on data transfer costs**
+
+Data transfer between AWS and the Internet:
+Data transfer costs from AWS to the internet are highly dependent on the region. For example, for S3 buckets located in the US West (Oregon) region, the first GB/month is free and the next 9.999 TB/month cost $0.09 per GB. However, if the S3 buckets are located in the South America (São Paolo) region, the first GB/month is still free, but the next 9.999 TB/month cost $0.25 per GB.
+
+More info here: https://www.apptio.com/blog/aws-data-transfer-costs/
+
+**Data storage**
+https://aws.amazon.com/ebs/pricing/
 
 **What are the advantages of using AWS over an academic HPC?**
 - Most universities don't have a HPC
