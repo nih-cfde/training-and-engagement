@@ -1,7 +1,10 @@
 nav:
-  - unix_0.md
-  - unix_1.md
-  - unix_2.md
-  - unix_3.md
-  - unix_4.md
-  - unix_5.md
+  - unix_0.md: Overview
+  - unix_1.md: Terminal
+  - unix_2.md: Navigating
+  - unix_3.md: Reading
+  - unix_4.md: Creating
+  - unix_5.md: Finding
+  - unix_6.md: Workflows
+  - unix_7.md: CSV
+  - unix_8.md: Summary
