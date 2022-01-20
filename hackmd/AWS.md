@@ -1,4 +1,4 @@
-# A Hands On Introduction to AWS
+# A Hands-on Introduction to AWS
 
 **When:**  
 
@@ -8,26 +8,25 @@
 
 **Helpers:**  
 
+
 ## Description
 
 This 2 hour hands-on tutorial will introduce you to creating a computer "in the cloud" and logging into it, via Amazon Web Services. We'll create a small general-purpose Linux computer, connect to it, and run a small job while discussing the concepts and technologies involved.
 
 
-While we wait to get started --
-
-1. :heavy_check_mark: Have you checked out the [pre-workshop resources page](https://github.com/nih-cfde/training-and-engagement/wiki/Resources-for-Workshop-Attendees)?
-
-2. If you are on a windows computer, make sure you have installed MobaXterm: https://mobaxterm.mobatek.net/
+> :smiley_cat: While we wait to get started
+> 1. :heavy_check_mark: Have you checked out the [pre-workshop resources page](https://github.com/nih-cfde/training-and-engagement/wiki/Resources-for-Workshop-Attendees)?
+> 2. :pencil: Please fill out our pre-workshop survey if you have not already done so! [Please click this link](https://forms.gle/hCtbXrDyH9omAYyB6) 
+> 3. If you are on a windows computer, make sure you have Mobaxterm. [Check out the install guide!](https://hackmd.io/YivVGhznRwqVO3fxdGpkOQ?view)
 
 
 ## Hello!
 
-Your instructors are both part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
+Your instructors and helpers are part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
 
 
-**Have you heard of the NIH Common Fund Data Ecosystem?**
-
-Put up a :heavy_check_mark: for yes and a :negative_squared_cross_mark: for no!
+> 👍 **Have you heard of the NIH Common Fund Data Ecosystem?**
+> Put up a :heavy_check_mark: for yes and a :negative_squared_cross_mark: for no!
 
 We have the following goals for this workshop:
 
@@ -40,36 +39,33 @@ So, please ask lots of questions, and even the ones we can't answer yet we'll fi
 
 Today, everything you do will be paid for by us. In the future, if you create your own AWS account, you'll have to put your own credit card on it. We'd be happy to answer questions about how to pay for AWS.
 
-
-
-:smiley_cat: Your free login credentials will work for the next 8 hours
-
+> :smiley_cat: Your free login credentials will work for the next 24 hours
 
 ### Workshop structure and plan
 
-* Brief introduction to AWS and the cloud
-* Set up an instance and connect to it
-* Install and run things in the cloud computer
-* Learn how to download output files to local machine
-* Take your questions
+- [ ]  Brief introduction to AWS and the cloud
+- [ ]  Set up an instance and connect to it
+- [ ]  Install and run things in the cloud computer
+- [ ]  Learn how to download output files to local machine
+- [ ]  Take your questions
 
 ### How to ask questions
 If you have questions at any point, 
 - Drop them in the chat, or
-- Direct messages to the moderator (Saranya Canchi) are welcome, or
+- Direct messages to the moderator are welcome, or
 - Unmute yourself and ask during the workshop
 
-We're going to use the "raise hand" reaction in zoom to make sure people are on board during the hands-on activities.
+We're going to use the raise hand :raised_hand: reaction in zoom to make sure people are on board during the hands-on activities.
 
 ## Some background
 
-What is cloud computing? 
+#### What is cloud computing? 
 - Renting and use of IT services over the internet.
 - No direct, active management by the user.
-- Avoid or minimize up-front IT infrastructure costs.
+- Avoid or minimize up-front IT infrastructure cost.
 - Amazon and Google, among others, rent compute resources over the internet for money.
 
-Why might you want to use a cloud computer?
+#### Why might you want to use a cloud computer?
 
 There are lots of reasons, but basically "you need a kind of compute or network access that you don't have."
 
@@ -85,16 +81,13 @@ There are lots of reasons, but basically "you need a kind of compute or network 
 - It is a hosting provider that gives you a lot of services including cloud storage and cloud compute. 
 
 
-Terminology:
-* Instance - a computer that is running ...somewhere in "the cloud". The important thing is that someone else is worrying about the hardware etc, so you're just renting what you need!
-* Cloud computer - same as an "instance".
-* Image - the basic computer install from which an instance is constructed. The configuration of your instance at launch is a copy of the Amazon Machine Image (AMI)
+#### Terminology:
+* **Instance** - a computer that is running ...somewhere in "the cloud". The important thing is that someone else is worrying about the hardware etc, so you're just renting what you need!
+* **Cloud computer** - same as an "instance".
+* **Image** - the basic computer install from which an instance is constructed. The configuration of your instance at launch is a copy of the Amazon Machine Image (AMI)
 * [EC2](https://en.wikipedia.org/wiki/Elasticity_(cloud_computing)#:~:text=In%20cloud%20computing%2C%20elasticity%20is,demand%20as%20closely%20as%20possible%22.) - elastic compute cloud.
 
-
-**Amazon's main compute rental service is called Elastic Compute Cloud (or EC2) and that's what we'll be showing you today.**
-
-
+> ℹ️ **Amazon's main compute rental service is called Elastic Compute Cloud (or EC2) and that's what we'll be showing you today.**
 
 ### EC2
 
@@ -118,44 +111,38 @@ Terminology:
 
 We will create a cloud computer - an "instance" - and then log in to it.
 
+> 💻 **Log in at**: https://aws-cfde-training-workshop.signin.aws.amazon.com/console
 
-**Log in at**: https://cfde-training-workshop.signin.aws.amazon.com/console
+Use your registration e-mail (see bottom of this page if you forgot!) and password `CFDErocks!`
 
+> Put up a :raised_hand: on Zoom when you've successfully logged in with the workshop user credentials.
 
-Use your registration e-mail and password `CFDErocks!`
-
-
-Put up a :hand: on Zoom when you've successfully logged in with the workshop user credentials.
-
-
-### "Spinning up" instances
+### Setting up or "spinning up" instances
 
 Checklist for hands-on walk-through
-- [ ] Select a region: geographic area where AWS has data centers
-- [ ] Pick the AMI (OS)
-- [ ] Pick an instance (T2 micro free tier!) 
-- [ ] Edit security groups
+- [ ] Select a region on the top right: US West (N. California)us-west-1
+- [ ] Pick the AMI (OS): Ubuntu 20.04 LTS - Focal
+- [ ] Pick an instance: T2 micro free tier
+- [ ] Edit security groups: to your last name
 - [ ] Launch
 
-[Link to tutorial](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws3)
-
+[Link to tutorial](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws3/)
 
 ### Connecting to instances
 
-- [ ] [Connect to the instance via the web browser](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws4)
+- [ ] [Connect to the instance via the web browser](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws4/)
 
 Other ways to connect to the instance:
 
-We have tutorials on connecting to an instance for **Windows** Users using MobaXterm and for **Mac Users** using MacOS Terminal. Please visit our ["Connect to an Instance"](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws4.html) webpage and select your OS using the tabs on the top of the page.
+We have tutorials on connecting to an instance for **Windows** Users using MobaXterm and for **Mac Users** using MacOS Terminal. Please visit our ["Connect to an Instance"](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws4/) webpage and select your OS using the tabs on the top of the page.
 
 
 ## Installing programs and running them in the cloud
 
-- Install a simple bioinformatics software (FastQC)
+- Install a simple bioinformatic software (FastQC)
 - Download fastq (raw RNA Sequence) data
 - Run fastqc on downloaded data
 - Transfer output files from AWS computer to local computer.
-
 
 
 ### What is FastQC?
@@ -170,12 +157,11 @@ FastQC aims to provide a simple way to do some quality control checks on raw seq
 
 
 ### Commands to run 
-(explain commands)
 
 
-
-
-:-1: `Copy+Paste` does not work if you are using Safari (MacOS) to run the AWS terminal. Please use another web browser (e.g. Chrome or Firefox), or type in the commands.
+> ⚠️ Note
+>
+> :-1: `Copy+Paste` does not work if you are using Safari (MacOS) to run the AWS terminal. Please use another web browser (e.g. Chrome or Firefox), or type in the commands.
 
 
 1) Update system packages:
@@ -199,8 +185,7 @@ cd fastq
 curl -L https://osf.io/8rvh5/download -o ERR458494.fastq.gz
 ```
 
-Click the raised hand :hand: reaction if you were able to run the last command successfully and download ERR458494.fastq.gz
-
+> Click the raised hand :hand: reaction if you were able to run the last command successfully and download ERR458494.fastq.gz
 
 5) Check if your file has been downloaded
 ```
@@ -212,7 +197,8 @@ ls -l
 sudo apt install fastqc -y
 ```
 
-To double check it was successful, type ```fastqc --version```. If it returns 0.11.9, that means installation was successful.
+> Click the raised hand :hand: reaction if you were able to run the last command successfully. 
+> To double check it was successful, type ```fastqc --version```. If it returns 0.11.9, that means installation was successful.
 
 
 7) Run FastQC on the dowloaded file
@@ -220,14 +206,15 @@ To double check it was successful, type ```fastqc --version```. If it returns 0.
 fastqc ERR458494.fastq.gz
 ```
 
+> Click the raised hand :hand: reaction if you were able to run the last command successfully and download an html file.
+
 
 8) view files
 ```
 ls
 ```
 
-<details> 
-<summary>Learn more about the commands</summary>
+### Learn more about the commands
 
 ```apt-cache search [search term 1]```
 - search available software for installation
@@ -260,11 +247,8 @@ ls
 - ERR458494.fastq.gz - "Yeast" Sample
 
 
-</details>
+### More About FASTQC
 
-<details>
-<summary>More About FASTQC</summary>
-***
 
 Analysis Modules Documentation: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/
 
@@ -279,15 +263,13 @@ Video Walkthrough:
 [FastQC tool for read data quality evaluation](https://www.youtube.com/watch?v=lUk5Ju3vCDM)
 
 [Using FastQC to check the quality of high throughput sequence](https://www.youtube.com/watch?v=bz93ReOv87Y&t=116s)
-</details>
+
 
 ***
 
 
-## Downloading data from AWS instance onto local computer
 
-<details> 
-<summary>WindowsOS</summary>
+## Downloading data from AWS instance onto local computer
 
 ### WindowsOS
 
@@ -308,19 +290,15 @@ Video Walkthrough:
 
 2. In MobaXterm, click on "Session"
 3. Click on "SSH"
-4. Enter the Public DNS as the "Remote host" (the part that looks like ec2-[..].us-west-1.compute.amazonaws.com)
+4. Enter the Public DNS as the "Remote host"
 5. Check box next to "Specify username" and enter "ubuntu" as the username
 6. Click the "Advanced SSH settings" tab
 7. Check box by "Use private key"
 8. Use the document icon to navigate to where you saved the private key (e.g., "amazon.pem") from AWS on your computer. It is likely on your Desktop or Downloads folder
 9. Click "OK"
 10. A terminal session should open up with a left-side panel showing the file system of our AWS instance! You can click on the FastQC html file and view in browser to open. There are also options in the panel to download files.
-</details>
 
-<details> 
-<summary>MacOS/Linux</summary>
-
-#### MacOS
+### MacOS
 
 - Start Terminal 
 - Change the permissions on the .pem file for security purposes (removes read, write, and execute permissions for all users except the owner (you)
@@ -344,13 +322,13 @@ Go back to your [instance page](https://us-west-1.console.aws.amazon.com/ec2/v2/
 scp -i <your-.pem> ubuntu@???-??-??-???-??.us-west-1.compute.amazonaws.com:/home/ubuntu/fastq/ERR458494_fastqc.html ./
 ```
 `-i` flag points to identity file. Don't forget to change the stuff after `ubuntu@` to match your instance!
-</details>
+
 
 ## Shutting down instances
 
 When you shut down your instance, any data that is on a non-persistent disk goes away permanently. But you also stop being charged for any compute and data, too!
 
-:bulb: **Stopping vs hibernation vs termination**
+> :bulb: **Stopping vs hibernation vs termination**
 
 - Stopping: 
     - saves data to EBS root volume 
@@ -379,13 +357,14 @@ Launch a t2.nano, Ubuntu 20.04 LTS - Focal instance in the the **East US (Ohio) 
 
 Bonus points: Your added volume will persist after you have terminated your instance. Where can you find it?
 
-<details>
-<summary>Hint</summary>
+> Hint
+> - Go to Amazon Market place and search for the "Ubuntu 20.04 LTS - Focal". Should be the first result.
+> - Look in tab 4 called "Add Storage" to add additional storage volumes.
 
-- Go to Amazon Market place and search for the "Ubuntu 20.04 LTS - Focal". Should be the first result.
-- Look in tab 4 called "Add Storage" to add additional storage volumes.
 
-</details>
+## Post-workshop survey
+
+[Please fill out our post workshop survey!](https://forms.gle/CAJ23vB6f4pqnXD49)
 
 ## Bonus Module (time permitted)
 
@@ -429,14 +408,12 @@ screen -ls
 ```
 
 6) Reattach screen
+
 ```
 screen -r <screen_ID>
 ```
 
-7) Repeat step 4 to detach
-
-[Link to lesson](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.html)
-
+7) Re-Detach screen repeat step four
 
 ## Checklist of things you learned today!
 
@@ -446,53 +423,14 @@ screen -r <screen_ID>
 - [x] How to install and run a software program on the instance 
 - [x] How to terminate your instance 
 
+
+## Questions and comments?
+
+We'll send around the post-workshop survey link via e-mail -- please do fill it out, thank you!
+
 ## Upcoming CFDE workshops
 
 Check our [Events page](https://www.nih-cfde.org/events/) for information on upcoming workshops!
 
 You can contact us at training@cfde.atlassian.net with requests for new topics or questions about the workshops.
 
-### Additional Resources
-
-- Understanding data transfer costs in AWS: https://github.com/open-guides/og-aws#aws-data-transfer-costs
-- Useful tips: https://wblinks.com/notes/aws-tips-i-wish-id-known-before-i-started/
-- Consolidated billing: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html
-
-
-## FAQs
-
-**A note on data transfer costs**
-
-Data transfer between AWS and the Internet:
-Data transfer costs from AWS to the internet are highly dependent on the region. For example, for S3 buckets located in the US West (Oregon) region, the first GB/month is free and the next 9.999 TB/month cost $0.09 per GB. However, if the S3 buckets are located in the South America (São Paolo) region, the first GB/month is still free, but the next 9.999 TB/month cost $0.25 per GB.
-
-More info here: https://www.apptio.com/blog/aws-data-transfer-costs/
-
-**Data storage**
-https://aws.amazon.com/ebs/pricing/
-
-**What are the advantages of using AWS over an academic HPC?**
-- Most universities don't have a HPC
-- No queues!
-- Can set up as many instances as you want (as long as you are willing to pay for it)
-- Can install anything without needing admin permissions
-- Almost no scheduled or unscheduled outages
-- Easier to set up 
-- Easier to learn and get help on the internet
-- Costs more over time, but someone is paying for the HPC too! 
-
-*But if you have a good HPC, please use it!*
-
-**Can you set up multiple instances at once**
-- Yes!
-- There is a limit per account but it is a very large number and doesn't apply to most people
-
-**Can you launch more than one instance with the same configurations?**
-- Yes, there is an option to do this on the instance set up page.
-- Look in the second tab!
-
-**Can you copy an instance or share an instance with collaborators?** 
-- Yes, but this is not as straightforward as it seems.
-- The way to clone an instance is via [snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)
-
-Check out our [AWS discussion board](https://github.com/nih-cfde/training-and-engagement/discussions/categories/aws) for FAQs and discussion. We encourage you to post a question here ! 
