@@ -1,14 +1,12 @@
-# An Introduction to UNIX for Remote Computing: January 19, 2022
+# An Introduction to UNIX for Remote Computing 
 
+**When:**  
 
-**When:** Wednesday, January 19, 2022 from 10:00 am-12:00 pm PDT
+**Instructors:**  
 
-**Instructors:** Dr. Rayna Harris
+**Helpers:**   
 
-**Helpers:**  Jessica Lumian and Jeremy Walter
-
-**Connect via**  [![Zoom](https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white)](https://zoom.us/j/7575820324?pwd=d2UyMEhYZGNiV3kyUFpUL1EwQmthQT09)
-
+**Connect via**  
 
 **Computing environment:** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio)
 
@@ -19,7 +17,6 @@
 1. What time is it?
 1. Why did you hope to learn from this workshop? 
 :::
-
 
 #### Lesson Overview  
 
@@ -43,7 +40,6 @@ Please refer to our [UNIX Cheatsheet](https://training.nih-cfde.org/en/latest/Ge
 #### Table of Contents
 [TOC]
 
-
 ---
 
 ## 1. The shell and terminal
@@ -56,9 +52,7 @@ For this remote workshop, we will be using a custom-created computing environmen
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio)
 
-
 ![](https://hackmd.io/_uploads/HkZKMYfTY.png)
-
 
 To help with readability, type `PS1='$ '` in the terminal to remove the very long computer name from the path. Then type `clear` to clear the screen of irrelevant warning messages. 
 
@@ -149,7 +143,6 @@ drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 seattle
 drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 southpark
 ```
 
-
 Flags (sometimes called options) allow us to finely control the behavior of the command. But how did we know to add `-l` after ls? The [`ls` manual ](https://man7.org/linux/man-pages/man1/ls.1.html) describes the command and all its options in detail. Like most commands, you can type the command followed `--help` to view the manual in your terminal.
 
 ```
@@ -162,11 +155,9 @@ ls --help
 
 You can use multiple flags, wildcards, and specify directories to modify the behavior of a command. What does the command `ls` do when used with the following option:
 
-
 1. `ls -a`
 2. `ls -F`
 3. `ls -aF`
-
 
 :::spoiler
 
@@ -181,11 +172,8 @@ Now we have seen how to list the contents of folders on our computers and what i
 To move from one directory to the other, we use the `cd` command to **change directories**. We can use the `pwd` and/or `ls` commands to confirm that we did indeed change directories.  Because you can change directories using either the relative or absolute path, there are multiple ways to successfully move up or down in the directory hierarchy.
 
 Let's return to our home directory using the `cd` command and a relative path, then print the working directory to confirm.  
-
  
 Let's practice using the cd and ls commands to explore files in different directories.  
- 
-
 
 Because books/ is in our working directory, we can navigate there with a relative path. What files are in the `books` directory and how large are they?
 
@@ -207,7 +195,6 @@ We can see the following files:
 -rw-r--r-- 1 jovyan jovyan  12M Jan 18 21:13 yeast.fasta
 ```
 
-
 :::warning
 #### Challenge: Navigating with relative and absolute paths
 
@@ -221,7 +208,6 @@ Starting from `books`, which of the following commands could Jovyan use to navig
 5. `cd ../MiSeq`
 6. `cd ../../MiSeq`
 7. `cd /MiSeq`
-
 
 :::spoiler
 
@@ -257,15 +243,6 @@ ls -lhS *.fastq
 -rwxr-xr-x 1 jovyan jovyan 4.3M Jan 18 21:13 F3D6_S194_L001_R2_001.fastq
 ```
 
-
-
-
-
-
-
-
-
-
 How large are all the files in the `southpark` directory? After navigating to the `southpark` , we can use `ls` with the`-l` and `-h` options to use a "long listing" format with the filesize printed in a "human-readable" format using Megabytes, Kilobytes and Gigabytes instead of displaying the file size in bytes. 
 
 ```
@@ -273,7 +250,6 @@ cd ../southpark
 pwd
 ls -l -h 
 ```
-
 
 We will see the following:
 
@@ -283,8 +259,6 @@ We will see the following:
 -rw-r--r--  1 jovyan  jovyan   252B Jan 18 21:13 LICENSE.md
 -rw-r--r--  1 jovyan  jovyan   603B Jan 18 21:13 README.md
 ```
-
-
 
 :::success
 #### Key Points
@@ -305,16 +279,13 @@ We will see the following:
 
 :::
 
-
 ## 3. Reading files with `head`, `tail`, `cat`, and `less`
 
 Now that we know what files exist on our computer, it is time to look at the contents of the file. There are multiple ways to look at the contents of a file. 
 
 The `cat` command prints the entirety of a file to the stdout of our computer. `head` prints, by default the first 10 lines of a file, and `tail` prints the last 10 lines of a file by default. 
 
-
 The `less` command provides a safe way of looking at the contents of a file without the ability to change it. Use the up and down arrows to scroll through the file. Type `q` to exit the lesson program
-
 
 All four of the commands use the same syntax:
 
@@ -331,17 +302,13 @@ less [filename]
 You can use TAB to do filename completion, so if you type `cat R` and then press your Tab key once, it will autocomplete if there is a unique match. If there is more than one match, the first Tab will do nothing, and the second will show all the possible matches.
 :::
 
-
 Let's navigate to the `books` directory. 
 
 ```
 cd ~/books/
 ```
 
-
-
 Now we can view the file with `head`, `cat`, `less`, and `tail`.
-
 
 ```
 head book.txt
@@ -349,8 +316,6 @@ tail book.txt
 cat book.txt
 less book.txt
 ```
-
-
 We can see there are a lot more books, and we can look at the first few lines of all the .txt files with the *. 
 
 ```
@@ -365,11 +330,9 @@ gunzip -k WizardOfOz.txt.gz
 
 Now we can return the previous command and also see the first lines of The Wizard of Oz. 
 
-
 ```
 head *.txt
 ```
-
 
 ::: success
 #### Key UNIX commands for viewing files
@@ -382,13 +345,11 @@ head *.txt
 | `gzip -k [filename]` | compress a file and keep the original |
 :::
 
-
 ## 4. Working with files and directories using `cp`, `gunzip`, `mv`, `mkdir`, and `curl` 
 
 We are used to copying and moving files using a GUI. These functions can be also carried out at the command line.
 
 The `cp` and `mv` commands can be used to copy and move (or rename) files and directories respectively. For both commands, you must specify the old and new names. Specifying the path is necessary if you want to move files out of the current working directory.
-
 
 ```
 cp [original-filename] [copy-filename]
@@ -402,7 +363,6 @@ cp book.txt book-copy.txt
 ls
 ```
 
-
 The `mv` command can be used to either move files to a new location or to rename them (which is essentially moving the contents from the old filename to the new file name. Let's use the `mv` command to rename one of the books.
 
 ```
@@ -411,15 +371,11 @@ mv A-tale-of-two-cities.txt Two-Cities.txt
 
 If you want to move your book-copy.txt to a new folder, you first have to create that folder using the command `mkdir`. Then you move the copy. We can use `ls *` to list files in this directory and subdirectories.
 
-
 ```
 mkdir book-copies
 mv book-copy.txt book-copies
 ls *
 ```
-
-
-
 
 Take care when naming and renaming files. File names should not contain spaces or slashes. The use of capital letters (e.g. CamelCase) and underscores (e.g. snake_case) are often preferred over periods or spaces. It is good practice to keep track of where you got files. The commands used to get these books are stored in the `README.md`. The `README.md`  file is written in [Markdown](https://en.wikipedia.org/wiki/Markdown). (To learn more about Markdown syntax, read this excellent [Markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).)
 
@@ -433,7 +389,6 @@ head README.md
 
 These books were downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/) using the following commands. 
 
-
 curl https://www.gutenberg.org/files/98/98-0.txt -o book.txt
 curl https://www.gutenberg.org/files/98/98-0.txt -o A-tale-of-two-cities.txt
 curl https://www.gutenberg.org/files/11/11-0.txt -o Alice_in_wonderland.txt
@@ -441,14 +396,11 @@ curl https://www.gutenberg.org/files/16/16-0.txt -o PeterPan.txt
 curl https://www.gutenberg.org/files/55/55-0.txt -o WizardOfOz.txt
 ```
 
-
 If the books are deleted or modified, they can easily be downloaded again from the source with `curl` command followed by the path to the file. Use the `-o` option to specify the file name. 
 
 ```
 curl https://www.gutenberg.org/files/98/98-0.txt -o A-tale-of-two-cities.txt
 ```
-
-
 
 :::warning
 
@@ -458,12 +410,9 @@ Now you know how to copy and move files, but you may encounter errors if you try
 
 What happens when you run the following commands?
 
-
 1. `mkdir data results images/`
 2. `mkdir data/results/images`
 3. `mkdir -p data/results/images`
-
-
 
 :::spoiler Answer
 
@@ -493,7 +442,6 @@ If you created some files or directories that you don't want, you can remove the
 
 :::spoiler A solutions
 
-
 ```
 rmdir data/results/images
 rmdir data/results
@@ -505,8 +453,6 @@ or use the `-r` option to "recursively" delete all the contents.
 rm -r data/results
 ```
 :::
-
-
 
 :::success
 
@@ -521,15 +467,9 @@ rm -r data/results
 |curl [webaddress] -o [filename] | downloads from URL named [filename]
 :::
 
-
-
 ## 5. Finding things with `grep` and `find`
 
-
-
 A big part of data science is making sure what you _expect_ in a particular file is what you _have_ in that file. This is fairly easy when your files are small but is challenging when the files are much larger than your screen. 
-
-
 
 
 #### Books 
@@ -542,13 +482,11 @@ cd books
 
 ```
 
-
 Earlier, when we used `head` and `tail` to view the books, we read extraneous information about Project Gutenberg. Let's say you want to extract some information about each book such as the author or title? We can use the command `grep` to search for a pattern
 
 ```
 grep Title *txt
 ```
-
 
 ```
 Alice_in_wonderland.txt:Title: Alice’s Adventures in Wonderland
@@ -582,7 +520,6 @@ grep -i -w "chapter i" *txt
 
 This returns the first chapter for each book. Shown below is the  first chapter for each book. This pattern occurs once in the table of contents and once in the main text. A Tale of Two Cities has 3 Chapter 1s. 
 
-
 ```
 Alice_in_wonderland.txt: CHAPTER I.     Down the Rabbit-Hole
 Alice_in_wonderland.txt:CHAPTER I.
@@ -604,9 +541,6 @@ WizardOfOz.txt: Chapter I. The Cyclone
 WizardOfOz.txt:Chapter I
 ```
 
-
-
-
 #### MiSeq
 
 To explore this topic in more detail and in a biological context, navigate to the `data/MiSeq/` directory.
@@ -626,7 +560,6 @@ This directory contains multiple [**FASTQ** files](https://en.wikipedia.org/wiki
 
 A FASTQ file containing a single sequence might look like this:
 
-
 ::: info
 An example FASTQ file
 ```
@@ -637,12 +570,9 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 ```
 :::
 
-
-
 We can use the `cat` command to print .fastq files to the screen, but thousands of lines of text would crowd your screen. Instead, let's use the `head` and `less` command to view a portion of a file.  By default, they print the first 10 lines. We can use the `-n` flag to specify how many lines to print. Because each entry of a .fastq file consists of 4 lines, printing the first 4 and last 4 lines of the file will confirm that the file is properly formatted.
 
 You can copy the file name and paste it into the console or you can type and use tab complete to pick a particular file. 
-
 
 ```
 head -n 4 F3D0_S188_L001_R1_001.fastq
@@ -655,7 +585,6 @@ NACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGCCTGCCAAGTCAGCGGTAAAATTGC
 AABABBFFFGGGGGGGGGGGGGGGGHHHHHHHGGGHHHHHGHGGGGGGGHGGGGGGHHHHHHHHHHGGGGGHHHHGHGGGGGGHHBGHGDGGGGGHHHGGGGHHHHHHHHGGGGGHG@DHHGHEGGGGGGBFGGEGGGGGGGG.DFEFFFFFFFDCFFFFFFFFFFFFFFFFFFFFFFFFFFDFDFFFEFFCFF?FDFFFFFFFFAFFFFFFFFFFFBDDFFFFFEFADFFFFFBAFFFA?EFFFBFF
 ```
 
-
 ```
 tail -n 4 F3D0_S188_L001_R1_001.fastq
 ```
@@ -666,8 +595,6 @@ TACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGGATGCCAAGTCAGCGGTAAAAAAGC
 +
 3AAA?AADAFFFCGCGGGFEGCHA?EG?FHHGHGHGGEFHGFHGHF?EFA?EBFGC?EGEFHHHHHH3EEGEEGHFH@E0BCA/CGFHHHDGGGFFF/@DGGDGFHHHHBGH.<<AGGHHHHGHEGE?-ABGF;FFGGDGGGGGGG.CCFEFFF/9;9BFFFFFFFFFFFFFFFFFFFFFFFFFFBDFFFFFFFFCBAF9.AFF/FFAAFFADAFFEFFFFFBDDFFFF.DFFFFFFDDFA;BFFDEFFFF
 ```
-
-
 
 **FASTQ** files should not be confused with **FASTA** files. FASTQ files contain information about the quality of the sequence, but FASTA files only contain the sequence and an identifier.
 
@@ -689,7 +616,6 @@ Let's look at a synthetic FASTA file. Because each entry of a .fasta file consis
 ```
 head -n 2 HMP_MOCK.v35.fasta 
 ```
-
 
 ```
 > A.baumannii.1 
@@ -715,7 +641,6 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 1. `ls F3D*`
 1. `ls *fasta`
  
-
 :::spoiler
 
 1. `ls *` lists files in the working directory and 1 level down. 
@@ -725,7 +650,6 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 :::
 
 A lot of the time we want to know if a file contains what we expect. A useful thing to do is to be able to **search the contents of files** for a particular string of characters you would like to find.  We can use the file pattern searcher `grep` to find things.
-
 
 The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
 
@@ -744,8 +668,6 @@ What line does `CATTAG` occur on in `F3D141_S207_L001_R1_001.fastq`?
 Use `grep --help` to search for `grep` options related to line number.
 `grep -n [filename]` will print the line number.
 :::
-
-
 
 In addition to searching for nucleotide sequences, you may want to search for information in the first line of a .fastq or .fasta file. The `^` (shift + 6) can be used to specify "the beginning of the line".
 
@@ -768,8 +690,6 @@ This will print the name associated with a given sequence in the searched files.
 
 We can also print the line before or after the line that matches a pattern with `-B 1` `-A 1`, respectively.
 
-
-
 ```
 grep -A 1 "^>" *fasta
 
@@ -783,8 +703,6 @@ TGGGGAATATTGGACAATGGGGGGAACCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGCCTTATGGTTGTAAAGCACT
 
 ```
 
-
-
 As you have seen, `grep` is very useful for finding things within files, and the `*` or wildcard is useful for listings files that match a partial pattern. But, how do we find files when we don't know their location? The `find` command.
 
 Let's navigate back to our home directory and use `find` to command to look for .fasta files. Use the`-name` flag to specify that you are looking for a file with the name listed in double quotes. Use the `*` wildcard to only search for files with a specific extension.
@@ -794,16 +712,12 @@ cd ~
 find . -name "*.fasta"
 ```
 
-
 This reveals that .fasta file was found in both the books and the MiSeq directory.  
-
 
 ```
 ./books/yeast.fasta
 ./MiSeq/HMP_MOCK.v35.fasta
 ```
-
-
 
 ::: warning
 #### CHALLENGE: find
@@ -839,10 +753,6 @@ and the following images.
 ```
 :::
 
-
-
-
-
 :::success
 #### Key Points:
 |Command|Description|
@@ -853,16 +763,11 @@ and the following images.
 
 :::
 
-
 ## 6. Redirecting, counting, and looping things with `>`, `>>`, and `|`, `wc` and `for`
-
 
 If you did the last challenge, you saw that the **images/** directory contains a file called **MiSeq-readcount-Mothur.png**. This image is a screenshot from the [Mauther software tutorial](https://mothur.org/wiki/miseq_sop/) showing the count or number of reads for each sample. 
 
-
-
 ![](https://hackmd.io/_uploads/HyrJqfBTF.png)
-
 
 To see if our data matches theirs, we can count the number of lines in the .fastq files with the UNIX command `wc`. This will print by default the number of characters, words, and lines in a file. We can ask for just the number of lines with the `-l`  option. 
 
@@ -871,7 +776,6 @@ wc -l *fastq
 ```
 
 This gives something like:
-
 
 ```
 31172 F3D0_S188_L001_R1_001.fastq
@@ -888,7 +792,6 @@ This gives something like:
 
 However, this number is too large. In fact, it is 4 times larger than the number of reads. To capture just the number of reads, we can first use `grep` followed `wc`.
 
-
 By default, many UNIX commands like `cat` send output to something called
 standard out, or "stdout". This is a catch-all phrase for "the basic
 place we send regular output." (There's also standard error, or "stderr",
@@ -903,7 +806,6 @@ file", "append stdout to an existing file", and "send stdout from one
 program to another program's stdin."
 
 If you know you want to save an output file, you can use the redirect symbol `>`. Note, if you want to save a file in a different directory, that directory must exist. We can go to our MiSeq directory and try it.
-
 
 Let's now use grep to match the first line, which starts with "@M00967", of all the R1 files then pipe the output to wc and count the number of liens. 
 
@@ -920,7 +822,6 @@ The answer, 152883, matches the authors. Nice. Also, we just scanned many large 
 ```
 
 You probably don't want to read all the lines that were matched, but piping the output to head is a nice way to view the first 10 lines. 
-
 
 ```
 grep "^@M00967" *R1*.fastq  | head
@@ -942,10 +843,7 @@ F3D0_S188_L001_R1_001.fastq:@M00967:43:000000000-A3JHG:1:1101:19561:3147 1:N:0:1
 grep: write error: Broken pipe
 ```
 
-
-
 To count the number of reads in each file, we could `grep` each file individually, but that would be prone to errors.
-
 
 ```
 grep "^@M00967" F3D0_S188_L001_R1_001.fastq | wc -l
@@ -953,7 +851,6 @@ grep "^@M00967" F3D0_S188_L001_R1_001.fastq | wc -l
 grep "^@M00967" F3D142_S208_L001_R1_001.fastq | wc -l
 
 ```
-
 
 If we want to know how many times it occurs in each in each file, we need a for loop. A for often loop looks like this:
 
@@ -964,7 +861,6 @@ echo $[thing]
 command $[thing]
 done
 ```
-
 
 To answer the question, how many reads are in each R1 file, we can construct the following for loop. 
 
@@ -994,8 +890,6 @@ Mock_S280_L001_R1_001.fastq
 4779
 ```
 
-
-
 :::warning
 #### CHALLENGE: Using `wc` to calculate genome size
 How many genes are in the yeast genome?
@@ -1013,10 +907,8 @@ grep "^>" yeast.fasta | wc -l
 ```
 :::
 
-
 :::warning
 #### CHALLENGE: Writing for loops with `grep` and `wc`
-
 
 Which eBook contains the most lines that start with "The"?
 
@@ -1045,10 +937,7 @@ PeterPan.txt
 WizardOfOz.txt
 123
 ```
-
-
 :::
-
 
 :::success
 #### Key points: redirecting outputs
@@ -1062,9 +951,7 @@ WizardOfOz.txt
 
 :::
 
-
 ## 7. Bonus module: Using `cut` to work with .csv files
-
 
 When working with .csv files, sometimes you only want to look for patterns in one column instead of all the columns. So, you need to filter the data first to only have the column of interest.  
 
@@ -1077,8 +964,6 @@ grep Chef All-seasons-clean.csv
 ```
 
 _Note: if you don't want to keep an uncompressed copy of a file, you can use the command `zgrep` to search for a pattern in a compressed file._
-
-
 
 Let's say you want to know which of your Southpark characters had the most spoken lines. You could do like by counting how often their name appeared in the third column of the .csv file. We need the command `cut`.  We use the `-f3` to specify the third column and `-d,` to specify that it is a csv. 
 
@@ -1104,7 +989,6 @@ cut -d, -f3 All-seasons-clean.csv | grep Stan | wc -l
 
 Or, we could use a for loop to loop through a list of characters of interest/
 
-
 ```
 for character in Chef Kenny Cartman Kyle
 do
@@ -1112,10 +996,6 @@ echo $character
 cut -d, -f3 All-seasons-clean.csv | grep $character | wc -l
 done
 ```
-
-
-
-
 
 ## Concluding thoughts
 
@@ -1135,9 +1015,8 @@ history
 You can save the file in your home directory with: 
 
 ```
-history > ~/history-today.txt
+history > ~/history.txt
 ```
-
 
 The binder and this documentation page will stay working for the foreseeable
 future, so please feel free to come back and revisit some of these commands!
@@ -1147,9 +1026,6 @@ search whenever you have questions about what a command does, or what
 commands to use to achieve a particular task.
 
 The website [Explain Shell](https://explainshell.com/) is great for defining what each command and flag does.
-
-
-
 
 ::: success
 #### Key points 
