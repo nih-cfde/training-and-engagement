@@ -1,16 +1,16 @@
-# An Introduction to UNIX for Cloud Computing - December 8, 2021
+# An Introduction to UNIX for Cloud Computing 
 
-**When:** Wednesday, December 8th from 10:00 am-12:00 pm PDT
+**When:**  
 
-**Instructors:** Dr. Rayna Harris
+**Instructors:**  
 
-**Helpers:**  Dr. Saranya Canchi and Jeremy Walter
+**Helpers:**   
 
-**Zoom:** https://zoom.us/j/7575820324?pwd=d2UyMEhYZGNiV3kyUFpUL1EwQmthQT09
+**Zoom:**  
 
-**Slides:** https://osf.io/dw3he/
+**Slides:**  
 
-**Computing environment:** [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio)
+**Computing environment:** https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio
 
 **Cheatsheet:** https://training.nih-cfde.org/en/latest/General-Tools/Cheat-Sheets/bash_cheatsheet/
 
@@ -28,8 +28,6 @@ This free 2-hour workshop introduces the UNIX command line. It was designed for 
 * Understand wildcard expression 
 * Combine commands into workflows
 :::
-
-
 
 The lesson materials were adapted from the UC Davis Data Lab's [Intro to Cloud Computing](https://ngs-docs.github.io/2021-august-remote-computing/) workshop, Data Carpentry's [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson, and the Lab for Data Intensive Biology's [Advanced Beginner/Intermediate Shell](https://dib-training.readthedocs.io/en/pub/2016-01-13-adv-beg-shell.html) workshop. Today's workshop is designed to prepare you for taking subsequent cloud computing and bioinformatic workshops. 
 
