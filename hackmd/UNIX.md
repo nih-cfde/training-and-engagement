@@ -1,17 +1,12 @@
-# An Introduction to UNIX - November 17, 2021
+# An Introduction to UNIX  
 
-[![hackmd-github-sync-badge](https://hackmd.io/ULR5b_IVQ0ao_b5ptQA6pQ/badge)](https://hackmd.io/ULR5b_IVQ0ao_b5ptQA6pQ)
+**When:**  
 
+**Instructors:** 
 
-**When:** Wednesday, November, 17th from 10:00 am-12:00 pm PDT
+**Helpers:**   
 
-**Instructors:** Dr. Rayna Harris
-
-**Helpers:**  Dr. Saranya Canchi and Jeremy Walter
-
-**Zoom:** https://zoom.us/j/7575820324?pwd=d2UyMEhYZGNiV3kyUFpUL1EwQmthQT09
-
-**Slides:** https://osf.io/tvnjq/
+**Zoom:**  
 
 **Cheatsheet:** https://training.nih-cfde.org/en/latest/General-Tools/Cheat-Sheets/bash_cheatsheet/
 
@@ -29,8 +24,6 @@ This free 2-hour workshop introduces the UNIX command line. It was designed for 
 * Understand wildcard expression 
 * Combine commands into workflows
 :::
-
-
 
 The lesson materials were adapted from the UC Davis Data Lab's [Intro to Cloud Computing](https://ngs-docs.github.io/2021-august-remote-computing/) workshop, Data Carpentry's [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson, and the Lab for Data Intensive Biology's [Advanced Beginner/Intermediate Shell](https://dib-training.readthedocs.io/en/pub/2016-01-13-adv-beg-shell.html) workshop. Today's workshop is designed to prepare you for taking subsequent cloud computing and bioinformatic workshops. 
 
