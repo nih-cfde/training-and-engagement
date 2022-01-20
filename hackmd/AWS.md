@@ -15,32 +15,39 @@
 
 This 2 hour hands-on tutorial will introduce you to creating a computer "in the cloud" and logging into it, via Amazon Web Services. We'll create a small general-purpose Linux computer, connect to it, and run a small job while discussing the concepts and technologies involved.
 
-Links for moderator to share with participants:
 
-- [ ] [Pre-workshop survey](https://forms.gle/TNhgV1KYCHgRKr1v6)
-- [ ] [Workshop notes link](https://hackmd.io/jTqsKMSZRU-L6NkJM4fZew?view)
-- [ ] [mobaXterm install link](https://mobaxterm.mobatek.net/)
-- [ ] [AWS lessons](https://training.nih-cfde.org/en/latest/Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws1/) 
-- [ ] [Post-workshop survey](https://forms.gle/2tGthbddRCQ72vQG9)
+While we wait to get started --
+
+1. :heavy_check_mark: Have you checked out the [pre-workshop resources page](https://github.com/nih-cfde/training-and-engagement/wiki/Resources-for-Workshop-Attendees)?
+
+2. If you are on a windows computer, make sure you have Mobax term: https://mobaxterm.mobatek.net/
+
+
 
 
 ## Hello!
 
-Your instructors are part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
+Your instructors are both part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
 
-This is our third workshop for our Amazon Web services lesson :slightly_smiling_face:, and we have the following goals:
-* run the material by you all!
-* gather questions and refine the tutorial materials!
-* help you think about if and how to use cloud computers for your work!
+
+**Have you heard of the NIH Common Fund Data Ecosystem?**
+
+Put up a :heavy_check_mark: for yes and a :negative_squared_cross_mark: for no!
+
+We have the following goals for this workshop:
+
+* Help you think about if and how to use cloud computers for your work!
+* Gather questions, feedback and refine the tutorial materials!
 
 So, please ask lots of questions, and even the ones we can't answer yet we'll figure out for you!
 
 ### Costs and payment
 
-Today, everything you do will be paid for by us (well, the NIH). In the future, if you create your own AWS account, you'll have to put your own credit card on it. We'd be happy to answer questions about how to pay for AWS - we've used invoicing as well as credit cards.
+Today, everything you do will be paid for by us. In the future, if you create your own AWS account, you'll have to put your own credit card on it. We'd be happy to answer questions about how to pay for AWS.
 
 
- _**Your free login credentials will work for the next 24 hours !**_
+
+:smiley_cat: Your free login credentials will work for the next 8 hours
 
 
 ### Workshop structure and plan
@@ -54,16 +61,17 @@ Today, everything you do will be paid for by us (well, the NIH). In the future, 
 ### How to ask questions
 If you have questions at any point, 
 - Drop them in the chat, or
-- Direct messages to the moderator (Marisa Lim) are welcome, or
-- Unmute yourself and ask during the workshop, or
-- Use the raise hand reaction in zoom
+- Direct messages to the moderator (Saranya Canchi) are welcome, or
+- Unmute yourself and ask during the workshop
 
-We're going to use the green check mark reaction in zoom to make sure people are on board during the hands-on activities.
+We're going to use the "raise hand" reaction in zoom to make sure people are on board during the hands-on activities.
 
 ## Some background
 
 What is cloud computing? 
 - Renting and use of IT services over the internet.
+- No direct, active management by the user.
+- Avoid or minimize up-front IT infrastructure cost.
 - Amazon and Google, among others, rent compute resources over the internet for money.
 
 Why might you want to use a cloud computer?
@@ -115,9 +123,15 @@ Terminology:
 
 We will create a cloud computer - an "instance" - and then log in to it.
 
+
 **Log in at**: https://cfde-training-workshop.signin.aws.amazon.com/console
 
+
 Use your registration e-mail (see bottom of this page if you forgot!) and password `CFDErocks!`
+
+
+Put up a :hand: on Zoom when you've successfully logged in with the workshop user credentials.
+
 
 ### "Spinning up" instances
 
@@ -143,31 +157,29 @@ We have tutorials on connecting to an instance for **Windows** Users using MobaX
 
 - Install a simple bioinformatic software (FastQC)
 - Download fastq (raw RNA Sequence) data
-- Brief overview of the FastQC HTML report
-- Demo - How to terminate an instance
+- Run fastqc on downloaded data
+- Transfer output files from AWS computer to local computer.
 
-FastQC Documentation: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-https://hackmd.io/4zmi-AQBQIelVp3_WFaxyQ?view#What-is-FASTQC
+
 
 ### What is FastQC?
 
 FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. 
 
-- It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.
+- It provides a modular set of analyses to help you identify problems in the quality of your samples or sequence. 
 - The aim of this tool is to spot issues that originate from the sequencer or in the starting library material.
 - Output of fastqc is an HTML based permanent report
 
-FastQC functions include:
-
-- Import of Data from BAM, SAM or FastQ files (any variant)
-- Providing a quick overview to tell you in which areas of your data there may be problems
-- Export of results to an HTML based permanent report
-- Offline operation to allow automated generation of reports without running the interactive application
-
+[FastQC Documentation](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
 
 ### Commands to run 
 (explain commands)
+
+
+
+
+:-1: `Copy+Paste` does not work if you are using Safari (MacOS) to run the AWS terminal. Please use another web browser (e.g. Chrome or Firefox), or type in the commands.
 
 
 1) Update system packages:
@@ -191,6 +203,9 @@ cd fastq
 curl -L https://osf.io/8rvh5/download -o ERR458494.fastq.gz
 ```
 
+Click the raised hand :hand: reaction if you were able to run the last command successfully and download ERR458494.fastq.gz
+
+
 5) Check if your file has been downloaded
 ```
 ls -l
@@ -201,17 +216,22 @@ ls -l
 sudo apt install fastqc -y
 ```
 
+To double check it was successful, type ```fastqc --version```. If it returns 0.11.9, that means installation was successful.
+
+
 7) Run FastQC on the dowloaded file
 ```
 fastqc ERR458494.fastq.gz
 ```
+
 
 8) view files
 ```
 ls
 ```
 
-Learn more about the individual commands :
+<details> 
+<summary>Learn more about the commands</summary>
 
 ```apt-cache search [search term 1]```
 - search available software for installation
@@ -236,13 +256,18 @@ Learn more about the individual commands :
 
 - curl stands for "Client URL"
     - transfers data to or from a network server
-    - "-L" or location 
+    - "-L" or location/link
     - "-o" output
 
 ```fastqc ERR458494.fastq.gz```
 - Run FastQC on ERR458494.fastq.gz
 - ERR458494.fastq.gz - "Yeast" Sample
 
+
+</details>
+
+<details>
+<summary>More About FASTQC</summary>
 ***
 
 Analysis Modules Documentation: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/
@@ -258,11 +283,114 @@ Video Walkthrough:
 [FastQC tool for read data quality evaluation](https://www.youtube.com/watch?v=lUk5Ju3vCDM)
 
 [Using FastQC to check the quality of high throughput sequence](https://www.youtube.com/watch?v=bz93ReOv87Y&t=116s)
-:::
+</details>
 
 ***
 
-## Using `screen`
+
+## Downloading data from AWS instance onto local computer
+
+<details> 
+<summary>WindowsOS</summary>
+### WindowsOS
+
+#### MobaXterm installation
+
+1. Go to the MobaXterm website to [download](https://mobaxterm.mobatek.net/)
+2. Click on "GET MOBAXTERM NOW!"
+3. The Home Edition is perfect for normal use and it is free! Click "Download now"
+4. Click on "MobaXterm Home Edition v20.6 (Portable edition)" and save as in your Downloads folder
+5. Go to Downloads folder, click on the zipped folder, click "Extract all", click "Extract"
+6. The MobaXterm application is now in the unzipped folder
+7. Click on the MobaXterm application to open it!
+
+#### Connecting to instance
+1. Go back to your [instance page](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:), select it and click on "Connect". The Public DNS information you need to connect to your instance via ssh can be found in the "SSH client" tab:
+
+![](https://i.imgur.com/EilADhq.png)
+
+2. In MobaXterm, click on "Session"
+3. Click on "SSH"
+4. Enter the Public DNS as the "Remote host"
+5. Check box next to "Specify username" and enter "ubuntu" as the username
+6. Click the "Advanced SSH settings" tab
+7. Check box by "Use private key"
+8. Use the document icon to navigate to where you saved the private key (e.g., "amazon.pem") from AWS on your computer. It is likely on your Desktop or Downloads folder
+9. Click "OK"
+10. A terminal session should open up with a left-side panel showing the file system of our AWS instance! You can click on the FastQC html file and view in browser to open. There are also options in the panel to download files.
+</details>
+
+<details> 
+<summary>MacOS/Linux</summary>
+
+#### MacOS
+
+- Start Terminal 
+- Change the permissions on the .pem file for security purposes (removes read, write, and execute permissions for all users except the owner (you)
+```
+chmod og-rwx ~/Desktop/amzon.pem
+```
+
+- Change directory to Desktop. Your `.pem` file is on your Desktop
+
+```
+cd ~/Desktop
+```
+Go back to your [instance page](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:), select it and click on "Connect". The information you need to connect to your instance via ssh can be found in the "SSH client" tab:
+
+![](https://i.imgur.com/EilADhq.png)
+
+
+- Use the `scp` command on your local terminal to copy your `.html` file!
+
+```
+scp -i <your-.pem> ubuntu@???-??-??-???-??.us-west-1.compute.amazonaws.com:/home/ubuntu/fastq/ERR458494_fastqc.html ./
+```
+`-i` flag points to identity file. Don't forget to change the stuff after `ubuntu@` to match your instance!
+</details>
+
+## Shutting down instances
+
+When you shut down your instance, any data that is on a non-persistent disk goes away permanently. But you also stop being charged for any compute and data, too!
+
+:bulb: **Stopping vs hibernation vs termination**
+
+- Stopping: 
+    - saves data to EBS root volume 
+    - only EBS data storage charges apply 
+    - No data transfer charges or instance usage charges 
+    - RAM contents not stored
+
+- Hibernation: 
+    - charged for storage of any EBS volumes 
+    - stores the RAM contents 
+    - it's like closing the lid of your laptop
+
+- Termination: 
+    - complete shutdown 
+    - EBS volume is detached 
+    - data stored in EBS root volume is lost forever
+    - instance cannot be relaunched
+
+To enable Hibernation, click the box in the Configure Instance step of the setup.
+
+![](https://i.imgur.com/5UNWFjo.png)
+
+## Exercise
+
+Launch a t2.nano, Ubuntu 20.04 LTS - Focal instance in the the **East US (Ohio) region**. Change the root storage volume to 16 GiB and add an additional EBS volume (8 GiB). 
+
+Bonus points: Your added volume will persist after you have terminated your instance. Where can you find it?
+
+<details>
+<summary>Hint</summary>
+- Go to Amazon Market place and search for the "Ubuntu 20.04 LTS - Focal". Should be the first result.
+- Look in tab 4 called "Add Storage" to add additional storage volumes.
+</details>
+
+## Bonus Module (time permitted)
+
+### Using `screen`
 
 So far in this workshop, we have only encountered programs that install quickly. The analysis we ran was also pretty quick because we only ran it on one file! 
 
@@ -310,90 +438,6 @@ screen -r <screen_ID>
 
 
 
-## Downloading data from AWS instance onto local computer
-
-### WindowsOS
-
-#### MobaXterm installation
-
-1. Go to the MobaXterm website to [download](https://mobaxterm.mobatek.net/)
-2. Click on "GET MOBAXTERM NOW!"
-3. The Home Edition is perfect for normal use and it is free! Click "Download now"
-4. Click on "MobaXterm Home Edition v20.6 (Portable edition)" and save as in your Downloads folder
-5. Go to Downloads folder, click on the zipped folder, click "Extract all", click "Extract"
-6. The MobaXterm application is now in the unzipped folder
-7. Click on the MobaXterm application to open it!
-
-#### Connecting to instance
-1. Go back to your [instance page](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:), select it and click on "Connect". The Public DNS information you need to connect to your instance via ssh can be found in the "SSH client" tab:
-
-![](https://i.imgur.com/EilADhq.png)
-
-2. In MobaXterm, click on "Session"
-3. Click on "SSH"
-4. Enter the Public DNS as the "Remote host"
-5. Check box next to "Specify username" and enter "ubuntu" as the username
-6. Click the "Advanced SSH settings" tab
-7. Check box by "Use private key"
-8. Use the document icon to navigate to where you saved the private key (e.g., "amazon.pem") from AWS on your computer. It is likely on your Desktop or Downloads folder
-9. Click "OK"
-10. A terminal session should open up with a left-side panel showing the file system of our AWS instance! You can click on the FastQC html file and view in browser to open. There are also options in the panel to download files.
-
-
-#### MacOS
-
-- Start Terminal 
-- Change the permissions on the .pem file for security purposes (removes read, write, and execute permissions for all users except the owner (you)
-```
-chmod og-rwx ~/Desktop/amzon.pem
-```
-
-- Change directory to Desktop. Your `.pem` file is on your Desktop
-
-```
-cd ~/Desktop
-```
-Go back to your [instance page](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:), select it and click on "Connect". The information you need to connect to your instance via ssh can be found in the "SSH client" tab:
-
-![](https://i.imgur.com/EilADhq.png)
-
-
-- Use the `scp` command on your local terminal to copy your `.html` file!
-
-```
-scp -i <your-.pem> ubuntu@???-??-??-???-??.us-west-1.compute.amazonaws.com:/home/ubuntu/fastq/ERR458494_fastqc.html ./
-```
-
-Don't forget to change the stuff after `ubuntu@` to match your instance!
-
-
-## Shutting down instances
-
-When you shutdown your instance any data that is on a non-persistent disk goes away permanently. But you also stop being charged for any compute and data, too!
-
-**Stopping vs hibernation vs termination**
-
-- Stopping: 
-    - saves data to EBS root volume 
-    - only EBS data storage charges apply 
-    - No data transfer charges or instance usage charges 
-    - RAM contents not stored
-
-- Hibernation: 
-    - charged for storage of any EBS volumes 
-    - stores the RAM contents 
-    - it's like closing the lid of your laptop
-
-- Termination: 
-    - complete shutdown 
-    - EBS volume is detached 
-    - data stored in EBS root volume is lost forever
-    - instance cannot be relaunched
-
-
-
-
-
 ## Checklist of things you learned today!
 
 - [x] A little bit about AWS and cloud computing
@@ -402,22 +446,6 @@ When you shutdown your instance any data that is on a non-persistent disk goes a
 - [x] How to install and run a software program on the instance 
 - [x] How to terminate your instance 
 
-
-## Post-workshop survey
-
-
-[Please fill out our post workshop survey!](https://forms.gle/2tGthbddRCQ72vQG9)
-
-
-## Questions and comments?
-
-We'll send around this link via e-mail -- please do fill it out, thank you!
-
-## Upcoming CFDE workshops
-- [Intro to Conda](https://registration.genomecenter.ucdavis.edu/events/intro_to_conda_march4/)
-
-
-## Appendix 
 
 ### Additional Resources
 
@@ -452,3 +480,4 @@ We'll send around this link via e-mail -- please do fill it out, thank you!
 - Yes, but this is not as straightforward as it seems.
 - The way to clone an instance is via [snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html)
 
+Check out our [AWS discussion board](https://github.com/nih-cfde/training-and-engagement/discussions/categories/aws) for FAQs and discussion. We encourage you to post a question here ! 
