@@ -1,5 +1,8 @@
 # An Introduction to UNIX - November 17, 2021
 
+[![hackmd-github-sync-badge](https://hackmd.io/ULR5b_IVQ0ao_b5ptQA6pQ/badge)](https://hackmd.io/ULR5b_IVQ0ao_b5ptQA6pQ)
+
+
 **When:** Wednesday, November, 17th from 10:00 am-12:00 pm PDT
 
 **Instructors:** Dr. Rayna Harris
