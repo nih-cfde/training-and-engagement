@@ -17,7 +17,7 @@ While we wait to get started --
 
 1. :heavy_check_mark: Have you checked out the [pre-workshop resources page](https://github.com/nih-cfde/training-and-engagement/wiki/Resources-for-Workshop-Attendees)?
 
-2. If you are on a windows computer, make sure you have Mobax term: https://mobaxterm.mobatek.net/
+2. If you are on a windows computer, make sure you have installed MobaXterm: https://mobaxterm.mobatek.net/
 
 
 ## Hello!
@@ -66,7 +66,7 @@ We're going to use the "raise hand" reaction in zoom to make sure people are on 
 What is cloud computing? 
 - Renting and use of IT services over the internet.
 - No direct, active management by the user.
-- Avoid or minimize up-front IT infrastructure cost.
+- Avoid or minimize up-front IT infrastructure costs.
 - Amazon and Google, among others, rent compute resources over the internet for money.
 
 Why might you want to use a cloud computer?
@@ -122,7 +122,7 @@ We will create a cloud computer - an "instance" - and then log in to it.
 **Log in at**: https://cfde-training-workshop.signin.aws.amazon.com/console
 
 
-Use your registration e-mail (see bottom of this page if you forgot!) and password `CFDErocks!`
+Use your registration e-mail and password `CFDErocks!`
 
 
 Put up a :hand: on Zoom when you've successfully logged in with the workshop user credentials.
@@ -137,20 +137,21 @@ Checklist for hands-on walk-through
 - [ ] Edit security groups
 - [ ] Launch
 
-[Link to tutorial](https://training.nih-cfde.org/en/latest/Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws3/)
+[Link to tutorial](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws3)
+
 
 ### Connecting to instances
 
-- [ ] [Connect to the instance via the web browser](https://training.nih-cfde.org/en/latest/Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws4/)
+- [ ] [Connect to the instance via the web browser](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws4)
 
 Other ways to connect to the instance:
 
-We have tutorials on connecting to an instance for **Windows** Users using MobaXterm and for **Mac Users** using MacOS Terminal. Please visit our ["Connect to an Instance"](https://training.nih-cfde.org/en/latest/Bioinformatics-Skills/Introduction_to_Amazon_Web_Services/introtoaws4/) webpage and select your OS using the tabs on the top of the page.
+We have tutorials on connecting to an instance for **Windows** Users using MobaXterm and for **Mac Users** using MacOS Terminal. Please visit our ["Connect to an Instance"](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws4.html) webpage and select your OS using the tabs on the top of the page.
 
 
 ## Installing programs and running them in the cloud
 
-- Install a simple bioinformatic software (FastQC)
+- Install a simple bioinformatics software (FastQC)
 - Download fastq (raw RNA Sequence) data
 - Run fastqc on downloaded data
 - Transfer output files from AWS computer to local computer.
@@ -287,6 +288,7 @@ Video Walkthrough:
 
 <details> 
 <summary>WindowsOS</summary>
+
 ### WindowsOS
 
 #### MobaXterm installation
@@ -306,7 +308,7 @@ Video Walkthrough:
 
 2. In MobaXterm, click on "Session"
 3. Click on "SSH"
-4. Enter the Public DNS as the "Remote host"
+4. Enter the Public DNS as the "Remote host" (the part that looks like ec2-[..].us-west-1.compute.amazonaws.com)
 5. Check box next to "Specify username" and enter "ubuntu" as the username
 6. Click the "Advanced SSH settings" tab
 7. Check box by "Use private key"
@@ -379,8 +381,10 @@ Bonus points: Your added volume will persist after you have terminated your inst
 
 <details>
 <summary>Hint</summary>
+
 - Go to Amazon Market place and search for the "Ubuntu 20.04 LTS - Focal". Should be the first result.
 - Look in tab 4 called "Add Storage" to add additional storage volumes.
+
 </details>
 
 ## Bonus Module (time permitted)
@@ -431,6 +435,7 @@ screen -r <screen_ID>
 
 7) Repeat step 4 to detach
 
+[Link to lesson](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws5_Screen.html)
 
 
 ## Checklist of things you learned today!
