@@ -334,7 +334,6 @@ Let's navigate back to our home directory and use `find` to command to look for 
 	./books/README.md
 	./MiSeq/README.md
 	./README.md
-	./southpark/README.md
 	```
 	
 	and the following images.

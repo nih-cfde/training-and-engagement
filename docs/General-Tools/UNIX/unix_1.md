@@ -21,7 +21,7 @@ clear
 
 Why use Binder and RStudio? We like it for several reasons. With Binder, we can create custom computing environments that can be used by the instructor and the learners. This means we don't have to worry about differences between Mac, PC, and UNIX computers or admin permissions. Additionally, RStudio has a  graphical interface that shows the filesystem, unlike most command-line terminal programs.  
 
-For today's lesson, we will focus on four different sets of data. `books` contains ebooks such as A Tale of Two Cities and The Wizard of Oz that were downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/).  .`southpark` contains a compressed .csv file containing all the lines spoken by each character across 14 seasons. `seattle` contains data from the Open Seattle Data Portal, including a csv file with names of pets.  The `MiSeq` directory contains FASTQ and FASTA files that are associated with the [Mauther software tutorial](https://mothur.org/wiki/miseq_sop/). These data are useful for practicing commonly used UNIX commands to explore genome-scale data. 
+For today's lesson, we will focus on four different sets of data. `books` contains ebooks such as A Tale of Two Cities and The Wizard of Oz that were downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/).  . `seattle` contains data from the Open Seattle Data Portal, including a csv file with names of pets.  The `MiSeq` directory contains FASTQ and FASTA files that are associated with the [Mauther software tutorial](https://mothur.org/wiki/miseq_sop/). These data are useful for practicing commonly used UNIX commands to explore genome-scale data. 
 
 During this lesson, we use UNIX commands to answer questions following motivating questions.
 
@@ -29,7 +29,6 @@ During this lesson, we use UNIX commands to answer questions following motivatin
 * Which ebook contains the most lines of text? 
 * How many R1 and R2 reads were generated from each MiSeq sample?  
 * Do our results match the reported results? 
-* Which South Park character spoke the most lines?
 
 !!! note "Key Points"
 

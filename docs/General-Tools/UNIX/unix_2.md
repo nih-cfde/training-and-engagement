@@ -47,7 +47,7 @@ The **list** or `ls` command is a simple yet powerful command that is used to li
 
 	```
 	books          images  README.md             seattle
-	CFDE-logo.png  MiSeq   rstudio-terminal.png  southpark
+	CFDE-logo.png  MiSeq   rstudio-terminal.png  
 	```
 
 If we want more information about the files, such as the date they were created and their file size, we can add "flags" `-l` for long listing format.
@@ -68,7 +68,6 @@ If we want more information about the files, such as the date they were created 
 	-rw-r--r-- 1 jovyan jovyan   2089 Jan 18 21:13 README.md
 	-rw-r--r-- 1 jovyan jovyan 188705 Jan 18 21:13 rstudio-terminal.png
 	drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 seattle
-	drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 southpark
 	```
 
 
