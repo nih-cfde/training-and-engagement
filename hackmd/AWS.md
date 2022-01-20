@@ -8,7 +8,6 @@
 
 **Helpers:**  
 
-
 ## Description
 
 This 2 hour hands-on tutorial will introduce you to creating a computer "in the cloud" and logging into it, via Amazon Web Services. We'll create a small general-purpose Linux computer, connect to it, and run a small job while discussing the concepts and technologies involved.
@@ -22,7 +21,7 @@ This 2 hour hands-on tutorial will introduce you to creating a computer "in the 
 
 ## Hello!
 
-Your instructors and helpers are part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
+Your instrutors are part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
 
 
 > 👍 **Have you heard of the NIH Common Fund Data Ecosystem?**
@@ -273,6 +272,8 @@ Video Walkthrough:
 
 ### WindowsOS
 
+Watch [this narrated video](https://us06web.zoom.us/rec/play/1GfdPKpeJ5CVd8L6aPdYnOYuU3VmRmeoIHmdChyTNtUvpPIbezzdxdAGghAmsDPzhrGdi2SgkGSa_RqZ.7Ml7d475z1S9cItV) and follow through the written steps.
+
 #### MobaXterm installation
 
 1. Go to the MobaXterm website to [download](https://mobaxterm.mobatek.net/)
@@ -364,7 +365,9 @@ Bonus points: Your added volume will persist after you have terminated your inst
 
 ## Post-workshop survey
 
-[Please fill out our post workshop survey!](https://forms.gle/CAJ23vB6f4pqnXD49)
+[Post-workshop survey link](https://docs.google.com/forms/d/e/1FAIpQLSe_IgvBrX_lr3B8Z_wWMTTt_qTfFwCR1lZLvEVe-BkCbOsKGw/viewform?usp=sf_link)
+
+We'll also send around the post-workshop survey link via e-mail -- please do fill it out, thank you!
 
 ## Bonus Module (time permitted)
 
@@ -424,13 +427,11 @@ screen -r <screen_ID>
 - [x] How to terminate your instance 
 
 
-## Questions and comments?
+## Questions and Comments ?
 
-We'll send around the post-workshop survey link via e-mail -- please do fill it out, thank you!
+You can contact us at training@cfde.atlassian.net with requests for new topics or questions about the workshops.
 
 ## Upcoming CFDE workshops
 
 Check our [Events page](https://www.nih-cfde.org/events/) for information on upcoming workshops!
-
-You can contact us at training@cfde.atlassian.net with requests for new topics or questions about the workshops.
 
