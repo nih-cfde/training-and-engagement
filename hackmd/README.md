@@ -13,4 +13,6 @@ This directory is for syncing the HackMD versions of lessons with GitHub so that
 
 ## Lesson source files for HackMd
 
+- [AWS.md](AWS.md)
 - [UNIX](UNIX.md)
+- 
