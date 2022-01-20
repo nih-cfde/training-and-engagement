@@ -4,6 +4,7 @@ We are used to copying and moving files using a GUI. These functions can be also
 
 The `cp` and `mv` commands can be used to copy and move (or rename) files and directories respectively. For both commands, you must specify the old and new names. Specifying the path is necessary if you want to move files out of the current working directory.
 
+
 ```
 cp [original-filename] [copy-filename]
 mv [original-filename] [new-filename]
