@@ -1,5 +1,5 @@
 site_name: Common Fund Data Ecosystem Training
-site_description: " We are working to make Common Fund data more accessible to researchers and clinicians like you. Choose from our growing list of tutorials to learn how to perform bioinformatic analyses and access data."
+site_description: 'We are working to make Common Fund data more accessible to researchers and clinicians like you. We have created tutorials for Common Fund tools including the <a href="https://training.nih-cfde.org/en/latest/Common-Fund-Tools/Kids-First/" style="color:#336699;">Kids First Portal</a> and the <a href="https://training.nih-cfde.org/en/latest/Common-Fund-Tools/CFDE-Portal/" style="color:#336699;">CFDE Portal</a>.'
 
 theme:
   name: material
