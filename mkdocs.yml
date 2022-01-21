@@ -1,26 +1,5 @@
 site_name: Common Fund Data Ecosystem Training
-site_description: 'We are working to make Common Fund data more accessible to researchers and clinicians like you. 
-
-We have created tutorials for 
-
-Common Fund Tools (<a href="https://training.nih-cfde.org/en/latest/Common-Fund-Tools/Kids-First/" style="color:#336699;">Kids First Portal</a> and the <a href="https://training.nih-cfde.org/en/latest/Common-Fund-Tools/CFDE-Portal/" style="color:#336699;">CFDE Portal</a>),
-
-Cloud Platforms (<a href="https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1/" style="color:#336699;">AWS</a>
-<a href="https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/" style="color:#336699;">GCP</a>
-<a href="https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-Terra/" style="color:#336699;">Terra</a>),
-
-Bioinformatic Analyses (<a href="https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/BLAST-Command-Line/BLAST1/" style="color:#336699;">BLAST</a>
-<a href="https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/GWAS-in-the-cloud/" style="color:#336699;">GWAS</a>
-<a href="https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1/" style="color:#336699;">RNA-Seq on Cavatica</a>),
-
-and General Tools (<a href="https://training.nih-cfde.org/en/latest/General-Tools/UNIX/" style="color:#336699;">UNIX</a>
-<a href="https://training.nih-cfde.org/en/latest/General-Tools/Introduction-to-Conda/" style="color:#336699;">Conda</a>
-<a href="https://training.nih-cfde.org/en/latest/General-Tools/Snakemake/" style="color:#336699;">Snakemake</a>
-<a href="https://training.nih-cfde.org/en/latest/General-Tools/Web-Development/" style="color:#336699;">Web Development</a>
-)
-
-.'
-
+site_description: We are working to make Common Fund data more accessible to researchers and clinicians like you. 
 
 theme:
   name: material
