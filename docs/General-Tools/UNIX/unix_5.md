@@ -357,5 +357,4 @@ Let's practice.
 	|Command|Description|
 	|-|-
 	| `grep [option] [filename]`  | selects lines in files that match patterns|
-	| `wc` [filename] | prints the total characters, words, and lines in a file
 	|`find [path] [conditions]` | finds files with specific properties that match patterns|
