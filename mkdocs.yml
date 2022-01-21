@@ -1,5 +1,5 @@
 site_name: Common Fund Data Ecosystem Training
-site_description: |
+site_description: >
     We are working to make Common Fund data more accessible to researchers and clinicians like you. Choose from our growing list of tutorials to learn how to perform bioinformatic analyses and access data.
     - General Tools: [Conda](https://training.nih-cfde.org/en/latest/General-Tools/Introduction-to-Conda/), [Snakemake](https://training.nih-cfde.org/en/latest/General-Tools/Snakemake/), [Web development](https://training.nih-cfde.org/en/latest/General-Tools/Web-Development/)
     - Cloud Platforms: [AWS](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1/), [GCP](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/), [Terra](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-Terra/)
