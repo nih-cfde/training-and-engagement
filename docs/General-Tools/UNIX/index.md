@@ -20,16 +20,16 @@ This tutorial introduces the UNIX command line. It is designed for scientists an
 	* Understand wildcards and regular expression 
 	* Redirect outputs and write for loops to build reproducible workflo	
 
-Lesson name | Description
---- | ---
-[The shell and terminal](./unix_1.md) | What is UNIX? <br /> Why should I use it?
-[Navigating files and directories](./unix_2.md) | Where am I? <br /> What files are here? 
-[Reading large files](./unix_3.md) | How do I read compressed files? <br />  Are my files of good quality? 
-[Creating and modifying files](./unix_4.md) | How do I combine commands to build workflows?  
-[Finding things](./unix_5.md) | How do I save my results? <br /> What commands did I type?
-[Redirection and for loops](./unix_6.md) | How do I combine commands to build workflows?   <br /> Do my results match published?
-[Exploring .csv files](./unix_7.md) | Is my gene of interest present this dataset?  <br /> How often?
-[Concluding thoughts](./unix_8.md) | How do I save my history? <br /> What resources do you recommend?
+| Lesson name | Description | Commands
+| --- | --- | 
+| [The shell and terminal](./unix_1.md) | What is UNIX? <br /> Why should I use it? | `PS1='$ '`, `clear` |
+| [Navigating files and directories](./unix_2.md) | Where am I? <br /> What files are here? | `pwd`, `cd`, `ls` | 
+| [Reading large files](./unix_3.md) | How do I read compressed files? <br />  Are my files of good quality?  | `head`, `tail`, `cat`, `less`, `gunzip`, `zip` |
+| [Creating and modifying files](./unix_4.md) | How do I combine commands to build workflows? | `cp`, `mv`, `mkdir`, `rm`, `curl` |
+| [Finding things](./unix_5.md) | How do I save my results? <br /> What commands did I type? | `grep`, `find` |
+| [Redirection and for loops](./unix_6.md) | How do I combine commands to build workflows?   <br /> Do my results match published? | `wc`, `echo`, `for`
+| [Exploring .csv files](./unix_7.md) | Is my gene of interest present this dataset?  <br /> How often? | `cut` | 
+| [Concluding thoughts](./unix_8.md) | How do I save my history? <br /> What resources do you recommend? | `history` | 
 
 
 === "Tutorial Resources"
