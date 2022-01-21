@@ -21,7 +21,7 @@ This tutorial introduces the UNIX command line. It is designed for scientists an
 	* Redirect outputs and write for loops to build reproducible workflo	
 
 | Lesson name | Description | Commands
-| --- | --- | 
+| --- | --- | --- |
 | [The shell and terminal](./unix_1.md) | What is UNIX? <br /> Why should I use it? | `PS1='$ '`, `clear` |
 | [Navigating files and directories](./unix_2.md) | Where am I? <br /> What files are here? | `pwd`, `cd`, `ls` | 
 | [Reading large files](./unix_3.md) | How do I read compressed files? <br />  Are my files of good quality?  | `head`, `tail`, `cat`, `less`, `gunzip`, `zip` |
