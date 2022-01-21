@@ -124,6 +124,10 @@ Because books/ is in our working directory, we can navigate there with a relativ
 	-rw-r--r-- 1 jovyan jovyan  12M Jan 18 21:13 yeast.fasta
 	```
 
+
+Now that we know what is in the books directory, let's explore the other directories. How do we move to another directory?
+
+
 === "Exercise"
 
 	Starting from `books`, which of the following commands could Jovyan use to navigate to the `MiSeq` directory? 
@@ -151,26 +155,26 @@ Most, but not all of the files in the MiSeq directory are .fastq files. Which .f
 
 === "Input"
 
-```
-cd ~/MiSeq
-pwd
-ls -lhS *.fastq
-```
+	```
+	cd ~/MiSeq
+	pwd
+	ls -lhS *.fastq
+	```
 
 === "Expected Output"
 
-```
--rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 9.2M Jan 18 21:13 F3D147_S213_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 9.2M Jan 18 21:13 F3D147_S213_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 7.1M Jan 18 21:13 F3D149_S215_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 7.0M Jan 18 21:13 F3D149_S215_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 6.7M Jan 18 21:13 F3D148_S214_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 6.7M Jan 18 21:13 F3D148_S214_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 4.3M Jan 18 21:13 F3D6_S194_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 4.3M Jan 18 21:13 F3D6_S194_L001_R2_001.fastq
-```
+	```
+	-rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R1_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R2_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 9.2M Jan 18 21:13 F3D147_S213_L001_R1_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 9.2M Jan 18 21:13 F3D147_S213_L001_R2_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 7.1M Jan 18 21:13 F3D149_S215_L001_R1_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 7.0M Jan 18 21:13 F3D149_S215_L001_R2_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 6.7M Jan 18 21:13 F3D148_S214_L001_R1_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 6.7M Jan 18 21:13 F3D148_S214_L001_R2_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 4.3M Jan 18 21:13 F3D6_S194_L001_R1_001.fastq
+	-rwxr-xr-x 1 jovyan jovyan 4.3M Jan 18 21:13 F3D6_S194_L001_R2_001.fastq
+	```
 
 
 !!! note "Key Points"
@@ -183,7 +187,8 @@ ls -lhS *.fastq
 	
 	|Path |Description|
 	|-|-| 
-	|`/`| root directory|
-	| `~/` | home directory | 
-	|`./` | current or working directory |
-	|`../` | directory one level up |
+	|`/`| the root directory|
+	| `~/` | the home directory | 
+	|`./` | the current or working directory |
+	|`../` | the directory one level up |
+	|`../../` | the directory two level up |
