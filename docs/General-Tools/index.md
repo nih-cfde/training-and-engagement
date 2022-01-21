@@ -15,5 +15,3 @@ Tutorials in this section provide lessons for command-line programming, setting 
 
 
 Helpful [Cheat Sheets](Cheat-Sheets/index.md) for commonly used commands are also available.
-
-- 
