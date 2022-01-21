@@ -1,12 +1,5 @@
 site_name: Common Fund Data Ecosystem Training
-site_description: |
-    | We are working to make Common Fund data more accessible to researchers and clinicians like you. Choose from our growing list of tutorials to learn how to perform bioinformatic analyses and access data. <br>
-    | * General Tools -  [Conda](https://training.nih-cfde.org/en/latest/General-Tools/Introduction-to-Conda/), [Snakemake](https://training.nih-cfde.org/en/latest/General-Tools/Snakemake/), [Web development](https://training.nih-cfde.org/en/latest/General-Tools/Web-Development/)
-    | * Cloud Platforms -  [AWS](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1/), [GCP](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/), [Terra](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-Terra/)
-    | * Bioinformatic Analyses - [BLAST](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/BLAST-Command-Line/BLAST1/), [GWAS](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/GWAS-in-the-cloud/), [RNA-Seq on Cavatica](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1/)
-    | * Common Fund Tools  <a href="https://training.nih-cfde.org/en/latest/Common-Fund-Tools/Kids-First/" style="color:#336699;">Kids First Portal</a>, <a href="https://training.nih-cfde.org/en/latest/Common-Fund-Tools/CFDE-Portal/" style="color:#336699;">CFDE Portal</a>
-
-
+site_description: " We are working to make Common Fund data more accessible to researchers and clinicians like you. Choose from our growing list of tutorials to learn how to perform bioinformatic analyses and access data."
 
 theme:
   name: material
