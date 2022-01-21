@@ -181,6 +181,8 @@ To answer the question, how many reads are in each R1 file, we can construct the
 	4779
 	```
 
+Let's practice.
+
 
 === "Exercise"
 
@@ -200,3 +202,11 @@ To answer the question, how many reads are in each R1 file, we can construct the
 	```
 	6600
 	```
+!!! note "Key Points"
+
+	|Command|Description|
+	|-|- |
+	| `wc` [filename] | print the total characters, words, and lines in a file |
+	| `|` | redirect the output to another program |
+	| `>` | redirect the output to a file |
+	| `>>` | append the output to a file |

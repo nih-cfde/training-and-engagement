@@ -5,9 +5,6 @@ Now that we know what files exist on our computer, it is time to look at the con
 `head` prints, by default the first 10 lines of a file, and `tail` prints the last 10 lines of a file by default. 
 
 
-
-
-
 The following commands use a similar syntax:
 
 ```
@@ -18,10 +15,7 @@ less [filename]
 ```
 
 
-
-
 Let's navigate to the `books` directory. 
-
 
 
 ```
@@ -29,8 +23,7 @@ cd ~/books/
 ```
 
 
-
-Now we can view the file with `head`, `cat`, `less`, and `tail`.
+Let's look at the first 10 lines with `head`. 
 
 === "Input"
 
@@ -49,6 +42,8 @@ Now we can view the file with `head`, `cat`, `less`, and `tail`.
 	www.gutenberg.org. If you are not located in the United States, you
 	will have to check the laws of the country where you are located before
 	using this eBook.
+
+Let's look at the last 10 lines with `tail`. 
 
 
 === "Input"
