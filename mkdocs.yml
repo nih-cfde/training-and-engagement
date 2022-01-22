@@ -1,8 +1,5 @@
 site_name: Common Fund Data Ecosystem Training
-site_description: >-
-  We are working to make Common Fund data more accessible to researchers and clinicians like you! </br></br>Choose from our growing list of tutorials and resources to learn how to perform bioinformatic analyses and access data
-
-
+site_description: We are working to make Common Fund data more accessible to researchers and clinicians like you. 
 
 theme:
   name: material
