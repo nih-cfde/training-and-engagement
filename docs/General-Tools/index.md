@@ -6,9 +6,12 @@ title: Overview
 General Tools
 =============
 
-Tutorials in this section provide lessons for setting up compute environments, workflows, and websites. Helpful cheat sheets for commonly used commands are also available here.
+Tutorials in this section provide lessons for command-line programming, setting up compute environments, workflows, and websites. 
 
-- [Snakemake Workflow Management](Snakemake/index.md)
-- [Introduction to Conda](Introduction-to-Conda/index.md)
-- [Building Websites](Web-Development/index.md)
-- [Cheat Sheets](Cheat-Sheets/index.md)
+- [An Introduction to Conda Environments](Introduction-to-Conda/index.md)
+- [An Introduction to Snakemake for Workflow Management](Snakemake/index.md)
+- [An Introduction to UNIX for Cloud Computing](UNIX/unix_0.md)
+- [Building Websites with Jekyll, Sphinx, and MkDocs](Web-Development/index.md)
+
+
+Helpful [Cheat Sheets](Cheat-Sheets/index.md) for commonly used commands are also available.
