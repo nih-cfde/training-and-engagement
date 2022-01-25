@@ -1,10 +1,10 @@
 # A Hands-on Introduction to AWS for Cloud Computing
 
-**When:**   January 26, 2022, from 10 am PST - 12 pm PST 
+**When:**    
 
-**Instructors:** Dr. Rayna Harris
+**Instructors:**  
 
-**Helpers:**  Dr. Amanda Charbonneau, Jessica Lumian, Jeremy Walter 
+**Helpers:**  
 
 Your instructors are part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
 
