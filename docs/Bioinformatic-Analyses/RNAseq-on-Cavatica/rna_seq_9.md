@@ -5,7 +5,7 @@ title: Incorporating GTEx Data in Kids First Analyses
 
 <div class="banner"><span class="banner-text">Lesson in Development</span></div>
 
-Analysis using Data Cruncher
+Incorporating GTEx Data in Kids First Analyses
 ==========================
 
 So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script to generate reports and plots.
