@@ -8,7 +8,7 @@ title: Incorporating GTEx Data in Kids First Analyses
 Incorporating GTEx Data in Kids First Analyses
 ==========================
 
-So far we have explored running DGE analysis using a public app based on DESeq2. In the second approach, we will set up an interactive analysis on an instance running the RStudio computational environment. We will run a DGE workflow using an analysis script to generate reports and plots.
+The previous example provides a walkthrough for identifying RNA-Seq datasets from the [Kids First Data Resource Portal](https://portal.kidsfirstdrc.org/) and pushing them to [CAVATICA](https://cavatica.sbgenomics.com/) for analysis. Users may be interested in bringing 
 
 !!! note "DGE Tools"
 
