@@ -54,21 +54,7 @@ Log in to your account by going to this web address:  https://cfde-training-work
 
 ![](https://hackmd.io/_uploads/SJfyT66pt.png)
 
-Find your first name in the table below and log in with that as your IAM user name and the password `cfde2022!!` 
-
-
-|   IAM |   IAM  |   IAM  |   IAM  |   Password  |
-|---|---|---|---|---|
-|   Abdullahi  |   Jasleen  |   Minoo  |   Somi  |   `cfde2022!!`  |
-|   Brett  |   Jenna  |   Nathan  |   Sophia  |   `cfde2022!!`  |
-|   Connor  |   Jesus  |   Nicole  |   Stefan  |   `cfde2022!!`   |
-|   Daulet  |   Jiefei  |   Nina  |   Stephen  |   `cfde2022!!`   |
-|   David  |   Ketaki  |   Owen  |   Triveni  |   `cfde2022!!`   |
-|   Francisco  |   Kirtan   |   Paul  |   Uma  |   `cfde2022!!`   |
-|   Harsh  |   Layla  |   Pornlada  |   Vincent  |   `cfde2022!!`   |
-|   Hasim  |   Lessa  |   ramakrishna  |   student2  |  `cfde2022!!`   |
-|   Ian  |   Michaelangelo  |   Sai  |   student3  |   `cfde2022!!`   |
-|   Jackie  |   Minji  |   sajjad  |   student4  |   `cfde2022!!`   |
+Find your first name in the table below and log in with that as your IAM user name and the password given by your instructor.
 
 
 > :raised_hand: Raise your hand in Zoom when you've successfully logged in with the workshop user credentials.
