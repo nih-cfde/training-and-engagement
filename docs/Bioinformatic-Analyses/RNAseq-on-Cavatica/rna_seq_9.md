@@ -37,7 +37,8 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
 
 - CAVATICA will automatically navigate you to your duplicate project. From here, choose `Interactive Analysis` and then open the `Data Cruncher`. [11.40.06AM]
 - Start the `Cloud-agnostic Data Import` analysis by clicking the small blue "Play" button in the far right of the row. [11.40.07AM]
-- When the Analysis is ready to begin, click the start button to enter the Data Cruncher.
+- When the Analysis finishes initializing, it is ready to begin. Click the small blue button to enter the Data Cruncher. [11.40.08AM]
+
 
 ## Step 3: Within Data Cruncher, Import the Files in the PFB
 
