@@ -22,7 +22,7 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
     - <img src="./rna-seq-images/rna-seq-9-02.png" width="400"/>
 - Once you have identified the subset of files for your analysis, return to the top of the screen and choose `Export All to PFB`. This will create a manifest of files on the AnVIL Portal. This process may take several minutes, depending upon the number of files for export.
     - <img src="./rna-seq-images/rna-seq-9-03.png" width="400"/>
-- Once the PFB is created, download it to your local machine. This document contains the information CAVATICA needs to pull these files into your CAVATICA project.
+- Once the PFB is created, download it to your local machine. This downloaded PFB file contains the information CAVATICA needs to pull these files into your CAVATICA project.
     - <img src="./rna-seq-images/rna-seq-9-04.png" width="400"/>
 - Before navigating away from the AnVIL Portal, you also must generate an API key. This will be used to authenticate your access to the files in the PFB and allow the transfer of GTEx data into CAVATICA. Select your username in the top right of the AnVIL Portal. Select `Create API Key` in the top left of the page that opens. After a key is generated, download this key by choosing `Dowload json`. A file will save to your local machine.
     - <img src="./rna-seq-images/rna-seq-9-06.png" width="400"/>
@@ -53,7 +53,7 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
 
 
 ## Step 3: Within Data Cruncher, Import the Files in the PFB
-The commands for importing the GTEx files from AnVIL into CAVATICA are written into the `interop.py` script. We will be using the Jupyter Notebook `AnVIL_transfer.ipynb` to input the PFB manifest and authentication for the transfer.
+The commands for importing the GTEx files from AnVIL into CAVATICA are written into the `interop.py` script included in the public project you copied.  We will be using the Jupyter Notebook `AnVIL_transfer.ipynb` to input the PFB manifest and authentication for the transfer.
 - Open the `AnVIL_transfer.ipynb` notebook by selecting it from the left column in the Data Cruncher.
     - <img src="./rna-seq-images/rna-seq-9-14.png" width="400"/>
 - The first two commands install dependencies needed for the data transfer. Click within each of these paragraphs (blocks of code) and then run each of them by clicking the `Play` button at the top of the window.
