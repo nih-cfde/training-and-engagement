@@ -16,8 +16,28 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
 
 
 ## Step 1: Identify GTEx Files on AnVIL and Export a PFB
+- Navigate to [the AnVIL Portal](https://gen3.theanvil.io/login) and login using NIH or Google credentials. [11.10.55AM]
+- Using the [AnVIL Data Explorer](https://gen3.theanvil.io/explorer), identify the GTEx files for your analysis. For more information on using AnVIL Gen3, see [their support documentation here](https://anvilproject.org/learn/introduction/getting-started-with-gen3). [11.13.02AM]
+- Once you have identified the subset of files for your analysis, return to the top of the screen and choose `Export All to PFB`. This will create a manifest of files on the AnVIL Portal. This process may take several minutes, depending upon the number of files for export. [11.16.23AM]
+- Once the PFB is created, download it to your local machine. This document contains the information CAVATICA needs to pull these files into your CAVATICA project. [11.25.34AM]
+- Before navigating away from the AnVIL Portal, you also must generate an API key. This will be used to authenticate your access to the files in the PFB and allow the transfer of GTEx data into CAVATICA. Select your username in the top right of the AnVIL Portal. Select `Create API Key` in the top left of the page that opens. After a key is generated, download this key by choosing `Dowload json`. A file will save to your local machine. [11.26.08AM]
+
+This concludes the necessary steps in the AnVIL Portal. We will now move to CAVATICA.
 
 ## Step 2: Access the Data Interoperability Jupyter Notebook on CAVATICA
+The commands necessary to import the chosen GTEx files from the AnVIL Portal have been saved in a Jupyter Notebook that is available on the CAVATICA platform. We will copy this notebook to a project we can work in and then begin an interactive session in the Data Cruncher to run the transfer.
+- Navigate to [CAVATICA](https://cavatica.sbgenomics.com/) and login using NIH or CAVATICA credentials. [11.31.27AM]
+- Within CAVATICA, choose [`Public Projects`](https://cavatica.sbgenomics.com/public/projects) from the menu bar at the top, then select [`Data Interoperability`](https://cavatica.sbgenomics.com/u/sevenbridges/data-interoperability). [11.32.13AM]
+- This Public Project contains the notebook we need to begin the data transfer. Save a copy of this public project to be able to run and execute this workflow. To do this, click the `i` symbol next to the Project Title and click `Copy project`. [11.32.14AM]
+- Select a title and billing group for your new project. Be sure to choose to `Allow network access` for this project. [11.32.15AM]
+
+!!! info "Allow Network Access"
+
+    If you would like to work with the Data Interoperability public project, make a copy of the project by selecting the "i" next to the project name. Select to copy the project. This will bring up the project creation menu. The network access will be set to "Block network access" by default, however you will need to change the setting to "Allow network access" in order to use the Cloud-agnostic Data Import interactive analysis.
+
+- CAVATICA will automatically navigate you to your duplicate project. From here, choose `Interactive Analysis` and then open the `Data Cruncher`. [11.40.06AM]
+- Start the `Cloud-agnostic Data Import` analysis by clicking the small blue "Play" button in the far right of the row. [11.40.07AM]
+- When the Analysis is ready to begin, click the start button to enter the Data Cruncher.
 
 ## Step 3: Within Data Cruncher, Import the Files in the PFB
 
