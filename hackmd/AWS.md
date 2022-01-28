@@ -1,10 +1,10 @@
 # A Hands-on Introduction to AWS for Cloud Computing
 
-**When:**   January 26, 2022, from 10 am PST - 12 pm PST 
+**When:**   
 
-**Instructors:** Dr. Rayna Harris
+**Instructors:**  
 
-**Helpers:** Dr. Amanda Charbonneau  Jessica Lumian and Jeremy Walter 
+**Helpers:**  
 
 Your instructors are part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
 
@@ -57,22 +57,7 @@ Log in to your account by going to this web address:  https://cfde-training-work
 
 ![](https://hackmd.io/_uploads/SJfyT66pt.png)
 
-Find your first name in the table below and log in with that as your IAM user name and the password `cfde2022!!` 
-
-
-|   IAM |   IAM  |   IAM  |   IAM  |   Password  |
-|---|---|---|---|---|
-|   Abdullahi  |   Jasleen  |   Minoo  |   Somi  |   `cfde2022!!`  |
-|   Brett  |   Jenna  |   Nathan  |   Sophia  |   `cfde2022!!`  |
-|   Connor  |   Jesus  |   Nicole  |   Stefan  |   `cfde2022!!`   |
-|   Daulet  |   Jiefei  |   Nina  |   Stephen  |   `cfde2022!!`   |
-|   David  |   Ketaki  |   Owen  |   Triveni  |   `cfde2022!!`   |
-|   Francisco  |   Kirtan   |   Paul  |   Uma  |   `cfde2022!!`   |
-|   Harsh  |   Layla  |   Pornlada  |   Vincent  |   `cfde2022!!`   |
-|   Hasim  |   Lessa  |   ramakrishna  |   student2  |  `cfde2022!!`   |
-|   Ian  |   Michaelangelo  |   Sai  |   student3  |   `cfde2022!!`   |
-|   Jackie  |   Minji  |   sajjad  |   student4  |   `cfde2022!!`   |
-
+Log in with your first name as your IAM user name and the password provided by the instructor.
 
 > :raised_hand: Raise your hand in Zoom when you've successfully logged in with the workshop user credentials.
 
