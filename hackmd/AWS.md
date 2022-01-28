@@ -1,13 +1,12 @@
 # A Hands-on Introduction to AWS for Cloud Computing
 
-**When:**    
+**When:**   January 26, 2022, from 10 am PST - 12 pm PST 
 
-**Instructors:**  
+**Instructors:** Dr. Rayna Harris
 
-**Helpers:**  
+**Helpers:** Dr. Amanda Charbonneau  Jessica Lumian and Jeremy Walter 
 
 Your instructors are part of the training and engagement team for the [NIH Common Fund Data Ecosystem](https://nih-cfde.org/), a project supported by the NIH to increase data reuse and cloud computing for biomedical research.
-
 
 #### Description
 
@@ -36,17 +35,21 @@ We're going to use the raised hand :raised_hand: reaction in zoom to make sure p
 
 Cloud computing is the on-demand use of data storage and compute power without direct active management by the user. Amazon Web Services (AWS) is one of the most broadly adopted cloud platforms.
 
-
-Amazon's Elastic Compute Cloud (**EC2**) is a web service that provides secure, resizable compute capacity in the cloud. Amazon's Simple Storage Service (**S3**) is widely used for storing and sharing data. An **instance** is a virtual machine that runs in the cloud. An **image** is a resource that stores the configuration files, metadata, permissions, and data to create, maintain, backup, or recover an instance.
-
 Some advantages of using AWS include:
 
 - Easy sign-on 
 - Simple billing
 - Stable services
+- Customizable images
 - Customer support
 - Online resources
 
+
+![](https://uploads-ssl.webflow.com/5e1f17bab0dc6527c1ecc801/5e55f0ab6725fd082d2ea435_amazon-hosting.jpeg)
+
+Amazon's Elastic Compute Cloud (**EC2**) is a web service that provides secure, resizable compute capacity in the cloud. Amazon's Simple Storage Service (**S3**) is widely used for storing and sharing data. 
+
+An **instance** is a virtual machine that runs in the cloud. An **image** (or AMI for Amazon Machine Image) is a template that contains the software configuration (including operating system and applications) required to launch your instance. You can select an image provided by the AWS Marketplace, the AWS community, or you can select one of your own images. When you launch an instance, you specify the type of image to use. 
 
 Today, everything you do will be paid for by us. Your free login credentials will work for the next 24 hours. In the future, if you create an AWS account, you will have to add a credit card for billing. We'd be happy to answer questions about how to pay for AWS.
 
@@ -54,7 +57,21 @@ Log in to your account by going to this web address:  https://cfde-training-work
 
 ![](https://hackmd.io/_uploads/SJfyT66pt.png)
 
-Find your first name in the table below and log in with that as your IAM user name and the password given by your instructor.
+Find your first name in the table below and log in with that as your IAM user name and the password `cfde2022!!` 
+
+
+|   IAM |   IAM  |   IAM  |   IAM  |   Password  |
+|---|---|---|---|---|
+|   Abdullahi  |   Jasleen  |   Minoo  |   Somi  |   `cfde2022!!`  |
+|   Brett  |   Jenna  |   Nathan  |   Sophia  |   `cfde2022!!`  |
+|   Connor  |   Jesus  |   Nicole  |   Stefan  |   `cfde2022!!`   |
+|   Daulet  |   Jiefei  |   Nina  |   Stephen  |   `cfde2022!!`   |
+|   David  |   Ketaki  |   Owen  |   Triveni  |   `cfde2022!!`   |
+|   Francisco  |   Kirtan   |   Paul  |   Uma  |   `cfde2022!!`   |
+|   Harsh  |   Layla  |   Pornlada  |   Vincent  |   `cfde2022!!`   |
+|   Hasim  |   Lessa  |   ramakrishna  |   student2  |  `cfde2022!!`   |
+|   Ian  |   Michaelangelo  |   Sai  |   student3  |   `cfde2022!!`   |
+|   Jackie  |   Minji  |   sajjad  |   student4  |   `cfde2022!!`   |
 
 
 > :raised_hand: Raise your hand in Zoom when you've successfully logged in with the workshop user credentials.
@@ -69,7 +86,12 @@ You can launch an instance using the AWS launch instance wizard. The launch inst
 
 ![](https://hackmd.io/_uploads/Hk6dhoapY.png)
 
-3. Now, click the  [![  - Launch instances](https://img.shields.io/badge/_-Launch_instances-ec7211)](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#LaunchInstanceWizard:) button. You should see a page that looks like this:
+3. Now, click the  [![  - Launch instances](https://img.shields.io/badge/_-Launch_instances-ec7211)](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#LaunchInstanceWizard:) button. 
+
+
+<!---
+You should see a page that looks like this:
+--->
 
 
 4. AWS is beta testing a new version of the launch version of the wizard that goes through all the steps in one page instead of many. It is awesome. Click the [![  - Try it now!](https://img.shields.io/badge/_-Try_it_now!-276fc4)](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#LaunchInstances:) button at the top to get started. _If you accidentally close the banner with the beta button, refresh the page to bring it up again._
@@ -78,11 +100,11 @@ You can launch an instance using the AWS launch instance wizard. The launch inst
 
 5. First, give your instance a name (such as your first name) so that you can distinguish your instances from your classmates'. This is optional but very useful for keeping track of multiple instances on the same account.  
 
-6. The next step is to pick an image. Our preferred image is not listed in the quick start so we must find it in the Marketplace. Type **Ubuntu 20.04 LTS - Focal** in the search bar. Then click AWS Marketplace AMIs. Once you see, Ubuntu 20.04 LTS - Focal, click  Now, click [![Select](https://img.shields.io/badge/Select-ec7211)](https://).  
+6. The next step is to pick an image. Our preferred image is not listed in the Quick Start list, so we must find it in the Marketplace. Type **Ubuntu 20.04 LTS - Focal** in the search bar. Then click AWS Marketplace AMIs. Once you see, Ubuntu 20.04 LTS - Focal, click [![Select](https://img.shields.io/badge/Select-ec7211)](https://).  
 
 7. Next, we must specify how much memory and ram we need by specifying an **instance type**. The **t2.micro** instance is "Free tier eligible" and provides 1CPU and 1GB of memory. This is perfect for our class. 
 
-9. The final step is to **create a new key pair**. This will be used in the next section to connect to your instance via `ssh`. Give your key pair a name (without spaces). Use the default settings of RS type and .pem format. Save this file locally (e.g. in your downloads or your desktop).  
+9. The final step is to **create a new key pair**. This will be used in the next section to connect to your instance via `ssh`. Give your key pair a name (without spaces). Use the default settings of RSA type and .pem format. Save this file locally (e.g. in your downloads or your desktop).  
 
 10. For this workshop, we will choose the default network, security, and storage settings, so there is nothing else to change. 
 
@@ -171,6 +193,7 @@ This will print all the installed programs to your screen. Here are a few of the
 
 
 ```
+...
 grub-render-label         rvim                               zcat
 grub-script-check         savelog                            zcmp
 grub-syslinux2cfg         sbattach                           zdiff
@@ -185,6 +208,7 @@ hd                        screendump                         zmore
 head                      script                             znew
 helpztags                 scriptreplay
 hexdump                   scsi_logging_level
+...
 ```
 
 To practice working with some of these command-line programs, we need some files to work on. Let's use the `curl` command to download the same files we used in last week's workshop, which are stored in a .zip file in an Amazon S3 bucket. The `-O` option says to use the same filename that is specified in the web address. 
@@ -417,7 +441,7 @@ Now that you have MobaXTerm installed you need to find the name and the address 
 2. Check the empty box next to your instance. 
 3. Click the "Connect" button. 
 4. Click the **SSH client** tab.
-5. Find the "Example:" ssh command. Copy the last piece of information, which contains the public DNS for your instance and the computer name. It will look something like "ubuntu@ec2-54-193-121-227.us-west-1.compute.amazonaws.com"
+5. Find the "Example:" ssh command. Copy the last piece of information, which contains the public DNS for your instance and the computer name. It will look something like "ec2-54-193-121-227.us-west-1.compute.amazonaws.com"
 
 ![](https://i.imgur.com/EilADhq.png)
 
@@ -435,7 +459,6 @@ Now that you have MobaXTerm installed you need to find the name and the address 
 > Click the raised hand :hand: in zoom once you have viewed opened an html file.
 
 
-
 ### MacOS
 
 Mac users do not need to install any additional programs to transfer files. You do however need to locate the ssh key file you saved at the beginning of the workshop. 
@@ -444,7 +467,7 @@ Mac users do not need to install any additional programs to transfer files. You 
 2. Navigate your private key file and change the permissions using `chmod 400` to ensure your key is not publicly viewable. _Note: your .pem file may be in a different directory and have a different name. Modify the following commands accordingly._
 
 ```
-cd ~/Desktop/aws
+cd ~/Desktop/
 chmod 400 aws-jan-2022.pem
 ```
 
@@ -543,7 +566,7 @@ In today's workshop, we covered the following topics:
 - [x] AWS terminology and login
 - [x] How to launch an instance 
 - [x] How to connect to the instance
-- [x] How to install and run a software program on the instance 
+- [x] How to install and run a software programs on the instance 
 - [x] How to terminate your instance 
 
 We hope this workshop was helpful. Please complete the [post-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSe_IgvBrX_lr3B8Z_wWMTTt_qTfFwCR1lZLvEVe-BkCbOsKGw/viewform?usp=sf_link) to let us know if the workshop was useful or if you have any suggestions for improvement. 
