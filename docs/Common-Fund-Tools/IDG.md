@@ -1,0 +1,58 @@
+# Illuminating the Druggable Genome (IDG) Tutorials
+
+
+![](RackMultipart20220128-4-1vi3wev_html_dd4632e6b684fa0a.png)
+
+The NIH funded the Illuminating the Druggable Genome (IDG) program to improve our understanding of the properties and functions of proteins that are currently under-annotated within the three most commonly drug-targeted protein families: G-protein coupled receptors, ion channels, and protein kinases. Since 2014, the IDG Knowledge Management Center (IDG-KMC) has generated several open-access datasets and resources that jointly serve as a highly translational machine-learning-ready knowledgebases focused on human protein-coding genes and their products. The goal of the IDG-KMC is to develop comprehensive integrated knowledge for the druggable genome to illuminate the uncharacterized or poorly annotated portion of the druggable genome. The tools derived from the IDG-KMC provide either user-friendly visualizations or ways to impute knowledge about potential targets using machine learning strategies.
+
+For step-by-step descriptions on how to use each web-based tool to accelerate illumination in under-studied proteins check out our [Current Protocols doi: 10.1002/cpz1.355](https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/cpz1.355).
+
+Visit https://druggablegenome.net/ for more information on IDG Consortium.
+
+## IDG Interacting with the Pharos user interface
+
+[https://youtu.be/1FKp0gskGhU](https://youtu.be/1FKp0gskGhU) Presenter: Tim Sheils, NCATS (IDG KMC)
+
+Demo outcome: Participants will learn how to browse through Pharos, upload and save lists, analyze lists, and get predicted ligand interactions. IDG Grant: KMC-UNM U24CA224370 and publication: https://doi.org/10.1093/nar/gkaa993
+
+Link to Digital tool: https://pharos.nih.gov/
+
+[https://youtu.be/EVir\_va8xaY](https://youtu.be/EVir_va8xaY) (Research Database) with GraphQL API methodology allowing for more fine-tuned queries. Presenters: Keith Kelleher, NCATS (IDG KMC) Demo Outcome: Participants will learn how to query the Pharos API using GraphQL. IDG Grant: KMC-UNM U24CA224370 Link to Digital tool:[https://pharos.nih.gov/api](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbmhwcnZKdDdrdjd3VVJhdFZhTlFwV3BCT1cyQXxBQ3Jtc0tuNXRDbkRxbTJHNC00MU0wTTEwVE1uMVhkRE1JNnMtN04xU0lwX2V6ZHBuUFBMdVY5akJfMkZZUXJKRjFueTBiRGZnRmROQzYtc1g3bWk5RVhvaW80ai1MWnp1QWhscTROVkhYMFpodWJRTzhINThEbw&amp;q=https%3A%2F%2Fpharos.nih.gov%2Fapi)
+
+## The Harmonizome resource
+
+[https://www.youtube.com/watch?v=yGkIQjeWh9U](https://www.youtube.com/watch?v=yGkIQjeWh9U) Presenter: Andrew Rouillard,ISMMS (IDG-KMC) Harmonizome is a collection of processed datasets gathered to serve and mine knowledge about genes and proteins from over 70 major online resources. We extracted, abstracted and organized data into ∼72 million functional associations between genes/proteins and their attributes. Demo Outcome: Understanding the concepts behind constructing the Harmonizome. IDG Grant: KMC-ISMMS U24CA224260 [https://maayanlab.cloud/Harmonizome](https://maayanlab.cloud/Harmonizome), publication: [https://doi.org/10.1093/database/baw100](https://doi.org/10.1093/database/baw100)
+
+## The ARCHS4 resource
+
+[https://youtu.be/IxZHyf2bPjQ](https://youtu.be/IxZHyf2bPjQ) Presenter: Alexander Lachmann, ARCHS4 provides access to gene counts for over 1 million samples uniformly processed from RNA-seq studies for human and mouse experiments from GEO and SRA. Presenter: Alexander Lachmann, ISMMS (IDG KMC) Demo Outcome: Using the ARCHS4 user interface; Accessing ARCHS4 programmatically; Making gene function predictions with data from ARCHS4. Link to Digital tool: [https://maayanlab.cloud/archs4/](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa0dZY2VfRGgxckpfUkc3bHdHNURCSmdGVVFHZ3xBQ3Jtc0ttZ3RFY3JGbE0yUy1BbG4xSkFOUjdHQnNSUFY1NUFGN0JkdW1IWEhSRS1QSUxlbkxGREV2SnB3Y0xWSGFBa2tqbFBsdm5CNzMtRWpJSW9DdWhZeFlRZHZsanpzVWdmNXhqVjNkM2JubWFBZHN4MU1SUQ&amp;q=https%3A%2F%2Fmaayanlab.cloud%2Farchs4%2F) IDG Grant: KMC-ISMMS U24CA224260
+
+## Making predictions about gene function with PrismExp
+
+[https://youtu.be/6gDzA2dfOrI](https://youtu.be/6gDzA2dfOrI) In this e-IDG lecture Dr. Alexander Lachmann, an Assistant Professor from the Ma&#39;ayan Lab at ISMMS, describes three projects: PrismExp, blitzGSEA, and bridgeGSEA. These are three related methods to predict gene function and incorporate such predictions within gene set enrichment analyses. Read more about PrismExp here: [https://www.biorxiv.org/content/10.11](https://www.biorxiv.org/content/10.11). The PrismExp Appyter can be accessed from here: [https://appyters.maayanlab.cloud/#/PrismEXP](https://appyters.maayanlab.cloud/#/PrismEXP)
+
+## Using Geneshot to illuminate knowledge about understudied targets
+
+[https://youtu.be/VyNL7WzwQtk](https://youtu.be/VyNL7WzwQtk) Geneshot – Search engine developed to illuminate and promote attention to the under-studied genome producing ranked gene lists contain genes that were previously published in association with the search terms, as well as genes predicted to be associated with the terms based on data integration from multiple sources. Presenter: Alexander Lachmann, ISMMS (IDG KMC) Demo outcome: Using the Geneshot user interface; Accessing Geneshot programmatically; Making gene function predictions with data from Geneshot. IDG Grant: KMC-ISMMS U24CA224260 Link to Digital tool: [https://maayanlab.cloud/geneshot/](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa0REM19BbWZ6SlR5MzhPdEtJWGtDaGE1YW0xd3xBQ3Jtc0trZS1Qdlh5dmFRVXBTRENlU0kyRXMzTEYxUTUyTmVSbmo5c1h3aTdoUHo4bVN3QU8xVFlZX1BjWTNJLVZwM21jUnRfVlBPVEtZc2ZKSXhZeTJSaTI3NC1WTUlBWW9oZWJNTUdqV0pDQzMyY243ZENDVQ&amp;q=https%3A%2F%2Fmaayanlab.cloud%2Fgeneshot%2F) Link to Publication: Geneshot: search engine for ranking genes from arbitrary text queries Alexander Lachmann Brian M Schilder Megan L Wojciechowicz Denis Torre Maxim V Kuleshov Alexandra B Keenan Avi Ma&#39;ayan, Nucleic Acids Research, gkz393, [https://doi.org/10.1093/nar/gkz393](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqazZQcVNKOWxITXRrSndwQ0l4MVplVURmOEE3UXxBQ3Jtc0tsTklYM1hvRmk2MWJkOXVaUEd0YW5qRVlBNjBYM29aRXcyR0Vjci1UcTR0M3FlYi1udHh0UDNFQUItRElhX1NJQkVTY050aDh1YkF2RjJObUVQR3hkNE9QblZtWXgtR1g1ZHFUTlZEeEd4YkgwazBHRQ&amp;q=https%3A%2F%2Fdoi.org%2F10.1093%2Fnar%2Fgkz393)
+
+## Exploring under-studied targets with TIN-X
+
+[https://youtu.be/vBheOcupvAQ](https://youtu.be/vBheOcupvAQ) TIN-X – Target Importance and Novelty eXplorer, an interactive visualization tool for illuminating associations between diseases and potential drug targets Presenter: Vincent T. Metzger, UNM (IDG KMC) Demo Outcome: Using TIN-X to visually explore understudied drug targets; Demonstration of interactive features of the TIN-X User Interface. IDG Grant: KMC-UNM U24CA224370 Link to Digital tool: [https://newdrugtargets.org](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbFlhdk1sSmE0eHFKS2NhUzQzekw4M2I1WFBiUXxBQ3Jtc0tsalJjcUJxVE9rSVVaRHJjWUdja2tJMDh6M1NyaGpzZXV2RTZhMDBnRmF6a05ueVc5RDQ0NmtVMlhQMl9FMGtBWTloME9aT0NWT2hqV0ZmWkhRa0Z6UUZzWmVJS2x3N1p1NTZUWjJtRFdCWjUzV2dUdw&amp;q=https%3A%2F%2Fnewdrugtargets.org)
+
+Link to Publication: Cannon, D.C., Yang, J.J., Mathias, S.L., Ursu, O., Mani, S., Waller, A., Schürer, S.C., Jensen, L.J., Sklar, L.A., Bologa, C.G. and Oprea, T.I., 2017. TIN-X: target importance and novelty explorer. Bioinformatics. Volume 33, Issue 16, 15 August 2017, Pages 2601–2603, https://doi.org/10.1093/bioinformatics/btx200
+
+## Interacting with the DrugCentral user interface
+
+DrugCentral – Online drug compendium with annotations of mechanism of action for clinically approved drugs. Presenter: Tudor Oprea, UNM (IDG KMC Demo Outcome: Participants will learn about the information content currently included in DrugCentral, from mode-of-action drug targets to side effects, chemical information, and drug formulations. The use of the L1000 gene profile similarity for drugs and the machine learning prediction of anti-SARS-CoV-2 activities will also be discussed. IDG Grant: KMC-UNM U24CA224370 Link to Digital tool: [https://drugcentral.org](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbnRjZ083YXN0Y1FJQmFSRjhjQ0tfSFhDUXlqd3xBQ3Jtc0tueE16OUlaMVZ1dWt2RWJLWHRlTG5UdDN4X2NHZjM5MEppTzZ0UXV0dEZJcEREWXZKNmxtQm0yaFBBdkVoemNsaUhvSjdkYUduRHFnOS1VZVpQMDJEZy1tM3VKUTB1YWVVRjFlajE5cVYybUZEWFFYdw&amp;q=https%3A%2F%2Fdrugcentral.org) Link to Digital tool: [https://drugcentral.org/Redial](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbURkamxpTENzWk9KbHlaN0ljYkIybkY0QlBhZ3xBQ3Jtc0tsbE9GdGRXTVBLbmw4dlg4SnQxdDY0TkVTQS1qX05DblVYQXI0aV92Z2Fjd2dZNWtpSEF6d0gxcGNVNG9QQmpnU3Y3cDVLeWdsYjVxelZJckRQVU9NVFVuVUczX2NBai1peEIzZjZiT1kzN0JmRlVZSQ&amp;q=https%3A%2F%2Fdrugcentral.org%2FRedial)
+
+## GWAS target illumination with TIGA
+
+[https://youtu.be/vK8K39BIq80](https://youtu.be/vK8K39BIq80) TIGA – Target Illumination GWAS Analytics, an algorithm, automated workflow, and web application providing rational ranking, filtering and interpretation of inferred gene–trait associations and aggregated GWAS evidence by leveraging existing curation and harmonization efforts from the NHGRI-EBI GWAS Catalog. Presenter: Jeremy Yang, UNM (IDG KMC) Demo outcome: This demo will feature the TIGA web app as a tool for conveniently finding, prioritizing, and exploring gene-trait associations from aggregated GWAS evidence, in the context of drug target illumination scientific use cases. IDG Grant: KMC-UNM U24CA224370 Link to Digital tool: [https://unmtid-shinyapps.net/shiny/tiga/](https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbTFnWjhEZU1jakVTUEcxWVJCamNPU1lSM0J4QXxBQ3Jtc0tsVDhuSWxVVWY3WHJzc2NiN01vczlJUVg2WEJJZ2VKUGdBOTVCUlFOXzFuMUlDQmJuck9SSkpGakV6N1dTWUNva0J3SGU0Nm11TldDV0hQeFY0SThSWU9LNlJUc1NlRWh5NGRseHRrZjMydlcwaGlDNA&amp;q=https%3A%2F%2Funmtid-shinyapps.net%2Fshiny%2Ftiga%2F) Link to Publication: Jeremy J Yang, Dhouha Grissa, Christophe G Lambert, Cristian G Bologa, Stephen L Mathias, Anna Waller, David J Wild, Lars Juhl Jensen, Tudor I Oprea, TIGA: target illumination GWAS analytics, Bioinformatics, Volume 37, Issue 21, 1 November 2021, Pages 3865–3873, [https://doi.org/10.1093/bioinformatics/btab427](https://doi.org/10.1093/bioinformatics/btab427)
+
+## Prioritizing kinases for lists of proteins and phosphoproteins with KEA3
+
+[https://youtu.be/a0tbojE9DEU](https://youtu.be/a0tbojE9DEU) In this e-IDG presentation, Anna Calinawan, a Software Engineer from the Wang Lab, describes a collaborative project between the Ma&#39;ayan Lab and Pei Wang Lab at ISMMS where we apply kinase enrichment analysis to analyze phosphoproteomics data from the NCI CPTAC program. The web portal that Anna developed can be accessed at: [https://pancan-kea3.cptac-data-view.org](https://pancan-kea3.cptac-data-view.org/).
+
+## Converting PubMed searches to drug sets with the DrugShot Appyter
+
+[https://youtu.be/m2bVYhF7MHo](https://youtu.be/m2bVYhF7MHo) In this e-IDG lecture, Eryk Kropiwnicki, a Data Scientist from the Ma&#39;ayan Lab, presents DrugShot, a web-based application and an Appyter that converts PubMed searches into ranked lists of drugs and other small molecules based on literature co-mentions. DrugShot also makes predictions about additional relevant drugs based on drug-drug LINCS L1000 gene expression similarity. The DrugShot website can be accessed at: [https://maayanlab.cloud/drugshot/](https://maayanlab.cloud/drugshot/). The DrugShot Appyter can be accessed at: [https://appyters.maayanlab.cloud/#/DrugShot](https://appyters.maayanlab.cloud/#/DrugShot)
