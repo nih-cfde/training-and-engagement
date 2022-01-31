@@ -51,8 +51,8 @@ Here, we provide links to and descriptions of some recent video tutorials and pr
 * Description: ARCHS4 provides access to gene counts for over 1 million samples uniformly processed from RNA-seq studies for human and mouse experiments from GEO and SRA. 
 * Demo Outcome: Using the ARCHS4 user interface; Accessing ARCHS4 programmatically; Making gene function predictions with data from ARCHS4. 
 * IDG Grant: KMC-ISMMS U24CA224260
-* Link to digital tool: https://maayanlab.cloud/archs4/
-* Link to video: https://youtu.be/IxZHyf2bPjQ
+* Link to digital tool: <https://maayanlab.cloud/archs4/>
+* Link to video: <https://youtu.be/IxZHyf2bPjQ>
 
 ## Making Predictions about Gene Function with PrismExp
 
