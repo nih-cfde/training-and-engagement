@@ -65,7 +65,7 @@ Here, we provide links to and descriptions of some recent video tutorials and pr
 * Link to digital tool: <https://appyters.maayanlab.cloud/#/PrismEXP>
 * Link to video: <https://youtu.be/6gDzA2dfOrI>
 
-## Using Geneshot to illuminate knowledge about understudied targets
+## Using Geneshot to Illuminate Knowledge about Understudied Targets
 
 [![Geneshot](../images/geneshot-YT-1.png)](https://youtu.be/VyNL7WzwQtk)
 
@@ -122,7 +122,7 @@ Here, we provide links to and descriptions of some recent video tutorials and pr
 * Link to tool: <https://youtu.be/a0tbojE9DEU>
 * Link to video: <https://youtu.be/a0tbojE9DEU>
 
-## Converting PubMed searches to Drug Sets with the DrugShot Appyter
+## Converting PubMed Searches to Drug Sets with the DrugShot Appyter
 
 [![DrugShot](../images/drugshotYT_1.png)](https://youtu.be/m2bVYhF7MHo)
 
