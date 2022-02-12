@@ -58,7 +58,7 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
 ## Step 3: Within Data Cruncher, Import the Files in the PFB
 The commands for importing the GTEx files from AnVIL into CAVATICA are written into the `interop.py` script included in the public project you copied.  We will be using the Jupyter Notebook `AnVIL_transfer.ipynb` to input the PFB manifest and authentication for the transfer.
 - Open the `AnVIL_transfer.ipynb` notebook by selecting it from the left column in the Data Cruncher.
-    - <img src="./rna-seq-images/rna-seq-9-14.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-14-AnVIL_transfer_ipynb.png" width="400"/>
 - The first two commands install dependencies needed for the data transfer. Click within each of these paragraphs (blocks of code) and then run each of them by clicking the `Play` button at the top of the window.
     - <img src="./rna-seq-images/rna-seq-9-15.png" width="400"/>
 - The next paragraph will ask for your AnVIL API Key. Run this paragraph and a text box will apear. Open the `credentials.json` file on your computer and copy the api_key (without quotation marks) and paste it into the text box. Hit Enter on your keyboard to confirm.
