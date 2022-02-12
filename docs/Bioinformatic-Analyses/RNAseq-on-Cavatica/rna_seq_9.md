@@ -34,8 +34,8 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
 - Navigate to [CAVATICA](https://cavatica.sbgenomics.com/) and login using NIH or CAVATICA credentials.
     - <img src="./rna-seq-images/rna-seq-9-06.png" width="400"/>
 - Note: if you are logging into CAVATICA for the first time you will presented with an NIH consent screen followed by a Gen3 authorization screen.
-    - <img src="./rna-seq-9-06-01-nih-consent.png" width="400"/>
-    - <img src="./rna-seq-9-06-02-gen3-authorize" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-06-01-nih-consent.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-06-02-gen3-authorize" width="400"/>
 - Within CAVATICA, choose [`Public Projects`](https://cavatica.sbgenomics.com/public/projects) from the menu bar at the top, then select [`Data Interoperability`](https://cavatica.sbgenomics.com/u/sevenbridges/data-interoperability).
     - <img src="./rna-seq-images/rna-seq-9-07.png" width="400"/>
 - This Public Project contains the notebook we need to begin the data transfer. Save a copy of this public project to be able to run and execute this workflow. To do this, click the `i` symbol next to the Project Title and click `Copy project`.
