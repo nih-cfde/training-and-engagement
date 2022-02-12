@@ -25,7 +25,7 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
 - Once the PFB is created, download it to your local machine. This downloaded PFB file contains the information CAVATICA needs to pull these files into your CAVATICA project.
     - <img src="./rna-seq-images/rna-seq-9-04.png" width="400"/>
 - Before navigating away from the AnVIL Portal, you also must generate an API key. This will be used to authenticate your access to the files in the PFB and allow the transfer of GTEx data into CAVATICA. Select your username in the top right of the AnVIL Portal. Select `Create API Key` in the top left of the page that opens. After a key is generated, download this key by choosing `Dowload json`. A file will save to your local machine.
-    - <img src="./rna-seq-images/rna-seq-9-06.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-05.png" width="400"/>
 
 This concludes the necessary steps in the AnVIL Portal. We will now move to CAVATICA.
 
