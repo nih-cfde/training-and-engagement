@@ -32,24 +32,24 @@ This concludes the necessary steps in the AnVIL Portal. We will now move to CAVA
 ## Step 2: Access the Data Interoperability Jupyter Notebook on CAVATICA
 The commands necessary to import the chosen GTEx files from the AnVIL Portal have been saved in a Jupyter Notebook that is available on the CAVATICA platform. We will copy this notebook to a project we can work in and then begin an interactive session in the Data Cruncher to run the transfer.
 - Navigate to [CAVATICA](https://cavatica.sbgenomics.com/) and login using NIH or CAVATICA credentials.
-    - <img src="./rna-seq-images/rna-seq-9-07.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-06.png" width="400"/>
 - Within CAVATICA, choose [`Public Projects`](https://cavatica.sbgenomics.com/public/projects) from the menu bar at the top, then select [`Data Interoperability`](https://cavatica.sbgenomics.com/u/sevenbridges/data-interoperability).
-    - <img src="./rna-seq-images/rna-seq-9-08.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-07.png" width="400"/>
 - This Public Project contains the notebook we need to begin the data transfer. Save a copy of this public project to be able to run and execute this workflow. To do this, click the `i` symbol next to the Project Title and click `Copy project`.
-    - <img src="./rna-seq-images/rna-seq-9-09.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-08.png" width="400"/>
 - Select a title and billing group for your new project. Be sure to choose to `Allow network access` for this project.
-    - <img src="./rna-seq-images/rna-seq-9-10.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-09.png" width="400"/>
 
 !!! info "Allow Network Access"
 
     If you would like to work with the Data Interoperability public project, make a copy of the project by selecting the "i" next to the project name. Select to copy the project. This will bring up the project creation menu. The network access will be set to "Block network access" by default, however you will need to change the setting to "Allow network access" in order to use the Cloud-agnostic Data Import interactive analysis.
 
 - CAVATICA will automatically navigate you to your duplicate project. From here, choose `Interactive Analysis` and then open the `Data Cruncher`.
-    - <img src="./rna-seq-images/rna-seq-9-11.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-10.png" width="400"/>
 - Start the `Cloud-agnostic Data Import` analysis by clicking the small blue "Play" button in the far right of the row.
-    - <img src="./rna-seq-images/rna-seq-9-12.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-11.png" width="400"/>
 - When the Analysis finishes initializing, it is ready to begin. Click the small blue button to enter the Data Cruncher.
-    - <img src="./rna-seq-images/rna-seq-9-13.png" width="400"/>
+    - <img src="./rna-seq-images/rna-seq-9-12.png" width="400"/>
 
 
 ## Step 3: Within Data Cruncher, Import the Files in the PFB
