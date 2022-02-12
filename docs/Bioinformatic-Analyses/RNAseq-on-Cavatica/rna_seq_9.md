@@ -20,7 +20,7 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
     - <img src="./rna-seq-images/rna-seq-9-01.png" width="400"/>
 - Click the "Explore Data" button to use the [AnVIL Data Explorer](https://gen3.theanvil.io/explorer), identify the GTEx files for your analysis. For more information on using AnVIL Gen3, see [their support documentation here](https://anvilproject.org/learn/introduction/getting-started-with-gen3).
     - <img src="./rna-seq-images/rna-seq-9-02.png" width="400"/>
-- Once you have identified the subset of files for your analysis, return to the top of the screen and choose `Export All to PFB`. This will create a manifest of files on the AnVIL Portal. This process may take several minutes, depending upon the number of files for export.
+- Once you have identified the subset of files for your analysis, return to the top of the screen and choose `Export to PFB`. This will create a manifest of files on the AnVIL Portal. This process may take several minutes, depending upon the number of files for export.
     - <img src="./rna-seq-images/rna-seq-9-03.png" width="400"/>
 - Once the PFB is created, download it to your local machine. This downloaded PFB file contains the information CAVATICA needs to pull these files into your CAVATICA project.
     - <img src="./rna-seq-images/rna-seq-9-04.png" width="400"/>
