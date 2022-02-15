@@ -42,7 +42,6 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
     ![auth](./rna-seq-images/rna-seq-9-06-02-gen3-authorize.png){: align=right width=95%}
 
 - Within CAVATICA, choose [`Public Projects`](https://cavatica.sbgenomics.com/public/projects) from the menu bar at the top, then select [`Data Interoperability`](https://cavatica.sbgenomics.com/u/sevenbridges/data-interoperability).
-    - <img src="./rna-seq-images/rna-seq-9-07.png" width="400"/>
     ![seven](./rna-seq-images/rna-seq-9-07.png){: align=right width=95%}
 - This Public Project contains the notebook we need to begin the data transfer. Save a copy of this public project to be able to run and execute this workflow. To do this, click the `i` symbol next to the Project Title and click `Copy project`.
     ![eight](./rna-seq-images/rna-seq-9-08.png){: align=right width=95%}
@@ -50,8 +49,8 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
     ![nine](./rna-seq-images/rna-seq-9-09.png){: align=right width=95%}
 
 !!! info "Allow Network Access"
-
     If you would like to work with the Data Interoperability public project, make a copy of the project by selecting the "i" next to the project name. Select to copy the project. This will bring up the project creation menu. The network access will be set to "Block network access" by default, however you will need to change the setting to "Allow network access" in order to use the Cloud-agnostic Data Import interactive analysis.
+
 
 - CAVATICA will automatically navigate you to your duplicate project. From here, choose `Interactive Analysis` and then open the `Data Cruncher`.
     ![ten](./rna-seq-images/rna-seq-9-10.png){: align=right width=95%}
@@ -92,7 +91,7 @@ interop_client = DrsClient(
     - Set `target_platform = 'cavatica'`
     - Set `target_project = 'USER/PROJECT'`, where `USER` is your CAVATICA username and `PROJECT` is the name of the CAVATICA project you wish to move the files to. You may also copy these from the URL of the project after navigating there in your browser window.
     - Set `pfb = 'PATH'`, where `PATH` is the path to the .avro PFB file you uploaded. You can copy the path by right-clicking the file and choosing `Copy Path`. 
-        ![twenty](./rna-seq-images/rna-seq-9-20.png){: align=right width=95%}
+    ![twenty](./rna-seq-images/rna-seq-9-20.png){: align=right width=95%}
 - When all three variables have been set, use the `Play` button to run this paragraph. The files will begin to transfer and appear one-by-one below the paragraph.
      ![twentyone](./rna-seq-images/rna-seq-9-21.png){: align=right width=95%}
 - This completes the file transfer - the files will now be accessible in the Data Cruncher as well as in the Files Tab of the Project!
