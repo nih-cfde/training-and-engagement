@@ -17,15 +17,15 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
 
 ## Step 1: Identify GTEx Files on AnVIL and Export a PFB
 - Navigate to [the AnVIL Portal](https://gen3.theanvil.io/login) and login using NIH or Google credentials.
-    - ![portal](./rna-seq-images/rna-seq-9-01.png){: align=left width=50%}
+    ![one](./rna-seq-images/rna-seq-9-01.png)
 - Click the "Explore Data" button to use the [AnVIL Data Explorer](https://gen3.theanvil.io/explorer), identify the GTEx files for your analysis. For more information on using AnVIL Gen3, see [their support documentation here](https://anvilproject.org/learn/introduction/getting-started-with-gen3).
-    - <img src="./rna-seq-images/rna-seq-9-02.png" width="400"/>
+    ![two docs](./rna-seq-images/rna-seq-9-02.png)
 - Once you have identified the subset of files for your analysis, return to the top of the screen and choose `Export to PFB`. This will create a manifest of files on the AnVIL Portal. This process may take several minutes, depending upon the number of files for export.
-    - <img src="./rna-seq-images/rna-seq-9-03.png" width="400"/>
+    ![three](./rna-seq-images/rna-seq-9-03.png)
 - Once the PFB is created, download it to your local machine. This downloaded PFB file contains the information CAVATICA needs to pull these files into your CAVATICA project.
-    - <img src="./rna-seq-images/rna-seq-9-04.png" width="400"/>
+    ![four](./rna-seq-images/rna-seq-9-04.png)
 - Before navigating away from the AnVIL Portal, you also must generate an API key. This will be used to authenticate your access to the files in the PFB and allow the transfer of GTEx data into CAVATICA. Select your username in the top right of the AnVIL Portal. Select `Create API Key` in the top left of the page that opens. After a key is generated, download this key by choosing `Dowload json`. A file will save to your local machine.
-    - <img src="./rna-seq-images/rna-seq-9-05.png" width="400"/>
+    ![five](./rna-seq-images/rna-seq-9-05.png)
 
 This concludes the necessary steps in the AnVIL Portal. We will now move to CAVATICA.
 
