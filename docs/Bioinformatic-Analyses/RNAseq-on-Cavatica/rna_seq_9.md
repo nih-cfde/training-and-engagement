@@ -16,6 +16,7 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
 
 
 ## Step 1: Identify GTEx Files on AnVIL and Export a PFB
+
 - Navigate to [the AnVIL Portal](https://gen3.theanvil.io/login) and login using NIH or Google credentials.
     ![one](./rna-seq-images/rna-seq-9-01.png){: align=right width=95%}
 - Click the "Explore Data" button to use the [AnVIL Data Explorer](https://gen3.theanvil.io/explorer), identify the GTEx files for your analysis. For more information on using AnVIL Gen3, see [their support documentation here](https://anvilproject.org/learn/introduction/getting-started-with-gen3).
@@ -27,23 +28,26 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
 - Before navigating away from the AnVIL Portal, you also must generate an API key. This will be used to authenticate your access to the files in the PFB and allow the transfer of GTEx data into CAVATICA. Select your username in the top right of the AnVIL Portal. Select `Create API Key` in the top left of the page that opens. After a key is generated, download this key by choosing `Dowload json`. A file will save to your local machine.
     ![five](./rna-seq-images/rna-seq-9-05.png){: align=right width=95%}
 
-This concludes the necessary steps in the AnVIL Portal. We will now move to CAVATICA.
+- This concludes the necessary steps in the AnVIL Portal. We will now move to CAVATICA.
 
 ## Step 2: Access the Data Interoperability Jupyter Notebook on CAVATICA
+
 The commands necessary to import the chosen GTEx files from the AnVIL Portal have been saved in a Jupyter Notebook that is available on the CAVATICA platform. We will copy this notebook to a project we can work in and then begin an interactive session in the Data Cruncher to run the transfer.
+
 - Navigate to [CAVATICA](https://cavatica.sbgenomics.com/) and login using NIH or CAVATICA credentials.
     ![six](./rna-seq-images/rna-seq-9-06.png){: align=right width=95%}
+    
 - Note: if you are logging into CAVATICA for the first time you will presented with an NIH consent screen followed by a Gen3 authorization screen.
     ![consent](./rna-seq-images/rna-seq-9-06-01-nih-consent.png){: align=right width=95%}
     ![auth](./rna-seq-images/rna-seq-9-06-02-gen3-authorize.png){: align=right width=95%}
 
 - Within CAVATICA, choose [`Public Projects`](https://cavatica.sbgenomics.com/public/projects) from the menu bar at the top, then select [`Data Interoperability`](https://cavatica.sbgenomics.com/u/sevenbridges/data-interoperability).
     - <img src="./rna-seq-images/rna-seq-9-07.png" width="400"/>
-    ![seven]./rna-seq-images/rna-seq-9-07.png){: align=right width=95%}
+    ![seven](./rna-seq-images/rna-seq-9-07.png){: align=right width=95%}
 - This Public Project contains the notebook we need to begin the data transfer. Save a copy of this public project to be able to run and execute this workflow. To do this, click the `i` symbol next to the Project Title and click `Copy project`.
     ![eight](./rna-seq-images/rna-seq-9-08.png){: align=right width=95%}
 - Select a title and billing group for your new project. Be sure to choose to `Allow network access` for this project.
-    ![nine]./rna-seq-images/rna-seq-9-09.png){: align=right width=95%}
+    ![nine](./rna-seq-images/rna-seq-9-09.png){: align=right width=95%}
 
 !!! info "Allow Network Access"
 
@@ -58,7 +62,9 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
 
 
 ## Step 3: Within Data Cruncher, Import the Files in the PFB
+
 The commands for importing the GTEx files from AnVIL into CAVATICA are written into the `interop.py` script included in the public project you copied.  We will be using the Jupyter Notebook `AnVIL_transfer.ipynb` to input the PFB manifest and authentication for the transfer.
+
 - Open the `AnVIL_transfer.ipynb` notebook by selecting it from the left column in the Data Cruncher.
     ![ipynb](./rna-seq-images/rna-seq-9-14-AnVIL_transfer_ipynb.png){: align=right width=95%}
 - The first two commands install dependencies needed for the data transfer. Click within each of these paragraphs (blocks of code) and then run each of them by clicking the `Play` button at the top of the window.
