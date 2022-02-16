@@ -25,7 +25,7 @@ The previous example provides a walkthrough for identifying RNA-Seq datasets fro
     ![three](./rna-seq-images/rna-seq-9-03.png)
 - Once the PFB is created, download it to your local machine. This downloaded PFB file contains the information CAVATICA needs to pull these files into your CAVATICA project.
     ![four](./rna-seq-images/rna-seq-9-04.png)
-- Before navigating away from the AnVIL Portal, you also must generate an API key. This will be used to authenticate your access to the files in the PFB and allow the transfer of GTEx data into CAVATICA. Select your username in the top right of the AnVIL Portal. Select `Create API Key` in the top left of the page that opens. After a key is generated, download this key by choosing `Dowload json`. A file will save to your local machine.
+- Before navigating away from the AnVIL Portal, you also must generate an API key. This will be used to authenticate your access to the files in the PFB and allow the transfer of GTEx data into CAVATICA. Select your username in the top right of the AnVIL Portal. Select `Create API Key` in the top left of the page that opens. After a key is generated, download this key by choosing `Download json`. A file will save to your local machine.
     ![five](./rna-seq-images/rna-seq-9-05.png)
 
 - This concludes the necessary steps in the AnVIL Portal. We will now move to CAVATICA.
@@ -37,7 +37,7 @@ The commands necessary to import the chosen GTEx files from the AnVIL Portal hav
 - Navigate to [CAVATICA](https://cavatica.sbgenomics.com/) and login using NIH or CAVATICA credentials.
     ![six](./rna-seq-images/rna-seq-9-06.png)
     
-- Note: if you are logging into CAVATICA for the first time you will presented with an NIH consent screen followed by a Gen3 authorization screen.
+- Note: if you are logging into CAVATICA for the first time you will be presented with an NIH consent screen followed by a Gen3 authorization screen.
     ![consent](./rna-seq-images/rna-seq-9-06-01-nih-consent.png)
     ![auth](./rna-seq-images/rna-seq-9-06-02-gen3-authorize.png)
 
@@ -68,7 +68,7 @@ The commands for importing the GTEx files from AnVIL into CAVATICA are written i
     ![ipynb](./rna-seq-images/rna-seq-9-14-AnVIL_transfer_ipynb.png)
 - The first two commands install dependencies needed for the data transfer. Click within each of these paragraphs (blocks of code) and then run each of them by clicking the `Play` button at the top of the window.
     ![fifteen](./rna-seq-images/rna-seq-9-15.png)
-- The next paragraph will ask for your AnVIL API Key. Run this paragraph and a text box will apear. Open the `credentials.json` file on your computer and copy the api_key (without quotation marks) and paste it into the text box. Hit Enter on your keyboard to confirm.
+- The next paragraph will ask for your AnVIL API Key. Run this paragraph and a text box will appear. Open the `credentials.json` file on your computer and copy the api_key (without quotation marks) and paste it into the text box. Hit Enter on your keyboard to confirm.
     ![sixteen](./rna-seq-images/rna-seq-9-16.png)
 - The next two paragraphs ask for credentials from the Cancer Genomics Cloud and BioData Catalyst. We may skip these paragraphs because we are not using these platforms.
 - The next paragraph asks for your CAVATICA Authentication Token. You can access this token by navigating to [https://cavatica.sbgenomics.com/developer/token](https://cavatica.sbgenomics.com/developer/token). Copy it to your clipboard.
