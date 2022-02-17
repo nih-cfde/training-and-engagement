@@ -3,7 +3,7 @@ layout: page
 title: February 2021 Release
 ---
 
-Latest Release
+February 2021 Release
 =================
 
 **Updated February 24, 2021**
