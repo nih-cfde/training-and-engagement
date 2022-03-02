@@ -56,3 +56,7 @@ Since December 2020, the CFDE has been hosting free, virtual free, virtual train
 
 1. [Introduction to the Kids First Data Resource Portal](https://training.nih-cfde.org/en/latest/Common-Fund-Tools/Kids-First/) _Dec 17, 2020_
 1. [Introduction to Amazon Web Services for Cloud Computing](https://github.com/nih-cfde/training-and-engagement/wiki/A-Hands-On-Introduction-to-AWS:-December-1,-2020) _Dec 1, 2020_  
+
+## Graphical Summary
+
+![](./images/workshop-history.png)
