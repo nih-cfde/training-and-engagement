@@ -59,4 +59,4 @@ Since December 2020, the CFDE has been hosting free, virtual free, virtual train
 
 ## Graphical Summary
 
-![](./images/workshop-history.png)
+![](../images/workshop-history.png)
