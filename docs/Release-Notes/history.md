@@ -4,8 +4,13 @@ Below is a list past CFDE workshops with links to workshop resources.
 
 ## 2022
 
-* [Introduction to AWS with Human Microbiome Project (HMP) Data](https://hackmd.io/9EWhx5vYR3SDmd1Nl9rpyQ?view)  _February 22, 2022_ ([Watch the video recording](https://video.ucdavis.edu/media/Hackathon+-+Day+2+-+HMP/1_evaoqlpg))
-* [CFDE Portal Demo](https://app.nih-cfde.org/) _February 21, 2022_ ([Watch the video recording](https://video.ucdavis.edu/media/Hackathon+-+Day+1+-+Portal+Demo/1_cr0ert97))
+* [Introduction to R for RNA-Sequencing Analysis](https://hackmd.io/@raynamharris/r4rnaseq-workshop) _March 23, 2022_  
+* [RNA-Seq in the Cloud](https://osf.io/txcw8/) _March 7 and 9, 2022_  
+* [Introduction SigCom LINCS Search Engine](https://nih-cfde.github.io/2022-feb-hackathon/about/) _February 24, 2022_ 
+* [Extracellular RNA Communication (exRNA)](https://nih-cfde.github.io/2022-feb-hackathon/about/) _February 23, 2022_ 
+* [Introduction to to the Metabolomics Workbench](https://nih-cfde.github.io/2022-feb-hackathon/about/) _February 22, 2022_ 
+* [Introduction to AWS with Human Microbiome Project (HMP) Data](https://hackmd.io/9EWhx5vYR3SDmd1Nl9rpyQ?view) ([video recording](https://video.ucdavis.edu/media/Hackathon+-+Day+2+-+HMP/1_evaoqlpg))  _February 22, 2022_ 
+* [CFDE Portal Demo](https://app.nih-cfde.org/) ([video recording](https://video.ucdavis.edu/media/Hackathon+-+Day+1+-+Portal+Demo/1_cr0ert97)) _February 21, 2022_ 
 * [RNA-Seq Concepts, Design and Workflows](https://osf.io/kj5av/) _February 15, 2022_
 * [Introduction to AWS for Cloud Computing](https://github.com/nih-cfde/training-and-engagement/wiki/A-Hands-on-Introduction-to-AWS-for-Cloud-Computing-January-26,-2022) _January 26, 2022_ 
 * [Introduction to UNIX for Cloud Computing](https://github.com/nih-cfde/training-and-engagement/wiki/An-Introduction-to-UNIX-for-Remote-Computing:-January-19,-2022) _January 19, 2022_    
