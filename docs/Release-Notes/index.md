@@ -1,20 +1,18 @@
 ---
 layout: page
-title: December 2021 Release
+title: February 2022 Release
 ---
 
-Latest Release
-=================
+# Latest Release
 
-**Updated December 7, 2021**
+**Updated February 15, 2022**
 
-<span style="font-size:24px;">Updates and Fixes
+## New Tutorials
 
-- [Introduction to Amazon Web Services](../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1.md): Updated to reflect the changes in the AWS user experience interface
-- [Introduction to Conda](../General-Tools/Introduction-to-Conda/index.md): Added --from-history export as an additional option and included new vidlets for prominent steps
-- [RNAseq on Cavatica](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1.md): Updated reference genome and added steps to resolve network settings
+- [Incorporating GTEx Data in Kids First Analyses](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_9.md): This lesson demonstrates how to identify GTEx Datasets from the AnVIL Portal and import them into the CAVATICA/Kids First environment. It builds on the existing RNA-Seq training documentation by providing directions for expanding analyses to include GTEx's data as a source of RNA-Seq controls to compare to Kids First tumor samples. It also demonstrates interoperability between two of CFDE's DCCs.
 
-<span style="font-size:24px;">Website Features
+- [IDG Tutorials](../Common-Fund-Tools/IDG.md): The tools derived from the Illuminating the Druggagle Genome (IDG) program provide either user-friendly visualizations or ways to impute knowledge about potential targets using machine learning strategies. Watch these videos for step-by-step descriptions on how to use each web-based tool to accelerate illumination in under-studied proteins.
+
+## Website Features
 
 - Workshops: Updated the past workshops list
-- Mailing list: Added mailing list email on home page and on footer
