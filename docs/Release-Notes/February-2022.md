@@ -3,7 +3,7 @@ layout: page
 title: February 2022 Release
 ---
 
-# Latest Release
+# February 2022 Release
 
 **Updated February 15, 2022**
 
