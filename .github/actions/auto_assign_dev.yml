@@ -6,8 +6,14 @@ addAssignees: author
 
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
-  - nih-cfde/training
+  - raynamharris
+  - jeremywalter
+  - jessicalumian
 
 # A number of reviewers added to the pull request
 # Set 0 to add all the reviewers (default: 0)
 numberOfReviewers: 0
+
+# A list of keywords that will skip the process of adding reviewers if pull requests include it
+skipKeywords:
+   - wip

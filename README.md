@@ -19,8 +19,9 @@ Join our [training mailing list](mailto:CFDE-Training%20<CFDETraining+subscribe@
 A list of a past workshops can be viewed [here](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/Release-Notes/history.md).
 
 ## Contributing
+
 Hello, if you'd like to contribute to the CFDE Training website, read on!
 
 By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](./license.md). If you are OK with this condition, then we welcome both you and your contribution!
 
-If you have any questions about contributing, please open an issue or email the help desk (training@cfde.atlassian.net) and we will lend a hand at the earliest.
+If you have any questions, please [open an issue](https://github.com/nih-cfde/training-and-engagement/issues/new) or [email the training team](mailto:training@cfde.atlassian.net) and we will lend a hand.
