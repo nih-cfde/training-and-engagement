@@ -1,3 +1,8 @@
+---
+layout: page
+title: Workshop History
+---
+
 # Workshop History
 
 Below is a list past CFDE workshops with links to workshop resources.
