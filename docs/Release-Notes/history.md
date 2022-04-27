@@ -9,7 +9,8 @@ Below is a list past CFDE workshops with links to workshop resources.
 
 ## 2022
 
-* [Introduction to R for RNA-Sequencing Analysis](https://hackmd.io/@raynamharris/r4rnaseq-workshop) _March 23, 2022_  
+* [Introduction to R for RNA Sequencing Analysis](https://hackmd.io/SnorsWTbTTyRenptpjrhww?view) _April 27, 2022_ 
+* [Introduction to R for RNA Sequencing Analysis](https://hackmd.io/@raynamharris/r4rnaseq-workshop) _March 23, 2022_  
 * [RNA-Seq in the Cloud](https://osf.io/txcw8/) _March 7 and 9, 2022_  
 * [Introduction SigCom LINCS Search Engine](https://nih-cfde.github.io/2022-feb-hackathon/about/) _February 24, 2022_ 
 * [Extracellular RNA Communication (exRNA)](https://nih-cfde.github.io/2022-feb-hackathon/about/) _February 23, 2022_ 
