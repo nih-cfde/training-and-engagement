@@ -18,5 +18,5 @@ Tutorials in this section provide lessons for running hands-on bioinformatics an
 
 You may also be interested in these lessons on cloud computing:
 
-- [Introduction to Amazon Web Services](../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1.md)
+- [Introduction to Amazon Web Services](../Cloud-Platforms/Introduction-to-AWS/index.md)
 - [Introduction to Google Cloud Platform](../Cloud-Platforms/Introduction-to-GCP/index.md)
