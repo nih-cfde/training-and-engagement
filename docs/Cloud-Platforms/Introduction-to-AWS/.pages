@@ -1,7 +1,7 @@
 nav:
-  - introtoaws1.md
-  - introtoaws2.md
-  - introtoaws3.md
-  - Connect to Instance: introtoaws4.md
-  - Screen Command: introtoaws5_Screen.md
-  - Terminate Instance: introtoaws5.md
+  - index.md
+  - aws2.md
+  - aws3.md
+  - Connect to Instance: aws4.md
+  - Screen Command: aws5.md
+  - Terminate Instance: aws6.md
