@@ -10,7 +10,7 @@ Below is a list past CFDE workshops with links to workshop resources.
 ## 2022
 
 * [Introduction to R for RNA Sequencing Analysis](https://hackmd.io/MsWY1O9GQXGVDl2OmV2jxg) ([video recording](https://video.ucdavis.edu/media/CFDE+May+Hackathon+-+Intro+to+R+for+RNA-Seq/1_61sjku7o)) _May 11, 2022_ 
-* [CFDE Portal Demo with HMP Data, AWS, and sourmash](https://hackmd.io/dW9EoOh3T42eed9q21NLJQ?view#) ([video recording](https://video.ucdavis.edu/media/t/1_yze086oo) _May 10, 2022_
+* [CFDE Portal Demo with HMP Data, AWS, and sourmash](https://hackmd.io/dW9EoOh3T42eed9q21NLJQ?view#) ([video recording](https://video.ucdavis.edu/media/t/1_yze086oo)) _May 10, 2022_
 * [Introduction to R for RNA Sequencing Analysis](https://hackmd.io/SnorsWTbTTyRenptpjrhww?view) _April 27, 2022_ 
 * [Introduction to R for RNA Sequencing Analysis](https://hackmd.io/@raynamharris/r4rnaseq-workshop) _March 23, 2022_  
 * [RNA-Seq in the Cloud](https://osf.io/txcw8/) _March 7 and 9, 2022_  
