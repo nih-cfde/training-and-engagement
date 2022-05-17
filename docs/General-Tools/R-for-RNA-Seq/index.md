@@ -33,7 +33,7 @@ applied to RNA-Seq data.
 
 ### Learning Objectives
 
-!!! info In this workshop, you will learn how to use R and RStudio to: 
+!!! info "In this workshop, you will learn how to use R and RStudio to:"
 
     - import and view files commonly associated with RNA-sequencing experiments
     - select variables and observations that are relevant to research questions (tidy)
