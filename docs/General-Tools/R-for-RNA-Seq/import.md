@@ -12,6 +12,8 @@ row.names. For this workshop, we will use `read_csv()`, which means we
 may have to replace dashes with periods so that our sample names in all
 objects with sample name information.
 
+## Files
+
 Today, I will show you how to import the following files:
 
 1.  data/samples.csv
@@ -28,6 +30,8 @@ Later, you can practice on your own using the following files:
 The `GTExPortal.csv` file in `./data/` contains information about all
 the samples in the GTEx portal. Let’s import this file using
 `read.csv()`.
+
+### `read.csv()`
 
 ``` r
 samples <- read.csv("./data/samples.csv")
@@ -182,6 +186,8 @@ The “colData” from an rse can also be obtained. This information
 *should* match the information in our samples file, but there can be
 subtle differences in formatting We will read the colData in a later
 section.
+
+### `read.table()`
 
 Very large tabular files are often saved as .tsv files. These can be
 imported with `read.table()` or `read_tsv()`. You can also specify the
