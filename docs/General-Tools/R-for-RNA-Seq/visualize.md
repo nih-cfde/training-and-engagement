@@ -91,13 +91,13 @@ data (for good biological reasons). However, this plot doesn’t show us
 Hardy Scale. It’s hard to layer 4 variables, so let’s remove Tissue as a
 variable by focusing just on one Tissue.
                
-=== Challenge
+=== "Challenge"
                
     Create a plot showing the total number of samples per Sex, Age Bracket,
     and Hardy Scale for *just* the Heart samples. Paste the code you used in
     the chat.
                
-=== Answer
+=== "Answer"
                
      There are many options. Here are a few.
                
@@ -168,14 +168,14 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 
 ![](./images/volcano4-1.png) 
 
-=== Challenge
+=== "Challenge"
 
     Create a volcano plot for the results comparing the heart tissue of
     20-29 year olds to that of 70-70 year olds? Are there more or less
     differential expressed gene between 20 and 30 year olds or 20 and 70
     year olds?
   
-=== Answer
+=== "Answer"
 
     ```
     df <- read.table("./data/GTEx_Heart_20-29_vs_70-79.tsv")

@@ -133,13 +133,13 @@ resultsDEGs
     ## [36] "SGPP2"        "COL24A1"      "SEC24AP1"     "ANKRD1"       "CDO1"        
     ## [41] "CCL28"        "SLC5A10"      "XIRP2"
 
-=== Challenge
+=== "Challenge"
 
     Replace the input results file with a different file, such as the
     results of the comparison of 20-29 and 50-59 year old heart samples.
     What are the deferentially expressed genes?
 
-=== Answer
+=== "Answer"
 
     You could use the following code to get this result below
 

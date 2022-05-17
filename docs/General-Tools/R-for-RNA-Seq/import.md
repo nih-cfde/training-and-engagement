@@ -205,13 +205,13 @@ head(results)
     ## A2ML1    0.58865741 -1.0412696 1.8263856 0.07173966 0.2328150 -4.065276
     ## A2MP1    0.31631081 -0.8994146 1.4061454 0.16377753 0.3730822 -4.583435
 
-=== Challenge
+=== "Challenge"
 
 What commands could you use to read the following files: 1. GTEx results
 comparing the muscles of 20-29 year old to 70-79 year olds? 1. The csv
 file information describing the muscle samples?
 
-=== Answer
+=== "Answer"
 
 1.  `read.table("./data/GTEx_Muscle_20-29_vs_70-79.tsv")`
 2.  `read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
@@ -301,7 +301,7 @@ head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
 
 Now you have successfully imported data using multiple methods.
 
-=== Challenge
+=== "Challenge"
 
     What series commands would you use to import the `data/colData.MUSCLE.csv` and count the number of muscles samples persex, age?
 
@@ -310,7 +310,7 @@ Now you have successfully imported data using multiple methods.
     *Hint: use head() or names() after importing a file to verify the variable names.*
 
 
-=== Answer
+=== "Answer"
 
     `df <- read.csv("./data/colData.MUSCLE.csv")`
     `dplyr::count(df, SMTS, SEX, AGE)`
@@ -318,7 +318,7 @@ Now you have successfully imported data using multiple methods.
 
 
 
-#### Key functions 
+### Key functions 
     
 | Function              | Description                                                     |
 |-----------------------|-----------------------------------------------------------------|
