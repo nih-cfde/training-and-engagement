@@ -54,13 +54,13 @@ You can perform simple and advanced calculations in R.
 2 + 2 * 100
 ```
 
-## [1] 202
+    ## [1] 202
 
 ``` r
 log10(0.05)
 ```
 
-## [1] -1.30103
+    ## [1] -1.30103
 
 You can save variable and recall them later.
 
@@ -69,13 +69,13 @@ pval <- 0.05
 pval
 ```
 
-## [1] 0.05
+    ## [1] 0.05
 
 ``` r
 -log10(pval)
 ```
 
-## [1] 1.30103
+    ## [1] 1.30103
 
 You can save really long lists of things with a short, descriptive names
 that are easy to recall later.
@@ -85,7 +85,7 @@ favorite_genes <- c("BRCA1", "JUN",  "GNRH1", "TH", "AR")
 favorite_genes
 ```
 
-## [1] "BRCA1" "JUN"   "GNRH1" "TH"    "AR"
+    ## [1] "BRCA1" "JUN"   "GNRH1" "TH"    "AR"
 
 ### Loading R packages
 
