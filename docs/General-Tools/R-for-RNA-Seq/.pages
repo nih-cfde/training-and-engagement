@@ -1,7 +1,7 @@
 nav:
 - index.md
-- Introduction.md 
-- Import.md
-- Visualize.md
-- Wrangle.md
-- Wrapup.md
+- intro.md 
+- import.md
+- visualize.md
+- wrangle.md
+- wrapup.md
