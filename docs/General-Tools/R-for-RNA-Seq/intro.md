@@ -112,7 +112,7 @@ the `ggplot2` package.
 library(ggplot2)
 ```
 
-
+Now you have successfully loaded the necessary R packages.
 
 === Challenge
 
@@ -129,13 +129,11 @@ box next to them have been successfully loaded. You can click a box to
 load installed packages. Clicking the “Help” Tab will provide a quick
 description of the package and its functions.
 
-!!! info
+ ### Key functions
 
-    #### Key functions
-
-    | Function             | Description                                  |
-    |----------------------|----------------------------------------------|
-    | `<-`                 | The assignment variable                      |
-    | `log10()`            | A built-in function for a log transformation |
-    | `install.packages()` | An R function to install packages            |
-    | `library()`          | The command used to load installed packages  |
+| Function             | Description                                  |
+|----------------------|----------------------------------------------|
+| `<-`                 | The assignment variable                      |
+| `log10()`            | A built-in function for a log transformation |
+| `install.packages()` | An R function to install packages            |
+| `library()`          | The command used to load installed packages  |
