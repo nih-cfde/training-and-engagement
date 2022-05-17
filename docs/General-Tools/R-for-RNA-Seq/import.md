@@ -12,7 +12,7 @@ row.names. For this workshop, we will use `read_csv()`, which means we
 may have to replace dashes with periods so that our sample names in all
 objects with sample name information.
 
-## Files
+### Files
 
 Today, I will show you how to import the following files:
 
@@ -223,7 +223,7 @@ file information describing the muscle samples?
 2.  `read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
 
 
-#### Summary statistics
+### Summary Statistics
 
 You have now seen a variety of options for importing files. You may use
 many more in your R-based RNA-seq workflow, but these basics will get
