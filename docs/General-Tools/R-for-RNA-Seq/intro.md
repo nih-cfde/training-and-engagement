@@ -114,11 +114,11 @@ library(ggplot2)
 
 Now you have successfully loaded the necessary R packages.
 
-=== Challenge
+=== "Challenge"
 
     We will also use functions from the packages `tidyr` and `dplyr` to tidy and transform data. What command would you run to load these packages?
   
-=== Answer
+=== "Answer"
 
     `library(tidyr)`  
     `library(dplyr)`

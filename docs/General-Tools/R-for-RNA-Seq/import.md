@@ -6,7 +6,7 @@ Data can be imported using packages from base R or the tidyverse. What
 are some differences between the data objects imported by base R
 functions such as `read.csv()` and Tidyverse functions such as
 `read_csv()`? To begin with, `read.csv()` replaces spaces and dashes
-periods in column names, and it also preserves row.names. On the other
+periods in column names, and it also preserves row.namesgit a. On the other
 hand, `read_csv()` preserves spaces and dashes in column names but drops
 row.names. For this workshop, we will use `read_csv()`, which means we
 may have to replace dashes with periods so that our sample names in all
@@ -320,9 +320,11 @@ Now you have successfully imported data using multiple methods.
 
 === "Answer"
 
-    `df <- read.csv("./data/colData.MUSCLE.csv")`
-    `dplyr::count(df, SMTS, SEX, AGE)`
-    `# 3 samples are in the female group age 30-39`
+     ```r
+     df <- read.csv("./data/colData.MUSCLE.csv") 
+     dplyr::count(df, SMTS, SEX, AGE) 
+     # 3 samples are in the female group age 30-39 
+     ```
 
 
 ### Key functions 

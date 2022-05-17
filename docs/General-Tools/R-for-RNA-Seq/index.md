@@ -25,11 +25,11 @@ applied to RNA-Seq data.
 
 | Lesson name | Length |
 | --- | --- | 
-| [Introduction](./intro.md) | 25 min |
-| [Import Data](./import.md) | 30 min |
-| [Visualize Data](./visualize.md) | 30 min |
-| [Tidy and Transforming (or Wrangle) Data](./wrangle.md) | 90 min |
-| [Wrap-up](./wrapup.md) | 5 min |
+| [Introduction](./Intro.md) | 25 min |
+| [Import Data](./Import.md) | 30 min |
+| [Visualize Data](./Visualize.md) | 30 min |
+| [Tidy and Transforming (or Wrangle) Data](./Wrangle.md) | 90 min |
+| [Wrap-up](./Wrapup.md) | 5 min |
 
 ### Learning Objectives
 
