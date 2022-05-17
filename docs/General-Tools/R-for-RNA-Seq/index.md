@@ -27,11 +27,11 @@ applied to RNA-Seq data.
 
 | Lesson name | Length |
 | --- | --- | 
-| [Introduction](./r4rnaseq-1.md) | 25 min |
-| [Importing data](./r4rnaseq-2.md) | 30 min |
-| [Visualizing data](./r4rnaseq-3.md) | 30 min |
-| [Tidying and transforming d](./r4rnaseq-4.md) | 90 min |
-| [Wrap-up](./r4rnaseq-5.md) | 5 min |
+| [Introduction](./intro.md) | 25 min |
+| [Importing data](./import.md) | 30 min |
+| [Visualizing data](./visualize.md) | 30 min |
+| [Tidying and transforming d](./wrangle.md) | 90 min |
+| [Wrap-up](./wrapup.md) | 5 min |
 
 !!! note "Learning Objectives"
 
