@@ -112,6 +112,8 @@ the `ggplot2` package.
 library(ggplot2)
 ```
 
+
+
 === Challenge
 
     We will also use functions from the packages `tidyr` and `dplyr` to tidy and transform data. What command would you run to load these packages?
