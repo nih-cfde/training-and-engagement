@@ -107,13 +107,15 @@ variable by focusing just on one Tissue.
                
      There are many options. Here are a few.
                
-               ggplot(samples, aes(x = DTHHRDY, fill = AGE))  +
-                 geom_bar(stat = "count") +
-                 facet_wrap(~SEX) 
+     ```r
+      ggplot(samples, aes(x = DTHHRDY, fill = AGE))  +
+      geom_bar(stat = "count") +
+      facet_wrap(~SEX) 
                
-               ggplot(samples, aes(x = AGE, fill = as.factor(DTHHRDY)))  +
-                 geom_bar(stat = "count") +
-                 facet_wrap(~SEX) 
+      ggplot(samples, aes(x = AGE, fill = as.factor(DTHHRDY)))  +
+      geom_bar(stat = "count") +
+      facet_wrap(~SEX) 
+      ```
                
 
                  
@@ -138,7 +140,7 @@ corrected for multiple hypothesis testing (adj.P.Val). Let’s create a
 Volcano Plot using the `gplot()` and `geom_point()`. *Note: this may
 take a minute because there are 15,000 points that must be plotted*
   
-``` r
+```r
 ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
   geom_point() 
 ```
@@ -149,7 +151,7 @@ The inverse log of p \< 05 is 1.30103. We can add a horizontal line to
 our plot using `geom_hline()` so that we can visually see how many genes
 or points are significant and how many are not.
 
-``` r
+```r
 ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
   geom_point() +
   geom_hline(yintercept = -log10(0.05))
@@ -157,7 +159,7 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 
 ![](./images/volcano2-1.png) 
 
-``` r
+```r
 ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
   geom_point(aes(color = ifelse( adj.P.Val < 0.05, "p < 0.05", "NS"))) +
   geom_hline(yintercept = -log10(0.05)) 
@@ -165,7 +167,7 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 
 ![](./images/volcano3-1.png) 
 
-``` r
+```r
 ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
   geom_point(aes(color = ifelse( adj.P.Val < 0.05, "p < 0.05", "NS"))) +
   geom_hline(yintercept = -log10(0.05))  +
@@ -205,7 +207,7 @@ about the quality of the data. If we wanted to look for interactions
 between RIN score (SMRIN) and sequencing facility (SMCENTER), we can use
 a box plot.
 
-``` r
+```r
 ggplot(samples, aes(x = SMCENTER, y = SMRIN)) +
   geom_boxplot() +
   geom_jitter(aes(color = SMRIN))
