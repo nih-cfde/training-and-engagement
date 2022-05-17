@@ -152,7 +152,7 @@ resultsDEGs
       arrange(adj.P.Val) %>% 
       rownames(.)
     resultsDEGs2
-    ```
+    
 
     [1] "EDA2R"        "PTCHD4"       "BTBD11"       "MTHFD2P1"     "C4orf54"      "LOC101929331"
     [7] "FMO3"         "KLHL41"       "ETNPPL"       "HOPX"         "PDIA2"        "RPL10P7"     
@@ -162,7 +162,7 @@ resultsDEGs
     [31] "CPXM1"        "IL24"         "ADH1B"        "MCF2"         "WWC1"         "SGPP2"       
     [37] "COL24A1"      "SEC24AP1"     "ANKRD1"       "CDO1"         "CCL28"        "SLC5A10"     
     [43] "XIRP2" 
-
+    ```
  
 
 ### `mutate()`
