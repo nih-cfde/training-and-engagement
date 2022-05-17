@@ -122,8 +122,10 @@ Now you have successfully loaded the necessary R packages. Let's complete and ex
   
 === "Answer"
 
-    `library(tidyr)`  
-    `library(dplyr)`
+    ```r
+    library(tidyr)  
+    library(dplyr)
+    ```
 
 You can also navigate to the “Packages” tab in the bottom right pane of
 RStudio to view a list of available packages. Packages with a checked
