@@ -305,7 +305,7 @@ head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
     ## 5 Adipose Tissue Female 40-49       Violent and fast death 2
     ## 6 Adipose Tissue Female 50-59 Fast death of natural causes 3
 
-Now you have successfully imported data using multiple methods.
+Now you have successfully imported data using multiple methods. Let's complete and exercise.
 
 ### Exercise
 

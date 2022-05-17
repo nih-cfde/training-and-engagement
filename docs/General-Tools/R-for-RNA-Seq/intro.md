@@ -112,7 +112,9 @@ the `ggplot2` package.
 library(ggplot2)
 ```
 
-Now you have successfully loaded the necessary R packages.
+Now you have successfully loaded the necessary R packages. Let's complete and exercise
+
+### Exercise
 
 === "Challenge"
 

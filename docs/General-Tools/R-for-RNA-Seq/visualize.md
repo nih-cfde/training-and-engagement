@@ -2,6 +2,8 @@
 title: Visualize Data
 ---
 
+### `ggplot()`
+
 `ggplot2` is a very popular package for making visualization. It is
 built on the “grammar of graphics”. Any plot can be expressed from the
 same set of components: a data set, a coordinate system, and a set of
@@ -12,6 +14,8 @@ bars, line, or boxes. This is the template we build on:
 ggplot(data = <DATA>, aes(<MAPPINGS>)) +
   <geom_function>() +
 ```
+
+### `geom_bar()`
 
 We just used the `count()` function to calculate how many samples are in
 each group. The function for creating bar graphs (`geom_bar()`) also
@@ -90,6 +94,8 @@ RNA-Seq samples in the GTEx project, and we can see where we are missing
 data (for good biological reasons). However, this plot doesn’t show us
 Hardy Scale. It’s hard to layer 4 variables, so let’s remove Tissue as a
 variable by focusing just on one Tissue.
+
+### Exercise
                
 === "Challenge"
                
@@ -122,6 +128,8 @@ gene expression analysis comparing heart tissue from 20-29 to heart
 tissue from 30-39 year olds. This is a one-way design investigating only
 the effect of age (but not sex or hardy scale) on gene expression in the
 heart. Let’s visualize these results.
+
+### `geom_point()`
 
 [Volcano Plots](https://en.wikipedia.org/wiki/Volcano_plot_(statistics))
 are a type of scatter plots that show the log fold change (logFC) on the
@@ -168,6 +176,8 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 
 ![](./images/volcano4-1.png) 
 
+### Exercise
+
 === "Challenge"
 
     Create a volcano plot for the results comparing the heart tissue of
@@ -187,6 +197,7 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
     # more  
     ```
 
+### `geom_boxplot()`
 
 In addition to containing information about the donor tissue, the
 samples file contains has a column with a RIN score, which tells us
