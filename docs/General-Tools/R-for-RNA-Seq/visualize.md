@@ -23,7 +23,7 @@ makes use of `stat = "count"` to plot the total number of observations
 per variable. Let’s use ggplot2 to create a visual representation of how
 many samples there are per tissue, sex, and hardiness.
 
-``` r
+```r
 # Visualizing data with ggplot2
 
 ggplot(samples, aes(x = SMTS)) +
@@ -37,7 +37,7 @@ adjust the axes, legends, and more. For now, let’s flip the x and y
 coordinates so that we can read the sample names. We do this by adding a
 layer and the function `coord_flip()`
 
-``` r
+```r
 ggplot(samples, aes(x = SMTS)) +
   geom_bar(stat = "count") + 
   coord_flip()
@@ -56,7 +56,7 @@ to that layer (which is important later when you layer multiple geoms.
                
                
                
-``` r
+```r
 head(samples)
 ggplot(samples, aes(x = SMTS, color = AGE)) +
 geom_bar(stat = "count") + 
