@@ -1,6 +1,6 @@
 nav:
 - index.md
-- Intro.md 
+- Introduction.md 
 - Import.md
 - Visualize.md
 - Wrangle.md
