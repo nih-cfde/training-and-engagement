@@ -33,19 +33,20 @@ applied to RNA-Seq data.
 | [Tidy and Transforming (or Wrangle) Data](./wrangle.md) | 90 min |
 | [Wrap-up](./wrapup.md) | 5 min |
 
-!!! note "Learning Objectives"
+### Learning Objectives
 
-    In this workshop, you will learn how to use R and RStudio to:
-      - import and view files commonly associated with RNA-sequencing experiments
-      - select variables and observations that are relevant to research questions (tidy)
-      - create and rename variables (transform)
-      - join data frames by common variables (harmonize)
-      - visualize data using bar graphs, scatter plots, and box plots
+!!! In this workshop, you will learn how to use R and RStudio to: 
 
-=== "Prerequisites"
+    - import and view files commonly associated with RNA-sequencing experiments
+    - select variables and observations that are relevant to research questions (tidy)
+    - create and rename variables (transform)
+    - join data frames by common variables (harmonize)
+    - visualize data using bar graphs, scatter plots, and box plots
 
-    Familiarity with R and RNA Sequencing is not required but would be useful.
+### Prerequisites
 
-=== "Tutorial Resources"
+Familiarity with R and RNA Sequencing is not required but would be useful.
 
-    Please refer to the [RStudio cheat sheets](https://www.rstudio.com/resources/cheatsheets/) for commonly used R functions!
+### Tutorial Resources
+
+Please refer to the [RStudio cheat sheets](https://www.rstudio.com/resources/cheatsheets/) for commonly used R functions!
