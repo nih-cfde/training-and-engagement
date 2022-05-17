@@ -115,35 +115,28 @@ the `ggplot2` package.
 library(ggplot2)
 ```
 
-:::warning
+=== Challenge
 
-#### Challenge
-
-We will also use functions from the packages `tidyr` and `dplyr` to tidy
-and transform data. What command would you run to load these packages?
+    We will also use functions from the packages `tidyr` and `dplyr` to tidy and transform data. What command would you run to load these packages?
   
-:::spoiler
+=== Answer
 
-`library(tidyr)`  
-`library(dplyr)`
+    `library(tidyr)`  
+    `library(dplyr)`
 
-:::
-  
-  You can also navigate to the “Packages” tab in the bottom right pane of
+You can also navigate to the “Packages” tab in the bottom right pane of
 RStudio to view a list of available packages. Packages with a checked
 box next to them have been successfully loaded. You can click a box to
 load installed packages. Clicking the “Help” Tab will provide a quick
 description of the package and its functions.
 
-:::success
+!!! info
 
-#### Key functions
+    #### Key functions
 
-| Function             | Description                                  |
-  |----------------------|----------------------------------------------|
-  | `<-`                 | The assignment variable                      |
-  | `log10()`            | A built-in function for a log transformation |
-  | `install.packages()` | An R function to install packages            |
-  | `library()`          | The command used to load installed packages  |
-  
-:::
+    | Function             | Description                                  |
+    |----------------------|----------------------------------------------|
+    | `<-`                 | The assignment variable                      |
+    | `log10()`            | A built-in function for a log transformation |
+    | `install.packages()` | An R function to install packages            |
+    | `library()`          | The command used to load installed packages  |
