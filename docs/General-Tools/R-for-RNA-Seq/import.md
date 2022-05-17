@@ -307,6 +307,8 @@ head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
 
 Now you have successfully imported data using multiple methods.
 
+### Exercise
+
 === "Challenge"
 
     What series commands would you use to import the `data/colData.MUSCLE.csv` and count the number of muscles samples persex, age?
@@ -321,7 +323,6 @@ Now you have successfully imported data using multiple methods.
     `df <- read.csv("./data/colData.MUSCLE.csv")`
     `dplyr::count(df, SMTS, SEX, AGE)`
     `# 3 samples are in the female group age 30-39`
-
 
 
 ### Key functions 
