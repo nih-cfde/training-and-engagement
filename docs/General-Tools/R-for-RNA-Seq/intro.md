@@ -129,7 +129,8 @@ box next to them have been successfully loaded. You can click a box to
 load installed packages. Clicking the “Help” Tab will provide a quick
 description of the package and its functions.
 
- ### Key functions
+
+### Key functions
 
 | Function             | Description                                  |
 |----------------------|----------------------------------------------|
