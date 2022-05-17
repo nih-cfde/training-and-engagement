@@ -1,4 +1,6 @@
-## Wrap-Up
+---
+title: Wrap-up
+---
 
 ### R Markdown
 

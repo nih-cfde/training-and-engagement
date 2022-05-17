@@ -1,4 +1,6 @@
-## Tidying and Transforming Data
+---
+title: Wrangle Data
+---
 
 [Data wrangling](https://en.wikipedia.org/wiki/Data_wrangling) is the
 process of tidying and transforming data to make it more appropriate and

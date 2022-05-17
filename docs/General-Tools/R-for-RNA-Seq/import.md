@@ -1,4 +1,6 @@
-## Importing data
+---
+title: Import Data
+---
 
 Data can be imported using packages from base R or the tidyverse. What
 are some differences between the data objects imported by base R

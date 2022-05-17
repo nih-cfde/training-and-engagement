@@ -1,4 +1,6 @@
-## Visualizing data 
+---
+title: Visualize Data
+---
 
 `ggplot2` is a very popular package for making visualization. It is
 built on the “grammar of graphics”. Any plot can be expressed from the

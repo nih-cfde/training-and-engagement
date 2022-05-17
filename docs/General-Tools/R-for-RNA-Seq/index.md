@@ -1,6 +1,6 @@
 ---
 layout: page
-title: R for RNA-Seq Analysis
+title: Overview
 hide:
   - toc
 ---
@@ -28,9 +28,9 @@ applied to RNA-Seq data.
 | Lesson name | Length |
 | --- | --- | 
 | [Introduction](./intro.md) | 25 min |
-| [Importing data](./import.md) | 30 min |
-| [Visualizing data](./visualize.md) | 30 min |
-| [Tidying and transforming d](./wrangle.md) | 90 min |
+| [Import Data](./import.md) | 30 min |
+| [Visualize Data](./visualize.md) | 30 min |
+| [Tidy and Transforming (or Wrangle) Data](./wrangle.md) | 90 min |
 | [Wrap-up](./wrapup.md) | 5 min |
 
 !!! note "Learning Objectives"

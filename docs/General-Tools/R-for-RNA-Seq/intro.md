@@ -1,4 +1,6 @@
-## Introduction
+---
+title: Introduction
+---
 
 The book [“R for Data Science”](https://r4ds.had.co.nz/index.html) provides an excellent framework for using data science to turn raw data
 into understanding, insight, and knowledge. We will use this framework
