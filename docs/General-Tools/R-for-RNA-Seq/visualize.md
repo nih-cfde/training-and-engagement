@@ -8,10 +8,10 @@ same set of components: a data set, a coordinate system, and a set of
 “geoms” or the visual representation of data points such as points,
 bars, line, or boxes. This is the template we build on:
   
-  ```
-  ggplot(data = <DATA>, aes(<MAPPINGS>)) +
+```r
+ggplot(data = <DATA>, aes(<MAPPINGS>)) +
   <geom_function>() +
-  ```
+```
 
 We just used the `count()` function to calculate how many samples are in
 each group. The function for creating bar graphs (`geom_bar()`) also

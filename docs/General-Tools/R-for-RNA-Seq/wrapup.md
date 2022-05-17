@@ -36,8 +36,7 @@ Specifically, scripts and data are in the `GTEx` directory.
 
 Below is a consolidated list of the commands used in this workshop. 
 
-```
-
+```r
 ## Introduction
 
 2 + 2 * 100
