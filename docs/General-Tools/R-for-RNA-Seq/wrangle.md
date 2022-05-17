@@ -49,7 +49,7 @@ Instead of going into each function or each process in detail in
 isolation, let’s start with some typical research questions and then
 piece together R functions to get the desired information
 
-### Filtering Data
+### `filter()`
 
 Filter is done in a few different ways depending on the type of
 variable. You can use `>` and less `<` to filter greater or less than a
@@ -97,6 +97,8 @@ results %>%
     ## ADIPOQ   -1.119484  1.117207 -1.720643 0.089405972 0.26371302 -4.3157948
     ## AJAP1     1.010117 -1.212201  2.790425 0.006659281 0.07018819 -2.4766685
     ## ALAS2     1.122494 -1.039829  1.840601 0.069603628 0.22901993 -4.0459220
+
+### `arrange()`
 
 Sometimes its nice to arrange by p-value.
 
@@ -162,7 +164,7 @@ resultsDEGs
 
  
 
-### Mutating Data
+### `mutate()`
 
 Most RNA-Seq pipelines require that the counts file to be in a matrix
 format where each sample is a column and each gene is a row and all the
@@ -249,6 +251,9 @@ head(mycols)
     ## [3] "GTEX.ZAJG.0826.SM.5PNVA.1"  "GTEX.11TT1.1426.SM.5EGIA.1"
     ## [5] "GTEX.13VXT.1126.SM.5LU3A.1" "GTEX.14ASI.0826.SM.5Q5EB.1"
 
+
+### `select()`
+
 Then, we rename the row names. We can use `select(all_of())` to make
 sure that all the rows in colData are represented at columns in
 countData. We could modify the original files, but since they are so
@@ -264,7 +269,7 @@ head(rownames(colData_tidy) == colnames(counts_tidy))
 
     ## [1] TRUE TRUE TRUE TRUE TRUE TRUE
 
-### Joining Data
+### `left_join()`
 
 Genes can be identified by their name, their symbol, an Ensemble ID, or
 any number of other identifiers. Our results file uses gene symbols, but
@@ -387,8 +392,10 @@ head(resultsName)
     ## 5 NCBI:txid9606
     ## 6          <NA>
 
+### `select()`
+
 Congratulations! You have successfully joined two tables. Now, you can
-filter and select columsn to make a pretty table of the DEGS.
+filter and select columns to make a pretty table of the DEGS.
 
 .
 
@@ -422,6 +429,8 @@ head(resultsNameTidy)
     ## 4            <NA>  1.825674 -1.6578790 0.0044764970
     ## 5 ENSG00000248713 -2.824211  2.7276196 0.0159674585
     ## 6            <NA>  1.129013 -1.6306733 0.0175055847
+    
+### `pull()`    
 
 Now, let’s make a list of the Ensemble IDs of the DEGs .
 
@@ -436,7 +445,7 @@ resultsNameTidyIds
     ##  [5] "ENSG00000185615" "ENSG00000022267" "ENSG00000138347" "ENSG00000205221"
     ##  [9] "ENSG00000188783" "ENSG00000088882" "ENSG00000196616"
 
-### Lengthen data
+### `pivot_longer()`
 
 The matrix form of the count data is required for some pipelines, but
 many R programs are better suited to data in a long format where each
@@ -530,12 +539,15 @@ head(counts_tidy_long)
     ## 4 ENSG00000007933 GTEX.11TT1.1426.SM.5EGIA.1   2685
     ## 5 ENSG00000007933 GTEX.13VXT.1126.SM.5LU3A.1   5120
     ## 6 ENSG00000007933 GTEX.14ASI.0826.SM.5Q5EB.1  17898
+    
+    
+### `inner_join()`   
 
 Now, that we have a `SAMPID` column, we can join this with our
 colData_tidy. We can also use the `id` column to join with genes.
 
 ``` r
-counts_tidy_long_joined <- counts_tidy_long%>%
+counts_tidy_long_joined` <- counts_tidy_long%>%
   inner_join(., colData_tidy, by = "SAMPID") %>%
   inner_join(., genes, by = "id") %>%
   arrange(desc(counts))
@@ -553,6 +565,8 @@ head(counts_tidy_long_joined)
     ## 6 ENSG00… GTEX.… 2.63e7 Heart Hear… GTEX-… Fema… 40-49   8.6 Ventil… SRR1… 2013…
     ## # … with 4 more variables: name <chr>, description <chr>, synonyms <chr>,
     ## #   organism <chr>
+
+### `ggplot()`
 
 ``` r
 library(scales)
@@ -585,20 +599,18 @@ counts_tidy_long_joined %>%
 
 That completes our section on tidying and transforming data.
 
-!!! info
-
-    #### Key functions: Tidy and Transform
+#### Key functions
     
-    | Function         | Description                                                                                     |
-    |------------------|-------------------------------------------------------------------------------------------------|
-    | `filter()`       | A function for filtering data                                                                   |
-    | `mutate()`       | A function for create new columns                                                               |
-    | `select()`       | A function for selecting/reordering columns                                                     |
-    | `arrange()`      | A function for ordering observations                                                            |
-    | `full_join()`    | Join 2 tables, return all observations                                                          |
-    | `left_join()`    | Join 2 tables, return all observations in the left and matching observations in the right table |
-    | `inner_join()`   | Join 2 tables, return observations with values in both tables                                   |
-    | `pivot_wider()`  | Widen a data frame                                                                              |
-    | `pivot_longer()` | Lengthen a data frame                                                                           |
-    | `drop_na()`      | Remove missing values                                                                           |
-    | `separate()`     | Separate a column into two columns                                                              |
+| Function         | Description  |
+| --- | --- |
+| `filter()`       | A function for filtering data                                                          |
+| `mutate()`       | A function for create new columns                                                      |
+| `select()`       | A function for selecting/reordering columns                                            |
+| `arrange()`      | A function for ordering observations                                                   |
+| `full_join()`    | Join 2 tables, return all observations                                                 |
+| `left_join()`    | Join 2 tables, return all observations in the left and matching observations in the right |
+| `inner_join()`   | Join 2 tables, return observations with values in both tables                          |
+| `pivot_wider()`  | Widen a data frame                                                                     |
+| `pivot_longer()` | Lengthen a data frame                                                                  |
+| `drop_na()`      | Remove missing values                                                                  |
+| `separate()`     | Separate a column into two columns                                                     |
