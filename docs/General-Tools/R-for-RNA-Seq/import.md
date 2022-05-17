@@ -219,8 +219,8 @@ file information describing the muscle samples?
 
 === "Answer"
 
-1.  `read.table("./data/GTEx_Muscle_20-29_vs_70-79.tsv")`
-2.  `read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
+1.  `r read.table("./data/GTEx_Muscle_20-29_vs_70-79.tsv")`
+2.  `r read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
 
 
 ### Summary Statistics
@@ -233,7 +233,7 @@ to answer the following questions.
 
 How many samples do we have? Over 1400!
 
-``` r
+```r
 dim(samples)
 ```
 
@@ -241,7 +241,7 @@ dim(samples)
 
 How many samples are there per tissue?
 
-``` r
+```r
 dplyr::count(samples, SMTS) 
 ```
 
@@ -277,7 +277,7 @@ How many samples are there per tissue and sex? Can we test the effect of
 sex on gene expression in all tissues? For many samples, yes, but not
 all tissues were samples from both males and females.
 
-``` r
+```r
 head(dplyr::count(samples, SMTS, SEX))
 ```
 
