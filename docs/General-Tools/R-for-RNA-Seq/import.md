@@ -27,7 +27,7 @@ Later, you can practice on your own using the following files:
 2.  data/colData.MUSCLE.csv
 3.  data/countData.MUSCLE.csv.gz
 
-The `GTExPortal.csv` file in `./data/` contains information about all
+The `samples.csv` file in `./data/` contains information about all
 the samples in the GTEx portal. Let’s import this file using
 `read.csv()`.
 
