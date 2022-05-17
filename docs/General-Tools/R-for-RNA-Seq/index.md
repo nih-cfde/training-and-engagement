@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-An Introduction to R For RNA-Sequencing Analysis
+An Introduction to R for RNA-Sequencing Analysis
 ================================================
 
 RNA-Sequencing (RNA-Seq) is a popular method for
@@ -35,22 +35,17 @@ applied to RNA-Seq data.
 
 !!! note "Learning Objectives"
 
-In this workshop, you will learn how to use R and RStudio to:
-
--   import and view files commonly associated with RNA-sequencing
-    experiments
--   select variables and observations that are relevant to research
-    questions (tidy)
--   create and rename variables (transform)
--   join data frames by common variables (harmonize)
--   visualize data using bar graphs, scatter plots, and box plots
-
+    In this workshop, you will learn how to use R and RStudio to:
+      - import and view files commonly associated with RNA-sequencing experiments
+      - select variables and observations that are relevant to research questions (tidy)
+      - create and rename variables (transform)
+      - join data frames by common variables (harmonize)
+      - visualize data using bar graphs, scatter plots, and box plots
 
 === "Prerequisites"
 
-Familiarity with R and RNA Sequencing is not required but would be
-useful.
+    Familiarity with R and RNA Sequencing is not required but would be useful.
 
 === "Tutorial Resources"
 
-Please refer to the [RStudio cheat sheets](https://www.rstudio.com/resources/cheatsheets/) for commonly used R functions!
+    Please refer to the [RStudio cheat sheets](https://www.rstudio.com/resources/cheatsheets/) for commonly used R functions!
