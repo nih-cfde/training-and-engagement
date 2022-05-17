@@ -25,13 +25,13 @@ Cloud](https://github.com/nih-cfde/rnaseq-in-the-cloud/blob/stable/rnaseq-workfl
 workshops. Rather, this workshop will focus on general R concepts
 applied to RNA-Seq data. 
 
-| Lesson name | Lenth
-| --- | 
-| [Introduction](./r4rnaseq-1.md) | 25 min
-| [Importing data](./r4rnaseq-2.md) | 30 min
-| [Visualizing data](./r4rnaseq-3.md) | 30 min
-| [Tidying and transforming d](./r4rnaseq-4.md) | 90 min
-| [Wrap-up](./r4rnaseq-5.md) | 5 min
+| Lesson name | Length |
+| --- | --- | 
+| [Introduction](./r4rnaseq-1.md) | 25 min |
+| [Importing data](./r4rnaseq-2.md) | 30 min |
+| [Visualizing data](./r4rnaseq-3.md) | 30 min |
+| [Tidying and transforming d](./r4rnaseq-4.md) | 90 min |
+| [Wrap-up](./r4rnaseq-5.md) | 5 min |
 
 !!! note "Learning Objectives"
 
