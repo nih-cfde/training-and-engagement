@@ -299,6 +299,8 @@ head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
     ## 5 Adipose Tissue Female 40-49       Violent and fast death 2
     ## 6 Adipose Tissue Female 50-59 Fast death of natural causes 3
 
+Now you have successfully imported data using multiple methods.
+
 === Challenge
 
     What series commands would you use to import the `data/colData.MUSCLE.csv` and count the number of muscles samples persex, age?
@@ -306,6 +308,7 @@ head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
     How many female muscles samples are there from age group 30-39?
 
     *Hint: use head() or names() after importing a file to verify the variable names.*
+
 
 === Answer
 
@@ -315,20 +318,18 @@ head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
 
 
 
-!!! info
-
-    #### Key functions for importing and quickly viewing raw and summarized data
+#### Key functions 
     
-    | Function              | Description                                                     |
-    |-----------------------|-----------------------------------------------------------------|
-    | `read.csv()`          | A base R function for importing comma separated tabular data    |
-    | `read_csv()`          | A tidyR function for importing .csv files as tibbles            |
-    | `read.table()`        | A base R function for importing tabular data with any delimiter |
-    | `read_tsv()`          | A tidyR function for importing .tsv files as tibbles            |
-    | `as_tibble()`         | Convert data frames to tibbles                                  |
-    | `head()` and `tail()` | Print the first or last 6 lines of an object                    |
-    | `dim()`               | A function that prints the dimensions of an object              |
-    | `length()`            | Calculate the length of an object                               |
-    | `count()`             | A dplyr function that counts number of samples per group        |
-    | `str()`               | A function that prints the internal structure of an object      |
-    | `summary()`           | A function that summarizes each variable                        |
+| Function              | Description                                                     |
+|-----------------------|-----------------------------------------------------------------|
+| `read.csv()`          | A base R function for importing comma separated tabular data    |
+| `read_csv()`          | A tidyR function for importing .csv files as tibbles            |
+| `read.table()`        | A base R function for importing tabular data with any delimiter |
+| `read_tsv()`          | A tidyR function for importing .tsv files as tibbles            |
+| `as_tibble()`         | Convert data frames to tibbles                                  |
+| `head()` and `tail()` | Print the first or last 6 lines of an object                    |
+| `dim()`               | A function that prints the dimensions of an object              |
+| `length()`            | Calculate the length of an object                               |
+| `count()`             | A dplyr function that counts number of samples per group        |
+| `str()`               | A function that prints the internal structure of an object      |
+| `summary()`           | A function that summarizes each variable                        |
