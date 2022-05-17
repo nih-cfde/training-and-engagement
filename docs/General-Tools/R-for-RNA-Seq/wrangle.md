@@ -599,7 +599,7 @@ counts_tidy_long_joined %>%
 
 That completes our section on tidying and transforming data.
 
-#### Key functions
+### Key functions
     
 | Function         | Description  |
 | --- | --- |

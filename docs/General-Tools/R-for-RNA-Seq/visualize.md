@@ -207,16 +207,14 @@ visualizing data. In the next section, we will tidy and transform our
 data so that we can make even better summaries and figures. In the last
 section, you will learn ggplot function for making fancier figures.
 
-!!! info
-
-    #### Key functions
+### Key functions
     
-     | Function       | Description                                                                                                                 |
-       |----------------|-------------------------------------------------------------------------------------------------------------------------|
-      | `ggplot2`      | An open-source data visualization package for the statistical programming language R                                    |
-      | `ggplot()`     | The function used to construct the initial plot object, and is almost always followed by + to add component to the plot |
-      | `aes()`        | Aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms        |
-      | `geom_point()` | A function used to create scatter plots                                                                                 |
-      | `geom_bar()`   | A function used to create bar plots                                                                                     |
-      | `coord_flip()` | Flips the x and y axis                                                                                                  |
-      | `geom_hline()` | Add a horizontal line to plots                                                                                          |
+| Function       | Description  |
+|----------------|------------- |
+| `ggplot2`      | An open-source data visualization package for the statistical programming language R     |          
+| `ggplot()`     | The function used to construct the initial plot object, and is almost always followed by + to add component to the plot | 
+| `aes()`        | Aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms |
+| `geom_point()` | A function used to create scatter plots   |                                                          
+| `geom_bar()`   | A function used to create bar plots |                                                                
+| `coord_flip()` | Flips the x and y axis |                                                                             
+| `geom_hline()` | Add a horizontal line to plots |                                                                    
