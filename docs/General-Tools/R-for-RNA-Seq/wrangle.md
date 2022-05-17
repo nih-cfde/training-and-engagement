@@ -145,13 +145,14 @@ resultsDEGs
 
     You could use the following code to get this result below
 
-
+    ```r
     resultsDEGs2 <- read.table("./data/GTEx_Heart_20-29_vs_50-59.tsv") %>% 
       filter(adj.P.Val < 0.05,
                        logFC > 1 | logFC < -1) %>%
       arrange(adj.P.Val) %>% 
       rownames(.)
     resultsDEGs2
+    ```
 
     [1] "EDA2R"        "PTCHD4"       "BTBD11"       "MTHFD2P1"     "C4orf54"      "LOC101929331"
     [7] "FMO3"         "KLHL41"       "ETNPPL"       "HOPX"         "PDIA2"        "RPL10P7"     
