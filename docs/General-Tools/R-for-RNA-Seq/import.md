@@ -223,7 +223,7 @@ file information describing the muscle samples?
 2.  `read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
 
 
-#### Quick summary statistics and sample size
+#### Summary statistics
 
 You have now seen a variety of options for importing files. You may use
 many more in your R-based RNA-seq workflow, but these basics will get
