@@ -189,7 +189,7 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
   
 === "Answer"
 
-    ```
+    ```r
     df <- read.table("./data/GTEx_Heart_20-29_vs_70-79.tsv")
     
     ggplot(df, aes(x = logFC, y = -log10(adj.P.Val))) +
