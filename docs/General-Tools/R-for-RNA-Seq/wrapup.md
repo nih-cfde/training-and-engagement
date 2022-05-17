@@ -5,7 +5,8 @@ title: Wrap-up
 ### R Markdown
 
 The workshop notes for using this repository to teach an Introduction to
-R for RNA-seq are crated with the file `r4rnaseq-workshop.Rmd`.
+R for RNA-seq are crated with the file   
+[`r4rnaseq-workshop.Rmd`](https://github.com/nih-cfde/training-rstudio-binder/blob/data/GTEx/r4rnaseq-workshop.Rmd).*
 
 ### References
 
@@ -33,6 +34,3 @@ R for RNA-seq are crated with the file `r4rnaseq-workshop.Rmd`.
 -   [Software Carpentry R
     Lesson](http://swcarpentry.github.io/r-novice-inflammation/)
 
-*Note: the source document
-[r4rnaseq-workshop.Rmd](https://github.com/nih-cfde/training-rstudio-binder/blob/data/GTEx/r4rnaseq-workshop.Rmd)
-was last modified 3 May, 2022.*

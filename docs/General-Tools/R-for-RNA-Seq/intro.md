@@ -25,13 +25,8 @@ For today’s lesson, we will focus on data from the [Gene-Tissue
 ongoing effort to build a comprehensive public resource to study
 tissue-specific gene expression and regulation. Samples were collected
 from 54 non-diseased tissue sites across nearly 1000 individuals,
-primarily for molecular assays including WGS, WES, and RNA-Seq.
+primarily for molecular assays including WGS, WES, and RNA-Seq. 
 
-![](https://i.imgur.com/AfjBaPE.png)
-
-![](https://i.imgur.com/zzrBk7j.png)
-
-![](https://i.imgur.com/CG3Dto9.png)
 
 ### Getting Started
 
