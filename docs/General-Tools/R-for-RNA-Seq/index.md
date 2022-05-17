@@ -21,7 +21,7 @@ manageable. This workshop will not cover cloud-based workflows for
 processing RNA-seq reads or statistics and modeling because these topics
 are covered in our [RNA-Seq Concepts](https://osf.io/kj5av/) and
 [RNA-Seq in the
-Cloud](https://github.com/nih-cfde/rnaseq-in-the-cloud/blob/stable/rnaseq-workflow.pdf)
+Cloud](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1/)
 workshops. Rather, this workshop will focus on general R concepts
 applied to RNA-Seq data. 
 
