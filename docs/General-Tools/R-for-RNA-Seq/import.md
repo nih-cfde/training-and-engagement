@@ -40,7 +40,7 @@ samples <- read.csv("./data/samples.csv")
 After importing a file, there are multiple ways to view the data.
 `head()` to view the first few lines of each file. `names()` will print
 just the column names. `str` will compactly displaying the internal
-structure. `summary` will compute statistics.
+structure. `summary()` will compute statistics.
 
 ``` r
 #View(samples)
@@ -294,7 +294,7 @@ enough samples to test the effects of Sex, Age, and Hardy Scale in the
 Heart?
 
 ``` r
-head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
+head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ))
 ```
 
     ##             SMTS    SEX   AGE                      DTHHRDY n
@@ -305,7 +305,7 @@ head(dplyr::count(samples, SMTS, SEX, AGE, DTHHRDY ) )
     ## 5 Adipose Tissue Female 40-49       Violent and fast death 2
     ## 6 Adipose Tissue Female 50-59 Fast death of natural causes 3
 
-Now you have successfully imported data using multiple methods. Let's complete and exercise.
+Now you have successfully imported data using multiple methods. Let's complete an exercise.
 
 ### Exercise
 
