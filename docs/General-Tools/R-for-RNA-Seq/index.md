@@ -28,7 +28,7 @@ applied to RNA-Seq data.
 | [Introduction](./intro.md) | 25 min |
 | [Import Data](./import.md) | 30 min |
 | [Visualize Data](./visualize.md) | 30 min |
-| [Tidy and Transforming (or Wrangle) Data](./wrangle.md) | 90 min |
+| [Wrangle Data](./wrangle.md) | 90 min |
 | [Wrap-up](./wrapup.md) | 5 min |
 
 ### Learning Objectives
