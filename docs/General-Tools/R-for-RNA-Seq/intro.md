@@ -13,7 +13,7 @@ operating systems. The RStudio layout displays lots of useful
 information and allows us to run R code from a script and view and save
 outputs all from one interface.
 
-When you start RStudio, you’ll see two key regions in the interface: the
+When you start RStudio, you will see two key regions in the interface: the
 console and the output. When working in R, you can type directly into
 the console, or you can type into a script. Saving commands in a script
 will make it easier to reproduce. You will learn more as we go along!
@@ -111,7 +111,7 @@ the `ggplot2` package.
 library(ggplot2)
 ```
 
-Now you have successfully loaded the necessary R packages. Let's complete and exercise
+Now you have successfully loaded the necessary R packages. Let's complete and exercise:
 
 ### Exercise
 
