@@ -431,9 +431,9 @@ head(resultsNameTidy)
     ## 5 ENSG00000248713 -2.824211  2.7276196 0.0159674585
     ## 6            <NA>  1.129013 -1.6306733 0.0175055847
     
-### `pull()`    
+### `drop_na()` and `pull()` 
 
-Now, let’s make a list of the Ensemble IDs of the DEGs .
+Now, let's make a list of the Ensemble IDs of the DEGs. We can use the `drop_na()` function to drop genes without Ensemble IDs, and we can use `pull()` to convert a column in a data frame to a list.
 
 ``` r
 resultsNameTidyIds <- resultsNameTidy %>%
@@ -567,7 +567,11 @@ head(counts_tidy_long_joined)
     ## # … with 4 more variables: name <chr>, description <chr>, synonyms <chr>,
     ## #   organism <chr>
 
-### `ggplot()`
+### More `ggplot()`
+
+Now, that we have successfully joined three data frames, we can plot the counts for our differentially expressed genes. 
+
+The package `scales` makes it easy to use scientific notation for the axes. We can also modify the `theme()` to change the text angle and font face.
 
 ``` r
 library(scales)

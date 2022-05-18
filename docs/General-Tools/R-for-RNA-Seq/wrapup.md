@@ -2,7 +2,7 @@
 title: Wrap-up
 ---
 
-Files for this workshop can be downloaded from GitHub at https://github.com/nih-cfde/training-rstudio-binder.
+Files for this workshop can be downloaded from GitHub at <https://github.com/nih-cfde/training-rstudio-binder>.
 Specifically, scripts and data are in the `GTEx` directory.
 
 ### References
