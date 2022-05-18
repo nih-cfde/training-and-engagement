@@ -194,8 +194,6 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
     ggplot(df, aes(x = logFC, y = -log10(adj.P.Val))) +
       geom_point() +
       geom_hline(yintercept = -log10(0.05))
-
-    # more  
     ```
 
 ### `geom_boxplot()`
