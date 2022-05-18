@@ -17,13 +17,13 @@ objects with sample name information.
 Today, I will show you how to import the following files:
 
 1.  data/samples.csv
-2.  data/GTExHeart_20-29_vs_70-79.tsv
+2.  data/GTExHeart_20-29_vs_50-59.tsv
 3.  data/colData.HEART.csv
 4.  data/countData.HEART.csv.gz
 
 Later, you can practice on your own using the following files:
 
-1.  data/GTExMuscle_20-29_vs_70-79.tsv
+1.  data/GTExMuscle_20-29_vs_50-59.tsv
 2.  data/colData.MUSCLE.csv
 3.  data/countData.MUSCLE.csv.gz
 
@@ -215,15 +215,16 @@ head(results)
 
 === "Challenge"
 
-    What commands could you use to read the following files: 1. GTEx results
-    comparing the muscles of 20-29 year old to 70-79 year olds? 1. The csv
-    file information describing the muscle samples?
+    What commands could you use to read the following files: 
+    1. GTEx results comparing the muscles of 20-29 year old to 70-79 year olds? 
+    2. The csv file information describing the muscle samples?
 
 === "Answer"
-
-    1.  `r read.table("./data/GTEx_Muscle_20-29_vs_70-79.tsv")`
-    2.  `r read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
-
+    
+    ```r
+    read.table("./data/GTEx_Muscle_20-29_vs_70-79.tsv") 
+    read.csv("./data/countData.MUSCLE.csv", row.names = 1) 
+    ```
 
 ### Summary Statistics
 
@@ -233,7 +234,7 @@ you started. Let’s now explore the functions `summary()`, `length()`,
 `dim()`, and `count()` us to quickly summarize and compare data frames
 to answer the following questions.
 
-How many samples do we have? Over 1400!
+How many samples do we have? Over 1500!
 
 ```r
 dim(samples)

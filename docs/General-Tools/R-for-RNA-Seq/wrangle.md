@@ -60,12 +60,12 @@ and `&` to mean “or” or “and”
 
 To explore filtering data, let’s answer the following question: What are
 the approved names and symbols of the differentially expressed genes
-(DEGs) in the heart tissue between 20-29 and 30-29 year olds? To answer
+(DEGs) in the heart tissue between 20-29 and 50-59 year olds? To answer
 this question, we need a subset of information from both the results and
 genes files. We need, in no particular order, to:
 
-1.  filter by adj.p.value \< 0.05 (or desired alpha)
-2.  filter by results by logFC > 1 or \<-1
+1.  filter by adj.p.value < 0.05 (or desired alpha)
+2.  filter by results by logFC > 1 or <-1
 3.  filter by a list of gene symbols
 
 ``` r
@@ -100,7 +100,7 @@ results %>%
 
 ### `arrange()`
 
-Sometimes its nice to arrange by p-value.
+Sometimes its nice to arrange by p-value. By default, the `arrange()` function will sort characters alphabetically and numbers in ascending order. Use `arange(desc())` to sort in the reverse order. 
 
 ``` r
 results %>% filter(adj.P.Val < 0.05,

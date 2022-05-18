@@ -124,10 +124,10 @@ test the effects of all our experimental variables (age, sex, tissue,
 and hardy scale) and their interactions on gene expression. We can,
 however, focus on one or two variables or groups at a time.
                
-Earlier, we imported the file “data/GTEx_Heart_20-29_vs_70-79.tsv” and
+Earlier, we imported the file “data/GTEx_Heart_20-29_vs_50-59.tsv” and
 saved it as “results”. This file contains the results of a differential
 gene expression analysis comparing heart tissue from 20-29 to heart
-tissue from 30-39 year olds. This is a one-way design investigating only
+tissue from 50-59 year olds. This is a one-way design investigating only
 the effect of age (but not sex or hardy scale) on gene expression in the
 heart. Let’s visualize these results.
 
@@ -147,7 +147,7 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 
 ![](./images/volcano1-1.png) 
 
-The inverse log of p \< 05 is 1.30103. We can add a horizontal line to
+The inverse log of p < 0.05 is 1.30103. We can add a horizontal line to
 our plot using `geom_hline()` so that we can visually see how many genes
 or points are significant and how many are not.
 
@@ -182,15 +182,14 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 
 === "Challenge"
 
-    Create a volcano plot for the results comparing the heart tissue of
-    20-29 year olds to that of 70-70 year olds? Are there more or less
-    differential expressed gene between 20 and 30 year olds or 20 and 70
-    year olds?
+    Create a volcano plot for the results comparing the *muscle** tissue of
+    20-29 year olds to that of 50-59 year olds? Are more or less differentially 
+    expressed gene between between this age group in the heart or muscle?
   
 === "Answer"
 
     ```r
-    df <- read.table("./data/GTEx_Heart_20-29_vs_70-79.tsv")
+    df <- read.table("./data/GTEx_Muscle_20-29_vs_50-59.tsv")
     
     ggplot(df, aes(x = logFC, y = -log10(adj.P.Val))) +
       geom_point() +
