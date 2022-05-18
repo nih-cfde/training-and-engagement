@@ -18,7 +18,7 @@ ggplot(data = <DATA>, aes(<MAPPINGS>)) +
 ### `geom_bar()`
 
 We just used the `count()` function to calculate how many samples are in
-each group. The function for creating bar graphs (`geom_bar()`) also
+each group. The function for creating bar graphs `geom_bar()` also
 makes use of `stat = "count"` to plot the total number of observations
 per variable. Let’s use ggplot2 to create a visual representation of how
 many samples there are per tissue, sex, and hardiness.
@@ -52,7 +52,7 @@ Let’s first color the data by age bracket. Color is an aesthetic, so it
 must go inside the `aes()`. If you include `aes(color = AGE)` inside
 `ggplot()`, the color will be applied to every layer in your plot. If
 you add `aes(color = AGE)` inside `geom_bar()`, it will only be applied
-to that layer (which is important later when you layer multiple geoms.
+to that layer (which is important later when you layer multiple geoms).
                
                
                
@@ -91,7 +91,7 @@ ggplot(samples, aes(x = SMTS, fill = AGE)) +
 
 With this graph, we have an excellent overview of the total numbers of
 RNA-Seq samples in the GTEx project, and we can see where we are missing
-data (for good biological reasons). However, this plot doesn’t show us
+data (for good biological reasons). However, this plot does not show us
 Hardy Scale. It’s hard to layer 4 variables, so let’s remove Tissue as a
 variable by focusing just on one Tissue.
 
@@ -124,7 +124,7 @@ test the effects of all our experimental variables (age, sex, tissue,
 and hardy scale) and their interactions on gene expression. We can,
 however, focus on one or two variables or groups at a time.
                
-Earlier, we imported the file “data/GTEx_Heart_20-29_vs_70-79.tsv”)” and
+Earlier, we imported the file “data/GTEx_Heart_20-29_vs_70-79.tsv” and
 saved it as “results”. This file contains the results of a differential
 gene expression analysis comparing heart tissue from 20-29 to heart
 tissue from 30-39 year olds. This is a one-way design investigating only
@@ -135,7 +135,7 @@ heart. Let’s visualize these results.
 
 [Volcano Plots](https://en.wikipedia.org/wiki/Volcano_plot_(statistics))
 are a type of scatter plots that show the log fold change (logFC) on the
-x axis and the inverse log (`-log10()`) of a p-value that has been
+x axis and the inverse log `-log10()` of a p-value that has been
 corrected for multiple hypothesis testing (adj.P.Val). Let’s create a
 Volcano Plot using the `gplot()` and `geom_point()`. *Note: this may
 take a minute because there are 15,000 points that must be plotted*
