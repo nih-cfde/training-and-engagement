@@ -215,14 +215,14 @@ head(results)
 
 === "Challenge"
 
-What commands could you use to read the following files: 1. GTEx results
-comparing the muscles of 20-29 year old to 70-79 year olds? 1. The csv
-file information describing the muscle samples?
+    What commands could you use to read the following files: 1. GTEx results
+    comparing the muscles of 20-29 year old to 70-79 year olds? 1. The csv
+    file information describing the muscle samples?
 
 === "Answer"
 
-1.  `r read.table("./data/GTEx_Muscle_20-29_vs_70-79.tsv")`
-2.  `r read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
+    1.  `r read.table("./data/GTEx_Muscle_20-29_vs_70-79.tsv")`
+    2.  `r read.csv("./data/countData.MUSCLE.csv", row.names = 1)`
 
 
 ### Summary Statistics
