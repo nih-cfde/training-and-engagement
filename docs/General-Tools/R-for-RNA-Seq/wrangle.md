@@ -41,13 +41,13 @@ identifiers, then you can use the family of join functions
 
 For each downstream analysis, you will likely use a series of tidying
 and transforming steps in various order to get your data in the
-appropriate format. Interest of creating dozens of intermediate files
+appropriate format. Instead of creating dozens of intermediate files
 after each step, we will use the `%>%` operator to “pipe” the output of
 one function to the input of the other.
 
 Instead of going into each function or each process in detail in
 isolation, let’s start with some typical research questions and then
-piece together R functions to get the desired information
+piece together R functions to get the desired information.
 
 ### `filter()`
 
@@ -170,7 +170,7 @@ resultsDEGs
 Most RNA-Seq pipelines require that the counts file to be in a matrix
 format where each sample is a column and each gene is a row and all the
 values are integers or doubles with all the experimental factors in a
-separate file. More over, we need a corresponding file where the row
+separate file. Moreover, we need a corresponding file where the row
 names are the sample id and they match the column names of the counts
 file.
 
