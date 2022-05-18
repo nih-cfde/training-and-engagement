@@ -211,6 +211,8 @@ head(results)
     ## A2ML1    0.58865741 -1.0412696 1.8263856 0.07173966 0.2328150 -4.065276
     ## A2MP1    0.31631081 -0.8994146 1.4061454 0.16377753 0.3730822 -4.583435
 
+### Exercise
+
 === "Challenge"
 
 What commands could you use to read the following files: 1. GTEx results
