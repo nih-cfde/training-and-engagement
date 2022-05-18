@@ -15,7 +15,7 @@ Tidy data is important because the consistent structure lets you focus
 your struggle on questions about the data, not fighting to get the data
 into the right form for different functions. Some tidying functions
 include `pivot_longer()`, `pivot_wider()`, `separate()`, `unite()`,
-`drop_na()`, `replace_na()`. The “lubridate” package has a number of
+`drop_na()`, `replace_na()`. The `lubridate` package has a number of
 functions for tidying dates. You may also use `mutate()` function to
 convert objects from, say, characters or integers to factors or rename
 observations and variables.

@@ -20,8 +20,7 @@ will make it easier to reproduce. You will learn more as we go along!
   
 ![](./images/RStudio.png)
 
-For today’s lesson, we will focus on data from the [Gene-Tissue
-                                                    Expression (GTEx) Project](https://commonfund.nih.gov/gtex). GTEx is an
+For today’s lesson, we will focus on data from the [Gene-TissueExpression (GTEx) Project](https://commonfund.nih.gov/gtex). GTEx is an
 ongoing effort to build a comprehensive public resource to study
 tissue-specific gene expression and regulation. Samples were collected
 from 54 non-diseased tissue sites across nearly 1000 individuals,
