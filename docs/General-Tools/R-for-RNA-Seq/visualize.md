@@ -159,6 +159,12 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 
 ![](./images/volcano2-1.png) 
 
+
+We can add color to a plot by specifying the color and/or fill. If we wanted to color all the points blue, we could do this by specifying `aes(color = "blue")`. Alternatively, we could color points along a gradient by specifying `aes(color = adj.P.Val)`. 
+
+I find it useful to color the points by whether or not the genes are significant. We can do this by adding an if else statement: `aes(color = ifelse( adj.P.Val < 0.05, "p < 0.05", "NS"))`. This essentially create two factors called  "p < 0.05" and "NS" and gives each factor a color different color on the plot.
+
+
 ```r
 ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
   geom_point(aes(color = ifelse( adj.P.Val < 0.05, "p < 0.05", "NS"))) +
@@ -166,6 +172,10 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
 ```
 
 ![](./images/volcano3-1.png) 
+
+To clean up the plot, we can move the legend to the bottom with  `theme(legend.position = "bottom")`. 
+
+Then, we can add titles, subtitles and captions and rename axes and legends with `labs()`.
 
 ```r
 ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
@@ -175,6 +185,8 @@ ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
   labs(color = "20-29 vs 50-59 year olds", 
        subtitle = "Heart Tissue Gene Expression")
 ```
+
+We have only scratched the surface of plotting, but these basics will get you started. Try to craete a plot on your own.
 
 ![](./images/volcano4-1.png) 
 
