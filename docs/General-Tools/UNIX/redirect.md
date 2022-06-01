@@ -74,6 +74,22 @@ grep CATTAG $file | wc -l
 done
 ```
 
+### history
+
+If you want to save all the commands we used today, you can use the `history` command to print out all the commands you typed.
+
+```bash
+history
+```
+
+### `>`
+
+You can redirect the output from the screen to a file using `>`. Note that `>` will overright existing conent, but `>>` will append. 
+
+```bash
+history > ~/history-2021-nov-17.txt
+```
+
 ### Key points 
 
 |Command|Description|
@@ -81,5 +97,4 @@ done
 |`\|` | pipes the standard output to a new command|
 | `>`  | redirects the standard output to a new file |
 | `>>`  | append the standard output to a new or existing file|
-
-
+| `for` | initiates a for loop |
