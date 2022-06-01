@@ -47,4 +47,17 @@ Familiarity with R and RNA Sequencing is not required but would be useful.
 
 ### Tutorial Resources
 
-Please refer to the [RStudio cheat sheets](https://www.rstudio.com/resources/cheatsheets/) for commonly used R functions!
+Please refer to the [RStudio cheat sheets](https://www.rstudio.com/resources/cheatsheets/) for commonly used R functions. The [R for Data Science](https://r4ds.had.co.nz/) book provides in depth descriptions and examples of many functions and concepts covered in this course.
+
+
+### Workshops Resources
+
+Here are the notes from workshops taught with these materials.
+
+- May 11, 2022 [workshop notes](https://hackmd.io/MsWY1O9GQXGVDl2OmV2jxg)
+- April 27, 2022 [workshop notes](https://hackmd.io/SnorsWTbTTyRenptpjrhww)
+- March 23, 2022 [workshop notes](https://hackmd.io/2ArmQGwGT0uUyL5Ehqy0hQ)
+
+Here is a 3 hours video of this workshop being taught at the [May 2022 Hackathon](https://nih-cfde.github.io/2022-may-hackathon/about/).
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_61sjku7o&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_7ufv4tsl" width="550" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="CFDE May Hackathon - Intro to R for RNA-Seq"></iframe>. 
