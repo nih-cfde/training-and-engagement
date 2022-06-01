@@ -45,6 +45,10 @@ today’s lesson as I type them.
 Click “Run” to send commands from a script to the console or click
 command enter.
 
+
+_Note: the souce is code available at https://github.com/nih-cfde/training-rstudio-binder/ if you would like to explore the data locally._ 
+
+
 ### R is a calculator
 
 You can perform simple and advanced calculations in R.
