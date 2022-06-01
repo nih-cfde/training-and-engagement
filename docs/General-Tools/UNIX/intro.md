@@ -1,4 +1,8 @@
-## 1. Introduction to the shell and terminal
+---
+title: Introduction
+---
+
+## The shell and terminal
 
 The **shell** is a computer program that uses a command-line interface (CLI) to give commands made by your keyboard to your operating system. Most people are used to interacting with a graphic user interface (GUI), where you can use a combination of your mouse and keyboard to carry out commands on your computer. 
 
@@ -12,7 +16,7 @@ For this remote workshop, we will be using a custom-created computing environmen
 
 To help with readability, type `PS1='$ '` in the terminal to remove the very long computer name from the path. Then type `clear` to clear the screen of irrelevant warning messages. 
 
-```
+```bash
 PS1='$ '
 clear
 ```
@@ -29,11 +33,8 @@ During this lesson, we use UNIX commands to answer questions following motivatin
 * Do our results match the reported results? 
 * Which South Park character spoke the most lines?
 
-:::success
-#### Key points about the UNIX shell and terminal
+
+### Key points 
 
 * A shell is a program that reads commands and runs programs.
 * We are using a remote terminal provided by mybinder.org. 
-:::
-
----
