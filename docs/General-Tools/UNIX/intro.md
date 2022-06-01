@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-## The shell and terminal
+### The shell and terminal
 
 The **shell** is a computer program that uses a command-line interface (CLI) to give commands made by your keyboard to your operating system. Most people are used to interacting with a graphic user interface (GUI), where you can use a combination of your mouse and keyboard to carry out commands on your computer. 
 
