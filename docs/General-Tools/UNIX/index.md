@@ -18,11 +18,11 @@ Please refer to our [UNIX Cheatsheet](https://training.nih-cfde.org/en/latest/Ge
 
 !!! info "In this workshop, you will learn to"
 
-* Understand basic UNIX command structure 
-* Navigate through hierarchical directory structures
-* Read, write, create, copy, move, and remove files
-* Understand wildcards and regular expression 
-* Redirect outputs and write for loops to build reproducible workflows
+    * Understand basic UNIX command structure 
+    * Navigate through hierarchical directory structures
+    * Read, write, create, copy, move, and remove files
+    * Understand wildcards and regular expression 
+    * Redirect outputs and write for loops to build reproducible workflows
 
-**Click here to get started!** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data?urlpath=rstudio)
+Click here to get started! [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data? "urlpath=rstudio)
 
