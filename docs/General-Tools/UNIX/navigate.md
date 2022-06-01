@@ -24,7 +24,7 @@ This will print the **absolute path** to the directory where we are located. An 
 
 The **home directory** is typically two levels down. For many Mac users, the home directory is `/Users/USERNAME`. If you are using the Binder provided for this workshop, the home directory is `/home/jovyan`. Because the absolute path to the home directory is different for every user, you can refer to the home directory with the tilde symbol `~`.
 
-```bash
+```
 /home/jovyan
 ```
 
@@ -38,7 +38,7 @@ ls
 
 We can see the following files:
 
-```bash
+```
 books          images  README.md             seattle
 CFDE-logo.png  MiSeq   rstudio-terminal.png  
 ```
@@ -49,7 +49,7 @@ If we want more information about the files, such as the date they were created 
 ls -l
 ```
 
-```bash
+```
 drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 books
 -rw-r--r-- 1 jovyan jovyan  71154 Jan 18 21:13 CFDE-logo.png
 drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 images
@@ -90,8 +90,8 @@ Let's return to our home directory using the `cd` command and a relative path, t
 Let's practice using the cd and ls commands to explore files in different directories.  
 
 Because books/ is in our working directory, we can navigate there with a relative path. What files are in the `books` directory and how large are they?
-bash
-```
+
+```bash
 cd books/
 pwd
 ls -lh
@@ -99,7 +99,7 @@ ls -lh
 
 We can see the following files:
 
-```bash
+```
 -rw-r--r-- 1 jovyan jovyan 171K Jan 18 21:13 Alice_in_wonderland.txt
 -rw-r--r-- 1 jovyan jovyan 789K Jan 18 21:13 A-tale-of-two-cities.txt
 -rw-r--r-- 1 jovyan jovyan 789K Jan 18 21:13 book.txt
@@ -143,7 +143,7 @@ pwd
 ls -lhS *.fastq
 ```
 
-```bash
+```
 -rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R1_001.fastq
 -rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R2_001.fastq
 -rwxr-xr-x 1 jovyan jovyan 9.2M Jan 18 21:13 F3D147_S213_L001_R1_001.fastq
