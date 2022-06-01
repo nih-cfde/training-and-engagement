@@ -1,5 +1,5 @@
 ---
-title: Naviagate
+title: Navigate
 ---
 
 ### 
