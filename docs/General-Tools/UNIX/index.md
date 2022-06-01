@@ -22,7 +22,6 @@ This lesson introduces the UNIX command line to scientists and clinicians who ne
     * Understand wildcards and regular expression 
     * Redirect outputs and write for loops to build reproducible workflows
 
-Click here to get started! [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nih-cfde/training-rstudio-binder/data? "urlpath=rstudio)
 
 ### Tutorial resources 
 
