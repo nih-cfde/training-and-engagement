@@ -37,8 +37,8 @@ ls
 We can see the following files:
 
 ```
-books          images  README.md             seattle
-CFDE-logo.png  MiSeq   rstudio-terminal.png  
+books          GTEx    MiSeq      rstudio-console.png   seattle           site-templates
+CFDE-logo.png  images  README.md  rstudio-terminal.png  site-config.toml
 ```
 
 If we want more information about the files, such as the date they were created and their file size, we can add "flags" `-l` for long listing format.
@@ -48,13 +48,17 @@ ls -l
 ```
 
 ```
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 books
--rw-r--r-- 1 jovyan jovyan  71154 Jan 18 21:13 CFDE-logo.png
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 images
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 MiSeq
--rw-r--r-- 1 jovyan jovyan   2089 Jan 18 21:13 README.md
--rw-r--r-- 1 jovyan jovyan 188705 Jan 18 21:13 rstudio-terminal.png
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 seattle
+drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 books
+-rw-r--r-- 1 jovyan jovyan  71154 May 26 03:05 CFDE-logo.png
+drwxr-xr-x 1 jovyan jovyan   4096 May 26 03:05 GTEx
+drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 images
+drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 MiSeq
+-rw-r--r-- 1 jovyan jovyan   2679 May 26 03:05 README.md
+-rw-r--r-- 1 jovyan jovyan 239942 May 26 03:05 rstudio-console.png
+-rw-r--r-- 1 jovyan jovyan 188705 May 26 03:05 rstudio-terminal.png
+drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 seattle
+-rw-r--r-- 1 jovyan jovyan    576 May 26 03:05 site-config.toml
+drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 site-templates
 ```
 
 Flags (sometimes called options) allow us to finely control the behavior of the command. But how did we know to add `-l` after ls? The [`ls` manual ](https://man7.org/linux/man-pages/man1/ls.1.html) describes the command and all its options in detail. Like most commands, you can type the command followed `--help` to view the manual in your terminal.
