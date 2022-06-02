@@ -36,8 +36,16 @@ head README.md
 You should see an output that looks like this. The `README.md` and `License.md` files are written in [Markdown](https://en.wikipedia.org/wiki/Markdown). To learn more about Markdown syntax, read this excellent [Markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ``` 
-# Tale of Two Cities
-# downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/98)
+# Books
+
+These books were downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/) using the following commands. 
+
+```
+curl https://www.gutenberg.org/files/98/98-0.txt -o book.txt
+curl https://www.gutenberg.org/files/98/98-0.txt -o A-tale-of-two-cities.txt
+curl https://www.gutenberg.org/files/11/11-0.txt -o Alice_in_wonderland.txt
+curl https://www.gutenberg.org/files/16/16-0.txt -o PeterPan.txt
+curl https://www.gutenberg.org/files/55/55-0.txt -o WizardOfOz.txt
 ```
 
 
@@ -45,9 +53,9 @@ Now we can view the file with `head`, `cat`, or `less` and `tail`.
 
 ```bash
 head book.txt
-tail book.txt
 cat book.txt
 less book.txt
+tail book.txt
 ```
 
 
@@ -62,11 +70,12 @@ head *.txt
 Notice, there is one book that is compressed. We can uncompress it with the command `gunzip`.
 
 ```bash
-gunzip TheWonderfulWizardofOz.txt.gz
+gunzip WizardOfOz.txt.gz
 ```
 
 
 ::: success
+
 #### Key UNIX commands for viewing files
 | Command [OPTION] | Description |
 | -------- | -------- | 
