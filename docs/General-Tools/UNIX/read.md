@@ -74,7 +74,7 @@ gunzip WizardOfOz.txt.gz
 ```
 
 
-::: success
+!!! success
 
 #### Key UNIX commands for viewing files
 | Command [OPTION] | Description |
