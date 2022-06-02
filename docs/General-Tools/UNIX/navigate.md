@@ -69,17 +69,18 @@ ls --help
 
 === "Challenge"
 
-You can use multiple flags, wildcards, and specify directories to modify the behavior of a command. What does the command `ls` do when used with the following option:
+     You can use multiple flags, wildcards, and specify directories to modify the behavior of a command. What does the command `ls` do when used with the following    
+     option:
 
-1. `ls -a`
-2. `ls -F`
-3. `ls -aF`
+     1. `ls -a`
+     2. `ls -F`
+     3. `ls -aF`
 
 === "Answer"
 
-1. The `-a` flag will list hidden files and directories.  
-2. The `-F` flag will class the file types by appending an identifier. This works best if there are directories present. 
-3.  We can combine `-a` and `-F` to be `-aF` to use both options.
+     1. The `-a` flag will list hidden files and directories.  
+     2. The `-F` flag will class the file types by appending an identifier. This works best if there are directories present. 
+     3.  We can combine `-a` and `-F` to be `-aF` to use both options.
 
 ### `cd`
 
