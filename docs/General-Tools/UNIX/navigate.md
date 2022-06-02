@@ -69,17 +69,18 @@ ls --help
 
 === "Challenge"
 
-You can use multiple flags, wildcards, and specify directories to modify the behavior of a command. What does the command `ls` do when used with the following option:
+     You can use multiple flags, wildcards, and specify directories to modify the behavior of a command. What does the command `ls` do when used with the following 
+     option:
 
-1. `ls -a`
-2. `ls -F`
-3. `ls -aF`
+     1. `ls -a`
+     2. `ls -F`
+     3. `ls -aF`
 
 === "Answer"
 
-1. The `-a` flag will list hidden files and directories.  
-2. The `-F` flag will class the file types by appending an identifier. This works best if there are directories present. 
-3.  We can combine `-a` and `-F` to be `-aF` to use both options.
+     1. The `-a` flag will list hidden files and directories.  
+     2. The `-F` flag will class the file types by appending an identifier. This works best if there are directories present. 
+     3.  We can combine `-a` and `-F` to be `-aF` to use both options.
 
 ### `cd`
 
@@ -113,26 +114,25 @@ We can see the following files:
 
 === "Challenge"
 
-Starting from `books`, which of the following commands could Jovyan use to navigate to the `MiSeq` directory? 
+     Starting from `books`, which of the following commands could Jovyan use to navigate to the `MiSeq` directory? 
 
-
-1. `cd MiSeq`
-2. `cd ./MiSeq`
-3. `cd ~/MiSeq`
-4. `cd /home/jovyan/MiSeq`
-5. `cd ../MiSeq`
-6. `cd ../../MiSeq`
-7. `cd /MiSeq`
+     1. `cd MiSeq`
+     2. `cd ./MiSeq`
+     3. `cd ~/MiSeq`
+     4. `cd /home/jovyan/MiSeq`
+     5. `cd ../MiSeq`
+     6. `cd ../../MiSeq`
+     7. `cd /MiSeq`
 
 === "Answer"
 
-1. No, MiSeq does not exist in the current working directory.
-2. No, MiSeq does not exist in the current working directory.
-3. Yes, MiSeq is in the home directory.
-4. Yes, this is the full path to MiSeq.
-5. Yes, MiSeq is in the directory one level above.
-6. No, MiSeq is not in the directory two levels above.
-7. No, MiSeq is not in the root directory.
+     1. No, MiSeq does not exist in the current working directory.
+     2. No, MiSeq does not exist in the current working directory.
+     3. Yes, MiSeq is in the home directory.
+     4. Yes, this is the full path to MiSeq.
+     5. Yes, MiSeq is in the directory one level above.
+     6. No, MiSeq is not in the directory two levels above.
+     7. No, MiSeq is not in the root directory.
 :::
 
 
