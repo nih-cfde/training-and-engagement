@@ -40,7 +40,6 @@ You should see an output that looks like this. The `README.md` and `License.md` 
 
 These books were downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/) using the following commands. 
 
-```
 curl https://www.gutenberg.org/files/98/98-0.txt -o book.txt
 curl https://www.gutenberg.org/files/98/98-0.txt -o A-tale-of-two-cities.txt
 curl https://www.gutenberg.org/files/11/11-0.txt -o Alice_in_wonderland.txt
@@ -73,14 +72,11 @@ Notice, there is one book that is compressed. We can uncompress it with the comm
 gunzip WizardOfOz.txt.gz
 ```
 
-
-!!! success
-
 #### Key UNIX commands for viewing files
 | Command [OPTION] | Description |
 | -------- | -------- | 
 |`head [filename]` | print first 10 lines of  `FILENAME` | 
 |`cat [filename]`| print `FILENAME`'s contents to stdout|
 |`less [filename]`|view `FILENAME` without printing  to stdout |
-| gunzip -k [filename] | uncompress a file and keep the original
-:::
+|`gunzip -k [filename]` | uncompress a file and keep the original |
+
