@@ -3,7 +3,7 @@ title: Read
 ---
 
 
-### `head`, `cat`, `less` and `more`
+### `head`, `cat`, `less`, and `tail`
 
 Now that we know what files exist on our computer, it's time to look at the contents of the file. There are multiple ways to look at the contents of a file. 
 
@@ -33,7 +33,7 @@ cd ~/books/
 head README.md
 ```
 
-You should see an output that looks like this. The `README.md` and `License.md` files are written in [Markdown](https://en.wikipedia.org/wiki/Markdown). To learn more about Markdown syntax, read this excellent [Markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+You should see an output that looks like this. The `README.md` file is written in [Markdown](https://en.wikipedia.org/wiki/Markdown). To learn more about Markdown syntax, read this excellent [Markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ``` 
 # Books
@@ -58,7 +58,7 @@ tail book.txt
 ```
 
 
-We can there are a lot more books, and we can look at the first few lines of all the txt files with the *. 
+We can see there are several more books in the directory, and we can look at the first few lines of all the txt files with the *. 
 
 ```bash
 head *.txt
@@ -76,8 +76,9 @@ gunzip WizardOfOz.txt.gz
 
 | Command [OPTION] | Description |
 | -------- | -------- | 
-|`head [filename]` | print first 10 lines of  `FILENAME` | 
+|`head [filename]` | print first 10 lines of `FILENAME` | 
 |`cat [filename]`| print `FILENAME`'s contents to stdout|
 |`less [filename]`|view `FILENAME` without printing  to stdout |
+|`tail [filename]` | print last 10 lines of `FILENAME` |
 |`gunzip -k [filename]` | uncompress a file and keep the original |
 
