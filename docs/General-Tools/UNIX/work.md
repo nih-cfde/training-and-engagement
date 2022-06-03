@@ -73,4 +73,4 @@ rm -r data/results
 |mv [old] [new]| moves or renames a file or directory |
 |rm [path] | removes (deletes) a file |
 |mkdir [path] | creates a new directory |
-|rmdir [path] | removees an empty  directory |
+|rmdir [path] | removes an empty  directory |
