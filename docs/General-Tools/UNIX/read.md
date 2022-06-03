@@ -72,7 +72,8 @@ Notice, there is one book that is compressed. We can uncompress it with the comm
 gunzip WizardOfOz.txt.gz
 ```
 
-#### Key UNIX commands for viewing files
+### Key points
+
 | Command [OPTION] | Description |
 | -------- | -------- | 
 |`head [filename]` | print first 10 lines of  `FILENAME` | 
