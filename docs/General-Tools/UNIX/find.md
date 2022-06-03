@@ -16,7 +16,7 @@ ls
 
 ### FASTQ format
 
-This directory contains multiple [**FASTQ** files]((https://en.wikipedia.org/wiki/FASTQ_format)). A FASTQ file normally uses four lines per sequence.
+This directory contains multiple [**FASTQ** files](https://en.wikipedia.org/wiki/FASTQ_format). A FASTQ file normally uses four lines per sequence.
 
 * Line 1 begins with a '@' character and is followed by a sequence identifier and an optional description (like a FASTA title line).
 * Line 2 is the raw sequence letters.
@@ -25,22 +25,17 @@ This directory contains multiple [**FASTQ** files]((https://en.wikipedia.org/wik
 
 A FASTQ file containing a single sequence might look like this:
 
+!!! info
 
-::: info
-An example FASTQ file
-
+     An example FASTQ file
 ```
 @SEQ_ID
 GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 +
 !''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
 ```
-:::
-
-
 
 We can use the `cat` command to print fastq files to the screen, but thousands of lines of text would crowd your screen. Instead, let's use the `head` command to view the first 8 lines file. You can copy the file name and paste it into the console or you can type and use tab complete to pick a particular file. 
-
 
 ```bash
 head -n 4 F3D0_S188_L001_R1_001.fastq
@@ -78,8 +73,9 @@ BBBBBBBBBFFFGGGFFGGGGGGGGGGGHHHHHHHGGGHGHHHGHGGGGGGGHGGEGGFGGHGHHHHHHHHHGHHHHEHH
 
 **FASTQ** files should not be confused with **FASTA** files. FASTQ files contain information about the quality of the sequence, but FASTA files only contain the sequence and an identifier.
 
-::: info
-An Example FASTA file
+!!! info
+
+     An Example FASTA file
 
 ```
 > SEQUENCE_1
@@ -91,7 +87,7 @@ MGQFYVMDDKKTVEQVIAEKEKEFGGKIKIVEFICFEVGEGLEKKTEDFAAEVAAQL
 SATVSEINSETDFVAKNDQFIALTKDTTAHIQSNSLQSVEELHSSTINGVKFEEYLKSQI
 ATIGENLVVRRFATLKAGANGVVNGYIHTNGRVGVVIAAACDSAEVASKSRDLLRQICMH
 ```
-:::
+
 
 Let's look at a synthetic FASTA file. 
 
@@ -120,13 +116,13 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 1. `ls MiSeq/*fasta`
  
 
-:::spoiler
+!!! spoiler
 
-1. `ls *` lists files in the working directory and 1 level down. 
+     1. `ls *` lists files in the working directory and 1 level down. 
 1. `ls MiSeq/F3D*` lists files in the data/MiSeq directory that start with "F3D".
 1. `ls MiSeq/*fasta` lists files in the data/MiSeq directory that end with "fasta".
 
-:::
+
 
 ### `grep`
 
@@ -143,10 +139,12 @@ grep CATTAG *.fastq
 ```
 
 
-=== "Challenge
+=== "Challenge"
+
 What line does `CATTAG` occur on in `F3D141_S207_L001_R1_001.fastq`? 
 
 === "Hint"
+
 Use `grep --help` to search for `grep` options related to line number.
 `grep -n [filename]`` will print the line number.
 
