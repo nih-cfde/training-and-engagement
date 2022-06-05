@@ -99,7 +99,7 @@ A particularly big challenge in virtual training has been audience participation
 
 # Conclusion
 
-Our AWS curriculum and online instruction model have been successful in providing novice users with a comprehensive introduction to AWS and the cloud. Since all our lessons and set-up instructions are publicly available, we believe that it can serve as a resource for prospective instructors who are interested in teaching cloud-based tools via an online instruction platform.
+Our AWS curriculum and online instruction model have been successful in providing novice users with a comprehensive introduction to AWS and the cloud. Since all our lessons and set-up instructions are publicly available, we believe that it can serve as a resource for prospective instructors who are interested in teaching cloud-based tools via an online instruction platform. Prospective instructors are encouraged to use our [online lesson](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1/). However, they are also welcome to build their own lessons or re-use other open-source lesson materials.
 
 # Acknowledgements
 
