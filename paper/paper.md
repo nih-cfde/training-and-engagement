@@ -49,6 +49,7 @@ All our tutorials are hosted on the [CFDE training website](https://training.nih
 ## Learning Objectives
 
 As discussed in our [online lesson](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1/), after completing our workshop, a learner should be able to:
+
 - Set up an AWS cloud computer
 - Connect to the AWS cloud computer
 - Run multiple screen sessions and switch between them
