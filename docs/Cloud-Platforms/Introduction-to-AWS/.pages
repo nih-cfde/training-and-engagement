@@ -2,6 +2,6 @@ nav:
   - index.md
   - aws2.md
   - aws3.md
-  - Connect to Instance: aws4.md
-  - Screen Command: aws5.md
-  - Terminate Instance: aws6.md
+  - aws4.md
+  - aws5.md
+  - aws6.md
