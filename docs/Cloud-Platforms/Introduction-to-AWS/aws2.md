@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Connecting to your Instance
-hide:
-  - toc
 ---
 
 === "Web Browser"
