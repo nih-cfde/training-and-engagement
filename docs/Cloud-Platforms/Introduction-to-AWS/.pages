@@ -1,7 +1,6 @@
 nav:
   - index.md
+  - aws1.md
   - aws2.md
   - aws3.md
   - aws4.md
-  - aws5.md
-  - aws6.md
