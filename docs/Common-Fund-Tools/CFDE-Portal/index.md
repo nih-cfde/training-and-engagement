@@ -19,19 +19,20 @@ Est. Time | Lesson name | Description
 15 mins | [Blood Datasets from CF Program Portals](./Blood-Cancer/blood-cancer-data-access.md) | Access identified cohort in individual CF data portals
 10 mins | [Multi-omics Data Discovery for Movement-Related Disorders](./Movement-Related-Disorders/movement-disorders-portal-export.md) | Identify multiomics datasets
 10 mins | [Movement Disorders Datasets in CF Program Portals](./Movement-Related-Disorders/movement-disorders-data-access.md) | Access identified datasets in individual CF data portals
+30 mins | [Connect to your AWS instance on JupyterHub](./iHMP/jupyterhub.md) | Analyze whole genome sequencing data
+10 mins | [Adding data to CAVATICA with DRS IDs](./iHMP/CAVATICA.md) | Add files to CAVATICA
 
 !!! note "Learning Objectives"
 
     In this tutorial you will learn:
 
-    - how to build cohorts for Movement-Related Disorders
+    - How to search the CFDE Portal to find data
+    - How to use DRS IDs to access data
 
 === "Prerequisites"
 
       - Access to MacOS, Windows or Linux
       - Access to the internet and a web browser
-      - Basic knowledge of mammalian biology
-
 
 === "Tutorial Resources"
 
