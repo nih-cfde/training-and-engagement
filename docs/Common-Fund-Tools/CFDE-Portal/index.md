@@ -13,15 +13,15 @@ CFDE Portal Use Cases
 
 The [NIH Common Fund (CF)](https://commonfund.nih.gov) has funded a wide variety of data types and studies that are of interest to clinical and biomedical researchers, however those datasets are hosted on an equally large number of websites, with varying query systems. The [Common Fund Data Ecosystem (CFDE) Portal](https://app.nih-cfde.org) is a unified system for searching across the entire CF portfolio in a single search, and is the first step in addressing the goal of making CF data more [Find-able, Accessible, Interoperable and Reusable (FAIR)](https://www.nih-cfde.org/product/fair-cookbook/). The wide range of data types, models and formats used by Common Fund Programs are being harmonized using well-defined metadata, common controlled vocabularies using the [Crosscut Metadata Model](https://www.nih-cfde.org/product/cfde-c2m2/).
 
-Est. Time | Lesson name | Description
---- | --- | ---
-10 mins | [Cohort Selection for Blood Cancer](./Blood-Cancer/blood-cancer-portal-export.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets in CFDE portal
-15 mins | [Blood Datasets from CF Program Portals](./Blood-Cancer/blood-cancer-data-access.md) | Access identified cohort in individual CF data portals
-10 mins | [Multi-omics Data Discovery for Movement-Related Disorders](./Movement-Related-Disorders/movement-disorders-portal-export.md) | Identify multiomics datasets
-10 mins | [Movement Disorders Datasets in CF Program Portals](./Movement-Related-Disorders/movement-disorders-data-access.md) | Access identified datasets in individual CF data portals
-30 mins | [Using the portal to find and export file information](./iHMP/jupyterhub.md) | Find iHMP data with DRS IDs
-30 mins | [Connect to your AWS instance on JupyterHub](./iHMP/jupyterhub.md) | Analyze whole genome sequencing data
-10 mins | [Adding data to CAVATICA with DRS IDs](./iHMP/CAVATICA.md) | Add files to CAVATICA
+Est. Time | Use Case | Lesson name | Description
+--- | --- | --- | ---
+10 mins | 1 | [Cohort Selection for Blood Cancer](./Blood-Cancer/blood-cancer-portal-export.md) | Identify RNA-seq and whole genome sequencing (WGS) datasets in CFDE portal
+15 mins | 1 | [Blood Datasets from CF Program Portals](./Blood-Cancer/blood-cancer-data-access.md) | Access identified cohort in individual CF data portals
+10 mins | 2 | [Multi-omics Data Discovery for Movement-Related Disorders](./Movement-Related-Disorders/movement-disorders-portal-export.md) | Identify multiomics datasets
+10 mins | 2 | [Movement Disorders Datasets in CF Program Portals](./Movement-Related-Disorders/movement-disorders-data-access.md) | Access identified datasets in individual CF data portals
+30 mins | 3 | [Using the portal to find and export file information](./iHMP/jupyterhub.md) | Find iHMP data with DRS IDs
+30 mins | 3 | [Connect to your AWS instance on JupyterHub](./iHMP/jupyterhub.md) | Analyze whole genome sequencing data
+10 mins | 3 | [Adding data to CAVATICA with DRS IDs](./iHMP/CAVATICA.md) | Add files to CAVATICA
 
 !!! note "Learning Objectives"
 
