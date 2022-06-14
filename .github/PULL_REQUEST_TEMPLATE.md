@@ -1,12 +1,3 @@
-## PR Checklist
-
-- [ ] Release label added
-- [ ] Category label added
-- [ ] Clean build logs
-- [ ] Linked related issues
-- [ ] Ready for review 
-- [ ] Ready to merge
-
 ## PR Description
 
 Briefly describe the changes in this PR and the type of feedback desired.
@@ -35,3 +26,12 @@ Add the Read the Docs auto-generated preview link.
 Note: Will look something like this, where the number is the same as the PR number.
 https://cfde-training-and-engagement--535.com.readthedocs.build/en/535/
 --->
+
+## PR Checklist
+
+- [ ] Release label added
+- [ ] Category label added
+- [ ] Clean build logs
+- [ ] Linked related issues
+- [ ] Ready for review 
+- [ ] Ready to merge
