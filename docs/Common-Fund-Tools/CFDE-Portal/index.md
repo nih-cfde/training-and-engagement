@@ -19,6 +19,7 @@ Est. Time | Lesson name | Description
 15 mins | [Blood Datasets from CF Program Portals](./Blood-Cancer/blood-cancer-data-access.md) | Access identified cohort in individual CF data portals
 10 mins | [Multi-omics Data Discovery for Movement-Related Disorders](./Movement-Related-Disorders/movement-disorders-portal-export.md) | Identify multiomics datasets
 10 mins | [Movement Disorders Datasets in CF Program Portals](./Movement-Related-Disorders/movement-disorders-data-access.md) | Access identified datasets in individual CF data portals
+30 mins | [Using the portal to find and export file information](./iHMP/jupyterhub.md) | Find iHMP data with DRS IDs
 30 mins | [Connect to your AWS instance on JupyterHub](./iHMP/jupyterhub.md) | Analyze whole genome sequencing data
 10 mins | [Adding data to CAVATICA with DRS IDs](./iHMP/CAVATICA.md) | Add files to CAVATICA
 
