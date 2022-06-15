@@ -1,16 +1,13 @@
 ---
 layout: page
-title: Adding data to CAVATICA with DRS IDs
+title: Adding Data to CAVATICA with DRS IDs
 ---
 
 # Adding data to CAVATICA with DRS IDs
 
-CAVATICA is a storage, sharing, and analysis platform designed by Seven Bridges.
+[CAVATICA](https://cavatica.sbgenomics.com/) is a storage, sharing, and analysis platform designed by Seven Bridges. This tutorial shows how to add data to CAVATICA using DRS IDs obtained from [the previous lesson](find-export/). Please consult the [CAVATICA Documentation](https://docs.cavatica.org/docs) for a full description of its features.
 
-- [CAVATICA Portal](https://cavatica.sbgenomics.com/)
-- [CAVATICA Documentation](https://docs.cavatica.org/docs)
-
-To add data to CAVATICA, complete the following steps.
+## Login
 
 Login to CAVATICA https://cavatica.sbgenomics.com/home
 
@@ -20,7 +17,11 @@ Click "Yes, I authorize" to allow CAVATICA to view your Researcher Auth Service 
 
 ![drs2](https://i.imgur.com/E3LjLsr.png)
 
+## Create a Project
+
 Create a new project by clicking "+ Create Project". Provide a name and billing group then click "Create".  
+
+## Add files
 
 Click the "Files" tab then click "+ Add files" drop down menu select "GA4GH Data Repository Service (DRS)".  
 
