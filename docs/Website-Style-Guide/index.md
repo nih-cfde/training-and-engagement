@@ -1,11 +1,10 @@
 ---
 layout: page
 title: Website Style Guide
-hide:
-  - toc
 ---
 
-Contributing to the nih-cfde Training and Engagement website
+Website Style Guide
+
 ===============================================================
 
 This is a style guide for content on the CFDE [training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/).
