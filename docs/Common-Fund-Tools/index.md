@@ -9,22 +9,10 @@ title: Common Fund Tools
 
 The [NIH Common Fund (CF)](https://commonfund.nih.gov) has funded a wide variety of data types and studies that are of interest to clinical and biomedical researchers, however those datasets are hosted on an equally large number of websites, with varying query systems. The [Common Fund Data Ecosystem (CFDE) Portal](https://app.nih-cfde.org) is a unified system for searching across the entire CF portfolio in a single search, and is the first step in addressing the goal of making CF data more [Find-able, Accessible, Interoperable and Reusable (FAIR)](https://www.nih-cfde.org/product/fair-cookbook/). The wide range of data types, models and formats used by Common Fund Programs are being harmonized using well-defined metadata, common controlled vocabularies using the [Crosscut Metadata Model](https://www.nih-cfde.org/product/cfde-c2m2/).
 
-Est. Time |  Lesson name | Description
+Est. Time |  Lesson name | Description |
 --- | --- | --- |
-30 mins | [Using the CFDE Search Portal to Find Files](./iHMP/find-export.md) | Find Human Microbiome Project (HMP) data with DRS IDs
-10 mins | [Adding files to CAVATICA with DRS IDs](./iHMP/CAVATICA.md) | Add files to CAVATICA using DRS IDs
-
-!!! note "Learning Objectives"
-
-    In this tutorial you will learn:
-
-    - How to search the CFDE Portal to find data
-    - How to use DRS IDs to access data
-
-=== "Prerequisites"
-
-      - Access to MacOS, Windows or Linux
-      - Access to the internet and a web browser
+30 mins | [Using the CFDE Search Portal to Find Files](./iHMP/find-export.md) | Find Human Microbiome Project (HMP) data with DRS IDs | 
+10 mins | [Adding files to CAVATICA with DRS IDs](./iHMP/CAVATICA.md) | Add files to CAVATICA using DRS IDs |
       
 ## Kids First & Cavatica Lessons
 
@@ -81,8 +69,11 @@ Est. Time | Lesson name | Description
 20 mins | [Data Download via Cavatica](./Kids-First/Download_Data/Data-Download-Via-Cavatica.md) | Local download from Cavatica
 30 mins | [Data Upload to Cavatica](./Kids-First/Upload_Data.md) | Using the Command Line Uploader tool </br>to move files from AWS to Cavatica
 
-!!! note "Learning Objectives"
 
+!!! note "Learning Objectives"
+    
+    -   learn how to search the CFDE Portal to find data
+    -   learn how to use DRS IDs to access data
     -   learn how to connect your Kids First, Cavatica, and protected access accounts
     -   learn how to find and filter Kids First data sets
     -   learn how to move your chosen cohort to Cavatica for analysis
