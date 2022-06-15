@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Using the portal to find and export file information
+title: Using the CFDE Search Portal to Find Files
 ---
 
-#  Using the CFDE Search portal to find and export file information
+#  Using the CFDE Search Portal to Find Files
 
 The Common Fund Data Ecosystem Coordinating Center (CFDE-CC) supports efforts to make Common Fund data sets more findable, accessible, interoperable, and reusable (FAIR) for the scientific community through collaboration, end-user training, and data set sustainability. The CFDE-CC manages and organizes CFDE activities, engages with participating Common Fund programs, connect with user communities, supports training, develops tools and standards, and provides technical expertise to Common Fund programs.
 
