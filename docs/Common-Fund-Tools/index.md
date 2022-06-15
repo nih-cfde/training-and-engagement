@@ -11,8 +11,8 @@ The [NIH Common Fund (CF)](https://commonfund.nih.gov) has funded a wide variety
 
 Est. Time |  Lesson name | Description |
 --- | --- | --- |
-30 mins | [Using the CFDE Search Portal to Find Files](./iHMP/find-export.md) | Find Human Microbiome Project (HMP) data with DRS IDs | 
-10 mins | [Adding files to CAVATICA with DRS IDs](./iHMP/CAVATICA.md) | Add files to CAVATICA using DRS IDs |
+30 mins | [Using the CFDE Search Portal to Find Files](./CFDE-Portal/iHMP/find-export.md) | Find Human Microbiome Project (HMP) data with DRS IDs | 
+10 mins | [Adding files to CAVATICA with DRS IDs](./CFDE-Portal/iHMP/CAVATICA.md) | Add files to CAVATICA using DRS IDs |
       
 ## Kids First & Cavatica Lessons
 
