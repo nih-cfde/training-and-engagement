@@ -1,8 +1,5 @@
 nav:
 - index.md
-- CFDE-Portal:
-  - 'CFDE-Portal/iHMP/find-export.md'
-  - 'Kids-First/Portal-Setup-And-Permissions/KF_4_Cavatica_Registration.md'
-  - 'CFDE-Portal/iHMP/CAVATICA.md'
+- CFDE-Portal
 - Kids-First
 - IDG Tutorials: IDG.md
