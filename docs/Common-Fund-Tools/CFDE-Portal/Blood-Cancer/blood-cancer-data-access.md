@@ -3,7 +3,9 @@ layout: page
 title: Blood Datasets from CF Program Portals
 ---
 
-<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+<div class="banner"><span class="banner-text">This tutorial is outdated. Please refer to the Common Fund Tools page for up-to-date tutorials.
+</span></div>
+
 
 # Blood Datasets from CF Program Portals
 
