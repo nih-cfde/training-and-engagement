@@ -61,7 +61,7 @@ Est. Time | Lesson name | Description
 10 mins | [Checking Queries](./Kids-First/Advanced-KF-Portal-Queries/KF_12_CheckingQueries.md) | Interpret query results
 10 mins | [Saving Queries](./Kids-First/Advanced-KF-Portal-Queries/KF_13_SavingQueries.md) | Save participant sets or search term </br>combinations
 
-## Importing and downloading KF Data
+### Importing and downloading KF Data
 
 Est. Time | Lesson name | Description
 --- | --- | ---
