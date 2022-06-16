@@ -7,20 +7,20 @@ title: Create a CAVATICA Account
 
 # Create a CAVATICA Account
 
-## Step 1: Go to the CAVATICA website
+## Go to the CAVATICA website
 
 First, we will go to the Cavatica Registration website at
 
 [https://pgc-accounts.sbgenomics.com/auth/register](https://pgc-accounts.sbgenomics.com/auth/register).
 
 
-## Step 2: Create an Account
+## Create an Account
 
 Click  <span class="highlight_txt">Create an Account </span>.  
 
 ![](https://i.imgur.com/Rcf4HwK.png)
 
-## Step 3: Choose your login system
+## Choose your login system
 
 You should now have the option to continue using an eRA Commons ID, or
 by setting up a user name and password.
@@ -40,7 +40,7 @@ by setting up a user name and password.
     you should opt to login using your eRA Commons ID.
 
 
-## Step 5: Click the email link
+## Click the email link
 
 Once your registration is complete, you should get a prompt to go check
 your email:
