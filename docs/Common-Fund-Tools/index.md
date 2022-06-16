@@ -9,13 +9,15 @@ title: Common Fund Tools
 
 The [NIH Common Fund (CF)](https://commonfund.nih.gov) has funded a wide variety of data types and studies that are of interest to clinical and biomedical researchers, however those datasets are hosted on an equally large number of websites, with varying query systems. The [Common Fund Data Ecosystem (CFDE) Portal](https://app.nih-cfde.org) is a unified system for searching across the entire CF portfolio in a single search, and is the first step in addressing the goal of making CF data more [Find-able, Accessible, Interoperable and Reusable (FAIR)](https://www.nih-cfde.org/product/fair-cookbook/). The wide range of data types, models and formats used by Common Fund Programs are being harmonized using well-defined metadata, common controlled vocabularies using the [Crosscut Metadata Model](https://www.nih-cfde.org/product/cfde-c2m2/).
 
+### Human Mirobiome Project Use Case
+
 Est. Time |  Lesson name | Description |
 --- | --- | --- |
 30 mins | [Using the CFDE Search Portal to Find Files](./CFDE-Portal/iHMP/find-export.md) | Find Human Microbiome Project (HMP) data with DRS IDs | 
-10 mins | [Adding files to CAVATICA with DRS IDs](./CFDE-Portal/iHMP/CAVATICA.md) | Add files to CAVATICA using DRS IDs |
+10 mins | [Creating a CATATICA Account](./CFDE-Portal/iHMP/CAVATICA-create.md) | Add files to CAVATICA using DRS IDs |
+10 mins | [Adding files to CAVATICA with DRS IDs](./CFDE-Portal/iHMP/CAVATICA-drs.md) | Add files to CAVATICA using DRS IDs |
       
-## Kids First & Cavatica Lessons
-
+## Kids First & CAVATICA Lessons
 
 The [NIH Common Fund-supported Gabriella Miller Kids First (KF) Data Resource
 Center (DRC)](https://kidsfirstdrc.org/) enables researchers, clinicians, and
@@ -28,7 +30,7 @@ available to empower your research today. Data collected from more than
 Our aim is to teach researchers basic concepts, skills, and tools for
 working with data so that they can get more done in less time, and with
 less pain. The goal of this training module is to enable clinicians and
-researchers to use the data portal to build cohorts, and to move that data to an analysis platform ([Cavatica](https://cavatica.squarespace.com/)).
+researchers to use the data portal to build cohorts, and to move that data to an analysis platform ([CAVATICA](https://cavatica.squarespace.com/)).
 
 ### Setting up your KF Portal Permissions
 
@@ -74,7 +76,7 @@ Est. Time | Lesson name | Description
     
     -   learn how to search the CFDE Portal to find data
     -   learn how to use DRS IDs to access data
-    -   learn how to connect your Kids First, Cavatica, and protected access accounts
+    -   learn how to connect your Kids First, CAVATICA, and protected access accounts
     -   learn how to find and filter Kids First data sets
     -   learn how to move your chosen cohort to Cavatica for analysis
     -   learn how to apply for access to new data sets
