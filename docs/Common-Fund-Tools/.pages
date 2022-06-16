@@ -1,10 +1,10 @@
 nav:
-- index.md
-- CFDE Portal Tutorials: CFDE-Portal
+- index.md/
+- CFDE Portal Tutorials: CFDE-Portal/index.md 
   - CFDE-Portal/iHMP/find-export.md
-  - Kids-First/Portal-Setup-And-Permissions/KF_4_Cavatica_Registration.md
+  - 'Register for Cavatica': Register for CavaticaKids-First/Portal-Setup-And-Permissions/KF_4_Cavatica_Registration.md
   - CFDE-Portal/iHMP/CAVATICA.md
-- Kids First Tutorials: Kids-First
+- Kids First Tutorials: Kids-First/index.md
   - Portal Setup: Kids-First/Portal-Setup-And-Permissions
   - Exploring Data: Kids-First/Exploring-Data-in-the-KF-Portal
   - Advanced Queries: Kids-First/Advanced-KF-Portal-Queries
