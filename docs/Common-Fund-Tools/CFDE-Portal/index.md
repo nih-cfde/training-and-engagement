@@ -17,9 +17,9 @@ This tutorial focuses on the Human Microbiome Project (HMP). The goal of this tu
 
 Est. Time |  Lesson name | Description |
 --- | --- | --- |
-30 mins | [Using the CFDE Search Portal to Find Files](./CFDE-Portal/iHMP/find-export.md) | Find Human Microbiome Project (HMP) data with DRS IDs | 
-10 mins | [Creating a CATATICA Account](./CFDE-Portal/iHMP/CAVATICA-create.md) | Add files to CAVATICA using DRS IDs |
-10 mins | [Adding files to CAVATICA with DRS IDs](./CFDE-Portal/iHMP/CAVATICA-drs.md) | Add files to CAVATICA using DRS IDs |
+30 mins | [Using the CFDE Search Portal to Find Files](./iHMP/find-export.md) | Find Human Microbiome Project (HMP) data with DRS IDs | 
+10 mins | [Creating a CATATICA Account](./iHMP/CAVATICA-create.md) | Add files to CAVATICA using DRS IDs |
+10 mins | [Adding files to CAVATICA with DRS IDs](./iHMP/CAVATICA-drs.md) | Add files to CAVATICA using DRS IDs |
 
 
 !!! note "Learning Objectives"
