@@ -136,12 +136,15 @@ Most, but not all of the files in the MiSeq directory are .fastq files. Which .f
 
 === "Input"
 
+     ```
      cd ~/MiSeq
      pwd
      ls -lhS *.fastq
+     ```
      
 === "Expected Output"
 
+     ```
      -rwxr-xr-x 1 jovyan jovyan  11M Jun  7 04:37 F3D2_S190_L001_R1_001.fastq
      -rwxr-xr-x 1 jovyan jovyan  11M Jun  7 04:37 F3D2_S190_L001_R2_001.fastq
      -rwxr-xr-x 1 jovyan jovyan 9.2M Jun  7 04:37 F3D147_S213_L001_R1_001.fastq
@@ -182,7 +185,8 @@ Most, but not all of the files in the MiSeq directory are .fastq files. Which .f
      -rwxr-xr-x 1 jovyan jovyan 1.8M Jun  7 04:37 F3D142_S208_L001_R2_001.fastq
      -rwxr-xr-x 1 jovyan jovyan 1.8M Jun  7 04:37 F3D143_S209_L001_R1_001.fastq
      -rwxr-xr-x 1 jovyan jovyan 1.7M Jun  7 04:37 F3D143_S209_L001_R2_001.fastq
-
+     ```
+     
 ### Key points
 
 |Command |Description|
