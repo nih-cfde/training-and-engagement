@@ -16,7 +16,7 @@ Add an expected timeline to finish the review and merge the PR.
 - [ ] code syntax and naming convention
 - [ ] adherence of tutorial format to style guide
 - [ ] functional links (inter and intra)
-- [ ] accessible hyperlink text ([colorblindness test](https://www.toptal.com/designers/colorfilter))
+- [ ] accessible hyperlink text ([color blindness test](https://www.toptal.com/designers/colorfilter))
 
 ## PR Preview
 
