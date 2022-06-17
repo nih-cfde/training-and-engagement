@@ -37,8 +37,7 @@ ls
 We can see the following files:
 
 ```
-books          GTEx    MiSeq      rstudio-console.png   seattle           site-templates
-CFDE-logo.png  images  README.md  rstudio-terminal.png  site-config.toml
+books  CFDE-logo.png  GTEx  images  MiSeq  README.md  rstudio-console.png  rstudio-terminal.png  seattle
 ```
 
 If we want more information about the files, such as the date they were created and their file size, we can add "flags" `-l` for long listing format.
@@ -48,17 +47,16 @@ ls -l
 ```
 
 ```
-drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 books
--rw-r--r-- 1 jovyan jovyan  71154 May 26 03:05 CFDE-logo.png
-drwxr-xr-x 1 jovyan jovyan   4096 May 26 03:05 GTEx
-drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 images
-drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 MiSeq
--rw-r--r-- 1 jovyan jovyan   2679 May 26 03:05 README.md
--rw-r--r-- 1 jovyan jovyan 239942 May 26 03:05 rstudio-console.png
--rw-r--r-- 1 jovyan jovyan 188705 May 26 03:05 rstudio-terminal.png
-drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 seattle
--rw-r--r-- 1 jovyan jovyan    576 May 26 03:05 site-config.toml
-drwxr-xr-x 2 jovyan jovyan   4096 May 26 03:05 site-templates
+total 520
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 books
+-rw-r--r-- 1 jovyan jovyan  71154 Jun  7 04:36 CFDE-logo.png
+drwxr-xr-x 1 jovyan jovyan   4096 Jun  7 04:36 GTEx
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 images
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 MiSeq
+-rw-r--r-- 1 jovyan jovyan   2679 Jun  7 04:37 README.md
+-rw-r--r-- 1 jovyan jovyan 239942 Jun  7 04:37 rstudio-console.png
+-rw-r--r-- 1 jovyan jovyan 188705 Jun  7 04:37 rstudio-terminal.png
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 seattle
 ```
 
 Flags (sometimes called options) allow us to finely control the behavior of the command. But how did we know to add `-l` after ls? The [`ls` manual ](https://man7.org/linux/man-pages/man1/ls.1.html) describes the command and all its options in detail. Like most commands, you can type the command followed `--help` to view the manual in your terminal.
@@ -138,53 +136,56 @@ Most, but not all of the files in the MiSeq directory are .fastq files. Which .f
 
 === "Input"
 
-     cd ~/MiSeq
-     pwd
-     ls -lhS *.fastq
-
+```bash
+cd ~/MiSeq
+pwd
+ls -lhS *.fastq
+```
+     
 === "Expected Output"
 
-     -rwxr-xr-x 1 jovyan jovyan  11M May 26 03:05 F3D2_S190_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan  11M May 26 03:05 F3D2_S190_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 9.2M May 26 03:05 F3D147_S213_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 9.2M May 26 03:05 F3D147_S213_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 7.1M May 26 03:05 F3D149_S215_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 7.0M May 26 03:05 F3D149_S215_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 6.7M May 26 03:05 F3D148_S214_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 6.7M May 26 03:05 F3D148_S214_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 4.3M May 26 03:05 F3D6_S194_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 4.3M May 26 03:05 F3D6_S194_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 4.2M May 26 03:05 F3D0_S188_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 4.2M May 26 03:05 F3D0_S188_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 4.0M May 26 03:05 F3D145_S211_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 4.0M May 26 03:05 F3D145_S211_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.8M May 26 03:05 F3D9_S197_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.8M May 26 03:05 F3D9_S197_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.7M May 26 03:05 F3D3_S191_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.7M May 26 03:05 F3D3_S191_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.2M May 26 03:05 F3D141_S207_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.2M May 26 03:05 F3D141_S207_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.2M May 26 03:05 F3D1_S189_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.2M May 26 03:05 F3D1_S189_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.0M May 26 03:05 F3D150_S216_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 3.0M May 26 03:05 F3D150_S216_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.9M May 26 03:05 F3D8_S196_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.9M May 26 03:05 F3D8_S196_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.8M May 26 03:05 F3D7_S195_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.8M May 26 03:05 F3D7_S195_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.7M May 26 03:05 F3D146_S212_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.7M May 26 03:05 F3D146_S212_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.6M May 26 03:05 F3D144_S210_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.6M May 26 03:05 F3D144_S210_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.6M May 26 03:05 Mock_S280_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.6M May 26 03:05 Mock_S280_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.4M May 26 03:05 F3D5_S193_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 2.4M May 26 03:05 F3D5_S193_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 1.8M May 26 03:05 F3D142_S208_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 1.8M May 26 03:05 F3D142_S208_L001_R2_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 1.8M May 26 03:05 F3D143_S209_L001_R1_001.fastq
-     -rwxr-xr-x 1 jovyan jovyan 1.7M May 26 03:05 F3D143_S209_L001_R2_001.fastq
-
+```bash
+-rwxr-xr-x 1 jovyan jovyan  11M Jun  7 04:37 F3D2_S190_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan  11M Jun  7 04:37 F3D2_S190_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 9.2M Jun  7 04:37 F3D147_S213_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 9.2M Jun  7 04:37 F3D147_S213_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 7.1M Jun  7 04:37 F3D149_S215_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 7.0M Jun  7 04:37 F3D149_S215_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 6.7M Jun  7 04:37 F3D148_S214_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 6.7M Jun  7 04:37 F3D148_S214_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 4.3M Jun  7 04:37 F3D6_S194_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 4.3M Jun  7 04:37 F3D6_S194_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 4.2M Jun  7 04:36 F3D0_S188_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 4.2M Jun  7 04:37 F3D0_S188_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 4.0M Jun  7 04:37 F3D145_S211_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 4.0M Jun  7 04:37 F3D145_S211_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.8M Jun  7 04:37 F3D9_S197_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.8M Jun  7 04:37 F3D9_S197_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.7M Jun  7 04:37 F3D3_S191_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.7M Jun  7 04:37 F3D3_S191_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.2M Jun  7 04:37 F3D141_S207_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.2M Jun  7 04:37 F3D141_S207_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.2M Jun  7 04:37 F3D1_S189_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.2M Jun  7 04:37 F3D1_S189_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.0M Jun  7 04:37 F3D150_S216_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 3.0M Jun  7 04:37 F3D150_S216_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.9M Jun  7 04:37 F3D8_S196_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.9M Jun  7 04:37 F3D8_S196_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.8M Jun  7 04:37 F3D7_S195_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.8M Jun  7 04:37 F3D7_S195_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.7M Jun  7 04:37 F3D146_S212_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.7M Jun  7 04:37 F3D146_S212_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.6M Jun  7 04:37 F3D144_S210_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.6M Jun  7 04:37 F3D144_S210_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.6M Jun  7 04:37 Mock_S280_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.6M Jun  7 04:37 Mock_S280_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.4M Jun  7 04:37 F3D5_S193_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 2.4M Jun  7 04:37 F3D5_S193_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 1.8M Jun  7 04:37 F3D142_S208_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 1.8M Jun  7 04:37 F3D142_S208_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 1.8M Jun  7 04:37 F3D143_S209_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 1.7M Jun  7 04:37 F3D143_S209_L001_R2_001.fastq
+```
 ### Key points
 
 |Command |Description|
