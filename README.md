@@ -22,6 +22,6 @@ A list of past workshops can be viewed [here](https://github.com/nih-cfde/traini
 
 Hello, if you would like to contribute to the CFDE Training website, please read the [Contributing Guidelines](CONTRIBUTING.md) and the [Website Style Guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide/).
 
-By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](./license.md). If you are OK with this condition, then we welcome both you and your contribution!
+By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](LICENSE.md). If you are OK with this condition, then we welcome both you and your contribution!
 
 If you have any questions, please [open an issue](https://github.com/nih-cfde/training-and-engagement/issues/new) or [email the training team](mailto:training@cfde.atlassian.net) and we will lend a hand.
