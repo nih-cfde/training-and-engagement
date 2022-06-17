@@ -4,7 +4,7 @@ title: Navigate
 
 UNIX commands are like sentences that can be very simple or complex. The simplest commands consist of only the command name. Many require the name of a file or directory and allow specially formatted arguments, known as flags or options, which modify the default behavior of the program. The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows. The ease of getting things done via the shell will increase with your exposure to the program.
 
-We should note that _folders_ are called **directories** at the command line. For all intents and purposes, they can be used interchangeably, but if you'd like more information please read about ["the folder metaphor"](https://en.wikipedia.org/wiki/Directory_%28computing%29#Folder_metaphor).
+We should note that _folders_ are called **directories** at the command line. For all intents and purposes, they can be used interchangeably, but if you would like more information please read about ["the folder metaphor"](https://en.wikipedia.org/wiki/Directory_%28computing%29#Folder_metaphor).
 
 This Binder comes preloaded with data provided by your instructors.  _If you want to do these exercises locally, on your own computer, you can [download the data here](https://s3.us-west-1.amazonaws.com/dib-training.ucdavis.edu/shell-data2.zip)._
 
@@ -90,7 +90,7 @@ To move from one directory to the other, we use the `cd` command to **change dir
 
 Let's return to our home directory using the `cd` command and a relative path, then print the working directory to confirm.  
  
-Let's practice using the cd and ls commands to explore files in different directories.  
+Let's practice using the `cd` and `ls` commands to explore files in different directories.  
 
 Because `books/` is in our working directory, we can navigate there with a relative path. What files are in the `books` directory and how large are they?
 
