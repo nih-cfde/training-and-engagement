@@ -7,22 +7,23 @@ title: Read
 
 Now that we know what files exist on our computer, it's time to look at the contents of the file. There are multiple ways to look at the contents of a file. 
 
-The `cat` command prints the entirety of a file to the stdout of our computer. We can scroll through files using the `less` command. Less is a safe way of looking at the contents of a file without the ability to change it. `head` prints, by default the first 10 lines of a file.
+The `cat` command prints the entirety of a file to the stdout of our computer. We can scroll through files using the `less` command. Less is a safe way of looking at the contents of a file without the ability to change it. `head` prints, by default the first 10 lines of a file and `tail` prints the last 10 lines.
 
 
-All three of the commands use the same syntax:
+All four of the commands use the same syntax:
 
 ```bash
 head [filename]
 cat [filename]
 less [filename]
+tail [filename]
 ```
 
 
 
 !!! Tip
 
-    You can use TAB to do filename completion, so if you type `cat R` and then press your Tab key once, it will autocomplete if there is a unique match. If there is more than one match, the first Tab will do nothing, and the second will show all the possible matches.
+    You can use TAB to do filename completion, so if you type `cat R` and then press your TAB key once, it will autocomplete if there is a unique match. If there is more than one match, the first TAB will do nothing, and the second will show all the possible matches.
 
 
 
@@ -71,6 +72,8 @@ Notice, there is one book that is compressed. We can uncompress it with the comm
 ```bash
 gunzip WizardOfOz.txt.gz
 ```
+
+Now the `ls` command will show that the `WizardOfOz.txt.gz` has been replaced with the unzipped `WizardOfOz.txt` file. `gunzip` also has a number of flags you can use including `-k` which will allow you to unzip the file and keep the original.
 
 ### Key points
 
