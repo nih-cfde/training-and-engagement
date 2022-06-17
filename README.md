@@ -16,11 +16,11 @@ Check out our [events calendar](https://www.nih-cfde.org/events/)for upcoming wo
 
 Join our [training mailing list](mailto:CFDE-Training%20<CFDETraining+subscribe@CFDEpublic.groups.io) for all the latest updates.
 
-A list of a past workshops can be viewed [here](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/Release-Notes/history.md).
+A list of past workshops can be viewed [here](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/Release-Notes/history.md).
 
 ## Contributing
 
-Hello, if you'd like to contribute to the CFDE Training website, please read the [Contributing Guidelines](CONTRIBUTING.md) and the [Website Style Guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide/).
+Hello, if you would like to contribute to the CFDE Training website, please read the [Contributing Guidelines](CONTRIBUTING.md) and the [Website Style Guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide/).
 
 By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](./license.md). If you are OK with this condition, then we welcome both you and your contribution!
 
