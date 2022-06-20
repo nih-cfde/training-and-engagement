@@ -7,7 +7,7 @@ title: Workshop History
 
 # Workshop History
 
-Below is a list past CFDE workshops with links to workshop resources.
+Below is a list of past CFDE workshops with links to workshop resources.
 
 ## 2022
 
