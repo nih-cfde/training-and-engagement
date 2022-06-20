@@ -12,10 +12,10 @@ The [CFDE Search Portal](https://app.nih-cfde.org/) uses the Crosscut Metadata M
 This tutorial focuses on the Human Microbiome Project (HMP). The goal of this tutorial is to identify small FASTQ files with persistent identifiers from a longitudinal multi-comics study. Please refer to the [Portal User Guide](https://docs.nih-cfde.org/en/latest/about/portalguide/) for a detailed description of all portal features. 
 
 !!! note "Learning Objectives"
-    In this tutorial, you will learn how to  
-    - access the CEFD search portal
-    - create personal collections
-    - search for files meeting a specific criterion
+    
+    -   learn how to access the CEFD search portal
+    -   learn how to create personal collections
+    -   learn how to search for files meeting a specific criterion
 
 ## Create a new personal collection
 
@@ -78,9 +78,9 @@ Repeat linking to a collection with the third result (Filename: `SRR5950647_1.fa
 
 
 !!! info
-    For today, here are the direct links to the two files we'll be using:  
-    * [file 1, `SRR5935743_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=528892)
-    * [file 2, `SRR5950647_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=531342)
+    For today, here are the direct links to the two files we'll be using:    
+    -   [file 1, `SRR5935743_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=528892)
+    -   [file 2, `SRR5950647_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=531342)
 
 
 (Note, you could select any files you like, but these are small enough to work and I know what the results will be. So it's good for today's demo; I suggest trying new/different files as a Thursday exercise!)
