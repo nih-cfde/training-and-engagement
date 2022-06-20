@@ -3,7 +3,8 @@ layout: page
 title: Cohort Selection for Blood Cancer
 ---
 
-<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+<div class="banner"><span class="banner-text">This tutorial is outdated. Please refer to the Common Fund Tools page for up-to-date tutorials.
+</span></div>
 
 
 # Cohort Selection for Blood Cancer
