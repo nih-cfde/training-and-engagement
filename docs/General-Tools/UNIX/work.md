@@ -34,7 +34,7 @@ mv book-copy.txt book-2cities.txt
 
 !!! warning
 
-Take care when renaming files. It is good practice to keep track of changes in file names and links to the source data. 
+    Take care when renaming files. It is good practice to keep track of changes in file names and links to the source data. 
 
 ### `mkdir` 
 
