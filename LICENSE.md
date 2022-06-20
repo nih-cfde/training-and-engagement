@@ -1,10 +1,3 @@
----
-layout: page
-title: License
----
-
-MIT License
-
 # DEDICATED TO THE PUBLIC DOMAIN
 
 The nih-cfde organization repo has been dedicated to the public domain.
@@ -138,3 +131,4 @@ rights.
     d. Affirmer understands and acknowledges that Creative Commons is
     not a party to this document and has no duty or obligation with
     respect to this CC0 or use of the Work.
+
