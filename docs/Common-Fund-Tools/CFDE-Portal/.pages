@@ -1,4 +1,3 @@
 nav:
- - index.md
- - Use Case 1: Blood-Cancer
- - Use Case 2: Movement-Related-Disorders
+  - index.md
+  - Human Microbiome Project Use Case: iHMP
