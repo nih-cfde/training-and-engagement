@@ -77,11 +77,11 @@ Repeat linking to a collection with the third result (Filename: `SRR5950647_1.fa
 ![](https://i.imgur.com/aOX8Gz7.png)
 
 
-:::info
-For today, here are the direct links to the two files we'll be using:
-* [file 1, `SRR5935743_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=528892)
-* [file 2, `SRR5950647_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=531342)
-:::
+!!! info
+    For today, here are the direct links to the two files we'll be using:
+    * [file 1, `SRR5935743_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=528892)
+    * [file 2, `SRR5950647_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=531342)
+
 
 (Note, you could select any files you like, but these are small enough to work and I know what the results will be. So it's good for today's demo; I suggest trying new/different files as a Thursday exercise!)
 
@@ -89,10 +89,10 @@ For today, here are the direct links to the two files we'll be using:
 
 Go to your collection, and select <span class="highlight_txt">export</span> and choose <span class="highlight_txt">NCPI manifest format</span>.
 
-:::info
-**What is NCPI?**
-"NCPI" stands for "NIH Cloud Platform Interoperability", an effort by the NIH to convene around interoperation for cloud workbenches.
-:::
+!!! info
+    **What is NCPI?**
+    "NCPI" stands for "NIH Cloud Platform Interoperability", an effort by the NIH to convene around interoperation for cloud workbenches.
+ 
 
 ### Examine the NCPI manifest file
 
