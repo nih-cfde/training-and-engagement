@@ -78,7 +78,7 @@ Repeat linking to a collection with the third result (Filename: `SRR5950647_1.fa
 
 
 !!! info
-    For today, here are the direct links to the two files we'll be using:
+    For today, here are the direct links to the two files we'll be using:  
     * [file 1, `SRR5935743_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=528892)
     * [file 2, `SRR5950647_1.fastq`](https://app.nih-cfde.org/chaise/record/#1/CFDE:file/nid=531342)
 
