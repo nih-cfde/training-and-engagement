@@ -12,7 +12,7 @@ The [CFDE Search Portal](https://app.nih-cfde.org/) uses the Crosscut Metadata M
 This tutorial focuses on the Human Microbiome Project (HMP). The goal of this tutorial is to identify small FASTQ files with persistent identifiers from a longitudinal multi-comics study. Please refer to the [Portal User Guide](https://docs.nih-cfde.org/en/latest/about/portalguide/) for a detailed description of all portal features. 
 
 !!! note "Learning Objectives"
-    In this tutorial, you will learn how to
+    In this tutorial, you will learn how to  
     - access the CEFD search portal
     - create personal collections
     - search for files meeting a specific criterion
