@@ -38,7 +38,7 @@ The pipe is a useful way to combine multiple commands on line line into a pipe.
 
 ### For loops
 
-However, the two lines above told us, how many times CATTAG appeared in all of the .fastq files in total. 
+However, the two lines above tell us how many times CATTAG appeared in all of the .fastq files in total. 
 If we want to know who many times it occurs in each, we need a for loop. 
 
 A for loop looks like this
