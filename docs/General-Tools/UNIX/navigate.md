@@ -82,7 +82,7 @@ ls --help
 
 ### `cd`
 
-Now we have seen how to list the contents of folders on our computers and what is located in the directory we are presently in. But some of the beauty of the shell is that we can perform activities in locations that we are not currently in. To do this we can either use an absolute path or a relative path. A **relative path** is the path to another directory from the one you are currently in. An **absolute path** starts from the root and ends in the apropriate subdirectory. 
+Now we have seen how to list the contents of folders on our computers and what is located in the directory we are presently in. But some of the beauty of the shell is that we can perform activities in locations that we are not currently in. To do this we can either use an absolute path or a relative path. A **relative path** is the path to another directory from the one you are currently in. An **absolute path** starts from the root and ends in the appropriate subdirectory. 
 
 To move from one directory to the other, we use the `cd` command to **change directories**. We can use the `pwd` and/or `ls` commands to confirm that we did indeed change directories.  Because you can change directories using either the relative or absolute path, there are multiple ways to successfully move up or down in the directory hierarchy.
 
