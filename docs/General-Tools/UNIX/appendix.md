@@ -2,7 +2,7 @@
 title: Appendix
 ---
 
-All the code from this lesson in one chunk.
+All the code from this lesson in one page.
 
 ```bash
 PS1='$ '
@@ -47,33 +47,33 @@ tail -4 F3D0_S188_L001_R1_001.fastq
 
 head -4 HMP_MOCK.v35.fasta 
 
-cd ../data/MiSeq/
 grep CATTAG F3D0_S188_L001_R2_001.fastq
 grep CATTAG *.fastq
+grep "^>" *.fasta
+grep -A 1 "^>" *.fasta
 
-wc F3D0_S188_L001_R2_001.fastq
+cd ~
+find . -name "*.fasta"
 
-wc -l F3D0_S188_L001_R2_001.fastq
+wc -l *.fastq
 
-mkdir results
-grep CATTAG *.fastq > results/files-with-CATTAG.txt
+head -n 1 *.fatsq
+grep "^@M00967" *R1*.fastq | wc -l
+grep "^@M00967" *R1*.fastq  | head
 
-grep CATTAG *.fastq 
-grep CATTAG *.fastq | wc -l
+grep "^@M00967" F3D0_S188_L001_R1_001.fastq | wc -l
+grep "^@M00967" F3D0_S188_L001_R1_001.fastq | wc -l
+grep "^@M00967" F3D142_S208_L001_R1_001.fastq | wc -l
 
-for file in *fastq
-do
-grep CATTAG $file | wc -l
-done
-
-for file in *fastq
+for file in *R1*.fastq
 do
 echo $file
-grep CATTAG $file | wc -l
+grep "^@M00967" $file | wc -l
 done
+
 
 history
 
-history > history.txt
+history > ~/history.txt
 ```
 
