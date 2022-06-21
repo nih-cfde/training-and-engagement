@@ -31,7 +31,6 @@ During this lesson, we use UNIX commands to answer questions following motivatin
 * Which ebook contains the most lines of text? 
 * How many R1 and R2 reads were generated from each MiSeq sample?  
 * Do our results match the reported results? 
-* Which South Park character spoke the most lines?
 
 
 ### Key points 
