@@ -139,7 +139,7 @@ Mock_S280_L001_R1_001.fastq
 
 === "Hint"  
 
-    The following for loop will reveal that 269 lines of A Tale of Two Cities start with The.
+    The following for loop will reveal that 269 lines of A Tale of Two Cities that start with "The".
     
     ```
     cd ~/books
