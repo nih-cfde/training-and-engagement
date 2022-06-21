@@ -11,7 +11,7 @@ If you completed the last challenge, you saw that the **images/** directory cont
 To see if our data matches theirs, we can count the number of lines in the .fastq files with the UNIX command `wc`. This will print by default the number of characters, words, and lines in a file. We can ask for just the number of lines with the `-l`  option. 
 
 ```
-wc -l *fastq
+wc -l *.fastq
 ```
 
 This gives something like:
@@ -108,7 +108,7 @@ done
 To answer the question, how many reads are in each R1 file, we can construct the following for loop. 
 
 ```
-for file in *R1*fastq
+for file in *R1*.fastq
 do
 echo $file
 grep "^@M00967" $file | wc -l
@@ -187,7 +187,7 @@ history
 You can redirect the output from the screen to a file using `>`. Note that `>` will overright existing conent, but `>>` will append. 
 
 ```bash
-history > history.txt
+history > ~/history.txt
 ```
 
 
