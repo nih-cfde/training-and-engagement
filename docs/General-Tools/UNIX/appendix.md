@@ -13,7 +13,6 @@ ls
 ls --help
 ls -l books
 ls -l MiSeq
-ls -lh MiSeq
 ls -lh *
 
 cd books
