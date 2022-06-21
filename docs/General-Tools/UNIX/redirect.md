@@ -4,7 +4,7 @@ title: Redirect
 
 In this section, we will explore redirecting, appending, piping, and looping with `>`, `>>`,  `|`, and `for`.
 
-If you completed the last challenge, you saw that the **images/** directory contains a file called **MiSeq-readcount-Mothur.png**. This image is a screenshot from the [Mauther software tutorial](https://mothur.org/wiki/miseq_sop/) showing the count or number of reads for each sample. 
+If you completed the last challenge, you saw that the **images/** directory contains a file called **MiSeq-readcount-Mothur.png**. This image is a screenshot from the [Mothur software tutorial](https://mothur.org/wiki/miseq_sop/) showing the count or number of reads for each sample. 
 
 ![](https://hackmd.io/_uploads/HyrJqfBTF.png)
 
@@ -33,36 +33,36 @@ However, this number is too large. In fact, it is 4 times larger than the number
 
 By default, many UNIX commands like `cat` send output to something called
 standard out, or "stdout". This is a catch-all phrase for "the basic
-place we send regular output." (There's also standard error, or "stderr",
+place we send regular output." There are also standard error, or "stderr",
 which is where errors are printed; and standard input, or "stdin", which
-is where input comes from.)
+is where input comes from.
 
 Much of the power of the UNIX command line comes from working with
-stdout output, and if you work with UNIX a lot, you'll see characters
+stdout output, and if you work with UNIX a lot, you will see characters
 like the `>` (redirect), `>>` (append) , and `|` (pipe) thrown around. These
 are redirection commands that say, respectively, "send stdout to a new
 file", "append stdout to an existing file", and "send stdout from one
-program to another program's stdin. If you know you want to save an output file, you can use the redirect symbol `>`. 
+program to another program's stdin". If you know you want to save an output file, you can use the redirect symbol `>`. 
 Note, if you want to save a file in a different directory, that directory must exist.
 
 
 ### `|`
 
-Let's now use grep to match the first line, which starts with "@M00967", of all the R1 files then pipe the output to wc and count the number of liens. 
+Let's now use `grep` to match the first line, which starts with "@M00967", of all the R1 files then `pipe` the output to `wc` and count the number of lines. 
 
 ```
-head -n 1 *.fatsq
+head -n 1 *.fastq
 grep "^@M00967" *R1*.fastq | wc -l
 ```
 
-The answer, 152883, matches the authors. Nice. Also, we just scanned many large files very quickly to confirm a finding. 
+The answer, 152883, matches the authors'. Nice. Also, we just scanned many large files very quickly to confirm a finding. 
 
 ```
 152883
 
 ```
 
-You probably don't want to read all the lines that were matched, but piping the output to head is a nice way to view the first 10 lines. 
+You probably do not want to read all the lines that were matched, but piping the output to head is a nice way to view the first 10 lines. 
 
 ```
 grep "^@M00967" *R1*.fastq  | head
@@ -137,41 +137,41 @@ Mock_S280_L001_R1_001.fastq
 
 === "Challenge"
 
-  Which eBook contains the most lines that start with "The"?
+     Which eBook contains the most lines that start with "The"?
 
 === "Hint"
 
-  The following for loop will reveal that 269 lines of A Tale of Two Cities start with The.
+    The following for loop will reveal that 269 lines of A Tale of Two Cities start with The.
 
-  ```
-  cd ~/books
-  for book in *.txt
-  do
-  echo $book
-  grep -w "^The" $book | wc -l
-  done
-  ```
+    ```
+    cd ~/books
+    for book in *.txt
+    do
+    echo $book
+    grep -w "^The" $book | wc -l
+    done
+    ```
   
-  ```
-  Alice_in_wonderland.txt
-  69
-  A-tale-of-two-cities.txt
-  269
-  book.txt
-  269
-  PeterPan.txt
-  60
-  WizardOfOz.txt
-  123
-  ```
+    ```
+    Alice_in_wonderland.txt
+    69
+    A-tale-of-two-cities.txt
+    269
+    book.txt
+    269
+    PeterPan.txt
+    60
+    WizardOfOz.txt
+    123
+    ```
 
 
 ### `history`
 
-This lesson focused on file and directory exploration because that's
+This lesson focused on file and directory exploration because that is
 something everyone needs to know, and all these commands will work on
 pretty much any computer that is running a UNIX compatible shell (including
-Mac OS X and Windows Subsystem for Linux). 
+Mac OSX and Windows Subsystem for Linux). 
 
 We have shown you multiple options for editing and working with text files. These tools may seem confusing at first, but they will become second nature if you use them regularly.
 
@@ -184,7 +184,7 @@ history
 
 ### `>`
 
-You can redirect the output from the screen to a file using `>`. Note that `>` will overright existing conent, but `>>` will append. 
+You can redirect the output from the screen to a file using `>`. Note that `>` will overwrite existing content, but `>>` will append. 
 
 ```bash
 history > ~/history.txt
