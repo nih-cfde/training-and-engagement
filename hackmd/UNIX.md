@@ -20,12 +20,10 @@
 
 #### Lesson Overview  
 
-This lesson introduces the UNIX command line to scientists and clinicians who need to use cloud-based and remote computers for basic and biomedical research. 
-
-These commands used in today's workshop are commonly used by practitioners across disciplines. By practicing the commands, you will gain familiarity with the command line and confidence as a programmer. These commands can be used on a local or remote computer. We hope that you notice an improvement in the speed and reproducibility of your bioinformatics workflow. 
+This lesson introduces the UNIX command line to scientists and clinicians who need to use cloud-based and remote computers for basic and biomedical research. The commands used in today's workshop are commonly used by practitioners across disciplines. By practicing the commands, you will gain familiarity with the command line and confidence as a programmer. These commands can be used on a local or remote computer. We hope that you notice an improvement in the speed and reproducibility of your bioinformatics workflow.
 
 :::success
-#### Today's Learning Goals
+#### In this workshop, you will learn to
 
 * Understand basic UNIX command structure 
 * Navigate through hierarchical directory structures
@@ -82,16 +80,17 @@ During this lesson, we use UNIX commands to answer questions following motivatin
 
 ---
 
-## 2. Navigating with `pwd`, `ls`, and `cd`
+## 2. Navigate 
 
 UNIX commands are like sentences that can be very simple or complex. The simplest commands consist of only the command name. Many require the name of a file or directory and allow specially formatted arguments, known as flags or options, which modify the default behavior of the program. The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows. The ease of getting things done via the shell will increase with your exposure to the program.
 
-
-We should note that _folders_ are called **directories** at the command line. For all intents and purposes, they can be used interchangeably, but if you'd like more information please read about ["the folder metaphor"](https://en.wikipedia.org/wiki/Directory_%28computing%29#Folder_metaphor).
+We should note that _folders_ are called **directories** at the command line. For all intents and purposes, they can be used interchangeably, but if you would like more information please read about ["the folder metaphor"](https://en.wikipedia.org/wiki/Directory_%28computing%29#Folder_metaphor).
 
 This Binder comes preloaded with data provided by your instructors.  _If you want to do these exercises locally, on your own computer, you can [download the data here](https://s3.us-west-1.amazonaws.com/dib-training.ucdavis.edu/shell-data2.zip)._
 
 The commands `pwd` and `ls` are two simple commands that can be used to answer the two commonly asked questions "where am I?" and "what files are here?". We will use these frequently through the next sections.
+
+### `pwd`
 
 To answer the question "where am I?", we can use the **print working directory** or `pwd` command to see what directory we are currently located in. 
 
@@ -113,6 +112,8 @@ Who or what is `Jovyan`?
 Who or what is `Jovyan`? According to [Project Juypter](https://jupyter.readthedocs.io/en/latest/community/content-community.html#what-is-a-jovyan), the creators of the binder service, the word “Jovian” describes several planets that share Jupiter-like properties. Much like the planet Jupiter and our solar system, the Jupyter community is large, distributed, and nebulous, so the word "Jovyan" is used to describe members of the community. Thus, the name of the User for this remote computer is "jovyan". 
 :::
 
+### `ls`
+
 The **list** or `ls` command is a simple yet powerful command that is used to list the contents of your computer. It can be executed with or without optional flags and directories or files. Let's look at the contents in our working directory by using the `ls`.
 
 ```
@@ -122,8 +123,8 @@ ls
 We can see the following files:
 
 ```
-books          images  README.md             seattle
-CFDE-logo.png  MiSeq   rstudio-terminal.png  southpark
+books  CFDE-logo.png  GTEx  images  MiSeq  README.md  rstudio-console.png  rstudio-terminal.png  seattle
+
 ```
 
 If we want more information about the files, such as the date they were created and their file size, we can add "flags" `-l` for long listing format.
@@ -133,14 +134,15 @@ ls -l
 ```
 
 ```
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 books
--rw-r--r-- 1 jovyan jovyan  71154 Jan 18 21:13 CFDE-logo.png
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 images
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 MiSeq
--rw-r--r-- 1 jovyan jovyan   2089 Jan 18 21:13 README.md
--rw-r--r-- 1 jovyan jovyan 188705 Jan 18 21:13 rstudio-terminal.png
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 seattle
-drwxr-xr-x 2 jovyan jovyan   4096 Jan 18 21:13 southpark
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 books
+-rw-r--r-- 1 jovyan jovyan  71154 Jun  7 04:36 CFDE-logo.png
+drwxr-xr-x 1 jovyan jovyan   4096 Jun  7 04:36 GTEx
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 images
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 MiSeq
+-rw-r--r-- 1 jovyan jovyan   2679 Jun  7 04:37 README.md
+-rw-r--r-- 1 jovyan jovyan 239942 Jun  7 04:37 rstudio-console.png
+-rw-r--r-- 1 jovyan jovyan 188705 Jun  7 04:37 rstudio-terminal.png
+drwxr-xr-x 2 jovyan jovyan   4096 Jun  7 04:37 seattle
 ```
 
 Flags (sometimes called options) allow us to finely control the behavior of the command. But how did we know to add `-l` after ls? The [`ls` manual ](https://man7.org/linux/man-pages/man1/ls.1.html) describes the command and all its options in detail. Like most commands, you can type the command followed `--help` to view the manual in your terminal.
@@ -167,15 +169,17 @@ You can use multiple flags, wildcards, and specify directories to modify the beh
 
 :::
 
-Now we have seen how to list the contents of folders on our computers and what is located in the directory we are presently in. But some of the beauty of the shell is that we can perform activities in locations that we are not currently in. To do this we can either use an absolute path or a relative path. A **relative path** is the path to another directory from the one you are currently in. An **absolute path** starts from the root and ends in the apropriate subdirectory. 
+### `cd`
+
+Now we have seen how to list the contents of folders on our computers and what is located in the directory we are presently in. But some of the beauty of the shell is that we can perform activities in locations that we are not currently in. To do this we can either use an absolute path or a relative path. A **relative path** is the path to another directory from the one you are currently in. An **absolute path** starts from the root and ends in the appropriate subdirectory. 
 
 To move from one directory to the other, we use the `cd` command to **change directories**. We can use the `pwd` and/or `ls` commands to confirm that we did indeed change directories.  Because you can change directories using either the relative or absolute path, there are multiple ways to successfully move up or down in the directory hierarchy.
 
 Let's return to our home directory using the `cd` command and a relative path, then print the working directory to confirm.  
  
-Let's practice using the cd and ls commands to explore files in different directories.  
+Let's practice using the `cd` and `ls` commands to explore files in different directories.  
 
-Because books/ is in our working directory, we can navigate there with a relative path. What files are in the `books` directory and how large are they?
+Because `books/` is in our working directory, we can navigate there with a relative path. What files are in the `books` directory and how large are they?
 
 ```
 cd books/
@@ -231,34 +235,17 @@ ls -lhS *.fastq
 ```
 
 ```
--rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan  11M Jan 18 21:13 F3D2_S190_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 9.2M Jan 18 21:13 F3D147_S213_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 9.2M Jan 18 21:13 F3D147_S213_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 7.1M Jan 18 21:13 F3D149_S215_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 7.0M Jan 18 21:13 F3D149_S215_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 6.7M Jan 18 21:13 F3D148_S214_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 6.7M Jan 18 21:13 F3D148_S214_L001_R2_001.fastq
--rwxr-xr-x 1 jovyan jovyan 4.3M Jan 18 21:13 F3D6_S194_L001_R1_001.fastq
--rwxr-xr-x 1 jovyan jovyan 4.3M Jan 18 21:13 F3D6_S194_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan  11M Jun  7 04:37 F3D2_S190_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan  11M Jun  7 04:37 F3D2_S190_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 9.2M Jun  7 04:37 F3D147_S213_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 9.2M Jun  7 04:37 F3D147_S213_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 7.1M Jun  7 04:37 F3D149_S215_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 7.0M Jun  7 04:37 F3D149_S215_L001_R2_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 6.7M Jun  7 04:37 F3D148_S214_L001_R1_001.fastq
+-rwxr-xr-x 1 jovyan jovyan 6.7M Jun  7 04:37 F3D148_S214_L001_R2_001.fastq
+...
 ```
 
-How large are all the files in the `southpark` directory? After navigating to the `southpark` , we can use `ls` with the`-l` and `-h` options to use a "long listing" format with the filesize printed in a "human-readable" format using Megabytes, Kilobytes and Gigabytes instead of displaying the file size in bytes. 
-
-```
-cd ../southpark
-pwd
-ls -l -h 
-```
-
-We will see the following:
-
-```
--rw-r--r--@ 1 jovyan  jovyan   1.8M Jan 18 21:13 All-seasons-clean.csv.gz
--rw-r--r--  1 jovyan  jovyan   1.8M Jan 18 21:13 All-seasons.csv.gz
--rw-r--r--  1 jovyan  jovyan   252B Jan 18 21:13 LICENSE.md
--rw-r--r--  1 jovyan  jovyan   603B Jan 18 21:13 README.md
-```
 
 :::success
 #### Key Points
@@ -279,13 +266,13 @@ We will see the following:
 
 :::
 
-## 3. Reading files with `head`, `tail`, `cat`, and `less`
+## 3. Read 
 
-Now that we know what files exist on our computer, it is time to look at the contents of the file. There are multiple ways to look at the contents of a file. 
+### `head`, `tail`, `cat`, and `less`
 
-The `cat` command prints the entirety of a file to the stdout of our computer. `head` prints, by default the first 10 lines of a file, and `tail` prints the last 10 lines of a file by default. 
+Now that we know what files exist on our computer, it's time to look at the contents of the file. There are multiple ways to look at the contents of a file. 
 
-The `less` command provides a safe way of looking at the contents of a file without the ability to change it. Use the up and down arrows to scroll through the file. Type `q` to exit the lesson program
+The `cat` command prints the entirety of a file to the stdout of our computer. We can scroll through files using the `less` command. Less is a safe way of looking at the contents of a file without the ability to change it. `head` prints, by default, the first 10 lines of a file and `tail` prints the last 10 lines.
 
 All four of the commands use the same syntax:
 
@@ -299,43 +286,63 @@ less [filename]
 :::info
 
 #### Tab completion
-You can use TAB to do filename completion, so if you type `cat R` and then press your Tab key once, it will autocomplete if there is a unique match. If there is more than one match, the first Tab will do nothing, and the second will show all the possible matches.
+You can use TAB to do filename completion, so if you type `cat R` and then press your TAB key once, it will autocomplete if there is a unique match. If there is more than one match, the first TAB will do nothing, and the second will show all the possible matches.
 :::
 
-Let's navigate to the `books` directory. 
+
+Let's navigate to the `books` directory and use the `head` command to view the `README.md` file. 
 
 ```
 cd ~/books/
+head README.md
 ```
 
-Now we can view the file with `head`, `cat`, `less`, and `tail`.
+You should see an output that looks like this. The `README.md` file is written in [Markdown](https://en.wikipedia.org/wiki/Markdown). To learn more about Markdown syntax, read this excellent [Markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+``` 
+# Books
+
+These books were downloaded from [Project Gutenberg](https://www.gutenberg.org/ebooks/) using the following commands. 
+
+curl https://www.gutenberg.org/files/98/98-0.txt -o book.txt
+curl https://www.gutenberg.org/files/98/98-0.txt -o A-tale-of-two-cities.txt
+curl https://www.gutenberg.org/files/11/11-0.txt -o Alice_in_wonderland.txt
+curl https://www.gutenberg.org/files/16/16-0.txt -o PeterPan.txt
+curl https://www.gutenberg.org/files/55/55-0.txt -o WizardOfOz.txt
+```
+
+
+Now we can view the file with `head`, `cat`, or `less` and `tail`. 
 
 ```
 head book.txt
-tail book.txt
 cat book.txt
 less book.txt
+tail book.txt
 ```
-We can see there are a lot more books, and we can look at the first few lines of all the .txt files with the *. 
+
+
+We can see there are several more books in the directory, and we can look at the first few lines of all the txt files with the *. 
 
 ```
 head *.txt
 ```
 
-Notice that there is one book that is compressed. We can uncompress it with the command `gunzip`. The `-k` option will keep the original file. 
+### `gunzip`
+
+Notice, there is one book that is compressed. We can uncompress it with the command `gunzip`.
 
 ```
-gunzip -k WizardOfOz.txt.gz
+gunzip WizardOfOz.txt.gz
 ```
 
-Now we can return the previous command and also see the first lines of The Wizard of Oz. 
+Now the `ls` command will show that the `WizardOfOz.txt.gz` has been replaced with the unzipped `WizardOfOz.txt` file. `gunzip` also has a number of flags you can use including `-k` which will allow you to unzip the file and keep the original.
 
-```
-head *.txt
-```
+
 
 ::: success
-#### Key UNIX commands for viewing files
+#### Key points
+
 | Command [OPTION] | Description |
 | -------- | -------- | 
 |`head [filename]` | print first 10 lines of  `FILENAME` | 
@@ -345,9 +352,9 @@ head *.txt
 | `gzip -k [filename]` | compress a file and keep the original |
 :::
 
-## 4. Working with files and directories using `cp`, `gunzip`, `mv`, `mkdir`, and `curl` 
+## 4. Work
 
-We are used to copying and moving files using a GUI. These functions can be also carried out at the command line.
+We are quite used to working with files using a graphical user interface (or GUI). In this section, you will learn how to copy, move, create, and delete directories and files.
 
 The `cp` and `mv` commands can be used to copy and move (or rename) files and directories respectively. For both commands, you must specify the old and new names. Specifying the path is necessary if you want to move files out of the current working directory.
 
@@ -356,25 +363,22 @@ cp [original-filename] [copy-filename]
 mv [original-filename] [new-filename]
 ```
 
-Let's make a copy of some raw data before we start modifying it. 
+### `cp` 
+
+Let's make a copy of some raw data before we start modifying it. We will use `ls` to check our work.
 
 ```
 cp book.txt book-copy.txt
 ls
 ```
 
-The `mv` command can be used to either move files to a new location or to rename them (which is essentially moving the contents from the old filename to the new file name. Let's use the `mv` command to rename one of the books.
+###  `mv`
+
+The `mv` command can be used to either move files to a new location or to rename them (which is essentially moving the contents from the old filename to the new file name. Let's use the `mv` command to rename the copied and compressed file back to the original name.
 
 ```
-mv A-tale-of-two-cities.txt Two-Cities.txt
-```
+mv book-copy.txt book-2cities.txt
 
-If you want to move your book-copy.txt to a new folder, you first have to create that folder using the command `mkdir`. Then you move the copy. We can use `ls *` to list files in this directory and subdirectories.
-
-```
-mkdir book-copies
-mv book-copy.txt book-copies
-ls *
 ```
 
 Take care when naming and renaming files. File names should not contain spaces or slashes. The use of capital letters (e.g. CamelCase) and underscores (e.g. snake_case) are often preferred over periods or spaces. It is good practice to keep track of where you got files. The commands used to get these books are stored in the `README.md`. The `README.md`  file is written in [Markdown](https://en.wikipedia.org/wiki/Markdown). (To learn more about Markdown syntax, read this excellent [Markdown guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).)
@@ -411,48 +415,30 @@ Now you know how to copy and move files, but you may encounter errors if you try
 What happens when you run the following commands?
 
 1. `mkdir data results images/`
-2. `mkdir data/results/images`
-3. `mkdir -p data/results/images`
+2. `mkdir -p data/results/images`
 
 :::spoiler Answer
 
-1. 3 subfolders (data, results, and images) all created in the working directory. 
-2. An error message (`mkdir: cannot create directory ‘data/results/images’: No such file or directory`) appears because the results directory does not exist
-3. The `-p` option tells `mkdir` to create parent directories if they do not already exist, so the subdirectory results and its subdirectory, images, are successfully created.
+The first line creates two directories, results and images. The second line also create two directories, but they are nested with the parent directory data. 
+The `-p` argument creates parent directories if they do not already exist.
 
 :::
 
-::: warning
-Now, imagine you could create the perfect directory hierarchy for a project. What would it look like? Type a command or series of commands to create your ideal directory structure. Share with your group. 
 
-:::spoiler Hint
+### `rmdir` 
 
-An example project directory could be set up like this:
+If you created some files or directories that you do not want, you can remove them with the `rm` and `rmdir` commands. 
+`rmdir` will only remove empty directories, but `rm -r` will remove recursively.
 
-```
-mkdir awesome-project/
-cd awesome/
-mkdir -p data/ results/2020/ results/2021 images/ notes/
-ls *
-```
-:::
-
-::: warning
-If you created some files or directories that you don't want, you can remove them with the `rm` and `rmdir` commands. How could you remove `data/results/`
-
-:::spoiler A solutions
 
 ```
 rmdir data/results/images
 rmdir data/results
 ```
 
-or use the `-r` option to "recursively" delete all the contents.
-
 ```
 rm -r data/results
 ```
-:::
 
 :::success
 
@@ -464,10 +450,9 @@ rm -r data/results
 |rm [path] | removes (deletes) a file |
 |mkdir -p [path/to/files] | creates a hierarchy of directories |
 |rmdir [path] | removes an empty  directory |
-|curl [webaddress] -o [filename] | downloads from URL named [filename]
 :::
 
-## 5. Finding things with `grep` and `find`
+## 5. Find
 
 A big part of data science is making sure what you _expect_ in a particular file is what you _have_ in that file. This is fairly easy when your files are small but is challenging when the files are much larger than your screen. 
 
@@ -545,18 +530,20 @@ WizardOfOz.txt:Chapter I
 
 To explore this topic in more detail and in a biological context, navigate to the `data/MiSeq/` directory.
 
-
 ```
 cd ~/MiSeq
 ls
 ```
 
-This directory contains multiple [**FASTQ** files](https://en.wikipedia.org/wiki/FASTQ_format)). A FASTQ file normally uses four lines per sequence.
+##### FASTQ format
+
+This directory contains multiple [**FASTQ** files](https://en.wikipedia.org/wiki/FASTQ_format). A FASTQ file normally uses four lines per sequence.
 
 * Line 1 begins with a '@' character and is followed by a sequence identifier and an optional description (like a FASTA title line).
 * Line 2 is the raw sequence letters.
 * Line 3 begins with a '+' character and is optionally followed by the same sequence identifier (and any description) again.
-* Line 4 encodes the quality values for the sequence in Line 2 and must contain the same number of symbols as letters in the sequence.
+* Line 4 encodes the quality values for the sequence in Line 2, and must contain the same number of symbols as letters in the sequence.
+
 
 A FASTQ file containing a single sequence might look like this:
 
@@ -570,9 +557,7 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 ```
 :::
 
-We can use the `cat` command to print .fastq files to the screen, but thousands of lines of text would crowd your screen. Instead, let's use the `head` and `less` command to view a portion of a file.  By default, they print the first 10 lines. We can use the `-n` flag to specify how many lines to print. Because each entry of a .fastq file consists of 4 lines, printing the first 4 and last 4 lines of the file will confirm that the file is properly formatted.
-
-You can copy the file name and paste it into the console or you can type and use tab complete to pick a particular file. 
+We can use the `cat` command to print fastq files to the screen, but thousands of lines of text would crowd your screen. Instead, let's use the `head` command to view the first 8 lines file. You can copy the file name and paste it into the console or you can type and use tab complete to pick a particular file. 
 
 ```
 head -n 4 F3D0_S188_L001_R1_001.fastq
@@ -596,6 +581,8 @@ TACGGAGGATGCGAGCGTTATCCGGATTTATTGGGTTTAAAGGGTGCGTAGGCGGGATGCCAAGTCAGCGGTAAAAAAGC
 3AAA?AADAFFFCGCGGGFEGCHA?EG?FHHGHGHGGEFHGFHGHF?EFA?EBFGC?EGEFHHHHHH3EEGEEGHFH@E0BCA/CGFHHHDGGGFFF/@DGGDGFHHHHBGH.<<AGGHHHHGHEGE?-ABGF;FFGGDGGGGGGG.CCFEFFF/9;9BFFFFFFFFFFFFFFFFFFFFFFFFFFBDFFFFFFFFCBAF9.AFF/FFAAFFADAFFEFFFFFBDDFFFF.DFFFFFFDDFA;BFFDEFFFF
 ```
 
+### FASTQ format
+
 **FASTQ** files should not be confused with **FASTA** files. FASTQ files contain information about the quality of the sequence, but FASTA files only contain the sequence and an identifier.
 
 ::: info
@@ -613,6 +600,7 @@ ATIGENLVVRRFATLKAGANGVVNGYIHTNGRVGVVIAAACDSAEVASKSRDLLRQICMH
 :::
 
 Let's look at a synthetic FASTA file. Because each entry of a .fasta file consists of 2 lines, let's modify head and tail to look at the first and last two lines of HMP_MOCK.v35.fasta.
+
 ```
 head -n 2 HMP_MOCK.v35.fasta 
 ```
@@ -631,12 +619,10 @@ tail -n 2 HMP_MOCK.v35.fasta
 TAGGGAATCTTCGGCAATGGACGGAAGTCTGACCGAGCAACGCCGCGTGAGTGAAGAAGGTTTTCGGATCGTAAAGCTCTGTTGTAAGAGAAGAACGAGTGTGAGAGTGGAAAGTTCACACTGTGACGGTATCTTACCAGAAAGGGACGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGTCCCGAGCGTTGTCCGGATTTATTGGGCGTAAAGCGAGCGCAGGCGGTTAGATAAGTCTGAAGTTAAAGGCTGTGGCTTAACCATAGTAGGCTTTGGAAACTGTTTAACTTGAGTGCAAGAGGGGAGAGTGGAATTCCATGTGTAGCGGTGAAATGCGTAGATATATGGAGGAACACCGGTGGCGAAAGCGGCTCTCTGGCTTGTAACTGACGCTGAGGCTCGAAAGCGTGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCACGCTGTAAACGATGAGTGCTAGGTGTTAGACCCTTTCCGGGGTTTAGTGCCGTAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGACC
 ```
 
-::: warning 
-#### Challenge: Wilcards
+### Wildcards 
 
-Sometimes you know a file or directory exists, but you can't find it. Sometimes you want to find many files with similar properties. This is where the wildcard (`*`) comes in handy.  What do the following commands do?
+Sometimes you know a file or directory exists, but you can't find it. Sometimes you want to find many files with similar properties. This is where the wildcard (`*`) comes in handy. What do the following commands do?
 
- 
 1. `ls *` 
 1. `ls F3D*`
 1. `ls *fasta`
@@ -649,11 +635,13 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 
 :::
 
+### `grep`
+
 A lot of the time we want to know if a file contains what we expect. A useful thing to do is to be able to **search the contents of files** for a particular string of characters you would like to find.  We can use the file pattern searcher `grep` to find things.
 
-The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
+The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million-line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
 
-Let's imagine you would like to find the sequence `CATTAG` in your MiSeq files. We can also use the **wildcard** regular expression to search `CATTAG` in all of the .fastq files located in our current working directory:
+Let's say you'd like to find the sequence `CATTAG` in your MiSeq files. We can use the function `grep` to search for  `CATTAG` in one or all of the fastq files located in our current working directory.
 
 ```
 grep CATTAG F3D0_S188_L001_R2_001.fastq
@@ -702,6 +690,8 @@ This will print the name and sequence for every entry. The first is shown here.
 TGGGGAATATTGGACAATGGGGGGAACCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGCCTTATGGTTGTAAAGCACTTTAAGCGAGGAGGAGGCTACTTTAGTTAATACCTAGAGATAGTGGACGTTACTCGCAGAATAAGCACCGGCTAACTCTGTGCCAGCAGCCGCGGTAATACAGAGGGTGCGAGCGTTAATCGGATTTACTGGGCGTAAAGCGTGCGTAGGCGGCTTATTAAGTCGGATGTGAAATCCCCGAGCTTAACTTGGGAATTGCATTCGATACTGGTGAGCTAGAGTATGGGAGAGGATGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGATGGCGAAGGCAGCCATCTGGCCTAATACTGACGCTGAGGTACGAAAGCATGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGATGTCTACTAGCCGTTGGGGCCTTTGAGGCTTTAGTGGCGCAGCTAACGCGATAAGTAGACCGCCTGGGGAGTACGGTC
 
 ```
+
+### `find`
 
 As you have seen, `grep` is very useful for finding things within files, and the `*` or wildcard is useful for listings files that match a partial pattern. But, how do we find files when we don't know their location? The `find` command.
 
