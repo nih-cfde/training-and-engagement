@@ -87,7 +87,7 @@ history
 You can redirect the output from the screen to a file using `>`. Note that `>` will overright existing conent, but `>>` will append. 
 
 ```bash
-history > ~/history-2021-nov-17.txt
+history > history.txt
 ```
 
 ### Key points 
