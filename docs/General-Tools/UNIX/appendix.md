@@ -104,7 +104,6 @@ done
 
 
 cd
-history
 
 ```
 
