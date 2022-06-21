@@ -80,7 +80,7 @@ done
 
 history
 
-history > ~/history-2021-nov-17.txt
+history > history.txt
 
 ```
 
