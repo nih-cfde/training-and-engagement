@@ -8,7 +8,6 @@ All the code from this lesson in one chunk.
 clear
 PS1='$ '
 clear
-PS1="\w $ "
 
 ls
 ls --help
