@@ -133,16 +133,14 @@ Mock_S280_L001_R1_001.fastq
 4779
 ```
 
+=== "Challenge"  
 
+    Which eBook contains the most lines that start with "The"?
 
-=== "Challenge"
-
-     Which eBook contains the most lines that start with "The"?
-
-=== "Hint"
+=== "Hint"  
 
     The following for loop will reveal that 269 lines of A Tale of Two Cities start with The.
-
+    
     ```
     cd ~/books
     for book in *.txt
