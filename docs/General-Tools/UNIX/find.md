@@ -151,7 +151,7 @@ Use `grep --help` to search for `grep` options related to line number.
 In addition to searching for nucleotide sequences, you may want to search for information in the first line of a .fastq or .fasta file. The `^` (shift + 6) can be used to specify "the beginning of the line".
 
 ```
-grep "^>" *fasta
+grep "^>" *.fasta
 
 ```
 
@@ -170,7 +170,7 @@ This will print the name associated with a given sequence in the searched files.
 We can also print the line before or after the line that matches a pattern with `-B 1` `-A 1`, respectively.
 
 ```
-grep -A 1 "^>" *fasta
+grep -A 1 "^>" *.fasta
 
 ```
 
