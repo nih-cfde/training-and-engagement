@@ -58,12 +58,12 @@ find . -name "*.fasta"
 cd ~/MiSeq
 wc -l *.fastq
 
-head -n 1 *.fatsq
+head -n 1 *.fastq
 grep "^@M00967" *R1*.fastq | wc -l
 grep "^@M00967" *R1*.fastq  | head
 
 grep "^@M00967" F3D0_S188_L001_R1_001.fastq | wc -l
-grep "^@M00967" F3D0_S188_L001_R1_001.fastq | wc -l
+grep "^@M00967" F3D0_S188_L001_R2_001.fastq | wc -l
 grep "^@M00967" F3D142_S208_L001_R1_001.fastq | wc -l
 
 for file in *R1*.fastq
