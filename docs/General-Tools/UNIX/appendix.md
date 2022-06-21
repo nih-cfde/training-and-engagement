@@ -55,6 +55,7 @@ grep -A 1 "^>" *.fasta
 cd ~
 find . -name "*.fasta"
 
+cd ~/MiSeq
 wc -l *.fastq
 
 head -n 1 *.fatsq
