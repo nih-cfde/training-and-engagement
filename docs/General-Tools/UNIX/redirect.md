@@ -26,7 +26,7 @@ grep CATTAG *.fastq > results/files-with-CATTAG.txt
 
 ### `|`
 
-Let's pipe (`|`) the output of a grep search to the command head to only show the first 10 lines. This is very handy when you only want to view snapshot of the data. 
+Let's pipe (`|`) the output of a grep search to the command head to only show the first 10 lines. This is very handy when you only want to view a snapshot of the data. 
 
 
 ```bash
