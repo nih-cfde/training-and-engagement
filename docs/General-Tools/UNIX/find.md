@@ -35,7 +35,7 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 !''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
 ```
 
-We can use the `cat` command to print fastq files to the screen, but thousands of lines of text would crowd your screen. Instead, let's use the `head` command to view the first 8 lines file. You can copy the file name and paste it into the console or you can type and use tab complete to pick a particular file. 
+We can use the `cat` command to print fastq files to the screen, but thousands of lines of text would crowd your screen. Instead, we will use the `head` command to view the first 8 lines of the file. You can copy the file name below and paste it into the console or you can type and use tab complete to pick a particular file. 
 
 ```bash
 head -n 4 F3D0_S188_L001_R1_001.fastq
@@ -103,12 +103,12 @@ TGGGGAATATTGGACAATGGGGGGAACCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGCCTTATGGTTGTAAAGCACT
 TGGGGAATATTGCACAATGGGCGAAAGCCTGATGCAGCGACGCCGCGTGAGGGATGGAGGCCTTCGGGTTGTAAACCTCTTTCGCTCATGGTCAAGCCGCAACTCAAGGTTGTGGTGAGGGTAGTGGGTAAAGAAGCGCCGGCTAACTACGTGCCAGCAGCCGCGGTAATACGTAGGGCGCGAGCGTTGTCCGGAATTATTGGGCGTAAAGGGCTTGTAGGCGGTTGGTCGCGTCTGCCGTGAAATCCTCTGGCTTAACTGGGGGCGTGCGGTGGGTACGGGCTGACTTGAGTGCGGTAGGGGAGACTGGAACTCCTGGTGTAGCGGTGGAATGCGCAGATATCAGGAAGAACACCGGTGGCGAAGGCGGGTCTCTGGGCCGTTACTGACGCTGAGGAGCGAAAGCGTGGGGAGCGAACAGGATTAGATACCCTGGTAGTCCACGCTGTAAACGTTGGGCACTAGGTGTGGGGGCCACCCGTGGTTTCTGCGCCGTAGCTAACGCTTTAAGTGCCCCGCCTGGGGAGTACGGCC
 ```
 
-FASTQ and FASTA files are often used in combination to map reads to a genome or transcription. You've seen three ways to read large files. Next, we will learn how to use and manipulate the files.  
+FASTQ and FASTA files are often used in combination to map reads to a genome or transcription. You have seen three ways to read large files. Next, we will learn how to use and manipulate the files.  
 
 
 ### Wildcards
 
-Sometimes you know a file or directory exists, but you can't find it. Sometimes you want to find many files with similar properties. This is where the wildcard (`*`) comes in handy.  What do the following commands do?
+Sometimes you know a file or directory exists, but you cannot find it. Sometimes you want to find many files with similar properties. This is where the wildcard (`*`) comes in handy.  What do the following commands do?
 
  
 1. `ls *` 
@@ -126,11 +126,11 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 
 ### `grep`
 
-A lot of the time we want to know if a file contains what we expect. A useful thing to do is to be able to **search the contents of files** for a particular string of characters you would like to find.  We can use the file pattern searcher `grep` to find things.
+A lot of the time we want to know if a file contains what we expect. A useful thing to do is **search the contents of files** for a particular string of characters you would like to find. We can use the file pattern searcher `grep` to find things.
 
-The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million-line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
+The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million-line file using `less` would take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
 
-Let's say you'd like to find the sequence `CATTAG` in your MiSeq files. We can use the function `grep` to search for  `CATTAG` in one or all of the fastq files located in our current working directory.
+Let's say you would like to find the sequence `CATTAG` in your MiSeq files. We can use the function `grep` to search for  `CATTAG` in one or all of the fastq files located in our current working directory.
 
 ```
 grep CATTAG F3D0_S188_L001_R2_001.fastq
@@ -140,18 +140,18 @@ grep CATTAG *.fastq
 
 === "Challenge"
 
-What line does `CATTAG` occur on in `F3D141_S207_L001_R1_001.fastq`? 
+     What line does `CATTAG` occur on in `F3D141_S207_L001_R1_001.fastq`? 
 
 === "Hint"
 
-Use `grep --help` to search for `grep` options related to line number.
+     Use `grep --help` to search for `grep` options related to line number.
 `grep -n [filename]`` will print the line number.
 
 
 In addition to searching for nucleotide sequences, you may want to search for information in the first line of a .fastq or .fasta file. The `^` (shift + 6) can be used to specify "the beginning of the line".
 
 ```
-grep "^>" *.fasta
+grep "^>" *fasta
 
 ```
 
@@ -170,7 +170,7 @@ This will print the name associated with a given sequence in the searched files.
 We can also print the line before or after the line that matches a pattern with `-B 1` `-A 1`, respectively.
 
 ```
-grep -A 1 "^>" *.fasta
+grep -A 1 "^>" *fasta
 
 ```
 
@@ -184,16 +184,16 @@ TGGGGAATATTGGACAATGGGGGGAACCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGCCTTATGGTTGTAAAGCACT
 
 ### `find`
 
-As you have seen, `grep` is very useful for finding things within files, and the `*` or wildcard is useful for listings files that match a partial pattern. But, how do we find files when we don't know their location? The `find` command.
+As you have seen, `grep` is very useful for finding things within files, and the `*` or wildcard is useful for listing files that match a partial pattern. But, how do we find files when we do not know their location? The `find` command.
 
-Let's navigate back to our home directory and use `find` to command to look for .fasta files. Use the`-name` flag to specify that you are looking for a file with the name listed in double quotes. Use the `*` wildcard to only search for files with a specific extension.
+Let's navigate back to our home directory and use the `find` command to look for .fasta files. Use the `-name` flag to specify that you are looking for a file with the name listed in double quotes. Use the `*` wildcard to only search for files with a specific extension.
 
 ```
 cd ~
 find . -name "*.fasta"
 ```
 
-This reveals that .fasta file was found in both the books and the MiSeq directory.  
+This reveals that .fasta files were found in both the books and the MiSeq directories.  
 
 ```
 ./books/yeast.fasta
