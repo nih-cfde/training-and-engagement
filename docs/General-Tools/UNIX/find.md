@@ -145,7 +145,7 @@ grep CATTAG *.fastq
 === "Hint"
 
      Use `grep --help` to search for `grep` options related to line number.
-`grep -n [filename]`` will print the line number.
+     `grep -n [filename]` will print the line number.
 
 
 In addition to searching for nucleotide sequences, you may want to search for information in the first line of a .fastq or .fasta file. The `^` (shift + 6) can be used to specify "the beginning of the line".
