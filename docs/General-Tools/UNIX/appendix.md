@@ -105,7 +105,6 @@ done
 
 cd
 history
-history > history.txt
 
 ```
 
