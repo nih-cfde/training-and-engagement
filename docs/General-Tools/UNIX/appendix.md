@@ -41,7 +41,6 @@ wc -l *txt | sort
 wc -l *txt | sort -nr
 
 gunzip TheWonderfulWizardofOz.txt
-wc -l *txt | sort -nr
 
 rm book.txt
 mkdir results
