@@ -102,7 +102,6 @@ grep "^@M" $file | wc -l >> results/count.csv
 paste -d , results/samples.csv results/count.csv > results/read_count.csv
 done
 
-cd
 
 ```
 
