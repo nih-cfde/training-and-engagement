@@ -59,8 +59,6 @@ rmdir data/results/images
 rmdir data/results
 ```
 
-or 
-
 ```bash
 rm -r data/results
 ```
