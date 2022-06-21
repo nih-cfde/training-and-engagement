@@ -106,7 +106,7 @@ TGGGGAATATTGCACAATGGGCGAAAGCCTGATGCAGCGACGCCGCGTGAGGGATGGAGGCCTTCGGGTTGTAAACCTCT
 FASTQ and FASTA files are often used in combination to map reads to a genome or transcription. You've seen three ways to read large files. Next, we will learn how to use and manipulate the files.  
 
 
-## Wildcards
+### Wildcards
 
 Sometimes you know a file or directory exists, but you can't find it. Sometimes you want to find many files with similar properties. This is where the wildcard (`*`) comes in handy.  What do the following commands do?
 
@@ -119,8 +119,8 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 !!! spoiler
 
      1. `ls *` lists files in the working directory and 1 level down. 
-1. `ls MiSeq/F3D*` lists files in the data/MiSeq directory that start with "F3D".
-1. `ls MiSeq/*fasta` lists files in the data/MiSeq directory that end with "fasta".
+     1. `ls MiSeq/F3D*` lists files in the data/MiSeq directory that start with "F3D".
+     1. `ls MiSeq/*fasta` lists files in the data/MiSeq directory that end with "fasta".
 
 
 
@@ -133,7 +133,6 @@ The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We
 Let's say you'd like to find the sequence `CATTAG` in your MiSeq files. We can use the function `grep` to search for  `CATTAG` in one or all of the fastq files located in our current working directory.
 
 ```
-cd ../data/MiSeq/
 grep CATTAG F3D0_S188_L001_R2_001.fastq
 grep CATTAG *.fastq
 ```
@@ -149,20 +148,92 @@ Use `grep --help` to search for `grep` options related to line number.
 `grep -n [filename]`` will print the line number.
 
 
-### `wc`
+In addition to searching for nucleotide sequences, you may want to search for information in the first line of a .fastq or .fasta file. The `^` (shift + 6) can be used to specify "the beginning of the line".
 
-How many lines are in the file total? The word count (`wc`) command will give us that answer.
+```
+grep "^>" *fasta
 
-```bash
-wc F3D0_S188_L001_R2_001.fastq
 ```
 
-By default, `wc` prints the characters, words, and lines in a file. To extract just the line numbers, we use `wc -l`. We will use this more later. 
+This will print the name associated with a given sequence in the searched files. In this case, there is only one fasta file, so the name is not printed. 
 
-
-```bash
-wc -l F3D0_S188_L001_R2_001.fastq
 ```
+>A.baumannii.1
+>A.odontolyticus.1
+>B.cereus.1
+...
+>S.agalactiae.1
+>S.mutans.1
+>S.pneumoniae.1
+```
+
+We can also print the line before or after the line that matches a pattern with `-B 1` `-A 1`, respectively.
+
+```
+grep -A 1 "^>" *fasta
+
+```
+
+This will print the name and sequence for every entry. The first is shown here.
+
+```
+>A.baumannii.1
+TGGGGAATATTGGACAATGGGGGGAACCCTGATCCAGCCATGCCGCGTGTGTGAAGAAGGCCTTATGGTTGTAAAGCACTTTAAGCGAGGAGGAGGCTACTTTAGTTAATACCTAGAGATAGTGGACGTTACTCGCAGAATAAGCACCGGCTAACTCTGTGCCAGCAGCCGCGGTAATACAGAGGGTGCGAGCGTTAATCGGATTTACTGGGCGTAAAGCGTGCGTAGGCGGCTTATTAAGTCGGATGTGAAATCCCCGAGCTTAACTTGGGAATTGCATTCGATACTGGTGAGCTAGAGTATGGGAGAGGATGGTAGAATTCCAGGTGTAGCGGTGAAATGCGTAGAGATCTGGAGGAATACCGATGGCGAAGGCAGCCATCTGGCCTAATACTGACGCTGAGGTACGAAAGCATGGGGAGCAAACAGGATTAGATACCCTGGTAGTCCATGCCGTAAACGATGTCTACTAGCCGTTGGGGCCTTTGAGGCTTTAGTGGCGCAGCTAACGCGATAAGTAGACCGCCTGGGGAGTACGGTC
+
+```
+
+### `find`
+
+As you have seen, `grep` is very useful for finding things within files, and the `*` or wildcard is useful for listings files that match a partial pattern. But, how do we find files when we don't know their location? The `find` command.
+
+Let's navigate back to our home directory and use `find` to command to look for .fasta files. Use the`-name` flag to specify that you are looking for a file with the name listed in double quotes. Use the `*` wildcard to only search for files with a specific extension.
+
+```
+cd ~
+find . -name "*.fasta"
+```
+
+This reveals that .fasta file was found in both the books and the MiSeq directory.  
+
+```
+./books/yeast.fasta
+./MiSeq/HMP_MOCK.v35.fasta
+```
+
+
+=== "Challenge"
+
+     1. Which directories contain a `README.md` file? 
+     2. Which directories contain images?
+
+
+=== "Hint"
+
+     Use the commands:
+
+     ```
+     find . -name "README.md"
+     find . -name "*.png"
+     ```
+     to show the following README.md files 
+
+     ```
+     ./seattle/README.md
+     ./books/README.md
+     ./MiSeq/README.md
+     ./README.md
+     ./southpark/README.md
+     ```
+
+     and the following images.
+
+     ```
+     ./images/rstudio-binder-setup.png
+     ./images/MiSeq-readcount-Mothur.png
+     ./rstudio-terminal.png
+     ./CFDE-logo.png
+     ```
+
 
 
 ### Key points
@@ -171,6 +242,4 @@ wc -l F3D0_S188_L001_R2_001.fastq
 |-|-
 |`find [filename]` | finds files with specific properties that match patterns|
 | `grep [option] [filename]`  | selects lines in files that match patterns|
-| `wc` [filename] | will print the total characters, words, and lines in a file.
-
-
+|`find [path] [conditions]` | finds files with specific properties that match patterns|
