@@ -63,7 +63,7 @@ grep CATTAG $file | wc -l
 done
 ```
 
-If we cant to know which file these results came from, we can add an echo statement to echo the variable.
+If we want to know which file these results came from, we can add an echo statement to echo the variable.
 
 
 ```bash
