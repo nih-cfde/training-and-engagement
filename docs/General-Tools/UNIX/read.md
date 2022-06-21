@@ -7,7 +7,7 @@ title: Read
 
 Now that we know what files exist on our computer, it's time to look at the contents of the file. There are multiple ways to look at the contents of a file. 
 
-The `cat` command prints the entirety of a file to the stdout of our computer. We can scroll through files using the `less` command. Less is a safe way of looking at the contents of a file without the ability to change it. `head` prints, by default the first 10 lines of a file and `tail` prints the last 10 lines.
+The `cat` command prints the entirety of a file to the stdout of our computer. We can scroll through files using the `less` command. Less is a safe way of looking at the contents of a file without the ability to change it. `head` prints, by default, the first 10 lines of a file and `tail` prints the last 10 lines.
 
 
 All four of the commands use the same syntax:
