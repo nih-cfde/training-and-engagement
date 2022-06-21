@@ -128,7 +128,7 @@ Sometimes you know a file or directory exists, but you can't find it. Sometimes 
 
 A lot of the time we want to know if a file contains what we expect. A useful thing to do is to be able to **search the contents of files** for a particular string of characters you would like to find.  We can use the file pattern searcher `grep` to find things.
 
-The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
+The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million-line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
 
 Let's say you'd like to find the sequence `CATTAG` in your MiSeq files. We can use function `grep` to search for  `CATTAG` in one or all all of the fastq files located in our current working directory.
 
