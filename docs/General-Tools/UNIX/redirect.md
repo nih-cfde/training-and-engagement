@@ -11,6 +11,7 @@ If you completed the last challenge, you saw that the **images/** directory cont
 To see if our data matches theirs, we can count the number of lines in the .fastq files with the UNIX command `wc`. This will print by default the number of characters, words, and lines in a file. We can ask for just the number of lines with the `-l`  option. 
 
 ```
+cd ~/MiSeq
 wc -l *.fastq
 ```
 
