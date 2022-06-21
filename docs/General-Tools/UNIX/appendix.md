@@ -18,13 +18,11 @@ ls -lh *
 cd books
 pwd
 ls
-cd ../Miseq
 pwd
 ls
-ls *fastq
 ls F3*
 
-cd ~books
+cd ~/books/
 
 head README.md
 
@@ -35,71 +33,54 @@ less book.txt
 
 head *txt
 
-wc -l *txt
 wc -l *txt | sort
-wc -l *txt | sort -nr
 
 gunzip TheWonderfulWizardofOz.txt
+cp book.txt book-copy.txt
+ls
 
-rm book.txt
-mkdir results
+mv book-copy.txt book-2cities.txt
 
-wc -l *txt | sort -nr > results/book_lengths.txt
-cat results/book_lengths.txt
+mkdir data results images/
+mkdir -p data/results/images
 
-grep "Chapter" *txt
-grep -i "Chapter" *txt
-grep "CHAPTER" *txt > results/chapter_titles.txt
-cat results/chapter_titles.txt
+rmdir data/results/images
+rmdir data/results
 
-grep "The" *txt
-grep "^The" *txt
-grep -w "^The" *txt
-grep -w -A 1 "^The" *txt
-grep -w  "^The" *txt > results/The.txt
-cat results/The.txt
 
-head README.md
+cd ~/MiSeq
+ls
+
 head -4 F3D0_S188_L001_R1_001.fastq
 tail -4 F3D0_S188_L001_R1_001.fastq
-less F3D0_S188_L001_R1_001.fastq
+head -4 HMP_MOCK.v35.fasta 
 
-wc README.md
-wc F3D0_S188_L001_R1_001.fastq
-wc -l F3D0_S188_L001_R1_001.fastq	
-wc -l *fastq
-wc -l *R1*fastq
-wc -l *R1*fastq | sort -nr
+cd ../data/MiSeq/
+grep CATTAG F3D0_S188_L001_R2_001.fastq
+grep CATTAG *.fastq
 
-head -4 F3D0_S188_L001_R1_001.fastq
-grep "^@M" F3D0_S188_L001_R1_001.fastq
-grep "^@M" F3D0_S188_L001_R1_001.fastq | wc -l
-grep "^@M" *R1*.fastq | wc -l
-
-for file in *R1*.fastq
-do
-echo $file
-grep "^@M" $file | wc -l
-done
+wc F3D0_S188_L001_R2_001.fastq
+wc -l F3D0_S188_L001_R2_001.fastq
 
 mkdir results
+grep CATTAG *.fastq > results/files-with-CATTAG.txt
 
-
-for file in *R1*.fastq
+grep CATTAG *.fastq 
+grep CATTAG *.fastq | wc -l
+for file in *fastq
 do
-echo $file >> results/read_count.txt
-grep "^@M" $file | wc -l >> results/read_count.txt
+grep CATTAG $file | wc -l
 done
 
-head results/read_count.txt
-
-for file in *R1*.fastq
+for file in *fastq
 do
-echo $file >> results/samples.csv
-grep "^@M" $file | wc -l >> results/count.csv
-paste -d , results/samples.csv results/count.csv > results/read_count.csv
+echo $file
+grep CATTAG $file | wc -l
 done
 
+history
+
+history > ~/history-2021-nov-17.txt
 
 ```
 
