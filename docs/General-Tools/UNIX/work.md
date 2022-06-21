@@ -25,7 +25,7 @@ ls
 
 ###  `mv`
 
-The `mv` command can be used to either move files to a new location or to rename them (which is essentially moving the contents from the old filename to the new file name. Let's use the `mv` command to rename the copied and compressed file back to the original name.
+The `mv` command can be used to either move files to a new location or to rename them (which is essentially moving the contents from the old filename to the new file name). Let's use the `mv` command to rename the copied and compressed file back to the original name.
 
 ```bash
 mv book-copy.txt book-2cities.txt
@@ -52,7 +52,7 @@ The `-p` argument creates parent directories if they do not already exist.
 ### `rmdir` 
 
 If you created some files or directories that you do not want, you can remove them with the `rm` and `rmdir` commands. 
-`rmdir` will only remove empty directories, but `rm -r` will remove recursively.
+`rmdir` will only remove empty directories, but `rm -r` will remove recursively (deleting the files first and then the directory itself).
 
 ```bash
 rmdir data/results/images
