@@ -130,7 +130,7 @@ A lot of the time we want to know if a file contains what we expect. A useful th
 
 The `MiSeq/` directory contains many of the sequence files ending in`.fastq`. We expect these files to contain information in a particular format throughout the file with four lines of information for each sequence string. Looking through a million-line file using less will take a long time. Rather than manually looking at the whole file, we can print only a portion of the file's contents to standard output. 
 
-Let's say you'd like to find the sequence `CATTAG` in your MiSeq files. We can use function `grep` to search for  `CATTAG` in one or all all of the fastq files located in our current working directory.
+Let's say you'd like to find the sequence `CATTAG` in your MiSeq files. We can use the function `grep` to search for  `CATTAG` in one or all of the fastq files located in our current working directory.
 
 ```
 cd ../data/MiSeq/
