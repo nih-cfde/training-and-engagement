@@ -40,7 +40,7 @@ Please refer to our [UNIX Cheatsheet](https://training.nih-cfde.org/en/latest/Ge
 
 ---
 
-## 1. The shell and terminal
+## 1. Introduction
 
 The **shell** is a computer program that uses a command-line interface (CLI) to give commands made by your keyboard to your operating system. Most people are used to interacting with a graphic user interface (GUI), where you can use a combination of your mouse and keyboard to carry out commands on your computer. 
 
@@ -753,9 +753,9 @@ and the following images.
 
 :::
 
-## 6. Redirecting, counting, and looping things with `>`, `>>`, and `|`, `wc` and `for`
+## 6. Redirect
 
-If you did the last challenge, you saw that the **images/** directory contains a file called **MiSeq-readcount-Mothur.png**. This image is a screenshot from the [Mauther software tutorial](https://mothur.org/wiki/miseq_sop/) showing the count or number of reads for each sample. 
+If you completed the last challenge, you saw that the **images/** directory contains a file called **MiSeq-readcount-Mothur.png**. This image is a screenshot from the [Mauther software tutorial](https://mothur.org/wiki/miseq_sop/) showing the count or number of reads for each sample. 
 
 ![](https://hackmd.io/_uploads/HyrJqfBTF.png)
 
@@ -842,7 +842,7 @@ grep "^@M00967" F3D142_S208_L001_R1_001.fastq | wc -l
 
 ```
 
-If we want to know how many times it occurs in each in each file, we need a for loop. A for often loop looks like this:
+If we want to know how many times it occurs in each in each file, we need a for loop. A for loop looks like this:
 
 ```
 for [thing] in [list of things]
@@ -880,22 +880,7 @@ Mock_S280_L001_R1_001.fastq
 4779
 ```
 
-:::warning
-#### CHALLENGE: Using `wc` to calculate genome size
-How many genes are in the yeast genome?
 
-:::spoiler Hint
-If you did a previous exercise with `find` you saw a file called yeast.fasta in the books directory. You can use `wc` to count the lines beginning with `>` to calculate the genome size. 
-
-```
-cd ~/books
-grep "^>" yeast.fasta | wc -l
-```
-
-```
-6600
-```
-:::
 
 :::warning
 #### CHALLENGE: Writing for loops with `grep` and `wc`
@@ -941,51 +926,12 @@ WizardOfOz.txt
 
 :::
 
-## 7. Bonus module: Using `cut` to work with .csv files
 
-When working with .csv files, sometimes you only want to look for patterns in one column instead of all the columns. So, you need to filter the data first to only have the column of interest.  
 
-Notice, if you search for characters' names in the South Park TV series, grep will return both instances where the character spoke a line and where the line mentions their name. 
+### Redirect
 
-```
-cd ~/southpark
-gunzip -k All-seasons-clean.csv
-grep Chef All-seasons-clean.csv
-```
 
-_Note: if you don't want to keep an uncompressed copy of a file, you can use the command `zgrep` to search for a pattern in a compressed file._
 
-Let's say you want to know which of your Southpark characters had the most spoken lines. You could do like by counting how often their name appeared in the third column of the .csv file. We need the command `cut`.  We use the `-f3` to specify the third column and `-d,` to specify that it is a csv. 
-
-```
-head All-seasons-clean.csv
-cut -d, -f3 All-seasons-clean.csv
-```
-
-Now, after we extract only the column with character names, we can search for our favorite characters and count how many spoken lines they had. 
-
-```
-cut -d, -f3 All-seasons-clean.csv | grep Chef | wc -l
-```
-
-If we want to do this on more than one character, we could copy and paste the command lots of times, editing it for each character. 
-
-```
-cut -d, -f3 All-seasons-clean.csv | grep Chef | wc -l
-cut -d, -f3 All-seasons-clean.csv | grep Kenny | wc -l
-cut -d, -f3 All-seasons-clean.csv | grep Kyle | wc -l
-cut -d, -f3 All-seasons-clean.csv | grep Stan | wc -l
-```
-
-Or, we could use a for loop to loop through a list of characters of interest/
-
-```
-for character in Chef Kenny Cartman Kyle
-do
-echo $character
-cut -d, -f3 All-seasons-clean.csv | grep $character | wc -l
-done
-```
 
 ## Concluding thoughts
 
@@ -1008,14 +954,6 @@ You can save the file in your home directory with:
 history > ~/history.txt
 ```
 
-The binder and this documentation page will stay working for the foreseeable
-future, so please feel free to come back and revisit some of these commands!
-
-Google (and especially stackoverflow) is your friend! Use Internet
-search whenever you have questions about what a command does, or what
-commands to use to achieve a particular task.
-
-The website [Explain Shell](https://explainshell.com/) is great for defining what each command and flag does.
 
 ::: success
 #### Key points 
