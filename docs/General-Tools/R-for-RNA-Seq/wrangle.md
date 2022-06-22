@@ -139,7 +139,7 @@ resultsDEGs
 
     Replace the input results file with a different file, such as the
     results of the comparison of 20-29 and 50-59 year old heart samples.
-    What are the deferentially expressed genes?
+    What are the differentially expressed genes?
 
 === "Answer"
 
