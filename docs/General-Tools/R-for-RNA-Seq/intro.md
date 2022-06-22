@@ -65,7 +65,7 @@ log10(0.05)
 
     ## [1] -1.30103
 
-You can save variable and recall them later.
+You can save variables and recall them later.
 
 ``` r
 pval <- 0.05
