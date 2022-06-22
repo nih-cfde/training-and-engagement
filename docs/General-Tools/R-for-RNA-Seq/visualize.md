@@ -4,7 +4,7 @@ title: Visualize Data
 
 ### `ggplot()`
 
-`ggplot2` is a very popular package for making visualization. It is
+`ggplot2` is a very popular package for making visualizations. It is
 built on the “grammar of graphics”. Any plot can be expressed from the
 same set of components: a data set, a coordinate system, and a set of
 “geoms” or the visual representation of data points such as points,
