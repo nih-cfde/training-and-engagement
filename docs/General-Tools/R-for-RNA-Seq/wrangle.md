@@ -100,7 +100,7 @@ results %>%
 
 ### `arrange()`
 
-Sometimes its nice to arrange by p-value. By default, the `arrange()` function will sort characters alphabetically and numbers in ascending order. Use `arange(desc())` to sort in the reverse order. 
+Sometimes it's nice to arrange by p-value. By default, the `arrange()` function will sort characters alphabetically and numbers in ascending order. Use `arange(desc())` to sort in the reverse order. 
 
 ``` r
 results %>% filter(adj.P.Val < 0.05,
