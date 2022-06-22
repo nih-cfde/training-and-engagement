@@ -4,7 +4,7 @@ title: Import Data
 
 Data can be imported using functions from `base` R (such as `read.csv()` and 
 `read.table()`) or with functions from `readr`(such as `read_csv()` and `read_tsv()`). 
-There are subtle differences in the default behavior these function, included how they treat dashes and spaces in column names, whether headers and row names are default. For this workshop, we will use `read.csv()` and `read.table()`. 
+There are subtle differences in the default behavior these of functions, including how they treat dashes and spaces in column names, whether headers and row names are default. For this workshop, we will use `read.csv()` and `read.table()`. 
 
 ### Files
 
