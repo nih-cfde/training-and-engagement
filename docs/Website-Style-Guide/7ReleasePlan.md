@@ -1,58 +1,46 @@
 # CFDE Training Website Release Plan
 
+
 This is the release plan for the [CFDE training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/).
 This plan has sections to address the different release management topics:
 
--  Definition of release numbering and naming convention
--  Definition of expected release frequency
+-  Expected release frequency
+-  Release numbering and naming convention
 -  Locations for release documentation, repo etc
 -  Roles and responsibilities for the releases
--  Definition of steps in a release cycle
+-  Release standard operating procedure (SOP)
 
 ## Release Dates
 
-Timeline for release 2020-2021
+Our current release dates are set to coincide with NIH deliverable dates which are due on the 15th of every month. Previous releases can be viewed on [GitHub](https://github.com/nih-cfde/training-and-engagement/releases) or on the training website [Release page](https://training.nih-cfde.org/en/latest/Release-Notes/).
 
 
-| Release # | Date | Month     | Year | Version tag |
-| --------- | ---- | --------- | ---- | ----------- |
-| 1         | 15   | August    | 2020 | 2020.08     |
-| 2         | 15   | October   | 2020 | 2020.10     |
-| 3         | 18   | December  | 2020 | 2020.12     |
-| 4         | 28   | February  | 2021 | 2021.02     |
-| 5         | 31   | May       | 2021 | 2021.05     |
-| 6         | 31   | August    | 2021 | 2021.08     |
-| 7         | 30   | November  | 2021 | 2021.11     |
+## Release Title and Tag Format
+
+Given the montly cycle, releases are named with the month and year. 
+
+**Title:** Month Year (e.g. October 2020)  
+**Tag:** Year.<area>Mo (e.g. 2020.10)
 
 
-Our current release dates are set to coincide with NIH deliverable dates.
+## Release Checklists
 
 
-#### Labels Format
-Single event based label
-Name: *Training-Release*
+The [`.github` directory](https://github.com/nih-cfde/training-and-engagement/tree/dev/.github) contains actions, workflows, and templates with checklists for to ensure that tutorials and new website pages are error-free when released to the public. These inlude auto-assigning reviewers to PRs against `dev` and `stable`, adding a reviewer checklist to PRs, auto-building the mkdocs-based website, and drafting a GitHub relase. 
 
-Month based label
-Name: release.month(short form)-release.year
-For example, *Oct-2020*.
+Training materials should follow the formatting, organization, and layout details described in the [training website style guide](../Website-Style-Guide/0index.md). 
 
-## Release Checklist
+### Submitting New Website Content
 
-A series of checklists will be implemented to ensure error free working tutorials are released to the public.
+New content for the website should be submitted as a pull request against the `dev` branch following the steps below.  
 
-### Tutorial Format
-
-Individual tutorials will follow the formatting, organization, and layout details described in the [training website style guide](../Website-Style-Guide/0index.md).
-
-### Tutorial PR Process
-
-Individual branches are used to create PRs to merge into `dev`. Good practices for creating PR branches are:
-- create a new branch off `dev`
-- name the branch with included feature/fix/content along with PR author's name. e.g. scanchi-mime-new or marisa-sphinx-javascript or abhijna_kf_edits
-- keep the PR branch up to date with `dev` by pulling latest merged changes. *Note on the GitHub interface for the PR you will get an indication to update your branch which essentially merges latest changes in `dev` to your branch*
-- After the PR has been successfully merged, delete the branch in your remote and local repos
-
-Generally we want to avoid merging between branches with open PRs. This is because by committing the changes between branches, they effectively become the same branch. Thus, when one branch is merged, the other branch with the same commit log will be automatically merged irrespective of the review stage. However, in a scenario where there might be dependency between branches, one can merge one branch into the other restricting it to only one direction. For example, we have PR A and PR B on two different branches and the fixes in PR A are relevant to PR B. We would then merge the branch for PR A into the branch for PR B but not vice versa. Alternatively, if the PR is not time sensitive, then one can wait for PR A to merge into `dev` before pulling those changes into PR B.
+- [ ] Create a new branch off `dev`. Give the branch a descriptive name that briefly describes the new feature or content (e.g. add-unix-csv-lesson).
+- [ ] Add content. Tutorials should follow the formatting described in the training [website style guide](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/Website-Style-Guide/0index.md). 
+- [ ] When ready for review, create a PR. 
+- [ ] If necessary, pull any recent additions to `dev` into the PR
+- [ ] View the draft build of the website by clicking on the readthedocs check in the PR.
+- [ ] Respond to reviewer comments. Reviewers are automatically assigned and given a checklist. You can request additional reviewers. 
+- [ ] After successul review, merge the PR into `dev` and delete the branch.
 
 ### Tutorial PR Checklist
 
@@ -74,7 +62,8 @@ For clarity, the PR title should include the tutorial name and main intent of th
 
 ### Reviewer Checklist for PR
 
-Following the PR to merge into `dev`, the reviewers must ensure the tutorials pass the checklist for:
+The reviewer checklist is included in the PR template. Following the PR to merge into `dev`, the reviewers must ensure the tutorials pass the checklist for:
+
 - spelling and grammar
 - successful run of all installation and code chunks
 - sufficient explanation and details for the tutorial content - suggestions for inclusion of admonition boxes or additional resources for clarity
@@ -83,7 +72,7 @@ Following the PR to merge into `dev`, the reviewers must ensure the tutorials pa
 - functional links (inter and intra) - check the automated broken links check for clean build, suggest intra links if applicable
 - accessible hyperlink text - meaningful text hyperlinked instead of default "click here"
 
-The reviewer checklist will be auto-generated as a comment on any open PR to `dev` branch. The list will appear in raw markdown format but will render as a checklist after the list is copied, pasted, and submitted as a comment. This will allow each reviewer to have an independent checklist that can be updated as the review progresses.
+ 
 
 ### Review Process
 
@@ -94,6 +83,7 @@ Merge into `dev` from individual branches requires two reviews while merge into 
 ## Release Cycle
 
 Each Release cycle will be defined as the time period between the releases. The release cycle will have some set phases:
+
 - Tracking
 - Planning
 - Development
@@ -182,6 +172,7 @@ For documentation version numbering system we will follow the release date conve
 For example October 2020 release would have the tag **`2020.10`**. This would follow the same convention as set for labels on GitHub repo.
 
 When creating a tag associated with the release notes it is important to tag the correct version of `stable` branch. Else, since the default branch is `dev`, this will lead to `dev` being out of sync with `stable`. There are two ways to circumvent this, after the merge of `dev` into `stable`:
+
 - Update `Target` for tag (**Preferable**)
     - Click the `Edit` option on the autogenerated release draft
     - Enter the tag format in the `Tag version` box
@@ -226,6 +217,7 @@ Details for each of these components are described above. These are the basic st
 - create a PR to `dev`, merge after approved
 
 ### Part 2 - PR of `dev` to `stable`
+
 - merge after approved
 
 ### Part 3 - Edit release notes for Github repo
