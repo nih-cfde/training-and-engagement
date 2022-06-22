@@ -5,7 +5,7 @@ title: Setting up an AWS Instance
 
 In this lesson, we will learn to set-up an instance with Ubuntu, an open source software operating system and part of the Amazon Free Tier program.
 
-Follow along with these steps and/or watch our [video tutorials for Mac or Windows](../../Cloud-Platforms/Introduction-to-AWS/index.md) to get started!
+Follow along with these steps and/or watch our video tutorials for Mac or Windows on the **AWS Overview** page to get started!
 
 ## Step 1: Log in to an AWS account
 
