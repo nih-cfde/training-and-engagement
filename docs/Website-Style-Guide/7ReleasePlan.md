@@ -1,4 +1,4 @@
-# CFDE Training Website Release Plan
+# Release Plan
 
 
 This is the release plan for the [CFDE training website](https://cfde-training-and-engagement.readthedocs-hosted.com/en/latest/).
