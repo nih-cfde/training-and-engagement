@@ -11,7 +11,7 @@ February 2021 Release
 <span style="font-size:24px;">New Tutorials
 
 - [RNAseq on Cavatica](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1.md)
-- [Using the Screen Command on AWS](../Cloud-Platforms/Introduction-to-AWS/aws5.md)
+- [Using the Screen Command on AWS](../Cloud-Platforms/Introduction-to-AWS/aws3.md)
 - [Introduction to Google Cloud Platform](../Cloud-Platforms/Introduction-to-GCP/index.md)
 - [Saving Queries on the Kids First Data Resource Portal](../Common-Fund-Tools/Kids-First/Advanced-KF-Portal-Queries/KF_13_SavingQueries.md)
 <!--- [Setting Up Github Authentication](../CFDE-Internal-Training/github_auth_setup.md)-->
