@@ -175,7 +175,7 @@ names are the sample id and they match the column names of the counts
 file.
 
 When you type `rownames(colData) == colnames(counts)` you should see
-many TRUE statments. If the answer if FALSE your data cannot be
+many TRUE statements. If the answer if FALSE your data cannot be
 processed by downstream tools.
 
 ``` r
