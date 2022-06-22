@@ -226,3 +226,7 @@ Details for each of these components are described above. These are the basic st
 ![Screenshot_2021-02-24 nih-cfde training-and-engagement](https://user-images.githubusercontent.com/5659802/109085507-ac35c180-76be-11eb-857d-d127347de79f.png)
 - add date in the "Updated on" release notes title (i.e., "Updated on February 24, 2021")
 - click "Publish"!
+
+### Part 4 - PR of  `stable` into `dev` 
+
+- merge after approved
