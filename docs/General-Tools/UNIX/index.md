@@ -12,6 +12,15 @@ An Introduction to UNIX for Cloud Computing
 This lesson introduces the UNIX command line to scientists and clinicians who need to use cloud-based and remote computers for basic and biomedical research. The commands used in today's workshop are commonly used by practitioners across disciplines. By practicing the commands, you will gain familiarity with the command line and confidence as a programmer. These commands can be used on a local or remote computer. We hope that you notice an improvement in the speed and reproducibility of your bioinformatics workflow. 
 
 
+Est. Time | Lesson name | Description
+--- | --- | ---
+20 mins | [Introduction](./intro/) | Overview of the shell and terminal
+20 mins | [Navigate](./navigate/) | Navigating files and directories
+20 mins | [Read](./read/) | Reading files
+20 mins | [Work](./work/) | Copying, moving, and deleting files
+20 mins | [Find](./find/) | Files words and files
+20 mins | [Redirect](./redirect/) | Redirecting outputs and for loops
+
 ### Learning objectives
 
 !!! info "In this workshop, you will learn to"
