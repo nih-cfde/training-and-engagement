@@ -455,7 +455,7 @@ be easily subset by variables or genes of interest.
 
 Because the count files are so large, it is good to filter the counts
 first. I’ll filter by `rowSums(.) > 0` and then take the top 6 with
-`head()`. Then crate a column for lengthening.
+`head()`. Then create a column for lengthening.
 
 ``` r
 counts_tidy_slim <- counts_tidy %>%
