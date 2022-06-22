@@ -34,13 +34,13 @@ Training materials should follow the formatting, organization, and layout detail
 
 New content for the website should be submitted as a pull request against the `dev` branch following the steps below.  
 
-- [ ] Create a new branch off `dev`. Give the branch a descriptive name that briefly describes the new feature or content (e.g. add-unix-csv-lesson).
-- [ ] Add content. Tutorials should follow the formatting described in the training [website style guide](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/Website-Style-Guide/0index.md). 
-- [ ] When ready for review, create a PR. 
-- [ ] If necessary, pull any recent additions to `dev` into the PR
-- [ ] View the draft build of the website by clicking on the readthedocs check in the PR.
-- [ ] Respond to reviewer comments. Reviewers are automatically assigned and given a checklist. You can request additional reviewers. 
-- [ ] After successul review, merge the PR into `dev` and delete the branch.
+- Create a new branch off `dev`. Give the branch a descriptive name that briefly describes the new feature or content (e.g. add-unix-csv-lesson).
+- Add content. Tutorials should follow the formatting described in the training [website style guide](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/Website-Style-Guide/0index.md). 
+- When ready for review, create a PR. 
+- If necessary, pull any recent additions to `dev` into the PR
+- View the draft build of the website by clicking on the readthedocs check in the PR.
+- Respond to reviewer comments. Reviewers are automatically assigned and given a checklist. You can request additional reviewers. 
+- After successul review, merge the PR into `dev` and delete the branch.
 
 ### Tutorial PR Checklist
 
