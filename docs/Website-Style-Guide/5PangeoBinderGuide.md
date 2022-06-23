@@ -1,6 +1,6 @@
-# Pangeo binder style guide
+# Binder style guide
 
-We are using [pangeo binders](https://binder.pangeo.io/) to create pre-configured computing environments for tutorials where useful.
+We are using [Pangeo](https://binder.pangeo.io/) or [MyBinder](https://mybinder.org/) to create pre-configured computing environments for tutorials where useful.
 
 - Binders require their own Github repo. Create a new repo in the [`nih-cfde` organization](https://github.com/nih-cfde/). The repo name should begin with `training-<subject of binder>`. 
 - The repo should have a README.md and the files you want included in the binder. 
