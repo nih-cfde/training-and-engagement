@@ -8,7 +8,7 @@ title: Visualize Data
 built on the “grammar of graphics”. Any plot can be expressed from the
 same set of components: a data set, a coordinate system, and a set of
 “geoms” or the visual representation of data points such as points,
-bars, line, or boxes. This is the template we build on:
+bars, lines, or boxes. This is the template we build on:
   
 ```r
 ggplot(data = <DATA>, aes(<MAPPINGS>)) +
