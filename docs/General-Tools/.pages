@@ -1,6 +1,7 @@
 nav:
 - index.md
-- Introduction-to-Conda
+- Conda
 - R-for-RNA-Seq
 - Snakemake
+- UNIX
 - Web-Development
