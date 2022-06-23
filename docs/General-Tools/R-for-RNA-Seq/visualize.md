@@ -65,7 +65,7 @@ coord_flip()
                
 ![](./images/bar3-1.png)
 
-Note that the bars are outlined in a color according to hardy scale. If
+Note that the bars are outlined in a color according to Hardy scale. If
 instead, you would the bars “filled” with color, use the aesthetic
 `aes(fill = AGE)`
                
