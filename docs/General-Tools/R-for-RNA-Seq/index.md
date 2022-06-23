@@ -27,7 +27,7 @@ workshops. Rather, this workshop will focus on general R concepts
 applied to RNA-Seq data. 
 
 | Est. Time | Lesson name | Description |
-| --- | --- | 
+| --- | --- | --- | 
 | 25 min |[Introduction](./intro.md) | Overview of RStudio and Binder
 | 30 min |[Import Data](./import.md) | Importing data with `read.csv` and `read.table`
 | 30 min |[Visualize Data](./visualize.md) | Visualizing data with `ggplot2`
