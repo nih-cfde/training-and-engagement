@@ -1,8 +1,6 @@
 ---
 layout: page
-title: Overview
-hide:
-   - toc
+title: Template
 ---
 
 YAML header:
