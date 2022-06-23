@@ -6,7 +6,7 @@ title: Overview
 <div class="banner"><span class="banner-text">Lesson in Development</span></div>
 
 
-An Introduction to R for RNA-Sequencing Analysis
+An Introduction to R for RNA-Seq Analysis
 ================================================
 
 RNA-Sequencing (RNA-Seq) is a popular method for
