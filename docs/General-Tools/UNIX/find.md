@@ -28,12 +28,12 @@ A FASTQ file containing a single sequence might look like this:
 !!! info
 
      An example FASTQ file
-```
-@SEQ_ID
-GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
-+
-!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
-```
+     ```
+     @SEQ_ID
+     GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
+     +
+     !''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
+     ```
 
 We can use the `cat` command to print fastq files to the screen, but thousands of lines of text would crowd your screen. Instead, we will use the `head` command to view the first 8 lines of the file. You can copy the file name below and paste it into the console or you can type and use tab complete to pick a particular file. 
 
@@ -76,17 +76,16 @@ BBBBBBBBBFFFGGGFFGGGGGGGGGGGHHHHHHHGGGHGHHHGHGGGGGGGHGGEGGFGGHGHHHHHHHHHGHHHHEHH
 !!! info
 
      An Example FASTA file
-
-```
-> SEQUENCE_1
-MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKAAKKADRLAAEG
-LVSVKVSDDFTIAAMRPSYLSYEDLDMTFVENEYKALVAELEKENEERRRLKDPNKPEHK
-IPQFASRKQLSDAILKEAEEKIKEELKAQGKPEKIWDNIIPGKMNSFIADNSQLDSKLTL
-MGQFYVMDDKKTVEQVIAEKEKEFGGKIKIVEFICFEVGEGLEKKTEDFAAEVAAQL
->SEQUENCE_2
-SATVSEINSETDFVAKNDQFIALTKDTTAHIQSNSLQSVEELHSSTINGVKFEEYLKSQI
-ATIGENLVVRRFATLKAGANGVVNGYIHTNGRVGVVIAAACDSAEVASKSRDLLRQICMH
-```
+     ```
+     > SEQUENCE_1
+     MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKAAKKADRLAAEG
+     LVSVKVSDDFTIAAMRPSYLSYEDLDMTFVENEYKALVAELEKENEERRRLKDPNKPEHK
+     IPQFASRKQLSDAILKEAEEKIKEELKAQGKPEKIWDNIIPGKMNSFIADNSQLDSKLTL
+     MGQFYVMDDKKTVEQVIAEKEKEFGGKIKIVEFICFEVGEGLEKKTEDFAAEVAAQL
+     >SEQUENCE_2
+     SATVSEINSETDFVAKNDQFIALTKDTTAHIQSNSLQSVEELHSSTINGVKFEEYLKSQI
+     ATIGENLVVRRFATLKAGANGVVNGYIHTNGRVGVVIAAACDSAEVASKSRDLLRQICMH
+     ```
 
 
 Let's look at a synthetic FASTA file. 
@@ -110,13 +109,14 @@ FASTQ and FASTA files are often used in combination to map reads to a genome or 
 
 Sometimes you know a file or directory exists, but you cannot find it. Sometimes you want to find many files with similar properties. This is where the wildcard (`*`) comes in handy.  What do the following commands do?
 
- 
-1. `ls *` 
-1. `ls MiSeq/F3D*`
-1. `ls MiSeq/*fasta`
+=== "Challenge"
+
+     1. `ls *` 
+     1. `ls MiSeq/F3D*`
+     1. `ls MiSeq/*fasta`
  
 
-!!! spoiler
+=== "Answer"
 
      1. `ls *` lists files in the working directory and 1 level down. 
      1. `ls MiSeq/F3D*` lists files in the data/MiSeq directory that start with "F3D".
