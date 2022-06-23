@@ -32,7 +32,12 @@ Est. Time | Lesson name | Description
     * Redirect outputs and write for loops to build reproducible workflows
 
 
-### Tutorial resources 
+=== "Tutorial resources" 
 
-The lesson materials were adapted from the UC Davis Data Lab's [Intro to Cloud Computing](https://ngs-docs.github.io/2021-august-remote-computing/) workshop, Data Carpentry's [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson, and the Lab for Data Intensive Biology's [Advanced Beginner/Intermediate Shell](https://dib-training.readthedocs.io/en/pub/2016-01-13-adv-beg-shell.html) workshop. 
-Please refer to our [UNIX Cheatsheet](https://training.nih-cfde.org/en/latest/General-Tools/Cheat-Sheets/bash_cheatsheet/) for a list of commonly used commands.  The website [Explain Shell](https://explainshell.com/) succinctly explains shell commands and arguments.
+   The lesson materials were adapted from the UC Davis Data Lab's [Intro to Cloud Computing](https://ngs-docs.github.io/2021-august-remote-computing/) workshop, Data Carpentry's [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson, and the Lab for Data Intensive Biology's [Advanced Beginner/Intermediate Shell](https://dib-training.readthedocs.io/en/pub/2016-01-13-adv-beg-shell.html) workshop. 
+   Please refer to our [UNIX Cheatsheet](https://training.nih-cfde.org/en/latest/General-Tools/Cheat-Sheets/bash_cheatsheet/) for a list of commonly used commands.  The website [Explain Shell](https://explainshell.com/) succinctly explains shell commands and arguments. 
+
+
+=== "Prerequisites"
+
+   The UNIX lesson uses a standardized binder environment, which will work on Windows, Mac, and Linux operating systems, and Firefox, Safari, and Chrome web browsers.
