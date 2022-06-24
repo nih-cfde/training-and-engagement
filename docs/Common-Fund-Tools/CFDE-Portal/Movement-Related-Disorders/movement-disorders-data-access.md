@@ -30,6 +30,6 @@ The `persistant_id` for each LINCS dataset is linked to the study page in the [L
 
 ![LINCS data portal](../images/LINCS-data-portal.png "LINCS data portal")
 
-The "Data Source" lists the link to the dbGaP study with all relevant study description, sequencing details, associated published literature along with information to apply for access to the controlled experimental data.
+The "Data Source" lists the link to the dbGaP study with all relevant study description, sequencing details, associated published literature, and includes information needed to apply for access to the controlled experimental data.
 
 ![LINCS data source](../images/LINCS_dbGaP-data-source.png "LINCS data source")
