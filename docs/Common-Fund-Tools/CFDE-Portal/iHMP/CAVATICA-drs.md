@@ -28,7 +28,7 @@ Click the <span class="highlight_txt">Files</span>  tab then click  <span class=
 ![drs-3](https://i.imgur.com/zWX7W9M.png)
 
 Enter the DRS identifiers (separated by a comma, enter, or tab) and click "Import"
-* _(Follow the steps in [the pentultimate lesson](./find-export) to get 2 DRS identifiers)_
+* _(Follow the steps in [the penultimate lesson](./find-export) to get 2 DRS identifiers)_
 * drs://drs.hmpdacc.org/mZBm6TYnDQoS
 * drs://drs.hmpdacc.org/1CzGt5DyGwcOe
 
