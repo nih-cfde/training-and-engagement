@@ -3,7 +3,7 @@ layout: page
 title: Multi-omics Data Discovery for Movement-Related Disorders
 ---
 
-<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+<div class="banner"><span class="banner-text">This tutorial is outdated. Please refer to the Common Fund Tools page for up-to-date tutorials.</span></div>
 
 # Multi-omics Data Discovery for Movement-Related Disorders
 

@@ -14,7 +14,7 @@ What data is here?
 
 The data at the Kids First DRC is from children with childhood cancer
 and structural birth defects or their family members. As of the end of 2020,
-the Kids First DRC maintains Whole Genome Sequences (WGS) and/or RNAseq
+the Kids First DRC maintains Whole Genome Sequences (WGS) and/or RNA-Seq
 data for over 13,000 individuals. However, data available on the Kids First Portal
 is not restricted to information about DNA and RNA. Using the portal you can access a
 wide range of data types including Histology Images, Pathology Reports, Radiology

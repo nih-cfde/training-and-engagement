@@ -8,23 +8,23 @@ title: Setup DESeq2 Public App
 Setup DESeq2 Public App
 =======================
 
-[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is a Bioconductor package used to perform DGE analysis by fitting the [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/) to the count data. It requires a counts table as input along with a phenotype file describing the experimental groups.
+[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html){:target="_blank"}  is a Bioconductor package used to perform DGE analysis by fitting the [negative binomial model](https://www.statisticshowto.com/negative-binomial-experiment/){:target="_blank"}  to the count data. It requires a counts table as input along with a phenotype file describing the experimental groups.
 
 DESeq2 performs multiple steps including:
 
 * estimating size factors to account for differences in library depth
 * estimating gene-wise dispersions to generate accurate estimates of within-group variation
 * shrinkage of dispersion estimates which reduces false positives in the DGE analysis
-* hypothesis testing using the [Wald test](https://www.statisticshowto.com/wald-test/) or [Likelihood Ratio test](https://www.statisticshowto.com/likelihood-ratio-tests/)
+* hypothesis testing using the [Wald test](https://www.statisticshowto.com/wald-test/){:target="_blank"}  or [Likelihood Ratio test](https://www.statisticshowto.com/likelihood-ratio-tests/){:target="_blank"}
 
-DESeq2 automatically removes outlier genes from analysis using [Cook's distance](https://www.statisticshowto.com/cooks-distance/) and filters genes with low counts which helps improve detection power by making the multiple testing adjustment of the p-values less severe. Refer to the [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) for a more detailed explanation, helpful suggestions, and examples.
+DESeq2 automatically removes outlier genes from analysis using [Cook's distance](https://www.statisticshowto.com/cooks-distance/){:target="_blank"}  and filters genes with low counts which helps improve detection power by making the multiple testing adjustment of the p-values less severe. Refer to the [DESeq2 vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html){:target="_blank"}  for a more detailed explanation, helpful suggestions, and examples.
 
-Cavatica offers DESeq2 as a stand alone public app which consists of a [Common Workflow Language (CWL)](https://www.commonwl.org) wrapper around a script with functions from the DESeq2 package. In this lesson we learn to copy, edit, and setup the DESeq2 app in the project folder with cancer data files.
+Cavatica offers DESeq2 as a stand alone public app which consists of a [Common Workflow Language (CWL)](https://www.commonwl.org){:target="_blank"}  wrapper around a script with functions from the DESeq2 package. In this lesson we learn to copy, edit, and setup the DESeq2 app in the project folder with cancer data files.
 
 !!! info "Terminology"
 
     * Count data - represents the number of sequence reads that originated from a particular gene
-    * Dispersion - a measure of spread or variability in the data. DESeq2 dispersion estimates are inversely related to the mean and directly related to variance
+    * Dispersion - a measure of spread or variability in the data; DESeq2 dispersion estimates are inversely related to the mean and directly related to variance
     * LFC - log2 fold change
 
 ## Step 1: Search & copy DESeq2 app
@@ -77,18 +77,17 @@ The DESeq2 app has a bug with the IgnoreTxVersion parameter that can be rectifie
 
 ## Step 3: Obtain reference gene annotation
 
-A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1) files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html), another Bioconductor package, is utilized to obtain the gene level summary.  
+A reference gene annotation file in GTF format is required by DESeq2 app to summarize the transcript level abundances contained in the [Kallisto](http://pachterlab.github.io/kallisto//releases/2017/03/20/v0.43.1){:target="_blank"}  files for gene-level analysis. Internally, [tximport](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html){:target="_blank"} , another Bioconductor package, is utilized to obtain the gene level summary. We will use the same reference version that was used to generate the original transcript abundance files in the [KFDRC RNA-Seq workflow](https://github.com/kids-first/kf-rnaseq-workflow){:target="_blank"}.  
 
-* Navigate to the <span class="highlight_txt">Files</span> tab and edit the metadata columns to show Reference genome column. To do so, click on the <span class="highlight_txt">:fontawesome-solid-columns:</span> icon and select <span class="highlight_txt">Reference genome</span>. All files in this dataset used the GRCh38 (hg38) homo sapiens genome assembly released by Genome Reference Consortium.
-* Click on <span class="highlight_txt">Data</span> drop down menu and click on <span class="highlight_txt">Public Reference Files</span>.
-* This takes you to a new page for <span class="highlight_txt">Public Files</span>.
+* Navigate to the <span class="highlight_txt">Files</span> tab and click on <span class="highlight_txt">:fontawesome-solid-plus: Add files</span> which brings forth a drop down menu.
+* Click on <span class="highlight_txt">Public Files</span> in that list which takes to a new page.
 * Click on <span class="highlight_txt">Type: All</span> button to bring a drop down list and select **GTF**.
-* From the results, select **Homo_sapiens.GRCh38.84.gtf** which is the ENSEMBL Release 84 version of the Human gene annotation in GTF format.
-* Click on <span class="highlight_txt">Copy</span> and select the project folder with the cancer files.
+* From the results, select **gencode.v27.annotation.gtf** which is the GENCODE Release 27 version of the Human gene annotation in GTF format.
+* Click on <span class="highlight_txt">Copy to Project</span>.
 * Select <span class="highlight_txt">Copy</span> in the popup window.
-* A notification menu will highlight the successful copy of the file and clicking on the project folder name will take you to the <span class="highlight_txt">Files</span> tab in folder.
+* You will be directed back to the <span class="highlight_txt">Files</span> view of your project folder along with a notification menu on the right that highlights the successful copy of the file.
 * Check for the reference file using the <span class="highlight_txt">Type: All</span> button and select **GTF**.
 
-<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_pxn0zxoc&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[mediaProxy.mediaPlayTo]=48&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_l7cbi5kv" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_hg3gbun4&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_rxq4mou0" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
 
 In our next lesson, we will learn to edit our previously downloaded phenotype file and upload it to Cavatica!
