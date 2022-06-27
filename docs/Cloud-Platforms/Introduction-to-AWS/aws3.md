@@ -1,4 +1,7 @@
-# Using the Screen Command
+---
+layout: page
+title: Using the Screen Command
+---
 
 Screen or GNU Screen is a terminal multiplexer. You can start a terminal session and then open multiple screens inside that session. Processes running in Screen will continue to run when their window is not visible, even if your session gets disconnected/times out - you can even close the terminal/connection to AWS instance and commands running on screens will continue!
 
