@@ -10,7 +10,7 @@ title: Latest Release
 ## New Tutorials
 
 - [CFDE Portal - Human Microbiome Use Case](../Common-Fund-Tools/CFDE-Portal/iHMP): This tutorial teaches users how to use the CFDE Search Portal to find files and import files into CAVATICA for downstream analysis.
-- [Introduction R for RNA-Sequencing Analysis](../General-Tools/R-for-RNA-Seq): This tutorial introduces basic R commands. It was designed to cover the prerequisites RNA-Sequencing tutorials that rely heavily on R for data processing and visualization.
+- [Introduction R for RNA-Sequencing Analysis](../General-Tools/R-for-RNA-Seq): This tutorial introduces basic R commands. It is designed to cover prerequisites for RNA-Sequencing tutorials that rely heavily on R for data processing and visualization.
 - [Introduction to UNIX for Cloud Computing](../General-Tools/UNIX): This tutorial introduces basic UNIX commands. It was designed to cover the prerequisites needed for other tutorials that require command-line experience.
 
 ## Website Features
