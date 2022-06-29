@@ -9,7 +9,7 @@ title: Common Fund Tools
 
 The [NIH Common Fund (CF)](https://commonfund.nih.gov) has funded a wide variety of data types and studies that are of interest to clinical and biomedical researchers, however those datasets are hosted on an equally large number of websites, with varying query systems. The [Common Fund Data Ecosystem (CFDE) Portal](https://app.nih-cfde.org) is a unified system for searching across the entire CF portfolio in a single search, and is the first step in addressing the goal of making CF data more [Find-able, Accessible, Interoperable and Reusable (FAIR)](https://www.nih-cfde.org/product/fair-cookbook/). The wide range of data types, models and formats used by Common Fund Programs are being harmonized using well-defined metadata, common controlled vocabularies using the [Crosscut Metadata Model](https://www.nih-cfde.org/product/cfde-c2m2/).
 
-### Human Mirobiome Project Use Case
+### Human Microbiome Project Use Case
 
 Est. Time |  Lesson name | Description |
 --- | --- | --- |
