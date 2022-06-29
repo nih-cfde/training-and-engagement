@@ -17,7 +17,7 @@ Movement-related disorders affect the neuromuscular system, disrupting the abili
 
 - Multiple Sclerosis (MS): is an autoimmune disorder in which myelin, the protective sheath covering the neurons, is damaged disrupting communications between brain and rest of the body including movement.
 
-A few common features of these neuromuscular disorders are that they all involve the brain, share many symptoms, and are all difficult to diagnose in their early stages. Identifying key genomic, transcriptomic and/or proteomic differences between these conditions may help elucidate underlying disease mechanisms along with potential biomarkers that may aide in early diagnosis and/or targeted drug development.
+A few common features of these neuromuscular disorders are that they all involve the brain, share many symptoms, and are all difficult to diagnose in their early stages. Identifying key genomic, transcriptomic and/or proteomic differences between these conditions may help elucidate underlying disease mechanisms along with potential biomarkers that may aid in early diagnosis and/or targeted drug development.
 
 In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable datasets of human origin spanning the spectrum of movement-related disorders from across the CF programs.
 
@@ -58,11 +58,11 @@ LDG-1338, LDG-1339].
 This results in 9 matching records from Metabolomics and Library of Integrated Network-Based Cellular Signatures (LINCS). The subset cohort is exported to a `csv` file using the "Export" option.
 
 !!! note "Download to local machine"
-    The exported `csv` file can be accessed from downloads folder associated with the web browser in the user's local machine. Default is generally the `Downloads` folder.
+    The exported `csv` file can be accessed from the downloads folder associated with the web browser in the user's local machine. Default is generally the `Downloads` folder.
 
 ## Step 4: Search all columns: Stem Cell
 
-The associated datasets use either IPSC or neural stem cell in their experimental design. In the second part of the cohort building we will identify datasets that use neural stem cells as the experimental sample.
+The associated datasets use either IPSC or neural stem cells in their experimental design. In the second part of the cohort building we will identify datasets that use neural stem cells as the experimental sample.
 
 Use "Clear all filters" to remove the previous selection and type **stem cell neu** keyword in the "Search all columns" box. Use the "Part of Collection" filter listed under the Refine Search panel to select the desired datasets ["ID" values : ST000688, ST000768].
 

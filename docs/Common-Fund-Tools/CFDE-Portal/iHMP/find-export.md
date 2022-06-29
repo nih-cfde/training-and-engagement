@@ -5,9 +5,9 @@ title: Using the CFDE Search Portal to Find Files
 
 #  Using the CFDE Search Portal to Find Files
 
-The Common Fund Data Ecosystem Coordinating Center (CFDE-CC) supports efforts to make Common Fund data sets more findable, accessible, interoperable, and reusable (FAIR) for the scientific community through collaboration, end-user training, and data set sustainability. The CFDE-CC manages and organizes CFDE activities, engages with participating Common Fund programs, connect with user communities, supports training, develops tools and standards, and provides technical expertise to Common Fund programs.
+The Common Fund Data Ecosystem Coordinating Center (CFDE-CC) supports efforts to make Common Fund data sets more findable, accessible, interoperable, and reusable (FAIR) for the scientific community through collaboration, end-user training, and data set sustainability. The CFDE-CC manages and organizes CFDE activities, engages with participating Common Fund programs, connects with user communities, supports training, develops tools and standards, and provides technical expertise to Common Fund programs.
 
-The [CFDE Search Portal](https://app.nih-cfde.org/) uses the Crosscut Metadata Model (C2M2) a flexible metadata standard for describing experimental resources in biomedicine and related fields. This portal supports faceted search of metadata concepts such as anatomical location, species, and assay type, across a wide variety of datasets using a controlled vocabulary (we do not currently support protected metadata). This allows researchers to find a wide variety of data that would otherwise need to be searched individually, using varying nomenclatures. The portal only accepts C2M2 data packages from Common Fund Programs.
+The [CFDE Search Portal](https://app.nih-cfde.org/) uses the Crosscut Metadata Model (C2M2), a flexible metadata standard for describing experimental resources in biomedicine and related fields. This portal supports faceted search of metadata concepts such as anatomical location, species, and assay type, across a wide variety of datasets using a controlled vocabulary (we do not currently support protected metadata). This allows researchers to find a wide variety of data that would otherwise need to be searched individually, using varying nomenclatures. The portal only accepts C2M2 data packages from Common Fund Programs.
 
 This tutorial focuses on the Human Microbiome Project (HMP). The goal of this tutorial is to identify small FASTQ files with persistent identifiers from a longitudinal multi-comics study. Please refer to the [Portal User Guide](https://docs.nih-cfde.org/en/latest/about/portalguide/) for a detailed description of all portal features. 
 
@@ -54,14 +54,14 @@ Use the facets on the left to select:
 ![](https://i.imgur.com/9wOPGAY.png)
 
 
-With these selections, the first result should have "Filename" of `SRR5935743_1.fastq`.
+With these selections, the first result should have the "Filename" of `SRR5935743_1.fastq`.
 
 ![](https://i.imgur.com/ULbqD7W.png)
 
 
 ## Add files to your personal collection
 
-Click on the first result to get a detail view. Then add it to your personal collection:
+Click on the first result to get a detailed view. Then add it to your personal collection:
 * scroll down to "Part of personal collection" and click  <span class="highlight_txt">Link records</span>.
 * Select your personal collection, click <span class="highlight_txt">Link</span> (upper right).
 
