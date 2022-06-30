@@ -3,7 +3,9 @@ layout: page
 title: Blood Datasets from CF Program Portals
 ---
 
-<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+<div class="banner"><span class="banner-text">This tutorial is outdated. Please refer to the Common Fund Tools page for up-to-date tutorials.
+</span></div>
+
 
 # Blood Datasets from CF Program Portals
 
@@ -20,7 +22,7 @@ After login, select the "File Repository" and in the "Clinical Filters" tab, scr
 
 ![KF select biospecimen id](../images/KF-select-biospecimen-id.png "KF select biospecimen id")
 
-You can paste the comma separated list of IDs which is same as the values in the `id` column of the exported file from the portal. Alternatively, you can upload a file that contain only the relevant KF `ids` as a comma separated list. Choose "View Results" to view all the associated metadata data.
+You can paste the comma separated list of IDs which is the same as the values in the `id` column of the exported file from the portal. Alternatively, you can upload a file that contains only the relevant KF `ids` as a comma separated list. Choose "View Results" to view all the associated metadata data.
 
 ![KF upload ids](../images/KF-upload-ids.png "KF upload ids")
 
@@ -28,7 +30,7 @@ The resulting view in the portal lists all the participants and files associated
 
 ![KF subset list](../images/KF-subset-list.png "KF subset list")
 
-Request for the controlled data access for the AML dataset can be applied through [National Cancer Institute's Cancer Research Data Commons](https://datascience.cancer.gov/data-commons).
+Requests for the controlled data access for the AML dataset can be applied through [National Cancer Institute's Cancer Research Data Commons](https://datascience.cancer.gov/data-commons).
 
 ![KF data access](../images/KF-data-access.png "KF data access")
 
@@ -51,7 +53,7 @@ The subject and sample level metadata are listed under the `Annotations` tab on 
 
 ![GTEx data annotations](../images/GTEx-data-annotations.png "GTEx data annotations")
 
-The sample annotations file contains the `SAMPID` that correspond to the `ID` column in the exported `csv` file from the CFDE portal.
+The sample annotations file contains the `SAMPID` that corresponds to the `ID` column in the exported `csv` file from the CFDE portal.
 
 ![GTEx sample annotations](../images/GTEx-sample-annotations.png "GTEx sample annotations")
 

@@ -3,12 +3,13 @@ layout: page
 title: Cohort Selection for Blood Cancer
 ---
 
-<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+<div class="banner"><span class="banner-text">This tutorial is outdated. Please refer to the Common Fund Tools page for up-to-date tutorials.
+</span></div>
 
 
 # Cohort Selection for Blood Cancer
 
-Acute Myeloid Leukemia (AML) is a type of blood cancer. In AML, the affected myeloid cells which are a type of white blood cells, are not functional and build up in the bone marrow leaving reduced capacity for healthy white and red blood cells. While risk factors for developing AML exist, often times the underlying cause remains unknown. Gene mutations and chromosomal abnormality in the leukemia cells occur sporadically. Characterization of the wide spectrum of genetic events involved in AML will aide in better understanding of its etiology and ultimately in development of improved therapy.
+Acute Myeloid Leukemia (AML) is a type of blood cancer. In AML, the affected myeloid cells, which are a type of white blood cells, are not functional and build up in the bone marrow leaving reduced capacity for healthy white and red blood cells. While risk factors for developing AML exist, often times the underlying cause remains unknown. Gene mutations and chromosomal abnormality in the leukemia cells occur sporadically. Characterization of the wide spectrum of genetic events involved in AML will aid in better understanding of its etiology and ultimately in development of improved therapy.
 
 Combining whole genome sequencing (WGS) data with global transcriptomic profiling using RNA-sequencing (RNA-seq) can help elucidate functional dysregulation for genes of interest.
 In this use case, we demonstrate the utility of the [CFDE portal](https://app.nih-cfde.org) in identifying and extracting suitable WGS and RNA-seq datasets derived from blood from across the CF programs.
@@ -71,7 +72,7 @@ Check the boxes corresponding to `Genotype-Tissue Expression (GTEx)`and `TARGET:
 
 ## Step 5: Export Cohort
 
-The filtered cohort containing 1,140 records can now be exported as a `csv` file and can be accessed from downloads folder associated with the web browser in the user's local machine. Default is generally the `Downloads` folder.
+The filtered cohort containing 1,140 records can now be exported as a `csv` file and can be accessed from the downloads folder associated with the web browser in the user's local machine. Default is generally the `Downloads` folder.
 
 ![Export final cohort](../images/AML-cohort-export.png "Export final cohort")   
 
@@ -82,5 +83,5 @@ The exported `csv` file has thirteen columns.
 
 ![CFDE portal exported file](../images/CFDE-portal-blood-cancer-export.png "CFDE portal exported file")   
 
-The `anatomy` columns lists the [UBERON](http://uberon.github.io/about.html) values for venous blood (UBERON:0013756) and blood (UBERON:0000178). The `assay_type` lists the [Ontology for Biomedical Investigations (OBI)](http://obi-ontology.org) IDs for WGS (OBI:0002117) and RNA-seq (OBI:0001271).
+The `anatomy` column lists the [UBERON](http://uberon.github.io/about.html) values for venous blood (UBERON:0013756) and blood (UBERON:0000178). The `assay_type` lists the [Ontology for Biomedical Investigations (OBI)](http://obi-ontology.org) IDs for WGS (OBI:0002117) and RNA-seq (OBI:0001271).
 The `id` column lists the unique sample IDs within the cohort and will be key in obtaining the associated files from data portals for [GTEx](https://gtexportal.org/home/) and [KF](https://kidsfirstdrc.org/) respectively.

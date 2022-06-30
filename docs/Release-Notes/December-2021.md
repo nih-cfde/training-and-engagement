@@ -10,7 +10,7 @@ December 2021 Release
 
 <span style="font-size:24px;">Updates and Fixes
 
-- [Introduction to Amazon Web Services](../Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1.md): Updated to reflect the changes in the AWS user experience interface
+- [Introduction to Amazon Web Services](../Cloud-Platforms/Introduction-to-AWS/index.md): Updated to reflect the changes in the AWS user experience interface
 - [Introduction to Conda](../General-Tools/Introduction-to-Conda/index.md): Added --from-history export as an additional option and included new vidlets for prominent steps
 - [RNAseq on Cavatica](../Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1.md): Updated reference genome and added steps to resolve network settings
 
