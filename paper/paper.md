@@ -19,6 +19,9 @@ authors:
   - name: Jeremy Walter
     orcid: 0000-0001-7074-9760
     affiliation: 1
+  - name: Rayna M Harris
+    orcid: 0000-0002-7943-5650
+    affiliation: 1
   - name: Amanda Charbonneau
     orcid: 0000-0001-7376-7702
     affiliation: 1
@@ -48,7 +51,7 @@ All our tutorials are hosted on the [CFDE training website](https://training.nih
 
 ## Learning Objectives
 
-As discussed in our [online lesson](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction_to_Amazon_Web_Services/introtoaws1/), after completing our workshop, a learner should be able to:
+As discussed in our [online lesson](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-AWS/), after completing our workshop, a learner should be able to:
 
 - Set up an AWS cloud computer
 - Connect to the AWS cloud computer
@@ -111,7 +114,7 @@ Our training program is funded by the National Institutes of Health (1OT3OD02545
 
 # Author Contributions
 
-AP, JS, SC, and ML were the main material developers and workshop instructors, while JW helped coordinate the workshops. CTB and AC supervised the project.
+AP, JS, SC, RMH, and ML were the main material developers and workshop instructors, while JW helped coordinate the workshops. CTB and AC supervised the project.
 
 # Conflicts of Interest
 
