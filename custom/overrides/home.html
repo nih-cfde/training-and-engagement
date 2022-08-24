@@ -3,10 +3,11 @@
 {% block tabs %}
   {{ super() }}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/overrides.min.css' | url }}">
-  <style>.md-header{position:initial}.md-content{display:none}.md-container{display:block}@media screen and (min-width:60em)</style>
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}.md-container{display:block}@media screen and (min-width:60em){.md-sidebar--primary{display:none}}</style>
   <section class="tx-container">
    <div class="content">
-
+      <div class="tx-hero">
+        <div class="tx-hero__image">
           <div class="slider">
             <input type="radio" name="toggle" id="btn-1">
             <input type="radio" name="toggle" id="btn-2">
@@ -55,8 +56,8 @@
                 <div class="slide-content">
                 <h2 class="slide-title">C2M2 Compatibility Test Video</h2>
                 <iframe width="480" height="240" src="https://www.youtube.com/embed/QST9HtwzwjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="slide-text">The CFDE has created a tool that allows submitters to the CFDE portal to test C2M2 compatibility of data packages.</p>
-
+                <p class="slide-text">The CFDE has created a tool that allows submitters to the CFDE portal to test C2M2 compatibility of data packages. .</p>
+                  <a href="https://www.youtube.com/watch?v=QST9HtwzwjE&t=34s" class="slide-link">Watch Now</a>
                 </div>
               </li>
               
@@ -119,6 +120,9 @@
               <p>A list of past workshop with links to workshop materials can be found on the <a href="./Release-Notes/history/" style="color:#336699;">workshop history</a> page.</p>
 
                 
+        
+             </div>
+           </div>
         </div>
         <div class="content__col middle">
           <div class="data_header">
