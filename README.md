@@ -2,6 +2,11 @@
 
 The `stable` branch of this repository builds the public training materials for the CFDE at https://training.nih-cfde.org. The `dev` branch contains updates that will be merged as part of the next [release](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md).
 
+The `AWS_Jose_Paper` branch hosts the journal article titled "A virtual training module for introducing the use of Amazon Web Services". It can be accessed here:
+<a style="border-width:0" href="https://doi.org/10.21105/jose.00167">
+  <img src="https://jose.theoj.org/papers/10.21105/jose.00167/status.svg" alt="DOI badge" >
+</a>
+
 The training website hosts tutorials and resources to learn how to perform bioinformatic analyses and access data. The GitHub repository contains CFDE internal resources, including the [website style guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide) and [website release protocol](./docs/TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md).
 
 Check out our [wiki pages](https://github.com/nih-cfde/training-and-engagement/wiki) for past workshop notes, mini tutorials on setup, and workshop attendee resources (i.e., for managing screen space).
