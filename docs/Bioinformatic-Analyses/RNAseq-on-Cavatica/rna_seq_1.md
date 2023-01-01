@@ -30,6 +30,8 @@ You will learn two different approaches for DGE analysis using open access human
 | 15 mins |[Phenotype File and Upload to Cavatica](./rna_seq_6.md) | Reformat metadata file and upload it to Cavatica |
 | 50 mins |[Analysis with DESeq2 Public App](./rna_seq_7.md) | Run the DESeq2 app with appropriate inputs and computational settings |
 | 60 mins |[Analysis using Data Cruncher](./rna_seq_8.md) | Analysis on an instance in the RStudio environment |
+| 60 mins |[Incorporating GTEx Data in Kids First Analyses](./rna_seq_9.md) | Find GTEx datasets on AnVIL Portal and import into a CAVATICA project |
+| 20 mins |[Incorporating CFDE Portal Datasets in Kids First Analyses](./rna_seq_10.md) | Find CFDE datasets on CFDE Portal and import into a CAVATICA project |
 
 !!! note "Learning Objectives"
     * learn to build virtual cohorts on KF portal
