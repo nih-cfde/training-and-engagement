@@ -1,1 +1,44 @@
+---
+layout: page
+title: Incorporating CFDE Portal Datasets in Kids First Analyses
+---
 
+<div class="banner"><span class="banner-text">Lesson in Development</span></div>
+
+Incorporating CFDE Portal Datasets in Kids First Analyses: Find CFDE datasets on CFDE Portal and import into a CAVATICA project
+==========================
+
+The Kids First DRC is a member of the [NIH Cloud Platform Interoperability Effort (NCPI)](https://anvilproject.org/ncpi), a collaboration of four NIH-funded DCCs to establish and implement guidelines and technical standards to empower end-user analyses across participating cloud platforms and facilitate the realization of a trans-NIH, federated data ecosystem. In brief, the goal of the NCPI Effort is to allow any authenticated user access to all of the platforms' datasets and the ability to work in the user's analysis platform of choice.
+
+As part of the NCPI Effort, methods have been developed to allow users to bring datasets from the other NIH platforms into CAVATICA for combined research projects. One external dataset that is supported is the [Genotype Tissue Expression (GTEx) Program](https://commonfund.nih.gov/gtex). GTEx was funded to study the relationship between genetic variants (inherited changes in DNA sequence) and gene expression (how genes are turned on and off) in multiple human tissues and across individuals. Their datasets can serve as great controls for RNA-Seq experiments, comparing expression in GTEx's "normal" brain tissue to Kids First's brain cancer tissue.
+
+The previous example provides a walkthrough for identifying RNA-Seq datasets from the [Kids First Data Resource Portal](https://portal.kidsfirstdrc.org/) and pushing them to [CAVATICA](https://cavatica.sbgenomics.com/) for analysis. This supplemental lesson will demonstrate how to find GTEx datasets on the [NHGRI Analysis Visualization and Informatics Lab-space (AnVIL)](https://anvilproject.org/) Portal and import these files into a CAVATICA project for a combined analysis with Kids First data.
+
+
+## Step 1: Identify Files on the CFDE Portal and Export as an NCPI Manifest of DRS URIs
+
+- [Steps WIP - content to be added]
+
+- This concludes the necessary steps in the CFDE Portal. We will now move to CAVATICA.
+
+## Step 2: Import the NCPI Manifest of DRS URIs into CAVATICA
+
+The process for importing the DRS URIs into a CAVATICA project is extremely straightforward and does not require coding. 
+
+- [Steps WIP - content to be added]
+    
+- Note: if you are logging into CAVATICA for the first time you will be presented with an NIH consent screen followed by a Gen3 authorization screen.
+    ![consent](./rna-seq-images/rna-seq-9-06-01-nih-consent.png)
+    ![auth](./rna-seq-images/rna-seq-9-06-02-gen3-authorize.png)
+
+- [Note: this step will need to be updated, highlighting that an existing project is needed, showing those steps, and then showing the simple manifest import steps] 
+- Within CAVATICA create a new project 
+- Select a title and billing group for your new project. Be sure to choose to `Allow network access` for this project.
+    ![nine](./rna-seq-images/rna-seq-9-09.png)
+
+!!! info "Allow Network Access"
+    If you would like to work with the Data Interoperability public project, make a copy of the project by selecting the "i" next to the project name. Select to copy the project. This will bring up the project creation menu. The network access will be set to "Block network access" by default, however you will need to change the setting to "Allow network access" in order to use the Cloud-agnostic Data Import interactive analysis.  
+
+
+
+- This completes the file transfer - the files will now be accessible in the Data Cruncher as well as in the Files Tab of the Project!
