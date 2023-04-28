@@ -2,7 +2,7 @@
 
 The `stable` branch of this repository builds the public training materials for the CFDE at https://training.nih-cfde.org. The `dev` branch contains updates that will be merged as part of the next [release](https://github.com/nih-cfde/training-and-engagement/blob/dev/docs/TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md).
 
-The training website hosts tutorials and resources to learn how to perform bioinformatic analyses and access data. The GitHub repository contains CFDE internal resources, including the [website style guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide) and [website release protocol](./docs/TrainingRepoReleasePlan/TrainingRepo-Release-Plan.md).
+The training website hosts tutorials and resources to learn how to perform bioinformatic analyses and access data. The GitHub repository contains CFDE internal resources, including the [website style guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide) and [website release protocol](https://training.nih-cfde.org/en/latest/Website-Style-Guide/7ReleasePlan/).
 
 Check out our [wiki pages](https://github.com/nih-cfde/training-and-engagement/wiki) for past workshop notes, mini tutorials on setup, and workshop attendee resources (i.e., for managing screen space).
 
@@ -20,7 +20,7 @@ A list of past workshops can be viewed [here](https://github.com/nih-cfde/traini
 
 ## Contributing
 
-Hello, if you would like to contribute to the CFDE Training website, please read the [Contributing Guidelines](CONTRIBUTING.md) and the [Website Style Guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide/7ReleasePlan/).
+Hello, if you would like to contribute to the CFDE Training website, please read the [Contributing Guidelines](CONTRIBUTING.md) and the [Website Style Guide](https://training.nih-cfde.org/en/latest/Website-Style-Guide/).
 
 By contributing to this repository, you agree to release all your contributions under the same terms as the license itself: [the Creative Commons Zero (aka Public Domain) license](LICENSE.md). If you are OK with this condition, then we welcome both you and your contribution!
 
