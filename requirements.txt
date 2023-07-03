@@ -1,0 +1,5 @@
+mkdocs-material==6.2.6
+mkdocs-jupyter
+mkdocs-git-revision-date-localized-plugin
+mkdocs-awesome-pages-plugin
+mkdocs-htmlproofer-plugin
