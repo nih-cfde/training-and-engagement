@@ -42,21 +42,21 @@ This supplemental lesson will demonstrate how to find datasets, such as GTEx and
 The process for importing the DRS URIs into a CAVATICA project is extremely straightforward and does not require coding. 
 
 - First, navigate to [CAVATICA](https://cavatica.sbgenomics.com/) and log-in via your eRA Commons account.
-    <img src="./rna-seq-images/rna-seq-10-08.png">
+    <img src="./rna-seq-images/rna-seq-10-08.png" width=500>
     
 - Note: if you are logging into CAVATICA for the first time you will be presented with an NIH consent screen followed by a Gen3 authorization screen.
-    ![consent](./rna-seq-images/rna-seq-9-06-01-nih-consent.png)
-    ![auth](./rna-seq-images/rna-seq-9-06-02-gen3-authorize.png)
+    <img src="./rna-seq-images/rna-seq-9-06-01-nih-consent.png"  width=600>
+    <img src="./rna-seq-images/rna-seq-9-06-02-gen3-authorize.png" width=500>
 
 - Once you have logged into CAVATICA, you must *either* select a pre-existing project *or* create a new project where you would like to import the files from your manifest. This can be done from the `Projects` section on the homepage or using the `Projects` dropdown menu from the top bar.
     <img src="./rna-seq-images/rna-seq-10-09.png">
 - If you are creating a new project, click on the `Create Project` button. Select a title and billing group for your new project. Be sure to choose to `Allow network access` for this project under `Advanced settings`.
-    <img src="./rna-seq-images/rna-seq-10-10.png">
-    <img src="./rna-seq-images/rna-seq-10-11.png">
+    <img src="./rna-seq-images/rna-seq-10-10.png" width=400>
+    <img src="./rna-seq-images/rna-seq-10-11.png" width=400>
 
 !!! info "Allow Network Access"
     If you would like to work with the Data Interoperability public project, make a copy of the project by selecting the "i" next to the project name. Select to copy the project. This will bring up the project creation menu. The network access will be set to "Block network access" by default, however you will need to change the setting to "Allow network access" in order to use the Cloud-agnostic Data Import interactive analysis.  
-    ![](./rna-seq-images/rna-seq-9-09.png)
+    <img src="./rna-seq-images/rna-seq-9-09.png">
 
 - After creating or opening your target project, select the `Files` menu from the project toolbar. You may import your files into the main directory or you may choose at this point to create a folder where you would like to import your files instead. Once you have navigated to the desired location, select `+ Add files` and then click on `GA4GH Data Repository Service (DRS)` from the dropdown menu.
     <img src="./rna-seq-images/rna-seq-10-12.png">
