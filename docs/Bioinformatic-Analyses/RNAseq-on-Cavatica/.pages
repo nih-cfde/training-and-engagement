@@ -1,11 +1,11 @@
 nav:
- - rna_seq_1.md
- - rna_seq_2.md
- - rna_seq_3.md
- - rna_seq_4.md
- - rna_seq_5.md
- - rna_seq_6.md
- - rna_seq_7.md
- - rna_seq_8.md
- - rna_seq_9.md
- - rna_seq_10.md 
+ - rna_seq_01.md
+ - rna_seq_02.md
+ - rna_seq_03.md
+ - rna_seq_04.md
+ - rna_seq_05.md
+ - rna_seq_06.md
+ - rna_seq_07.md
+ - rna_seq_08.md
+ - rna_seq_09.md
+ - rna_seq_10.md
