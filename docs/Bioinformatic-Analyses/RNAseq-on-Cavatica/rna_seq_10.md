@@ -70,10 +70,13 @@ The process for importing the DRS URIs into a CAVATICA project is extremely stra
       <img src="./rna-seq-images/rna-seq-10-11.png" width=400>
     </p>
 
-!!! info "Allow Network Access"
-    If you would like to work with the Data Interoperability public project, make a copy of the project by selecting the "i" next to the project name. Select to copy the project. This will bring up the project creation menu. The network access will be set to "Block network access" by default, however you will need to change the setting to "Allow network access" in order to use the Cloud-agnostic Data Import interactive analysis.
+- If you would like to work with the Data Interoperability public project, make a copy of the project by either navigating to Public Projects and click on the "Copy Project" button on the Data Interoperability tile.  Or if you are within the Data Interoperbility project, select the "i" next to the project name, and then select to copy the project. Both paths will bring up the project creation menu. Validate that the network access does not defaulted to "Block network access".  You can validate and change the setting to "Allow network access" if necessary.  This will enable you to use the Cloud-agnostic Data Import interactive analysis.  You can do this by clicking on the "i" next to the copied project title and then click on Settings.  This will bring you to the page where you can select the "Allow network access" setting.
 
-    <img src="./rna-seq-images/rna-seq-9-09.png">
+    <img src="./rna-seq-images/rna-seq-10-11-copy-project-tile.png">
+    <img src="./rna-seq-images/rna-seq-10-11-copy-project-in-project.png">
+    <img src="./rna-seq-images/rna-seq-10-11-copy-project-config.png">
+    <img src="./rna-seq-images/rna-seq-10-11-copy-project-config-settings.png">
+    <img src="./rna-seq-images/rna-seq-10-11-copy-project-config-settings-allow.png">
 
 - After creating or opening your target project, select the `Files` menu from the project toolbar. You may import your files into the main directory or you may choose at this point to create a folder where you would like to import your files instead. Once you have navigated to the desired location, select `+ Add files` and then click on `GA4GH Data Repository Service (DRS)` from the dropdown menu.
 
