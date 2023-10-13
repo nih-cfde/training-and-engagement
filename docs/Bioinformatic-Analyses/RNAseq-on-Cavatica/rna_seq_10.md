@@ -70,13 +70,34 @@ The process for importing the DRS URIs into a CAVATICA project is extremely stra
       <img src="./rna-seq-images/rna-seq-10-11.png" width=400>
     </p>
 
-- If you would like to work with the Data Interoperability public project, make a copy of the project by either navigating to Public Projects and click on the "Copy Project" button on the Data Interoperability tile.  Or if you are within the Data Interoperbility project, select the "i" next to the project name, and then select to copy the project. Both paths will bring up the project creation menu. Validate that the network access does not defaulted to "Block network access".  You can validate and change the setting to "Allow network access" if necessary.  This will enable you to use the Cloud-agnostic Data Import interactive analysis.  You can do this by clicking on the "i" next to the copied project title and then click on Settings.  This will bring you to the page where you can select the "Allow network access" setting.
+- If you would like to work with the Data Interoperability public project, make a copy of the project by either navigating to Public Projects and click on the "Copy Project" button on the Data Interoperability tile.
 
-    <img src="./rna-seq-images/rna-seq-10-11-copy-project-tile.png">
-    <img src="./rna-seq-images/rna-seq-10-11-copy-project-in-project.png">
-    <img src="./rna-seq-images/rna-seq-10-11-copy-project-config.png">
-    <img src="./rna-seq-images/rna-seq-10-11-copy-project-config-settings.png">
-    <img src="./rna-seq-images/rna-seq-10-11-copy-project-config-settings-allow.png">
+    <p align="center">
+        <img src="./rna-seq-images/rna-seq-10-11-copy-project-tile.png" width=400>
+    </p>
+
+- Or if you are within the Data Interoperbility project, select the "i" next to the project name, and then select to copy the project.
+
+    <p align="center">
+        <img src="./rna-seq-images/rna-seq-10-11-copy-project-in-project.png" width=400>
+    </p>
+
+- Both paths will bring up the project creation menu.  Click Copy to finalize the creation of the project.   
+
+    <p align="center">
+        <img src="./rna-seq-images/rna-seq-10-11-copy-project-config.png" width=400>
+    </p>
+
+- Validate that the network access does not defaulted to "Block network access" but is set to to "Allow network access".  You can validate and change this setting to "Allow network access" if necessary.  This will enable you to use the Cloud-agnostic Data Import interactive analysis.  Click on the "i" next to the copied project title. Then click on Settings.
+    <p align="center">  
+        <img src="./rna-seq-images/rna-seq-10-11-copy-project-config-settings.png" width=400>
+    </p
+
+  - This will bring you to the page where you can select the "Allow network access" setting.
+    
+    <p align="center">
+        <img src="./rna-seq-images/rna-seq-10-11-copy-project-config-settings-allow.png" width=400>
+    </p>
 
 - After creating or opening your target project, select the `Files` menu from the project toolbar. You may import your files into the main directory or you may choose at this point to create a folder where you would like to import your files instead. Once you have navigated to the desired location, select `+ Add files` and then click on `GA4GH Data Repository Service (DRS)` from the dropdown menu.
 
