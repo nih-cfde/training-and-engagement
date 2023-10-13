@@ -23,13 +23,15 @@ You will learn two different approaches for DGE analysis using open access human
 
 | Est. Time| Lesson Name | Description|
 | ---|--------|--------|
-| 10 mins |[An Introduction to RNA-Seq](./rna_seq_2.md)| Background about RNA-Seq
-| 20 mins |[Selecting Kids First Cancer Cohort](./rna_seq_3.md)| Select Kids First open access cancer RNA-Seq files and push to Cavatica  |
-| 20 mins |[Cavatica - View, Filter, Tag and Download](./rna_seq_4.md) | Filter imported data, tag and download relevant metadata from Cavatica |
-| 20 mins |[Setup DESeq2 Public App](./rna_seq_5.md)| Setting up the workflow app based on DESeq2 on Cavatica |
-| 15 mins |[Phenotype File and Upload to Cavatica](./rna_seq_6.md) | Reformat metadata file and upload it to Cavatica |
-| 50 mins |[Analysis with DESeq2 Public App](./rna_seq_7.md) | Run the DESeq2 app with appropriate inputs and computational settings |
-| 60 mins |[Analysis using Data Cruncher](./rna_seq_8.md) | Analysis on an instance in the RStudio environment |
+| 10 mins |[An Introduction to RNA-Seq](./rna_seq_02.md)| Background about RNA-Seq
+| 20 mins |[Selecting Kids First Cancer Cohort](./rna_seq_03.md)| Select Kids First open access cancer RNA-Seq files and push to Cavatica  |
+| 20 mins |[Cavatica - View, Filter, Tag and Download](./rna_seq_04.md) | Filter imported data, tag and download relevant metadata from Cavatica |
+| 20 mins |[Setup DESeq2 Public App](./rna_seq_05.md)| Setting up the workflow app based on DESeq2 on Cavatica |
+| 15 mins |[Phenotype File and Upload to Cavatica](./rna_seq_06.md) | Reformat metadata file and upload it to Cavatica |
+| 50 mins |[Analysis with DESeq2 Public App](./rna_seq_07.md) | Run the DESeq2 app with appropriate inputs and computational settings |
+| 60 mins |[Analysis using Data Cruncher](./rna_seq_08.md) | Analysis on an instance in the RStudio environment |
+| 60 mins |[Incorporating GTEx Data in Kids First Analyses](./rna_seq_09.md) | Find GTEx datasets on AnVIL Portal and import into a CAVATICA project |
+| 20 mins |[Incorporating CFDE Portal Datasets in Kids First Analyses](./rna_seq_10.md) | Find CFDE datasets on CFDE Portal and import into a CAVATICA project |
 
 !!! note "Learning Objectives"
     * learn to build virtual cohorts on KF portal
