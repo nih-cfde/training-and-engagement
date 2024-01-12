@@ -10,7 +10,7 @@ theme:
     #scheme: preference
     primary: white
     #accent: teal
-  features:
+#  features:
     - navigation.tabs
     - navigation.instant
     #- navigation.sections
