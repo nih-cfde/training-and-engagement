@@ -72,5 +72,7 @@ extra_javascript:
   - javascripts/extra.js
   - javascripts/asciinema-player.js
 
+version 2: 
+
 formats:
   - pdf
