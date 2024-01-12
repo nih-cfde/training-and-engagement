@@ -25,7 +25,7 @@ plugins:
       separator: '[\s\-\.]+'
   - awesome-pages
   - git-revision-date-localized
-  - offline
+#  - offline (only works for 'sponsors')
   #- htmlproofer
 
 markdown_extensions:
