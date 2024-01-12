@@ -11,8 +11,8 @@ theme:
     primary: white
     #accent: teal
 #  features:
-    - navigation.tabs
-    - navigation.instant
+#    - navigation.tabs
+#    - navigation.instant
     #- navigation.sections
   favicon: images/CFDE-logo-white-outline.png
   logo: images/CFDE-logo.png
