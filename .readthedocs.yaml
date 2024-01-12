@@ -3,10 +3,6 @@
 
 # Required
 version: 2
-
-# Build pdf
-formats:
-  pdf
   
 # Set the version of Python and other tools you might need
 build:
@@ -21,3 +17,7 @@ mkdocs:
 python:
   install:
   - requirements: docs/requirements.txt
+
+# Build pdf
+format:
+  pdf
