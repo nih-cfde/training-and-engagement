@@ -72,8 +72,3 @@ extra_javascript:
   - javascripts/medium-zoom.min.js
   - javascripts/extra.js
   - javascripts/asciinema-player.js
-
-version 2: 
-
-formats:
-  - pdf
